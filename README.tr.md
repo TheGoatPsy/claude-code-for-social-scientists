@@ -6,7 +6,7 @@
 
 Anthropic Claude Code'u araştırmada, eğitimde ve akademik yazımda kullanmak isteyen sosyal bilimciler için iki dilli, açık kaynak bir rehber. İngilizce konuşulan dünyanın dışında çalışan araştırmacılara, içeride çalışanlara da seslenmek üzere, bu araçları gerçek akademik üretim sürecinde kullanan bir klinik psikolog ve doktora adayı tarafından yazılıyor.
 
-> **Durum.** v0.1 iskelet. İlk tam broşür (Booklet 001-01-0001) Türkçe taslak olarak yazıldı. İngilizce taslaklar ve diğer broşürler Phase 1 boyunca eklenecek. Halka açık duyuru, Avrupa Psikoloji Kongresi (ECPP), Dublin, Temmuz 2026 için planlandı.
+> **Durum.** v0.1 iskelet. İlk tam broşür (Booklet 001-01-0001) Türkçe ve İngilizce taslak olarak yazıldı. Diğer broşürler Phase 1 boyunca eklenecek.
 
 > **EN readers.** The English version is in [`README.md`](./README.md). Every booklet has a `tr.md` and an `en.md` side by side. A CI check enforces this pairing on every commit.
 
@@ -111,7 +111,7 @@ Bu çalışma şu kanallarla kayıt altına alınmıştır.
 
 ## Yol haritası
 
-Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Ana hedefler. v0.1 (iskelet ve ilk broşür, 2026-05). v1.0 (temel ve en yüksek değerli kategorilerden on çekirdek broşür, ECPP Dublin için 2026-07). v1.5 (topluluk tartışmaları açık, ek kategoriler eklenmiş, 2026-10). v2.0 (tam otuz broşürlük katalog, canlı laboratuvar, konferans atıfları, eğitim materyali kullanımı, 2027-04).
+Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Ana hedefler. v0.1 (iskelet ve ilk broşür, 2026-05). v1.0 (temel ve en yüksek değerli kategorilerden on çekirdek broşür). v1.5 (topluluk tartışmaları açık, ek kategoriler eklenmiş). v2.0 (tam otuz broşürlük katalog, canlı laboratuvar, konferans atıfları, eğitim materyali kullanımı). Spesifik yayın tarihleri yol haritasında izlenir.
 
 ## Katkıda bulunma
 

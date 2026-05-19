@@ -6,7 +6,7 @@
 
 A bilingual, open-source guide for social scientists who want to use Anthropic's Claude Code in their research, teaching, and academic writing. Written for researchers outside the English-speaking world as well as inside it, by a working clinical psychologist and PhD candidate who uses these tools in real academic production.
 
-> **Status:** v0.1 scaffold. First full booklet (Booklet 001-01-0001) drafted in Turkish. English drafts and additional booklets follow in Phase 1. Public announcement planned for the European Congress of Psychology (ECPP), Dublin, July 2026.
+> **Status:** v0.1 scaffold. First full booklet (Booklet 001-01-0001) drafted in Turkish and English. Additional booklets follow in Phase 1.
 
 > **TR readers:** A Turkish overview lives at the bottom of this file. The full Turkish version is in [`README.tr.md`](./README.tr.md). Every booklet exists as `tr.md` and `en.md` side by side.
 
@@ -111,7 +111,7 @@ This work is registered through:
 
 ## Roadmap
 
-See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The headline targets are v0.1 (scaffold + first booklet, 2026-05), v1.0 (ten core booklets across the foundational and highest-value categories, 2026-07 in time for ECPP Dublin), v1.5 (community discussions opened, additional categories drafted, 2026-10), v2.0 (full thirty-booklet catalog, living lab, conference citations, instructional use, 2027-04).
+See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The headline targets are v0.1 (scaffold + first booklet, 2026-05), v1.0 (ten core booklets across the foundational and highest-value categories), v1.5 (community discussions opened, additional categories drafted), v2.0 (full thirty-booklet catalog, living lab, conference citations, instructional use). Specific release dates are tracked in the roadmap.
 
 ## Contributing
 

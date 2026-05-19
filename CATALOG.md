@@ -1,6 +1,6 @@
 # Catalog
 
-This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The full long-term catalog targets thirty booklets across twelve categories. The v1.0 announcement target at the European Congress of Psychology (ECPP) in Dublin, July 2026, is the **ten core booklets** marked with `[v1.0]` in the tables below. The remaining twenty booklets are scheduled for v1.5 (2026-10) and v2.0 (2027-04). See [`meta/roadmap.md`](./meta/roadmap.md) for the phase plan.
+This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The full long-term catalog targets thirty booklets across twelve categories. The v1.0 target is the **ten core booklets** marked with `[v1.0]` in the tables below. The remaining twenty booklets are scheduled for v1.5 and v2.0. See [`meta/roadmap.md`](./meta/roadmap.md) for the phase plan and release timing.
 
 ## Status legend
 

@@ -64,13 +64,13 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 - Booklet 010-01-0001 (rebuttal letters with traceability matrices) drafted bilingually.
 - Booklet 012-01-0001 (troubleshooting protocol) drafted bilingually.
 
-All ten v1.0 booklets are at `paired` status going into the final review pass before the ECPP Dublin announcement.
+All ten v1.0 booklets are at `paired` status going into the final review pass before the v1.0 release.
 
-## v1.0.0 — ECPP Dublin announcement release
+## v1.0.0 — First major release
 
-**Target.** 2026-07. Coinciding with the European Congress of Psychology, Dublin, July 2026.
+**Target.** Mid-2026. Concrete release date set when the ten v1.0 booklets are reviewed and tagged.
 
-**Scope.** Ten core booklets at `paired` or `release` status, selected to form a coherent manifesto across the foundational and highest-differentiation categories. Quality over breadth. The reasoning is that ten genuinely mature bilingual booklets serve the ECPP audience and the long-term citation record better than thirty unfinished drafts.
+**Scope.** Ten core booklets at `paired` or `release` status, selected to form a coherent manifesto across the foundational and highest-differentiation categories. Quality over breadth. The reasoning is that ten genuinely mature bilingual booklets serve the reader and the long-term citation record better than thirty unfinished drafts.
 
 The ten v1.0 booklets are:
 
@@ -94,7 +94,7 @@ Deliverables:
 - U.S. Copyright Office eCO application reference number recorded in the repository footer.
 - Public announcement to the European clinical psychology and digital health communities.
 
-The remaining twenty booklets in [`CATALOG.md`](../CATALOG.md) move to the v1.5 and v2.0 backlog. Their identifiers and outlines are reserved; they are drafted as the project matures past ECPP.
+The remaining twenty booklets in [`CATALOG.md`](../CATALOG.md) move to the v1.5 and v2.0 backlog. Their identifiers and outlines are reserved; they are drafted as the project matures past v1.0.
 
 ## v1.5.0 — Community discussions opened
 
