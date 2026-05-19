@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using the metadata below."
+title: "Sosyal Bilimciler İçin Claude Code Rehberi (Claude Code for Social Scientists)"
+abstract: >-
+  A bilingual (Turkish and English) open-source guide for social scientists who want to integrate
+  Anthropic's Claude Code into their research, teaching, and academic writing. Twelve thematic
+  categories cover foundations, academic access, memory systems, vault architecture, hooks and
+  automation, MCP and plugins, academic writing, data analysis, ethics and IRB, peer review,
+  conference presentation, and troubleshooting. Authored by a working clinical psychologist and
+  PhD candidate, with explicit AI co-authorship disclosure under NISO 2024 guidance.
+type: software
+authors:
+  - given-names: Onour
+    family-names: Impram
+    orcid: "https://orcid.org/0000-0003-1076-3928"
+    email: onuribram@outlook.com
+    affiliation: "Istanbul University, Department of Clinical and Health Psychology"
+url: "https://github.com/TheGoatPsy/sbcc-rehber"
+repository-code: "https://github.com/TheGoatPsy/sbcc-rehber"
+version: "0.1.0-alpha"
+date-released: "2026-05-19"
+license:
+  - Apache-2.0
+  - CC-BY-NC-SA-4.0
+keywords:
+  - claude-code
+  - anthropic
+  - social-sciences
+  - clinical-psychology
+  - academic-writing
+  - turkish
+  - bilingual
+  - irb-ethics
+  - ai-disclosure
+  - niso-2024
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.PLACEHOLDER"
+    description: "Zenodo concept DOI (will be minted upon first GitHub release)"
+preferred-citation:
+  type: software
+  title: "Sosyal Bilimciler İçin Claude Code Rehberi (Claude Code for Social Scientists)"
+  authors:
+    - given-names: Onour
+      family-names: Impram
+      orcid: "https://orcid.org/0000-0003-1076-3928"
+  year: 2026
+  version: "0.1.0-alpha"
+  url: "https://github.com/TheGoatPsy/sbcc-rehber"
+  license:
+    - Apache-2.0
+    - CC-BY-NC-SA-4.0

@@ -1,0 +1,106 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-markdown:
+    name: Markdown lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run markdownlint-cli2
+        run: npx markdownlint-cli2 "**/*.md" "#node_modules" "#.git"
+
+  bilingual-coverage:
+    name: Bilingual coverage (tr.md and en.md pairing)
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Verify every booklet has both tr.md and en.md
+        shell: bash
+        run: |
+          set -euo pipefail
+          failed=0
+          # Booklets live at booklets/KKK-name/KKK-AA-SSSS/{tr,en}.md
+          while IFS= read -r -d '' dir; do
+            if [ ! -f "${dir}tr.md" ] || [ ! -f "${dir}en.md" ]; then
+              echo "MISSING bilingual pair: ${dir}"
+              failed=1
+            fi
+          done < <(find booklets -mindepth 2 -maxdepth 2 -type d -print0 2>/dev/null || true)
+          if [ "${failed}" -ne 0 ]; then
+            echo ""
+            echo "Bilingual coverage check FAILED. Every booklet directory must contain both tr.md and en.md."
+            exit 1
+          fi
+          echo "Bilingual coverage check PASSED."
+
+  ai-disclosure-frontmatter:
+    name: AI disclosure frontmatter audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Verify every booklet has required AI disclosure fields
+        shell: bash
+        run: |
+          set -euo pipefail
+          required_fields=("ai_assisted" "ai_contribution_level" "human_review" "booklet_id" "version")
+          failed=0
+          while IFS= read -r -d '' md_file; do
+            for field in "${required_fields[@]}"; do
+              if ! head -n 60 "${md_file}" | grep -Eq "^${field}:"; then
+                echo "MISSING frontmatter field '${field}' in: ${md_file}"
+                failed=1
+              fi
+            done
+            if head -n 60 "${md_file}" | grep -Eq "^human_review: pending"; then
+              echo "BLOCKED on main: ${md_file} has human_review: pending"
+              failed=1
+            fi
+          done < <(find booklets -mindepth 3 -maxdepth 3 -type f \( -name "tr.md" -o -name "en.md" \) -print0 2>/dev/null || true)
+          if [ "${failed}" -ne 0 ]; then
+            echo ""
+            echo "AI disclosure audit FAILED. See AI-AUTHORSHIP.md section 3 for the required frontmatter schema."
+            exit 1
+          fi
+          echo "AI disclosure audit PASSED."

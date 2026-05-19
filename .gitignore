@@ -1,0 +1,42 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Build artifacts
+_build/
+_site/
+dist/
+*.tmp
+*.bak
+
+# Generated documents (built from sources, not committed)
+*.pdf
+*.epub
+!meta/*.pdf
+
+# Node / package managers (in case lint tools cache)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python (if any helper scripts grow)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local-only sanitizer logs (script lives in private vault, never here)
+scripts/sanitize-helper.log
+scripts/sanitize-manifest.json
+
+# Secrets — defense in depth, should never be in repo regardless
+.env
+.env.local
+*.key
+*.pem
+secrets.json
