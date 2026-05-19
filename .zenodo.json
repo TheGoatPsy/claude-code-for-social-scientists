@@ -1,0 +1,28 @@
+{
+  "title": "Sosyal Bilimciler İçin Claude Code Rehberi (Claude Code for Social Scientists)",
+  "description": "A bilingual (Turkish and English) open-source guide for social scientists who want to integrate Anthropic's Claude Code into their research, teaching, and academic writing. Twelve thematic categories cover foundations, academic access, memory systems, vault architecture, hooks and automation, MCP and plugins, academic writing, data analysis, ethics and IRB, peer review, conference presentation, and troubleshooting. Authored by a working clinical psychologist and PhD candidate, with explicit AI co-authorship disclosure under NISO 2025 guidance.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Impram, Onour",
+      "affiliation": "Istanbul University, Department of Clinical and Health Psychology",
+      "orcid": "0000-0003-1076-3928"
+    }
+  ],
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "keywords": [
+    "claude-code",
+    "anthropic",
+    "social-sciences",
+    "clinical-psychology",
+    "academic-writing",
+    "turkish",
+    "bilingual",
+    "irb-ethics",
+    "ai-disclosure",
+    "niso-2024"
+  ],
+  "language": "tur",
+  "communities": []
+}
