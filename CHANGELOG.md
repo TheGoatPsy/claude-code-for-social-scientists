@@ -52,6 +52,11 @@ The work since the v0.1.0-alpha tag (commit `4999222`) is grouped below into fou
 - Banner SVG footer line trimmed. The `ECPP Dublin July 2026` segment removed from the footer. The same change applied to ARIA alt text in `README.md` and `README.tr.md`.
 - All `ECPP Dublin / July 2026 / Temmuz 2026` date references removed from `README.md` status block, `README.tr.md` durum block, `CATALOG.md` intro, `meta/roadmap.md` v1.0 section, and `CHANGELOG.md`. v1.0 release timing is now set when the ten v1.0 booklets are reviewed and tagged, not by a calendar promise.
 
+### Zenodo
+
+- Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (always resolves to the latest version, now v0.2.0).
+- Version DOI for v0.2.0: [10.5281/zenodo.20293189](https://doi.org/10.5281/zenodo.20293189).
+
 ## [0.1.0-alpha] - 2026-05-19
 
 ### Added

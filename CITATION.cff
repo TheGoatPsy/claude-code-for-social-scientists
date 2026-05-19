@@ -38,8 +38,11 @@ identifiers:
     value: "10.5281/zenodo.20289687"
     description: "Zenodo concept DOI, resolves to the latest version"
   - type: doi
+    value: "10.5281/zenodo.20293189"
+    description: "Zenodo version DOI for v0.2.0 (2026-05-19)"
+  - type: doi
     value: "10.5281/zenodo.20289688"
-    description: "Zenodo version DOI for v0.1.0-alpha (2026-05-19)"
+    description: "Zenodo version DOI for v0.1.0-alpha (2026-05-19), retained for historical citation continuity"
 preferred-citation:
   type: software
   title: "Sosyal Bilimciler İçin Claude Code Rehberi (Claude Code for Social Scientists)"
