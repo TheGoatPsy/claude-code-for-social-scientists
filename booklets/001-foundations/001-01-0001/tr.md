@@ -22,7 +22,7 @@ ai_tools:
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
 human_review_date: "2026-05-19"
-verified_citations_count: 10
+verified_citations_count: 12
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 license:
@@ -50,7 +50,7 @@ Sosyal bilimcinin bu cümleden anlaması gereken üç şey vardır.
 
 Birincisi, bu bir tarayıcıdaki sohbet kutusu değildir. Tarayıcıdaki ChatGPT veya Claude.ai oturumu, kapatıldığında biten bir oturumdur. Claude Code, klasörünüze ve dosyalarınıza erişebilir. Daha önceki oturumda yazılan bir notu okuyabilir, üzerine ekleme yapabilir, başka bir dosyaya bağlantı kurabilir. Bu, akademik üretim için bir not defteri ile bir kasa arasındaki farkı yaratır.
 
-İkincisi, bu bir ajan sistemidir. Ajan sözcüğünün buradaki anlamı, basit bir komut yanıtlama mekanizmasından farklıdır. Ajan, kendisine verilen yüksek seviyeli bir hedefi alt görevlere bölebilen, bu alt görevleri sırayla yürüten, gerektiğinde başka bir aracı çağıran, sonuçları toplayan ve geri raporlayan bir yapıdır. Klinik analoji açısından bu, vaka formülasyonunda kullanılan biyo-psiko-sosyal modele benzer. Bir hastanın durumu yalnızca semptomatik bir liste olarak değil, biyolojik, psikolojik ve sosyal düzeyde eşzamanlı çalışan bir sistem olarak ele alınır. Ajan modeli de benzer şekilde, bir görevi tek bir yanıt olarak değil, bir alt görev silsilesi olarak ele alır.
+İkincisi, bu bir ajan sistemidir. Ajan sözcüğünün buradaki anlamı, basit bir komut yanıtlama mekanizmasından farklıdır. Ajan, kendisine verilen yüksek seviyeli bir hedefi alt görevlere bölebilen, bu alt görevleri sırayla yürüten, gerektiğinde başka bir aracı çağıran, sonuçları toplayan ve geri raporlayan bir yapıdır. Klinik analoji açısından bu, vaka formülasyonunda kullanılan biyo-psiko-sosyal modele benzer (Engel, 1977). Bir hastanın durumu yalnızca semptomatik bir liste olarak değil, biyolojik, psikolojik ve sosyal düzeyde eşzamanlı çalışan bir sistem olarak ele alınır. Ajan modeli de benzer şekilde, bir görevi tek bir yanıt olarak değil, bir alt görev silsilesi olarak ele alır.
 
 Üçüncüsü, bu bir genel amaçlı modeldir, sosyal bilim için özelleştirilmiş bir araç değildir. Bu önemlidir, çünkü Türkçe akademik literatür, klinik psikoloji metodolojisi, IRB protokolleri, COPE yayın etiği gibi alanlarda araç sizin yönlendirmenize ihtiyaç duyar. Yapay zekânın hesaplamalı sosyal bilimi dönüştürme potansiyeli üzerine yapılan çalışmalar, bu yönlendirmenin niteliğinin sonuç kalitesini doğrudan belirlediğini gösterir (Ziems ve diğerleri, 2024).
 
@@ -82,7 +82,7 @@ Bu örnekte üç önemli nokta vardır. Birincisi, araç hiçbir makale hakkınd
 
 Bu senaryo, Claude Code'un sosyal bilim için yararlı olmasının temel formülünü içerir. Yapılandırılmış bir görev, doğrulanabilir bir çıktı, son adımda insan kontrolü.
 
-Aracın asıl risk taşıdığı yer, bu formülün dışına çıkıldığı yerdir. Eğer doktora öğrencisi araca "iki yüz makaleyi özetle ve sistematik derleme yaz" gibi bir komut verirse, çıktı sözdizimsel olarak geçerli, içerik olarak güvenilmez bir metin olur. Üretici dil modellerinin niteliğinin epistemolojik düzeyde "saçmalık" üretme kapasitesine kadar uzandığı, felsefi olarak titiz bir okumayla ortaya konulmuştur (Hicks ve diğerleri, 2024). Bu nedenle aracın değil, kullanan akademisyenin metodolojik çerçevesinin niteliği belirleyicidir.
+Aracın asıl risk taşıdığı yer, bu formülün dışına çıkıldığı yerdir. Eğer doktora öğrencisi araca "iki yüz makaleyi özetle ve sistematik derleme yaz" gibi bir komut verirse, çıktı sözdizimsel olarak geçerli, içerik olarak güvenilmez bir metin olur. Üretici dil modellerinin niteliğinin epistemolojik düzeyde "saçmalık" üretme kapasitesine kadar uzandığı, felsefi olarak titiz bir okumayla ortaya konulmuştur (Hicks ve diğerleri, 2024). Bu okumanın kavramsal alt yapısı, Frankfurt'un (2005) "saçmalık" kavramı üzerine yaptığı felsefi çalışmaya dayanır. Bu nedenle aracın değil, kullanan akademisyenin metodolojik çerçevesinin niteliği belirleyicidir.
 
 ## 5. Türkiye ve Yunan Akademi Ortamı Özgüllükleri
 
@@ -140,6 +140,10 @@ Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the da
 
 Else, H. (2023). Abstracts written by ChatGPT fool scientists. *Nature*, 613(7944), 423. https://doi.org/10.1038/d41586-023-00056-7
 
+Engel, G. L. (1977). The need for a new medical model: A challenge for biomedicine. *Science*, 196(4286), 129-136. https://doi.org/10.1126/science.847460
+
+Frankfurt, H. G. (2005). *On bullshit*. Princeton University Press. ISBN 978-0-691-12294-6
+
 Hicks, M. T., Humphries, J., & Slater, J. (2024). ChatGPT is bullshit. *Ethics and Information Technology*, 26(2), 38. https://doi.org/10.1007/s10676-024-09775-5
 
 Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 30(7-8), 1-9. https://doi.org/10.1080/08989621.2023.2168535
@@ -162,7 +166,7 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-05-19
 **Sözcük sayısı (yaklaşık).** 2900 (Türkçe gövde metni)
-**Doğrulanmış atıf sayısı.** 10
+**Doğrulanmış atıf sayısı.** 12
 **Halüsinasyon atıf sayısı.** 0
 **Önceki broşür.** Yok (ilk broşür)
 **Sonraki broşür.** [`001-01-0002`](../001-01-0002/tr.md) — Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına

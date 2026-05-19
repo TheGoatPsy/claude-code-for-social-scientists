@@ -49,9 +49,8 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 
 **Scope.**
 
-- Categories 001 and 002 fully bilingual.
-- Booklets 002-03-0001 (EZproxy, institutional VPN) and 002-04-0001 (DergiPark, ULAKBIM, HEAL-Link) drafted. This is the category most missing from international AI guides and the unique value proposition for regional academic audiences.
-- Approximately fifteen booklets total across the first two categories.
+- Booklet 002-04-0001 (DergiPark, ULAKBIM TR Dizin, HEAL-Link, regional indexing) drafted bilingually. This is the v1.0 booklet most missing from international AI guides and the highest-differentiation booklet in the catalog.
+- Booklet 003-01-0001 (Memory as Vault, first-principles introduction) drafted bilingually. The Memory-as-Vault engineering pattern is the signature methodological contribution of the guide.
 
 ## Phase 3 — End of Month 2
 
@@ -59,20 +58,43 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 
 **Scope.**
 
-- Categories 003 (Memory System), 004 (Vault Architecture), and 009 (Ethics and IRB) drafted in full. The ethics category is the spine of the guide for clinical and human-subjects research.
-- Approximately twenty-five booklets total.
+- Booklet 004-01-0001 (folder discipline and MOC pattern) drafted bilingually.
+- Booklet 007-02-0001 (APA 7 with DOI discipline) drafted bilingually.
+- Booklet 009-01-0001 (ethics in AI-assisted research) drafted bilingually. This is the spine of the guide for clinical and human-subjects research.
+- Booklet 010-01-0001 (rebuttal letters with traceability matrices) drafted bilingually.
+- Booklet 012-01-0001 (troubleshooting protocol) drafted bilingually.
+
+All ten v1.0 booklets are at `paired` status going into the final review pass before the ECPP Dublin announcement.
 
 ## v1.0.0 — ECPP Dublin announcement release
 
 **Target.** 2026-07. Coinciding with the European Congress of Psychology, Dublin, July 2026.
 
-**Scope.**
+**Scope.** Ten core booklets at `paired` or `release` status, selected to form a coherent manifesto across the foundational and highest-differentiation categories. Quality over breadth. The reasoning is that ten genuinely mature bilingual booklets serve the ECPP audience and the long-term citation record better than thirty unfinished drafts.
 
-- All thirty booklets across all twelve categories at `paired` or `release` status.
-- All booklets bilingual with both `tr.md` and `en.md` reviewed.
+The ten v1.0 booklets are:
+
+| Identifier | Category | Title (EN) |
+|---|---|---|
+| 001-01-0001 | Foundations | What is Claude Code? A Social Scientist's Perspective |
+| 001-01-0002 | Foundations | The Agentic Shift: From Chat Window to Working Partner |
+| 001-01-0003 | Foundations | Installation, First Session, and Sanity Checks |
+| 002-04-0001 | Academic Access | DergiPark, ULAKBIM TR Dizin, HEAL-Link, and Regional Indexing |
+| 003-01-0001 | Memory System | Memory as Vault: A First-Principles Introduction |
+| 004-01-0001 | Vault Architecture | Folder Discipline and the Maps of Content (MOC) Pattern |
+| 007-02-0001 | Academic Writing | APA 7 with DOI Discipline |
+| 009-01-0001 | Ethics and IRB | Ethics in AI-Assisted Research: From Principle to Behavior |
+| 010-01-0001 | Peer Review | Rebuttal Letters with Traceability Matrices |
+| 012-01-0001 | Troubleshooting | When Things Go Wrong: A Working Troubleshooting Protocol |
+
+Deliverables:
+
+- All ten booklets bilingual with both `tr.md` and `en.md` reviewed (`paired` or `release` status).
 - Zenodo DOI for v1.0 minted.
 - U.S. Copyright Office eCO application reference number recorded in the repository footer.
 - Public announcement to the European clinical psychology and digital health communities.
+
+The remaining twenty booklets in [`CATALOG.md`](../CATALOG.md) move to the v1.5 and v2.0 backlog. Their identifiers and outlines are reserved; they are drafted as the project matures past ECPP.
 
 ## v1.5.0 — Community discussions opened
 
@@ -81,17 +103,17 @@ The public phase plan for `claude-code-for-social-scientists`. Dates are targets
 **Scope.**
 
 - GitHub Discussions enabled with moderation guidelines published.
-- Approximately fifty booklets total. Categories 005 (Hooks), 006 (MCP and Plugins), and 010 (Peer Review) deepened with additional subcategory booklets.
+- Approximately ten additional booklets drafted, drawn from categories 002 (remainder of Academic Access), 005 (Hooks), 006 (MCP and Plugins), and 008 (Data Analysis). Total around twenty booklets.
 - First external contributors merged.
 - Translation review (Turkish, English) iterations integrated.
 
-## v2.0.0 — Living lab and instructional use
+## v2.0.0 — Full thirty-booklet catalog and living lab
 
 **Target.** 2027-04.
 
 **Scope.**
 
-- Approximately seventy-plus booklets.
+- All thirty booklets in the catalog at `paired` or `release` status.
 - Citations from external academic work logged in `meta/external-citations.md`.
 - Instructional use cases (PhD seminars, masters-level methodology courses) documented with consent in `meta/instructional-use.md`.
 - The repository transitions from a single-author guide to a moderated community resource.

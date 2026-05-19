@@ -13,12 +13,19 @@ Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.2028968
 - Booklet template files (`template/booklet-template.{tr,en}.md`) with full frontmatter schema and APA 7 inline citation examples.
 - `CHANGELOG.md` (this file) following Keep a Changelog 1.1.0.
 - `SECURITY.md` with responsible disclosure path and vault sanitization principles.
+- Two citations to booklet 001-01-0001: Engel (1977) for the biopsychosocial frame in the agent-system analogy, and Frankfurt (2005) for the philosophical scaffolding behind the bullshit-production reading. `verified_citations_count` raised from 10 to 12 in both `tr.md` and `en.md`, with corresponding update in `meta/ai-disclosure.md`.
 
 ### Changed
 
 - Frontmatter title schema migrated from `title` plus `title_tr` to `title_en` plus `title_tr`. Both fields are now required by CI. Rationale: the previous schema put an English title in files declared `language: tr`, which was internally inconsistent.
 - `ai_tools` entries now carry `model_alias` and `model_dated` fields. The `model` field is deprecated. Rationale: model aliases drift over time; dated identifiers preserve reproducibility.
 - Pandoc citeproc keys (`[@author2024]`) in booklet 001-01-0001 converted to inline APA 7 citations so that GitHub renders them as readable text without a build step.
+- v1.0 announcement scope reduced from thirty booklets to ten core booklets. The ten v1.0 booklets are marked `[v1.0]` in `CATALOG.md`. The remaining twenty booklets move to the v1.5 (2026-10) and v2.0 (2027-04) backlog. Rationale: quality over breadth for the ECPP Dublin manifesto. `meta/roadmap.md` revised end-to-end (Phase 1 to Phase 3, v1.0, v1.5, v2.0 sections).
+- `README.md` and `README.tr.md` audience descriptions narrowed. The previous text named seven geographies (Türkiye, Greece, Mediterranean, Middle East, Latin America, South and Southeast Asia, Sub-Saharan Africa) which overpromised against the v1.0 scope. Replaced with the bilingual focus statement (every booklet delivered in Turkish and English in full parallel).
+
+### Removed
+
+- The `## Acknowledgements` section in both READMEs that named two competitor repositories (Galaxy-Dawn/claude-scholar and Imbad0202/academic-research-skills) as influences. They are competitors, not influences. The guide's structural and methodological choices are original.
 
 ## [0.1.0-alpha] - 2026-05-19
 

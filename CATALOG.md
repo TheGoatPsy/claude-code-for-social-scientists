@@ -1,6 +1,6 @@
 # Catalog
 
-This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The v1.0 target is thirty booklets across twelve categories, in time for the announcement at the European Congress of Psychology (ECPP) in Dublin, July 2026.
+This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The full long-term catalog targets thirty booklets across twelve categories. The v1.0 announcement target at the European Congress of Psychology (ECPP) in Dublin, July 2026, is the **ten core booklets** marked with `[v1.0]` in the tables below. The remaining twenty booklets are scheduled for v1.5 (2026-10) and v2.0 (2027-04). See [`meta/roadmap.md`](./meta/roadmap.md) for the phase plan.
 
 ## Status legend
 
@@ -11,7 +11,7 @@ This catalog lists every booklet in `claude-code-for-social-scientists`, grouped
 | `paired` | Both `tr.md` and `en.md` drafted, human review pending |
 | `release` | Human-reviewed, version-tagged, included in a public release |
 
-The current version (`v0.1.0-alpha`) contains one booklet at `paired` status (Turkish and English drafts both complete, awaiting public release). Twenty-nine booklets are at `planned` status as of 2026-05-19.
+The current version (`v0.1.0-alpha`) contains one booklet at `paired` status (Turkish and English drafts both complete, awaiting public release). Twenty-nine booklets are at `planned` status as of 2026-05-19. Of these, **nine more belong to the v1.0 announcement target** (see the `[v1.0]` marker per booklet row).
 
 ---
 
@@ -21,9 +21,9 @@ The conceptual introduction. What Claude Code is, how it differs from a chat win
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 001-01-0001 | What is Claude Code? A Social Scientist's Perspective | Claude Code Nedir? Sosyal Bilimci Bakışıyla | `paired` |
-| 001-01-0002 | The Agentic Shift: From Chat Window to Working Partner | Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına | `planned` |
-| 001-01-0003 | Installation, First Session, and Sanity Checks | Kurulum, İlk Oturum, Sağlık Testleri | `planned` |
+| 001-01-0001 `[v1.0]` | What is Claude Code? A Social Scientist's Perspective | Claude Code Nedir? Sosyal Bilimci Bakışıyla | `paired` |
+| 001-01-0002 `[v1.0]` | The Agentic Shift: From Chat Window to Working Partner | Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına | `planned` |
+| 001-01-0003 `[v1.0]` | Installation, First Session, and Sanity Checks | Kurulum, İlk Oturum, Sağlık Testleri | `planned` |
 
 ## 002 — Academic Access / Akademik Erişim
 
@@ -34,7 +34,7 @@ Practical access to journals, citation indexes, reference managers, and institut
 | 002-01-0001 | PubMed and Semantic Scholar MCPs for Working Researchers | Çalışan Araştırmacı İçin PubMed ve Semantic Scholar MCP'leri | `planned` |
 | 002-02-0001 | Zotero, ORCID, and the Reference Manager Bridge | Zotero, ORCID ve Referans Yönetim Köprüsü | `planned` |
 | 002-03-0001 | EZproxy, Institutional VPN, and Off-Campus Realities | EZproxy, Kurumsal VPN ve Kampüs Dışı Erişim | `planned` |
-| 002-04-0001 | DergiPark, ULAKBIM TR Dizin, HEAL-Link, and Regional Indexing | DergiPark, ULAKBIM TR Dizin, HEAL-Link ve Bölgesel İndeksleme | `planned` |
+| 002-04-0001 `[v1.0]` | DergiPark, ULAKBIM TR Dizin, HEAL-Link, and Regional Indexing | DergiPark, ULAKBIM TR Dizin, HEAL-Link ve Bölgesel İndeksleme | `planned` |
 
 ## 003 — Memory System / Hafıza Sistemi
 
@@ -42,7 +42,7 @@ The Memory-as-Vault engineering pattern. How to maintain a persistent academic c
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 003-01-0001 | Memory as Vault: A First-Principles Introduction | Kasa Olarak Hafıza: İlkesel Bir Giriş | `planned` |
+| 003-01-0001 `[v1.0]` | Memory as Vault: A First-Principles Introduction | Kasa Olarak Hafıza: İlkesel Bir Giriş | `planned` |
 | 003-02-0001 | Retrieval Patterns: Indexing a Decade of Notes | Geri Çağırma Kalıpları: On Yıllık Notları İndekslemek | `planned` |
 | 003-03-0001 | Material Passport: Tracking Sources Across Sessions | Material Passport: Kaynakları Oturumlar Arası İzlemek | `planned` |
 
@@ -52,7 +52,7 @@ Folder discipline, Maps of Content, Markdown conventions that survive software c
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 004-01-0001 | Folder Discipline and the Maps of Content (MOC) Pattern | Klasör Disiplini ve MOC Haritası Kalıbı | `planned` |
+| 004-01-0001 `[v1.0]` | Folder Discipline and the Maps of Content (MOC) Pattern | Klasör Disiplini ve MOC Haritası Kalıbı | `planned` |
 | 004-02-0001 | Markdown Conventions That Outlive Tools | Araçlardan Uzun Yaşayan Markdown Alışkanlıkları | `planned` |
 
 ## 005 — Hooks and Automation / Hook'lar ve Otomasyon
@@ -81,7 +81,7 @@ IMRAD scaffolding in Turkish and English, APA 7 with DOI discipline, journal fit
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
 | 007-01-0001 | IMRAD Scaffolding: A Bilingual Approach | IMRAD İskeleti: İki Dilli Bir Yaklaşım | `planned` |
-| 007-02-0001 | APA 7 with DOI Discipline | DOI Disiplini ile APA 7 | `planned` |
+| 007-02-0001 `[v1.0]` | APA 7 with DOI Discipline | DOI Disiplini ile APA 7 | `planned` |
 | 007-03-0001 | Journal Fit and Cover Letters | Dergi Uyumu ve Kapak Mektupları | `planned` |
 
 ## 008 — Data Analysis / Veri Analizi
@@ -100,7 +100,7 @@ Helsinki Declaration, COPE, WAME, ICMJE, STM 2025, EU AI Act 2024/1689 Art. 50, 
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 009-01-0001 | Ethics in AI-Assisted Research: From Principle to Behavior | Yapay Zekâ Destekli Araştırmada Etik: Prensipten Davranışa | `planned` |
+| 009-01-0001 `[v1.0]` | Ethics in AI-Assisted Research: From Principle to Behavior | Yapay Zekâ Destekli Araştırmada Etik: Prensipten Davranışa | `planned` |
 | 009-02-0001 | IRB Protocols with AI Component | Yapay Zekâ Bileşenli IRB Protokolleri | `planned` |
 | 009-03-0001 | KVKK, GDPR, and the EU AI Act for Researchers | Araştırmacı İçin KVKK, GDPR ve AB AI Yasası | `planned` |
 
@@ -110,7 +110,7 @@ Rebuttal letters with traceability matrices, reviewer-response discipline, anti-
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 010-01-0001 | Rebuttal Letters with Traceability Matrices | İzlenebilirlik Matrisli Geri Dönüş Mektupları | `planned` |
+| 010-01-0001 `[v1.0]` | Rebuttal Letters with Traceability Matrices | İzlenebilirlik Matrisli Geri Dönüş Mektupları | `planned` |
 | 010-02-0001 | Anti-AI-Trace Writing for Revisions | Revizyonlar İçin Yapay Zekâ İzi Silme Yazımı | `planned` |
 
 ## 011 — Conference Presentation / Konferans Sunumu
@@ -127,7 +127,7 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 012-01-0001 | When Things Go Wrong: A Working Troubleshooting Protocol | İşler Ters Gittiğinde: Çalışan Bir Sorun Giderme Protokolü | `planned` |
+| 012-01-0001 `[v1.0]` | When Things Go Wrong: A Working Troubleshooting Protocol | İşler Ters Gittiğinde: Çalışan Bir Sorun Giderme Protokolü | `planned` |
 
 ---
 
@@ -139,7 +139,8 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 | `paired` | 1 |
 | `draft` | 0 |
 | `planned` | 29 |
-| **Total v1.0 target** | **30** |
+| **Total catalog** | **30** |
+| **v1.0 announcement target** | **10** (marked `[v1.0]` above) |
 
 ## Versioning
 

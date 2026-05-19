@@ -22,7 +22,7 @@ ai_tools:
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
 human_review_date: "2026-05-19"
-verified_citations_count: 10
+verified_citations_count: 12
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 translation_notes: "Re-authored from the Turkish version (tr.md) against the same outline and the same verified citation set. Examples and academic infrastructure references domesticated for an international audience while preserving the Turkish and Greek specificity where relevant."
@@ -51,7 +51,7 @@ A social scientist should take three things from that sentence.
 
 First, this is not a chat box in a browser tab. A browser session with ChatGPT or Claude.ai ends when the tab is closed. Claude Code can access your folders and files. It can read a note written in a previous session, append to it, and link it to another file. That difference is the difference between a notebook and a vault.
 
-Second, this is an agent system. The word agent has a specific meaning here. An agent is not a simple command-response mechanism. It is a structure that can take a high-level goal, decompose it into subtasks, execute those subtasks in sequence, call on other tools when needed, gather results, and report back. The clinical analogy is the biopsychosocial model of case formulation. A patient is not approached as a symptom list but as a system operating simultaneously at biological, psychological, and social levels. The agent model treats a task in the same layered way, not as a single response but as a sequence of subtasks.
+Second, this is an agent system. The word agent has a specific meaning here. An agent is not a simple command-response mechanism. It is a structure that can take a high-level goal, decompose it into subtasks, execute those subtasks in sequence, call on other tools when needed, gather results, and report back. The clinical analogy is the biopsychosocial model of case formulation (Engel, 1977). A patient is not approached as a symptom list but as a system operating simultaneously at biological, psychological, and social levels. The agent model treats a task in the same layered way, not as a single response but as a sequence of subtasks.
 
 Third, this is a general-purpose model, not a tool specialized for the social sciences. That fact matters because Turkish academic literature, clinical psychology methodology, IRB protocols, COPE publication ethics, and similar domains depend on your direction. Research on the potential of large language models to transform computational social science has shown that the quality of that direction directly determines the quality of the output (Ziems et al., 2024).
 
@@ -83,7 +83,7 @@ Three points in this scenario matter. First, the tool produces no summary of any
 
 This scenario contains the basic formula for usefulness in the social sciences. A structured task. A verifiable output. Human verification in the last step.
 
-The real risk arises when this formula is violated. If the doctoral student instead instructs the tool to "summarize the two hundred articles and write a systematic review," the output will be syntactically valid and substantively unreliable. A careful philosophical reading of generative language models has demonstrated that the epistemic character of their output can extend, at the limit, into what one might describe as bullshit production (Hicks et al., 2024). For this reason, what matters is not the tool but the methodological framework imposed by the researcher using it.
+The real risk arises when this formula is violated. If the doctoral student instead instructs the tool to "summarize the two hundred articles and write a systematic review," the output will be syntactically valid and substantively unreliable. A careful philosophical reading of generative language models has demonstrated that the epistemic character of their output can extend, at the limit, into what one might describe as bullshit production (Hicks et al., 2024). Frankfurt's (2005) earlier philosophical treatment of bullshit as a category provides the conceptual scaffolding for this reading. For this reason, what matters is not the tool but the methodological framework imposed by the researcher using it.
 
 ## 5. The Turkish and Greek Academic Environment
 
@@ -141,6 +141,10 @@ Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the da
 
 Else, H. (2023). Abstracts written by ChatGPT fool scientists. *Nature*, 613(7944), 423. https://doi.org/10.1038/d41586-023-00056-7
 
+Engel, G. L. (1977). The need for a new medical model: A challenge for biomedicine. *Science*, 196(4286), 129-136. https://doi.org/10.1126/science.847460
+
+Frankfurt, H. G. (2005). *On bullshit*. Princeton University Press. ISBN 978-0-691-12294-6
+
 Hicks, M. T., Humphries, J., & Slater, J. (2024). ChatGPT is bullshit. *Ethics and Information Technology*, 26(2), 38. https://doi.org/10.1007/s10676-024-09775-5
 
 Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 30(7-8), 1-9. https://doi.org/10.1080/08989621.2023.2168535
@@ -163,7 +167,7 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 **Version.** `0.1.0`
 **Date.** 2026-05-19
 **Approximate word count.** 2700 (English body text)
-**Verified citations.** 10
+**Verified citations.** 12
 **Fabricated citations.** 0
 **Previous booklet.** None (first booklet)
 **Next booklet.** [`001-01-0002`](../001-01-0002/en.md) - The Agentic Shift: From Chat Window to Working Partner

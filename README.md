@@ -14,7 +14,7 @@ A bilingual, open-source guide for social scientists who want to use Anthropic's
 
 ## What this guide is
 
-A practical, evidence-led handbook for using Claude Code in academic work that is not in computer science. The audience is researchers in psychology, sociology, education, public health, communication, political science, anthropology, and adjacent fields, especially those operating in non-English academic ecosystems (Turkey, Greece, the broader Mediterranean and Middle East, Latin America, South and Southeast Asia, and Sub-Saharan Africa).
+A practical, evidence-led handbook for using Claude Code in academic work that is not in computer science. The audience is researchers in psychology, sociology, education, public health, communication, political science, anthropology, and adjacent fields. Every booklet is delivered in Turkish and English in full parallel.
 
 The guide covers, across twelve thematic categories, the questions a social scientist actually faces:
 
@@ -111,20 +111,11 @@ This work is registered through:
 
 ## Roadmap
 
-See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The headline targets are v0.1 (scaffold + first booklet, 2026-05), v1.0 (thirty booklets, 2026-07 in time for ECPP Dublin), v1.5 (community discussions opened, fifty booklets, 2026-10), v2.0 (seventy-plus booklets, living lab, conference citations, instructional use, 2027-04).
+See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The headline targets are v0.1 (scaffold + first booklet, 2026-05), v1.0 (ten core booklets across the foundational and highest-value categories, 2026-07 in time for ECPP Dublin), v1.5 (community discussions opened, additional categories drafted, 2026-10), v2.0 (full thirty-booklet catalog, living lab, conference citations, instructional use, 2027-04).
 
 ## Contributing
 
 Contributions are welcome from social science researchers, clinicians, instructional designers, librarians, and engineers who care about how AI lands in non-English academic ecosystems. See [`CONTRIBUTING.md`](./CONTRIBUTING.md) (or [`CONTRIBUTING.tr.md`](./CONTRIBUTING.tr.md)) for the pull request workflow, the bilingual pairing rule, and the disclosure expectations.
-
-## Acknowledgements
-
-Two reference repositories shaped the early structural thinking, although the present guide diverged in scope, audience, and discipline:
-
-- [Galaxy-Dawn/claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar) (MIT) for a trilingual, AI/ML-leaning research-assistant skill bundle.
-- [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) (CC-BY-NC 4.0) for a structured triangulation pipeline (Semantic Scholar, OpenAlex, Crossref) and Material Passport pattern.
-
-Selected ideas have been adapted for Turkish and social-science contexts. Differences and design decisions are documented in the author's working notes.
 
 ## Contact
 
@@ -135,7 +126,7 @@ Onour Impram — `onuribram@outlook.com` — Istanbul, Türkiye / Komotini, Gree
 <details>
 <summary><strong>Türkçe özet (kısa)</strong></summary>
 
-Bu depo, sosyal bilim alanındaki araştırmacıların Anthropic Claude Code aracını akademik üretim sürecine nasıl entegre edebileceğini anlatan iki dilli açık kaynak bir rehberdir. Hedef kitle psikoloji, sosyoloji, eğitim, halk sağlığı, iletişim, siyaset bilimi, antropoloji ve yakın disiplinlerde çalışan, özellikle Türkiye, Yunanistan, Akdeniz havzası, Ortadoğu, Latin Amerika, Güney ve Güneydoğu Asya, Sahra Altı Afrika gibi İngilizce dışı akademik ekosistemlerde üretim yapan araştırmacılardır.
+Bu depo, sosyal bilim alanındaki araştırmacıların Anthropic Claude Code aracını akademik üretim sürecine nasıl entegre edebileceğini anlatan iki dilli açık kaynak bir rehberdir. Hedef kitle psikoloji, sosyoloji, eğitim, halk sağlığı, iletişim, siyaset bilimi, antropoloji ve yakın disiplinlerde çalışan araştırmacılardır. Her broşür Türkçe ve İngilizce tam paralel sunulur.
 
 Her broşür Türkçe ve İngilizce paralel yayımlanır. Lisanslama çift katmanlıdır. Kod ve yapılandırma için Apache 2.0, broşür ve düz yazı için CC-BY-NC-SA 4.0. Yapay zekâ ortak yazarlığı yayın camiasının uzlaşı çerçevesinde (COPE, WAME, ICMJE, STM 2025, AB Yapay Zekâ Yasası 2024/1689 Madde 50, ENAI) her broşürün başlığında açıkça beyan edilir.
 

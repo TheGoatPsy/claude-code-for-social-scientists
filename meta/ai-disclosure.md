@@ -10,6 +10,8 @@ This page is updated by the maintainer at each release. Readers who want the lat
 |---|---|---|---|---|---|---|
 | 001-01-0001 | tr | substantial-drafting | complete | 12 | 0 | 2026-05-19 |
 | 001-01-0001 | en | substantial-drafting | complete | 12 | 0 | 2026-05-19 |
+<!-- citation count changed 10 to 12 on 2026-05-19 after peer-review remediation faz 3, which added Engel 1977 (biopsychosocial frame) and Frankfurt 2005 (philosophical scaffolding for the bullshit reading). -->
+
 | 001-01-0002 | tr | n/a (placeholder) | n/a | 0 | 0 | n/a |
 | 001-01-0002 | en | n/a (placeholder) | n/a | 0 | 0 | n/a |
 | 001-01-0003 | tr | n/a (placeholder) | n/a | 0 | 0 | n/a |
@@ -25,6 +27,8 @@ Twenty-seven booklets in [`CATALOG.md`](../CATALOG.md) are at `planned` status a
 | Booklets at `release` status | 0 |
 | Booklets at `draft` status | 0 |
 | Total verified citations across drafted booklets | 24 (12 unique, citations shared between tr and en) |
+<!-- 24 = 12 tr + 12 en, all 12 are the same set shared across both language versions of 001-01-0001. -->
+
 | Total fabricated citations across drafted booklets | 0 |
 | Fabrication rate (fabricated / total) | 0% |
 

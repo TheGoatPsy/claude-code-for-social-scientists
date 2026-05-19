@@ -14,7 +14,7 @@ Anthropic Claude Code'u araştırmada, eğitimde ve akademik yazımda kullanmak 
 
 ## Rehberin amacı
 
-Bilgisayar bilimi olmayan akademik çalışmada Claude Code kullanımı için kanıta dayalı, pratiğe oturmuş bir el kitabı. Hedef kitle, psikoloji, sosyoloji, eğitim, halk sağlığı, iletişim, siyaset bilimi, antropoloji ve yakın disiplinlerde çalışan araştırmacılar, özellikle Türkiye, Yunanistan, Akdeniz havzası, Ortadoğu, Latin Amerika, Güney ve Güneydoğu Asya, Sahra Altı Afrika gibi İngilizce dışı akademik ekosistemlerde üretim yapan akademisyenler.
+Bilgisayar bilimi olmayan akademik çalışmada Claude Code kullanımı için kanıta dayalı, pratiğe oturmuş bir el kitabı. Hedef kitle, psikoloji, sosyoloji, eğitim, halk sağlığı, iletişim, siyaset bilimi, antropoloji ve yakın disiplinlerde çalışan araştırmacılardır. Her broşür Türkçe ve İngilizce tam paralel sunulur.
 
 Rehber, sosyal bilimcinin gerçekte karşılaştığı soruları on iki tematik kategoride ele alır.
 
@@ -111,20 +111,11 @@ Bu çalışma şu kanallarla kayıt altına alınmıştır.
 
 ## Yol haritası
 
-Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Ana hedefler. v0.1 (iskelet ve ilk broşür, 2026-05). v1.0 (otuz broşür, ECPP Dublin için 2026-07). v1.5 (topluluk tartışmaları açık, elli broşür, 2026-10). v2.0 (yetmişten fazla broşür, canlı laboratuvar, konferans atıfları, eğitim materyali kullanımı, 2027-04).
+Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Ana hedefler. v0.1 (iskelet ve ilk broşür, 2026-05). v1.0 (temel ve en yüksek değerli kategorilerden on çekirdek broşür, ECPP Dublin için 2026-07). v1.5 (topluluk tartışmaları açık, ek kategoriler eklenmiş, 2026-10). v2.0 (tam otuz broşürlük katalog, canlı laboratuvar, konferans atıfları, eğitim materyali kullanımı, 2027-04).
 
 ## Katkıda bulunma
 
 Yapay zekânın İngilizce dışı akademik ekosistemlere nasıl indiğini önemseyen sosyal bilim araştırmacıları, klinisyenler, eğitim tasarımcıları, kütüphaneciler ve mühendislerin katkıları beklenir. Pull request iş akışı, iki dilli eşleşme kuralı ve ifşa beklentileri için [`CONTRIBUTING.tr.md`](./CONTRIBUTING.tr.md) dosyasını okuyunuz.
-
-## Teşekkürler
-
-İki referans depo, erken yapısal düşünceyi etkilemiştir. Bu rehber, kapsam, kitle ve disiplin bakımından her ikisinden de ayrıştı. Yine de borç vardır.
-
-- [Galaxy-Dawn/claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar) (MIT). Üç dilli, yapay zekâ ve makine öğrenmesine yaslanan bir araştırmacı yardımcısı beceri demeti.
-- [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) (CC-BY-NC 4.0). Yapılandırılmış üçgenleme boru hattı (Semantic Scholar, OpenAlex, Crossref) ve Material Passport kalıbı.
-
-Seçilmiş fikirler Türkçe ve sosyal bilim bağlamına uyarlandı. Farklar ve tasarım kararları yazarın çalışma notlarında belgelenmiştir.
 
 ## İletişim
 
