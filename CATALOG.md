@@ -11,7 +11,7 @@ This catalog lists every booklet in `claude-code-for-social-scientists`, grouped
 | `paired` | Both `tr.md` and `en.md` drafted, human review pending |
 | `release` | Human-reviewed, version-tagged, included in a public release |
 
-The repository now contains six booklets at `paired` status. Both Turkish and English drafts are complete for all six. Booklet `001-01-0001` is human-reviewed, while `001-01-0002`, `001-01-0003`, `002-04-0001`, `003-01-0001`, and `004-01-0001` have human review pending. Twenty-four booklets are at `planned` status as of 2026-05-24. Of these planned booklets, **four more belong to the v1.0 announcement target** (see the `[v1.0]` marker per booklet row).
+The repository now contains nine booklets at `paired` status. Both Turkish and English drafts are complete for all nine. Booklet `001-01-0001` is human-reviewed, while `001-01-0002`, `001-01-0003`, `002-04-0001`, `003-01-0001`, `004-01-0001`, `007-02-0001`, `009-01-0001`, and `010-01-0001` have human review pending. Twenty-one booklets are at `planned` status as of 2026-05-24. Of these planned booklets, **one more belongs to the v1.0 announcement target** (`012-01-0001`, the closing troubleshooting booklet).
 
 ---
 
@@ -81,7 +81,7 @@ IMRAD scaffolding in Turkish and English, APA 7 with DOI discipline, journal fit
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
 | 007-01-0001 | IMRAD Scaffolding: A Bilingual Approach | IMRAD İskeleti: İki Dilli Bir Yaklaşım | `planned` |
-| 007-02-0001 `[v1.0]` | APA 7 with DOI Discipline | DOI Disiplini ile APA 7 | `planned` |
+| 007-02-0001 `[v1.0]` | APA 7 with DOI Discipline | DOI Disiplini ile APA 7 | `paired` |
 | 007-03-0001 | Journal Fit and Cover Letters | Dergi Uyumu ve Kapak Mektupları | `planned` |
 
 ## 008 — Data Analysis / Veri Analizi
@@ -100,7 +100,7 @@ Helsinki Declaration, COPE, WAME, ICMJE, STM 2025, EU AI Act 2024/1689 Art. 50, 
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 009-01-0001 `[v1.0]` | Ethics in AI-Assisted Research: From Principle to Behavior | Yapay Zekâ Destekli Araştırmada Etik: Prensipten Davranışa | `planned` |
+| 009-01-0001 `[v1.0]` | Ethics in AI-Assisted Research, From Principle to Behavior | Yapay Zekâ Destekli Araştırmada Etik, Prensipten Davranışa | `paired` |
 | 009-02-0001 | IRB Protocols with AI Component | Yapay Zekâ Bileşenli IRB Protokolleri | `planned` |
 | 009-03-0001 | KVKK, GDPR, and the EU AI Act for Researchers | Araştırmacı İçin KVKK, GDPR ve AB AI Yasası | `planned` |
 
@@ -110,7 +110,7 @@ Rebuttal letters with traceability matrices, reviewer-response discipline, anti-
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 010-01-0001 `[v1.0]` | Rebuttal Letters with Traceability Matrices | İzlenebilirlik Matrisli Geri Dönüş Mektupları | `planned` |
+| 010-01-0001 `[v1.0]` | Rebuttal Letters with Traceability Matrices | İzlenebilirlik Matrisleri ile Hakem Yanıt Mektupları | `paired` |
 | 010-02-0001 | Anti-AI-Trace Writing for Revisions | Revizyonlar İçin Yapay Zekâ İzi Silme Yazımı | `planned` |
 
 ## 011 — Conference Presentation / Konferans Sunumu
@@ -136,9 +136,9 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 | Status | Count |
 |---|---|
 | `release` | 0 |
-| `paired` | 6 |
+| `paired` | 9 |
 | `draft` | 0 |
-| `planned` | 24 |
+| `planned` | 21 |
 | **Total catalog** | **30** |
 | **v1.0 announcement target** | **10** (marked `[v1.0]` above) |
 
@@ -154,4 +154,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md). The short version. Open an issue wit
 
 ---
 
-**Last updated:** 2026-05-24 (Phase 2 booklets 002-04-0001, 003-01-0001, and 004-01-0001 paired)
+**Last updated:** 2026-05-24 (Phase 3 booklets 007-02-0001, 009-01-0001, and 010-01-0001 paired)
