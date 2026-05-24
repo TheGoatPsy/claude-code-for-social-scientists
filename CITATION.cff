@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it using the metadata below."
-title: "Sosyal Bilimciler İçin Claude Code Rehberi (Claude Code for Social Scientists)"
+title: "Sosyal Bilimciler ??in Claude Code Rehberi (Claude Code for Social Scientists)"
 abstract: >-
   A bilingual (Turkish and English) open-source guide for social scientists who want to integrate
   Anthropic's Claude Code into their research, teaching, and academic writing. Twelve thematic
@@ -37,6 +37,9 @@ identifiers:
     value: "10.5281/zenodo.20289687"
     description: "Zenodo concept DOI, resolves to the latest version"
   - type: doi
+    value: "10.5281/zenodo.20364633"
+    description: "Zenodo version DOI for v1.1.1 (2026-05-24)"
+  - type: doi
     value: "10.5281/zenodo.20364287"
     description: "Zenodo version DOI for v1.1.0 (2026-05-24)"
   - type: doi
@@ -50,7 +53,7 @@ identifiers:
     description: "Zenodo version DOI for v0.1.0-alpha (2026-05-19), retained for historical citation continuity"
 preferred-citation:
   type: software
-  title: "Sosyal Bilimciler İçin Claude Code Rehberi (Claude Code for Social Scientists)"
+  title: "Sosyal Bilimciler ??in Claude Code Rehberi (Claude Code for Social Scientists)"
   authors:
     - given-names: Onour
       family-names: Impram
