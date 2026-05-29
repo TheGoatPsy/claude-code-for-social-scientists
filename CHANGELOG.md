@@ -33,7 +33,7 @@ Major release. An audit-driven correctness and hardening pass, the first content
 ### Zenodo
 
 - Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (resolves to the latest released version).
-- Version DOI for v2.0.0: minted by Zenodo after the GitHub release is published, and recorded here afterward.
+- Version DOI for v2.0.0: [10.5281/zenodo.20440754](https://doi.org/10.5281/zenodo.20440754).
 
 ## [1.1.1] - 2026-05-24
 
