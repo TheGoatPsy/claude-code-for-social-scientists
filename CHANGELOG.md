@@ -21,7 +21,7 @@ Minor release. A scholarship and voice quality upgrade of all thirteen released 
 ### Zenodo
 
 - Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (resolves to the latest released version).
-- Version DOI for v2.4.0: minted on GitHub release and recorded here in a follow-up commit.
+- Version DOI for v2.4.0: [10.5281/zenodo.20549062](https://doi.org/10.5281/zenodo.20549062).
 
 ## [2.3.0] - 2026-05-29
 
