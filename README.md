@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Author Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, dual licensed Apache 2.0 plus CC-BY-NC-SA 4.0, v2.3.0.">
+  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Author Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, dual licensed Apache 2.0 plus CC-BY-NC-SA 4.0, v2.4.0.">
 </p>
 
 # Claude Code for Social Scientists
 
-A bilingual, open-source guide for social scientists who want to use Anthropic's Claude Code in their research, teaching, and academic writing. Written for researchers outside the English-speaking world as well as inside it, by a working clinical psychologist and PhD candidate who uses these tools in real academic production.
+A bilingual, open-source guide for social scientists who want to use Anthropic's Claude Code in their research, teaching, and academic writing. Written by a working clinical psychologist and PhD candidate — for researchers outside the English-speaking world as much as inside it — drawing on real academic production, not demonstration projects.
 
-> **Status:** v2.3.0 release. Thirteen released booklets in Turkish and English, human-reviewed and citation-audited, plus ten companion Claude Code project skills that turn the booklets into reusable workflows. v2.3.0 is a Turkish-language quality revision: the Turkish prose of all thirteen booklets and the Turkish README and CONTRIBUTING was rewritten in the author's native voice, with full bilingual parity and every citation preserved. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
+> **Status:** v2.4.0 release. Thirteen booklets in Turkish and English, human-reviewed and citation-audited, plus ten companion Claude Code project skills that turn the booklets into repeatable workflows. v2.4.0 is a scholarship and voice quality upgrade: every booklet was revised on two dimensions, substantive scholarship and technical accuracy first, then the author's voice. Overclaims were hedged, misapplied citations were replaced with verified sources, and an independent review confirmed zero fabricated citations, with verified citation declarations rising from 240 to 248 and full bilingual parity preserved. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
 
 > **TR readers:** A Turkish overview lives at the bottom of this file. The full Turkish version is in [`README.tr.md`](./README.tr.md). Every booklet exists as `tr.md` and `en.md` side by side.
 
@@ -14,7 +14,7 @@ A bilingual, open-source guide for social scientists who want to use Anthropic's
 
 ## What this guide is
 
-A practical, evidence-led handbook for using Claude Code in academic work that is not in computer science. The audience is researchers in psychology, sociology, education, public health, communication, political science, anthropology, and adjacent fields. Every booklet is delivered in Turkish and English in full parallel.
+A practical, evidence-led handbook for using Claude Code in academic work outside computer science. The audience is researchers in psychology, sociology, education, public health, communication, political science, anthropology, and adjacent fields. Every booklet is delivered in Turkish and English in full parallel.
 
 The guide covers, across twelve thematic categories, the questions a social scientist actually faces:
 
@@ -31,23 +31,23 @@ The guide covers, across twelve thematic categories, the questions a social scie
 11. **Conference presentation.** Slides, posters, lightning talks, networking sequences.
 12. **Troubleshooting.** When tools fail, when papers disagree, when reviewers ask the wrong question.
 
-Each booklet is short, opinionated, and tested in the author's own academic practice.
+Each booklet is short, opinionated, and tested against the author's own academic practice.
 
 ## Why bilingual
 
-Turkish and English are presented in full parallel. There are roughly ninety million Turkish speakers globally and a large diaspora in Western Europe, and Turkish-language academic AI resources are scarce relative to demand. This gap is not incidental. A large 2026 survey of coding agents in the social sciences samples researchers in the United States and Canada and finds adoption skewed by career stage, gender, and institutional prestige ([Anthropic, 2026](https://www.anthropic.com/research/coding-agents-social-sciences)). A guide written in full parallel from outside that frame is one concrete way to widen access. The English version exists so the work is reviewable by international colleagues, citable in English-language journals, and reachable through global academic search engines. Each booklet lives in a folder with `tr.md` and `en.md` as siblings. A continuous-integration check refuses any commit that breaks this pairing.
+Turkish and English are presented in full parallel. There are roughly ninety million Turkish speakers globally and a large diaspora in Western Europe; Turkish-language academic AI resources are scarce relative to that demand. The gap is not incidental. A large 2026 survey of coding agents in the social sciences samples researchers in the United States and Canada and finds adoption skewed by career stage, gender, and institutional prestige ([Anthropic, 2026](https://www.anthropic.com/research/coding-agents-social-sciences)). A guide written in full parallel from outside that frame is one concrete way to push against the skew. The English version exists so the work is reviewable by international colleagues, citable in English-language journals, and reachable through global academic search engines. Each booklet lives in a folder with `tr.md` and `en.md` as siblings. A continuous-integration check refuses any commit that breaks this pairing.
 
 ## Who this is for, who it is not
 
 It is for the assistant professor running a survey study, the PhD student writing a systematic review, the postdoc preparing an R&R, the lecturer designing a syllabus, the clinical researcher navigating IRB. It is for people who can read code but who do not want to spend a week learning a new toolchain to write one paragraph.
 
-It is not a Claude Code reference manual (Anthropic publishes those). It is not an AI hype document. It does not promise that AI will write your paper for you. It also does not pretend AI plays no role in academic work in 2026; the position is honest co-authorship under the consolidating publishing consensus on AI disclosure (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) and the transparency obligations of the EU AI Act 2024/1689.
+It is not a Claude Code reference manual — Anthropic publishes those. It is not an AI hype document. It does not promise that AI will write your paper for you. It also does not pretend AI plays no role in academic work in 2026; the position is honest co-authorship under the consolidating publishing consensus on AI disclosure (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) and the transparency obligations of the EU AI Act 2024/1689.
 
 ## Authorship and AI co-authorship
 
-The author is Onour Impram, a clinical psychologist licensed in Türkiye, Greece, and Ireland, a PhD candidate in Clinical and Health Psychology at Istanbul University, an external lecturer at Biruni University, and an AI and mental health researcher. ORCID: [0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928).
+The author is Onour Impram: a clinical psychologist licensed in Türkiye, Greece, and Ireland; a PhD candidate in Clinical and Health Psychology at Istanbul University; an external lecturer at Biruni University; and an AI and mental health researcher. ORCID: [0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928).
 
-Claude Code is used as a drafting and verification assistant. Each booklet carries a frontmatter block declaring the contribution level (`ai_assisted`, `ai_tools.model_alias`, `ai_tools.model_dated`, `ai_contribution_level`, `human_review`) in the spirit of the consolidating publishing consensus on AI disclosure (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) combined with EU AI Act 2024/1689 Article 50 transparency obligations and ENAI recommendations on the ethical use of AI in research. See [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md) for the full policy.
+Claude Code is used as a drafting and verification assistant. Each booklet carries a frontmatter block declaring the contribution level (`ai_assisted`, `ai_tools.model_alias`, `ai_tools.model_dated`, `ai_contribution_level`, `human_review`) in keeping with the consolidating publishing consensus on AI disclosure (COPE 2023, WAME 2023, ICMJE 2024, STM 2025), EU AI Act 2024/1689 Article 50 transparency obligations, and ENAI recommendations on the ethical use of AI in research. See [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md) for the full policy.
 
 ## Repository layout
 
@@ -98,7 +98,7 @@ So `001-01-0001` is the first booklet, in the first subcategory, of the Foundati
 
 ## Project Skills
 
-The v2.3.0 surface includes ten Claude Code project skills under [`.claude/skills/`](./.claude/skills/). The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries.
+The v2.4.0 surface includes ten Claude Code project skills under [`.claude/skills/`](./.claude/skills/). The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries.
 
 | Skill | Companion booklets | Purpose |
 |---|---|---|
@@ -141,7 +141,7 @@ This work is registered through:
 
 ## Roadmap
 
-See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v2.3.0, a Turkish-language quality revision that rewrites the prose of all thirteen booklets and the Turkish README and CONTRIBUTING in the author's native voice, with full bilingual parity and every citation preserved. No booklet was added. A later major milestone, the full thirty-booklet catalog with a living lab, conference citations, and instructional use, is targeted for v3.0.
+See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v2.4.0: a scholarship and voice quality upgrade that revised all thirteen booklets on two dimensions, substantive scholarship and technical accuracy first, then the author's voice, with full bilingual parity and every citation preserved or strengthened. No booklet was added. The next major milestone — the full thirty-booklet catalog, with a living lab, conference citations, and instructional use — is targeted for v3.0.
 
 ## Contributing
 
@@ -156,9 +156,9 @@ Onour Impram. Istanbul, Türkiye / Komotini, Greece. Use GitHub issues, discussi
 <details>
 <summary><strong>Türkçe özet (kısa)</strong></summary>
 
-Bu depo, sosyal bilim alanındaki araştırmacıların Anthropic Claude Code aracını akademik üretim sürecine nasıl entegre edebileceğini anlatan iki dilli açık kaynak bir rehberdir. Hedef kitle psikoloji, sosyoloji, eğitim, halk sağlığı, iletişim, siyaset bilimi, antropoloji ve yakın disiplinlerde çalışan araştırmacılardır. Her broşür Türkçe ve İngilizce tam paralel sunulur.
+Bu depo, sosyal bilim alanındaki araştırmacıların Anthropic Claude Code aracını akademik üretim sürecine nasıl entegre edebileceğini anlatan iki dilli, açık kaynak bir rehberdir. Hedef kitle psikoloji, sosyoloji, eğitim, halk sağlığı, iletişim, siyaset bilimi, antropoloji ve yakın disiplinlerde çalışan araştırmacılardır. Her broşür Türkçe ve İngilizce tam paralel sunulur.
 
-Her broşür Türkçe ve İngilizce paralel yayımlanır. Lisanslama çift katmanlıdır. Kod ve yapılandırma için Apache 2.0, broşür ve düz yazı için CC-BY-NC-SA 4.0. Yapay zekâ ortak yazarlığı yayın camiasının uzlaşı çerçevesinde (COPE, WAME, ICMJE, STM 2025, AB Yapay Zekâ Yasası 2024/1689 Madde 50, ENAI) her broşürün başlığında açıkça beyan edilir.
+Lisanslama çift katmanlıdır: kod ve yapılandırma için Apache 2.0, broşür ve düz yazı için CC-BY-NC-SA 4.0. Yapay zekâ ortak yazarlığı, yayın camiasının uzlaşı çerçevesi (COPE, WAME, ICMJE, STM 2025, AB Yapay Zekâ Yasası 2024/1689 Madde 50, ENAI) kapsamında her broşürün başlığında açıkça beyan edilir.
 
 Yazar Onour Impram, Türkiye, Yunanistan ve İrlanda lisanslı klinik psikolog, İstanbul Üniversitesi Klinik ve Sağlık Psikolojisi doktora adayıdır. Tam Türkçe tanıtım için [`README.tr.md`](./README.tr.md) dosyasını inceleyin. Katkı kuralları ve dil paritesi politikası için [`CONTRIBUTING.tr.md`](./CONTRIBUTING.tr.md).
 
