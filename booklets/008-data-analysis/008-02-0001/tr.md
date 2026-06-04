@@ -6,7 +6,7 @@ category: "008-data-analysis"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-05-29"
-date_last_revised: "2026-05-29"
+date_last_revised: "2026-06-04"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,10 +21,11 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-05-29"
-verified_citations_count: 9
+human_review_date: "2026-06-04"
+verified_citations_count: 11
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
+translation_notes: "Re-authored from the Turkish version (tr.md) against the same outline and the same verified citation set. The argument and the bibliographic set are identical across both languages. Phrasing is native to each."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
 status: "release"
@@ -32,79 +33,97 @@ status: "release"
 
 # Yapay Zekâ Danışma Disipliniyle İstatistiksel Test Seçimi
 
-Bu kategorinin ilk broşürü, ajansal nicel analizin yeniden üretilebilirlik omurgasını kurdu. Bu broşür, o analizin çıkarımsal kalbine iner: hangi testin çalıştırılacağı kararına. Anthropic'in 2026 taraması, ankete katılan sosyal bilimcilerin coding agent'ı en çok nicel veriyi analiz etmek için kullandığını, ve aynı araştırmacıların yapay zekânın seçici raporlamayı kötüleştirmesinden çekindiğini kaydeder (Lyttelton ve diğerleri, 2026). Test seçimi, tam da bu korkunun ya gerçekleştiği ya da disipline edildiği yerdir. Bir ajan her testi anında önerebildiğinde, hangi testi seçtiğiniz artık yavaş bir düşünme sürecinin değil, bir istem uzaklığındaki ani bir kararın ürünüdür. Bu broşür, o danışmayı dürüst ve savunulabilir tutmanın disiplinini ele alır.
+Bu kategorinin önceki broşürü, ajansal nicel analizin yeniden üretilebilirlik omurgasını kurdu: spesifikasyon günlüğü, sabit tohum, temiz ortam (broşür 008-01-0001). Bu broşür, o analizin çıkarımsal kalbine iner: hangi testin çalıştırılacağı kararına. Anthropic'in 2026 taramasına göre ankete katılan sosyal bilimciler, coding agent'ı en çok nicel veri analizinde kullandıklarını ve aynı araştırmacıların yapay zekânın seçici raporlamayı kötüleştirmesinden çekindiğini belirtmiştir (Lyttelton ve diğerleri, 2026, bu broşürün öğrettiği ürün olan Claude Code'un üreticisi Anthropic tarafından yayımlanmış bir tarama raporu, hakemli değil). Test seçimi, tam da bu korkunun ya gerçekleştiği ya da disipline edildiği noktadır. Bir ajan her testi anında önerebildiğinde, hangi testi seçtiğiniz artık yavaş bir düşünme sürecinin değil, bir istem uzaklığındaki ani bir kararın ürünüdür. Bu broşür, o danışmayı dürüst ve savunulabilir tutmanın disiplinini ele alır.
 
-## 1. Test seçimi neden ajansal çağda kritik bir karardır
+## 1. Test Seçimi Neden Ajansal Çağda Kritik Bir Karardır
 
-Bir istatistiksel test, bir çıkarım taahhüdüdür. Hangi testi çalıştırdığınız, veriden ne iddia edebileceğinizi belirler. Bir ajan bu kararı tek bir hamlede sıkıştırır: bir test önerir, gerekçesini açıklar, çalıştırır ve sonucu yorumlar. Anthropic'in taraması, ankete katılan araştırmacıların kullanımının bu yöne, otonom analize yoğunlaştığını gösterir (Lyttelton ve diğerleri, 2026).
+Bir istatistiksel test, bir çıkarım taahhüdüdür. Hangi testi çalıştırdığınız, veriden ne iddia edebileceğinizi belirler. Ajan bu kararı tek bir hamlede sıkıştırır: bir test önerir, gerekçesini açıklar, çalıştırır ve sonucu yorumlar. Araştırmacı bir önceki adımın çıktısını henüz okumadan. Lyttelton ve diğerlerinin (2026) taraması, ankete katılanların kullanımının tam bu yönde, otonom analize doğru yoğunlaştığını kayıt altına almaktadır.
 
-Test seçimi eskiden yavaş bir süreçti. Araştırmacı uzun düşünür, belki bir istatistik danışmanına başvururdu. Bu yavaşlık, istemeden de olsa bir koruma işlevi görürdü. Şimdi ajan, her an ulaşılabilir bir danışmandır. Hız değişti, ama sorumluluk değişmedi. Danışman her an kapıda beklese de kararın gerekçesini araştırmacı taşımalıdır. Bu yük başkasına devredilemez. Bir testi seçmek, o testin varsaydığı dünyayı, ölçüm düzeyini ve örneklem yapısını kabul etmektir. Bu kabulü ajan değil, araştırmacı imzalar.
+Test seçimi eskiden yavaş bir süreçti. Araştırmacı veri yapısı üzerinde uzun düşünür, koridorun karşısındaki istatistik danışmanına uğrar, üzerine uyurdu. İlk regresyon modelini kurmaya çalışan bir doktora öğrencisi, bir yöntembilim ders kitabıyla öğleden sonrasını geçirdikten sonra modeline karar verirdi. Bu yavaşlık, istemeden de olsa bir koruma işlevi görürdü: kararın sürtünmesi, anlamıyla yüzleşmeyi zorunlu kılıyordu. Şimdi ajan, her an ulaşılabilir ve hiçbir zaman "yarın arayın" demeyen bir danışmandır.
 
-## 2. Araştırmacı serbestlik dereceleri ve test seçiminin esnekliği
+Hız değişti. Sorumluluk değişmedi.
 
-Bir veri seti karşısında araştırmacının verdiği kararlar bir serbestlik dereceleri kümesi oluşturur. Simmons ve diğerleri (2011), bu serbestlik derecelerinin açıkça raporlanmadığında neredeyse her sonucu istatistiksel olarak anlamlı gösterebileceğini deneysel olarak ortaya koyar. Test seçimi, bu serbestlik derecelerinin en büyüklerinden biridir. Aynı hipotez, bir parametrik testle anlamsız, bir parametrik olmayan testle anlamlı çıkabilir.
+Danışmanın sürekli kapıda beklemiş olması, araştırmacıdan kararı gerekçelendirme yükünü kaldırmaz. Bir testi seçmek, o testin varsaydığı dünyayı kabul etmektir: gerektirdiği ölçüm düzeyini, önkabul ettiği dağılımsal özellikleri, veri olarak aldığı örneklem yapısını. Bu kabuller epistemik bir ağırlık taşır. Ne iddia edilebileceğini ve ne iddia edilemeyeceğini belirler. Yöntem bölümünde, tez savunmasında ya da hakem yanıt mektubunda bu kabulün altına imzasını koyan araştırmacıdır, ajan değil.
 
-Wicherts ve diğerleri (2016), psikolojik çalışmaların planlanması, yürütülmesi, analizi ve raporlanmasındaki serbestlik derecelerini bir kontrol listesinde toplar ve bunların p-değeri avcılığına nasıl yol açtığını gösterir. Bu listenin değeri, kararları önceden görünür kılmasıdır. Bir ajana hangi testi kullanmalıyım diye sorulduğunda, ajan birkaç seçenek sunabilir, ve en cazip seçenek çoğu zaman anlamlılık verendir. Wicherts ve diğerlerinin kontrol listesi, bu cazibeyi insan tarafında dizginleyen disiplindir. Serbestlik dereceleri, ajana danışmadan önce sayılır.
+## 2. Araştırmacı Serbestlik Dereceleri ve Test Seçiminin Esnekliği
 
-## 3. Çatallanan yolların bahçesi, test seçiminde
+Bir veri setiyle yüzleşen araştırmacının verdiği kararlar, yöntemsel literatürün araştırmacı serbestlik dereceleri olarak adlandırdığı şeyi oluşturur. Simmons ve diğerleri (2011), bu serbestlik derecelerinin açıkça raporlanmadığında hemen her sonucu istatistiksel olarak anlamlı gösterebileceğini deneysel olarak ortaya koymuştur. Gösterim sert ve nettir: aynı veri seti, farklı ama eşit ölçüde savunulabilir seçimlerle işlendiğinde birbirine zıt sonuçlar verir. Yayımlanan sürüm ise yalnızca işe yarayanı gösterir. Test seçimi, bu serbestlik derecelerinin en büyüklerinden biridir. Aynı hipotez, bir parametrik testle anlamsız, eşit ölçüde savunulabilir bir parametrik olmayan alternatifle anlamlı çıkabilir.
 
-Gelman ve Loken (2014), veriye bağlı analitik kararların görünmez bir çoklu karşılaştırmalar ağacı yarattığı durumu çatallanan yolların bahçesi olarak adlandırır. Test seçimi, bu bahçenin en sık yürünen patikasıdır. Veriye bakıp dağılımın normallikten saptığını görmek, sonra parametrik olmayan bir teste geçmek, ve o testin anlamlı çıkması, niyet dürüst olsa bile veriye bağlı bir karardır. Karar veriden sonra verildiğinde, raporlanan p-değeri artık dürüst bir olasılık değildir.
+Wicherts ve diğerleri (2016), psikolojik çalışmaların planlanması, yürütülmesi, analizi ve raporlanmasına yayılmış serbestlik derecelerini kapsamlı bir kontrol listesinde toplamış ve her serbestlik derecesinin p-değeri avcılığına nasıl bir yol açtığını göstermiştir. Bu listenin değeri kararları yasaklamasında değildir. Meşru analitik kararlar esneklik gerektirir. Değeri, kararları önceden görünür kılmasındadır. Bir ajana hangi testi kullanmalıyım diye sorulduğunda ajan birkaç seçeneği aynı anda sunabilir. En cazip seçenek ise çoğu zaman anlamlılık verendir. Ajana danışmadan önce karar uzayını sayıp dökmemiş bir araştırmacı, ajanın çıktısının kararı yönlendirebileceği bir konumdadır: hem yönlendirmeyi bir seçim olarak kaydetmeden. Wicherts ve diğerlerinin kontrol listesi bu cazibeyi dizginleyen disiplindir. Serbestlik dereceleri, ajana danışmadan önce adlandırılır, danışmadan sonra değil.
 
-Bir ajan, her patikayı bir istem uzaklığına indirir. Araştırmacının saatler harcayacağı test alternatiflerini saniyeler içinde dener ve en temiz görüneni sunar. Çatallanma kaybolmaz, hızlanır ve gözden gizlenir. Dolayısıyla test seçiminde çatallanan yollar problemi, ajansal akışta daha az değil, daha çok dikkat ister.
+## 3. Çatallanan Yolların Bahçesi, Test Seçiminde
 
-## 4. Çok-evrenli analiz, ajansal hızın erdeme dönüşmesi
+Gelman ve Loken (2014), veriye bağlı analitik seçimlerin görünmez bir çoklu karşılaştırmalar ağacı yarattığı durumu çatallanan yolların bahçesi olarak adlandırır. Bu isim önemli bir şeyi yakalar: her çatal, alındığı anda makul görünür. Oysa kümülatif etki, raporlanan p-değerinin artık dürüst bir olasılık sayılmamasıdır.
 
-Bu sorunun güçlü bir yanıtı, tek bir spesifikasyonu gizlemek yerine hepsini açığa çıkarmaktır. Steegen ve diğerleri (2016), savunulabilir tüm analitik kararların oluşturduğu sonuç uzayını sistematik olarak hesaplayan çok-evrenli analizi önerir. Tek bir testin tek bir sonucu yerine, makul testlerin tamamının verdiği sonuç dağılımı raporlanır. Silberzahn ve diğerleri (2018), aynı veri setini bağımsız analiz eden çok sayıda ekibin farklı analitik seçimlerle farklı sonuçlara ulaştığını ampirik olarak gösterir. Ortaya çıkan tablo açıktır: analitik kararlar önemsiz bir ayrıntı değil, bulgunun kendisini biçimlendiren bir kuvvettir.
+Test seçimi, bu bahçenin en sık yürünen patikasıdır. Veriye bakmak, dağılımın normallikten saptığını fark etmek, parametrik olmayan bir teste geçmek ve o testin anlamlı çıktığını görmek: niyet bütünüyle dürüst olsa bile bu veriye bağlı bir karardır. Araştırmacı aldatmak için yola çıkmamıştır. Ama karar veriden sonra verildiği için, raporlanan test sonucu artık ileriye dönük seçilmiş bir testin taşıyacağı anlamı taşımaz.
 
-Tam burada ajansal hız, bir kusurdan bir erdeme döner. Çok-evrenli analiz, elle yapıldığında pahalıydı. Onlarca spesifikasyonu tek tek kurmak ve çalıştırmak günler alırdı. Ajan, her şeyi denemeye zaten yatkın olduğundan bu analizi ucuzlatır. Ajanın her testi denemesini gizli bir balık avına bırakmak yerine, onu açıkça raporlanan bir spesifikasyon eğrisine yönlendirin. Spesifikasyon kümesi sonuçlara bakılmadan önce sabitlendiği sürece, aynı kolaylık seçici raporlamanın aracı olmaktan çıkıp şeffaflığın aracı olur.
+Bu rehberin çatallanan yollar sorununa ilişkin okuması şunu ortaya koyar: bir ajan bu yapıyı ortadan kaldırmaz, aksine hızlandırır ve gizler. Araştırmacının saatler harcayacağı test alternatiflerini ajan saniyeler içinde dener ve en temiz görüneni sunabilir. Çatallar kaybolmaz. Çoğalır ve görüş alanından silinir. Bu nedenle test seçimindeki çatallanan yollar sorunu, ajansal bir akışta daha az dikkat değil, daha çok dikkat ister.
 
-## 5. Önceden belirtim ile keşfi ayırmak
+## 4. Çok-Evrenli Analiz: Ajansal Hız Erdeme Dönüşünce
 
-Çok-evrenli raporlama bile, doğrulayıcı iddianın önceden sabitlenmesini gerektirir. Nosek ve diğerleri (2018), ön kaydın doğrulayıcı ile keşfedici analizi ayırarak serbestlik derecelerini kontrol altına aldığını savunur. Ajansal test seçiminde bunun anlamı nettir. Asıl testi ve onun varsayımlarını, ajana danışmadan önce yazın. Ajanın keşif sırasında önerdiği her alternatif, keşfedici olarak etiketlenir ve doğrulayıcı sonucun yerine geçmez.
+Çatallanan yollar sorununa en güçlü yanıt, seçilen yolu gizlemek değil, her yolu aynı anda açığa çıkarmaktır. Steegen ve diğerleri (2016), savunulabilir tüm analitik seçimlerin ürettiği sonuç uzayını sistematik biçimde hesaplayan çok-evrenli analizi önermiştir. Tek bir testten tek bir sonuç yerine araştırmacı, makul spesifikasyonların tamamının verdiği sonuç dağılımını raporlar. Simonsohn ve diğerleri (2020) bunu spesifikasyon eğrisi analizine dönüştürmüştür: her spesifikasyonu ürettiği sonucun yanında gösteren, eğri boyunca elde edilen sonuçların şans beklentisinden farklılaşıp farklılaşmadığını sınayan grafiksel ve çıkarımsal bir teknik. Silberzahn ve diğerleri (2018) ampirik garantiyi sunmuştur: aynı veri setini bağımsız olarak analiz eden yirmi dokuz ekip, farklı analitik seçimler yoluyla belirgin biçimde farklı sonuçlara ulaşmıştır. Ortaya çıkan tablo açıktır: analitik kararlar önemsiz bir ayrıntı değil, bulgunun kendisini biçimlendiren bir güçtür. O güç gizlenmek yerine görünür kılınmalıdır.
 
-Bu, önceki broşürde tanıtılan spesifikasyon günlüğünün test seçimine uygulanmış hâlidir (broşür 008-01-0001). Danışma hoş karşılanır, ama taahhüt önceden verilmiştir. Ajan bir testi önerdiğinde, soru şudur: bu test, veriyi gördükten sonra mı, yoksa plan aşamasında mı seçildi. Bu ayrım günlüğe işlendiğinde, ajanın ürettiği zenginlik bir tehdit değil, bir duyarlılık analizi olur.
+İşte tam burada ajansal hız bir yükümlülükten bir araca dönüşür. Çok-evrenli analiz elle yapıldığında pahalıydı. Onlarca spesifikasyonu tek tek kurmak ve çalıştırmak günler alırdı. Ajan, şikâyet etmeden her makul testi denemeye zaten yatkın olduğundan bu analizi uygulanabilir kılar. Ajanın her şeyi denemesini gizli bir balık avına bırakmak yerine, araştırmacı onu açıkça raporlanan bir spesifikasyon eğrisine yönlendirir. Bunu işlevsel kılan koşul önceden sabittir: savunulabilir spesifikasyonların tam kümesi, herhangi bir sonuca bakılmadan tanımlanmalıdır. Bu koşul sağlandığında, başka türlü seçici raporlamayı besleyecek olan aynı hesaplama kolaylığı şeffaflığın aracına dönüşür.
 
-## 6. Bulan notlayan olamaz, testin varsayımlarına uygulanmış
+## 5. Önceden Belirtimi Keşiften Ayırmak
 
-Bu rehberin tekrar eden ilkesini test seçimine uyguladığımızda, özellikle keskin bir nokta ortaya çıkar. Bir ajan testi çalıştırıp varsayımlar karşılandı diyebilir, oysa normallik, varyans eşitliği ya da bağımsızlık tanılarını gerçek anlamda denetlememiş olabilir. Sorun, akıcı bir gerekçenin doğrulanmış bir gerekçeyle karıştırılmasıdır. İkisi çoğu zaman aynı görünür ve çoğu zaman farklı anlama gelir.
+Çok-evrenli raporlama bile doğrulayıcı iddianın veriye dokunulmadan önce sabitlenmesini gerektirir. Nosek ve diğerleri (2018), ön kaydın serbestlik derecelerini tam da doğrulayıcı ile keşfedici analizi birbirinden ayırarak kontrol altına aldığını savunmuştur. Munafò ve diğerleri (2017), yeniden üretilebilir bilim manifestolarında bu ayrımı alanın sağlamlığının yapısal bir temeli olarak ele almıştır. Ajansal test seçiminde bunun anlamı nettir. Birincil testi ve varsayımlarını ajana danışmadan önce yazın. Ajan keşif sırasında her alternatifi önerdiğinde bu alternatifler açık bir keşfedici etiket taşır. Bunlardan hiçbiri doğrulayıcı sonucun yerine geçmez.
 
-Bu kırılganlığın kökü, modelin nasıl çalıştığında yatar. Dil modeli, anlayarak değil istatistiksel örüntü üreterek çalışır. Bu özellik en titiz talimatla bile ortadan kalkmaz (Bender ve diğerleri, 2021). Üretilen metnin epistemik bir sorunu vardır: doğru görünmek ile doğru olmak arasındaki farkı kendiliğinden gözetmez (Hicks ve diğerleri, 2024). Test varsayımlarını bu açıdan değerlendirmek araştırmacının işidir. Ajanın önerisi bir başlangıç noktasıdır, bir son hüküm değil. Varsayım tanıları ham çıktıya karşı bağımsız olarak gözden geçirilmeli, ajanın sunduğu yoruma değil, sayıların kendisine bakılmalıdır.
+Bu, önceki broşürün spesifikasyon günlüğünün test seçimi kararına uygulanmış hâlidir (broşür 008-01-0001). Danışma kabul görür. Taahhüt önceden verilmiştir. Ajan oturum ortasında bir test önerdiğinde araştırmacı tek bir soru sorar: bu test, planlama aşamasında mı seçildi, yoksa veriye bakıldıktan sonra mı ortaya çıktı? Bu soru yanıtıyla birlikte günlüğe işlendiğinde, ajanın ürettiği zenginlik bir çıkarım tehdidine değil, belgelenmiş bir duyarlılık analizine dönüşür.
 
-## 7. Danışmayı al, kararı devretme
+## 6. Bulan Notlayan Olamaz, Testin Varsayımlarına Uygulanmış
 
-Ajansal analizde devredilebilen ile devredilemeyen arasındaki çizgi, test seçiminde özellikle keskindir. Devredilebilen, danışmanın kendisidir. Ajan, aday testleri sıralayabilir, ödünleşimleri açıklayabilir, her birini hesaplayabilir. Devredilemeyen, karardır. Araştırma sorusuna hangi testin cevap verdiği, hangi varsayımın alanın kuramı ve verinin bağlamı altında savunulabilir olduğu araştırmacıda kalır.
+Bu rehberin tekrar eden ilkesi şudur: bir bulgu üreten araç, o bulguyu onaylayan otorite olamaz. İstatistiksel test seçiminde bu ilke, özgül ve yaygın bir başarısızlık biçimini keser: bir testi çalıştırıp gerçekten tanıları denetlemeden varsayımlar karşılandı diyen ajan.
 
-Bu, danışma disiplininin özüdür. Ajan, bilgili ama sorumluluğu olmayan bir danışman gibi ele alınır. Onun tavsiyesini almak meşrudur, ama o tavsiyeyi tek başınıza savunabilmeniz gerekir. Talimat dosyası yordamı dışsallaştırır, yargıyı değil (broşür 001-01-0004). Ajan testi hesaplar, araştırmacı testi seçer ve sonucun arkasında durur.
+Bir doktora öğrencisi, iki grubun psikolojik bir çıktı üzerinde farklılaşıp farklılaşmadığını sınamak için ajandan bağımsız örneklem t-testi ile Mann-Whitney U arasında seçim yapmasını isteyebilir. Ajan t-testini önerir, çıktısını üretir ve bir cümle ekler: "Normallik varsayımı doğrulandı." Çıktı eksiksiz görünür. Oysa ajan bu cümleyi üretmiş olabilir çünkü test seçimiyle ilgili cümlelerin peşinden varsayımların doğrulandığına ilişkin cümleler gelmesi, eğitim verilerindeki istatistiksel bir örüntüdür. Shapiro-Wilk istatistiğini incelediği, Q-Q grafiklerini gözden geçirdiği ya da söz konusu dağılımda merkezi limit teoreminin sağlamlığını örneklem büyüklüğüne karşı denetlediği için değil.
 
-## 8. Pratikte, bir test seçimi danışma protokolü
+Bu kırılganlığın kökü, modelin yapısında yatar. Dil modeli, anlayışa benzer bir şey olmaksızın istatistiksel örüntüler üretir: bu, stokastik papağan sorunudur (Bender ve diğerleri, 2021). Üretilen metnin epistemik düzeyde bir sorunu olabilir: doğru görünmek ile gerçekten doğru olmak arasındaki farkı kendiliğinden gözetmez (Hicks ve diğerleri, 2024). Akıcılık, doğruluk değildir. Akıcı bir gerekçe, doğrulanmış bir gerekçe değildir. İkisi yüzey biçiminde özdeş, epistemik açıdan bütünüyle farklı olabilir.
 
-Bu disiplin, somut ve uygulanabilir bir protokole iner. Asıl testi ve varsayımlarını ajana danışmadan önce yazın ve günlüğe işleyin. Ajandan tek bir test değil, savunulabilir alternatiflerin tamamını sıralamasını isteyin. Makul spesifikasyonların çok-evrenli analizini çalıştırın ve sonuç dağılımını raporlayın, tek bir temiz sonucu değil. Varsayım tanılarını ham çıktıya karşı bağımsız doğrulayın. Doğrulayıcı ve keşfedici analizleri günlükte ayırın. Son olarak, ajanın danışmanlık rolünü yöntem ya da katkı beyanında ifşa edin.
+Bu nedenle ajanın test önerisi, kabul edilecek bir hüküm değil, denetlenecek bir hipotezdir. Araştırmacı, varsayım tanılarını ham çıktıya karşı bağımsız olarak okur: gerçek test istatistiğini, normallik denetiminin gerçek p-değerini, gerçek artık grafiğini. Ajanın varsayımların karşılanıp karşılanmadığına ilişkin cümlesi not edilir ve araştırmacı bağımsız bir yargıya ulaşırken bir kenara bırakılır.
 
-Bu protokol, Wicherts ve diğerlerinin (2016) serbestlik dereceleri kontrol listesini, çok-evrenli raporlamayı ve ön kayıt zihniyetini ajansal bir danışma akışında birleştirir. Ajan, test uzayını hızla tarayan bir danışmandır. Protokol, o hızı şeffaflığın hizmetine koşar. Onsuz, danışmanın kolaylığı seçici raporlamayı besler. Onunla, danışma savunulabilir bir çıkarımın parçası olur.
+## 7. Danışmayı Al, Kararı Devretme
 
-## 9. Bir sonraki broşür
+Ajansal analizde devredilebilen ile devredilemeyen arasındaki çizgi, test seçiminde özellikle keskindir. Devredilebilen, danışmanın kendisidir: ajan aday testleri sıralar, aralarındaki ödünleşimleri açıklar, her birini hesaplar, varsayımların sınırda kaldığı yerleri işaret eder. Devredilemeyen, karardır.
 
-Bu broşür, test seçimini bir danışma disiplinine bağladı. Veri analizi kategorisinin bir sonraki broşürü, nitel kodlamada yapay zekâ yardımını ve insan gözetimini ele alacak. Bu arada, ajanın analitik rolünün dürüst ifşası, etik broşüründe daha geniş bir çerçeveye oturur. Broşür 009-01-0001 buradan devam eder.
+Araştırma sorusuna hangi test yanıt verir? Hangi varsayım, alanın kuramı ve verinin bağlamı göz önüne alındığında savunulabilirdir? Sınırda bir normallik ihlalinin önem taşıyıp taşımadığı, örneklem büyüklüğüne, araştırma geleneğine, öne sürülen iddiaya ve kitlenin beklentilerine bağlıdır. Araştırmacı bunları açıkça sağlamadıkça ajanın hiçbirinden haberi yoktur. Bu yargı araştırmacıya aittir. Ajan, bilgili ama hesap verme sorumluluğu olmayan bir danışman gibi ele alınır: tavsiyesini almak meşrudur, ancak araştırmacının o tavsiyeyi bağımsız olarak savunabilmesi gerekir. Talimat dosyası analitik yordamı dışsallaştırır, yargıyı değil (broşür 001-01-0004). Ajan testi hesaplar. Araştırmacı testi seçer ve yazılı ortamda sonucun arkasında durur.
+
+## 8. Pratikte: Bir Test Seçimi Danışma Protokolü
+
+Bu disiplin, oturum başlamadan önce spesifikasyon günlüğüne işlenebilecek somut ve uygulanabilir bir protokole iner.
+
+Birinci adım: birincil testi ve varsayımlarını ajana danışmadan önce yazın ve günlüğe işleyin. İkinci adım: ajandan tek bir test değil, savunulabilir alternatiflerin tamamını sıralamasını isteyin. Bunu açıkça makul spesifikasyonların çok-evreni olarak çerçevelendirilmiş biçimde talep edin. Üçüncü adım: herhangi bir sonucu incelemeden önce spesifikasyon kümesini tanımlayın. Ardından önceden tanımlanan seçenekler üzerinde çok-evrenli ya da spesifikasyon eğrisi analizini çalıştırın ve tek bir temizlenmiş bulgu değil, sonuçların dağılımını raporlayın. Dördüncü adım: varsayım tanılarını ham sayısal çıktıya karşı bağımsız olarak doğrulayın. İstatistiğin kendisine bakın, ajanın düz metin özetine değil. Beşinci adım: günlükte doğrulayıcı ile keşfedici analizleri birbirinden ayırın. Önceden belirtilmiş birincil test doğrulayıcı iddiayı taşır. Oturum sırasında belirlenen ek testler keşfedici etiket taşır. Altıncı adım: ajanın danışmanlık rolünü makalenin yöntem bölümünde ya da katkı beyanında açıklayın.
+
+Bu protokol, Wicherts ve diğerlerinin (2016) serbestlik dereceleri kontrol listesini, çok-evrenli ve spesifikasyon eğrisi raporlamasını ve ön kayıt zihniyetini tek bir ajansal danışma akışında birleştirir. Protokol olmadan ajanın kolaylığı seçici raporlamayı doğrudan besler: işe yarayan testi sunar, araştırmacı kabul eder, alternatiflerin var olduğunu hiçbir kayıt göstermez. Protokolle birlikte danışma, savunulabilir bir çıkarımsal zincirin parçası olur. Ajan test uzayını hızla tarar. Protokol bu hızı, araştırmacının umduğu sonucun değil şeffaflığın hizmetine koşar.
+
+## 9. Bir Sonraki Broşür
+
+Bu broşür, test seçimini bir danışma disiplinine bağladı. Protokolün yanıtsız bıraktığı soru, bu rehberin tamamında akan soruyla aynıdır: çıkarımın epistemik sorumluluğunu kim taşır? Ajan önerir. Araştırmacı karar verir. Günlük kayıt altına alır. Makale açıklar.
+
+Ajanın analitik rolünün bu dürüst ifşası, bir sonraki broşürün doğrudan ele aldığı daha geniş bir etik çerçeveye oturur. Test seçimi aşamasında verilen kararlar, nicel bir çalışmadaki en sonuç doğurucu kararlar arasındadır. Yalnızca istatistik sosyal bilimin kalbi olduğu için değil, test seçiminin ne iddia edilebileceğini belirlediği, iddianın ise literatürde birikenin ne olduğunu şekillendirdiği için. Disiplin olmaksızın bu seçimi hızlandıran bir ajan, gürültünün birikmesini hızlandırır. Burada tanımlanan disiplin içinde çalışan bir ajan ise savunulabilir kanıtın birikmesini hızlandırır. Broşür 009-01-0001 bu noktadan devam eder.
 
 ---
 
 ## Kaynakça
 
-Atıflar APA 7 biçimindedir. Her DOI ve tanımlayıcı, 2026-05-29 tarihinde Crossref, doi.org veya yayıncı sayfası üzerinden bağımsız olarak doğrulanmıştır.
+Atıflar APA 7 biçimindedir. Her DOI ve tanımlayıcı, Crossref, doi.org veya yayıncı sayfası üzerinden bağımsız olarak doğrulanmıştır. Doğrulama tarihleri: özgün atıflar 2026-05-29 tarihinde, Simonsohn ve diğerleri (2020) ile Munafò ve diğerleri (2017) 2026-06-04 tarihinde. Lyttelton ve diğerleri (2026), Anthropic'in yayımladığı bir araştırma taraması raporu olup gri literatür kategorisindedir, hakemli bir yayın değildir. Yayıncı URL'si üzerinden 2026-05-29 tarihinde doğrulanmıştır. Anthropic aynı zamanda bu broşürün öğrettiği ürün olan Claude Code'un üreticisidir. Bu durum bir satıcı çıkar çatışması oluşturmaktadır.
 
 Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? In *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21)* (pp. 610-623). Association for Computing Machinery. https://doi.org/10.1145/3442188.3445922
 
 Gelman, A., & Loken, E. (2014). The statistical crisis in science. *American Scientist*, 102(6), 460. https://doi.org/10.1511/2014.111.460
 
-Hicks, M. T., Humphries, J., & Slater, J. (2024). ChatGPT is bullshit. *Ethics and Information Technology*, 26(2), 38. https://doi.org/10.1007/s10676-024-09775-5
+Hicks, M. T., Humphries, J., & Slater, J. (2024). ChatGPT is bullshit. *Ethics and Information Technology*, 26(2), Article 38. https://doi.org/10.1007/s10676-024-09775-5
 
 Lyttelton, T., Massenkoff, M., & Wilmers, N. (2026). *Coding agents in the social sciences*. Anthropic. https://www.anthropic.com/research/coding-agents-social-sciences
+
+Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Percie du Sert, N., Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., & Ioannidis, J. P. A. (2017). A manifesto for reproducible science. *Nature Human Behaviour*, 1, 0021. https://doi.org/10.1038/s41562-016-0021
 
 Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. *Proceedings of the National Academy of Sciences*, 115(11), 2600-2606. https://doi.org/10.1073/pnas.1708274114
 
 Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., Bahník, Š., Bai, F., Bannard, C., Bonnier, E., Carlsson, R., Cheung, F., Christensen, G., Clay, R., Craig, M. A., Dalla Rosa, A., Dam, L., Evans, M. H., Flores Cervantes, I., ... Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. *Advances in Methods and Practices in Psychological Science*, 1(3), 337-356. https://doi.org/10.1177/2515245917747646
 
 Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. *Psychological Science*, 22(11), 1359-1366. https://doi.org/10.1177/0956797611417632
+
+Simonsohn, U., Simmons, J. P., & Nelson, L. D. (2020). Specification curve analysis. *Nature Human Behaviour*, 4(11), 1208-1214. https://doi.org/10.1038/s41562-020-0912-z
 
 Steegen, S., Tuerlinckx, F., Gelman, A., & Vanpaemel, W. (2016). Increasing transparency through a multiverse analysis. *Perspectives on Psychological Science*, 11(5), 702-712. https://doi.org/10.1177/1745691616658637
 
@@ -114,9 +133,9 @@ Wicherts, J. M., Veldkamp, C. L. S., Augusteijn, H. E. M., Bakker, M., van Aert,
 
 **Broşür kimliği.** `008-02-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-05-29
-**Sözcük sayısı (yaklaşık).** 1130
-**Doğrulanmış atıf sayısı.** 9
+**Tarih.** 2026-06-04
+**Sözcük sayısı (yaklaşık).** 1751 (Türkçe gövde metni, wc ile ölçüldü)
+**Doğrulanmış atıf sayısı.** 11
 **Halüsinasyon atıf sayısı.** 0
 **Önceki broşür.** [`008-01-0001`](../008-01-0001/tr.md). Yeniden Üretilebilir Nicel İş Akışları
 **Sonraki broşür.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/tr.md). Yapay Zekâ Destekli Araştırmada Etik, Prensipten Davranışa

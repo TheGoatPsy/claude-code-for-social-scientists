@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for considering a contribution to `claude-code-for-social-scientists`. This document describes how to propose changes, the bilingual pairing rule that this repository enforces, and the AI disclosure expectations.
+This document describes how to propose changes to `claude-code-for-social-scientists`, the bilingual pairing rule this repository enforces, and the AI disclosure expectations every contributor must meet.
 
 If you read Turkish, the Turkish version is in [`CONTRIBUTING.tr.md`](./CONTRIBUTING.tr.md).
 
@@ -10,7 +10,7 @@ If you read Turkish, the Turkish version is in [`CONTRIBUTING.tr.md`](./CONTRIBU
 - English translations of existing Turkish booklets, or Turkish translations of existing English booklets.
 - New booklets proposed against the planned slots in [`CATALOG.md`](./CATALOG.md).
 - Improvements to CI workflows, documentation tooling, and the disclosure schema.
-- Localization of examples or regional academic infrastructure references for additional countries (for example, an explanation of how to integrate Greek HEAL-Link, Mexican CONACyT, or Indian Shodhganga).
+- Localization of examples or regional academic infrastructure references for additional countries — for example, an explanation of how to integrate Greek HEAL-Link, Mexican CONACyT, or Indian Shodhganga.
 
 The maintainer reviews contributions monthly and triages new booklet proposals into the catalog.
 
@@ -26,13 +26,13 @@ Every booklet directory contains `tr.md` and `en.md` side by side. A continuous-
 
 If you are contributing in only one language, your pull request will still be reviewed and may be merged onto a feature branch. The maintainer will arrange for the other language version before the branch is merged into `main`. The repository will not accept partial bilingual coverage on `main`.
 
-If you are a native Turkish speaker contributing the Turkish version, please write the Turkish version first and let the maintainer or another contributor handle the English version. The reverse also holds. Translation is not literal; it is a re-authoring against the same outline.
+If you are a native Turkish speaker contributing the Turkish version, write the Turkish version first and let the maintainer or another contributor handle the English version. The reverse also holds. Translation is not literal; it is a re-authoring against the same outline.
 
 ## AI disclosure expectations
 
 Every contributor who uses AI assistance in drafting must populate the AI disclosure frontmatter for the booklet they touch. The schema is documented in [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md). The booklet template files at `template/booklet-template.{tr,en}.md` carry the schema pre-filled with `human_review: "pending"` so contributors can copy and adapt. Replace `pending` with `partial` or `complete` before the merge to `main`; CI refuses any booklet on `main` that still carries `pending`.
 
-The minimum required fields are.
+The minimum required fields are:
 
 - `ai_assisted: true` (if AI was used) or `false`.
 - `ai_tools` (list of tools with model versions).
@@ -76,4 +76,4 @@ If your question is not answered here, open a discussion (once GitHub Discussion
 
 ---
 
-**Last updated.** 2026-05-19.
+**Last updated.** 2026-06-05.

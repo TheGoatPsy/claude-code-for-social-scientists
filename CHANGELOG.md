@@ -6,6 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [2.4.0] - 2026-06-05
+
+Minor release. A scholarship and voice quality upgrade of all thirteen released booklets, in both Turkish and English, on two dimensions: substantive scholarship and technical accuracy first, then the author's native voice. No booklet was added or removed and no heading structure changed.
+
+### Changed
+
+- All thirteen booklets were revised on two dimensions. First, substantive scholarship and technical accuracy: overclaims were hedged and evidence, inference, and recommendation were distinguished throughout; a factual misstatement of EU AI Act Article 50 scope was corrected in 009-01-0001 (Article 50 transparency duties fall on providers and deployers and concern synthetic media, not an individual researcher flagging all AI-assisted text); the within-session continuity and CLAUDE.md loading descriptions in the foundations booklets were corrected against the official Claude Code documentation. Second, voice: the English was carried into natural-register academic prose and the Turkish into the author's native voice, with the academic register and every citation preserved.
+- Misapplied citations were replaced with verified sources that support the exact claim: Squazzoni et al. (2021), a gender-bias study, was replaced with Bordage (2001) in 010-01-0001; Greenhalgh et al. (2016), a co-creation paper, was replaced with Bramer et al. (2017) in 007-02-0001; Tufte (1990), on quantitative graphics, was replaced with Jones (2007) in 004-01-0001. Phantom and dangling references that appeared in a reference list but were never cited in the body were removed: Engel (1977) from 003-01-0001 and Resnik (2018) from 010-01-0001. Citation-metadata errors were corrected, including the Provenzale and Stanley year and volume in 010-01-0001 and APA 7 article-number formatting across several booklets.
+- Newly verified citations were added where a load-bearing claim needed support: Xu et al. (2025) on multilingual model bias, Jones (2007) on personal information management, Bramer et al. (2017) on database coverage, Wilson et al. (2017) and Ziems et al. (2024) on reproducible computing and computational social science, Simonsohn et al. (2020) and Munafò et al. (2017) on specification-curve and reproducibility, Bordage (2001) on reviewer decisions, and an Anthropic Claude Code documentation reference. Where no source supported a claim, the claim was hedged rather than propped with a citation. No citation was fabricated.
+- Every added or replaced citation was verified live against Crossref and checked to support the exact claim it carries, and an independent adversarial review pass over all thirteen booklets confirmed zero fabricated citations. Bilingual parity is preserved: each booklet keeps an equal section count and an identical DOI set across Turkish and English. Aggregate verified citation declarations rise from 240 to 248, and unique bilingual citation sets from 120 to 124.
+- The companion landing page Turkish prose was rewritten to remove sentence fragments, and the README and CONTRIBUTING were brought to the same voice bar.
+
+### Zenodo
+
+- Concept DOI: [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687) (resolves to the latest released version).
+- Version DOI for v2.4.0: minted on GitHub release and recorded here in a follow-up commit.
+
 ## [2.3.0] - 2026-05-29
 
 Minor release. A Turkish-language quality revision: the Turkish prose of all thirteen booklets, plus README.tr and CONTRIBUTING.tr, was rewritten in the author's native academic voice, replacing translation-shaped Turkish with natural native Turkish.
