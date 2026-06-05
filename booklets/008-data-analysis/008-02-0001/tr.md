@@ -6,7 +6,7 @@ category: "008-data-analysis"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-05-29"
-date_last_revised: "2026-06-04"
+date_last_revised: "2026-06-05"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-04"
+human_review_date: "2026-06-05"
 verified_citations_count: 11
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
