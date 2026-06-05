@@ -32,15 +32,15 @@ status: "release"
 
 # CLAUDE.md ve Kalıcı Talimat Disiplini
 
-Bu rehberin ilk üç broşürü sırasıyla üç soruyu yanıtladı: Claude Code nedir, sohbet penceresinden neden farklıdır, güvenli biçimde nasıl kurulur. Kurulum tamamlandığında araştırmacının önünde duran ilk kalıcı karar ne bir komuttur ne de bir yapılandırmadır. O karar yöntemseldir. Araca her oturumun başında neyi bilmesi gerektiğini nasıl yazarsınız? Bu kararın somut yeri `CLAUDE.md` dosyasıdır. Bu broşür `CLAUDE.md`'yi bir kolaylık ayarı olarak değil, akademik üretimi biçimlendiren, belgeleyen ve disipline eden bir yöntem aracı olarak ele alır.
+Bu rehberin ilk üç kitapçığı sırasıyla üç soruyu yanıtladı: Claude Code nedir, sohbet penceresinden neden farklıdır, güvenli biçimde nasıl kurulur. Kurulum tamamlandığında araştırmacının önünde duran ilk kalıcı karar ne bir komuttur ne de bir yapılandırmadır. O karar yöntemseldir: araca her oturumun başında neyi bilmesi gerektiğini nasıl yazarsınız? Bu kararın somut yeri `CLAUDE.md` dosyasıdır. Bu kitapçık `CLAUDE.md`'yi bir kolaylık ayarı olarak değil, akademik üretimi biçimlendiren, belgeleyen ve disipline eden bir yöntem aracı olarak ele alır.
 
 ## 1. Talimat neden bir yöntem aracıdır
 
-Her sohbet oturumu sıfırdan başlar. Araç, önceki oturumda hangi atıf stilini istediğinizi, klinik veri için hangi etik sınırı koyduğunuzu ya da Türkçe çıktı için hangi standardı uyguladığınızı taşımaz. Her oturumda bunlar ya yeniden kurulur ya da sessizce unutulur.
+Her sohbet oturumu sıfırdan başlar. Araç, önceki oturumda hangi atıf stilini istediğinizi, klinik veri için hangi etik sınırı koyduğunuzu ya da Türkçe çıktı için hangi standardı uyguladığınızı taşımaz. Her oturumda bunlar ya yeniden kurulur ya da sessizce geride kalır. Geride kalan, görünmez biçimde kayıptır.
 
-Kalıcı bir bağlam dosyası bu boşluğu kapatır. Claude Code `CLAUDE.md`'yi oturumun başında okur, içeriğini kalıcı bir talimat olarak yükler. Teknik olarak bu, sistem komutuna değil konuşmaya proje bağlamı olarak enjekte edilir (Anthropic, 2025). Araç bundan sonra o dosyanın kurduğu çerçeve içinde hareket eder: araştırmacının kim olduğunu, hangi standartlara bağlı olunduğunu, hangi sınırların geçilemeyeceğini bilir.
+Kalıcı bir bağlam dosyası tam bu boşluğu kapatır. Claude Code `CLAUDE.md`'yi oturumun başında okur, içeriğini kalıcı bir talimat olarak yükler. Teknik olarak bu, sistem komutuna değil konuşmaya proje bağlamı olarak enjekte edilir (Anthropic, 2025). Araç bundan sonra o dosyanın kurduğu çerçeve içinde hareket eder: araştırmacının kim olduğunu, hangi standartlara bağlı olunduğunu, hangi sınırların geçilemeyeceğini bilir.
 
-Sosyal bilimci için bu farkın anlamı somuttur. Talimat dosyası üslubun, atıf disiplininin, etik sınırların ve yöntemsel tercihlerin tek ve denetlenebilir kaynağı hâline gelir. Her oturumda "APA 7, hayali atıf yok" diye yeniden yazmak yerine araştırmacı bu standardı bir kez yazar ve yerine sabitler. Küçük ama belirleyici bir adım: kişisel bir alışkanlığı kuruma dönüştürmek.
+Sosyal bilimci için bu farkın anlamı somuttur. Talimat dosyası üslubun, atıf disiplininin, etik sınırların ve yöntemsel tercihlerin tek ve denetlenebilir kaynağı hâline gelir. Her oturumda "APA 7, uydurma atıf yok" diye yeniden yazmak yerine araştırmacı bu standardı bir kez yazar ve yerine sabitler. Küçük ama belirleyici bir adım: kişisel bir alışkanlığı kuruma dönüştürmek.
 
 ## 2. CLAUDE.md nedir, aracın kalıcı bağlamı
 
@@ -54,7 +54,7 @@ Sohbet penceresine yazılan bir talimattan bu dosyayı ayıran üç temel özell
 
 ## 3. Komut duyarlılığı ve disiplinin gerekçesi
 
-Talimatı dikkatle yazmak için kesin, ampirik temelli bir gerekçe vardır. Dil modelleri, komutun küçük biçim değişikliklerine sezgisel olmayan biçimlerde duyarlıdır. Sclar ve diğerleri (2023), yalnızca biçimlendirme farkının, araya eklenen bir boşluğun ya da değiştirilen bir ayracın, test ettikleri açık kaynak modellerde az sayıda örnekli (few-shot) ayarda doğrulukta büyük farklara yol açabildiğini gösterdi. Aynı içerik farklı biçimde sunulduğunda anlamlı ölçüde farklı çıktı verebilir.
+Üslup, biçim, sınır. Bunlar talimata aittir. Ve talimat nasıl yazılırsa o kadar işler. Dil modelleri, komutun küçük biçim değişikliklerine sezgisel olmayan biçimlerde duyarlıdır: Sclar ve diğerleri (2023), yalnızca biçimlendirme farkının, araya eklenen bir boşluğun ya da değiştirilen bir ayracın, test ettikleri açık kaynak modellerde az sayıda örnekli ayarda doğrulukta büyük farklara yol açabildiğini gösterdi. Aynı içerik farklı biçimde sunulduğunda anlamlı ölçüde farklı çıktı verebilir.
 
 Sosyal bilimci için bu bulgunun sonucu doğrudandır: tekrarlanabilirlik komutun kararlılığına bağlıdır. Oturum talimatı her seferinde gelişigüzel ve sözlü olarak verilirse sonuçların oturumlar arasında tutarlı kalacağının güvencesi yoktur. Oysa yazılı, sürümlenmiş ve sınanmış bir talimat bu duyarlılığı kontrol altına alır.
 
@@ -62,9 +62,9 @@ Bu durum komutu akademik yöntemin alanına taşır. Dağınık ve sözlü talim
 
 ## 4. Komut kalıplarından kalıcı yapılandırmaya
 
-Prompt mühendisliği dağınık bir kişisel hünerden taranmış bir alana dönüştü. White ve diğerleri (2023), defalarca işe yarayan komut kalıplarını katalog biçiminde derleyip bu kalıpların görevler ve bağlamlar arasında aktarılabilir olduğunu ortaya koydu. Schulhoff ve diğerleri (2024) ise alanın tekniklerini sistematik bir derlemede bir araya getirdi. Bu iki çalışma birlikte şunu kurar: iyi komut rastlantı değil, belgelenebilir bir uygulamadır. Yazılabilir, sınanabilir ve zaman içinde geliştirilebilir.
+Komut mühendisliği dağınık bir kişisel hünerden taranmış bir alana dönüştü. White ve diğerleri (2023), defalarca işe yarayan komut kalıplarını katalog biçiminde derleyip bu kalıpların görevler ve bağlamlar arasında aktarılabilir olduğunu ortaya koydu. Schulhoff ve diğerleri (2024) ise alanın tekniklerini sistematik bir derlemede bir araya getirdi. Bu iki çalışma birlikte şunu kurar: iyi komut rastlantı değil, belgelenebilir bir uygulamadır. Yazılabilir, sınanabilir ve zaman içinde geliştirilebilir.
 
-Tek tek kalıpların ötesinde ise daha sağlam bir fikir yatar. Knuth'un (1984) literate programming kavramı şunu savunuyordu: kod öncelikle bir insanın okuması için yazılmalı, bir makineye devredilen komutlar yığını değil bir insana anlatılan metin biçiminde düzenlenmelidir. `CLAUDE.md` aynı ruhu taşır. Aracın davranışını, sonraki araştırmacının ve gelecekteki kendi benliğinizin okuyup anlayabileceği düz bir dille belgeler. İyi bir `CLAUDE.md`, makineye teslim edilen komut yığını değil, bir çalışma standardının insan tarafından okunabilen ifadesidir. Herhangi bir meslektaşın inceleyebileceği, sorgulayabileceği ve geliştirebileceği bir ifade.
+Tek tek kalıpların ötesinde ise daha sağlam bir fikir yatar. Knuth'un (1984) okuryazar programlama kavramı şunu savunuyordu: kod öncelikle bir insanın okuması için yazılmalı, bir makineye devredilen komutlar yığını değil bir insana anlatılan metin biçiminde düzenlenmelidir. `CLAUDE.md` aynı ruhu taşır. Aracın davranışını, sonraki araştırmacının ve gelecekteki kendi benliğinizin okuyup anlayabileceği düz bir dille belgeler. İyi bir `CLAUDE.md`, makineye teslim edilen komut yığını değil, bir çalışma standardının insan tarafından okunabilen ifadesidir. Herhangi bir meslektaşın inceleyebileceği, sorgulayabileceği ve geliştirebileceği bir ifade.
 
 ## 5. Tekrarlanabilirlik altyapısı olarak CLAUDE.md
 
@@ -78,11 +78,11 @@ Burada önemli bir uyarı vardır. Anthropic'in kendi belgeleri, `CLAUDE.md` iç
 
 İyi bir talimat dosyası soyut değil somuttur. Sosyal bilimci için altı başlık zorunlu asgariyi oluşturur.
 
-Birincisi kimlik ve uzmanlıktır. Araç kiminle çalıştığını, hangi düzeyde bir akademik muhatap beklediğini ve hangi alanda olduğunu bilmelidir. İkincisi üsluptur. Cümle yapısı tercihleri, emoji yasağı, akademik yazında beklenen ton ve herhangi bir dergi hedefine ya da kurumsal başvuruya özgü alışılagelen kurallar buraya girer.
+Kimlik ve üslup önce gelir. Araç kiminle çalıştığını bilmelidir: hangi alanda, hangi düzeyde bir akademik muhatap. Üslup da aynı dosyada kurulur. Cümle yapısı tercihleri, emoji yasağı, beklenen ton, dergi hedefine ya da kurumsal başvuruya özgü biçimsel kurallar. Bunlar her oturumda yeniden söylenmez, bir kez yazılır.
 
-Üçüncüsü atıf disiplinidir. APA 7 standardı, hayali atıf yasağı ve her DOI'nin referans listesine girmeden önce bağımsız olarak doğrulanması zorunluluğu açıkça belirtilmelidir. Dördüncüsü etik sınırlardır. Anonimleştirilmemiş klinik veri paylaşılmaması, KVKK ve GDPR yükümlülüklerine uyulması ve paylaşılan belgelere tanımlayıcı bilgi yazılmaması gibi kurallar dosyada yer almalıdır.
+Atıf disiplini üçüncü başlıktır ve en kritik olanıdır. APA 7 standardı, uydurma atıf yasağı ve her DOI'nin referans listesine girmeden önce bağımsız olarak doğrulanması zorunluluğu açıkça yazılmalıdır. Dördüncü başlık etik sınırlardır: anonimleştirilmemiş klinik veri paylaşılmaması, KVKK ve GDPR yükümlülüklerine uyulması, paylaşılan belgelere tanımlayıcı bilgi yazılmaması.
 
-Beşincisi dil katmanıdır. İki dilli çalışan bir araştırmacı hangi bağlamda Türkçe hangi bağlamda İngilizce beklendiğini tam olarak tanımlayabilir. Türkçe diakritik harflerin ASCII'ye düşürülmemesi gibi açık bir kuralı da ekleyebilir. Altıncısı doğrulama beklentisidir. Aracın bir görevi tamamlandı saymadan önce neyi kanıtlaması gerektiği yazılmalıdır. Bu altı başlığın her biri önceki broşürlerin soyut ilkesini araç düzeyinde somut bir davranışa çevirir.
+Beşincisi dil katmanıdır. İki dilli çalışan bir araştırmacı hangi bağlamda Türkçe hangi bağlamda İngilizce beklendiğini bir kez tanımlar. Türkçe diakritik harflerin ASCII'ye düşürülmemesi kuralını da oraya ekler. Altıncı ve son başlık doğrulama beklentisidir: aracın bir görevi tamamlandı saymadan önce neyi kanıtlaması gerektiği. Bu altı başlığın her biri önceki kitapçıkların soyut ilkesini araç düzeyinde somut bir davranışa çevirir.
 
 ## 7. Sınırlar, talimat davranışı biçimlendirir ama doğruluğu garanti etmez
 
@@ -90,7 +90,7 @@ Beşincisi dil katmanıdır. İki dilli çalışan bir araştırmacı hangi bağ
 
 Birinci sınır modelin olasılıksal doğasıdır. Talimat ne kadar özenli olursa olsun model hâlâ istatistiksel bir sistemdir. Talimat hata oranını düşürür, sıfırlamaz. En titiz talimat altında bile gerçek bir anlayış olmaksızın istatistiksel örüntü üretme riski sürer (Bender ve diğerleri, 2021). Üretilen metin, epistemik düzeyde, doğru görünmek ile doğru olmak arasındaki farkı kendiliğinden gözetmeyen bir karakter taşıyabilir (Hicks ve diğerleri, 2024). Bu nedenle talimat, doğrulama disiplininin yerini almaz. Onu tamamlar.
 
-İkinci sınır daha incedir. Talimat bilişsel yükü dışarı verir. Risko ve Gilbert (2016), bilişsel boşaltmanın hem fayda hem maliyet taşıdığını gösterdi. Dışarı verilen şey hatırlama yükü olduğunda kazanç açıktır, ama dışarı verilen şey muhakemenin kendisi olduğunda kayıp gizlidir. `CLAUDE.md`'nin dışarıya vermesi gereken tekrar eden yordamdır. Hangi üslubun beklendiği, hangi biçimin istendiği, hangi sınırın geçilemeyeceği. Dışarıya verilmemesi gereken ise bilimsel yargıdır. Bir bulgunun anlamı, bir yorumun geçerliliği, bir etik kararın ağırlığı araştırmacıda kalır. Talimat yordamı devreder, yargıyı değil.
+İkinci sınır daha incedir. Talimat bilişsel yükü dışarı verir. Risko ve Gilbert (2016), bilişsel boşaltmanın hem fayda hem maliyet taşıdığını gösterdi. Dışarı verilen şey hatırlama yükü olduğunda kazanç açıktır, ama dışarı verilen şey muhakemenin kendisi olduğunda kayıp gizlidir. `CLAUDE.md`'nin dışarıya vermesi gereken tekrar eden yordamdır: hangi üslubun beklendiği, hangi biçimin istendiği, hangi sınırın geçilemeyeceği. Dışarıya verilmemesi gereken ise bilimsel yargıdır. Bir bulgunun anlamı, bir yorumun geçerliliği, bir etik kararın ağırlığı araştırmacıda kalır. Talimat yordamı devreder, yargıyı değil.
 
 ## 8. Türkçe ve Batı Trakya Özgülü
 
@@ -102,11 +102,11 @@ Bölgesel terimler ve altyapılar da talimatın doğal konusudur. DergiPark, ULA
 
 Batı Trakya azınlık bağlamında çalışan bir araştırmacı için terimlerin doğru ve tutarlı kullanımı yalnızca biçimsel bir mesele değildir. Kimliğe ve akademik bütünlüğe ilişkindir. `CLAUDE.md` bu tutarlılığı kişisel bir tercih olmaktan çıkarıp belgelenmiş, paylaşılabilir bir standarda dönüştürür. Personel değişikliklerini, proje devirlerini ve zamanın geçişini atlatır.
 
-## 9. Bir sonraki broşür
+## 9. Bir sonraki kitapçık
 
-`CLAUDE.md`, araca her oturumun başında ne yapacağını söyler. Ama çalışmanın kendisi, ara sonuçları, birikmiş kararlar, alan notları ve manuskript taslakları nerede yaşayacak? Talimat davranışı biçimlendirir. Belleği kurmaz.
+`CLAUDE.md`, araca her oturumun başında ne yapacağını söyler. Ama çalışmanın kendisi, ara sonuçlar, birikmiş kararlar, alan notları ve makale taslakları nerede yaşayacak? Talimat davranışı biçimlendirir. Belleği kurmaz.
 
-Bir sonraki broşür kalıcı belleğin mimarisini ilkeden başlayarak ele alır. Kasa Olarak Hafıza, yılları aşan akademik bağlamın nasıl korunacağını, düzenleneceğini ve sorgulanabileceğini kayıpsız biçimde gösterir. Broşür 003-01-0001 buradan devam eder.
+Bir sonraki kitapçık kalıcı belleğin mimarisini ilkeden başlayarak ele alır. Kasa Olarak Hafıza, yılları aşan akademik bağlamın nasıl korunacağını, düzenleneceğini ve sorgulanabileceğini kayıpsız biçimde gösterir. Kitapçık 003-01-0001 buradan devam eder.
 
 ---
 
@@ -134,11 +134,11 @@ White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., 
 
 ---
 
-**Broşür kimliği.** `001-01-0004`
+**Kitapçık kimliği.** `001-01-0004`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-04
 **Sözcük sayısı (yaklaşık).** 1782 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 9
-**Halüsinasyon atıf sayısı.** 0
-**Önceki broşür.** [`001-01-0003`](../001-01-0003/tr.md). Kurulum, İlk Oturum, Sağlık Testleri
-**Sonraki broşür.** [`003-01-0001`](../../003-memory-system/003-01-0001/tr.md). Kasa Olarak Hafıza, İlkesel Bir Giriş
+**Uydurma atıf sayısı.** 0
+**Önceki kitapçık.** [`001-01-0003`](../001-01-0003/tr.md). Kurulum, İlk Oturum, Sağlık Testleri
+**Sonraki kitapçık.** [`003-01-0001`](../../003-memory-system/003-01-0001/tr.md). Kasa Olarak Hafıza, İlkesel Bir Giriş

@@ -32,11 +32,11 @@ status: "release"
 
 # Claude Code Nedir? Sosyal Bilimci Bakışıyla
 
-Bu rehberin ilk broşürü, Anthropic'in Claude Code aracının sosyal bilimde çalışan bir araştırmacı, bir eğitimci ya da bir klinisyen için gerçekte ne anlama geldiğini kavramsal olarak çerçeveler. Çerçeve teknik değil, yöntemseldir. Asıl mesele aracın ne yaptığı değil: Claude Code'un akademik üretime nerede gerçek bir değer kattığı, nerede kalıcı bir risk taşıdığı ve 2026 yılında bu soruya verilen yanıtın önümüzdeki on yılın pratiğini şekillendirme ihtimali taşıdığıdır.
+Bu rehberin ilk kitapçığı, Anthropic'in Claude Code aracının sosyal bilimde çalışan bir araştırmacı, bir eğitimci ya da bir klinisyen için gerçekte ne anlama geldiğini kavramsal olarak çerçeveler. Çerçeve teknik değil, yöntemseldir. Asıl mesele aracın ne yaptığı değil: Claude Code'un akademik üretime nerede gerçek bir değer kattığı, nerede kalıcı bir risk taşıdığı ve 2026 yılında bu soruya verilen yanıtın önümüzdeki on yılın pratiğini şekillendirme ihtimali taşıdığıdır.
 
 ## 1. Bir Araç mı, Yoksa Bir Dönüşüm mü?
 
-Bir yapay zekâ asistanını yalnızca daha hızlı bir arama motoru olarak görmek, klinik vaka formülasyonunu bir tanı listesine indirgemekle aynı türden bir hatadır. Vaka formülasyonu, tanıdan farklı olarak, semptomun ne olduğunu sormaz. Bu semptomun neden bu hastada, neden bu zamanda ortaya çıktığını sorar. Claude Code'u bir sohbet penceresine ya da bir arama kutusuna indirgemek de sosyal bilimcinin asıl ihtiyacını gözden kaçırır. O ihtiyaç çoğu zaman bir paragrafın kelimesi kelimesine yazdırılması değildir. Bir araştırma sorusunu on kaynak boyunca tutarlı biçimde izleyebilmek, bir analiz protokolünü baştan sona belgeleyebilmek, bir manuskript revizyonunu on bir hakem yorumuna karşı bir izlenebilirlik matrisi olarak tutabilmektir.
+Bir yapay zekâ asistanını yalnızca daha hızlı bir arama motoru olarak görmek, klinik vaka formülasyonunu bir tanı listesine indirgemekle aynı türden bir hatadır. Vaka formülasyonu, tanıdan farklı olarak, semptomun ne olduğunu sormaz. Bu semptomun neden bu hastada, neden bu zamanda ortaya çıktığını sorar. Claude Code'u bir sohbet penceresine ya da bir arama kutusuna indirgemek de sosyal bilimcinin asıl ihtiyacını gözden kaçırır. O ihtiyaç çoğu zaman bir paragrafın kelimesi kelimesine yazdırılması değildir. Bir araştırma sorusunu on kaynak boyunca tutarlı biçimde izleyebilmek, bir analiz protokolünü baştan sona belgeleyebilmek, bir makale revizyonunu on bir hakem yorumuna karşı bir izlenebilirlik matrisi olarak tutabilmektir.
 
 Claude Code, sohbet penceresinin ötesinde durur. Dosya okuyup yazabilen, komut satırını çalıştırabilen, bir oturum boyunca ne yaptığını bağlam içinde tutan, gerektiğinde başka modellere ya da araçlara görev devreden bir ajan arayüzüdür. Bu ayrım yöntemsel olarak önemlidir. Çünkü sosyal bilimci için bu, aracın bir not defterinden bir laboratuvar asistanına doğru kayması demektir. Burada belirleyici olan otomasyon değil, sürekliliktir. Yıllarca biriken alan notları, hastane gözlemleri, mülakat dökümleri, dergi okumaları, ders izlenceleri, hakem değerlendirmeleri. Bütün bunlar artık tek bir araştırma ekosistemine bağlanabilir.
 
@@ -48,7 +48,7 @@ Claude Code'un teknik kimliğini tek bir cümleyle özetlemek mümkündür. Bu, 
 
 Sosyal bilimcinin bu cümleden çıkarması gereken üç şey var.
 
-Birincisi, bu bir tarayıcı sekmesindeki sohbet kutusu değildir. Tarayıcıdaki bir ChatGPT ya da Claude.ai oturumu, sekme kapandığında biter. Claude Code ise proje klasörünüzün içinde çalışır: önceki bir oturumda yazılmış bir notu okuyabilir, üzerine ekleyebilir, onu başka bir dosyaya bağlayabilir. Bir not defteri ile bir kasa arasındaki fark tam da budur. Bu sürekliliği oturumlar arasında taşıyan ek bir mekanizma da vardır: CLAUDE.md. Bu, projenizin içinde duran ve araca oturum bağımsız talimatlar taşıyan düz metin bir dosyadır. Metodolojik kurallarınız, atıf disiplininiz, alan tercihleriniz burada yazar. Bu broşür kavramı tanıtıyor. Tam kurulum için 001-01-0004 broşürüne bakınız.
+Birincisi, bu bir tarayıcı sekmesindeki sohbet kutusu değildir. Tarayıcıdaki bir ChatGPT ya da Claude.ai oturumu, sekme kapandığında biter. Claude Code ise proje klasörünüzün içinde çalışır: önceki bir oturumda yazılmış bir notu okuyabilir, üzerine ekleyebilir, onu başka bir dosyaya bağlayabilir. Bir not defteri ile bir kasa arasındaki fark tam da budur. Bu sürekliliği oturumlar arasında taşıyan ek bir mekanizma da vardır: CLAUDE.md. Bu, projenizin içinde duran ve araca oturum bağımsız talimatlar taşıyan düz metin bir dosyadır. Metodolojik kurallarınız, atıf disiplininiz, alan tercihleriniz burada yazar. Bu kitapçık kavramı tanıtıyor. Tam kurulum için 001-01-0004 kitapçığına bakınız.
 
 İkincisi, bu bir ajan sistemidir. Buradaki ajan sözcüğü, basit bir komut yanıtlama mekanizmasından fazlasını anlatır. Ajan, kendisine verilen yüksek seviyeli bir hedefi alt görevlere bölebilen, bu alt görevleri sırayla yürüten, gerektiğinde başka bir aracı çağıran, sonuçları toplayıp geri raporlayan bir yapıdır. Bu kılavuzun kullandığı çalışma tanımı, vaka formülasyonundaki biyo-psiko-sosyal modelle (Engel, 1977) işlevsel bir benzerlik kurar. Önemli bir nüans: bu bir benzetmedir, özdeşlik değil. Klinik pratikte bir hastanın durumu nasıl yalnızca semptomatik bir liste olarak değil, biyolojik, psikolojik ve sosyal düzeyde eşzamanlı işleyen bir sistem olarak ele alınıyorsa, ajan da bir görevi tek bir yanıt olarak değil, birbirinin üstüne inşa edilen bir alt görev silsilesi olarak işler.
 
@@ -58,15 +58,17 @@ Birincisi, bu bir tarayıcı sekmesindeki sohbet kutusu değildir. Tarayıcıdak
 
 ## 3. Kimler İçin, Kimler İçin Değil
 
-Bu broşürün açıkça kabul ettiği gerçek şudur: Claude Code herkes için değildir.
+Bu kitapçığın açıkça kabul ettiği gerçek şudur: Claude Code herkes için değildir.
 
 Aracın gerçekten değer kazandığı profiller bellidir. Birden fazla araştırma projesini aynı anda yürüten bir doktora öğrencisi. Çok sayıda mülakat verisini kodlama disipliniyle çözümlemesi gereken bir araştırma görevlisi. Beş ila on bir hakem yorumuna sistemli biçimde yanıt vermesi gereken bir doktora sonrası araştırmacı. Bir derste yirmi öğrencinin tezini kavramsal tutarlılık açısından gözden geçirmesi gereken bir öğretim üyesi. IRB başvurusu için elli kaynaklı bir literatür özeti hazırlayan bir klinik araştırmacı. Bu profillerin ortak yanı tek bir şeydir: yüksek hacimli, tekrar eden, yapılandırılmış ve doğrulanabilir iş. Noy ve Zhang (2023), özellikle mesleki yazılı görevler üzerine kurgulanmış randomize kontrollü bir deneyde, yapay zekâ yardımının hem zaman tasarrufu hem çıktı kalitesi bakımından bu tür görevlerde anlamlı bir etki yarattığını ortaya koymuştur. Bu kılavuzun çıkardığı çıkarım şudur: o kazanımların mülakat dökümü kodlama, IRB başvurusu hazırlama ve sistematik derleme tarama gibi benzer yapıdaki diğer yüksek hacimli akademik görevlere de uzandığı düşünülebilir. Bu çıkarım kılavuzun kendi yorumudur ve o tek çalışmanın kurduğunun ötesine geçmektedir.
 
-Aracın değer yitirdiği profiller de aynı açıklıkla söylenmelidir. Tek bir özgül olgu üzerine derinlemesine etnografik bir çalışma yürüten bir araştırmacı için Claude Code, alandaki gözlem hassasiyetinin yerini tutamaz. Alan notlarını düzenlemekte işe yarayabilir, ama gözleme katılma deneyiminin yerine geçemez. Aynı şey, bir klinik vaka çalışmasındaki terapist için de geçerlidir. Araç, terapötik ilişkinin o somut anının yerini alamaz. Bu sınır epistemolojiktir. Aracın kavrayamadığı şey, yalnızca araç nasıl yapılandırılmış sorusunun değil, daha köklü bir sorunun cevabıdır: aracın yapısal olarak ne tür bir bilgi üretmeye muktedir olduğu sorusu. Klinik ve etnografik çalışmanın dayandığı bilme biçimi, yerleşik, ilişkisel ve indirgenemez ölçüde tikele bağlıdır. O bilme, ne kadar yapılandırılmış olursa olsun bir ajan sistemine devredilemez.
+Araç bilmek değil, birlikte olmak gerektiğinde yetersiz kalır.
 
-Kimler için olmadığını açıkça söylemek, kimler için olduğunu daha güvenilir kılar. Yapay zekânın akademik yazımdaki etik sınırlarını sistemli biçimde inceleyen literatür de aracın değerinin görevin yapısına bağlı olduğunu vurgular (Hosseini ve diğerleri, 2023).
+Aracın değer yitirdiği profiller de aynı açıklıkla söylenmelidir. Tek bir özgül olgu üzerine derinlemesine etnografik bir çalışma yürüten bir araştırmacı için Claude Code, alandaki gözlem hassasiyetinin yerini tutamaz. Alan notlarını düzenlemekte işe yarayabilir, ama gözleme katılma deneyiminin yerine geçemez. Aynı şey, bir klinik vaka çalışmasındaki terapist için de geçerlidir: araç, terapötik ilişkinin o somut anının yerini alamaz. Bu sınır epistemolojiktir. Aracın kavrayamadığı şey, yalnızca araç nasıl yapılandırılmış sorusunun değil, daha köklü bir sorunun cevabıdır: aracın yapısal olarak ne tür bir bilgi üretmeye muktedir olduğu sorusu. Klinik ve etnografik çalışmanın dayandığı bilme biçimi, yerleşik, ilişkisel ve indirgenemez ölçüde tikele bağlıdır. O bilme, ne kadar yapılandırılmış olursa olsun bir ajan sistemine devredilemez.
 
-Bir sonraki broşür (001-01-0002), bu sohbet penceresinden iş ortağına geçişin pratik mekaniğini anlatır. Bu broşürün geri kalanı ise ilk temas senaryosunu, bölgesel özgüllükleri, etik katmanı ve başlangıç protokolünü ele alıyor.
+Yapay zekânın akademik yazımdaki etik sınırlarını sistemli biçimde inceleyen literatür de aracın değerinin görevin yapısına bağlı olduğunu vurgular (Hosseini ve diğerleri, 2023).
+
+Bir sonraki kitapçık (001-01-0002), bu sohbet penceresinden iş ortağına geçişin pratik mekaniğini anlatır. Bu kitapçığın geri kalanı ise ilk temas senaryosunu, bölgesel özgüllükleri, etik katmanı ve başlangıç protokolünü ele alıyor.
 
 ## 4. İlk Temas Senaryosu
 
@@ -102,7 +104,7 @@ Birincisi, atıf bütünlüğüdür. Claude Code'a "şu konuda kaynak öner" dem
 
 İkincisi, gizliliktir. Klinik veri, mülakat dökümü ya da anonimleştirilmemiş saha notu hiçbir koşulda araçla paylaşılmamalıdır. Araştırma için beş öncelik üzerine yayımlanan uluslararası uzlaşı (van Dis ve diğerleri, 2023), veri minimizasyonunu bu öncelikler arasında sayar. Buradan çıkan kural nettir: klinik veri, kurumsal etik kurulun onayladığı biçimde anonimleştirilmeden araçla paylaşılmaz.
 
-Üçüncüsü, yazarlık ve ifşadır. COPE, ICMJE ve WAME arasında bir uzlaşı konumu oluşmuştur: yapay zekâ yazar olamaz. Yapay zekâ sistemlerinin makalelerde listelenmesi tartışması, ilgili kuruluşların yayımladığı rehberlerde ele alınmıştır. Kesin normlar ise alan ilerledikçe evrilmeye devam etmektedir. Yerleşmiş olan şu: yapay zekâ yardımının yöntem bölümünde ya da teşekkür kısmında açıkça beyan edilmesi zorunludur (Stokel-Walker, 2023). Bu rehberin kuralı, her broşürün başında bir ifşa frontmatter'ı taşımasıdır.
+Üçüncüsü, yazarlık ve beyan yükümlülüğüdür. COPE, ICMJE ve WAME arasında bir uzlaşı konumu oluşmuştur: yapay zekâ yazar olamaz. Yapay zekâ sistemlerinin makalelerde listelenmesi tartışması, ilgili kuruluşların yayımladığı rehberlerde ele alınmıştır. Kesin normlar ise alan ilerledikçe evrilmeye devam etmektedir. Yerleşmiş olan şu: yapay zekâ yardımının yöntem bölümünde ya da teşekkür kısmında açıkça beyan edilmesi zorunludur (Stokel-Walker, 2023). Oysa bir beyan tek başına yeterli değildir. Yapay zekânın metinde nasıl ve hangi biçimlerde kullanıldığının okura açıkça anlatılması gerekir. Bu rehberin kuralı, her kitapçığın başında yapay zekâ araçlarının da okuyabildiği, onlara işin doğru yapılmasına yön veren yapılandırılmış bir beyan bloğu taşımasıdır.
 
 Dördüncüsü, dil modellerinin toplumsal yansımalarıdır. Büyük dil modellerinin riskleri taksonomik olarak haritalanmıştır (Weidinger ve diğerleri, 2022). Sosyal bilimci için en kritik risk kategorileri yanlış bilgi üretimi, dezenformasyonun yayılması, ölçek etkileri ve kültürel yanlılıktır. Türkçe içerikteki yanlılık, İngilizce içerikten farklı biçimlerde ve kimi boyutlarda daha ağır biçimde belirebilir. Çünkü çok dilli modeller, diller arasında ne dengeli ne de eşit özenle derlenmiş korpuslar üzerinde eğitilmektedir (Xu ve diğerleri, 2025). Bu nedenle Türkçe çıktıların elle denetimi, İngilizce çıktıların denetiminden daha titiz olmalıdır.
 
@@ -112,21 +114,21 @@ Beşincisi, yapısal eşitsizliktir. Büyük dil modellerinin yükseköğretimde
 
 Üç adımlı bir zihinsel hazırlık, ilk haftanın yönünü belirler.
 
-Birinci adım, görev türünü netleştirmektir. Aracı hangi akademik üretim sürecinde kullanacaksınız? Literatür taraması mı, sistematik derleme mi, manuskript revizyonu mu, ders tasarımı mı, IRB başvurusu mu, yoksa hakem yanıt mektubu mu? Her görev türü farklı bir yapılandırma ister. Aracı her işe yarayan genel bir yardımcı gibi kullanmak, niteliği baştan zayıf bir başlangıçtır.
+Birinci adım, görev türünü netleştirmektir. Aracı hangi akademik üretim sürecinde kullanacaksınız? Literatür taraması mı, sistematik derleme mi, makale revizyonu mu, ders tasarımı mı, IRB başvurusu mu, yoksa hakem yanıt mektubu mu? Her görev türü farklı bir yapılandırma ister. Aracı her işe yarayan genel bir yardımcı gibi kullanmak, niteliği baştan zayıf bir başlangıçtır.
 
 İkinci adım, bir kasa hazırlamaktır. Kasa, biriken akademik notların yaşadığı kalıcı bir klasör yapısıdır. Markdown dosyaları, frontmatter, dosya ağacı, içerik haritaları. Bu rehberin 004 kategorisi tümüyle bu konuya ayrılmıştır. İlk hafta kasayı eksiksiz kurmak gerekmez. Üç klasör bile yeter: mevcut araştırma, mevcut yazım, mevcut okuma listesi.
 
-Üçüncü adım, ifşa alışkanlığını yerleştirmektir. İlk haftadan başlayarak, araç yardımıyla yazılan her metin, ne kadar yardım alındığını açıkça not eden bir alt satır taşımalıdır. Bu yalnızca bir formalite değildir. Akademik üretim, gün gelir bir hakemin, bir editörün ya da bir öğrencinin önüne çıkar. O an geldiğinde ifşa belgesi çoktan orada olmalıdır.
+Üçüncü adım, beyan alışkanlığını yerleştirmektir. İlk haftadan başlayarak, araç yardımıyla yazılan her metin, ne kadar yardım alındığını açıkça not eden bir alt satır taşımalıdır. Bu yalnızca bir formalite değildir. Akademik üretim, gün gelir bir hakemin, bir editörün ya da bir öğrencinin önüne çıkar. O an geldiğinde beyan belgesi çoktan orada olmalıdır.
 
 Bu üç adımın hiçbiri teknik değildir. Üçü de yöntemseldir.
 
 ## 8. Sonuç ve Sonraki Adım
 
-Claude Code, sosyal bilimci için bir not defteri ile bir laboratuvar asistanı arasındaki açıklığı kapatan bir araçtır. Ama değeri kullanıcının metodolojik çerçevesiyle orantılıdır. O çerçeve hayali atıfı yasaklar, klinik veriyi korur, ifşayı en baştan kurar ve görev türünü netleştirir.
+Claude Code, sosyal bilimci için bir not defteri ile bir laboratuvar asistanı arasındaki açıklığı kapatan bir araçtır. Ama değeri kullanıcının metodolojik çerçevesiyle orantılıdır. O çerçeve hayali atıfı yasaklar, klinik veriyi korur, beyanı en baştan kurar ve görev türünü netleştirir.
 
-Bir sonraki broşür, sohbet penceresinden iş ortağına geçişin pratik mekaniğini anlatıyor: hangi komutlar, hangi izinler, hangi oturum yapısı, hangi başarısızlık biçimleri. 001-01-0002 broşürü (Aracın Ötesine Geçiş) tam bu noktadan devam eder.
+Bir sonraki kitapçık, sohbet penceresinden iş ortağına geçişin pratik mekaniğini anlatıyor: hangi komutlar, hangi izinler, hangi oturum yapısı, hangi başarısızlık biçimleri. 001-01-0002 kitapçığı (Aracın Ötesine Geçiş) tam bu noktadan devam eder.
 
-Bundan sonraki broşür dizisinin tamamı, bu ilk broşürde kurulan yapısal duruşun üzerine inşa edilecek. Her broşür kendi konusunda derinleşirken bu ilk çerçeveyi varsayar.
+Bundan sonraki kitapçık dizisinin tamamı, bu ilk kitapçıkta kurulan yapısal duruşun üzerine inşa edilecek. Her kitapçık kendi konusunda derinleşirken bu ilk çerçeveyi varsayar.
 
 ---
 
@@ -162,11 +164,11 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 
 ---
 
-**Broşür kimliği.** `001-01-0001`
+**Kitapçık kimliği.** `001-01-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-04
 **Sözcük sayısı (yaklaşık).** 2619 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 13
-**Halüsinasyon atıf sayısı.** 0
-**Önceki broşür.** Yok (ilk broşür)
-**Sonraki broşür.** [`001-01-0002`](../001-01-0002/tr.md). Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına
+**Uydurma atıf sayısı.** 0
+**Önceki kitapçık.** Yok (ilk kitapçık)
+**Sonraki kitapçık.** [`001-01-0002`](../001-01-0002/tr.md). Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına

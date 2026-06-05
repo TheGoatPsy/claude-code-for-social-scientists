@@ -1,36 +1,38 @@
 # Katkıda Bulunma
 
-Bu belge, `claude-code-for-social-scientists` deposuna nasıl değişiklik önereceğinizi, deponun zorunlu kıldığı iki dilli eşleşme kuralını ve her katkı sahibinin uymak zorunda olduğu yapay zekâ ifşa beklentilerini açıklar.
+Bu belge, `claude-code-for-social-scientists` deposuna nasıl değişiklik önereceğinizi, deponun zorunlu kıldığı iki dilli eşleşme kuralını ve her katkı sahibinin uymak zorunda olduğu yapay zekâ beyan beklentilerini açıklar.
 
 İngilizce sürüm için [`CONTRIBUTING.md`](./CONTRIBUTING.md) dosyasına bakınız.
 
 ## Hangi tür katkılar bekleniyor
 
-- Herhangi bir broşürdeki olgusal hata, atıf ya da DOI düzeltmeleri.
-- Mevcut Türkçe broşürlerin İngilizce çevirisi, mevcut İngilizce broşürlerin Türkçe çevirisi.
-- [`CATALOG.md`](./CATALOG.md) içinde planlanan slotlara karşılık önerilen yeni broşürler.
-- Sürekli entegrasyon iş akışlarında, belge araç setinde ve ifşa şemasında iyileştirmeler.
+- Herhangi bir kitapçıktaki olgusal hata, atıf ya da DOI düzeltmeleri.
+- Mevcut Türkçe kitapçıkların İngilizce çevirisi, mevcut İngilizce kitapçıkların Türkçe çevirisi.
+- [`CATALOG.md`](./CATALOG.md) içinde planlanan slotlara karşılık önerilen yeni kitapçıklar.
+- Sürekli bütünleşme iş akışlarında, belge araç setinde ve beyan şemasında iyileştirmeler.
 - Diğer ülkeler için örneklerin veya bölgesel akademik altyapı referanslarının yerelleştirilmesi: örneğin Yunan HEAL-Link entegrasyonunun, Meksika CONACyT'ın ya da Hindistan Shodhganga'nın nasıl kullanılacağına dair bir bölüm.
 
-Sürdürücü katkıları ayda bir kez gözden geçirir, yeni broşür önerilerini katalog içine yerleştirir.
+Sürdürücü katkıları ayda bir kez gözden geçirir, yeni kitapçık önerilerini katalog içine yerleştirir.
 
 ## Başlamadan önce
 
-Bir konu (issue) açın ve önerinizi iki ya da üç paragrafta tarif edin. Yeni bir broşür öneriyorsanız önerdiğiniz `KKK-AA-SSSS` kimliğini (uygun kategorideki bir sonraki boş seri), bir paragraf kapsamı ve bir taslak ana hattı eklemeniz gerekir.
+Bir konu (issue) açın ve önerinizi iki ya da üç paragrafta tarif edin. Yeni bir kitapçık öneriyorsanız önerdiğiniz `KKK-AA-SSSS` kimliğini (uygun kategorideki bir sonraki boş seri), bir paragraf kapsamı ve bir taslak ana hattı eklemeniz gerekir.
 
-Bu adım on beş dakikanızı alır. Karşılığında hem size hem de sürdürücüye uyumsuz iş saatlerini önler.
+Bu adım on beş dakikanızı alır. Karşılığında hem sizi hem de sürdürücüyü uyumsuz iş saatlerinden kurtarır.
 
 ## İki dilli eşleşme kuralı
 
-Her broşür klasörü `tr.md` ve `en.md` dosyalarını yan yana içerir. `main` dalına yapılan her commit'te bunu zorunlu kılan bir sürekli entegrasyon kontrolü çalışır.
+Her kitapçık klasörü `tr.md` ve `en.md` dosyalarını yan yana içerir. `main` dalına yapılan her commit'te bunu zorunlu kılan bir sürekli bütünleşme denetimi çalışır.
 
 Yalnızca bir dilde katkıda bulunuyorsanız pull request'iniz yine de incelenir ve bir özellik dalına merge edilebilir. Sürdürücü, dal `main`'e merge edilmeden önce diğer dil sürümünün yazılmasını ayarlar. `main` dalı kısmi iki dilli kapsamı kabul etmez.
 
 Anadili Türkçe olan ve Türkçe sürümü yazıyorsanız önce Türkçe sürümü yazın. İngilizce sürümü sürdürücü ya da başka bir katkı sahibi üstlenir. Tersi de geçerlidir. Çeviri kelime kelime değildir: aynı ana hat üzerinde yeniden yazımdır.
 
-## Yapay zekâ ifşa beklentileri
+## Yapay zekâ beyan beklentileri
 
-Taslağında yapay zekâ kullanan her katkı sahibi, dokunduğu broşürün yapay zekâ ifşa frontmatter alanlarını doldurmalıdır. Şema [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md) içinde belgelenir. `template/booklet-template.{tr,en}.md` yolundaki broşür şablon dosyaları, `human_review: "pending"` değeriyle önceden doldurulmuş şemayı içerir. Katkı sahipleri bu şablonu kopyalayıp uyarlayabilir. `main`'e merge etmeden önce `pending` değerini `partial` ya da `complete` olarak güncelleyin. CI, `main` üzerinde hâlâ `pending` taşıyan herhangi bir broşürü reddeder.
+Taslağında yapay zekâ kullanan her katkı sahibi, dokunduğu kitapçığın yapay zekâ katkı beyanı frontmatter alanlarını (ön veri bloğu) doldurmalıdır. Şema [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md) içinde belgelenir. `template/booklet-template.{tr,en}.md` yolundaki kitapçık şablon dosyaları, `human_review: "pending"` değeriyle önceden doldurulmuş şemayı içerir. Katkı sahipleri bu şablonu kopyalayıp uyarlayabilir. `main`'e merge etmeden önce `pending` değerini `partial` ya da `complete` olarak güncelleyin. CI, `main` üzerinde hâlâ `pending` taşıyan herhangi bir kitapçığı reddeder.
+
+Buradaki yapılandırılmış blok yalnızca insan okuyucular için değildir. Yapay zekâ araçları da bu bloğu okur ve metnin hangi standarda göre üretildiğini görür. Blok, aracın işi doğru yapmasına yön verir. Bir beyan tek başına yeterli değildir: yapay zekânın metinde nasıl ve hangi biçimlerde kullanıldığı açıkça anlatılır.
 
 Asgari zorunlu alanlar:
 
@@ -40,7 +42,7 @@ Asgari zorunlu alanlar:
 - `human_review` (`complete`, `partial`, `pending` değerlerinden biri).
 - `verified_citations_count` ve `fabricated_citations_count`.
 
-`human_review: pending` ile bir broşür ekleyen pull request'ler `main` dalına merge edilmez. Bu durumu CI iş akışı engeller.
+`human_review: pending` ile bir kitapçık ekleyen pull request'ler `main` dalına merge edilmez. Bu durumu CI iş akışı engeller.
 
 ## Atıf disiplini
 
@@ -51,7 +53,7 @@ Bir atıfı genişletmek için yapay zekâ yardımı aldıysanız yapay zekânı
 ## Pull request iş akışı
 
 1. Depoyu GitHub üzerinde forklayın.
-2. `main` dalından, broşür kimliği ya da dokunduğunuz alanın adıyla bir özellik dalı oluşturun (örneğin `feat/008-02-0001-test-selection` ya da `fix/catalog-typo`).
+2. `main` dalından, kitapçık kimliği ya da dokunduğunuz alanın adıyla bir özellik dalı oluşturun (örneğin `feat/008-02-0001-test-selection` ya da `fix/catalog-typo`).
 3. Değişiklikleri atomik commit'lerle yapın. Uygun olan Conventional Commits ön ekini kullanın (`feat:`, `fix:`, `docs:`, `chore:`, `ci:`, `refactor:`).
 4. Yerelde `npx markdownlint-cli2 "**/*.md"` çalıştırarak lint kontrolünü teyit edin.
 5. `main`'e karşı pull request açın. Daha önce açtığınız konuya atıfta bulunun.
@@ -60,7 +62,7 @@ Bir atıfı genişletmek için yapay zekâ yardımı aldıysanız yapay zekânı
 
 ## Geliştirici Köken Sertifikası
 
-Katkıda bulunarak, katkının size ait olduğunu ya da deponun lisans koşulları altında sunma hakkına sahip olduğunuzu beyan etmiş olursunuz. Geliştirici Köken Sertifikası (DCO) sürüm 1.1 bu beyanı yönetir. Pull request'lerin `Signed-off-by` ile imzalanması zorunlu değildir, ancak zımni DCO her merge edilen değişiklik için geçerlidir.
+Katkıda bulunarak katkının size ait olduğunu, ya da deponun lisans koşulları altında sunma hakkını taşıdığınızı beyan etmiş olursunuz. Geliştirici Köken Sertifikası (DCO) sürüm 1.1 bu beyanı yönetir ve her merge edilen değişiklik için zımnen geçerlidir. Pull request'lerin `Signed-off-by` ile imzalanması zorunlu değildir.
 
 ## Davranış
 
