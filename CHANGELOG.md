@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [2.5.0] - 2026-06-05
+
+Minor release. A Turkish-language voice revision of all thirteen released booklets, the companion website, and the Turkish README and CONTRIBUTING: the prose was rewritten in the author's academic voice, terminology was locked to correct forms, and AI-disclosure framing was enriched throughout.
+
+### Changed
+
+- The Turkish prose of all thirteen released booklets, the companion website, and README.tr and CONTRIBUTING.tr was rewritten in the author's academic Turkish voice. The change is prose only. Frontmatter, every section heading, every DOI, all inline citations, code blocks, and footer links are unchanged. Bilingual parity is preserved: each booklet keeps an equal section count and an identical DOI set across Turkish and English.
+- Terminology locked to the correct Turkish academic forms across all thirteen booklets: ifşa replaced with katkı beyanı (or beyan in context), ajansal replaced with ajan tabanlı, broşür replaced with kitapçık, komponent replaced with bileşen, konsolidasyon replaced with bütünleşme, manüskri replaced with makale.
+- AI-disclosure framing enriched: a declaration alone is not enough, the manner and extent of AI use must be explained; the machine-readable structured block is read by AI tools and orients correct work. This framing was applied consistently across all relevant prose passages in the thirteen booklets.
+- The revision was verified through three layers: a re-voice pass, an independent voice review, and a Turkish-correctness proofread.
+
+### Unchanged
+
+- No booklet was added or removed. No citation, DOI, or heading was changed. English files were not touched. Aggregate metrics are unchanged: 248 verified declarations, 0 fabricated, 26 human-reviewed language files, 13 booklets at release status.
+
 ## [2.4.0] - 2026-06-05
 
 Minor release. A scholarship and voice quality upgrade of all thirteen released booklets, in both Turkish and English, on two dimensions: substantive scholarship and technical accuracy first, then the author's native voice. No booklet was added or removed and no heading structure changed.

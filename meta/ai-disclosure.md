@@ -4,35 +4,35 @@ This file provides an aggregate, machine-friendly view of AI contribution levels
 
 This page is updated by the maintainer at each release. Readers who want the latest disclosure for a specific booklet should always check the booklet's own frontmatter, not this aggregate.
 
-## Aggregate table (as of v2.4.0, 2026-06-04)
+## Aggregate table (as of v2.5.0, 2026-06-05)
 
 | Booklet ID | Language | Contribution level | Human review | Verified citations | Fabricated citations | Last reviewed |
 |---|---|---|---|---|---|---|
-| 001-01-0001 | tr | substantial-drafting | complete | 13 | 0 | 2026-06-04 |
+| 001-01-0001 | tr | substantial-drafting | complete | 13 | 0 | 2026-06-05 |
 | 001-01-0001 | en | substantial-drafting | complete | 13 | 0 | 2026-06-04 |
-| 001-01-0002 | tr | substantial-drafting | complete | 10 | 0 | 2026-06-04 |
+| 001-01-0002 | tr | substantial-drafting | complete | 10 | 0 | 2026-06-05 |
 | 001-01-0002 | en | substantial-drafting | complete | 10 | 0 | 2026-06-04 |
-| 001-01-0003 | tr | co-drafting | complete | 6 | 0 | 2026-06-04 |
+| 001-01-0003 | tr | co-drafting | complete | 6 | 0 | 2026-06-05 |
 | 001-01-0003 | en | co-drafting | complete | 6 | 0 | 2026-06-04 |
-| 002-04-0001 | tr | co-drafting | complete | 10 | 0 | 2026-06-04 |
+| 002-04-0001 | tr | co-drafting | complete | 10 | 0 | 2026-06-05 |
 | 002-04-0001 | en | co-drafting | complete | 10 | 0 | 2026-06-04 |
-| 003-01-0001 | tr | co-drafting | complete | 9 | 0 | 2026-06-04 |
+| 003-01-0001 | tr | co-drafting | complete | 9 | 0 | 2026-06-05 |
 | 003-01-0001 | en | co-drafting | complete | 9 | 0 | 2026-06-04 |
-| 004-01-0001 | tr | substantial-drafting | complete | 9 | 0 | 2026-06-04 |
+| 004-01-0001 | tr | substantial-drafting | complete | 9 | 0 | 2026-06-05 |
 | 004-01-0001 | en | substantial-drafting | complete | 9 | 0 | 2026-06-04 |
-| 007-02-0001 | tr | substantial-drafting | complete | 10 | 0 | 2026-06-04 |
+| 007-02-0001 | tr | substantial-drafting | complete | 10 | 0 | 2026-06-05 |
 | 007-02-0001 | en | substantial-drafting | complete | 10 | 0 | 2026-06-04 |
-| 009-01-0001 | tr | co-drafting | complete | 12 | 0 | 2026-06-04 |
+| 009-01-0001 | tr | co-drafting | complete | 12 | 0 | 2026-06-05 |
 | 009-01-0001 | en | co-drafting | complete | 12 | 0 | 2026-06-04 |
-| 010-01-0001 | tr | substantial-drafting | complete | 8 | 0 | 2026-06-04 |
+| 010-01-0001 | tr | substantial-drafting | complete | 8 | 0 | 2026-06-05 |
 | 010-01-0001 | en | substantial-drafting | complete | 8 | 0 | 2026-06-04 |
-| 012-01-0001 | tr | co-drafting | complete | 7 | 0 | 2026-06-04 |
+| 012-01-0001 | tr | co-drafting | complete | 7 | 0 | 2026-06-05 |
 | 012-01-0001 | en | co-drafting | complete | 7 | 0 | 2026-06-04 |
-| 001-01-0004 | tr | full-draft | complete | 9 | 0 | 2026-06-04 |
+| 001-01-0004 | tr | full-draft | complete | 9 | 0 | 2026-06-05 |
 | 001-01-0004 | en | full-draft | complete | 9 | 0 | 2026-06-04 |
-| 008-01-0001 | tr | substantial-drafting | complete | 10 | 0 | 2026-06-04 |
+| 008-01-0001 | tr | substantial-drafting | complete | 10 | 0 | 2026-06-05 |
 | 008-01-0001 | en | substantial-drafting | complete | 10 | 0 | 2026-06-04 |
-| 008-02-0001 | tr | substantial-drafting | complete | 11 | 0 | 2026-06-04 |
+| 008-02-0001 | tr | substantial-drafting | complete | 11 | 0 | 2026-06-05 |
 | 008-02-0001 | en | substantial-drafting | complete | 11 | 0 | 2026-06-04 |
 
 Booklet 001-01-0004 was added in the v2.0.0 cycle as a full AI draft and then human-reviewed by the author, so its human review state is `complete` and it ships at `release` status in v2.0.0. Booklet 008-01-0001 was drafted bilingually in the v2.1.0 cycle at `substantial-drafting` level, human-reviewed by the author, and promoted to `release` status, so its review state is `complete`. Booklet 008-02-0001 was drafted bilingually after the v2.1.0 release at `substantial-drafting` level, human-reviewed by the author, and promoted to `release` status in v2.2.0, so its review state is `complete`. Eighteen booklets in [`CATALOG.md`](../CATALOG.md) remain at `planned` status and have no AI disclosure yet because no booklet-level AI-assisted drafting work has been committed for them.
@@ -84,6 +84,7 @@ The CI workflow refuses release booklet frontmatter that declares pending human 
 | 2026-05-29 | v2.2.0 release | Booklet 008-02-0001 (Statistical Test Selection with AI Consultation Discipline) drafted bilingually at `substantial-drafting` level, human-reviewed by the author, and promoted to `release` status. Nine verified citations per language file, zero fabricated. The released catalog grows from twelve to thirteen booklets, the second Data Analysis booklet, motivated by the Anthropic 2026 survey's named fear of selective reporting. Aggregate verified declarations rose from 222 to 240. |
 | 2026-05-29 | v2.3.0 release | Turkish-language quality revision. The Turkish prose of all thirteen released booklets and both Turkish-language README and CONTRIBUTING files was rewritten in the author's native voice. No booklet was added or removed. All aggregate metrics are unchanged: 240 verified declarations, 0 fabricated, 26 human-reviewed language files, 13 booklets at `release` status. |
 | 2026-06-04 | v2.4.0 quality upgrade | All thirteen released booklets (both tr.md and en.md) underwent a two-dimensional upgrade: substantive scholarship and technical corrections first, then the author's voice (English natural register, Turkish native championship craft). Corpus-wide scholarship work separated evidence from the guide's own inference, hedged unsupported claims rather than fabricating citations, and corrected misstatements (for example, EU AI Act Article 50 scope in 009-01-0001, which governs providers and deployers and synthetic media, not an individual researcher flagging all AI-assisted text). Citations added after Crossref-live and claim-support verification: Xu et al. (2025) in 001-01-0001, an Anthropic Claude Code documentation reference in 001-01-0004, Jones (2007) in 004-01-0001, Bramer et al. (2017) in 007-02-0001, Wilson et al. (2017) and Ziems et al. (2024) in 008-01-0001, Simonsohn et al. (2020) and Munafo et al. (2017) in 008-02-0001, and Bordage (2001) in 010-01-0001. Misapplied or phantom citations removed: Engel (1977) from 003-01-0001, Greenhalgh et al. (2016) from 007-02-0001, Tufte (1990) from 004-01-0001, and Squazzoni et al. (2021) and Resnik (2018) from 010-01-0001. No booklet was added or removed and no heading structure changed. Aggregate verified declarations rise from 240 to 248; unique bilingual citation sets rise from 120 to 124. |
+| 2026-06-05 | v2.5.0 release | Turkish-language voice revision. The Turkish prose of all thirteen booklets, the companion website, and the Turkish README and CONTRIBUTING were rewritten in the author's academic voice, with locked terminology (ifşa→katkı beyanı, ajansal→ajan tabanlı, broşür→kitapçık, komponent→bileşen, konsolidasyon→bütünleşme, manüskri→makale) and an enriched AI-disclosure framing: a declaration alone is not enough, the manner and extent of AI use must be explained. No booklet was added or removed and no citation changed. All aggregate metrics are unchanged: 248 verified declarations, 0 fabricated, 26 human-reviewed language files, 13 booklets at release status. |
 
 ---
 
