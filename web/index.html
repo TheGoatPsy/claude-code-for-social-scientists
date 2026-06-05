@@ -70,6 +70,9 @@
   }
   a { color: var(--accent-ink); text-decoration: none; }
   a:hover { text-decoration: underline; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+  section[id], main[id] { scroll-margin-top: 76px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; scroll-behavior: auto !important; } }
   .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
   h1, h2, h3 { line-height: 1.18; letter-spacing: -0.02em; margin: 0; }
   .mono { font-family: var(--mono); }
@@ -301,7 +304,7 @@
         <a class="card is-link" href="booklets/004-vault-architecture/004-01-0001/en/"><div class="tag">004 · Vault Architecture</div><h3><span lang="en">Vault architecture</span><span lang="tr">Kasa mimarisi</span></h3><p><span lang="en">Folder discipline, Maps of Content, and Markdown conventions that outlive tools.</span><span lang="tr">Klasör disiplini, Maps of Content ve araçlardan daha uzun ömürlü Markdown alışkanlıkları.</span></p></a>
         <a class="card is-link" href="booklets/007-academic-writing/007-02-0001/en/"><div class="tag">007 · Academic Writing</div><h3><span lang="en">APA 7 with DOI discipline</span><span lang="tr">DOI disipliniyle APA 7</span></h3><p><span lang="en">A reusable bibliography hygiene pipeline that treats DOI verification as a first-class concern.</span><span lang="tr">DOI doğrulamasını birinci sınıf bir mesele sayan, yeniden kullanılabilir bir kaynakça hijyeni hattı.</span></p></a>
         <a class="card is-link" href="booklets/008-data-analysis/008-01-0001/en/"><div class="tag">008 · Data Analysis</div><h3><span lang="en">Data analysis</span><span lang="tr">Veri analizi</span></h3><p><span lang="en">Reproducible quantitative workflows, and the discipline of statistical test selection with an analysis agent.</span><span lang="tr">Yeniden üretilebilir nicel iş akışları ve bir analiz ajanıyla istatistiksel test seçimi disiplini.</span></p></a>
-        <a class="card is-link" href="booklets/009-ethics-irb/009-01-0001/en/"><div class="tag">009 · Ethics and IRB</div><h3><span lang="en">Ethics and IRB</span><span lang="tr">Etik ve IRB</span></h3><p><span lang="en">Helsinki, COPE, WAME, ICMJE, STM 2025, the EU AI Act, ENAI, KVKK, and GDPR in one behavioral frame.</span><span lang="tr">Helsinki, COPE, WAME, ICMJE, STM 2025, AB Yapay Zeka Yasası, ENAI, KVKK ve GDPR, tek bir davranışsal çerçevede.</span></p></a>
+        <a class="card is-link" href="booklets/009-ethics-irb/009-01-0001/en/"><div class="tag">009 · Ethics and IRB</div><h3><span lang="en">Ethics and IRB</span><span lang="tr">Etik ve IRB</span></h3><p><span lang="en">Helsinki, COPE, WAME, ICMJE, STM 2025, the EU AI Act, ENAI, KVKK, and GDPR in one behavioral frame.</span><span lang="tr">Helsinki, COPE, WAME, ICMJE, STM 2025, AB Yapay Zekâ Yasası, ENAI, KVKK ve GDPR, tek bir davranışsal çerçevede.</span></p></a>
         <a class="card is-link" href="booklets/010-peer-review/010-01-0001/en/"><div class="tag">010 · Peer Review</div><h3><span lang="en">Peer review</span><span lang="tr">Hakem değerlendirmesi</span></h3><p><span lang="en">Rebuttal letters with traceability matrices and reviewer-response discipline.</span><span lang="tr">İzlenebilirlik matrisleri ve hakem yanıtı disipliniyle yazılan yanıt mektupları.</span></p></a>
         <a class="card is-link" href="booklets/012-troubleshooting/012-01-0001/en/"><div class="tag">012 · Troubleshooting</div><h3><span lang="en">Troubleshooting</span><span lang="tr">Sorun giderme</span></h3><p><span lang="en">A structured diagnostic protocol for when tools, papers, or reviewers go wrong.</span><span lang="tr">Araçlar, makaleler ya da hakemler ters gittiğinde işleyen, yapılandırılmış bir tanı protokolü.</span></p></a>
       </div>
@@ -320,7 +323,7 @@
         <div class="skill"><code>/apa-doi-verifier</code><span lang="en">APA 7 cleanup and DOI verification</span><span lang="tr">APA 7 temizliği ve DOI doğrulama</span></div>
         <div class="skill"><code>/bilingual-booklet-pairing</code><span lang="en">Turkish and English parity checks</span><span lang="tr">Türkçe ve İngilizce parite kontrolü</span></div>
         <div class="skill"><code>/ai-disclosure-auditor</code><span lang="en">Contribution, model, and citation audit</span><span lang="tr">Katkı, model ve atıf denetimi</span></div>
-        <div class="skill"><code>/ethics-irb-ai-protocol</code><span lang="en">IRB, KVKK, GDPR, and EU AI Act review</span><span lang="tr">IRB, KVKK, GDPR ve AB Yapay Zeka Yasası incelemesi</span></div>
+        <div class="skill"><code>/ethics-irb-ai-protocol</code><span lang="en">IRB, KVKK, GDPR, and EU AI Act review</span><span lang="tr">IRB, KVKK, GDPR ve AB Yapay Zekâ Yasası incelemesi</span></div>
         <div class="skill"><code>/rebuttal-traceability-matrix</code><span lang="en">Reviewer comment traceability</span><span lang="tr">Hakem yorumu izlenebilirliği</span></div>
         <div class="skill"><code>/memory-vault-architect</code><span lang="en">Research vault architecture and MOCs</span><span lang="tr">Araştırma kasası mimarisi ve MOC'lar</span></div>
         <div class="skill"><code>/regional-access-workflow</code><span lang="en">DergiPark, ULAKBIM, HEAL-Link routing</span><span lang="tr">DergiPark, ULAKBIM, HEAL-Link yönlendirme</span></div>
@@ -342,13 +345,16 @@
           <button onclick="setTab(2)">git clone</button>
         </div>
         <div class="tabpane on" data-tab="0">
-          <div class="term"><div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="t">terminal</span><button class="copy" data-copy="pip install social-cc-plugin">copy</button></div>
+          <div class="term"><div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="t">terminal</span><button class="copy" data-copy="pip install social-cc-plugin && social-cc install">copy</button></div>
           <pre><code><span class="p">$</span> <span class="c">pip install social-cc-plugin</span>
-<span class="o"># installs the project skills into your Claude configuration</span></code></pre></div>
+<span class="p">$</span> <span class="c">social-cc install</span>
+<span class="o"># pip installs the package; social-cc install copies the ten skills into your Claude config</span></code></pre></div>
         </div>
         <div class="tabpane" data-tab="1">
-          <div class="term"><div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="t">claude code</span><button class="copy" data-copy="/plugin install social-cc-plugin">copy</button></div>
-          <pre><code><span class="p">$</span> <span class="c">/plugin install social-cc-plugin</span>
+          <div class="term"><div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="t">claude code</span><button class="copy" data-copy="/plugin marketplace add TheGoatPsy/claude-code-for-social-scientists
+/plugin install social-cc-plugin@claude-code-for-social-scientists">copy</button></div>
+          <pre><code><span class="p">$</span> <span class="c">/plugin marketplace add TheGoatPsy/claude-code-for-social-scientists</span>
+<span class="p">$</span> <span class="c">/plugin install social-cc-plugin@claude-code-for-social-scientists</span>
 <span class="o"># adds the ten skills as a native Claude Code plugin</span></code></pre></div>
         </div>
         <div class="tabpane" data-tab="2">
@@ -403,7 +409,7 @@
       <div class="col">
         <h4><span lang="en">Cite and archive</span><span lang="tr">Atıf ve arşiv</span></h4>
         <a href="https://doi.org/10.5281/zenodo.20289687" target="_blank" rel="noopener">Zenodo (concept DOI)</a>
-        <a href="https://doi.org/10.5281/zenodo.20449820" target="_blank" rel="noopener">Zenodo (v2.3.0)</a>
+        <a href="https://doi.org/10.5281/zenodo.20549062" target="_blank" rel="noopener">Zenodo (v2.4.0)</a>
         <a href="https://orcid.org/0000-0003-1076-3928" target="_blank" rel="noopener">ORCID 0000-0003-1076-3928</a>
         <a href="https://github.com/TheGoatPsy/claude-code-for-social-scientists" target="_blank" rel="noopener">GitHub repository</a>
       </div>
@@ -412,6 +418,7 @@
       <span class="mono">Code: Apache-2.0</span>
       <span class="mono">Prose and booklets: CC-BY-NC-SA-4.0</span>
       <span>© 2026 Onour Impram</span>
+      <span class="mono">Release v2.4.0</span>
       <span class="mono">DOI 10.5281/zenodo.20289687</span>
     </div>
   </div>
