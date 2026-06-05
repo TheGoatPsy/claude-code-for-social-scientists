@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Yazar Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, çift lisans Apache 2.0 ve CC-BY-NC-SA 4.0, v2.4.0.">
+  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists. Sosyal Bilimciler İçin Claude Code Rehberi banner. Yazar Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, çift lisans Apache 2.0 ve CC-BY-NC-SA 4.0, v2.4.0.">
 </p>
 
 # Sosyal Bilimciler İçin Claude Code Rehberi
@@ -118,7 +118,7 @@ v2.4.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code pr
 Skills iki yolla dağıtılır ve ikisi de aynı `.claude/skills/` kaynağından okur.
 
 - **pip.** `pip install social-cc-plugin` çalıştırın, ardından `social-cc install` ile skills'i Claude yapılandırmanıza kopyalayın. Geçerli projenin `.claude/skills/` dizinine yazmak için `social-cc install --project`, paketteki skills'i listelemek için `social-cc list` kullanın.
-- **Claude Code eklentisi.** Depoyu Claude Code eklenti sistemiyle kurun. [`.claude-plugin/plugin.json`](./.claude-plugin/plugin.json) manifesti aynı skills'i sunar.
+- **Claude Code eklentisi.** `/plugin marketplace add TheGoatPsy/claude-code-for-social-scientists` çalıştırın, ardından `/plugin install social-cc-plugin@claude-code-for-social-scientists` ile kurun. [`.claude-plugin/marketplace.json`](./.claude-plugin/marketplace.json) marketplace manifesti ve [`.claude-plugin/plugin.json`](./.claude-plugin/plugin.json) eklenti manifesti aynı skills'i sunar.
 
 Installer kodu Apache 2.0'dır. Kopyalanan skill içeriği CC-BY-NC-SA 4.0 altında kalır. Düz yazı için ticari olmayan kullanım ve atıf koşulları geçerlidir. Bkz. [Lisans](#lisans).
 
