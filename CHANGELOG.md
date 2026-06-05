@@ -21,6 +21,10 @@ Minor release. A Turkish-language voice revision of all thirteen released bookle
 
 - No booklet was added or removed. No citation, DOI, or heading was changed. English files were not touched. Aggregate metrics are unchanged: 248 verified declarations, 0 fabricated, 26 human-reviewed language files, 13 booklets at release status.
 
+### Archived
+
+- Zenodo version DOI for v2.5.0: [10.5281/zenodo.20554517](https://doi.org/10.5281/zenodo.20554517).
+
 ## [2.4.0] - 2026-06-05
 
 Minor release. A scholarship and voice quality upgrade of all thirteen released booklets, in both Turkish and English, on two dimensions: substantive scholarship and technical accuracy first, then the author's native voice. No booklet was added or removed and no heading structure changed.
