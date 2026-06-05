@@ -33,23 +33,23 @@ status: "release"
 
 # Klasör Disiplini ve Maps of Content (MOC) Kalıbı
 
-Önceki broşür, Kasa Olarak Hafıza kalıbının dört adımını kurmuştu. Bu broşür, o dört adımdan Saklama adımını derinleştirir. Bilginin nereye ait olduğu sorusu yüzeyde basit görünür. Özünde bir mühendislik kararıdır ve sonuçları ağırdır. Yanlış bir klasör mimarisi, araştırmacıya aylar içinde gizli bir verimlilik vergisi yükler. Doğru bir mimari ise dosya bulmayı kavramsal hatırlamadan yapısal navigasyona taşır. Hedef, klasör mimarisini kişisel bir zevk meselesi değil bir tasarım kararı olarak ele almak ve içerik haritası kalıbını, yani Maps of Content (MOC) kalıbını sosyal bilim araştırması bağlamına uyarlamaktır. MOC kişisel bilgi yönetimi topluluğundan gelen bir uygulayıcı kavramıdır. Yerleşik bir akademik yapı değildir.
+Önceki kitapçık, Kasa Olarak Hafıza kalıbının dört adımını kurmuştu. Bu kitapçık o dört adımdan Saklama adımını derinleştirir. Bilginin nereye ait olduğu sorusu yüzeyde basit görünür. Özünde bir mühendislik kararıdır. Ve sonuçları ağırdır. Yanlış bir klasör mimarisi araştırmacıya aylar içinde gizli bir verimlilik vergisi yükler. Doğru bir mimari ise dosya bulmayı kavramsal hatırlamadan yapısal navigasyona taşır. Hedef, klasör mimarisini kişisel bir zevk meselesi değil bir tasarım kararı olarak ele almak ve içerik haritası kalıbını, yani Maps of Content (MOC) kalıbını sosyal bilim araştırması bağlamına uyarlamaktır. MOC kişisel bilgi yönetimi topluluğundan gelen bir uygulayıcı kavramıdır. Yerleşik bir akademik yapı değildir.
 
 ## 1. Klasör Seçiminin Maliyet Hesabı
 
 Bir akademisyen kasasını kurarken klasör mimarisini çoğu zaman düşünmeden seçer. Aklına gelen ilk yapıyı kurar, dosyaları atar ve çalışmaya başlar. Bu seçim başlangıçta ucuz görünür. Gerçek maliyeti zamanla yüzeye çıkar.
 
-Altı ay sonra araştırmacı bir dosyayı ararken onu nerede bıraktığını hatırlamak zorunda kalır. Bir yıl sonra aynı belge iki farklı klasörde iki farklı adla durur. İki yıl sonra kasanın yarısı erişilemez hale gelir. Silindiği için değil. Hangi bilginin nerede olduğu artık kimseye net olmadığı için.
+Altı ay sonra araştırmacı bir dosyayı ararken onu nerede bıraktığını hatırlamak zorunda kalır. Bir yıl sonra aynı belge iki farklı klasörde iki farklı adla durur. İki yıl sonra kasanın yarısı erişilemez hale gelir. Silindiği için değil. Kaybolduğu için. Adres unutuldu, hangi klasörün hangi mantıkla kurulduğu artık kimseye net değil.
 
 Bu, gizli bir vergidir. Doğrudan görünmediği için sinsice birikir. Kişisel bilgi yönetimi araştırmaları bu dinamiği doğrudan belgelemiştir: dağınık depolama ve tutarsız adlandırma, araştırmacının çalışma yaşamı boyunca sessizce birikim yapan yeniden bulma maliyetleri üretir. Bu maliyetler zamanla araştırmacının gerçekte üzerine eylem kurabileceği bilgiye erişimini kısıtlar (Jones, 2007). Yanlış yerleştirilen her dosya, gelecekte bir arama maliyeti doğurur. Tam yük, yüzlerce belge üzerinden yıllar içinde çarpılarak ancak fark edilir hale gelir.
 
-Norman'ın (2013) gündelik nesnelerin tasarımı üzerine ortaya koyduğu temel ilke burada doğrudan geçerlidir: bir sistemin kullanılabilirliği, kullanıcının onu kullanırken ne kadar düşünmek zorunda kaldığıyla ters orantılıdır. İyi tasarlanmış bir kasa araştırmacının dosya bulmak için düşünmesini gerektirmez, çünkü yapı kendisi yolu gösterir. Klasör disiplini bir estetik tercih değildir. Gelecekteki erişim maliyetini bugünden düşüren bir mühendislik yatırımıdır.
+Sabah masa başına oturan araştırmacı, o makalesi için geçen yılın notunu arar, bulamaz, yeniden okumaya başlar. Bu on dakika kaybolmadı. Ödendi. Norman'ın (2013) gündelik nesnelerin tasarımı üzerine ortaya koyduğu temel ilke burada doğrudan geçerlidir: bir sistemin kullanılabilirliği, kullanıcının onu kullanırken ne kadar düşünmek zorunda kaldığıyla ters orantılıdır. İyi tasarlanmış bir kasa araştırmacının dosya bulmak için düşünmesini gerektirmez, çünkü yapı kendisi yolu gösterir. Klasör disiplini bir estetik tercih değildir. Gelecekteki erişim maliyetini bugünden düşüren bir mühendislik yatırımıdır.
 
 ## 2. Üç Yaygın Mimarinin Karşılaştırılması
 
 Akademik kasalarda üç temel klasör mimarisi yaygındır. Her birinin bir mantığı, bir de maliyeti vardır.
 
-Birincisi konu bazlı mimaridur. Klasörler araştırma alanlarına göre düzenlenir: klinik notlar bir klasörde, saha çalışması başka bir klasörde, literatür üçüncü bir klasörde.
+Birincisi, konu bazlı mimaridir. Klasörler araştırma alanlarına göre düzenlenir: klinik notlar bir klasörde, saha çalışması başka bir klasörde, literatür üçüncü bir klasörde.
 
 ```mermaid
 flowchart TD
@@ -61,7 +61,7 @@ flowchart TD
   K3 --> N3[sosyal-kaygi-derleme.md]
 ```
 
-İkincisi kronolojik mimaridır. Klasörler zamana göre düzenlenir: her yıl bir klasör, her ay bir alt klasör. Günlük tutma için doğal bir yapıdır bu. Ama bir bilginin konu bağlamını gizler.
+İkincisi, kronolojik mimaridir. Klasörler zamana göre düzenlenir: her yıl bir klasör, her ay bir alt klasör. Günlük tutma için doğal bir yapıdır bu. Ama bir bilginin konu bağlamını gizler.
 
 ```mermaid
 flowchart TD
@@ -72,9 +72,9 @@ flowchart TD
   Y3 --> M2[2026-06.md]
 ```
 
-Üçüncüsü proje bazlı mimaridır. Klasörler aktif projelere göre düzenlenir. Kısa vadede verimlidir. Ama akademik üretimin uzun ömürlü yapısıyla çelişir: proje biter, ürettiği bilgi kalır.
+Üçüncüsü, proje bazlı mimaridir. Klasörler aktif projelere göre düzenlenir. Kısa vadede verimlidir. Ama akademik üretimin uzun ömürlü yapısıyla çelişir: proje biter, ürettiği bilgi kalır.
 
-Bu üç mimarinin hiçbiri tek başına yeterli değildir. Konu bazlı mimari zamanı gizler, kronolojik mimari konuyu gizler, proje bazlı mimari kalıcılığı gizler. Çözüm bunlardan birini seçmek değil, üstüne bir navigasyon katmanı eklemektir. O katman, içerik haritasıdır.
+Bu üç mimarinin hiçbiri tek başına yeterli değildir. Konu bazlı mimari zamanı gizler, kronolojik mimari konuyu gizler, proje bazlı mimari kalıcılığı gizler. Hepsi bir şeyi feda eder. Çözüm bunlardan birini seçmek değil, üstüne bir navigasyon katmanı eklemektir. O katman, içerik haritasıdır.
 
 ## 3. PARA, Zettelkasten ve Johnny Decimal
 
@@ -86,11 +86,13 @@ Zettelkasten, Sönke Ahrens'in (2017) popülerleştirdiği atomik not sistemidir
 
 Johnny Decimal, klasörleri numaralı bir ondalık sistemle düzenler: bir alan 10-19, bir alt alan 11, bir belge 11.01. Navigasyonu sayısal ve kesin kılan bu kalıbın akademik kasa için asıl değeri, klasör adlarına gömülü bir sıralama ve adres sistemi getirmesidir.
 
+Bir proje klasörüne konan makale, proje bittiğinde nereye gider? Kasası olan herkes bu soruyla bir gün karşılaşır. Proje kapanır ama o makale hâlâ işe yarar, hâlâ başka bir çalışmada görünür. PARA sisteminde taşımak gerekir. Zettelkasten'de not kendi bağlantılarıyla yaşıyor zaten. Johnny Decimal'de adres numarası değişmeden içerik güncellenir. Araştırmacı bu sürtünmeyi bir kez yaşadıktan sonra tek kalıbın yetmediğini içgüdüsel olarak kavrar.
+
 Sosyal bilim için bu üç kalıp rekabet eden değil, tamamlayan seçeneklerdir. PARA yaşam döngüsünü yönetir, Zettelkasten fikirlerin bağlantısını güçlendirir, Johnny Decimal navigasyonu kesinleştirir. En sağlam akademik kasa bu üçünün güçlü yanlarını birleştirir: numaralı klasörler, atomik notlar ve bunları birbirine bağlayan içerik haritaları. Allen'ın (2015) verimlilik üzerine ortaya koyduğu ilke de bu noktayı destekler: bir sistem ancak araştırmacının güvendiği bir yapıya sahipse zihinsel yükü azaltır. O güven, yapının tutarlılığından gelir.
 
 ## 4. MOC, İçerik Haritası Kalıbı
 
-İçerik haritası, yani MOC, bir kasanın navigasyon omurgasıdır. Bu kılavuzda MOC, kişisel bilgi yönetimi topluluğundan gelen bir uygulayıcı kavramı olarak kullanılmaktadır. Akademik bir yapı olarak değil, işlevsel bir çalışma tanımı olarak. İçerik haritası bir konuya açılan kapıdır: ilgili belgeleri tek bir yerde toplar, aralarında kısa bir bağlam kurar ve okuru doğru belgeye yönlendirir. Kritik olan şudur: içerik haritası bir klasör değil, bir belgedir. Klasörler dosyaları fiziksel olarak gruplarken içerik haritaları onları kavramsal olarak gruplar. Bir dosya tek bir klasörde durur ama birden çok içerik haritasında görünebilir. Bu kalıbı güçlü kılan da tam olarak budur.
+İçerik haritası, yani MOC, bir kasanın navigasyon omurgasıdır. Bu kılavuzda MOC, kişisel bilgi yönetimi topluluğundan gelen bir uygulayıcı kavramı olarak kullanılmaktadır. Akademik bir yapı olarak değil, işlevsel bir çalışma tanımı olarak. İçerik haritası bir konuya açılan kapıdır: ilgili belgeleri tek bir yerde toplar, aralarında kısa bir bağlam kurar ve okuru doğru belgeye yönlendirir. Kritik olan şudur: içerik haritası bir klasör değil, bir belgedir. Klasörler dosyaları fiziksel olarak gruplarken içerik haritaları onları kavramsal olarak gruplar. Fark bu. Bir dosya tek bir klasörde durur ama birden çok içerik haritasında görünebilir. Bu kalıbı güçlü kılan da tam olarak budur.
 
 İçerik haritasının niçin gerekli olduğu, ikinci bölümdeki üç mimarinin sınırından doğrudan gelir. Klasör mimarisi tek boyutludur. Bir dosya bir klasördedir. Oysa bilgi çok boyutludur. Bir vaka notu hem klinik alana hem belirli bir projeye hem de belirli bir kuramsal çerçeveye aynı anda ait olabilir. İçerik haritası bu çok boyutluluğu yakalar. Bates'in (2002) bilgi arama ve tarama davranışına ilişkin bütünleşik modeli de bu noktayı destekler: araştırmacılar bilgiyi tek bir doğrusal yolla değil, birbirine bağlı pek çok giriş noktasından arar. İçerik haritası, bu giriş noktalarını somutlaştırır ve gezilebilir kılar.
 
@@ -112,7 +114,7 @@ flowchart TD
 
 En alt katman atomik nottur: tek bir düşünce, tek bir kaynak ya da tek bir gözlem. Kasanın yapı taşlarıdır bunlar. Orta katman içerik haritasıdır: ilgili atomik notları bir konu altında toplar. En üst katman meta içerik haritasıdır, yani meta-MOC. İçerik haritalarını bir araya getiren ve kasanın en üst düzey navigasyon kapısı olan bu katmana araştırmacı kasaya girince önce bakar, oradan ilgili alan haritasına, oradan da belirli bir atomik nota iner.
 
-Bu hiyerarşinin gücü, aynı atomik notun birden çok içerik haritasında görünebilmesinden gelir. Diyagramda da görüldüğü gibi, atomik-not-1 hem Alan MOC'ta hem Proje MOC'ta yer alır. Klasör mimarisinin tek boyutluluğunu hiyerarşi bu şekilde aşar: dosya fiziksel olarak tek bir klasörde durur, ama kavramsal olarak birden çok haritada yaşar. Hiyerarşi kasayı bir dosya yığınından gezilebilir bir bilgi alanına dönüştürür. Ve kasa büyüdükçe bu alan daha az değil, daha çok işe yarar.
+Bu hiyerarşinin gücü, aynı atomik notun birden çok içerik haritasında görünebilmesinden gelir. Diyagramda da görüldüğü gibi, atomik-not-1 hem Alan MOC'ta hem Proje MOC'ta yer alır. Klasör mimarisinin tek boyutluluğunu hiyerarşi bu şekilde aşar: dosya fiziksel olarak tek bir klasörde durur, ama kavramsal olarak birden çok haritada yaşar. Bir not, iki yerde. Taşınmadan. Hiyerarşi kasayı bir dosya yığınından gezilebilir bir bilgi alanına dönüştürür. Ve kasa büyüdükçe bu alan daha az değil, daha çok işe yarar.
 
 ## 6. Markdown Sözleşmeleri
 
@@ -127,7 +129,7 @@ Bir kasanın tutarlılığı, küçük ama disiplinli sözleşmelere dayanır. B
 | Tarih | ISO 8601 biçimi | `2026-05-24` |
 | Başlık düzeyi | Tek bir birinci düzey başlık | `# Belge Başlığı` |
 
-Bu sözleşmeler arasında en kritik olanı, dosya adı ile başlık arasındaki ayrımdır. Dosya adı İngilizce ve sade tutulur, Türkçe başlık frontmatter içinde yaşar. Bu ayrımın nedeni, dokuzuncu bölümde ele alınan Unicode meselesidir. Köşeli çift parantez bağlantıları, önceki broşürde tanımlanan hipertekst ilkesinin somut uygulamasıdır: bir belge başka bir belgeye atıf verdiğinde bu atıf gezilebilir bir bağlantıya dönüşür. Frontmatter etiketleri ise makinenin kasayı sorgulamasına olanak tanır. Araştırmacı belirli bir etikete sahip tüm belgeleri tek bir komutla toplayabilir.
+Bu sözleşmeler arasında en kritik olanı, dosya adı ile başlık arasındaki ayrımdır. Dosya adı İngilizce ve sade tutulur, Türkçe başlık frontmatter içinde yaşar. Bu ayrımın nedeni, dokuzuncu bölümde ele alınan Unicode meselesidir. Köşeli çift parantez bağlantıları, önceki kitapçıkta tanımlanan hipertekst ilkesinin somut uygulamasıdır: bir belge başka bir belgeye atıf verdiğinde bu atıf gezilebilir bir bağlantıya dönüşür. Frontmatter etiketleri ise makinenin kasayı sorgulamasına olanak tanır. Araştırmacı belirli bir etikete sahip tüm belgeleri tek bir komutla toplayabilir.
 
 ## 7. Örnek Akademik Kasa, Üç MOC Tipi
 
@@ -168,21 +170,21 @@ Vaka formülasyonu üzerine biriken tüm kavramsal notlar.
 
 ## 8. Araç Değişikliklerine Dayanım
 
-Bir kasanın uzun ömrü, hiçbir tek araca bağlı olmamasına dayanır. Araştırmacı kasasını bugün bir not uygulamasında tutabilir. Ama o uygulama beş yıl sonra kapanabilir, fiyatlandırma politikasını değiştirebilir ya da satın alınıp kapatılabilir. Kasanın bu değişime dayanabilmesi gerekir. Dayanımın temeli, düz metin Markdown ilkesidir: içerik haritaları, köşeli parantez bağlantıları ve frontmatter, hepsi düz metin sözleşmeleridir. Belirli bir uygulamaya değil, Markdown standardına bağlıdırlar.
+Bir kasanın uzun ömrü, hiçbir tek araca bağlı olmamasına dayanır. Araştırmacı kasasını bugün bir not uygulamasında tutabilir. Ama o uygulama beş yıl sonra kapanabilir, fiyatlandırma politikasını değiştirebilir ya da satın alınıp kapatılabilir. On yılda bir bu olur. Kasanın bu değişime dayanabilmesi gerekir. Dayanımın temeli, düz metin Markdown ilkesidir: içerik haritaları, köşeli parantez bağlantıları ve frontmatter, hepsi düz metin sözleşmeleridir. Belirli bir uygulamaya değil, Markdown standardına bağlıdırlar.
 
 Pratik test şudur: kasa, en sevilen uygulamadan çıkarılıp sade bir metin editöründe açıldığında hâlâ gezilebilir mi? İyi tasarlanmış bir kasada yanıt evettir. Bağlantılar metin içinde görünürdür, haritalar okunabilir belgelerdir, etiketler düz metin alanlarıdır. Bir araç değiştiğinde kaybolan tek şey o aracın sunduğu görsel kolaylıklardır. Kasanın kendisi değil. Bu dayanım kasayı on yıl ölçeğinde güvenilir kılar. On yıl, araştırma kariyeri için uygun planlama ufkudur.
 
 ## 9. Türkiye ve Yunanistan Özgüllüğü
 
-Türkçe ve Yunanca dosya adları teknik bir tuzak barındırır. Türkçe karakterler, özellikle ğ, ü, ş, ı, ö, ç, dosya adlarında kullanıldığında işletim sistemleri arasında sorun çıkarabilir. Bunun nedeni, Unicode normalizasyonunun farklı sistemlerde farklı çalışmasıdır: macOS dosya sistemi karakterleri NFD biçiminde saklarken Linux NFC biçimini bekler. Kasa git üzerinden bu iki sistem arasında taşındığında Türkçe karakterli dosya adları bozulabilir ya da çoğaltılabilir.
+Türkçe ve Yunanca dosya adları teknik bir tuzak barındırır. Türkçe karakterler, özellikle ğ, ü, ş, ı, ö, ç, dosya adlarında kullanıldığında işletim sistemleri arasında sorun çıkarabilir. Bunun nedeni, Unicode normalizasyonunun farklı sistemlerde farklı çalışmasıdır: macOS dosya sistemi karakterleri NFD biçiminde saklarken Linux NFC biçimini bekler. Kasa git üzerinden bu iki sistem arasında taşındığında Türkçe karakterli dosya adları bozulabilir ya da çoğaltılabilir. Sessizce. Fark edilmeden.
 
-Çözüm basittir ve altıncı bölümdeki sözleşmelerde zaten kurulmuştur: dosya adları İngilizce ve sade tutulur, Türkçe başlık frontmatter içindeki `title` alanında yaşar. Bir belge `sosyal-kaygi-derleme.md` adıyla saklanır. Ama frontmatter'ında `title: "Sosyal Kaygı Derlemesi"` bulunur. Bu kural hem teknik sorunu çözer hem de uluslararası iş birliğini kolaylaştırır. İngilizce dosya adları farklı dil ortamlarında güvenle taşınır. Aynı kural Yunanca için de geçerlidir: αβγ karakterleri yerine Latin harfli sade dosya adları kullanılır. Derin teknik bir tartışma değil, tek bir disiplin kuralıdır bu. Ayrıntılı sorun giderme kapanış broşürüne bırakılmıştır.
+Çözüm basittir ve altıncı bölümdeki sözleşmelerde zaten kurulmuştur: dosya adları İngilizce ve sade tutulur, Türkçe başlık frontmatter içindeki `title` alanında yaşar. Bir belge `sosyal-kaygi-derleme.md` adıyla saklanır. Ama frontmatter'ında `title: "Sosyal Kaygı Derlemesi"` bulunur. Bu kural hem teknik sorunu çözer hem de uluslararası iş birliğini kolaylaştırır. İngilizce dosya adları farklı dil ortamlarında güvenle taşınır. Aynı kural Yunanca için de geçerlidir: αβγ karakterleri yerine Latin harfli sade dosya adları kullanılır. Derin teknik bir tartışma değil, tek bir disiplin kuralıdır bu. Ayrıntılı sorun giderme kapanış kitapçığına bırakılmıştır.
 
 ## 10. Köprü, Atıf Disiplinine
 
 Klasör mimarisi kurulduktan sonra, içine giren her referansın bibliyografik bütünlüğü kasanın uzun ömrünü belirler. Kasa ne kadar iyi düzenlenirse düzenlensin, içindeki atıflar tutarsız ya da doğrulanmamışsa bu yapı üzerinde kurulan akademik üretim güvenilir olmaz. Bir sonraki kategori, APA 7 ve DOI disiplinini ele alır: her referansın doğru, doğrulanmış ve tutarlı biçimde nasıl tutulacağını gösterir.
 
-Knuth'un (1984) edebi programlama felsefesi bu ilkeyi derinden karşılar: belgenizi bir insan okuyabilsin diye yazın, makinenin onu okuyabilmesini ek bir özellik olarak görün, birincil amaç olarak değil. Brown ve Duguid'in (2017) bilginin sosyal yaşamı üzerine gösterdiği gibi, bir kasa yalnızca dosya deposu değildir. İçinde bilginin bağlamıyla birlikte yaşadığı bir ortamdır. Atıf, o bağlamın ayrılmaz bir parçasıdır.
+Knuth (1984), edebi programlama felsefesinde şunu ortaya koyar: bir belgeyi önce insan okuyabilsin diye yaz, makinenin onu işlemesi ikincil gelir. Aynı ilke kasaya uygulanır: bir referans önce araştırmacının çalışmasında yer bulabilsin diye doğrulanır, bibliyografik biçim bunun üstüne kurulur. Brown ve Duguid (2017) ise bilginin sosyal yaşamını incelerken şunu gösterir: bir kasa yalnızca dosya deposu değildir, içinde bilginin bağlamıyla birlikte yaşadığı bir ortamdır. Bağlam canlı kalırsa kasa canlı kalır. Atıf, kasanın omurgasıdır. Kırılırsa yapı yıkılır.
 
 ## Kaynakça
 
@@ -206,11 +208,11 @@ Norman, D. A. (2013). *The design of everyday things* (gözden geçirilmiş ve g
 
 ---
 
-**Broşür kimliği.** `004-01-0001`
+**Kitapçık kimliği.** `004-01-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-05
 **Sözcük sayısı (yaklaşık).** 1990 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 9
-**Halüsinasyon atıf sayısı.** 0
-**Önceki broşür.** [`003-01-0001`](../../003-memory-system/003-01-0001/tr.md). Kasa Olarak Hafıza, İlkesel Bir Giriş
-**Sonraki broşür.** [`007-02-0001`](../../007-academic-writing/007-02-0001/tr.md). DOI Disiplini ile APA 7
+**Uydurma atıf sayısı.** 0
+**Önceki kitapçık.** [`003-01-0001`](../../003-memory-system/003-01-0001/tr.md). Kasa Olarak Hafıza, İlkesel Bir Giriş
+**Sonraki kitapçık.** [`007-02-0001`](../../007-academic-writing/007-02-0001/tr.md). DOI Disiplini ile APA 7

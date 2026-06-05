@@ -6,7 +6,7 @@
 
 Anthropic Claude Code'u araştırmada, eğitimde ve akademik yazımda kullanmak isteyen sosyal bilimciler için iki dilli, açık kaynak bir rehber. Bu araçları gerçek akademik üretim sürecinde kullanan bir klinik psikolog ve doktora adayı tarafından yazıldı. İngilizce konuşulan dünyanın dışındaki araştırmacılara, içeridekilere de seslenerek.
 
-> **Durum.** v2.4.0 sürümü. On üç broşür Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Broşürleri yinelenebilir iş akışlarına dönüştüren on tamamlayıcı Claude Code project skill de pakete dahildir. v2.4.0 bir bilimsel ve ses kalite yükseltmesidir. Her broşür iki boyutta gözden geçirildi, önce bilimsel ve teknik doğruluk, sonra yazarın sesi. Aşırı iddialar yumuşatıldı, yanlış uygulanmış atıflar doğrulanmış kaynaklarla değiştirildi ve bağımsız bir inceleme sıfır uydurma atıf doğruladı. Doğrulanmış atıf bildirimleri 240'tan 248'e yükseldi ve tam iki dilli parite korundu. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
+> **Durum.** v2.4.0 sürümü. On üç kitapçık Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Kitapçıkları yinelenebilir iş akışlarına dönüştüren on tamamlayıcı Claude Code project skill de pakete dahildir. v2.4.0 bir bilimsel ve ses kalitesi yükseltmesidir. Her kitapçık iki boyutta gözden geçirildi: önce bilimsel ve teknik doğruluk, sonra yazarın sesi. Aşırı iddialar yumuşatıldı, yanlış uygulanmış atıflar doğrulanmış kaynaklarla değiştirildi ve bağımsız bir inceleme sıfır uydurma atıf doğruladı. Doğrulanmış atıf bildirimleri 240'tan 248'e yükseldi ve tam iki dilli parite korundu. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
 
 > **EN readers.** The English version is in [`README.md`](./README.md). Every booklet has a `tr.md` and an `en.md` side by side. A CI check enforces this pairing on every commit.
 
@@ -14,7 +14,7 @@ Anthropic Claude Code'u araştırmada, eğitimde ve akademik yazımda kullanmak 
 
 ## Rehberin amacı
 
-Bilgisayar bilimi dışındaki akademik çalışmada Claude Code kullanımı için kanıta dayalı, pratiğe oturmuş bir el kitabı. Hedef kitle psikoloji, sosyoloji, eğitim, halk sağlığı, iletişim, siyaset bilimi, antropoloji ve yakın disiplinlerde çalışan araştırmacılardır. Her broşür Türkçe ve İngilizce tam paralel sunulur.
+Bilgisayar bilimi dışındaki akademik çalışmada Claude Code kullanımı için kanıta dayalı, pratiğe oturmuş bir el kitabı. Hedef kitle psikoloji, sosyoloji, eğitim, halk sağlığı, iletişim, siyaset bilimi, antropoloji ve yakın disiplinlerde çalışan araştırmacılardır. Her kitapçık Türkçe ve İngilizce tam paralel sunulur.
 
 Rehber, sosyal bilimcinin gerçekte karşılaştığı soruları on iki tematik kategoride ele alır.
 
@@ -31,15 +31,15 @@ Rehber, sosyal bilimcinin gerçekte karşılaştığı soruları on iki tematik 
 11. **Konferans sunumu.** Slayt, poster, lightning talk, ağ kurma protokolleri.
 12. **Sorun giderme.** Araç çalışmadığında, çalışmalar çeliştiğinde, hakem yanlış soru sorduğunda.
 
-Her broşür kısa, iddialı ve yazarın kendi akademik pratiğinde sınanmıştır.
+Her kitapçık kısa, iddialı ve yazarın kendi akademik pratiğinde sınanmıştır.
 
 ## İki dilli neden
 
-Türkçe ve İngilizce tam paralel sunulur. Dünya genelinde yaklaşık doksan milyon Türkçe konuşan vardır ve Batı Avrupa'da geniş bir Türk diasporası bulunur. Türkçe akademik yapay zekâ kaynakları ise bu talebe kıyasla oldukça azdır. Bu boşluk rastlantı değildir. Sosyal bilimde coding agent kullanımına dair 2026 tarihli büyük ölçekli bir tarama, ABD ve Kanada'daki araştırmacıları örnekler ve benimsemenin kariyer aşaması, cinsiyet ile kurum prestiji ekseninde eğik olduğunu bulur ([Anthropic, 2026](https://www.anthropic.com/research/coding-agents-social-sciences)). Bu çerçevenin dışından, tam paralel yazılmış bir rehber, o eğikliğe karşı çalışmanın somut bir yoludur. İngilizce sürümün amacı ise uluslararası meslektaşların okuyabilmesi, İngilizce dergilerde atıf yapılabilmesi ve küresel akademik arama motorlarından ulaşılabilmesidir. Her broşür kendi klasöründe `tr.md` ve `en.md` olarak yan yana yaşar. Sürekli entegrasyon kontrolü, bu eşleşmeyi bozan herhangi bir commit'i reddeder.
+Türkçe ve İngilizce tam paralel sunulur. Dünya genelinde yaklaşık doksan milyon Türkçe konuşan vardır ve Batı Avrupa'da geniş bir Türk diasporası bulunur. Oysa Türkçe akademik yapay zekâ kaynakları bu talebe kıyasla oldukça azdır. Bu boşluk rastlantı değildir. Sosyal bilimde coding agent kullanımına dair 2026 tarihli büyük ölçekli bir tarama, ABD ve Kanada'daki araştırmacıları örnekler ve benimsemenin kariyer aşaması, cinsiyet ile kurum prestiji ekseninde eğik olduğunu bulur ([Anthropic, 2026](https://www.anthropic.com/research/coding-agents-social-sciences)). Bu çerçevenin dışından, tam paralel yazılmış bir rehber, o eğikliğe karşı çalışmanın somut bir yoludur. İngilizce sürümün amacı ise uluslararası meslektaşların okuyabilmesi, İngilizce dergilerde atıf yapılabilmesi ve küresel akademik arama motorlarından ulaşılabilmesidir. Her kitapçık kendi klasöründe `tr.md` ve `en.md` olarak yan yana yaşar. Sürekli entegrasyon kontrolü, bu eşleşmeyi bozan herhangi bir commit'i reddeder.
 
 ## Bu rehber kimin için, kimin için değil
 
-Anket çalışması yürüten yardımcı doçent için. Sistematik derleme yazan doktora öğrencisi için. R&R hazırlayan doktora sonrası araştırmacı için. Müfredat tasarlayan öğretim üyesi için. IRB sürecinde ilerleyen klinik araştırmacı için. Kodu okuyabilen ama tek bir paragraf yazmak uğruna bir haftalık araç öğrenimine vakit ayırmak istemeyen insanlar için.
+Anket çalışması yürüten yardımcı doçent için. Sistematik derleme yazan doktora öğrencisi için. R&R hazırlayan doktora sonrası araştırmacı için. Bu üç profil rehberin çekirdeğini oluşturur. Müfredat tasarlayan öğretim üyesi için. IRB sürecinde ilerleyen klinik araştırmacı için. Kodu okuyabilen ama tek bir paragraf yazmak uğruna bir haftalık araç öğrenimine vakit ayırmak istemeyen insanlar için.
 
 Bir Claude Code başvuru kılavuzu değildir. Anthropic kendi belgelerini yayımlamaktadır. Bir yapay zekâ abartı belgesi de değildir. Yapay zekânın makalenizi sizin için yazacağına söz vermez. Öte yandan, 2026 yılında yapay zekânın akademik üretimde hiçbir rol oynamadığını da varsaymaz. Rehberin konumu, akademik yayıncılığın uzlaşı çerçevesi (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) ve AB Yapay Zekâ Yasası 2024/1689 şeffaflık yükümlülükleri kapsamında dürüst ortak yazarlıktır.
 
@@ -47,7 +47,7 @@ Bir Claude Code başvuru kılavuzu değildir. Anthropic kendi belgelerini yayım
 
 Yazar Onour Impram: Türkiye, Yunanistan ve İrlanda lisanslı klinik psikolog, İstanbul Üniversitesi Klinik ve Sağlık Psikolojisi doktora adayı, Biruni Üniversitesi dış öğretim görevlisi, yapay zekâ ve ruh sağlığı araştırmacısı. ORCID: [0000-0003-1076-3928](https://orcid.org/0000-0003-1076-3928).
 
-Claude Code bir taslak ve doğrulama yardımcısı olarak kullanılır. Her broşür, akademik yayıncılığın uzlaşı çerçevesi (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) ile AB Yapay Zekâ Yasası 2024/1689 Madde 50 şeffaflık yükümlülükleri ve ENAI etik kullanım önerileri doğrultusunda katkı düzeyini belirten bir frontmatter bloğu taşır (`ai_assisted`, `ai_tools.model_alias`, `ai_tools.model_dated`, `ai_contribution_level`, `human_review`). Tam politika için [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md) dosyasına bakınız.
+Claude Code bir taslak ve doğrulama yardımcısı olarak kullanılır. Her kitapçık, akademik yayıncılığın uzlaşı çerçevesi (COPE 2023, WAME 2023, ICMJE 2024, STM 2025) ile AB Yapay Zekâ Yasası 2024/1689 Madde 50 şeffaflık yükümlülükleri ve ENAI etik kullanım önerileri doğrultusunda katkı düzeyini belgeleyen bir frontmatter bloğu taşır. Bu blok yalnızca insanlar için değildir: yapay zekâ araçlarının da okuyabildiği, onlara işin doğru yapılmasına yön veren yapılandırılmış bir kayıttır. Blok hangi aracın, hangi rolde, hangi katkı düzeyinde kullanıldığını ve insan incelemesinin durumunu açıkça gösterir (`ai_assisted`, `ai_tools.model_alias`, `ai_tools.model_dated`, `ai_contribution_level`, `human_review`). Ne var ki bir beyan tek başına yeterli değildir. Yapay zekânın metinde nasıl ve hangi biçimlerde kullanıldığı açıkça anlatılır. Tam politika için [`AI-AUTHORSHIP.md`](./AI-AUTHORSHIP.md) dosyasına bakınız.
 
 ## Depo düzeni
 
@@ -59,8 +59,8 @@ claude-code-for-social-scientists/
 ├── LICENSE.code               (Apache 2.0 tam metni)
 ├── LICENSE.content            (CC-BY-NC-SA 4.0 tam metni)
 ├── CITATION.cff               (Zenodo concept DOI: 10.5281/zenodo.20289687)
-├── AI-AUTHORSHIP.md           (ifşa politikası)
-├── CATALOG.md                 (planlanan ve taslak haldeki tüm broşürlerin kataloğu)
+├── AI-AUTHORSHIP.md           (beyan politikası)
+├── CATALOG.md                 (planlanan ve taslak haldeki tüm kitapçıkların kataloğu)
 ├── package.json               (yerel lint ve doğrulama komutları)
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md            (İngilizce)
@@ -71,7 +71,7 @@ claude-code-for-social-scientists/
 │   ├── 001-foundations/
 │   ├── 002-academic-access/
 │   ├── ... (012 kategori)
-├── template/                  (broşür başlangıç şablonları)
+├── template/                  (kitapçık başlangıç şablonları)
 ├── meta/
 │   ├── roadmap.md
 │   ├── contributors.md
@@ -88,30 +88,30 @@ claude-code-for-social-scientists/
 
 ## Kataloglama düzeni
 
-Her broşürün `KKK-AA-SSSS` biçiminde sabit bir kimliği vardır.
+Her kitapçığın `KKK-AA-SSSS` biçiminde sabit bir kimliği vardır.
 
 - `KKK` üç haneli kategori kodu (001 ile 012 arası).
 - `AA` kategori içi iki haneli alt kategori kodu.
 - `SSSS` dört haneli sıra numarası.
 
-Örneğin `001-01-0001`, Temeller kategorisinin birinci alt kategorisinin birinci broşürüdür. Tam katalog [`CATALOG.md`](./CATALOG.md) dosyasında yaşar. Yayım sonrası kimlikler değişmez: broşür ileride revize edilse bile kimlik sabit kalır. Revizyonlar broşürün kendi frontmatter ve değişiklik kaydında tutulur.
+Örneğin `001-01-0001`, Temeller kategorisinin birinci alt kategorisinin birinci kitapçığıdır. Tam katalog [`CATALOG.md`](./CATALOG.md) dosyasında yaşar. Yayım sonrası kimlikler değişmez: kitapçık ileride revize edilse bile kimlik sabit kalır. Revizyonlar kitapçığın kendi frontmatter ve değişiklik kaydında tutulur.
 
 ## Project Skills
 
-v2.4.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code project skill içerir. Broşürler teoriyi, pedagojiyi ve akademik çerçeveyi taşır. Skills katmanı ise tekrarlanabilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır.
+v2.4.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code project skill içerir. Kitapçıklar teoriyi, pedagojiyi ve akademik çerçeveyi taşır. Skills katmanı ise tekrarlanabilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır.
 
-| Skill | Tamamlayıcı broşürler | Amaç |
+| Skill | Tamamlayıcı kitapçıklar | Amaç |
 |---|---|---|
 | `social-science-literature-triage` | 002, 007 | Literatür taraması başlamadan önce veri tabanı seçimi, dil katmanı, DOI durumu ve dahil etme ölçütlerini yapılandırır. |
 | `apa-doi-verifier` | 007 | APA 7 kaynakçayı temizler, DOI metadata doğrulaması yapar ve uydurma atıf riskini sınıflar. |
-| `bilingual-booklet-pairing` | tüm broşür çiftleri | `tr.md` ve `en.md` paritesini, frontmatter uyumunu, başlıkları ve kültürel adaptasyon notlarını denetler. |
-| `ai-disclosure-auditor` | tüm broşür çiftleri | AI katkı alanlarını, insan incelemesini, atıf sayılarını, model metadata alanlarını ve disclosure standardını denetler. |
-| `ethics-irb-ai-protocol` | 009 | Etik kurul, KVKK, GDPR, EU AI Act, ifşa ve veri minimizasyonu kontrol listesi üretir. |
+| `bilingual-booklet-pairing` | tüm kitapçık çiftleri | `tr.md` ve `en.md` paritesini, frontmatter uyumunu, başlıkları ve kültürel adaptasyon notlarını denetler. |
+| `ai-disclosure-auditor` | tüm kitapçık çiftleri | AI katkı alanlarını, insan incelemesini, atıf sayılarını, model metadata alanlarını ve beyan standardını denetler. |
+| `ethics-irb-ai-protocol` | 009 | Etik kurul, KVKK, GDPR, EU AI Act, beyan ve veri minimizasyonu kontrol listesi üretir. |
 | `rebuttal-traceability-matrix` | 010 | Hakem yorumlarını yanıt kategorilerine, manuscript değişiklik haritasına ve editör yanıt taslağına çevirir. |
 | `memory-vault-architect` | 003, 004 | Araştırma vault klasörleri, MOC yapısı, frontmatter, kaynak pasaportu ve retrieval pattern tasarlar. |
 | `regional-access-workflow` | 002 | DergiPark, ULAKBIM TR Dizin, HEAL-Link, YOK Thesis Center, VPN ve kütüphane yollarıyla yasal erişim akışı kurar. |
 | `agentic-session-debugger` | 012 | Claude Code scope drift, loop trap, hidden state, context limit, PATH ve izin problemlerini teşhis eder. |
-| `repo-release-integrity-check` | tüm repo | Release öncesi README, katalog, changelog, citation dosyaları, Zenodo DOI, release notes, AI disclosure ve booklet metadata uyumunu kontrol eder. |
+| `repo-release-integrity-check` | tüm repo | Release öncesi README, katalog, changelog, citation dosyaları, Zenodo DOI, release notes, AI beyanı ve kitapçık metadata uyumunu kontrol eder. |
 
 ### Skills kurulumu
 
@@ -124,7 +124,7 @@ Installer kodu Apache 2.0'dır. Kopyalanan skill içeriği CC-BY-NC-SA 4.0 altı
 
 ## Lisans
 
-Kod ve yapılandırma **Apache License, Version 2.0** kapsamındadır ([`LICENSE.code`](./LICENSE.code)). Broşürler, rehberler, düz yazı ve öğretici içerik **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International** kapsamındadır ([`LICENSE.content`](./LICENSE.content)). Çift lisans modelinin özeti depo kökündeki [`LICENSE`](./LICENSE) dosyasındadır. Düz yazı içeriğinin ticari kullanımı için önceden yazılı izin gerekir. İletişim prosedürü için LICENSE dosyasını okuyunuz.
+Kod ve yapılandırma **Apache License, Version 2.0** kapsamındadır ([`LICENSE.code`](./LICENSE.code)). Kitapçıklar, rehberler, düz yazı ve öğretici içerik **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International** kapsamındadır ([`LICENSE.content`](./LICENSE.content)). Çift lisans modelinin özeti depo kökündeki [`LICENSE`](./LICENSE) dosyasındadır. Düz yazı içeriğinin ticari kullanımı için önceden yazılı izin gerekir. İletişim prosedürü için LICENSE dosyasını okuyunuz.
 
 ## Atıf
 
@@ -141,11 +141,11 @@ Bu çalışma şu kanallarla kayıt altına alınmıştır.
 
 ## Yol haritası
 
-Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v2.4.0: on üç broşürün tamamı iki boyutta gözden geçirildi, önce bilimsel ve teknik doğruluk, sonra yazarın sesi. Tam iki dilli parite korundu, her atıf yerinde kaldı ya da güçlendirildi. Yeni broşür eklenmedi. Tam otuz broşürlük katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımını içeren sonraki büyük kilometre taşı v3.0 için hedeflenmektedir.
+Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v2.4.0: on üç kitapçığın tamamı iki boyutta gözden geçirildi, önce bilimsel ve teknik doğruluk, sonra yazarın sesi. Tam iki dilli parite korundu, her atıf yerinde kaldı ya da güçlendirildi. Yeni kitapçık eklenmedi. Tam otuz kitapçıklık katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımını içeren sonraki büyük kilometre taşı v3.0 için hedeflenmektedir.
 
 ## Katkıda bulunma
 
-Yapay zekânın İngilizce dışı akademik ekosistemlere nasıl indiğini önemseyen sosyal bilim araştırmacıları, klinisyenler, eğitim tasarımcıları, kütüphaneciler ve mühendislerin katkıları beklenmektedir. Pull request iş akışı, iki dilli eşleşme kuralı ve ifşa beklentileri için [`CONTRIBUTING.tr.md`](./CONTRIBUTING.tr.md) dosyasını okuyunuz.
+Yapay zekânın İngilizce dışı akademik ekosistemlere nasıl indiğini önemseyen sosyal bilim araştırmacıları, klinisyenler, eğitim tasarımcıları, kütüphaneciler ve mühendislerin katkıları beklenmektedir. Pull request iş akışı, iki dilli eşleşme kuralı ve beyan beklentileri için [`CONTRIBUTING.tr.md`](./CONTRIBUTING.tr.md) dosyasını okuyunuz.
 
 ## İletişim
 

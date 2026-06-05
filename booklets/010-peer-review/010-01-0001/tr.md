@@ -32,7 +32,7 @@ status: "release"
 
 # İzlenebilirlik Matrisleri ile Hakem Yanıt Mektupları
 
-Önceki broşür, etik çerçeveyi baştan kurulan bir iş akışı belgesi olarak tanımlamıştı. Bu broşür, o çerçevenin sınandığı en kritik ana geçer: hakem yanıt mektubuna. Sosyal bilim araştırmacısının profesyonel üretimindeki metin türleri arasında yanıt mektubu, tek bir yapısal hatanın, atlanan bir yorum, gerekçesiz kısmi yanıt, karşılıksız bırakılmış bir çelişki, kapıyı ikinci kez kapatabildiği yerdir. Yapılandırılmamış bir yanıt mektubu çoğunlukla ikinci bir redde çıkar. Bir izlenebilirlik matrisi ise her yorumu görünür, her yanıtı izlenebilir kılarak bu riski yönetir. Buradaki amaç, Claude Code ile bu matrisi yarı otomatik kuran ve yapay zekâ ifşa etiğini koruyan bir iş akışını göstermektir.
+Önceki kitapçık, etik çerçeveyi baştan kurulan bir iş akışı belgesi olarak tanımlamıştı. Bu kitapçık, o çerçevenin sınandığı en kritik ana geçer: hakem yanıt mektubuna. Yanıt mektubu, profesyonel akademik üretimin en yüksek bahisli metin türüdür. Tek bir yapısal hata kapıyı ikinci kez kapatabilir. Atlanan bir yorum, gerekçesiz kısmi yanıt, karşılıksız bırakılmış bir çelişki. Bunların her biri ikinci bir redde giden bir yolu açar. Yapılandırılmamış bir yanıt mektubu çoğunlukla oraya çıkar. Bir izlenebilirlik matrisi ise her yorumu görünür, her yanıtı izlenebilir kılarak bu riski yönetir. Buradaki amaç, Claude Code ile bu matrisi yarı otomatik kuran ve yapay zekâ beyan etiğini koruyan bir iş akışını göstermektir.
 
 ## 1. Hakem Yanıt Mektubunun Yapısı
 
@@ -48,7 +48,7 @@ Matrisin gerekliliği, revizyonun aritmetiğinden doğrudan çıkar. Bir makale 
 
 ## 3. Claude Code ile Bir Matris Oluşturma
 
-Bir izlenebilirlik matrisi, Claude Code ile yarı otomatik kurulabilir. İş akışı birkaç aşamada ilerler. Hakem raporları önce kasaya düz metin olarak alınır. Ardından her yorum, hakem kimliği ve yorumun makaledeki konumuyla birlikte ayrı bir satır olarak çıkarılır. Model bu çıkarma işlemini destekler: uzun bir hakem raporunu ayrı ve ayrıştırılmış yorumlara böler. Bu işlem, hakemden hakemlere tek başına yapılsaydı saatlerce sürerdi. Yazar daha sonra her satıra kendi yanıtını ve planlanan değişikliği ekler.
+Bir izlenebilirlik matrisi, Claude Code ile yarı otomatik kurulabilir. İş akışı birkaç aşamada ilerler. Hakem raporları önce kasaya düz metin olarak alınır. Ardından her yorum, hakem kimliği ve yorumun makaledeki konumuyla birlikte ayrı bir satır olarak çıkarılır. Model bu çıkarma işlemini destekler: uzun bir hakem raporunu ayrı ve ayrıştırılmış yorumlara böler. Bu işlem, hakemlerin tamamı için tek başına yapılsaydı saatlerce sürerdi. Yazar daha sonra her satıra kendi yanıtını ve planlanan değişikliği ekler.
 
 Burada kesin olarak belirtilmesi gereken kritik bir sınır vardır. Model, matrisin yapısını ve dilbilgisel düzenini destekler. Yanıtın özünü, ne yanıt verileceğini, karşı argümanın nasıl kurulacağını, hangi değişikliğin yapılacağını, yazar üretir. Bu karar her zaman ve yalnızca araştırmacıya aittir. Hosseini ve diğerleri (2023), bilimsel yayınlarda yapay zekâ kullanımını incelerken, aracın metnin biçimini düzenlemesi ile metnin içeriğini üretmesi arasındaki ayrımın belirsizleşmeden korunması gerektiğini vurgular. İzlenebilirlik matrisinde bu ayrım sürecin içine işlenmiştir: biçim modelin desteğiyle, içerik yazarın kalemiyle.
 
@@ -56,7 +56,7 @@ Burada kesin olarak belirtilmesi gereken kritik bir sınır vardır. Model, matr
 
 Yapay zekâ yardımıyla yazılan metinlerin izini gizleme tartışması, dikkatli bir ayrım gerektiriyor. Bu ayrım kolayca yanlış okunur. Yapay zekâ yardımıyla yazılmış bir metin, yapay zekâ tarafından yazılmış bir metin değildir. Bir araştırmacının kendi analizini yapay zekâ desteğiyle daha açık ifade etmesi meşrudur. Oysa yapay zekânın ürettiği içeriği kendi entelektüel çıktısı gibi sunması meşru değildir.
 
-Bu ayrım, "anti-yapay-zekâ-izi yazımı" kavramının neden etik açıdan çetrefilli bir alan olduğunu açıklar. Else (2023), yapay zekâ tarafından yazılan özetlerin deneyimli bilim insanlarını bile yanıltabildiğini gösterdiğinde, ortaya çıkan sorun izin görünmezliği değildi. İfşa eksikliğiydi. Bir metnin yapay zekâ izi taşıyıp taşımaması ikincil bir sorudur. Birincil soru şudur: yapay zekâ katkısı ifşa edilmiş mi? Bu broşür, izi gizleme rehberi değildir. Aksine, ifşa zorunluluğunu koruyarak yapay zekâ yardımının bir revizyon iş akışında dürüstçe nasıl belirtileceğini gösterir. Bütünlük, izin görünürlüğünde değil, katkının şeffaflığındadır.
+Bu ayrım, "anti-yapay-zekâ-izi yazımı" kavramının neden etik açıdan çetrefilli bir alan olduğunu açıklar. Else (2023), yapay zekâ tarafından yazılan özetlerin deneyimli bilim insanlarını bile yanıltabildiğini gösterdiğinde, ortaya çıkan sorun izin görünmezliği değildi. Beyan eksikliğiydi. Bir metnin yapay zekâ izi taşıyıp taşımaması ikincil bir sorudur. Birincil soru şudur: yapay zekâ katkısı beyan edilmiş mi? Bu kitapçık, izi gizleme rehberi değildir. Aksine, beyan zorunluluğunu koruyarak yapay zekâ yardımının bir revizyon iş akışında dürüstçe nasıl belirtileceğini gösterir. Bütünlük, izin görünürlüğünde değil, katkının şeffaflığındadır.
 
 ## 5. Örnek Bir R&R'dan Matris Geliştirme
 
@@ -91,33 +91,33 @@ Editör, hakem ile yazar arasında durur. Bu konum ayrı bir iletişim stratejis
 
 Sword (2017), başarılı akademisyenlerin nasıl yazdığını incelediği görgül çalışmasında, mesleki iletişimde netlik ve doğrudanlığı, üretken akademik pratiği diğerlerinden tutarlı biçimde ayıran özellikler olarak saptar. Editöre yazılan not, bu netliğin en yoğun sınavıdır. Not bir savunma değil, bir harita sunar. İyi bir harita uzun olmak zorunda değildir. Editör bu nottan şunu anlar: yazar revizyonu ciddiye almıştır, süreç kontrol altındadır ve arkasından gelen matris dikkatle okunmayı hak etmektedir.
 
-## 8. Etik Sınırlar ve İfşa
+## 8. Etik Sınırlar ve Beyan
 
-Yapay zekâ yardımının ifşası, hakem yanıt sürecinde de zorunludur. Hangi katkının açıklanacağı aşağıdaki tabloda netleşir.
+Yapay zekâ yardımının beyanı, hakem yanıt sürecinde de zorunludur. Hangi katkının açıklanacağı aşağıdaki tabloda netleşir.
 
-| Durum | İfşa |
+| Durum | Beyan |
 |---|---|
-| Dilbilgisi ve biçim düzenleme | İfşa edilir |
-| Matris formatının oluşturulması | İfşa edilir |
-| Analitik yanıtın özü | Yazarın üretimi. Yapay zekâ katkısı olmadığından ifşa gerektirmez |
+| Dilbilgisi ve biçim düzenleme | Beyan edilir |
+| Matris formatının oluşturulması | Beyan edilir |
+| Analitik yanıtın özü | Yazarın üretimi. Yapay zekâ katkısı olmadığından beyan gerektirmez |
 | Bilimsel argümanın geliştirilmesi | Yazarın sorumluluğu |
-| Kaynak doğrulama | Yapay zekâ destekli. İfşa edilir |
+| Kaynak doğrulama | Yapay zekâ destekli. Beyan edilir |
 
-Bir yanıt mektubunda yapay zekâ kullanımı, bir ifşa cümlesiyle belirtilir. Aşağıdaki örnek sentetik bir ifşa metnidir.
+Bir yanıt mektubunda yapay zekâ kullanımı, bir beyan cümlesiyle belirtilir. Aşağıdaki örnek sentetik bir beyan metnidir.
 
 > Bu yanıt mektubunun yapılandırılmasında bir yapay zekâ destekli araç kullanılmıştır. Araç, izlenebilirlik matrisinin formatını ve düz yazının dilbilgisel düzenlemesini destekledi. Tüm analitik içerik, hakem yorumlarına verilen yanıtların özü ve eklenen bilimsel argümanlar, yazarlar tarafından kaleme alınmıştır. Yapay zekâ kullanımı yazarlık iddiasını oluşturmaz.
 
-Bu ifşa, Yayın Etiği Komitesi ve Uluslararası Tıp Dergisi Editörleri Komitesi'nin yapay zekâ konumlarıyla uyumludur. İfşa mektubu zayıflatmaz. Aksine yazarın bütünlüğünü gösterir. Yapay zekâ kullanımına giderek daha dikkatli bakan bir editöryel ortamda bu sinyal ağırlık taşır.
+Bu beyan, Yayın Etiği Komitesi ve Uluslararası Tıp Dergisi Editörleri Komitesi'nin yapay zekâ konumlarıyla uyumludur. Bir beyan tek başına yeterli değildir. Asıl önemli olan şudur: yapay zekânın yanıt mektubunda nasıl ve hangi biçimlerde kullanıldığının okura açıkça anlatılmasıdır. Beyan mektubu zayıflatmaz. Aksine yazarın bütünlüğünü gösterir. Yapay zekâ kullanımına giderek daha dikkatli bakan bir editöryel ortamda bu sinyal ağırlık taşır.
 
 ## 9. Yanıt Süre Yönetimi
 
-Bir revizyon daveti çoğunlukla bir süre sınırıyla gelir: otuz, altmış ya da doksan gün. Başından bir plana bağlanmazsa bu süre hızla tükenir. Doksan günlük bir plan şu yapıda kurulur. İlk otuz gün hakem raporlarının bütünüyle okunmasına, izlenebilirlik matrisine tüm yorumların işlenmesine ve büyük yapısal değişikliklerin planlanmasına ayrılır. Hangi bölümler yeniden yazılacak, hangi yeni analizler gerekiyor, hangi literatür boşlukları kapatılacak. İkinci otuz gün uygulamaya gider: değişiklikler makaleye işlenir, her satır için yanıt metni yazılır. Son otuz gün matrisi tamamlar, revize edilmiş metnin özgün hakem kaygılarına karşı bir bütünlük okumasından geçirilmesini sağlar ve editör notunu hazırlar.
+Bir revizyon daveti çoğunlukla bir süre sınırıyla gelir: otuz, altmış ya da doksan gün. Başından bir plana bağlanmazsa bu süre hızla tükenir. Doksan günlük bir plan şu yapıda kurulur. İlk otuz gün hakem raporlarının bütünüyle okunmasına, izlenebilirlik matrisine tüm yorumların işlenmesine ve büyük yapısal değişikliklerin planlanmasına ayrılır. Hangi bölümler yeniden yazılacak, hangi yeni analizler gerekecek, hangi literatür boşlukları kapatılacak. İkinci otuz gün uygulamaya gider: değişiklikler makaleye işlenir, her satır için yanıt metni yazılır. Son otuz gün matrisi tamamlar, revize edilmiş metnin özgün hakem kaygılarına karşı bir bütünlük okumasından geçirilmesini sağlar ve editör notunu hazırlar.
 
 Daha kısa sürelerde plan orantılı olarak sıkışır. Ne var ki matris mantığı değişmez. Önemli olan, revizyon süresinin her gününün matristeki görünür bir satıra bağlanmasıdır. Sürenin ortasında tamamlanmış satır oranına bakan bir yazar, ilerlemenin kaba bir hissinden daha değerli bir şeye sahiptir: kaç satır kaldığının gerçekçi bir sayımına. Bu sayım, kalan zamana nereden bakılacağına dair iyi kararlar almanın tek gerçek zeminidir.
 
 ## 10. Köprü, Sorun Giderme Protokolüne
 
-Hakem yanıt mektubu hazırlanırken Claude Code akarken işler ters gidebilir. Bir komut beklenmedik bir sonuç verebilir. Bir dosya bozulabilir. Bir model yanıtı bağlam sınırına takılabilir. Bir sonraki broşür, sorun giderme protokolünü doğrudan ele alır. İşler ters gittiğinde sistematik olarak ne yapılacağını ve bir araştırmacının panik yerine bir yöntemle nasıl ilerleyeceğini gösterir.
+Hakem yanıt mektubu hazırlanırken Claude Code akarken işler ters gidebilir. Bir komut beklenmedik bir sonuç verebilir. Bir dosya bozulabilir. Bir model yanıtı bağlam sınırına takılabilir. Bir sonraki kitapçık, sorun giderme protokolünü doğrudan ele alır. İşler ters gittiğinde sistematik olarak ne yapılacağını ve bir araştırmacının panik yerine bir yöntemle nasıl ilerleyeceğini gösterir.
 
 ## Kaynakça
 
@@ -141,11 +141,11 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 
 ---
 
-**Broşür kimliği.** `010-01-0001`
+**Kitapçık kimliği.** `010-01-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-04
 **Sözcük sayısı (yaklaşık).** 1593 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 8
-**Halüsinasyon atıf sayısı.** 0
-**Önceki broşür.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/tr.md). Yapay Zekâ Destekli Araştırmada Etik, Prensipten Davranışa
-**Sonraki broşür.** [`012-01-0001`](../../012-troubleshooting/012-01-0001/tr.md). İşler Ters Gittiğinde, Çalışan Bir Sorun Giderme Protokolü
+**Uydurma atıf sayısı.** 0
+**Önceki kitapçık.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/tr.md). Yapay Zekâ Destekli Araştırmada Etik, Prensipten Davranışa
+**Sonraki kitapçık.** [`012-01-0001`](../../012-troubleshooting/012-01-0001/tr.md). İşler Ters Gittiğinde, Çalışan Bir Sorun Giderme Protokolü
