@@ -22,7 +22,7 @@ Minor release. A bilingual language and naturalness pass over the companion webs
 
 ### Archived
 
-- Zenodo version DOI for v2.6.0: minted on the GitHub release and recorded in a follow-up commit.
+- Zenodo version DOI for v2.6.0: [10.5281/zenodo.20608609](https://doi.org/10.5281/zenodo.20608609).
 
 ## [2.5.0] - 2026-06-05
 
