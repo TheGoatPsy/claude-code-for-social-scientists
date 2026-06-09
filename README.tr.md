@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists. Sosyal Bilimciler İçin Claude Code Rehberi banner. Yazar Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, çift lisans Apache 2.0 ve CC-BY-NC-SA 4.0, v2.4.0.">
+  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists. Sosyal Bilimciler İçin Claude Code Rehberi banner. Yazar Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, çift lisans Apache 2.0 ve CC-BY-NC-SA 4.0, v2.6.0.">
 </p>
 
 # Sosyal Bilimciler İçin Claude Code Rehberi
 
 Anthropic Claude Code'u araştırmada, eğitimde ve akademik yazımda kullanmak isteyen sosyal bilimciler için iki dilli, açık kaynak bir rehber. Bu araçları gerçek akademik üretim sürecinde kullanan bir klinik psikolog ve doktora adayı tarafından yazıldı. İngilizce konuşulan dünyanın dışındaki araştırmacılara, içeridekilere de seslenerek.
 
-> **Durum.** v2.4.0 sürümü. On üç kitapçık Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Kitapçıkları yinelenebilir iş akışlarına dönüştüren on tamamlayıcı Claude Code project skill de pakete dahildir. v2.4.0 bir bilimsel ve ses kalitesi yükseltmesidir. Her kitapçık iki boyutta gözden geçirildi: önce bilimsel ve teknik doğruluk, sonra yazarın sesi. Aşırı iddialar yumuşatıldı, yanlış uygulanmış atıflar doğrulanmış kaynaklarla değiştirildi ve bağımsız bir inceleme sıfır uydurma atıf doğruladı. Doğrulanmış atıf bildirimleri 240'tan 248'e yükseldi ve tam iki dilli parite korundu. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
+> **Durum.** v2.6.0 sürümü. On üç kitapçık Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Kitapçıkları yinelenebilir iş akışlarına dönüştüren tamamlayıcı Claude Code project skill paketi de pakete dahildir. v2.6.0 bir dil ve doğallık pasıdır. Web sitesi ve on üç kitapçık her iki dilde baştan sona yeniden okundu, yapay zekâ izi bırakan retorik kalıplar ayıklandı ve birebir çeviri kalkları doğal karşılıklarıyla değiştirildi. İçerik, atıflar ve iki dilli eşlik olduğu gibi korundu. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
 
 > **EN readers.** The English version is in [`README.md`](./README.md). Every booklet has a `tr.md` and an `en.md` side by side. A CI check enforces this pairing on every commit.
 
@@ -20,8 +20,8 @@ Rehber, sosyal bilimcinin gerçekte karşılaştığı soruları on iki tematik 
 
 1. **Temeller.** Claude Code nedir, sohbet penceresinden nasıl ayrılır, akademik üretimde nerede iş görür.
 2. **Akademik erişim.** PubMed ve Semantic Scholar MCP'leri, EZproxy ve kurumsal VPN gerçekleri, ORCID, Zotero, DergiPark, ULAKBIM TR Dizin, HEAL-Link.
-3. **Hafıza sistemleri.** Uzun ömürlü kasalar (vault), sürekli bağlam, on yıllık not arşivinde gezinme, Memory-as-Vault mühendislik kalıbı.
-4. **Kasa mimarisi.** Klasör disiplini, MOC (Map of Content) haritaları, yazılım değişikliklerinden bağımsız kalıcı Markdown alışkanlıkları.
+3. **Hafıza sistemleri.** Uzun ömürlü arşivler, sürekli bağlam, on yıllık not arşivinde gezinme, hafızayı arşive dönüştürme mühendislik kalıbı.
+4. **Arşiv mimarisi.** Klasör disiplini, MOC (Map of Content) haritaları, yazılım değişikliklerinden bağımsız kalıcı Markdown alışkanlıkları.
 5. **Hook'lar ve otomasyon.** Oturum yaşam döngüsü olayları, ritüel hook'ları, kişisel bilgi tabanı için hafif sürekli entegrasyon.
 6. **MCP ve eklentiler.** Akademik iş akışları için Model Context Protocol sunucularını yazma, denetleme, küratörlük etme.
 7. **Akademik yazım.** Türkçe ve İngilizce IMRAD iskeleti, DOI disiplini ile APA 7, dergi uyumu, makale revizyonu.
@@ -98,17 +98,17 @@ Her kitapçığın `KKK-AA-SSSS` biçiminde sabit bir kimliği vardır.
 
 ## Project Skills
 
-v2.4.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code project skill içerir. Kitapçıklar teoriyi, pedagojiyi ve akademik çerçeveyi taşır. Skills katmanı ise tekrarlanabilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır.
+v2.6.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code project skill içerir. Kitapçıklar teoriyi, pedagojiyi ve akademik çerçeveyi taşır. Skills katmanı ise tekrarlanabilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır.
 
 | Skill | Tamamlayıcı kitapçıklar | Amaç |
 |---|---|---|
 | `social-science-literature-triage` | 002, 007 | Literatür taraması başlamadan önce veri tabanı seçimi, dil katmanı, DOI durumu ve dahil etme ölçütlerini yapılandırır. |
 | `apa-doi-verifier` | 007 | APA 7 kaynakçayı temizler, DOI metadata doğrulaması yapar ve uydurma atıf riskini sınıflar. |
-| `bilingual-booklet-pairing` | tüm kitapçık çiftleri | `tr.md` ve `en.md` paritesini, frontmatter uyumunu, başlıkları ve kültürel adaptasyon notlarını denetler. |
+| `bilingual-booklet-pairing` | tüm kitapçık çiftleri | `tr.md` ve `en.md` eşliğini, frontmatter uyumunu, başlıkları ve kültürel adaptasyon notlarını denetler. |
 | `ai-disclosure-auditor` | tüm kitapçık çiftleri | AI katkı alanlarını, insan incelemesini, atıf sayılarını, model metadata alanlarını ve beyan standardını denetler. |
 | `ethics-irb-ai-protocol` | 009 | Etik kurul, KVKK, GDPR, EU AI Act, beyan ve veri minimizasyonu kontrol listesi üretir. |
 | `rebuttal-traceability-matrix` | 010 | Hakem yorumlarını yanıt kategorilerine, manuscript değişiklik haritasına ve editör yanıt taslağına çevirir. |
-| `memory-vault-architect` | 003, 004 | Araştırma vault klasörleri, MOC yapısı, frontmatter, kaynak pasaportu ve retrieval pattern tasarlar. |
+| `memory-vault-architect` | 003, 004 | Araştırma arşivi klasörleri, MOC yapısı, frontmatter, kaynak pasaportu ve retrieval pattern tasarlar. |
 | `regional-access-workflow` | 002 | DergiPark, ULAKBIM TR Dizin, HEAL-Link, YOK Thesis Center, VPN ve kütüphane yollarıyla yasal erişim akışı kurar. |
 | `agentic-session-debugger` | 012 | Claude Code scope drift, loop trap, hidden state, context limit, PATH ve izin problemlerini teşhis eder. |
 | `repo-release-integrity-check` | tüm repo | Release öncesi README, katalog, changelog, citation dosyaları, Zenodo DOI, release notes, AI beyanı ve kitapçık metadata uyumunu kontrol eder. |
@@ -141,7 +141,7 @@ Bu çalışma şu kanallarla kayıt altına alınmıştır.
 
 ## Yol haritası
 
-Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v2.4.0: on üç kitapçığın tamamı iki boyutta gözden geçirildi, önce bilimsel ve teknik doğruluk, sonra yazarın sesi. Tam iki dilli parite korundu, her atıf yerinde kaldı ya da güçlendirildi. Yeni kitapçık eklenmedi. Tam otuz kitapçıklık katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımını içeren sonraki büyük kilometre taşı v3.0 için hedeflenmektedir.
+Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v2.6.0: web sitesi ve on üç kitapçık her iki dilde doğallık için baştan sona yeniden okundu, retorik yapay zekâ kalıpları ve çeviri kalkları ayıklandı. İçerik ve atıflar yerinde kaldı, iki dilli eşlik korundu. Yeni kitapçık eklenmedi. Tam otuz kitapçıklık katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımını içeren sonraki büyük kilometre taşı v3.0 için hedeflenmektedir.
 
 ## Katkıda bulunma
 

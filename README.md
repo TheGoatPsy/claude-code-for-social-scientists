@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Author Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, dual licensed Apache 2.0 plus CC-BY-NC-SA 4.0, v2.4.0.">
+  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Author Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, dual licensed Apache 2.0 plus CC-BY-NC-SA 4.0, v2.6.0.">
 </p>
 
 # Claude Code for Social Scientists
 
 A bilingual, open-source guide for social scientists who want to use Anthropic's Claude Code in their research, teaching, and academic writing. Written by a working clinical psychologist and PhD candidate — for researchers outside the English-speaking world as much as inside it — drawing on real academic production, not demonstration projects.
 
-> **Status:** v2.4.0 release. Thirteen booklets in Turkish and English, human-reviewed and citation-audited, plus ten companion Claude Code project skills that turn the booklets into repeatable workflows. v2.4.0 is a scholarship and voice quality upgrade: every booklet was revised on two dimensions, substantive scholarship and technical accuracy first, then the author's voice. Overclaims were hedged, misapplied citations were replaced with verified sources, and an independent review confirmed zero fabricated citations, with verified citation declarations rising from 240 to 248 and full bilingual parity preserved. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
+> **Status:** v2.6.0 release. Thirteen booklets in Turkish and English, human-reviewed and citation-audited, plus the companion Claude Code project skills that turn the booklets into repeatable workflows. v2.6.0 is a language and naturalness pass. The website and all thirteen booklets were re-read end to end in both languages, machine-writing rhetorical patterns were stripped, and literal translation calques were replaced with natural phrasing. Content, citations, and bilingual parity were preserved. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
 
 > **TR readers:** A Turkish overview lives at the bottom of this file. The full Turkish version is in [`README.tr.md`](./README.tr.md). Every booklet exists as `tr.md` and `en.md` side by side.
 
@@ -98,7 +98,7 @@ So `001-01-0001` is the first booklet, in the first subcategory, of the Foundati
 
 ## Project Skills
 
-The v2.4.0 surface includes ten Claude Code project skills under [`.claude/skills/`](./.claude/skills/). The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries.
+The v2.6.0 surface includes ten Claude Code project skills under [`.claude/skills/`](./.claude/skills/). The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries.
 
 | Skill | Companion booklets | Purpose |
 |---|---|---|
@@ -141,7 +141,7 @@ This work is registered through:
 
 ## Roadmap
 
-See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v2.4.0: a scholarship and voice quality upgrade that revised all thirteen booklets on two dimensions, substantive scholarship and technical accuracy first, then the author's voice, with full bilingual parity and every citation preserved or strengthened. No booklet was added. The next major milestone — the full thirty-booklet catalog, with a living lab, conference citations, and instructional use — is targeted for v3.0.
+See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v2.6.0: the website and all thirteen booklets were re-read end to end in both languages for naturalness, with machine-writing rhetorical patterns and translation calques removed. Content and citations stayed in place and bilingual parity was preserved. No booklet was added. The next major milestone, the full thirty-booklet catalog, with a living lab, conference citations, and instructional use, is targeted for v3.0.
 
 ## Contributing
 

@@ -25,7 +25,7 @@ human_review_date: "2026-06-05"
 verified_citations_count: 10
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
-translation_notes: "Türkçe kaynak üzerinden şampiyonluk düzeyinde sıfırdan yeniden yazım. Greenhalgh ve diğerleri (2016) yanlış uygulama gerekçesiyle çıkarıldı, yerine doğrudan veritabanı kapsam iddiasını destekleyen Bramer ve diğerleri (2017) alındı. EN aşamasında yapılan tüm akademik düzeltmeler Türkçe yüzeye aktarıldı."
+translation_notes: "Türkçe kaynak üzerinden sıfırdan yeniden yazıldı. Greenhalgh ve diğerleri (2016) yanlış uygulama gerekçesiyle çıkarıldı, yerine doğrudan veritabanı kapsam iddiasını destekleyen Bramer ve diğerleri (2017) alındı. EN aşamasında yapılan tüm akademik düzeltmeler Türkçe yüzeye aktarıldı."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
 status: "release"
@@ -33,27 +33,27 @@ status: "release"
 
 # DOI Disiplini ile APA 7
 
-Önceki kategori kasanın klasör mimarisini kurmuştu. Bu kitapçık, o kasaya giren her referansın bibliyografik temizliğini ele alır. Dijital Nesne Tanımlayıcı, yani DOI, ilk bakışta bir stil kılavuzunu tatmin etmek için künyenin sonuna eklenen bir karakter dizisi gibi görünebilir. Değil. Üretici dil modellerinin bibliyografik açıdan inandırıcı ama hiç var olmamış atıflar üretebildiği bir dönemde DOI, araştırmacının elindeki en hızlı ampirik testtir: atıf gerçekse DOI'si çözülür, DOI çözülmüyorsa atıf yoktur. Bu kitapçık o testi, Claude Code iş akışında bir kez kurulan ve her makalede yeniden kullanılan bir doğrulama protokolüne dönüştürür.
+Önceki kategori arşivin klasör mimarisini kurmuştu. Bu kitapçık, o arşive giren her referansın bibliyografik temizliğini ele alır. Dijital Nesne Tanımlayıcı, yani DOI, ilk bakışta bir stil kılavuzunu tatmin etmek için künyenin sonuna eklenen bir karakter dizisi gibi görünebilir. Görünüm yanıltıcıdır. Üretici dil modellerinin bibliyografik açıdan inandırıcı ama hiç var olmamış atıflar üretebildiği bir dönemde DOI, araştırmacının elindeki en hızlı ampirik testtir: atıf gerçekse DOI'si çözülür, DOI çözülmüyorsa atıf yoktur. Bu kitapçık o testi, Claude Code iş akışında bir kez kurulan ve her makalede yeniden kullanılan bir doğrulama protokolüne dönüştürür.
 
-## 1. APA 7 Ana Hatları ve DOI'nin Konumu
+## 1. APA 7 ve DOI'nin İşlevi
 
-APA 7, sosyal bilimlerde en yaygın atıf standardıdır (American Psychological Association, 2020). Bir dergi makalesi künyesi yazar, yıl, başlık, dergi adı, cilt, sayı, sayfa ve DOI bileşenlerinden oluşur. Bu bileşenlerin büyük çoğunluğu bir makaleyi tanımlamaya yeter. DOI ise farklı bir işlev üstlenir: bir makaleyi tanımlamaz, onu doğrular. DOI, yayımlanmış bir çalışmanın değişmeyen, kalıcı ve makinece çözülebilir adresidir. Dergi web siteleri taşınsa da birleşse de bu adres doğru kalmaya devam eder.
+APA 7, sosyal bilimlerde en yaygın atıf standardıdır (American Psychological Association, 2020). Bir dergi makalesi künyesi yazar, yıl, başlık, dergi adı, cilt, sayı, sayfa ve DOI bileşenlerinden oluşur. Bu bileşenlerin büyük çoğunluğu bir makaleyi tanımlamaya yeter. DOI ise kümeden ayrılır: yayımlanmış bir çalışmanın değişmeyen, kalıcı ve makinece çözülebilir adresidir; künyenin tamamlayıcısı değil, ampirik temelidir. Dergi web siteleri taşınsa da birleşse de bu adres doğru kalmaya devam eder.
 
-APA 7, DOI'yi olabildiğince zorunlu kılar. Gerekçe teknik değil, epistemolojiktir. Uluslararası Tıp Dergisi Editörleri Komitesi de (2024) bilimsel çalışmanın yürütülmesi ve raporlanmasına ilişkin önerilerinde atıf doğruluğunu yazarın temel sorumluluklarından biri olarak tanımlar. DOI bu sorumluluğu pratiğe taşır. Crossref'te çözülen bir DOI, söz konusu atıfın var olduğunun kanıtıdır. Çözülmeyen bir DOI, referans listesine girmemesi gereken bir kaydın işaretidir.
+APA 7, DOI'yi olabildiğince zorunlu kılar. Gerekçe doğrudan epistemolojiktir. Uluslararası Tıp Dergisi Editörleri Komitesi de (2024) bilimsel çalışmanın yürütülmesi ve raporlanmasına ilişkin önerilerinde atıf doğruluğunu yazarın temel sorumluluklarından biri olarak tanımlar. DOI bu sorumluluğu pratiğe taşır. Crossref'te çözülen bir DOI, söz konusu atıfın var olduğunun kanıtıdır. Çözülmeyen bir DOI, referans listesine girmemesi gereken bir kaydın işaretidir.
 
 ## 2. Yapay Zekâ ve Hayali Atıf, Ampirik Kanıtlar
 
-DOI disiplininin neden bu denli kritik olduğunu görmek için üretici yapay zekâ modellerinin atıf davranışına bakmak gerekir. Bu modeller, gerçek görünen ama var olmayan atıflar üretebilir. Bir görüş değil, ölçülmüş bir olgudur bu.
+DOI disiplininin neden bu denli kritik olduğunu görmek için üretici yapay zekâ modellerinin atıf davranışına bakmak gerekir. Bu modeller, gerçek görünen ama var olmayan atıflar üretebilir. Davranış ölçülmüş ve birden fazla disiplinde belgelenmiştir.
 
 Walters ve Wilder (2023), ChatGPT tarafından üretilen bibliyografik atıflarda yüksek oranda uydurma ve hata olduğunu sistematik biçimde belgelemiştir: üretilen atıfların önemli bir kısmı ya hiç var olmayan makalelere işaret ediyor ya da gerçek makalelerin künyelerini yanlış birleştiriyordu. Bhattacharyya ve diğerleri (2023), tıbbi içerik özelinde aynı bulguyu doğrulayarak ChatGPT tarafından üretilen tıbbi metinlerdeki uydurma ve hatalı referans oranının yüksekliğini göstermiştir. Farklı disiplinleri kapsayan bu iki çalışma aynı yapısal sonuca ulaşır: üretici modeller gerçeği değil, en olası metni üretir. Bir atıf, modelin eğitim verisindeki kalıplara uyduğu sürece üretilir. O atıfın gerçekten var olup olmadığına bakılmaz.
 
-Else (2023), ChatGPT tarafından yazılan özetlerin deneyimli bilim insanlarını bile yanıltabildiğini ortaya koyduğunda, sorunun yüzeysel bir hata olmadığı, modelin temel çalışma biçiminden beslendiği netleşti. Hicks ve diğerleri (2024) bu davranışı kavramsal düzeyde çerçeveleyerek modelin çıktısının doğruluk kaygısı taşımadığını, yalnızca akla yatkınlık ürettiğini göstermiştir. Sallam (2023) ise sağlık eğitimi ve araştırmasındaki uygulamaları sistematik bir derlemeyle ele alarak bu modellerin sunduğu gerçek olanakların yanında atıf doğruluğuna ilişkin geçerli kaygıların da belgelendiğini ortaya koymuştur. Klinik bir araştırmacı için hayali bir atıf yalnızca biçimsel bir hata değildir. Bilimsel kayıtta bir bütünlük ihlaline, ve dolayısıyla etik bir riske, dönüşür.
+Else (2023), ChatGPT tarafından yazılan özetlerin deneyimli bilim insanlarını bile yanıltabildiğini ortaya koyduğunda, sorunun yüzeysel bir hata olmadığı, modelin temel çalışma biçiminden beslendiği netleşti. Hicks ve diğerleri (2024) bu davranışı kavramsal düzeyde çerçeveleyerek modelin çıktısının doğruluk kaygısı taşımadığını, yalnızca akla yatkınlık ürettiğini göstermiştir. Sallam (2023) ise sağlık eğitimi ve araştırmasındaki uygulamaları sistematik bir derlemeyle ele alarak bu modellerin sunduğu gerçek olanakların yanında atıf doğruluğuna ilişkin geçerli kaygıların da belgelendiğini ortaya koymuştur. Klinik bir araştırmacı için hayali bir atıf, bilimsel kayıtta bir bütünlük ihlaline ve dolayısıyla ciddi bir etik riske dönüşür.
 
-## 3. Üçlü İndeks Üçgenlemesi
+## 3. Çapraz İndeks Üçgenlemesi
 
-Hiçbir veri tabanı herhangi bir araştırma alanının tüm genişliğini kapsamaz. Bu nedenle tek bir indeks, bir atıfı doğrulamak için yeterli değildir. Çözüm üçgenlemedir: bir atıfın üç bağımsız indekste çapraz kontrol edilmesi. Crossref, PubMed ve Semantic Scholar, bu üçlü birlikte, sosyal bilim ile sağlık bilimlerinin büyük çoğunluğunu kapsar.
+Hiçbir veri tabanı herhangi bir araştırma alanının tüm genişliğini kapsamaz. Bu nedenle tek bir indeks, bir atıfı doğrulamak için yeterli değildir. Çözüm üçgenlemedir: bir atıfın bağımsız indekslerde çapraz kontrol edilmesi. Crossref, PubMed ve Semantic Scholar birlikte sosyal bilim ile sağlık bilimlerinin büyük çoğunluğunu kapsar.
 
-Crossref, DOI'lerin merkezi kayıt altyapısıdır (Crossref, 2026): DOI taşıyan her makale bu altyapı üzerinden sorgulanabilir. PubMed, biyomedikal ve sağlık literatürünün ulusal kütüphane altyapısıdır (National Library of Medicine, 2026). Klinik psikoloji ve halk sağlığı araştırmacıları için PubMed, Crossref'in kapsamadığı birçok kaynağı barındırır. Semantic Scholar ise anlamsal arama ve atıf grafiği sunarak bir makalenin hangi sonraki çalışmalar tarafından atıflandığını gösterir. Her üç indeks farklı güçlere sahiptir: Crossref DOI çözümünde, PubMed klinik kapsamda, Semantic Scholar atıf ilişkilerinde öne çıkar.
+Crossref, DOI'lerin merkezi kayıt altyapısıdır (Crossref, 2026): DOI taşıyan her makale bu altyapı üzerinden sorgulanabilir. PubMed, biyomedikal ve sağlık literatürünün ulusal kütüphane altyapısıdır (National Library of Medicine, 2026); klinik psikoloji ve halk sağlığı araştırmacıları için Crossref'in kapsamadığı birçok kaynağı barındırır. Semantic Scholar ise anlamsal arama ve atıf grafiği sunarak bir makalenin hangi sonraki çalışmalar tarafından atıflandığını görünür kılar.
 
 Tek bir indekse güvenmenin yaratacağı kör noktalar soyut bir iddia değildir. Bramer ve diğerleri (2017), sistematik derleme arama stratejilerini karşılaştırdıkları prospektif çalışmada farklı veri tabanı kombinasyonlarının anlamlı ölçüde farklı geri çağırma sonuçları ürettiğini göstermiştir: hiçbir tek veri tabanı ilgili literatürün tamamını kapsamadı ve veri tabanları arasındaki örtüşme önemli ölçüde eksikti. Tek bir indekse güvenmek araştırmacıyı tam da göremeyeceği kör noktalara mahkûm eder.
 
@@ -71,7 +71,7 @@ curl -fsSL "https://api.crossref.org/works/10.1038/d41586-023-00056-7" \
 
 Bu komut, DOI'nin Crossref kayıtlarında var olup olmadığını ve dönen künye bilgilerinin elde tutulandan farklı olup olmadığını gösterir. DOI yoksa API hata döndürür. Bu, atıfın uydurma olduğunun ilk kesin işaretidir. Claude Code bu kontrolü bibliyografya iş akışının standart bir adımı haline getirebilir ve her makale tamamlanmadan önce tüm referans listesi üzerinde otomatik olarak çalıştırabilir.
 
-Sürdürülebilir kullanım için Crossref bir nezaket havuzu politikası uygular: bir istek, iletişim adresi içeren bir `mailto` parametresiyle gönderildiğinde daha yüksek hız sınırı ve daha güvenilir yanıt elde eder. Burada kişisel bir adres değil, kurumsal ya da takma bir adres kullanılmalıdır.
+Sürdürülebilir kullanım için Crossref bir nezaket havuzu politikası uygular: bir istek, iletişim adresi içeren bir `mailto` parametresiyle gönderildiğinde daha yüksek hız sınırı ve daha güvenilir yanıt elde eder. Bu parametre için kurumsal ya da takma bir adres tercih edilmelidir.
 
 ```bash
 # Nezaket havuzu, kurumsal bir iletişim adresiyle
@@ -79,7 +79,7 @@ curl -fsSL "https://api.crossref.org/works/10.1038/d41586-023-00056-7?mailto=ara
   | jq '.message.title'
 ```
 
-Nezaket havuzu, bu doğrulamayı ölçekte sürdürülebilir kılan şeydir. Beş kaynak için değil, yüz kaynaklı bir referans listesi için.
+Nezaket havuzu, bu doğrulamayı ölçekte sürdürülebilir kılan şeydir. Yüz kaynaklı bir referans listesinde fark somut biçimde hissedilir.
 
 ## 5. PubMed Üzerinden PMID ile Doğrulama
 
@@ -91,7 +91,7 @@ Klinik psikoloji araştırmacısı için bu katman özellikle değerlidir. Psiko
 
 Türkçe makaleler için doğrulama önceki bir kategoride kurulan altyapıya dayanır. DergiPark, Crossref ile entegre olduğundan platformdaki makaleler DOI taşır ve aynı Crossref API doğrulamasından geçebilir. Bir Türkçe makalenin APA 7 künyesi, İngilizce bir makaleninkiyle aynı disiplini gerektirir. Ek olarak birkaç dilsel kural devreye girer.
 
-APA 7, Türkçe yazar isimleri için soyadı ve baş harf biçimini korur: "Yılmaz, A. A." biçiminde. İki yazar arasında Türkçe "ve" yerine "&" işareti kullanılır, çünkü künye kaynak dilinden bağımsız olarak İngilizce APA 7 konvansiyonuna uyar. Türkçe dergi adı italik tutulur ve başlığın İngilizce çevirisi köşeli parantez içinde hemen ardından verilir. Bir TR Dizin makalesinin tam APA 7 künyesi şu yapıyı izler:
+APA 7, Türkçe yazar isimleri için soyadı ve baş harf biçimini korur: "Yılmaz, A. A." biçiminde. İki yazar arasında Türkçe "ve" yerine "&" işareti kullanılır, çünkü künye kaynak dilinden bağımsız olarak APA 7 biçim kurallarına uyar. Türkçe dergi adı italik, başlığın İngilizce çevirisi ise hemen ardından köşeli parantez içinde yer alır. Bir TR Dizin makalesinin tam APA 7 künyesi şu yapıyı izler:
 
 ```text
 Yazar, A. A., & Yazar, B. B. (Yıl). Makalenin Türkçe başlığı
@@ -101,11 +101,11 @@ Sayfa-Sayfa. https://doi.org/{dogrulanmis-doi}
 
 Bu künye, DergiPark üzerinden alınan DOI ile doğrulanır. Türkçe başlığın İngilizce çevirisi alan terminolojisine duyarlı olduğundan yazarın sorumluluğundadır. Model bir taslak çeviri önerse de son karar araştırmacınındır.
 
-## 7. Bibliyografya Hijyeni Pipeline'ı, Sekiz Adım
+## 7. Bibliyografya Hijyeni İş Akışı
 
-Doğrulama disiplini gerçek değerini, bir kez kurulan ve her makalede yeniden kullanılan bir protokole dönüştüğünde kazanır. Aşağıdaki sekiz adım o protokolün iskeletidir.
+Doğrulama disiplini gerçek değerini, bir kez kurulan ve her makalede yeniden kullanılan bir protokole dönüştüğünde kazanır. Aşağıdaki adımlar o protokolün iskeletidir.
 
-1. **Toplama.** Tüm atıflar birincil kaynaklardan künye olarak toplanır.
+1. **Toplama.** Tüm atıflar birincil kaynaklardan künyesiyle derlenir.
 2. **DOI çıkarma.** Her künyenin DOI'si belirlenir. Yokluğu açıkça not edilir.
 3. **Crossref doğrulama.** Her DOI Crossref API ile kontrol edilir.
 4. **Çapraz kontrol.** Klinik kaynaklar PubMed PMID ile çapraz doğrulanır. Üst veri tutarsızlıkları ortaya çıktığında Semantic Scholar üçüncü kaynak olarak devreye girer.
@@ -118,7 +118,7 @@ Claude Code birinci ile yedinci adımları destekler: toplama, DOI çıkarma, AP
 
 ## 8. Yaygın Dil Modeli Atıf Başarısızlık Modları
 
-Uydurma tek tip bir hata olarak karşımıza çıkmaz. Belirli başarısızlık biçimlerini tanıyan bir araştırmacı onları daha hızlı yakalar. Aşağıdaki tablo en yaygın olanları ve her birinin pipeline'ın hangi adımında yakalandığını göstermektedir.
+Uydurma tek tip bir hata olarak karşımıza çıkmaz. Belirli başarısızlık biçimlerini tanıyan bir araştırmacı onları daha hızlı yakalar. Aşağıdaki tablo en yaygın olanları ve her birinin iş akışının hangi adımında yakalandığını göstermektedir.
 
 | Başarısızlık modu | Açıklama | Doğrulama nasıl yakalar |
 |---|---|---|
@@ -128,19 +128,19 @@ Uydurma tek tip bir hata olarak karşımıza çıkmaz. Belirli başarısızlık 
 | Gerçek dergide hayali makale | Var olan dergi, var olmayan makale | DOI çözülmez, başlık bulunamaz |
 | Yanlış sayfa aralığı | Gerçek makale, hatalı sayfa numaraları | Crossref sayfa alanı düzeltir |
 
-Her başarısızlık modu pipeline'ın belirli bir adımında yakalanır. Bu, protokolün atıfları tek tek gözle taramaktan neden daha güçlü olduğunu tam olarak açıklar. Tek geçişli göz taraması akla yatkınlığı yakalar. Protokol gerçekliği yakalar.
+Her başarısızlık modu iş akışının belirli bir adımında yakalanır. Bu, protokolün atıfları tek tek gözle taramaktan neden daha güçlü olduğunu tam olarak açıklar. Tek geçişli göz taraması akla yatkınlıkla yetinir. Protokol gerçeği arar.
 
 ## 9. Köşe Durumlar, DOI Olmayan Kaynaklar
 
 Her kaynak DOI taşımaz. Bu durumlar da kendi disiplinini gerektirir. Kitaplar çoğunlukla DOI yerine ISBN taşır. Doğrulama ISBN üzerinden yayıncı kataloğuna ya da kütüphane kayıtlarına dayanır. Dijital kayıt standart hale gelmeden önce yayımlanan eski makalelerde DOI bulunmayabilir. Bu durumda dergi arşivi ya da kütüphane kaydı doğrulama kaynağı olur. Raporlar, tezler ve resmi belgelerden oluşan gri literatür de çoğunlukla DOI taşımaz. Doğrulama kurumsal kaynak üzerinden yapılır. YÖK Ulusal Tez Merkezi'nden alınan bir tez bu kategoriye girer.
 
-DOI olmayan kaynaklar için temel kural şudur: doğrulama başka bir kalıcı tanımlayıcıya dayanmalıdır. ISBN, kurumsal arşiv URL'si ya da kütüphane kaydı. Önemli olan, atıfın gerçekliğinin orijinal iddiadan bağımsız bir kaynakla teyit edilmesidir. APA 7 (American Psychological Association, 2020) bu kaynak türleri için ayrı künye biçimleri tanımlar. DOI disiplini ise bu biçimlerden bağımsızdır. Disiplin stilde değil, doğrulama eyleminin kendisindedir.
+DOI olmayan kaynaklar için temel kural şudur: doğrulama başka bir kalıcı tanımlayıcıya dayanmalıdır. Önemli olan, atıfın gerçekliğinin orijinal iddiadan bağımsız bir kaynakla teyit edilmesidir. APA 7 (American Psychological Association, 2020) bu kaynak türleri için ayrı künye biçimleri tanımlar. DOI disiplini ise bu biçimlerden bağımsızdır. Disiplin stilde değil, doğrulama eyleminin kendisindedir.
 
 ## 10. Köprü, Etik Katmana
 
-DOI hijyeni teknik görünür. Özü doğrudan etiktir. Hayali bir atıf yalnızca biçimsel bir hata değildir: bilimsel kaydı kirleten ve bu makaleyi ileride okuyan her araştırmacıyı yanıltan bir bütünlük ihlalidir. Bir sonraki kategori bu etik katmanı genişletir. Yapay zekâ destekli araştırmada etiğin sonradan eklenen bir bölüm değil baştan kurulan bir iş akışı belgesi olduğunu gösterir. Atıf doğrulama disiplini o etik iş akışının ilk ve en somut bileşenidir.
+DOI hijyeni teknik görünür. Özü doğrudan etiktir. Hayali bir atıf, bilimsel kaydı kirleten ve bu makaleyi ileride okuyan her araştırmacıyı yanıltan bir bütünlük ihlalidir. Bir sonraki kategori bu etik katmanı genişletir. Yapay zekâ destekli araştırmada etik, araştırmanın sonuna eklenmez. Sürecin başından inşa edilen bir iş akışı belgesidir. Atıf doğrulama disiplini o etik iş akışının ilk ve en somut bileşenidir.
 
-Araştırmacının hangi aracı kullandığı, ilk taslağı hangi modelin ürettiği, bibliyografyayı hangi pipeline'ın işlediği fark etmeksizin, bilimsel kaydın güvenilirliğini koruyan insanın kurduğu disiplindir. Bu değişmedi. Yalnızca riskin hacmi değişti.
+Araştırmacının hangi aracı kullandığı, ilk taslağı hangi modelin ürettiği, bibliyografyayı hangi iş akışının işlediği fark etmeksizin, bilimsel kaydın güvenilirliğini koruyan insanın kurduğu disiplindir. Bu değişmedi. Yalnızca riskin hacmi değişti.
 
 ## Kaynakça
 

@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [2.6.0] - 2026-06-09
+
+Minor release. A bilingual language and naturalness pass over the companion website and all thirteen released booklets, in both Turkish and English. The earlier voice work removed lexical calques; this release removes the deeper machine-writing signature, the rhetorical architecture, and the remaining concept-level calques.
+
+### Changed
+
+- The website and all thirteen booklets were re-read end to end in both Turkish and English. Number-announce headings, mechanical rule-of-three lists, and repeated antithesis tails of the "not X but Y" form were removed, and sentence rhythm was varied. The change is prose only.
+- Concept-level calques were corrected in Turkish: the Vault metaphor is rendered as arşiv with the "X olarak Y" calque structure broken, parite is replaced with eşlik, and stiff loan-word constructions are replaced with natural Turkish. English keeps Vault as the Obsidian term.
+- Booklet 003 title_tr changed from "Kasa Olarak Hafıza, İlkesel Bir Giriş" to "Hafızayı Arşive Dönüştürmek, İlkesel Bir Giriş", with cross-references updated.
+
+### Unchanged
+
+- No booklet was added or removed. No citation, DOI, frontmatter key, or heading count was changed. Bilingual parity is preserved. Aggregate metrics are unchanged: 248 verified declarations, 0 fabricated, 26 human-reviewed language files, 13 booklets at release status.
+
+### Archived
+
+- Zenodo version DOI for v2.6.0: minted on the GitHub release and recorded in a follow-up commit.
+
 ## [2.5.0] - 2026-06-05
 
 Minor release. A Turkish-language voice revision of all thirteen released booklets, the companion website, and the Turkish README and CONTRIBUTING: the prose was rewritten in the author's academic voice, terminology was locked to correct forms, and AI-disclosure framing was enriched throughout.
