@@ -50,6 +50,10 @@ Katkınızdaki her DOI, her yazar adı, her yıl, her sayfa aralığı ve her de
 
 Bir atıfı genişletmek için yapay zekâ yardımı aldıysanız yapay zekânın ilk yanıtı bir adaydır, atıf değildir. Her adayı bir indekse karşı çözün. Yazar ve sürdürücü, atıf uydurmasını sürüm engelleyici bir hata olarak değerlendirir.
 
+## Proje skill önerme
+
+Proje skill'leri `.claude/skills/<skill-adı>/SKILL.md` altında yaşar ve sabit bir şemaya uyar: `name` ve `description` frontmatter çifti, ardından tam olarak şu bölümler: When to use, Inputs, Workflow, Output, Verification, Safety, Example prompt ve Türkçe kullanım notu. [`template/skill-template.md`](./template/skill-template.md) dosyasından başlayın. Description en az seksen karakter olmalı ve skill'i tetikleyecek kullanım anlarını adlandırmalıdır. Türkçe bölüm zorunludur ve kitapçıklardaki iki dillilik ilkesini skill katmanında sürdürür. Yeni bir skill ayrıca CATALOG skill tablosunda bir satır, iki README'de birer giriş ve doğrulayıcının beklenen listesinde adını gerektirir. Bu yüzden önce bir issue açın, sürdürücü dokunulacak noktalarda size eşlik eder.
+
 ## Pull request iş akışı
 
 1. Depoyu GitHub üzerinde forklayın.

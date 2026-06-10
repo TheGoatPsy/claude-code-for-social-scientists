@@ -48,6 +48,10 @@ Every DOI, every author name, every year, every page range, and every journal ti
 
 If you use AI assistance to expand a citation, the AI's first response is a candidate, not a citation. Resolve every candidate against an index. The author and the maintainer treat citation fabrication as a release blocker.
 
+## Proposing a project skill
+
+Project skills live under `.claude/skills/<skill-name>/SKILL.md` and follow a fixed schema: a `name` and `description` frontmatter pair, then exactly these sections in order: When to use, Inputs, Workflow, Output, Verification, Safety, Example prompt, and Türkçe kullanım notu. Start from [`template/skill-template.md`](./template/skill-template.md). The description needs at least eighty characters and should name the user moments that trigger the skill. The Turkish section is mandatory and follows the same bilingual parity principle as the booklets. A new skill also needs a row in the CATALOG skill table, entries in both READMEs, and its name in the validator's expected list, so propose it in an issue first and the maintainer will walk you through the touch points.
+
 ## Pull request workflow
 
 1. Fork the repository on GitHub.

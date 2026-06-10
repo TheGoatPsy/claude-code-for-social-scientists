@@ -1,13 +1,13 @@
 ---
 name: social-science-literature-triage
-description: Use when starting a social science literature review, scoping databases, choosing language layers, checking DOI coverage, or turning booklet 002 and 007 methods into a search protocol.
+description: Use when starting a literature review and a defensible search plan is needed, when database lanes and language layers must be chosen, when DOI coverage policy is unclear, or when inclusion and exclusion criteria need drafting before any source is read.
 ---
 
 # Social Science Literature Triage
 
 ## When to use
 
-Use this skill before a literature review, scoping review, thesis chapter, grant background, or manuscript introduction when the user needs a defensible search plan rather than an immediate prose draft.
+Use this skill before a literature review, scoping review, thesis chapter, grant background, or manuscript introduction when the user needs a search plan that can survive method review rather than an immediate prose draft. Its protocol feeds regional-access-workflow for retrieval and source-passport-ledger for tracking what the search returns.
 
 ## Inputs
 
@@ -66,3 +66,7 @@ Expected smoke output:
 - Database lanes, PubMed, PsycINFO or Scopus, Crossref, DergiPark, TR Dizin, YOK Thesis Center.
 - Language strategy, English plus Turkish.
 - DOI policy, DOI required for journal articles when available, not required for laws, official guidance, theses, or books.
+
+## Türkçe kullanım notu
+
+Bu beceri, literatür taramasına başlamadan önce yöntem incelemesine dayanacak bir arama planı kurar. Veritabanı kanalları, dil katmanları, DOI beklentileri ve dahil etme ölçütleri tek protokolde toplanır, bölgesel kaynaklar gözden kaçırılmaz. Arama dizgileri başka bir araştırmacının aynı sonuçlara ulaşabileceği kadar açık yazılır, yanlılık riskleri daha ilk adımda not edilir. Plan hazır olduğunda erişim için regional-access-workflow, bulunanların izlenmesi için source-passport-ledger devreye girer.

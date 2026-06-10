@@ -1,13 +1,13 @@
 ---
 name: rebuttal-traceability-matrix
-description: Use when converting reviewer comments into a traceability matrix, accepted partial rejected categories, manuscript change mapping, and editor response drafts.
+description: Use when reviewer comments arrive and each one needs a tracked decision, when a revise and resubmit letter must map every comment to a manuscript change, or when contradictory reviewer demands need evidence-based, editor-facing framing.
 ---
 
 # Rebuttal Traceability Matrix
 
 ## When to use
 
-Use this skill after peer review, revise and resubmit, editorial triage, grant review, or supervisor feedback when comments must be answered systematically.
+Use this skill after peer review, revise and resubmit, editorial triage, grant review, or supervisor feedback when comments must be answered systematically. Once the matrix stands, anti-ai-trace-revision keeps the response prose in the author's voice.
 
 ## Inputs
 
@@ -59,3 +59,7 @@ Expected smoke output:
 
 - A matrix with comment ID, reviewer, issue, decision, manuscript location, action, and response draft.
 - A separate list of unresolved evidence needs.
+
+## Türkçe kullanım notu
+
+Bu beceri, hakem yorumlarını tek tek karara bağlar ve her kararı el yazmasındaki değişikliğe eşler. Kabul, kısmi kabul ve gerekçeli ret ayrımı netleşir, hakemler arası çelişkiler editöre dönük çerçeveyle işaretlenir. Hakemi memnun etmek için desteksiz iddia eklenmez, yapılmamış analiz yapılmış gibi yazılmaz. Matris kurulduktan sonra yanıt metninin sesi anti-ai-trace-revision ile korunur.

@@ -1,13 +1,13 @@
 ---
 name: ai-disclosure-auditor
-description: Use when auditing AI contribution metadata, human review state, model alias, model dated value, citation counts, fabricated citation count, or disclosure standard across booklets.
+description: Use when AI contribution metadata must match the actual workflow, when model alias and dated identifiers need auditing, when verified and fabricated citation counts feed a release decision, or when a venue's AI disclosure statement needs evidence behind it.
 ---
 
 # AI Disclosure Auditor
 
 ## When to use
 
-Use this skill before release, after AI-assisted drafting, or during citation cleanup when the user needs disclosure metadata to match the actual workflow.
+Use this skill before release, after AI-assisted drafting, or during citation cleanup when the user needs disclosure metadata to match the actual workflow. Its citation counts come from apa-doi-verifier results, and its verdict feeds repo-release-integrity-check at release time.
 
 ## Inputs
 
@@ -63,3 +63,7 @@ Expected smoke output:
 - A file-by-file table with pass, partial, or fail.
 - A release-blocker list.
 - A count summary for contribution levels and human review state.
+
+## Türkçe kullanım notu
+
+Bu beceri, yapay zekâ katkı beyanının gerçek iş akışıyla örtüşüp örtüşmediğini alan alan denetler. Model kimlikleri, insan incelemesi durumu ve atıf sayıları kanıtla karşılaştırılır, uydurma atıf içeren içerik yayına kapatılır. Atıf sayıları apa-doi-verifier doğrulamasından gelir, sonuç yayın bütünlüğü kontrolüne girdi olur.

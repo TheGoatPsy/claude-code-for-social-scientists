@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import contextlib
 import shutil
+import sys
 from collections.abc import Iterator
 from importlib import resources
 from pathlib import Path
@@ -110,6 +111,71 @@ def _run_list() -> int:
         return 0
 
 
+def doctor_report(
+    target_root: Path,
+    bundled: list[str] | None,
+    tools: dict[str, str | None],
+    *,
+    python_ok: bool,
+) -> tuple[list[str], int]:
+    """Build the doctor report lines and an exit code.
+
+    ``tools`` maps tool names to resolved paths or ``None``. The exit code is 1
+    when a required check fails. Missing optional tools are reported as
+    warnings and do not fail the run.
+    """
+    lines: list[str] = []
+    exit_code = 0
+    if python_ok:
+        lines.append("ok    python 3.9 or newer")
+    else:
+        lines.append("FAIL  python 3.9 or newer is required")
+        exit_code = 1
+    hints = {
+        "claude": "install Claude Code, see booklet 001-01-0003",
+        "git": "version control for reproducible research",
+        "node": "needed only for repository validation work",
+    }
+    for tool, hint in hints.items():
+        if tools.get(tool):
+            lines.append(f"ok    {tool} on PATH")
+        else:
+            lines.append(f"warn  {tool} not found ({hint})")
+    if target_root.is_dir():
+        installed = sorted(p.name for p in target_root.iterdir() if p.is_dir())
+    else:
+        installed = []
+    if bundled is None:
+        lines.append("warn  bundled skills not found (source checkout?)")
+        lines.append(f"info  {len(installed)} skills present at the target")
+    else:
+        missing = [name for name in bundled if name not in installed]
+        if missing:
+            lines.append(
+                f"warn  {len(missing)} of {len(bundled)} bundled skills not installed,"
+                " run social-cc install"
+            )
+        else:
+            lines.append(f"ok    all {len(bundled)} bundled skills installed")
+    return lines, exit_code
+
+
+def _run_doctor(*, project: bool) -> int:
+    with _bundled_source() as source:
+        bundled = list_skill_names(source) if source is not None else None
+    target_root = _target_root(project)
+    tools: dict[str, str | None] = {
+        name: shutil.which(name) for name in ("claude", "git", "node")
+    }
+    lines, exit_code = doctor_report(
+        target_root, bundled, tools, python_ok=sys.version_info >= (3, 9)
+    )
+    _emit(f"Target: {target_root}")
+    for line in lines:
+        _emit(line)
+    return exit_code
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="social-cc",
@@ -138,6 +204,15 @@ def build_parser() -> argparse.ArgumentParser:
     )
 
     sub.add_parser("list", help="List the bundled skills.")
+
+    doctor_parser = sub.add_parser(
+        "doctor", help="Check the environment the guide's workflows expect."
+    )
+    doctor_parser.add_argument(
+        "--project",
+        action="store_true",
+        help="Check ./.claude/skills instead of the user home configuration.",
+    )
     return parser
 
 
@@ -147,6 +222,8 @@ def main(argv: list[str] | None = None) -> int:
         return _run_install(
             project=args.project, force=args.force, dry_run=args.dry_run
         )
+    if args.command == "doctor":
+        return _run_doctor(project=args.project)
     return _run_list()
 
 

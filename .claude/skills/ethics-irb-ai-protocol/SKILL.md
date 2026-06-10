@@ -1,13 +1,13 @@
 ---
 name: ethics-irb-ai-protocol
-description: Use when preparing ethics committee, IRB, KVKK, GDPR, EU AI Act, data minimization, and AI disclosure checklists for social science or clinical research projects.
+description: Use when an ethics committee or IRB application involves AI anywhere in the pipeline, when KVKK, GDPR, or EU AI Act duties must be mapped to a study, or when consent and disclosure language about AI use needs drafting before submission.
 ---
 
 # Ethics IRB AI Protocol
 
 ## When to use
 
-Use this skill when a research project uses AI in recruitment, consent, data handling, coding, analysis, writing, supervision, or participant-facing interaction.
+Use this skill when a research project uses AI in recruitment, consent, data handling, coding, analysis, writing, supervision, or participant-facing interaction. During coding work, qualitative-coding-discipline enforces the data rules this protocol sets.
 
 ## Inputs
 
@@ -63,3 +63,7 @@ Expected smoke output:
 - Data flow, consent, minimization, disclosure, and human oversight sections.
 - A clear rule that non-anonymized transcripts must not be uploaded to AI systems.
 - Approval blockers for vulnerable populations or identifiable data.
+
+## Türkçe kullanım notu
+
+Bu beceri, yapay zekânın karıştığı bir araştırma için etik kurul ve veri koruma hazırlığını tek kontrol listesinde toplar. Hangi verinin hiçbir koşulda yapay zekâ sistemine giremeyeceği açıkça yazılır, onam ve beyan dili gerçek iş akışına göre taslaklanır, KVKK, GDPR ve AB Yapay Zekâ Yasası katmanları çalışmaya eşlenir. Hukuki kesinlik gereken yerde son söz kurula ve hukukçuya bırakılır.

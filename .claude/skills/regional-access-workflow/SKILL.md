@@ -1,13 +1,13 @@
 ---
 name: regional-access-workflow
-description: Use when planning lawful academic access through DergiPark, ULAKBIM TR Dizin, HEAL-Link, YOK Thesis Center, institutional VPN, library routes, or regional source records.
+description: Use when a source must be reached through DergiPark, ULAKBIM TR Dizin, HEAL-Link, YOK Thesis Center, or an institutional library route, when off-campus access fails, or when a lawful retrieval plan is needed for Turkish, Greek, or European materials.
 ---
 
 # Regional Access Workflow
 
 ## When to use
 
-Use this skill when a researcher needs a lawful and reproducible route to regional academic sources, especially Turkish, Greek, European, university, thesis, or institutional materials.
+Use this skill when a researcher needs a lawful and reproducible route to regional academic sources, especially Turkish, Greek, European, university, thesis, or institutional materials. It picks up the search protocol from social-science-literature-triage and writes what it finds into source-passport-ledger entries.
 
 ## Inputs
 
@@ -61,3 +61,7 @@ Expected smoke output:
 - YOK Thesis Center, DergiPark, TR Dizin, Crossref, and library discovery lanes.
 - A source passport template with access status and DOI status.
 - Manual login steps left to the user.
+
+## Türkçe kullanım notu
+
+Bu beceri, bir kaynağa yasal ve tekrarlanabilir bir erişim yolu kurar. Bölgesel diziler, üniversite depoları ve kütüphane keşif sistemleri uluslararası kanallarla birlikte haritalanır, giriş ve VPN adımları her zaman sizde kalır. Açık erişim önce denenir, bulunan her kaynak için bir pasaport kaydı oluşturulur ve erişilemeyen kaynaklar dürüstçe engelli olarak raporlanır.

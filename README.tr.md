@@ -98,7 +98,7 @@ Her kitapçığın `KKK-AA-SSSS` biçiminde sabit bir kimliği vardır.
 
 ## Project Skills
 
-v2.6.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code project skill içerir. Kitapçıklar teoriyi, pedagojiyi ve akademik çerçeveyi taşır. Skills katmanı ise tekrarlanabilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır.
+v2.7.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında yirmi Claude Code project skill içerir ve araştırma yaşam döngüsünü literatür kapsamlamadan yayın bütünlüğüne kadar kapsar. Kitapçıklar teoriyi, pedagojiyi ve akademik çerçeveyi taşır. Skills katmanı ise tekrarlanabilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır. Her skill, rehberin iki dillilik ilkesini skill katmanına taşıyan bir Türkçe kullanım bölümüyle kapanır.
 
 | Skill | Tamamlayıcı kitapçıklar | Amaç |
 |---|---|---|
@@ -112,6 +112,16 @@ v2.6.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında on Claude Code pr
 | `regional-access-workflow` | 002 | DergiPark, ULAKBIM TR Dizin, HEAL-Link, YOK Thesis Center, VPN ve kütüphane yollarıyla yasal erişim akışı kurar. |
 | `agentic-session-debugger` | 012 | Claude Code scope drift, loop trap, hidden state, context limit, PATH ve izin problemlerini teşhis eder. |
 | `repo-release-integrity-check` | tüm repo | Release öncesi README, katalog, changelog, citation dosyaları, Zenodo DOI, release notes, AI beyanı ve kitapçık metadata uyumunu kontrol eder. |
+| `anti-ai-trace-revision` | 010 | Yapay zekâ yazmış gibi okunan taslağı, atıfları ve sayıları dondurarak iki dilde insan sesine döndürür. |
+| `bilingual-manuscript-scaffold` | 007 | El yazmasını tek iddia iskeletinden kurar, Türkçe önce taslak, İngilizce yeniden yazım, bölüm bölüm eşlik kontrolü. |
+| `journal-fit-screening` | 007 | Dergi adaylarını kapsamla eşler, dizin durumunu dizinin kendi listesinden doğrular, predatör dergileri tarar. |
+| `qualitative-coding-discipline` | 008 | Yorum yetkisini araştırmacıda tutar, yapay zekâyı ikinci kodlayıcı yapar, alıntı bütünlüğünü denetler. |
+| `statistical-consultation-protocol` | 008 | Test seçimini karar günlüğüne bağlar, varsayımları gerçek veride sınar, APA raporlamasını kurar. |
+| `research-ritual-hooks` | 005 | Oturum ritüellerini kancaya bağlar, bağlam yükleme, günlük kayıt ve commit bekçileri kurar. |
+| `research-lifecycle-pipeline` | 001, tümü | Projenin aşamasını teşhis eder, doğru skill'e yönlendirir, her sınır geçişini kullanıcı onayına bağlar. |
+| `mcp-research-stack-triage` | 006 | Araştırma için MCP sunucularını süzer, veri akışını sorgular, minimal izin ve bilinen cevaplı sınama kurar. |
+| `source-passport-ledger` | 003 | Her kaynağı keşiften atfa kadar izler, doğrulanmamış referansa karantina kuralı uygular. |
+| `conference-materials-bilingual` | 011 | Sunum ve posteri tek iddia etrafında kurar, görselleri analize bağlar, iki dilli yeniden yazımı yönetir. |
 
 ### Skills kurulumu
 

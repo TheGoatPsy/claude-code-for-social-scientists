@@ -1,0 +1,51 @@
+name: Skill proposal
+description: Propose a new Claude Code project skill for the guide.
+title: "Skill: "
+labels: ["skill", "triage"]
+body:
+  - type: input
+    id: slug
+    attributes:
+      label: Proposed skill slug
+      description: Lowercase kebab-case, matching the directory name under .claude/skills/.
+      placeholder: "data-management-plan-protocol"
+    validations:
+      required: true
+  - type: textarea
+    id: user_moments
+    attributes:
+      label: When should it trigger
+      description: Name the concrete user moments that should invoke this skill, the way a description field would.
+    validations:
+      required: true
+  - type: textarea
+    id: workflow_sketch
+    attributes:
+      label: Workflow sketch
+      description: The main steps the skill walks through, including which steps stay on the user's side.
+    validations:
+      required: true
+  - type: input
+    id: companion
+    attributes:
+      label: Companion booklet category
+      description: Which catalog category (001 to 012) the skill belongs to.
+      placeholder: "009"
+    validations:
+      required: true
+  - type: textarea
+    id: overlap
+    attributes:
+      label: Relation to existing skills
+      description: Which of the twenty existing skills it neighbors, and why it is not already covered by them.
+    validations:
+      required: true
+  - type: checkboxes
+    id: schema
+    attributes:
+      label: Schema acknowledgment
+      options:
+        - label: I read template/skill-template.md and will follow the eight-section schema, including the Türkçe kullanım notu section.
+          required: true
+        - label: The skill will not request credentials, bypass access controls, or invent citations.
+          required: true

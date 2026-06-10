@@ -1,13 +1,13 @@
 ---
 name: bilingual-booklet-pairing
-description: Use when drafting or reviewing paired tr.md and en.md booklets, checking title parity, frontmatter agreement, heading alignment, translation coverage, or cultural adaptation notes.
+description: Use when paired tr.md and en.md files need a parity verdict, when titles, frontmatter, headings, or DOI sets may have drifted between languages, or when a bilingual document is approaching release and its translation coverage needs an audit.
 ---
 
 # Bilingual Booklet Pairing
 
 ## When to use
 
-Use this skill whenever a booklet exists or is planned in both Turkish and English and the user needs parity rather than a loose translation.
+Use this skill whenever a booklet exists or is planned in both Turkish and English and the user needs parity rather than a loose translation. For manuscripts rather than booklets, bilingual-manuscript-scaffold builds the pair that this skill audits.
 
 ## Inputs
 
@@ -61,3 +61,7 @@ Expected smoke output:
 - Frontmatter parity, pass or specific field mismatches.
 - Heading parity, pass or named missing headings.
 - Cultural adaptation notes for KVKK, GDPR, IRB, and ethics committee terminology.
+
+## Türkçe kullanım notu
+
+Bu beceri, aynı kitapçığın Türkçe ve İngilizce dosyalarının gerçekten eş olup olmadığını denetler. Başlık sayısı, frontmatter alanları, atıf sayıları ve DOI kümeleri karşılaştırılır, kültürel uyarlama gereken yerler birebir çeviriden ayrılır. Eşlik geçmeden yayın önerilmez. El yazmaları için aynı işin kurucusu bilingual-manuscript-scaffold becerisidir.
