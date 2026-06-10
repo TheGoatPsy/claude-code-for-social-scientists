@@ -25,7 +25,7 @@ Minor release. The project skill set grows from ten to twenty, covering the rese
 
 ### Archived
 
-- Zenodo version DOI for v2.7.0: minted on the GitHub release and recorded in a follow-up commit.
+- Zenodo version DOI for v2.7.0: [10.5281/zenodo.20626097](https://doi.org/10.5281/zenodo.20626097).
 
 ## [2.6.0] - 2026-06-09
 
