@@ -16,6 +16,16 @@ const expectedSkills = [
   "regional-access-workflow",
   "agentic-session-debugger",
   "repo-release-integrity-check",
+  "anti-ai-trace-revision",
+  "bilingual-manuscript-scaffold",
+  "journal-fit-screening",
+  "qualitative-coding-discipline",
+  "statistical-consultation-protocol",
+  "research-ritual-hooks",
+  "research-lifecycle-pipeline",
+  "mcp-research-stack-triage",
+  "source-passport-ledger",
+  "conference-materials-bilingual",
 ];
 
 const requiredFrontmatterFields = [
@@ -473,6 +483,7 @@ function validateSkills() {
       "## Verification",
       "## Safety",
       "## Example prompt",
+      "## Türkçe kullanım notu",
     ]) {
       if (!body.includes(heading)) {
         fail(`${posixPath(skillFile)} is missing ${heading}`);

@@ -98,7 +98,7 @@ So `001-01-0001` is the first booklet, in the first subcategory, of the Foundati
 
 ## Project Skills
 
-The v2.6.0 surface includes ten Claude Code project skills under [`.claude/skills/`](./.claude/skills/). The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries.
+The v2.7.0 surface includes twenty Claude Code project skills under [`.claude/skills/`](./.claude/skills/), covering the research lifecycle from literature scoping to release integrity. The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries, and every skill closes with a Turkish usage section, extending the guide's bilingual parity principle to the skill layer.
 
 | Skill | Companion booklets | Purpose |
 |---|---|---|
@@ -112,6 +112,16 @@ The v2.6.0 surface includes ten Claude Code project skills under [`.claude/skill
 | `regional-access-workflow` | 002 | Plan lawful access through DergiPark, ULAKBIM TR Dizin, HEAL-Link, YOK Thesis Center, VPN, and library routes. |
 | `agentic-session-debugger` | 012 | Diagnose Claude Code scope drift, loop traps, hidden state, context limits, PATH, and permission failures. |
 | `repo-release-integrity-check` | whole repository | Check README, catalog, changelog, citation files, Zenodo DOI, release notes, AI disclosure, and booklet metadata before release. |
+| `anti-ai-trace-revision` | 010 | Revise drafts that read as AI-generated, in Turkish, English, or both, while keeping citations and statistics frozen. |
+| `bilingual-manuscript-scaffold` | 007 | Build manuscripts from one claim skeleton, Turkish first, English re-authored, with section parity checks. |
+| `journal-fit-screening` | 007 | Match a manuscript to venues, verify index status in the index's own list, and screen predatory journals. |
+| `qualitative-coding-discipline` | 008 | Keep interpretive authority with the researcher while AI serves as second coder, with quote integrity checks. |
+| `statistical-consultation-protocol` | 008 | Select statistical tests through a decision log, with assumption checks on the actual data and APA reporting. |
+| `research-ritual-hooks` | 005 | Turn session rituals into lifecycle hooks: context injection, daily logging, and commit guards. |
+| `research-lifecycle-pipeline` | 001, all | Diagnose the project stage and route to the right skill, with user confirmation at every boundary. |
+| `mcp-research-stack-triage` | 006 | Triage MCP servers for research use: publisher, data flow, minimal permissions, and known-answer probes. |
+| `source-passport-ledger` | 003 | Track every source from discovery to citation, with a quarantine rule for unverified references. |
+| `conference-materials-bilingual` | 011 | Build slides and posters around one claim, with figure traceability and bilingual re-authoring. |
 
 ### Installing the skills
 

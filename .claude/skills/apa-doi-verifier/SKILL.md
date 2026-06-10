@@ -1,13 +1,13 @@
 ---
 name: apa-doi-verifier
-description: Use when checking APA 7 references, DOI reality, Crossref or PubMed metadata, fabricated citation risk, or booklet 007 citation hygiene for social science manuscripts.
+description: Use when a reference list needs APA 7 cleanup, when DOIs must be confirmed real against Crossref or PubMed, when the user asks whether AI-suggested citations actually exist, or when a manuscript needs a citation hygiene pass before submission or defense.
 ---
 
 # APA DOI Verifier
 
 ## When to use
 
-Use this skill when a bibliography, reference list, manuscript section, or AI-generated citation set needs APA 7 cleanup and DOI verification before it is trusted.
+Use this skill when a bibliography, reference list, manuscript section, or AI-generated citation set needs APA 7 cleanup and DOI verification before it is trusted. In the wider lifecycle it runs after social-science-literature-triage has scoped the sources and before ai-disclosure-auditor counts verified citations, and its per-source results belong in the source-passport-ledger record.
 
 ## Inputs
 
@@ -45,6 +45,7 @@ Return:
 - Author order is preserved unless a source confirms otherwise.
 - Books and official reports are not forced into DOI format.
 - Risk classification distinguishes missing DOI from nonexistent source.
+- Every verification claim names the lane that confirmed it, Crossref, PubMed, publisher page, or library record, per reference.
 
 ## Safety
 
@@ -59,3 +60,7 @@ Expected smoke output:
 - A table with reference number, source type, DOI status, metadata status, and risk.
 - Corrected APA 7 entries only for verified or user-confirmed sources.
 - A short list of unresolved items for manual lookup.
+
+## Türkçe kullanım notu
+
+Bu beceri, bir kaynakçayı güvenilir saymadan önce APA 7 düzenine sokar ve her DOI'nin gerçekten var olduğunu doğrular. Hakeme gitmeden önceki son kontrolde, yapay zekâ destekli taslakların kaynakçasında ya da jüri öncesi tez denetiminde kullanın. Çözülmeyen DOI tahminle onarılmaz, doğrulanmamış referans temiz sayılmaz, her doğrulama hangi kanaldan yapıldığıyla birlikte raporlanır.

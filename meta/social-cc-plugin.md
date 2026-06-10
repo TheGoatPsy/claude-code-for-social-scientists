@@ -2,12 +2,16 @@
 
 Install the **Claude Code for Social Scientists** project skills into your Claude configuration.
 
-This package bundles ten Claude Code project skills that turn the booklets in
+This package bundles twenty Claude Code project skills that turn the booklets in
 [claude-code-for-social-scientists](https://github.com/TheGoatPsy/claude-code-for-social-scientists)
-into repeatable, auditable workflows for academic work: literature triage, APA 7 DOI verification,
-bilingual booklet pairing, AI disclosure auditing, ethics and IRB protocols, rebuttal traceability,
-research vault architecture, regional academic access, agentic session debugging, and pre-release
-repository integrity checks.
+into repeatable, auditable workflows for academic work. The set covers the research lifecycle:
+literature triage, regional academic access, MCP stack triage, research vault architecture, source
+passport ledgers, bilingual manuscript scaffolding, statistical consultation, qualitative coding
+discipline, APA 7 DOI verification, AI disclosure auditing, ethics and IRB protocols, rebuttal
+traceability, anti-AI-trace revision, journal fit screening, bilingual conference materials,
+research ritual hooks, lifecycle routing, bilingual booklet pairing, agentic session debugging, and
+pre-release repository integrity checks. Every skill closes with a Turkish usage section alongside
+its English protocol.
 
 ## Install
 

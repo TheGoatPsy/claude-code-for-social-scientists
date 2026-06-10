@@ -1,13 +1,13 @@
 ---
 name: agentic-session-debugger
-description: Use when diagnosing Claude Code session failures, scope drift, loop traps, hidden state, context limits, PATH problems, permission failures, or stuck agent workflows.
+description: Use when a Claude Code session loops, drifts from scope, claims a fix that CI rejects, hits context, PATH, or permission walls, or fails in a way another retry will not solve and a root cause diagnosis is needed instead.
 ---
 
 # Agentic Session Debugger
 
 ## When to use
 
-Use this skill when a Claude Code or agentic coding session behaves unreliably and the user needs root cause diagnosis rather than another attempt at the same command.
+Use this skill when a Claude Code or agentic coding session behaves unreliably and the user needs root cause diagnosis rather than another attempt at the same command. It applies at any lifecycle stage, and the lesson it records belongs in the project's standing instructions.
 
 ## Inputs
 
@@ -63,3 +63,7 @@ Expected smoke output:
 
 - Failure class, evidence, minimal reproduction, likely hidden-state or stale-assumption issue.
 - A concrete verification command and a smaller next fix.
+
+## Türkçe kullanım notu
+
+Bu beceri, aksayan bir Claude Code oturumunu aynı komutu yeniden denemek yerine kök nedenden teşhis eder. Bozulma sınıfı belirlenir, kanıt toplanır, sorun en küçük tekrarlanabilir adıma indirilir ve en küçük düzeltme doğrulama komutuyla birlikte önerilir. Tekrarlayan hata kalıcı bir kurala dönüştürülür, yıkıcı komutlar teşhisin parçası olamaz.

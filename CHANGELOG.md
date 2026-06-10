@@ -6,6 +6,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [2.7.0] - 2026-06-10
+
+Minor release. The project skill set grows from ten to twenty, covering the research lifecycle from literature scoping through bilingual drafting, analysis discipline, citation verification, and AI disclosure to review response and release integrity. Every skill now carries a Turkish usage section alongside its English protocol, extending the guide's bilingual parity principle to the skill layer. No booklet was added or changed. Aggregate citation metrics are unchanged at 248 verified declarations, 0 fabricated, and 13 booklets at release status.
+
+### Added
+
+- Ten new project skills under `.claude/skills/`: `anti-ai-trace-revision`, `bilingual-manuscript-scaffold`, `journal-fit-screening`, `qualitative-coding-discipline`, `statistical-consultation-protocol`, `research-ritual-hooks`, `research-lifecycle-pipeline`, `mcp-research-stack-triage`, `source-passport-ledger`, and `conference-materials-bilingual`.
+- A mandatory `## Türkçe kullanım notu` section in every skill, enforced by the repository validator.
+- A `social-cc doctor` command that checks the environment the guide's workflows expect: Python version, Claude Code, git, node, and installed skills.
+- A `template/skill-template.md` scaffold and a skill proposal issue template, with skill contribution guidance in both CONTRIBUTING files.
+- A Python test job in CI on Python 3.9 and 3.12.
+
+### Changed
+
+- The existing ten skills were strengthened: trigger-richer descriptions, cross-skill lifecycle references, falsifiable verification checks, and a Turkish usage section, with the prose taken through the same technical-register de-AI pass as the v2.6.0 booklets.
+- The package version is now read from installed metadata with a single source of truth, fixing the drift between `__init__.py` and the release cascade.
+
+### Archived
+
+- Zenodo version DOI for v2.7.0: minted on the GitHub release and recorded in a follow-up commit.
+
 ## [2.6.0] - 2026-06-09
 
 Minor release. A bilingual language and naturalness pass over the companion website and all thirteen released booklets, in both Turkish and English. The earlier voice work removed lexical calques; this release removes the deeper machine-writing signature, the rhetorical architecture, and the remaining concept-level calques.

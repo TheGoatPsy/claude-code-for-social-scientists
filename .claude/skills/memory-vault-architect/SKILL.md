@@ -1,13 +1,13 @@
 ---
 name: memory-vault-architect
-description: Use when designing a research vault, MOC structure, source passport, frontmatter standard, retrieval pattern, or durable note architecture for long-running social science projects.
+description: Use when a research note system needs architecture, when MOCs, frontmatter standards, and retrieval patterns must be designed for years of work, or when an existing vault has outgrown its structure and must migrate without breaking years of links.
 ---
 
 # Memory Vault Architect
 
 ## When to use
 
-Use this skill when the user needs an academic memory system that can survive multiple projects, long time horizons, bilingual notes, and repeated AI-assisted work.
+Use this skill when the user needs an academic memory system that can survive multiple projects, long time horizons, bilingual notes, and repeated AI-assisted work. The source records it designs are maintained day to day through source-passport-ledger, and research-ritual-hooks automates the rituals that keep the vault alive.
 
 ## Inputs
 
@@ -64,3 +64,7 @@ Expected smoke output:
 - MOC list.
 - Source passport frontmatter.
 - Retrieval rules for sources, claims, and manuscript outputs.
+
+## Türkçe kullanım notu
+
+Bu beceri, yıllarca yaşayacak bir araştırma arşivinin mimarisini kurar. Kalıcı bilgi, aktif projeler, kaynak kayıtları ve günlük çalışma birbirinden ayrılır, MOC haritaları ve frontmatter şemaları geri çağırmayı tek aramaya indirir. Günlük işleyiş source-passport-ledger ve research-ritual-hooks becerileriyle yürür. Taşınma planı küçük adımlarla ilerler, her şeyi bir günde yeniden düzenlemeyi denemez.
