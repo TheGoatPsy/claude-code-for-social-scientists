@@ -6,7 +6,7 @@
 
 Anthropic Claude Code'u araştırmada, eğitimde ve akademik yazımda kullanmak isteyen sosyal bilimciler için iki dilli, açık kaynak bir rehber. Bu araçları gerçek akademik üretim sürecinde kullanan bir klinik psikolog ve doktora adayı tarafından yazıldı. İngilizce konuşulan dünyanın dışındaki araştırmacılara, içeridekilere de seslenerek.
 
-> **Durum.** v2.6.0 sürümü. On üç kitapçık Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Kitapçıkları yinelenebilir iş akışlarına dönüştüren tamamlayıcı Claude Code project skill paketi de pakete dahildir. v2.6.0 bir dil ve doğallık pasıdır. Web sitesi ve on üç kitapçık her iki dilde baştan sona yeniden okundu, yapay zekâ izi bırakan retorik kalıplar ayıklandı ve birebir çeviri kalkları doğal karşılıklarıyla değiştirildi. İçerik, atıflar ve iki dilli eşlik olduğu gibi korundu. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
+> **Durum.** v2.8.0 sürümü. On yedi kitapçık Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. Kitapçıkları yinelenebilir iş akışlarına dönüştüren yirmi tamamlayıcı Claude Code project skill de pakete dahildir. v2.8.0 ile canlı doğrulanmış atıf çekirdekleri taşıyan dört yeni kitapçık eklendi. IMRAD iskeleti, dergi uyumu ve kapak mektupları, yapay zekâ yardımıyla nitel kodlama ve revizyonlarda yapay zekâ izini silmek. Doğrulanmış atıf toplamı 248'den 306'ya yükseldi, uydurma atıf sıfır. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
 
 > **EN readers.** The English version is in [`README.md`](./README.md). Every booklet has a `tr.md` and an `en.md` side by side. A CI check enforces this pairing on every commit.
 
@@ -151,7 +151,7 @@ Bu çalışma şu kanallarla kayıt altına alınmıştır.
 
 ## Yol haritası
 
-Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v2.6.0: web sitesi ve on üç kitapçık her iki dilde doğallık için baştan sona yeniden okundu, retorik yapay zekâ kalıpları ve çeviri kalkları ayıklandı. İçerik ve atıflar yerinde kaldı, iki dilli eşlik korundu. Yeni kitapçık eklenmedi. Tam otuz kitapçıklık katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımını içeren sonraki büyük kilometre taşı v3.0 için hedeflenmektedir.
+Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v2.8.0: canlı doğrulanmış atıf çekirdekleri taşıyan dört yeni kitapçık eklendi. IMRAD iskeleti, dergi uyumu ve kapak mektupları, yapay zekâ yardımıyla nitel kodlama ve revizyonlarda yapay zekâ izini silmek. Yayımlanan toplam on yediye çıktı. Sıradaki adımlar boş kalan kategorileri dolduruyor ve v3.0 için JOSE makalesini yeniliyor. Otuz bir kitapçıklık tam katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımı uzun vadeli hedef olmayı sürdürüyor.
 
 ## Katkıda bulunma
 

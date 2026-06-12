@@ -1,6 +1,6 @@
 # Catalog
 
-This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The full long-term catalog targets thirty-one booklets across twelve categories. The v1.0 target is the **ten core booklets** marked with `[v1.0]` in the tables below. Booklet 001-01-0004 ships at `release` status in v2.0.0, booklet 008-01-0001 (Reproducible Quantitative Workflows) at `release` status in v2.1.0, and booklet 008-02-0001 (Statistical Test Selection with AI Consultation Discipline) at `release` status in v2.2.0, all after human review and all motivated by the empirical finding that quantitative data analysis is the dominant social-science use of coding agents, bringing the released total to thirteen. v2.3.0 is a prose-only revision: the Turkish text of all thirteen booklets was rewritten in the author's native voice; no booklet was added or removed. v2.4.0 is a scholarship and voice quality upgrade of all thirteen booklets in both languages: overclaims were hedged, misapplied citations were replaced with verified sources, and aggregate verified citation declarations rose from 240 to 248, with no booklet added or removed and no heading structure changed. The remaining eighteen booklets are scheduled for later releases. See [`meta/roadmap.md`](./meta/roadmap.md) for the phase plan and release timing.
+This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The full long-term catalog targets thirty-one booklets across twelve categories. The v1.0 target is the **ten core booklets** marked with `[v1.0]` in the tables below. Booklet 001-01-0004 ships at `release` status in v2.0.0, booklet 008-01-0001 (Reproducible Quantitative Workflows) at `release` status in v2.1.0, and booklet 008-02-0001 (Statistical Test Selection with AI Consultation Discipline) at `release` status in v2.2.0, all after human review and all motivated by the empirical finding that quantitative data analysis is the dominant social-science use of coding agents, bringing the released total to thirteen. v2.3.0 is a prose-only revision: the Turkish text of all thirteen booklets was rewritten in the author's native voice; no booklet was added or removed. v2.4.0 is a scholarship and voice quality upgrade of all thirteen booklets in both languages: overclaims were hedged, misapplied citations were replaced with verified sources, and aggregate verified citation declarations rose from 240 to 248, with no booklet added or removed and no heading structure changed. v2.8.0 adds four booklets with verified citation cores, 007-01-0001 (IMRAD scaffolding), 007-03-0001 (journal fit and cover letters), 008-03-0001 (qualitative coding with AI assistance), and 010-02-0001 (anti-AI-trace writing for revisions), bringing the released total to seventeen. The remaining fourteen booklets are scheduled for later releases. See [`meta/roadmap.md`](./meta/roadmap.md) for the phase plan and release timing.
 
 ## Status legend
 
@@ -11,7 +11,7 @@ This catalog lists every booklet in `claude-code-for-social-scientists`, grouped
 | `paired` | Both `tr.md` and `en.md` drafted, not yet included in a public release |
 | `release` | Human-reviewed, version-tagged, included in a public release |
 
-The repository now contains thirteen booklets at `release` status. Both Turkish and English files are complete, human-reviewed, and citation-audited. Ten are the v1.0.0 core booklets, the eleventh, 001-01-0004, was added and human-reviewed for the v2.0.0 release, the twelfth, 008-01-0001, for the v2.1.0 release, and the thirteenth, 008-02-0001, for the v2.2.0 release. Eighteen booklets remain at `planned` status as of 2026-05-29. The v1.1.x releases add ten companion Claude Code project skills that turn the booklets into repeatable workflows, installable through the `social-cc-plugin` pip package or the Claude Code plugin system.
+The repository now contains seventeen booklets at `release` status. Both Turkish and English files are complete, human-reviewed, and citation-audited. Ten are the v1.0.0 core booklets, the eleventh, 001-01-0004, was added and human-reviewed for the v2.0.0 release, the twelfth, 008-01-0001, for the v2.1.0 release, the thirteenth, 008-02-0001, for the v2.2.0 release, and the v2.8.0 release adds 007-01-0001, 007-03-0001, 008-03-0001, and 010-02-0001 with live-verified citation cores. Fourteen booklets remain at `planned` status as of 2026-06-12. The v1.1.x releases add ten companion Claude Code project skills that turn the booklets into repeatable workflows, installable through the `social-cc-plugin` pip package or the Claude Code plugin system.
 
 ---
 
@@ -81,9 +81,9 @@ IMRAD scaffolding in Turkish and English, APA 7 with DOI discipline, journal fit
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 007-01-0001 | IMRAD Scaffolding: A Bilingual Approach | IMRAD İskeleti: İki Dilli Bir Yaklaşım | `planned` |
+| 007-01-0001 | IMRAD Scaffolding: A Bilingual Approach | IMRAD İskeleti: İki Dilli Bir Yaklaşım | `release` |
 | 007-02-0001 `[v1.0]` | APA 7 with DOI Discipline | DOI Disiplini ile APA 7 | `release` |
-| 007-03-0001 | Journal Fit and Cover Letters | Dergi Uyumu ve Kapak Mektupları | `planned` |
+| 007-03-0001 | Journal Fit and Cover Letters | Dergi Uyumu ve Kapak Mektupları | `release` |
 
 ## 008 — Data Analysis / Veri Analizi
 
@@ -93,7 +93,7 @@ Reproducible workflows, statistical test selection, qualitative coding, mixed-me
 |---|---|---|---|
 | 008-01-0001 | Reproducible Quantitative Workflows | Yeniden Üretilebilir Nicel İş Akışları | `release` |
 | 008-02-0001 | Statistical Test Selection with AI Consultation Discipline | Yapay Zekâ Danışma Disipliniyle İstatistiksel Test Seçimi | `release` |
-| 008-03-0001 | Qualitative Coding with AI Assistance and Human Oversight | Yapay Zekâ Yardımı ve İnsan Gözetimiyle Nitel Kodlama | `planned` |
+| 008-03-0001 | Qualitative Coding with AI Assistance and Human Oversight | Yapay Zekâ Yardımı ve İnsan Gözetimiyle Nitel Kodlama | `release` |
 
 ## 009 — Ethics and IRB / Etik ve IRB
 
@@ -112,7 +112,7 @@ Rebuttal letters with traceability matrices, reviewer-response discipline, anti-
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
 | 010-01-0001 `[v1.0]` | Rebuttal Letters with Traceability Matrices | İzlenebilirlik Matrisleri ile Hakem Yanıt Mektupları | `release` |
-| 010-02-0001 | Anti-AI-Trace Writing for Revisions | Revizyonlar İçin Yapay Zekâ İzi Silme Yazımı | `planned` |
+| 010-02-0001 | Anti-AI-Trace Writing for Revisions | Revizyonlarda Yapay Zekâ İzini Silmek | `release` |
 
 ## 011 — Conference Presentation / Konferans Sunumu
 
@@ -136,10 +136,10 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 
 | Status | Count |
 |---|---|
-| `release` | 13 |
+| `release` | 17 |
 | `paired` | 0 |
 | `draft` | 0 |
-| `planned` | 18 |
+| `planned` | 14 |
 | **Total catalog** | **31** |
 | **v1.0 announcement target** | **10** (marked `[v1.0]` above) |
 
@@ -182,4 +182,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md). The short version. Open an issue wit
 
 ---
 
-**Last updated:** 2026-06-10 (v2.7.0 release: the companion project skill set doubled from ten to twenty, covering the research lifecycle from literature scoping to release integrity, with a mandatory Turkish usage section added to every skill and the existing ten strengthened and taken through the v2.6.0 technical-register de-AI pass. Infrastructure repaired: a social-cc doctor command, a Python test job in CI, and a version single-source fix. No booklet was added or changed, aggregate metrics unchanged at 248 verified declarations, 0 fabricated, 13 booklets at release status. Earlier: v2.6.0 release: a bilingual language and naturalness pass over the website and all thirteen booklets in both Turkish and English, removing machine-writing rhetorical patterns and concept-level calques, the Turkish Vault metaphor rendered as arşiv, content and citations unchanged, bilingual parity preserved, aggregate metrics unchanged at 248 verified declarations, 0 fabricated, 13 booklets at release status. Earlier: v2.5.0 release: Turkish-language voice revision, prose only. The Turkish prose of all thirteen booklets, the companion website, and the Turkish README and CONTRIBUTING was rewritten in the author's academic voice. Terminology locked to correct forms: ifşa replaced with katkı beyanı, ajansal with ajan tabanlı, broşür with kitapçık, komponent with bileşen, konsolidasyon with bütünleşme, manüskri with makale. AI-disclosure framing enriched: a declaration alone is not enough, the manner and extent of AI use must be explained. No booklet was added or removed and no citation changed. Aggregate metrics unchanged: 248 verified declarations, 0 fabricated, 13 booklets at release status. Earlier: v2.4.0 release: a scholarship and voice quality upgrade of all thirteen booklets in both languages, overclaims hedged, misapplied citations replaced with verified sources, verified declarations risen from 240 to 248, zero fabricated, no booklet added or removed, no heading structure changed. Earlier: v2.3.0 release: Turkish-language quality revision, the prose of all thirteen booklets rewritten in the author's native voice, no booklet added or removed. Earlier the same day: v2.2.0 release with booklet 008-02-0001, v2.1.0 release with booklet 008-01-0001, and v2.0.0 release with audit and CI hardening, booklet 001-01-0004 promoted to release, companion website, and JOSE paper)
+**Last updated:** 2026-06-12 (v2.8.0 release: four new booklets drafted bilingually with live-verified citation cores, 007-01-0001 IMRAD Scaffolding, 007-03-0001 Journal Fit and Cover Letters, 008-03-0001 Qualitative Coding with AI Assistance and Human Oversight, and 010-02-0001 Anti-AI-Trace Writing for Revisions, raising released booklets from thirteen to seventeen and aggregate verified citation declarations from 248 to 306 with zero fabricated. Earlier the same day: v2.7.0 release: the companion project skill set doubled from ten to twenty, covering the research lifecycle from literature scoping to release integrity, with a mandatory Turkish usage section added to every skill and the existing ten strengthened and taken through the v2.6.0 technical-register de-AI pass. Infrastructure repaired: a social-cc doctor command, a Python test job in CI, and a version single-source fix. No booklet was added or changed, aggregate metrics unchanged at 248 verified declarations, 0 fabricated, 13 booklets at release status. Earlier: v2.6.0 release: a bilingual language and naturalness pass over the website and all thirteen booklets in both Turkish and English, removing machine-writing rhetorical patterns and concept-level calques, the Turkish Vault metaphor rendered as arşiv, content and citations unchanged, bilingual parity preserved, aggregate metrics unchanged at 248 verified declarations, 0 fabricated, 13 booklets at release status. Earlier: v2.5.0 release: Turkish-language voice revision, prose only. The Turkish prose of all thirteen booklets, the companion website, and the Turkish README and CONTRIBUTING was rewritten in the author's academic voice. Terminology locked to correct forms: ifşa replaced with katkı beyanı, ajansal with ajan tabanlı, broşür with kitapçık, komponent with bileşen, konsolidasyon with bütünleşme, manüskri with makale. AI-disclosure framing enriched: a declaration alone is not enough, the manner and extent of AI use must be explained. No booklet was added or removed and no citation changed. Aggregate metrics unchanged: 248 verified declarations, 0 fabricated, 13 booklets at release status. Earlier: v2.4.0 release: a scholarship and voice quality upgrade of all thirteen booklets in both languages, overclaims hedged, misapplied citations replaced with verified sources, verified declarations risen from 240 to 248, zero fabricated, no booklet added or removed, no heading structure changed. Earlier: v2.3.0 release: Turkish-language quality revision, the prose of all thirteen booklets rewritten in the author's native voice, no booklet added or removed. Earlier the same day: v2.2.0 release with booklet 008-02-0001, v2.1.0 release with booklet 008-01-0001, and v2.0.0 release with audit and CI hardening, booklet 001-01-0004 promoted to release, companion website, and JOSE paper)
