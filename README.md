@@ -6,7 +6,7 @@
 
 A bilingual, open-source guide for social scientists who want to use Anthropic's Claude Code in their research, teaching, and academic writing. Written by a working clinical psychologist and PhD candidate — for researchers outside the English-speaking world as much as inside it — drawing on real academic production, not demonstration projects.
 
-> **Status:** v2.9.0 release. Twenty-one booklets in Turkish and English, human-reviewed and citation-audited, with every one of the twelve categories now carrying at least one released booklet, plus twenty companion Claude Code project skills that turn the booklets into repeatable workflows. v2.9.0 adds four booklets with live-verified citation cores: the source passport, ritual hooks, MCP for the researcher, and conference materials. Aggregate verified citations rise from 306 to 354, with zero fabricated. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
+> **Status:** v3.0.0 release. Twenty-one booklets in Turkish and English, human-reviewed and citation-audited, at least one in every one of the twelve categories, plus twenty companion Claude Code project skills that turn the booklets into repeatable workflows. Aggregate verified citations stand at 354, with zero fabricated. v3.0.0 refreshes the Journal of Open Source Education paper against this finished surface and adds the submission preparation package. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
 
 > **TR readers:** A Turkish overview lives at the bottom of this file. The full Turkish version is in [`README.tr.md`](./README.tr.md). Every booklet exists as `tr.md` and `en.md` side by side.
 
@@ -151,7 +151,7 @@ This work is registered through:
 
 ## Roadmap
 
-See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v2.9.0: four new booklets with live-verified citation cores, the source passport, ritual hooks, MCP for the researcher, and conference materials, raising the released total to twenty-one and filling every one of the twelve categories with at least one released booklet. The next step refreshes the Journal of Open Source Education paper against this finished surface for v3.0. The full thirty-one-booklet catalog, with a living lab, conference citations, and instructional use, remains the long-term target.
+See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v3.0.0: the Journal of Open Source Education paper refreshed against the finished twenty-one-booklet, twenty-skill surface, with a submission readiness checklist in [`meta/jose-submission.md`](./meta/jose-submission.md) and a draft-PDF compile workflow. The submission itself is a maintainer-gated step. The full thirty-one-booklet catalog, with a living lab, conference citations, and instructional use, remains the long-term target.
 
 ## Contributing
 
