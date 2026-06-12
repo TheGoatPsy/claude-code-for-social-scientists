@@ -23,6 +23,10 @@ Minor release. Four new booklets join the catalog with live-verified citation co
 - The Pages workflow opts in to the Node 24 actions runtime (`FORCE_JAVASCRIPT_ACTIONS_TO_NODE24`) ahead of GitHub's 2026-06-16 switch, so the transition is tested under the project's own control.
 - The MkDocs navigation gains the 005, 006, and 011 category sections, and the catalog, aggregate AI disclosure, website statistics, and README status lines move to the twenty-one-booklet surface.
 
+### Archived
+
+- Zenodo version DOI for v2.9.0: [10.5281/zenodo.20663876](https://doi.org/10.5281/zenodo.20663876).
+
 ## [2.8.0] - 2026-06-12
 
 Minor release. Four new booklets join the catalog with live-verified citation cores, raising the released total from thirteen to seventeen and aggregate verified citation declarations from 248 to 306, with zero fabricated. The academic writing, data analysis, and peer review categories now have every planned slot at release status.
