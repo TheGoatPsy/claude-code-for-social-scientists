@@ -1,0 +1,48 @@
+# Watches the JOSE homepage for the end of the submission pause.
+#
+# Context: on 2026-06-12 the JOSE homepage announced that the journal is
+# not accepting submissions while the board deliberates on eligibility
+# changes. The submission package in meta/jose-submission.md is ready and
+# waits on that pause. This weekly check opens an issue when the notice
+# disappears so the maintainer can submit.
+
+name: JOSE intake watch
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check the JOSE homepage for the pause notice
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          page=$(curl -fsSL --max-time 60 https://jose.theoj.org/ || true)
+          if [ -z "$page" ]; then
+            echo "Could not fetch the JOSE homepage. Skipping this run."
+            exit 0
+          fi
+          if printf '%s' "$page" | grep -qi "not accepting submissions"; then
+            echo "JOSE intake is still paused. Nothing to do."
+            exit 0
+          fi
+          echo "Pause notice not found. JOSE may be accepting submissions again."
+          title="JOSE submissions appear to be open again"
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "$title in:title" --json number --jq 'length')
+          if [ "$existing" != "0" ]; then
+            echo "An open issue already flags this. Nothing to do."
+            exit 0
+          fi
+          gh issue create --repo "$GITHUB_REPOSITORY" \
+            --title "$title" \
+            --body "The weekly watcher no longer finds the submission-pause notice on https://jose.theoj.org/. Verify on the homepage, then submit per meta/jose-submission.md. Everything is ready, the form is the only remaining step. If the journal merely reworded a still-active pause, close this issue and keep waiting."
+          echo "Issue created."
