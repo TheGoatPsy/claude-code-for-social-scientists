@@ -1,6 +1,6 @@
 # JOSE Submission Package, v3.0.0
 
-Working checklist for submitting the paper in [`paper/paper.md`](../paper/paper.md) to the Journal of Open Source Education (JOSE). The actual submission is a maintainer-gated step and has not been performed. This document records readiness, the remaining open items, and the reasoning behind them.
+Working checklist for submitting the paper in [`paper/paper.md`](../paper/paper.md) to the Journal of Open Source Education (JOSE). The maintainer approved the submission on 2026-06-12. This document records readiness, the decisions taken at the gate, and the reasoning behind them.
 
 ## Scope fit
 
@@ -18,9 +18,9 @@ JOSE reviews two submission types, open educational resources (learning modules)
 | Archive DOI | Ready. Zenodo concept DOI 10.5281/zenodo.20289687 plus per-version DOIs through v3.0.0. |
 | Community guidelines | Ready. CONTRIBUTING in both languages, CODE_OF_CONDUCT, SECURITY. |
 | Quality control description | Ready. Paper section seven mirrors the CI reality: validator, markdownlint, pytest, cff-validator, gitleaks. |
-| Paper compiles with the Open Journals toolchain | Pending first run. The `draft-pdf.yml` workflow added in v3.0.0 compiles the paper with the official `openjournals-draft-action`; run it from the Actions tab and attach the artifact to the submission. |
-| Affiliation confirmation | Open. The affiliation line is taken verbatim from `CITATION.cff` and carries an author-confirmation note in `paper.md`. Confirm or adjust before submitting. |
-| License compatibility | Open question, see below. |
+| Paper compiles with the Open Journals toolchain | Ready. The `draft-pdf.yml` workflow compiled the paper with the official `openjournals-draft-action` on 2026-06-12 (run 27413547160), and the maintainer reviewed the artifact: five pages, all ten references resolved, no broken citations. |
+| Affiliation confirmation | Ready. The author confirmed the affiliation line on 2026-06-12 and the confirmation note was removed from `paper.md`. |
+| License compatibility | Decided, option 1, see below. |
 
 ## The license question
 
@@ -32,12 +32,12 @@ The open question is editorial rather than mechanical. JOSE's spirit for learnin
 2. Open a pre-submission inquiry on the Open Journals GitHub before submitting, asking whether CC-BY-NC-SA prose alongside Apache-2.0 code is acceptable for a learning-module submission.
 3. Relicense the prose to CC-BY-4.0. This removes the question entirely at the cost of giving up the NonCommercial protection, and it is a decision only the author can make.
 
-No option is exercised in v3.0.0. The choice belongs to the maintainer at submission time.
+Decision, 2026-06-12: the maintainer chose option 1. The submission proceeds with the dual-license structure stated transparently in the submission notes, and the editor weighs it during review. The repository licenses stay as they are.
 
-## Submission mechanics, when gated open
+## Submission mechanics
 
-1. Run the `Draft paper PDF` workflow from the Actions tab and review the artifact.
-2. Confirm the affiliation line in `paper/paper.md`.
-3. Resolve the license question above (option 1, 2, or 3).
+1. Run the `Draft paper PDF` workflow from the Actions tab and review the artifact. Done, 2026-06-12.
+2. Confirm the affiliation line in `paper/paper.md`. Done, 2026-06-12.
+3. Resolve the license question above (option 1, 2, or 3). Done, option 1, 2026-06-12.
 4. Submit at the JOSE web form with the repository URL and the v3.0.0 Zenodo DOI.
 5. Track the review issue on the openjournals/jose-reviews repository and respond through the established rebuttal discipline of booklet 010-01-0001.

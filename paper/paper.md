@@ -15,7 +15,6 @@ authors:
 affiliations:
   - name: "Istanbul University, Department of Clinical and Health Psychology"
     index: 1
-# Affiliation taken verbatim from CITATION.cff. Author to confirm before JOSE submission.
 date: 12 June 2026
 bibliography: paper.bib
 ---
