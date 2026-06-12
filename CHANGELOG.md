@@ -22,6 +22,10 @@ Minor release. Four new booklets join the catalog with live-verified citation co
 - Every new citation core was verified live against Crossref before drafting, and the quantitative claims were checked against publisher or PubMed Central full texts. One candidate reference without a registered DOI, Sollaci and Pereira (2004), was dropped rather than cited unverified.
 - The MkDocs navigation, catalog, aggregate AI disclosure, website statistics, and README status lines were updated for the seventeen-booklet surface.
 
+### Archived
+
+- Zenodo version DOI for v2.8.0: [10.5281/zenodo.20662434](https://doi.org/10.5281/zenodo.20662434).
+
 ## [2.7.0] - 2026-06-10
 
 Minor release. The project skill set grows from ten to twenty, covering the research lifecycle from literature scoping through bilingual drafting, analysis discipline, citation verification, and AI disclosure to review response and release integrity. Every skill now carries a Turkish usage section alongside its English protocol, extending the guide's bilingual parity principle to the skill layer. No booklet was added or changed. Aggregate citation metrics are unchanged at 248 verified declarations, 0 fabricated, and 13 booklets at release status.
