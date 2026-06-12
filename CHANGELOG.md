@@ -24,6 +24,10 @@ Major release. The Journal of Open Source Education paper is refreshed against t
 
 - No booklet, citation, or skill content changed. Aggregate metrics stay at 354 verified declarations, 0 fabricated, 21 booklets at release status.
 
+### Archived
+
+- Zenodo version DOI for v3.0.0: [10.5281/zenodo.20665696](https://doi.org/10.5281/zenodo.20665696).
+
 ## [2.9.0] - 2026-06-12
 
 Minor release. Four new booklets join the catalog with live-verified citation cores, raising the released total from seventeen to twenty-one. Every one of the twelve categories now carries at least one released booklet, completing the catalog grid that the v3.0 milestone builds on. Aggregate verified citation declarations rise from 306 to 354, with zero fabricated.
