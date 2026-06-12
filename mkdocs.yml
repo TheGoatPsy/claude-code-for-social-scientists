@@ -116,10 +116,20 @@ nav:
   - "003 Memory System / Hafıza Sistemi":
       - "003-01-0001 — Memory as Vault (EN)": booklets/003-memory-system/003-01-0001/en.md
       - "003-01-0001 — Kasa Olarak Hafıza (TR)": booklets/003-memory-system/003-01-0001/tr.md
+      - "003-03-0001 — Material Passport (EN)": booklets/003-memory-system/003-03-0001/en.md
+      - "003-03-0001 — Kaynak Pasaportu (TR)": booklets/003-memory-system/003-03-0001/tr.md
 
   - "004 Vault Architecture / Kasa Mimarisi":
       - "004-01-0001 — Folder Discipline and MOC (EN)": booklets/004-vault-architecture/004-01-0001/en.md
       - "004-01-0001 — Klasör Disiplini ve MOC (TR)": booklets/004-vault-architecture/004-01-0001/tr.md
+
+  - "005 Hooks and Automation / Hook'lar ve Otomasyon":
+      - "005-02-0001 — Ritual Hooks (EN)": booklets/005-hooks-automation/005-02-0001/en.md
+      - "005-02-0001 — Ritüel Hook'lar (TR)": booklets/005-hooks-automation/005-02-0001/tr.md
+
+  - "006 MCP and Plugins / MCP ve Eklentiler":
+      - "006-01-0001 — MCP for the Researcher (EN)": booklets/006-mcp-plugins/006-01-0001/en.md
+      - "006-01-0001 — Araştırmacı İçin MCP (TR)": booklets/006-mcp-plugins/006-01-0001/tr.md
 
   - "007 Academic Writing / Akademik Yazım":
       - "007-01-0001 — IMRAD Scaffolding (EN)": booklets/007-academic-writing/007-01-0001/en.md
@@ -146,6 +156,10 @@ nav:
       - "010-01-0001 — Hakem Yanıt Mektupları (TR)": booklets/010-peer-review/010-01-0001/tr.md
       - "010-02-0001 — Anti-AI-Trace Writing (EN)": booklets/010-peer-review/010-02-0001/en.md
       - "010-02-0001 — Yapay Zekâ İzini Silmek (TR)": booklets/010-peer-review/010-02-0001/tr.md
+
+  - "011 Conference Presentation / Konferans Sunumu":
+      - "011-01-0001 — Slides, Posters, Lightning Talks (EN)": booklets/011-conference-presentation/011-01-0001/en.md
+      - "011-01-0001 — Slayt, Poster, Lightning Talk (TR)": booklets/011-conference-presentation/011-01-0001/tr.md
 
   - "012 Troubleshooting / Sorun Giderme":
       - "012-01-0001 — When Things Go Wrong (EN)": booklets/012-troubleshooting/012-01-0001/en.md
