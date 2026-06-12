@@ -10,6 +10,11 @@ on:
 permissions:
   contents: read
 
+# GitHub forces Node 24 for JavaScript actions from 2026-06-16; opt in early
+# so the transition is tested under our own control.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 concurrency:
   group: pages-${{ github.ref }}
   cancel-in-progress: true

@@ -6,6 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [2.9.0] - 2026-06-12
+
+Minor release. Four new booklets join the catalog with live-verified citation cores, raising the released total from seventeen to twenty-one. Every one of the twelve categories now carries at least one released booklet, completing the catalog grid that the v3.0 milestone builds on. Aggregate verified citation declarations rise from 306 to 354, with zero fabricated.
+
+### Added
+
+- Booklet 003-03-0001, Material Passport: Tracking Sources Across Sessions. A six-field identity line for every source, FAIR-aligned at the personal archive layer, with the rule that a source without a passport does not enter the bibliography.
+- Booklet 005-02-0001, Ritual Hooks: Daily Logging, Session Persistence, Idle Time. Research discipline moved from willpower to infrastructure, with guard hooks for secret scanning and citation protection.
+- Booklet 006-01-0001, MCP for the Researcher: What, Why, When. Looking instead of remembering, a trust triage for third-party servers, least-privilege setup, and an honest section on when no bridge is needed.
+- Booklet 011-01-0001, Slides, Posters, and Lightning Talks with AI Assistance. Three compressions of one study, visual integrity rules, and disclosure awareness on stage.
+
+### Changed
+
+- Every new citation core was verified live against Crossref before drafting. One candidate with ambiguous registered metadata (Lally et al., 2010) was dropped rather than cited with an uncertain date.
+- The Pages workflow opts in to the Node 24 actions runtime (`FORCE_JAVASCRIPT_ACTIONS_TO_NODE24`) ahead of GitHub's 2026-06-16 switch, so the transition is tested under the project's own control.
+- The MkDocs navigation gains the 005, 006, and 011 category sections, and the catalog, aggregate AI disclosure, website statistics, and README status lines move to the twenty-one-booklet surface.
+
 ## [2.8.0] - 2026-06-12
 
 Minor release. Four new booklets join the catalog with live-verified citation cores, raising the released total from thirteen to seventeen and aggregate verified citation declarations from 248 to 306, with zero fabricated. The academic writing, data analysis, and peer review categories now have every planned slot at release status.
