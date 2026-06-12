@@ -37,6 +37,9 @@ identifiers:
     value: "10.5281/zenodo.20289687"
     description: "Zenodo concept DOI, resolves to the latest version"
   - type: doi
+    value: "10.5281/zenodo.20665696"
+    description: "Zenodo version DOI for v3.0.0 (2026-06-12)"
+  - type: doi
     value: "10.5281/zenodo.20663876"
     description: "Zenodo version DOI for v2.9.0 (2026-06-12)"
   - type: doi
