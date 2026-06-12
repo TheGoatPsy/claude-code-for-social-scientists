@@ -39,5 +39,9 @@ Decision, 2026-06-12: the maintainer chose option 1. The submission proceeds wit
 1. Run the `Draft paper PDF` workflow from the Actions tab and review the artifact. Done, 2026-06-12.
 2. Confirm the affiliation line in `paper/paper.md`. Done, 2026-06-12.
 3. Resolve the license question above (option 1, 2, or 3). Done, option 1, 2026-06-12.
-4. Submit at the JOSE web form with the repository URL and the v3.0.0 Zenodo DOI.
+4. Submit at the JOSE web form with the repository URL and the v3.0.0 Zenodo DOI. Externally blocked as of 2026-06-12, see the submission status below.
 5. Track the review issue on the openjournals/jose-reviews repository and respond through the established rebuttal discipline of booklet 010-01-0001.
+
+## Submission status
+
+2026-06-12: the maintainer opened the gate and every readiness item above is closed. The submission itself is externally blocked. The JOSE homepage announces that the journal is not accepting submissions while the editorial board deliberates on eligibility changes, and an editor comment from April 2026 on the journal's tracking repository confirms a large review backlog with a small volunteer team. The package stays submission-ready as prepared here, and the maintainer submits when intake reopens.
