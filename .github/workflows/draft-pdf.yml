@@ -1,0 +1,35 @@
+name: Draft paper PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "paper/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  paper:
+    name: Compile JOSE paper draft
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Build draft PDF
+        uses: openjournals/openjournals-draft-action@master
+        with:
+          journal: jose
+          paper-path: paper/paper.md
+
+      - name: Upload paper artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper-pdf
+          path: paper/paper.pdf

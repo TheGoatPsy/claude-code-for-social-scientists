@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [3.0.0] - 2026-06-12
+
+Major release. The Journal of Open Source Education paper is refreshed against the finished surface, twenty-one booklets across all twelve categories and twenty skills, and a submission preparation package is added. The major version marks the completion of the arc this line has been building: a fully populated category grid, a doubled skill layer with machine-enforced bilingual parity, and a citable, review-ready reference implementation.
+
+### Added
+
+- A fifth distinctive contribution in the paper: the anti-AI-trace revision method, grounded in the published evidence that detection tools are unreliable and biased against non-native writers, with the disclosure-over-detectability position stated explicitly. `paper/paper.bib` gains the `weberwulff2023` and `liang2023` entries, both DOI-verified.
+- `meta/jose-submission.md`, the JOSE readiness checklist, including the open dual-license question that stays with the maintainer.
+- A `draft-pdf.yml` workflow that compiles the paper with the official Open Journals action, runnable from the Actions tab and triggered by paper changes on main.
+
+### Changed
+
+- `paper/paper.md` moved from the stale v2.2.0 narrative to the v3.0.0 surface: twenty-one booklets in all twelve categories, twenty skills with the mandatory Turkish usage section, forty-two language files with 354 verified citation declarations and zero fabricated, and a quality-control section that matches the current CI reality.
+
+### Unchanged
+
+- No booklet, citation, or skill content changed. Aggregate metrics stay at 354 verified declarations, 0 fabricated, 21 booklets at release status.
+
 ## [2.9.0] - 2026-06-12
 
 Minor release. Four new booklets join the catalog with live-verified citation cores, raising the released total from seventeen to twenty-one. Every one of the twelve categories now carries at least one released booklet, completing the catalog grid that the v3.0 milestone builds on. Aggregate verified citation declarations rise from 306 to 354, with zero fabricated.
