@@ -6,6 +6,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [2.8.0] - 2026-06-12
+
+Minor release. Four new booklets join the catalog with live-verified citation cores, raising the released total from thirteen to seventeen and aggregate verified citation declarations from 248 to 306, with zero fabricated. The academic writing, data analysis, and peer review categories now have every planned slot at release status.
+
+### Added
+
+- Booklet 007-01-0001, IMRAD Scaffolding: A Bilingual Approach. Turkish-first drafting, English re-authoring, and the parity discipline for titles, abstracts, and keywords, grounded in the documented costs of publishing in a second language.
+- Booklet 007-03-0001, Journal Fit and Cover Letters. Fit as a researchable question, index layers including ULAKBIM TR Dizin, a predatory journal screening discipline, and the cover letter as a document of fit.
+- Booklet 008-03-0001, Qualitative Coding with AI Assistance and Human Oversight. Codebook design, the model as a second coder under protocol, reliability checkpoints, verbatim quote integrity, and anonymization-before-model data protection.
+- Booklet 010-02-0001, Anti-AI-Trace Writing for Revisions. The theoretical ground of the `anti-ai-trace-revision` skill: detection tools fail measurably and unevenly, integrity lives in disclosure rather than invisibility, and the two-layer revision method this guide uses on its own prose.
+
+### Changed
+
+- Every new citation core was verified live against Crossref before drafting, and the quantitative claims were checked against publisher or PubMed Central full texts. One candidate reference without a registered DOI, Sollaci and Pereira (2004), was dropped rather than cited unverified.
+- The MkDocs navigation, catalog, aggregate AI disclosure, website statistics, and README status lines were updated for the seventeen-booklet surface.
+
 ## [2.7.0] - 2026-06-10
 
 Minor release. The project skill set grows from ten to twenty, covering the research lifecycle from literature scoping through bilingual drafting, analysis discipline, citation verification, and AI disclosure to review response and release integrity. Every skill now carries a Turkish usage section alongside its English protocol, extending the guide's bilingual parity principle to the skill layer. No booklet was added or changed. Aggregate citation metrics are unchanged at 248 verified declarations, 0 fabricated, and 13 booklets at release status.
