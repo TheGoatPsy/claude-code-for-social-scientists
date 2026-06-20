@@ -23,6 +23,10 @@ Patch release. Provenance and licensing accuracy. The U.S. Copyright Office (eCO
 
 - All booklet content, the reference set, the immutable identifiers, and the aggregate disclosure metrics (354 verified, 0 fabricated, 21 booklets, 20 skills).
 
+### Archived
+
+- Zenodo version DOI [10.5281/zenodo.20774182](https://doi.org/10.5281/zenodo.20774182), archived on release.
+
 ## [3.0.1] - 2026-06-20
 
 Patch release. A repository-wide zero-defect audit, sixty-three Opus agents across all twenty-one booklets with every flagged citation re-verified live against Crossref, found and corrected sixty-nine confirmed defects in published content. The reference set and the aggregate counts are unchanged: 354 verified declarations, 0 fabricated.
