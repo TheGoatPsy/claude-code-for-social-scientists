@@ -79,7 +79,7 @@ An agent can propose a particular test and articulate its rationale. But decidin
 
 This discipline reduces to a concrete sequence of steps, each of which the researcher owns directly.
 
-The seed must be fixed at every random step — every split, sample, and bootstrap — and recorded explicitly in the specification log; without it, results vary on each run and the workflow cannot be called reproducible in any meaningful sense. Package versions deserve the same treatment: freezing them in a lock file ensures that the computational environment one year from now matches the environment today, not merely that the code is unchanged. Before treating any result as final, re-run the analysis from scratch in a clean session. A result that depends on accumulated interpreter state is not a result; it is a snapshot of a particular session's history. The agent's decision path also belongs in the log: which specifications were tried, why the chosen one was selected, and how the final approach differs from the first attempt. That record is what allows the paper's methods section to reflect the actual analytic process rather than a retrospective tidying of it. The prompt and model version should be archived alongside the output — not separately, where they can drift or disappear — so that the AI component of the analysis remains recoverable by any reader who needs to understand what was done.
+The seed must be fixed at every random step (every split, sample, and bootstrap) and recorded explicitly in the specification log; without it, results vary on each run and the workflow cannot be called reproducible in any meaningful sense. Package versions deserve the same treatment: freezing them in a lock file ensures that the computational environment one year from now matches the environment today, not merely that the code is unchanged. Before treating any result as final, re-run the analysis from scratch in a clean session. A result that depends on accumulated interpreter state is not a result; it is a snapshot of a particular session's history. The agent's decision path also belongs in the log: which specifications were tried, why the chosen one was selected, and how the final approach differs from the first attempt. That record is what allows the paper's methods section to reflect the actual analytic process rather than a retrospective tidying of it. The prompt and model version should be archived alongside the output, not separately, where they can drift or disappear, so that the AI component of the analysis remains recoverable by any reader who needs to understand what was done.
 
 These steps are the principle of Sandve et al. (2013) and Wilson et al. (2017), carried into the agentic workflow: record and automate every step of the process. If the instruction file is the machine-facing side of a paper's methods section, this log is the ledger of the analysis. Without it, the agent's speed becomes the enemy of reproducibility. With it, the agent serves reproducibility rather than undermining it.
 
@@ -126,7 +126,7 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 **Booklet identifier.** `008-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2049 (English body text, measured with wc)
+**Approximate word count.** 2045 (English body text, measured with wc)
 **Verified citations.** 10
 **Fabricated citations.** 0
 **Previous booklet.** [`007-02-0001`](../../007-academic-writing/007-02-0001/en.md). APA 7 with DOI Discipline

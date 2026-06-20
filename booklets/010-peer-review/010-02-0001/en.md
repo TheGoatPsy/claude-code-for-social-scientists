@@ -41,7 +41,7 @@ An AI trace is the sum of stylistic patterns that recur in model-assisted text. 
 
 For a writer working in two languages there is a second layer. When a draft crosses from Turkish to English or back, the model carries translation patterns with it: borrowed metaphors, syntax imported from the source language, sentences no one writing natively in the target language would ever build.
 
-A trace is not a content error. A wrong finding, a fabricated reference, an inflated claim — these are honesty problems, and other booklets in this guide deal with them directly. A trace is a signature at the level of style. Removing it changes how the text sounds, not what it asserts. The question of deception is never settled at the level of style. It is settled at the disclosure line, and this booklet will keep returning to that line.
+A trace is not a content error. A wrong finding, a fabricated reference, an inflated claim, these are honesty problems, and other booklets in this guide deal with them directly. A trace is a signature at the level of style. Removing it changes how the text sounds, not what it asserts. The question of deception is never settled at the level of style. It is settled at the disclosure line, and this booklet will keep returning to that line.
 
 ## 2. What Detection Tools Can and Cannot Do
 
@@ -136,7 +136,7 @@ Weber-Wulff, D., Anohina-Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero-Dib
 **Booklet ID.** `010-02-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2083 (English body text, measured with wc)
+**Approximate word count.** 2082 (English body text, measured with wc)
 **Verified citations.** 8
 **Hallucinated citations.** 0
 **Previous booklet.** [`010-01-0001`](../010-01-0001/en.md). Rebuttal Letters with Traceability Matrices

@@ -34,7 +34,7 @@ original_concept: true
 
 # Memory as Vault, A First-Principles Introduction
 
-The previous category established the academic access infrastructure. This category begins with the question of where every retrieved document should go. A literature scan, an interview transcript, a clinical observation note — all must be written somewhere, but into what structure? This booklet offers the Memory as Vault pattern as its answer. That pattern is the author's original practitioner concept, presented here as the guide's working framework rather than an established construct in the cognitive science or information science literature. The aim is to establish, from first principles, how a scholar holds years of accumulated context in a single persistent system.
+The previous category established the academic access infrastructure. This category begins with the question of where every retrieved document should go. A literature scan, an interview transcript, a clinical observation note, all must be written somewhere, but into what structure? This booklet offers the Memory as Vault pattern as its answer. That pattern is the author's original practitioner concept, presented here as the guide's working framework rather than an established construct in the cognitive science or information science literature. The aim is to establish, from first principles, how a scholar holds years of accumulated context in a single persistent system.
 
 ## 1. Why a Vault
 
@@ -48,7 +48,7 @@ Memory as Vault belongs to a seventy-year intellectual tradition in information 
 
 The tradition begins with Vannevar Bush. In the essay "As We May Think," published in The Atlantic in 1945, Bush imagined a device he called the Memex: a mechanized extension of personal memory that would store all of an individual's books, records, and communications and build associative trails among them. The insight was precise: the human mind works by association, so an information system should honor those links rather than impose a single hierarchy. The formal concept came from Ted Nelson. Nelson (1965), proposing a file structure for complex, changing, and indeterminate information, defined hypertext for the first time as the idea that texts can relate to one another as a network rather than a linear sequence.
 
-The practical demonstration came from Niklas Luhmann. Luhmann (1992) worked with a slip-box he called the Zettelkasten. Each slip carried an atomic thought, connected to others by reference numbers rather than folders. Over roughly five decades Luhmann used this system as what he called a communication partner, something closer to a thinking interlocutor than a filing cabinet, producing approximately seventy books and hundreds of articles. Sönke Ahrens (2017) translated the technique for modern knowledge workers, reformulating it through atomic notes, bidirectional links, and the note system as a thinking tool. That lineage — Bush's associative vision, Nelson's hypertext formalism, Luhmann's sustained practice, Ahrens's translation — is what the Memory as Vault pattern inherits. What none of them anticipated was that the retrieval step could be delegated to a language model working directly inside the archive.
+The practical demonstration came from Niklas Luhmann. Luhmann (1992) worked with a slip-box he called the Zettelkasten. Each slip carried an atomic thought, connected to others by reference numbers rather than folders. Over roughly five decades Luhmann used this system as what he called a communication partner, something closer to a thinking interlocutor than a filing cabinet, producing approximately seventy books and hundreds of articles. Sönke Ahrens (2017) translated the technique for modern knowledge workers, reformulating it through atomic notes, bidirectional links, and the note system as a thinking tool. That lineage is what the Memory as Vault pattern inherits: Bush's associative vision, Nelson's hypertext formalism, Luhmann's sustained practice, and Ahrens's translation. What none of them anticipated was that the retrieval step could be delegated to a language model working directly inside the archive.
 
 ## 3. Operational Principles
 
@@ -70,7 +70,7 @@ flowchart LR
   D --> A
 ```
 
-Input is where information enters the vault. An article record, a field note, a clinical observation — anything the researcher captures gets converted to plain text at this step. Store assigns it a location: the right folder, the right frontmatter fields, the right links. This step determines future accessibility entirely, because information stored in the wrong place cannot be found. At Retrieve the value of the vault becomes visible: text search, frontmatter query, link traversal. Present completes the cycle by putting retrieved material to work in a new context — a literature synthesis, an argument draft, a case formulation.
+Input is where information enters the vault. An article record, a field note, a clinical observation, anything the researcher captures gets converted to plain text at this step. Store assigns it a location: the right folder, the right frontmatter fields, the right links. This step determines future accessibility entirely, because information stored in the wrong place cannot be found. At Retrieve the value of the vault becomes visible: text search, frontmatter query, link traversal. Present completes the cycle by putting retrieved material to work in a new context, a literature synthesis, an argument draft, a case formulation.
 
 The feature that distinguishes this pattern from a conventional database cycle is the feedback arrow from Present back to Input. A database receives, stores, queries, and returns data, but the data it returns does not change the system itself. In the Memory as Vault design, as this guide conceives it, every Present step reshapes the vault: the synthesis enters as a new atomic note, that note forms new links with earlier notes, and the relevant maps of content are updated. Over time the vault becomes a record of the researcher's evolving way of thinking, an instrument that grows more refined with use. For the social scientist, a vault well maintained for ten years accumulates depth that no new tool can replicate.
 
@@ -135,7 +135,7 @@ Valmeekam, K., Marquez, M., Sreedharan, S., & Kambhampati, S. (2023). On the pla
 **Booklet ID.** `003-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2184 (English body text, measured with wc)
+**Approximate word count.** 2180 (English body text, measured with wc)
 **Verified citations.** 9
 **Hallucinated citations.** 0
 **Original concept.** Memory as Vault is the author's original practitioner concept, presented here as the guide's working framework.
