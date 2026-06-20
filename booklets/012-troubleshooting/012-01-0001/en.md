@@ -74,7 +74,7 @@ A worked example shows the loop type. A researcher asks the model to reformat a 
 
 ## A Reasoning Framework
 
-Placing a problem is the diagnostic half; solving it requires a reasoning framework. The protocol laid out below extends Pólya's (1945/2014) classic four-stage framework — understand, plan, carry out, look back — to the social science AI workflow. That extension is this guide's own interpretation of his method. The framework works across the great majority of problems in all three categories, because it is a general discipline of thought, not a guide to any particular command.
+Placing a problem is the diagnostic half; solving it requires a reasoning framework. The protocol laid out below extends Pólya's (1945/2014) classic four-stage framework (understand, plan, carry out, look back) to the social science AI workflow. That extension is this guide's own interpretation of his method. The framework works across the great majority of problems in all three categories, because it is a general discipline of thought, not a guide to any particular command.
 
 | Step | Name | Question | Pólya stage |
 |---|---|---|---|
@@ -161,7 +161,7 @@ Vaughan, D. (1996). *The Challenger launch decision: Risky technology, culture, 
 **Booklet ID.** `012-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Word count (approx.).** 3176 (English body text, measured with wc)
+**Word count (approx.).** 3174 (English body text, measured with wc)
 **Verified citations.** 7
 **Hallucinated citations.** 0
 **Previous booklet.** [`010-01-0001`](../../010-peer-review/010-01-0001/en.md). Rebuttal Letters with Traceability Matrices

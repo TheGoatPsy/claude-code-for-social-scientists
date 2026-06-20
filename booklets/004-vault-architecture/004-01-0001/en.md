@@ -176,7 +176,7 @@ The solution is simple and is already embedded in the conventions above: file na
 
 ## 10. Bridge, to Citation Discipline
 
-After the folder architecture is established, the bibliographic integrity of every reference that enters it determines the long life of the vault. However well a vault is organized, if the citations within it are inconsistent or unverified, academic production built on top of them cannot be trusted. The next category addresses APA 7 and DOI discipline, showing how every reference is held in a correct, verified, and consistent form. Knuth's (1984) philosophy of literate programming frames the underlying principle: write your document so that a human can read it, and accept the machine's ability to read it as an additional feature, not the primary goal. That principle scales from code to citations. A citation stripped of the argument it anchored, or a note filed where no one can retrieve it, loses most of its value — the vault is the environment that keeps each reference inside its context, and the next booklet shows how to maintain that environment. Brown and Duguid (2017) document the same dependency at the level of organizations: knowledge that loses its surrounding practice also loses its meaning.
+After the folder architecture is established, the bibliographic integrity of every reference that enters it determines the long life of the vault. However well a vault is organized, if the citations within it are inconsistent or unverified, academic production built on top of them cannot be trusted. The next category addresses APA 7 and DOI discipline, showing how every reference is held in a correct, verified, and consistent form. Knuth's (1984) philosophy of literate programming frames the underlying principle: write your document so that a human can read it, and accept the machine's ability to read it as an additional feature, not the primary goal. That principle scales from code to citations. A citation stripped of the argument it anchored, or a note filed where no one can retrieve it, loses most of its value. The vault is the environment that keeps each reference inside its context, and the next booklet shows how to maintain that environment. Brown and Duguid (2017) document the same dependency at the level of organizations: knowledge that loses its surrounding practice also loses its meaning.
 
 ## References
 
@@ -203,7 +203,7 @@ Norman, D. A. (2013). *The design of everyday things* (revised and expanded edit
 **Booklet ID.** `004-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2283 (English body text, measured with wc)
+**Approximate word count.** 2282 (English body text, measured with wc)
 **Verified citations.** 9
 **Hallucinated citations.** 0
 **Previous booklet.** [`003-01-0001`](../../003-memory-system/003-01-0001/en.md). Memory as Vault, A First-Principles Introduction

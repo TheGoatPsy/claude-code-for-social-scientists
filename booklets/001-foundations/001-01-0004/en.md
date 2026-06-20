@@ -77,7 +77,7 @@ One important qualification: Anthropic's own documentation notes that CLAUDE.md 
 
 ## What Belongs in CLAUDE.md for a Social Scientist
 
-A useful instruction file is concrete. Identity and expertise come first: the researcher's field, the level of scholarly interlocutor expected, and the disciplinary domain. Style belongs in the same file — sentence structure preferences, a ban on emojis, the tone required in academic prose, any house conventions specific to a journal target or institutional submission.
+A useful instruction file is concrete. Identity and expertise come first: the researcher's field, the level of scholarly interlocutor expected, and the disciplinary domain. Style belongs in the same file, sentence structure preferences, a ban on emojis, the tone required in academic prose, any house conventions specific to a journal target or institutional submission.
 
 Citation discipline is the most critical entry. The APA 7 standard, a prohibition on fabricated citations, and the requirement that every DOI be independently verified before it enters the reference list should be stated explicitly. Ethical limits follow from the same logic: unanonymized clinical data must not be shared, KVKK and GDPR obligations are binding, and identifying information must never appear in shared documents. Writing these out explicitly is what converts tacit professional norms into enforceable standing instructions.
 
@@ -136,7 +136,7 @@ White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., 
 **Booklet identifier.** `001-01-0004`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 1873 (English body text, measured with wc)
+**Approximate word count.** 1872 (English body text, measured with wc)
 **Verified citations.** 9
 **Fabricated citations.** 0
 **Previous booklet.** [`001-01-0003`](../001-01-0003/en.md). Installation, First Session, and Sanity Checks
