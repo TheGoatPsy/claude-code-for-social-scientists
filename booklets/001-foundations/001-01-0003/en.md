@@ -134,7 +134,7 @@ Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C. L., Mishkin, P., Zhan
 **Booklet identifier.** `001-01-0003`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2835 (English body text, measured with wc)
+**Approximate word count.** 2563 (English body text, measured with wc)
 **Verified citations.** 6
 **Fabricated citations.** 0
 **Previous booklet.** [`001-01-0002`](../001-01-0002/en.md). The Agentic Shift: From Chat Window to Working Partner

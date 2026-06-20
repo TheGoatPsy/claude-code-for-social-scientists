@@ -136,7 +136,7 @@ White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., 
 **Booklet identifier.** `001-01-0004`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2188 (English body text, measured with wc)
+**Approximate word count.** 1873 (English body text, measured with wc)
 **Verified citations.** 9
 **Fabricated citations.** 0
 **Previous booklet.** [`001-01-0003`](../001-01-0003/en.md). Installation, First Session, and Sanity Checks

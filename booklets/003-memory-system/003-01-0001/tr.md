@@ -47,7 +47,7 @@ Hafızayı arşive dönüştürme kalıbı, yetmiş yıllık bir entelektüel ge
 
 Bu geleneğin başlangıç noktası Vannevar Bush'tur. Bush (1945), The Atlantic'te yayımlanan "As We May Think" başlıklı denemesinde Memex adını verdiği bir aygıt tasavvur etti. Memex, bir bireyin tüm kitaplarını, kayıtlarını ve yazışmalarını saklayan ve bunlar arasında çağrışımsal izler kuran, kişisel hafızanın mekanize bir uzantısıydı. Bush'un öngörüsü kesindi: insan zihni çağrışımla çalışır, dolayısıyla bilgi sisteminin de çağrışımsal bağlantılara saygı göstermesi, tek bir hiyerarşi dayatmaması gerekir. Kavramsal temeli Ted Nelson attı. Nelson (1965), karmaşık, değişen ve belirsiz bilgi için bir dosya yapısı önerdiği makalesinde hipertekst kavramını ilk kez tanımladı. Nelson'un katkısı, metinlerin doğrusal değil ağsal olarak birbirine bağlanabileceği fikriydi.
 
-Pratik kanıtı ise Niklas Luhmann sundu. Luhmann (1992), Zettelkasten adını verdiği fiş kutusu sistemiyle çalıştı. Her fişin atomik bir düşünce taşıdığı, fişlerin birbirine referans numaralarıyla bağlandığı bu sistemle Luhmann, yaklaşık yarım yüzyıl boyunca sürdürümlü bir verimlilikle yaklaşık yetmiş kitap ve yüzlerce makale üretti. Luhmann, bu sistemi bir iletişim ortağı olarak tanımladı. Zettelkasten'i çağdaş bilgi çalışanları için Sönke Ahrens (2017) yeniden çerçeveledi. Ahrens, tekniği atomik notlar, çift yönlü bağlantılar ve bir dolap yerine bir düşünme aracı olarak not sistemi kavramları üzerinden formüle etti. Bush, Nelson, Luhmann, Ahrens: bu soyağacı, hafızayı arşive dönüştürme kalıbının yapay zekâ destekli araştırma çağına taşıdığı entelektüel mirastır.
+Pratik kanıtı ise Niklas Luhmann sundu. Luhmann (1992), Zettelkasten adını verdiği fiş kutusu sistemiyle çalıştı. Her fişin atomik bir düşünce taşıdığı, fişlerin birbirine referans numaralarıyla bağlandığı bu sistemle Luhmann, yaklaşık yarım yüzyıl boyunca sürdürümlü bir verimlilikle yaklaşık yetmiş kitap ve yüzlerce makale üretti. Luhmann, bu sistemi bir iletişim ortağı olarak tanımladı. Zettelkasten'i çağdaş bilgi çalışanları için Sönke Ahrens (2017) yeniden çerçeveledi. Ahrens, tekniği atomik notlar, çift yönlü bağlantılar ve bir dolap yerine bir düşünme aracı olarak not sistemi kavramları üzerinden formüle etti. Bush, Nelson, Luhmann, Ahrens: bu soyağacı, hafızayı arşive dönüştürme kalıbının yapay zekâ destekli araştırma çağına taşıdığı entelektüel mirastır. Bu dört figürün hiçbirinin öngörmediği şey, geri çağırma adımının doğrudan arşivin içinde çalışan bir dil modeline devredilebileceğiydi.
 
 ## 3. Kalıbın İşlevsel İlkeleri
 
@@ -111,7 +111,7 @@ Hafızayı arşive dönüştürme döngüsünün dört adımından Store, bir so
 
 Atıflar APA 7 biçimindedir. DOI'ler ve arXiv kimlikleri 2026-06-04 tarihinde bağımsız olarak doğrulanmıştır. Bush (1945) ve Luhmann (1992), DOI kaydı döneminden öncedir. Ahrens (2017) bir popüler yayındır. Kişisel Verileri Koruma Kurumu (2024) ve Avrupa Veri Koruma Kurulu (2024), düzenleyici otoriteleri nedeniyle atıf yapılan kurumsal gri literatür kaynaklarıdır. Bu iki kaynakta DOI bulunmamaktadır.
 
-Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. CreateSpace Independent Publishing Platform.
+Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. ISBN 978-1542866507
 
 Avrupa Veri Koruma Kurulu. (2024). *Guidelines on the protection of personal data in research*. https://edpb.europa.eu
 
@@ -134,7 +134,7 @@ Valmeekam, K., Marquez, M., Sreedharan, S., & Kambhampati, S. (2023). On the pla
 **Kitapçık kimliği.** `003-01-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
-**Sözcük sayısı (yaklaşık).** 2121 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 1819 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 9
 **Uydurma atıf sayısı.** 0
 **Özgün kavram.** Hafızayı arşive dönüştürme kalıbı, yazarın özgün uygulayıcı kavramıdır ve burada rehberin çalışma çerçevesi olarak sunulmaktadır.

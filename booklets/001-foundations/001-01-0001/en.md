@@ -164,7 +164,7 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 **Booklet identifier.** `001-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2509 (English body text, measured with wc)
+**Approximate word count.** 2681 (English body text, measured with wc)
 **Verified citations.** 13
 **Fabricated citations.** 0
 **Previous booklet.** None (first booklet)

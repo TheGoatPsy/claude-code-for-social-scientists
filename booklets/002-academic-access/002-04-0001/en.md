@@ -157,7 +157,7 @@ YÖK. (2026). *Council of Higher Education National Thesis Center*. https://tez.
 **Booklet ID.** `002-04-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Word count (approx.).** 2493 (English body text, measured with wc)
+**Word count (approx.).** 2246 (English body text, measured with wc)
 **Verified citations.** 10
 **Hallucinated citations.** 0
 **Previous booklet.** [`001-01-0003`](../../001-foundations/001-01-0003/en.md). Installation, First Session, and Sanity Checks

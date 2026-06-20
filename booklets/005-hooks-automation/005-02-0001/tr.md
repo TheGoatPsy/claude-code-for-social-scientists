@@ -68,7 +68,7 @@ Bu ritüelin değeri, bağlamın kırılgan olduğu gerçeğinde yatar. Araç ye
 
 Üçüncü ritüel görünmez işleri üstlenir. Bir arşiv yaşadıkça bağlantılar kırılır, biçim tutarsızlıkları birikir, geçici dosyalar çoğalır. Bu bakım işlerinin hiçbiri bir oturumun ortasında yapılmayı hak etmez ve tam bu yüzden hiç yapılmama riski taşır. Çözüm, bakımı boş zamana ya da takvime bağlamaktır. Belirli aralıklarla çalışan bir betik bağlantıları tarar, adlandırma kurallarını denetler ve bulduklarını bir rapora yazar.
 
-Wilson ve diğerleri (2017), bilimsel hesaplama için yeterince iyi pratikleri derledikleri çalışmada, tekrarlanan denetimlerin elle değil otomasyonla yürütülmesini sıradan ama dönüştürücü bir adım olarak tarif eder. İlke arşiv bakımına olduğu gibi taşınır. İnsanın unutacağı işi makineye vermek, mükemmeliyetçilik değil ekonomidir. Raporu okumak ve karar vermek yine insana kalır.
+Wilson ve diğerleri (2017), bilimsel hesaplama için yeterince iyi pratikleri derledikleri çalışmada, tekrarlanan denetimlerin elle değil otomasyonla yürütülmesini sıradan ama getirisi büyük bir adım olarak tarif eder. İlke arşiv bakımına olduğu gibi taşınır. İnsanın unutacağı işi makineye vermek, mükemmeliyetçilik değil ekonomidir. Raporu okumak ve karar vermek yine insana kalır.
 
 ## 7. Koruyucu Hook'lar
 
@@ -113,7 +113,7 @@ Wood, W., & Rünger, D. (2016). Psychology of habit. *Annual Review of Psycholog
 **Kitapçık kimliği.** `005-02-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
-**Sözcük sayısı (yaklaşık).** 1304 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 1157 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`004-01-0001`](../../004-vault-architecture/004-01-0001/tr.md). Klasör Disiplini ve Maps of Content (MOC) Kalıbı

@@ -114,7 +114,7 @@ Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (
 **Booklet ID.** `006-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 1665 (English body text, measured with wc)
+**Approximate word count.** 1536 (English body text, measured with wc)
 **Verified citations.** 6
 **Hallucinated citations.** 0
 **Previous booklet.** [`005-02-0001`](../../005-hooks-automation/005-02-0001/en.md). Ritual Hooks: Daily Logging, Session Persistence, Idle Time

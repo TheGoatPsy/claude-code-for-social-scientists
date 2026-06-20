@@ -128,7 +128,7 @@ hata logu buraya
 
 Bu şablonun gücü, onu dolduran kişiyi sorunu düşünmeye zorlamasında yatar. Beklenen ile gerçekleşen arasındaki farkı yazmak sorunun ne olduğunu netleştirir. Çoğaltma adımlarını sıralamak, sorunun gerçekten yeniden üretilebilir olup olmadığını sınar. Daha önce denenenleri belgelemek, yardım eden kişinin aynı çıkmaz yolları tekrar yürümesini önler.
 
-Sistemik başarısızlıklar tek bir yıkıcı hatadan değil, görünen ama paylaşılmayan küçük sapmaların birikmesinden doğar (Vaughan, 1996; Perrow, 1999). İyi belgelenmiş bir issue, bu sapmaları topluluk genelinde görünür kılar ve ortak hafızaya ekler. Bir sorunu paylaşmak, onu yalnız taşımaktan hem daha hızlı hem daha onurludur.
+Vaughan (1996), NASA Challenger kararı üzerine çalışmasında, sistemik başarısızlıkların tek bir yıkıcı hatadan değil, görünen ama paylaşılmayan küçük sapmaların birikmesinden doğduğunu gösterir. Perrow (1999), yüksek riskli teknolojilerdeki olağan kazalar üzerine çözümlemesinde aynı örüntüyü ortaya koyar. İyi belgelenmiş bir issue, bu sapmaları topluluk genelinde görünür kılar ve ortak hafızaya ekler. Bir sorunu paylaşmak, onu yalnız taşımaktan hem daha hızlı hem daha onurludur.
 
 ## Kapanış: Dizinin Son Satırı
 
@@ -161,7 +161,7 @@ Vaughan, D. (1996). *The Challenger launch decision: Risky technology, culture, 
 **Kitapçık kimliği.** `012-01-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
-**Sözcük sayısı (yaklaşık).** 2270 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 2377 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 7
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`010-01-0001`](../../010-peer-review/010-01-0001/tr.md). İzlenebilirlik Matrisleri ile Hakem Yanıt Mektupları

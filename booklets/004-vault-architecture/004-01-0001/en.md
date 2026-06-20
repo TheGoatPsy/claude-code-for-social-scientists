@@ -168,7 +168,7 @@ The long life of a vault rests on its being tied to no single tool. A researcher
 
 The practical test is simple: when the vault is taken out of a favorite application and opened in a plain-text editor, is it still navigable? In a well-designed vault the answer is yes. Square-bracket links are already visible in the raw text; a map document reads as ordinary prose in any editor; and a tag is nothing more than a character string in the frontmatter. When a tool changes, the only thing lost is the visual conveniences that tool provided, not the vault itself. This resilience makes the vault reliable at the scale of ten years, which is the appropriate planning horizon for a research career.
 
-## 9. Turkey and Greece Specificity
+## 9. Türkiye and Greece Specificity
 
 Turkish and Greek file names harbor a technical trap. Turkish characters (in particular ğ, ü, ş, ı, ö, ç) can cause problems between operating systems when used in file names. The reason is that Unicode normalization works differently across systems: macOS stores characters in NFD form, while Linux expects NFC. When a vault is moved between these two systems through git, file names with Turkish characters can become corrupted or duplicated.
 
@@ -182,7 +182,7 @@ After the folder architecture is established, the bibliographic integrity of eve
 
 Citations are in APA 7 format. DOIs are verified against Crossref. Bates (2002) is cited without a DOI; no Crossref record is available for the *New Review of Information Behaviour Research* article. Trade books (Ahrens, Allen, Brown & Duguid, Forte, Norman) are cited with ISBN and framed throughout as practitioner sources.
 
-Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. CreateSpace Independent Publishing Platform.
+Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. ISBN 978-1542866507
 
 Allen, D. (2015). *Getting things done: The art of stress-free productivity* (revised edition). Penguin Books. ISBN 978-0-14-312656-9
 
@@ -203,7 +203,7 @@ Norman, D. A. (2013). *The design of everyday things* (revised and expanded edit
 **Booklet ID.** `004-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2595 (English body text, measured with wc)
+**Approximate word count.** 2283 (English body text, measured with wc)
 **Verified citations.** 9
 **Hallucinated citations.** 0
 **Previous booklet.** [`003-01-0001`](../../003-memory-system/003-01-0001/en.md). Memory as Vault, A First-Principles Introduction

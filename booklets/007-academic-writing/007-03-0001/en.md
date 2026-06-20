@@ -120,7 +120,7 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 **Booklet ID.** `007-03-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2019 (English body text, measured with wc)
+**Approximate word count.** 1813 (English body text, measured with wc)
 **Verified citations.** 7
 **Hallucinated citations.** 0
 **Previous booklet.** [`007-02-0001`](../007-02-0001/en.md). APA 7 with DOI Discipline

@@ -145,7 +145,7 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 **Booklet ID.** `010-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2540 (English body text, measured with wc)
+**Approximate word count.** 2308 (English body text, measured with wc)
 **Verified citations.** 8
 **Hallucinated citations.** 0
 **Previous booklet.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/en.md). Ethics in AI-Assisted Research, From Principle to Behavior
