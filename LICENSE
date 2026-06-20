@@ -63,16 +63,19 @@ The author may grant commercial licenses on a case-by-case basis, including pro 
 
 ---
 
-## 4. Authorship and copyright registration
+## 4. Authorship and provenance
 
-The author retains full copyright over all original work in this repository, regardless of license terms granted to users. Open-source licensing does not constitute a transfer or waiver of copyright.
+The author retains full copyright over all original work in this repository, regardless of license terms granted to users. Open-source licensing does not constitute a transfer or waiver of copyright. Under the Berne Convention, copyright in this work arises automatically on creation in the author's jurisdictions (Türkiye, Greece, Ireland) and in more than 180 member states, with no registration required.
 
-International protection layers applied to this work:
+Authorship and release dates are evidenced in depth, through independent layers that need no registration office:
 
-- **DOI (Zenodo, CERN)**: Persistent identifier for academic citation
-- **Software Heritage Archive**: Permanent code archive (CERN/Inria)
-- **U.S. Copyright Office (eCO online registration)**: Filed application — registration certificate provides evidentiary value enforceable in 180+ countries via the Berne Convention
-- **Creative Commons license declaration**: Public, machine-readable license metadata
+- **Automatic copyright (Berne Convention)**: protection on creation across 180+ member states
+- **DOI (Zenodo, CERN)**: a timestamped release deposit and persistent identifier for academic citation, tied to the author's ORCID
+- **OpenTimestamps**: a Bitcoin-anchored cryptographic timestamp of the release, recorded under `provenance/`
+- **Public Git history**: an append-only, content-addressed record of authorship and dates
+- **Creative Commons license declaration**: public, machine-readable license metadata
+
+The public source is additionally eligible for permanent archival via the Software Heritage archive.
 
 ---
 
