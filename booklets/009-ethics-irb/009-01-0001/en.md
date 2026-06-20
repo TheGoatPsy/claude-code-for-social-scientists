@@ -6,7 +6,7 @@ category: "009-ethics-irb"
 language: "en"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-04"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "co-drafting"
 human_review: "complete"
-human_review_date: "2026-06-04"
+human_review_date: "2026-06-20"
 verified_citations_count: 12
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -60,7 +60,7 @@ The European Union Artificial Intelligence Act (European Parliament and Council,
 
 Article 50 places transparency duties on **providers and deployers** of certain AI systems: systems that interact with natural persons (e.g., chatbot products), systems that generate synthetic media, and systems used for emotion recognition or biometric categorization. The obligations concern product-level disclosure: labeling AI-generated content as such and informing users when they are interacting with an AI. An individual academic researcher using an AI tool to draft or analyze text is neither a "provider" nor a "deployer" under the Act's definitions; the Act's direct obligations do not fall on the researcher in that capacity.
 
-What the Act does create, however, is a transparency environment that research practice cannot ignore. Because Greece is a European Union member state, Greek institutions and publishers operating under EU jurisdiction are subject to the Act's requirements. When a Greek researcher submits to an EU-based journal, that journal's own compliance obligations under Article 50 and related provisions translate into transparency expectations directed at the author, specifically the expectation that AI-generated or AI-assisted content be disclosed. Turkey is not an EU member state and is not a direct addressee of the Act; however, the Act applies in effect to data and content flows from Turkey into EU-jurisdiction venues. A Turkish researcher submitting to a journal published in the EU will encounter the disclosure expectations of the EU framework regardless. For both countries, the practical implication is the same: transparent disclosure of AI use is the only position that is both ethically sound and institutionally safe. It is worth noting that Article 50(2) exempts AI systems performing "an assistive function for standard editing" or that "do not substantially alter the input data" from the synthetic-content marking obligation, which means routine AI-assisted drafting does not automatically trigger the labeling requirement directed at deployers, though the researcher's own disclosure obligations under publication ethics remain unchanged.
+What the Act does create, however, is a transparency environment that research practice cannot ignore. Because Greece is a European Union member state, Greek institutions and publishers operating under EU jurisdiction are subject to the Act's requirements. When a Greek researcher submits to an EU-based journal, that journal's own compliance obligations under Article 50 and related provisions translate into transparency expectations directed at the author, specifically the expectation that AI-generated or AI-assisted content be disclosed. Turkey is not an EU member state and is not a direct addressee of the Act; however, the Act applies in effect to data and content flows from Turkey into EU-jurisdiction venues. A Turkish researcher submitting to a journal published in the EU will encounter the disclosure expectations of the EU framework regardless. For both countries, the practical implication is the same: transparent disclosure of AI use is the only position that is both ethically sound and institutionally safe. Article 50(2) also exempts AI systems performing "an assistive function for standard editing" or that "do not substantially alter the input data" from the synthetic-content marking obligation, which means routine AI-assisted drafting does not automatically trigger the labeling requirement directed at deployers, though the researcher's own disclosure obligations under publication ethics remain unchanged.
 
 ## 5. KVKK and GDPR Compared, for Clinical Data
 
@@ -141,7 +141,7 @@ Mittelstadt, B. D., Allo, P., Taddeo, M., Wachter, S., & Floridi, L. (2016). The
 
 Personal Data Protection Authority. (2016). *Law No. 6698 on the Protection of Personal Data*. https://www.kvkk.gov.tr
 
-Resnik, D. B., & Hosseini, M. (2025). The ethics of using artificial intelligence in scientific research: New guidance needed for a new tool. *AI and Ethics*, 5, 1499–1521. https://doi.org/10.1007/s43681-024-00493-8
+Resnik, D. B., & Hosseini, M. (2025). The ethics of using artificial intelligence in scientific research: New guidance needed for a new tool. *AI and Ethics*, 5(2), 1499–1521. https://doi.org/10.1007/s43681-024-00493-8
 
 STM Association. (2025). *Classification of AI use in manuscript preparation*. International Association of Scientific, Technical and Medical Publishers. https://www.stm-assoc.org
 
@@ -153,7 +153,7 @@ World Medical Association. (2025). World Medical Association Declaration of Hels
 
 **Booklet ID.** `009-01-0001`
 **Version.** `0.1.0`
-**Date.** 2026-06-04
+**Date.** 2026-06-20
 **Approximate word count.** 2504 (English body text, excluding references, measured with wc)
 **Verified citations.** 12
 **Hallucinated citations.** 0

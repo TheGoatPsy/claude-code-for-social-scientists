@@ -6,7 +6,7 @@ category: "001-foundations"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-05"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "co-drafting"
 human_review: "complete"
-human_review_date: "2026-06-05"
+human_review_date: "2026-06-20"
 verified_citations_count: 6
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -40,7 +40,7 @@ Baştan bir notu açık kılmak gerekir. Komut satırı araçları sık güncell
 
 Claude Code macOS, Linux ve Windows üzerinde çalışır. Her ortamda temel gereksinim ortaktır: güncel bir komut satırı ortamı ve bir paket yöneticisi. macOS ve Linux, Unix kabuğuyla birlikte geldiğinden bu sistemlerde kurulum görece doğrudan ilerler. Windows kullanıcıları için ek bir katman devreye girer. Windows'ta dosya sistemi ve terminale tam erişim en sorunsuz biçimde WSL2 üzerinden sağlanır. Bu Linux alt sistemi, Windows makinesinde eksiksiz bir Ubuntu ortamı açarak aracın beklediği Unix araçlarını hazır eder (Microsoft, 2026). Rehber Windows kullanıcıları için bu yolu öneriyor. Alternatif yapılandırmalar mümkündür, ancak ilk oturumda boşuna üstlenilecek bir karmaşıklık yükü taşırlar.
 
-Sosyal bilim akademisyeni için pratik kontrol listesi kısadır: güncel bir işletim sistemi sürümü, birkaç gigabayt boş disk alanı (oturum belleği ve arşiv dosyaları zamanla büyür) ve kararlı bir internet bağlantısı. Donanım açısından rahatlatıcı olan şudur: araç yüksek yerel işlemci gücü ya da grafik kartı gerektirmez. Hesaplama Anthropic'in altyapısında yapılır, yerel makine yalnızca bir istemcidir. Bunun pratik sonucu önemlidir. Bu mimari yapıdan çıkan pratik sonuç şudur: Türkiye ve Yunanistan'daki birçok üniversite makinesinin, hatta birkaç yıllık dizüstü bilgisayarların, aracı sürtünmesiz çalıştırmaya yeterli olduğu söylenebilir. Yapılması gereken tek ön kontrol, terminalin açıldığını ve temel bir komuta yanıt verdiğini doğrulamaktır.
+Sosyal bilim akademisyeni için pratik kontrol listesi kısadır: güncel bir işletim sistemi sürümü, birkaç gigabayt boş disk alanı (oturum belleği ve arşiv dosyaları zamanla büyür) ve kararlı bir internet bağlantısı. Donanım açısından rahatlatıcı olan şudur: araç yüksek yerel işlemci gücü ya da grafik kartı gerektirmez. Hesaplama Anthropic'in altyapısında yapılır, yerel makine yalnızca bir istemcidir. Bu mimari yapıdan çıkan pratik sonuç şudur: Türkiye ve Yunanistan'daki birçok üniversite makinesinin, hatta birkaç yıllık dizüstü bilgisayarların, aracı sürtünmesiz çalıştırmaya yeterli olduğu söylenebilir. Yapılması gereken tek ön kontrol, terminalin açıldığını ve temel bir komuta yanıt verdiğini doğrulamaktır.
 
 ## 2. Hesap, Abonelik ve Faturalama
 
@@ -102,7 +102,7 @@ Bu modların hiçbiri kurulumun başarısız olduğu anlamına gelmez. Hepsi ilk
 
 Bölgesel gerçekler kurulum sürecinde iki noktada belirir.
 
-Ödeme bu noktaların ilkidir. Türkiye'de belirli uluslararası ödeme altyapıları, doğrudan aboneliği engelleyebilecek kısıtlamalar getirir. Bu durumda alternatif yollar devreye girer: yerli bir fintek sağlayıcısının sunduğu sanal kart, yurt dışı banka kartı ya da bir üniversite veya araştırma merkezi üzerinden yapılandırılmış kurumsal hesap. Bu kitapçık yalnızca bu alternatiflerin haritasını çıkarır; hangi seçeneğin işe yarayacağı kurumsal bağlama ve bireysel erişim koşullarına göre değişir. Yunanistan AB üyeliği nedeniyle standart ödeme akışını izler. Türkiye'ye özgü kısıtlamalar bu coğrafyada geçerli değildir.
+Ödeme bu noktaların ilkidir. Türkiye'de belirli uluslararası ödeme altyapıları, doğrudan aboneliği engelleyebilecek kısıtlamalar getirir. Bu durumda alternatif yollar devreye girer: yerli bir fintek sağlayıcısının sunduğu sanal kart, yurt dışı banka kartı ya da bir üniversite veya araştırma merkezi üzerinden yapılandırılmış kurumsal hesap. Bu kitapçık yalnızca bu alternatiflerin haritasını çıkarır. Hangi seçeneğin işe yarayacağı kurumsal bağlama ve bireysel erişim koşullarına göre değişir. Yunanistan AB üyeliği nedeniyle standart ödeme akışını izler. Türkiye'ye özgü kısıtlamalar bu coğrafyada geçerli değildir.
 
 Bağlantı kalitesi ikinci noktadır. Komotini gibi küçük şehirlerde fiber bağlantı her zaman güçlü olmayabilir. Kesintili bağlantı, model zaman aşımı modunun sıklığını artırır. Pratik çözüm her yerde aynıdır: görevleri daha küçük adımlara bölün ve büyük görevleri kararsız bir bağlantıya zorlamak yerine kararlı bağlantı pencerelerinde çalışın. Bu iki bölgesel ayrıntı teknik bir noktanın ötesine geçen yöntemsel bir anlam taşır: kurulum, her yerde aynı biçimde uygulanan evrensel bir prosedür değildir. Bir aracı özgül bir kurumsal, altyapısal ve coğrafi bağlama oturtma eylemidir.
 
@@ -132,7 +132,7 @@ Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C. L., Mishkin, P., Zhan
 
 **Kitapçık kimliği.** `001-01-0003`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-04
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 2311 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0

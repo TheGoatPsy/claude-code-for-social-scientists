@@ -6,7 +6,7 @@ category: "004-vault-architecture"
 language: "en"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-04"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-04"
+human_review_date: "2026-06-20"
 verified_citations_count: 9
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -182,7 +182,7 @@ After the folder architecture is established, the bibliographic integrity of eve
 
 Citations are in APA 7 format. DOIs are verified against Crossref. Bates (2002) is cited without a DOI; no Crossref record is available for the *New Review of Information Behaviour Research* article. Trade books (Ahrens, Allen, Brown & Duguid, Forte, Norman) are cited with ISBN and framed throughout as practitioner sources.
 
-Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. ISBN 978-1542866507
+Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. CreateSpace Independent Publishing Platform.
 
 Allen, D. (2015). *Getting things done: The art of stress-free productivity* (revised edition). Penguin Books. ISBN 978-0-14-312656-9
 
@@ -202,7 +202,7 @@ Norman, D. A. (2013). *The design of everyday things* (revised and expanded edit
 
 **Booklet ID.** `004-01-0001`
 **Version.** `0.1.0`
-**Date.** 2026-06-04
+**Date.** 2026-06-20
 **Approximate word count.** 2595 (English body text, measured with wc)
 **Verified citations.** 9
 **Hallucinated citations.** 0

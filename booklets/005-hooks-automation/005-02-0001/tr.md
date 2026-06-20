@@ -6,7 +6,7 @@ category: "005-hooks-automation"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-12"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-12"
+human_review_date: "2026-06-20"
 verified_citations_count: 6
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -44,7 +44,7 @@ Mühendislik geleneği aynı soruna başka yerden bakar. Bir davranışın her s
 
 Bu çevirinin psikolojik bir zemini vardır. Wood ve Rünger (2016), alışkanlık psikolojisini gözden geçirdikleri çalışmada alışkanlığın bağlama bağlı tekrarla kurulduğunu ve kurulduktan sonra anlık hedeflerden görece bağımsız, bağlam ipucuyla tetiklenen bir otomatiklik kazandığını ortaya koyar. Hedefler davranışı başlatır, alışkanlıklar sürdürür. Ritüel hook bu mekanizmanın araç katmanındaki karşılığıdır. Oturumun açılışı sabit bir bağlam ipucudur ve o ipucuna bağlanan otomasyon, davranışı araştırmacının o günkü motivasyonundan koparır.
 
-Sword (2017) ise başarılı akademisyenlerin yazma pratiğini incelediği görgül çalışmasında tek bir doğru reçete bulamaz. Üretken yazarları birleştiren şey belirli bir program değil, kendi koşullarına uyan bir ritüeli kurmuş ve korumuş olmalarıdır. Hook altyapısı bu bulguyla uyumlu çalışır. Hangi ritüelin kurulacağını araştırmacı seçer. Altyapının katkısı, seçilen ritüelin kötü bir haftada bile ayakta kalmasıdır.
+Sword (2017) ise başarılı akademisyenlerin yazma pratiğini incelediği nitel araştırmasında tek bir doğru reçete bulamaz. Üretken yazarları birleştiren şey belirli bir program değil, kendi koşullarına uyan bir ritüeli kurmuş ve korumuş olmalarıdır. Hook altyapısı bu bulguyla uyumlu çalışır. Hangi ritüelin kurulacağını araştırmacı seçer. Altyapının katkısı, seçilen ritüelin kötü bir haftada bile ayakta kalmasıdır.
 
 ## 3. Hook Nedir, Ne Zaman Ateşlenir
 
@@ -100,19 +100,19 @@ Anthropic. (2026). *Claude Code documentation*. https://docs.claude.com/en/docs/
 
 Belcher, W. L. (2019). *Writing your journal article in twelve weeks: A guide to academic publishing success* (2nd ed.). University of Chicago Press. ISBN 978-0-226-49991-8
 
-Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Percie du Sert, N., Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., & Ioannidis, J. P. A. (2017). A manifesto for reproducible science. *Nature Human Behaviour*, 1, 0021. https://doi.org/10.1038/s41562-016-0021
+Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Percie du Sert, N., Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., & Ioannidis, J. P. A. (2017). A manifesto for reproducible science. *Nature Human Behaviour*, 1(1), Article 0021. https://doi.org/10.1038/s41562-016-0021
 
 Sword, H. (2017). *Air & light & time & space: How successful academics write*. Harvard University Press. https://doi.org/10.4159/9780674977617
 
 Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. *PLoS Computational Biology*, 13(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
 
-Wood, W., & Rünger, D. (2016). Psychology of habit. *Annual Review of Psychology*, 67, 289-314. https://doi.org/10.1146/annurev-psych-122414-033417
+Wood, W., & Rünger, D. (2016). Psychology of habit. *Annual Review of Psychology*, 67, 289–314. https://doi.org/10.1146/annurev-psych-122414-033417
 
 ---
 
 **Kitapçık kimliği.** `005-02-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-12
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 1304 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0

@@ -6,7 +6,7 @@ category: "008-data-analysis"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-05-29"
-date_last_revised: "2026-06-05"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-05"
+human_review_date: "2026-06-20"
 verified_citations_count: 10
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -60,13 +60,13 @@ Bir ajan bu sorunu kat kat büyütür. Ajan şikâyet etmez. Saatlik işi saniye
 
 Bu tehlikenin panzehiri eskidir ve ajan tabanlı çağda öncekinden çok daha değerlidir. Ön kayıt, analiz planını veriye bakmadan, ajan tabanlı bağlamda ise en azından ajanı çalıştırmadan önce yazıya dökmektir. Nosek ve diğerleri (2018), ön kaydın doğrulayıcı ile keşfedici analizi verinin analistin seçimlerini etkileyemeyeceği bir noktada ayırarak serbestlik derecelerini kontrol altına aldığını savunur. Munafò ve diğerleri (2017), yeniden üretilebilir bilim için hazırladıkları yaygın atıf gören manifestoda, ön kaydı ve şeffaf raporlamayı alanın sağlamlığının yapısal temeli sayar. Bunlar, araştırmacının tercihine bırakılmış iyileştirmeler değildir. Alanın mimarisini kuran zorunluluklardır.
 
-Ajan tabanlı akışta bunun somut hâli bir belirtim günlüğüdür: ajanı çalıştırmadan önce yazılan, planlanan analizi, asıl hipotezi ve önceden sabitlenmiş kararları kaydeden düz metin ya da Markdown bir dosya. Ajan keşif sırasında alternatif belirtimler denerse, bunların keşfedici nitelikte olduğu belirtilir; doğrulayıcı sonucun yerine geçemezler. Plandan her sapma günlüğe gerekçesiyle birlikte işlenir. Böylece ajanın ürettiği zenginlik gizli bir balık avına değil, bir makaleyi zayıflatmak yerine güçlendiren açık bir duyarlılık analizine dönüşür.
+Ajan tabanlı akışta bunun somut hâli bir belirtim günlüğüdür: ajanı çalıştırmadan önce yazılan, planlanan analizi, asıl hipotezi ve önceden sabitlenmiş kararları kaydeden düz metin ya da Markdown bir dosya. Ajan keşif sırasında alternatif belirtimler denerse, bunların keşfedici nitelikte olduğu belirtilir. Doğrulayıcı sonucun yerine geçemezler. Plandan her sapma günlüğe gerekçesiyle birlikte işlenir. Böylece ajanın ürettiği zenginlik gizli bir balık avına değil, bir makaleyi zayıflatmak yerine güçlendiren açık bir duyarlılık analizine dönüşür.
 
 ## Bulan notlayan olamaz, istatistiğe uygulanmış
 
 Bu rehberin tekrar eden ilkesi şudur: bir bulguyu üreten araç, aynı zamanda onu onaylayan merci olamaz. İstatistikte bu ilke iki kat önemlidir. Bir ajan, bir testin çıktısını yorumlarken çıktının kendisiyle çelişen bir özet sunabilir. Katsayının işaretini, anlamlılık eşiğini ya da etki büyüklüğünü yanlış aktarabilir. Bu nedenle ajanın yorumu her zaman ham çıktıya, yani tablodaki sayıya karşı bağımsız olarak doğrulanmalıdır. Asıl kriter tablodaki sayıdır.
 
-Bu uyarının gerekçesi modelin yapısından gelir. Model, anlamadan istatistiksel örüntü üreten bir sistemdir ve en titiz talimatla bile bu risk ortadan kalkmaz (Bender ve diğerleri, 2021). Üretilen metin, bilgi üretimi açısından, doğru görünmek ile doğru olmak arasındaki farkı kendiliğinden gözetmeyen bir karaktere sahip olabilir (Hicks ve diğerleri, 2024). Bir regresyon tablosunun akıcı bir özeti, tablonun söylediği şeyi söylediği anlamına gelmez. Sonuç basittir: sayının kendisini oku. Yapısal disiplin olmadan ajan tabanlı analiz güvenilir olmaz; onunla birlikte ise yeniden üretilebilir bir araç hâline gelir.
+Bu uyarının gerekçesi modelin yapısından gelir. Model, anlamadan istatistiksel örüntü üreten bir sistemdir ve en titiz talimatla bile bu risk ortadan kalkmaz (Bender ve diğerleri, 2021). Üretilen metin, bilgi üretimi açısından, doğru görünmek ile doğru olmak arasındaki farkı kendiliğinden gözetmeyen bir karaktere sahip olabilir (Hicks ve diğerleri, 2024). Bir regresyon tablosunun akıcı bir özeti, tablonun söylediği şeyi söylediği anlamına gelmez. Sonuç basittir: sayının kendisini oku. Yapısal disiplin olmadan ajan tabanlı analiz güvenilir olmaz. Onunla birlikte ise yeniden üretilebilir bir araç hâline gelir.
 
 ## Prosedürü devret, yargıyı devretme
 
@@ -80,7 +80,7 @@ Bu disiplin, araştırmacının bizzat sahiplendiği somut bir dizi adıma iner.
 
 Her rastgele adımda, her bölme, örnekleme ve önyükleme işleminde tohumu sabitleyin ve bu tohumu belirtim günlüğüne açıkça yazın. Çalışma ortamını yakalayın: paket sürümlerini bir kilit dosyasında dondurun ki analiz bir yıl sonra bugünküyle aynı ortamda çalışsın. Sonucu kesin saymadan önce analizi temiz bir oturumda baştan yeniden çalıştırın. Birikmiş duruma dayanan bir sonuç yeniden üretilebilir değildir. Ajanın izlediği yolu günlüğe yazın: hangi belirtimlerin denendiği ve seçilenin neden seçildiği kaydedilmelidir. Böylece makalenin yöntem bölümü gerçek analitik süreci yansıtır. Son olarak asıl istemi ve model sürümünü çıktının yanında arşivleyin, ayrı tutmayın. Böylece analizin yapay zekâ bileşeni, ne yapıldığını anlamak isteyen bir okuyucu için geri kazanılabilir olur.
 
-Bu adımlar, Sandve ve diğerleri (2013) ile Wilson ve diğerleri (2017) tarafından ortaya konan ilkenin ajan tabanlı akışa taşınmış hâlidir: sürecin her adımını kaydedin ve otomatikleştirin. Talimat dosyası bir makalenin yöntem bölümünün makineye bakan yüzüyse, bu günlük de analizin sağlama defteridir. Bu disiplin olmadan ajanın hızı yeniden üretilebilirliği zayıflatır; disiplinle birlikte ise ajan araştırmanın güvenilir bir parçasına dönüşür.
+Bu adımlar, Sandve ve diğerleri (2013) ile Wilson ve diğerleri (2017) tarafından ortaya konan ilkenin ajan tabanlı akışa taşınmış hâlidir: sürecin her adımını kaydedin ve otomatikleştirin. Talimat dosyası bir makalenin yöntem bölümünün makineye bakan yüzüyse, bu günlük de analizin sağlama defteridir. Bu disiplin olmadan ajanın hızı yeniden üretilebilirliği zayıflatır. Disiplinle birlikte ise ajan araştırmanın güvenilir bir parçasına dönüşür.
 
 ## Yapay zekânın analitik rolünün dürüst beyanı
 
@@ -106,7 +106,7 @@ Hicks, M. T., Humphries, J., & Slater, J. (2024). ChatGPT is bullshit. *Ethics a
 
 Lyttelton, T., Massenkoff, M., & Wilmers, N. (2026). *Coding agents in the social sciences* [Anthropic tarafından desteklenmiş rapor, gri literatür, çıkar çatışması: yayıncı çalışmanın incelediği konunun kendisidir]. Anthropic. https://www.anthropic.com/research/coding-agents-social-sciences
 
-Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Percie du Sert, N., Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., & Ioannidis, J. P. A. (2017). A manifesto for reproducible science. *Nature Human Behaviour*, 1, 0021. https://doi.org/10.1038/s41562-016-0021
+Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Percie du Sert, N., Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., & Ioannidis, J. P. A. (2017). A manifesto for reproducible science. *Nature Human Behaviour*, 1(1), Article 0021. https://doi.org/10.1038/s41562-016-0021
 
 Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. *Proceedings of the National Academy of Sciences*, 115(11), 2600-2606. https://doi.org/10.1073/pnas.1708274114
 
@@ -124,7 +124,7 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 
 **Kitapçık kimliği.** `008-01-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-05
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 1561 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 10
 **Uydurma atıf sayısı.** 0

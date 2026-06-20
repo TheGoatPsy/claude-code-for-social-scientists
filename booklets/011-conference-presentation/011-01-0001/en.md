@@ -6,7 +6,7 @@ category: "011-conference-presentation"
 language: "en"
 version: "0.1.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-12"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-12"
+human_review_date: "2026-06-20"
 verified_citations_count: 6
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -99,7 +99,7 @@ Citations are in APA 7 format. DOIs verified against Crossref on 2026-06-12.
 
 Amano, T., Ramírez-Castañeda, V., Berdejo-Espinola, V., Borokini, I., Chowdhury, S., Golivets, M., González-Trujillo, J. D., Montaño-Centellas, F., Paudel, K., White, R. L., & Veríssimo, D. (2023). The manifold costs of being a non-native English speaker in science. *PLOS Biology*, 21(7), e3002184. https://doi.org/10.1371/journal.pbio.3002184
 
-Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 30(7-8), 1-9. https://doi.org/10.1080/08989621.2023.2168535
+Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
 Naegle, K. M. (2021). Ten simple rules for effective presentation slides. *PLOS Computational Biology*, 17(12), e1009554. https://doi.org/10.1371/journal.pcbi.1009554
 
@@ -113,7 +113,7 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 
 **Booklet ID.** `011-01-0001`
 **Version.** `0.1.0`
-**Date.** 2026-06-12
+**Date.** 2026-06-20
 **Approximate word count.** 1623 (English body text, measured with wc)
 **Verified citations.** 6
 **Hallucinated citations.** 0

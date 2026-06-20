@@ -6,7 +6,7 @@ category: "011-conference-presentation"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-12"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-12"
+human_review_date: "2026-06-20"
 verified_citations_count: 6
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -38,7 +38,7 @@ status: "release"
 
 Üç biçim aynı malzemenin farklı ölçeklerdeki halleri gibi görünür ve tam bu görüntü yüzünden sık karıştırılır. Konuşma, bir argümanın gelişimini izletir. Dinleyici yirmi dakika boyunca sizinle kalır ve bir akışa razıdır. Poster, bir uğrak noktasıdır. Önünden geçen meslektaş üç saniyede durup durmayacağına karar verir. Lightning talk ise tek bir iddianın hafızada kalma sınavıdır. Üç biçim için tek slayt destesini yeniden boyutlandırmak, üçünde birden başarısız olmanın en kestirme yoludur.
 
-Doğru başlangıç ortak çekirdektir. Çalışmanın tek cümlelik iddiası, tek görseli ve tek alınacak dersi her biçimde aynıdır. Biçimler bu çekirdeğin etrafına farklı miktarda et sarar. Çekirdek sabitlenmeden hiçbir bicime başlanmaz.
+Doğru başlangıç ortak çekirdektir. Çalışmanın tek cümlelik iddiası, tek görseli ve tek alınacak dersi her biçimde aynıdır. Biçimler bu çekirdeğin etrafına farklı miktarda et sarar. Çekirdek sabitlenmeden hiçbir biçime başlanmaz.
 
 ## 2. İki Dilli Sunumun Gerçeği
 
@@ -98,7 +98,7 @@ Atıflar APA 7 biçimindedir. DOI'ler 2026-06-12 tarihinde Crossref üzerinden d
 
 Amano, T., Ramírez-Castañeda, V., Berdejo-Espinola, V., Borokini, I., Chowdhury, S., Golivets, M., González-Trujillo, J. D., Montaño-Centellas, F., Paudel, K., White, R. L., & Veríssimo, D. (2023). The manifold costs of being a non-native English speaker in science. *PLOS Biology*, 21(7), e3002184. https://doi.org/10.1371/journal.pbio.3002184
 
-Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 30(7-8), 1-9. https://doi.org/10.1080/08989621.2023.2168535
+Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
 Naegle, K. M. (2021). Ten simple rules for effective presentation slides. *PLOS Computational Biology*, 17(12), e1009554. https://doi.org/10.1371/journal.pcbi.1009554
 
@@ -112,7 +112,7 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 
 **Kitapçık kimliği.** `011-01-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-12
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 1205 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0

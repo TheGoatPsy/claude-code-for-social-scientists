@@ -6,7 +6,7 @@ category: "009-ethics-irb"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-05"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "co-drafting"
 human_review: "complete"
-human_review_date: "2026-06-05"
+human_review_date: "2026-06-20"
 verified_citations_count: 12
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -142,7 +142,7 @@ Kişisel Verileri Koruma Kurumu. (2016). *6698 sayılı Kişisel Verilerin Korun
 
 Mittelstadt, B. D., Allo, P., Taddeo, M., Wachter, S., & Floridi, L. (2016). The ethics of algorithms: Mapping the debate. *Big Data & Society*, 3(2). https://doi.org/10.1177/2053951716679679
 
-Resnik, D. B., & Hosseini, M. (2025). The ethics of using artificial intelligence in scientific research: New guidance needed for a new tool. *AI and Ethics*, 5, 1499–1521. https://doi.org/10.1007/s43681-024-00493-8
+Resnik, D. B., & Hosseini, M. (2025). The ethics of using artificial intelligence in scientific research: New guidance needed for a new tool. *AI and Ethics*, 5(2), 1499–1521. https://doi.org/10.1007/s43681-024-00493-8
 
 STM Association. (2025). *Classification of AI use in manuscript preparation*. International Association of Scientific, Technical and Medical Publishers. https://www.stm-assoc.org
 
@@ -152,7 +152,7 @@ World Association of Medical Editors. (2023). *Recommendations on chatbots and g
 
 **Kitapçık kimliği.** `009-01-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-04
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 2018 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 12
 **Uydurma atıf sayısı.** 0

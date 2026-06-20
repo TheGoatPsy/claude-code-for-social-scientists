@@ -6,7 +6,7 @@ category: "003-memory-system"
 language: "en"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-04"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "co-drafting"
 human_review: "complete"
-human_review_date: "2026-06-04"
+human_review_date: "2026-06-20"
 verified_citations_count: 9
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -48,7 +48,7 @@ Memory as Vault belongs to a seventy-year intellectual tradition in information 
 
 The tradition begins with Vannevar Bush. In the essay "As We May Think," published in The Atlantic in 1945, Bush imagined a device he called the Memex: a mechanized extension of personal memory that would store all of an individual's books, records, and communications and build associative trails among them. The insight was precise: the human mind works by association, so an information system should honor those links rather than impose a single hierarchy. The formal concept came from Ted Nelson. Nelson (1965), proposing a file structure for complex, changing, and indeterminate information, defined hypertext for the first time as the idea that texts can relate to one another as a network rather than a linear sequence.
 
-The practical demonstration came from Niklas Luhmann. Luhmann (1992) worked with a slip-box he called the Zettelkasten. Each slip carried an atomic thought, connected to others by reference numbers rather than folders. Over more than fifty years Luhmann used this system as what he called a communication partner, something closer to a thinking interlocutor than a filing cabinet, producing approximately seventy books and hundreds of articles. Sönke Ahrens (2017) translated the technique for modern knowledge workers, reformulating it through atomic notes, bidirectional links, and the note system as a thinking tool. That lineage — Bush's associative vision, Nelson's hypertext formalism, Luhmann's sustained practice, Ahrens's translation — is what the Memory as Vault pattern inherits. What none of them anticipated was that the retrieval step could be delegated to a language model working directly inside the archive.
+The practical demonstration came from Niklas Luhmann. Luhmann (1992) worked with a slip-box he called the Zettelkasten. Each slip carried an atomic thought, connected to others by reference numbers rather than folders. Over roughly five decades Luhmann used this system as what he called a communication partner, something closer to a thinking interlocutor than a filing cabinet, producing approximately seventy books and hundreds of articles. Sönke Ahrens (2017) translated the technique for modern knowledge workers, reformulating it through atomic notes, bidirectional links, and the note system as a thinking tool. That lineage — Bush's associative vision, Nelson's hypertext formalism, Luhmann's sustained practice, Ahrens's translation — is what the Memory as Vault pattern inherits. What none of them anticipated was that the retrieval step could be delegated to a language model working directly inside the archive.
 
 ## 3. Operational Principles
 
@@ -80,7 +80,7 @@ The practical power of the Memory as Vault pattern in an AI-assisted workflow co
 
 The technical mechanism underlying this is retrieval-augmented generation (RAG). Lewis et al. (2020) defined retrieval-augmented generation for knowledge-intensive natural language processing tasks: before producing an answer, the model retrieves relevant passages from an external knowledge base and grounds its response in those passages. The guide's inference, going beyond what Lewis et al. establish, is that a well-structured Markdown vault is a viable knowledge base for this mechanism when operated through Claude Code's file-read access. That application is the guide's own and has not been validated in a controlled study. Practitioners should treat it as a reasoned engineering proposal.
 
-There is an important limit to hold clearly. The vault's role is retrieval, not planning. Valmeekam et al. (2023), investigating the planning abilities of large language models critically, demonstrated that these models have marked limitations in complex multi-step planning. The best model in their study achieved roughly 12% success on standard planning benchmarks. This finding is why the vault should remain in the retrieval role: it supplies reliable information, but planning and research judgment remain with the researcher. Khattab et al. (2023), with the DSPy framework for compiling declarative language model calls into self-improving pipelines, showed one way the retrieval and generation components can be formally structured. That framework is one example of how the retrieval component of a vault-based workflow could be technically reinforced. Practitioners who want to go further will find DSPy a useful starting point. How far to go depends on the research context.
+There is an important limit to hold clearly. The vault's role is retrieval, not planning. Valmeekam et al. (2023), investigating the planning abilities of large language models critically, demonstrated that these models have marked limitations in complex multi-step planning. Even the best model in their study remained at low success rates on standard planning benchmarks. This finding is why the vault should remain in the retrieval role: it supplies reliable information, but planning and research judgment remain with the researcher. Khattab et al. (2023), with the DSPy framework for compiling declarative language model calls into self-improving pipelines, showed one way the retrieval and generation components can be formally structured. That framework is one example of how the retrieval component of a vault-based workflow could be technically reinforced. Practitioners who want to go further will find DSPy a useful starting point. How far to go depends on the research context.
 
 ## 6. Retrieval Patterns
 
@@ -112,7 +112,7 @@ Of the four steps of the Memory as Vault cycle, the Store step is the subject of
 
 Citations are in APA 7 format. DOIs and arXiv identifiers were independently verified on 2026-06-04. Bush (1945) and Luhmann (1992) predate DOI registration. Ahrens (2017) is a trade book. The Personal Data Protection Authority (2024) and European Data Protection Board (2024) are institutional grey-literature sources cited for their regulatory authority. Neither carries a DOI.
 
-Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. ISBN 978-1542866507
+Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. CreateSpace Independent Publishing Platform.
 
 Bush, V. (1945, July). As we may think. *The Atlantic Monthly*, 176(1), 101–108.
 
@@ -128,13 +128,13 @@ Nelson, T. H. (1965). Complex information processing: A file structure for the c
 
 Personal Data Protection Authority. (2024). *Guide on the protection of personal health data*. https://www.kvkk.gov.tr
 
-Valmeekam, K., Marquez, M., Sreedharan, S., & Kambhampati, S. (2023). On the planning abilities of large language models: A critical investigation. *Advances in Neural Information Processing Systems (NeurIPS 2023)*. https://arxiv.org/abs/2305.15771
+Valmeekam, K., Marquez, M., Sreedharan, S., & Kambhampati, S. (2023). On the planning abilities of large language models: A critical investigation. *Advances in Neural Information Processing Systems*, 36, 75993–76005. https://doi.org/10.52202/075280-3320
 
 ---
 
 **Booklet ID.** `003-01-0001`
 **Version.** `0.1.0`
-**Date.** 2026-06-04
+**Date.** 2026-06-20
 **Approximate word count.** 2562 (English body text, measured with wc)
 **Verified citations.** 9
 **Hallucinated citations.** 0

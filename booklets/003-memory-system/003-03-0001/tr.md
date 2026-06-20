@@ -6,7 +6,7 @@ category: "003-memory-system"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-12"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-12"
+human_review_date: "2026-06-20"
 verified_citations_count: 6
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -87,7 +87,7 @@ Noble (2009), hesaplamalı projelerin düzenlenmesi üzerine kılavuzunda her ş
 
 ## 8. Uydurmaya Karşı Pasaport
 
-Defterin bütünlük katmanındaki işlevi en serttir. Walters ve Wilder (2023), model üretimi kaynakçalardaki uydurma künyelerin ölçeğini belgeledi. Bu rehberin atıf disiplini her künyenin katalogda doğrulanmasını şart koşar ve pasaport, bu şartın arşivdeki uygulayıcısıdır. Kural tek cümledir. Pasaportu olmayan kaynak, kaynakçaya giremez.
+Defterin bütünlük katmanındaki işlevi en serttir. Walters ve Wilder (2023), ChatGPT üretimi kaynakçalardaki uydurma künyelerin ölçeğini belgeledi. Bu rehberin atıf disiplini her künyenin katalogda doğrulanmasını şart koşar ve pasaport, bu şartın arşivdeki uygulayıcısıdır. Kural tek cümledir. Pasaportu olmayan kaynak, kaynakçaya giremez.
 
 Kuralın gücü mekanikleşebilir olmasındadır. Taslağın kaynakçası ile pasaport defteri yan yana konduğunda üç liste düşer. Pasaportlu ve kullanılmış kaynaklar, sağlıklı çekirdek. Pasaportsuz atıflar, doğrulama kuyruğu. Kullanılmamış pasaportlar, ileride işe yarayabilecek yedekler. İlk liste büyüdükçe kaynakçanın güvenilirliği yapısal hâle gelir.
 
@@ -105,7 +105,7 @@ Pasaport defteri arşivin bir dosyasıdır ve her dosya gibi bir adrese ihtiyaç
 
 Atıflar APA 7 biçimindedir. DOI'ler 2026-06-12 tarihinde Crossref üzerinden doğrulanmıştır.
 
-Bramer, W. M., Rethlefsen, M. L., Kleijnen, J., & Franco, O. H. (2017). Optimal database combinations for literature searches in systematic reviews: A prospective exploratory study. *Systematic Reviews*, 6, 245. https://doi.org/10.1186/s13643-017-0644-y
+Bramer, W. M., Rethlefsen, M. L., Kleijnen, J., & Franco, O. H. (2017). Optimal database combinations for literature searches in systematic reviews: A prospective exploratory study. *Systematic Reviews*, 6(1), Article 245. https://doi.org/10.1186/s13643-017-0644-y
 
 Jones, W. (2007). Personal information management. *Annual Review of Information Science and Technology*, 41(1), 453–504. https://doi.org/10.1002/aris.2007.1440410117
 
@@ -121,7 +121,7 @@ Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Ba
 
 **Kitapçık kimliği.** `003-03-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-12
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 1206 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0

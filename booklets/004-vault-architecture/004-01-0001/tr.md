@@ -6,7 +6,7 @@ category: "004-vault-architecture"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-05"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-05"
+human_review_date: "2026-06-20"
 verified_citations_count: 9
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -88,11 +88,11 @@ Johnny Decimal, klasörleri numaralı bir ondalık sistemle düzenler: bir alan 
 
 Bir proje klasörüne konan makale, proje bittiğinde nereye gider? Arşivi olan herkes bu soruyla bir gün karşılaşır. Proje kapanır. O makale hâlâ işe yarar, hâlâ başka bir çalışmada görünür. PARA'da taşımak gerekir. Zettelkasten'de not kendi bağlantılarıyla yaşıyor zaten. Johnny Decimal'de adres numarası değişmeden içerik güncellenir. Araştırmacı bu sürtünmeyi bir kez yaşadıktan sonra tek kalıbın yetmediğini içgüdüsel olarak kavrar.
 
-Sosyal bilim için bu kalıplar rekabet eden değil tamamlayan seçeneklerdir. PARA yaşam döngüsünü kavrarken Zettelkasten kavramsal ağı güçlendirir, Johnny Decimal ise adresi sayısallaştırır. En sağlam akademik arşiv bu üçünü katmanlar: dosya adlarına gömülü numaralama adres sistemini sabitler; atomik notlar tek bir düşünceyi kendi başına taşır; içerik haritaları ise tüm bu yapıyı gezilebilir bir bütüne dönüştürür. Allen'ın (2015) verimlilik üzerine ortaya koyduğu ilke de bu noktayı destekler: bir sistem ancak araştırmacının güvendiği bir yapıya sahipse zihinsel yükü azaltır. O güven, yapının tutarlılığından gelir.
+Sosyal bilim için bu kalıplar rekabet eden değil tamamlayan seçeneklerdir. PARA yaşam döngüsünü kavrarken Zettelkasten kavramsal ağı güçlendirir, Johnny Decimal ise adresi sayısallaştırır. En sağlam akademik arşiv bu üçünü katmanlar: dosya adlarına gömülü numaralama adres sistemini sabitler. Atomik notlar tek bir düşünceyi kendi başına taşır. İçerik haritaları ise tüm bu yapıyı gezilebilir bir bütüne dönüştürür. Allen'ın (2015) verimlilik üzerine ortaya koyduğu ilke de bu noktayı destekler: bir sistem ancak araştırmacının güvendiği bir yapıya sahipse zihinsel yükü azaltır. O güven, yapının tutarlılığından gelir.
 
 ## 4. MOC, İçerik Haritası Kalıbı
 
-İçerik haritası, yani MOC, akademik arşivin navigasyon omurgasıdır. Bu kılavuzda MOC, kişisel bilgi yönetimi topluluğundan gelen bir uygulayıcı kavramı olarak kullanılmaktadır. Buradaki anlamı işlevsel bir çalışma tanımıdır. Akademik bir terminoloji önerisi değildir. İçerik haritası bir konuya açılan kapıdır: ilgili belgeleri tek bir yerde toplar, aralarında kısa bir bağlam kurar ve okuru doğru belgeye yönlendirir. Kritik fark şuradadır: klasörler dosyaları fiziksel olarak gruplarken içerik haritaları onları kavramsal olarak gruplar. İçerik haritası okunabilir bir belgedir; dosyaları içine almaz, onlara bağlantı kurar. Bu ayrımın pratik sonucu şudur: bir dosya tek bir klasörde durur ama birden çok içerik haritasında görünebilir. Bu kalıbı güçlü kılan da tam olarak budur.
+İçerik haritası, yani MOC, akademik arşivin navigasyon omurgasıdır. Bu kılavuzda MOC, kişisel bilgi yönetimi topluluğundan gelen bir uygulayıcı kavramı olarak kullanılmaktadır. Buradaki anlamı işlevsel bir çalışma tanımıdır. Akademik bir terminoloji önerisi değildir. İçerik haritası bir konuya açılan kapıdır: ilgili belgeleri tek bir yerde toplar, aralarında kısa bir bağlam kurar ve okuru doğru belgeye yönlendirir. Kritik fark şuradadır: klasörler dosyaları fiziksel olarak gruplarken içerik haritaları onları kavramsal olarak gruplar. İçerik haritası okunabilir bir belgedir. Dosyaları içine almaz, onlara bağlantı kurar. Bu ayrımın pratik sonucu şudur: bir dosya tek bir klasörde durur ama birden çok içerik haritasında görünebilir. Bu kalıbı güçlü kılan da tam olarak budur.
 
 İçerik haritasının niçin gerekli olduğu, ikinci bölümdeki üç mimarinin sınırından doğrudan gelir. Klasör mimarisi tek boyutludur. Bir dosya bir klasördedir. Oysa bilgi çok boyutludur. Bir vaka notu hem klinik alana hem belirli bir projeye hem de belirli bir kuramsal çerçeveye aynı anda ait olabilir. İçerik haritası bu çok boyutluluğu yakalar. Bates'in (2002) bilgi arama ve tarama davranışına ilişkin bütünleşik modeli de bu noktayı destekler: araştırmacılar bilgiyi birbirine bağlı pek çok giriş noktasından arar. İçerik haritası, bu giriş noktalarını somutlaştırır ve gezilebilir kılar.
 
@@ -166,13 +166,13 @@ Vaka formülasyonu üzerine biriken tüm kavramsal notlar.
 - [[formulasyon-sablonu]] standart şablon
 ```
 
-Son tür arşiv içerik haritasıdır. Tamamlanmış projeleri korur: bir proje bittiğinde proje haritası arşiv haritasına bağlanır, ancak belgeler silinmez. Bu tipler birlikte Forte'nin (2022) PARA yaşam döngüsünü içerik haritası katmanıyla zenginleştirir. Proje haritasında açılan bir çalışma alan haritasında kavramsal derinlik kazanır; proje kapandığında belge yerinde kalır ve arşiv haritasına yalnızca bağlanır. Taşıma yoktur. Haritalardaki görünürlük değişir, dosyanın adresi değişmez. PARA'nın tek başına yarattığı sürtünme bu şekilde ortadan kalkar.
+Son tür arşiv içerik haritasıdır. Tamamlanmış projeleri korur: bir proje bittiğinde proje haritası arşiv haritasına bağlanır, ancak belgeler silinmez. Bu tipler birlikte Forte'nin (2022) PARA yaşam döngüsünü içerik haritası katmanıyla zenginleştirir. Proje haritasında açılan bir çalışma alan haritasında kavramsal derinlik kazanır. Proje kapandığında belge yerinde kalır ve arşiv haritasına yalnızca bağlanır. Taşıma yoktur. Haritalardaki görünürlük değişir, dosyanın adresi değişmez. PARA'nın tek başına yarattığı sürtünme bu şekilde ortadan kalkar.
 
 ## 8. Araç Değişikliklerine Dayanım
 
 Akademik bir arşivin uzun ömrü, hiçbir tek araca bağlı olmamasına dayanır. Araştırmacı bugün arşivini bir not uygulamasında tutabilir. Ama o uygulama beş yıl sonra kapanabilir, fiyatlandırma politikasını değiştirebilir ya da satın alınıp kapatılabilir. On yılda bir bu olur. Arşivin bu değişime dayanabilmesi gerekir. Dayanımın temeli, düz metin Markdown ilkesidir: içerik haritaları, köşeli parantez bağlantıları ve frontmatter, hepsi düz metin sözleşmeleridir. Belirli bir uygulamaya değil, Markdown standardına bağlıdırlar.
 
-Pratik test şudur: arşiv, en sevilen uygulamadan çıkarılıp sade bir metin editöründe açıldığında hâlâ gezilebilir mi? İyi tasarlanmış bir arşivde yanıt evettir. Köşeli parantez bağlantıları metin içinde zaten görünürdür; bir harita belgesi herhangi bir editörde düz yazı olarak okunur; etiket ise frontmatter içinde sıradan bir karakter dizisinden ibarettir. Bir araç değiştiğinde kaybolan tek şey o aracın sunduğu görsel kolaylıklardır. Arşivin kendisi değil. Bu dayanım arşivi on yıl ölçeğinde güvenilir kılar. On yıl, araştırma kariyeri için uygun planlama ufkudur.
+Pratik test şudur: arşiv, en sevilen uygulamadan çıkarılıp sade bir metin editöründe açıldığında hâlâ gezilebilir mi? İyi tasarlanmış bir arşivde yanıt evettir. Köşeli parantez bağlantıları metin içinde zaten görünürdür. Bir harita belgesi herhangi bir editörde düz yazı olarak okunur. Etiket ise frontmatter içinde sıradan bir karakter dizisinden ibarettir. Bir araç değiştiğinde kaybolan tek şey o aracın sunduğu görsel kolaylıklardır. Arşivin kendisi değil. Bu dayanım arşivi on yıl ölçeğinde güvenilir kılar. On yıl, araştırma kariyeri için uygun planlama ufkudur.
 
 ## 9. Türkiye ve Yunanistan Özgüllüğü
 
@@ -190,7 +190,7 @@ Knuth (1984), edebi programlama felsefesinde şunu ortaya koyar: bir belgeyi ön
 
 Atıflar APA 7 biçimindedir. DOI'ler Crossref üzerinden doğrulanmıştır. Bates (2002), DOI olmaksızın belirtilmiştir. *New Review of Information Behaviour Research* makalesine ait bir Crossref kaydı mevcut değildir. Ticari kitaplar (Ahrens, Allen, Brown ve Duguid, Forte, Norman) ISBN ile belirtilmiş ve metin boyunca uygulayıcı kaynaklar olarak çerçevelenmiştir.
 
-Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. ISBN 978-1542866507
+Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. CreateSpace Independent Publishing Platform.
 
 Allen, D. (2015). *Getting things done: The art of stress-free productivity* (gözden geçirilmiş baskı). Penguin Books. ISBN 978-0-14-312656-9
 
@@ -210,7 +210,7 @@ Norman, D. A. (2013). *The design of everyday things* (gözden geçirilmiş ve g
 
 **Kitapçık kimliği.** `004-01-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-05
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 1990 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 9
 **Uydurma atıf sayısı.** 0
