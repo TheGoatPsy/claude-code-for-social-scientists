@@ -6,7 +6,7 @@ category: "001-foundations"
 language: "en"
 version: "0.1.0"
 date_published: "2026-05-29"
-date_last_revised: "2026-06-04"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "full-draft"
 human_review: "complete"
-human_review_date: "2026-06-04"
+human_review_date: "2026-06-20"
 verified_citations_count: 9
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -125,7 +125,7 @@ Risko, E. F., & Gilbert, S. J. (2016). Cognitive offloading. *Trends in Cognitiv
 
 Sandve, G. K., Nekrutenko, A., Taylor, J., & Hovig, E. (2013). Ten simple rules for reproducible computational research. *PLoS Computational Biology*, 9(10), e1003285. https://doi.org/10.1371/journal.pcbi.1003285
 
-Schulhoff, S., Ilie, M., Balepur, N., Kahadze, K., Liu, A., Si, C., et al. (2024). The prompt report: A systematic survey of prompt engineering techniques. *arXiv*. https://arxiv.org/abs/2406.06608
+Schulhoff, S., Ilie, M., Balepur, N., Kahadze, K., Liu, A., Si, C., Li, Y., Gupta, A., Han, H., Schulhoff, S., Dulepet, P. S., Vidyadhara, S., Ki, D., Agrawal, S., Pham, C., Kroiz, G., Li, F., Tao, H., Srivastava, A., … Resnik, P. (2024). The prompt report: A systematic survey of prompt engineering techniques. *arXiv*. https://arxiv.org/abs/2406.06608
 
 Sclar, M., Choi, Y., Tsvetkov, Y., & Suhr, A. (2023). Quantifying language models' sensitivity to spurious features in prompt design, or: How I learned to start worrying about prompt formatting. *arXiv*. https://arxiv.org/abs/2310.11324
 
@@ -135,7 +135,7 @@ White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., 
 
 **Booklet identifier.** `001-01-0004`
 **Version.** `0.1.0`
-**Date.** 2026-06-04
+**Date.** 2026-06-20
 **Approximate word count.** 2188 (English body text, measured with wc)
 **Verified citations.** 9
 **Fabricated citations.** 0

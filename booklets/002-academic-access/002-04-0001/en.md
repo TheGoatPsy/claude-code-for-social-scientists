@@ -6,7 +6,7 @@ category: "002-academic-access"
 language: "en"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-04"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "co-drafting"
 human_review: "complete"
-human_review_date: "2026-06-04"
+human_review_date: "2026-06-20"
 verified_citations_count: 10
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -57,7 +57,7 @@ This command routes through doi.org to Crossref and returns the article's record
 
 ## 3. ULAKBİM TR Dizin and the National Quality Filter
 
-ULAKBİM TR Dizin is Turkey's national citation index, and it serves a function distinct from DergiPark (TÜBİTAK ULAKBİM, 2026). Where DergiPark is a publishing platform, TR Dizin is a quality filter. A journal's inclusion in TR Dizin means it meets evaluation criteria covering publication ethics, peer review process, and formal standards. This distinction matters for the social scientist: according to TÜBİTAK ULAKBİM's published guidance, journals indexed in TR Dizin carry weight in doctoral qualification, academic incentive, and appointment and promotion procedures in Türkiye.
+ULAKBİM TR Dizin is Türkiye's national citation index, and it serves a function distinct from DergiPark (TÜBİTAK ULAKBİM, 2026). Where DergiPark is a publishing platform, TR Dizin is a quality filter. A journal's inclusion in TR Dizin means it meets evaluation criteria covering publication ethics, peer review process, and formal standards. This distinction matters for the social scientist: according to TÜBİTAK ULAKBİM's published guidance, journals indexed in TR Dizin carry weight in doctoral qualification, academic incentive, and appointment and promotion procedures in Türkiye.
 
 The structural coverage gap demonstrated by Mongeon and Paul-Hus (2016) has a direct practical consequence here. In the social sciences, a substantial share of the journals in TR Dizin do not appear in Web of Science or Scopus. Their absence reflects the coverage policies of international commercial databases and says nothing about their scholarly merit. A Turkish social scientist therefore often has to track TR Dizin manually. Claude Code can take on a filtering role here: while conducting a literature scan, you can instruct the model to collect only the journals within TR Dizin coverage under a separate heading. This organizes the scan output according to the requirements of national evaluation processes, making the distinction between international and national visibility explicit in every search run.
 
@@ -122,7 +122,7 @@ At the ethical level, language asymmetry carries a visibility dimension. Larivi�
 
 The user agreements of Turkish and Greek libraries and publisher packages define what may and may not be done. These limits must be observed in any Claude Code workflow. Automated bulk downloading is prohibited; access is personal, non-transferable, and bound to the consortium. These rules preserve the sustainability of access. They are the condition under which access exists at all.
 
-A further ethical layer is source quality. Demir (2018), in a mixed-methods study of where predatory journals are founded and why researchers publish in them, found that the majority of such journals are located in developing countries and that institutional pressures are among the factors that lead researchers toward them. While that study is global in scope rather than specific to Türkiye, its findings about the structural pressures that drive researchers toward low-quality outlets are directly relevant to any regional context where incentive systems shape publication choices. This booklet names no specific journals, because such lists change quickly and a false accusation carries serious consequences. Instead, it proposes a principle-level safeguard: TR Dizin coverage, consortium membership, and institutional library approval together form a multi-layered filter for source trustworthiness. The open science framework completes this filter. UNESCO's (2021) recommendation on open science offers an international policy foundation that treats access, quality, and equity as a coherent whole, each dimension reinforcing the others.
+A further ethical layer is source quality. Demir (2018), in a study of where predatory journals are founded and why researchers publish in them, found that the majority of such journals are located in developing countries and that institutional pressures are among the factors that lead researchers toward them. While that study is global in scope rather than specific to Türkiye, its findings about the structural pressures that drive researchers toward low-quality outlets are directly relevant to any regional context where incentive systems shape publication choices. This booklet names no specific journals, because such lists change quickly and a false accusation carries serious consequences. Instead, it proposes a principle-level safeguard: TR Dizin coverage, consortium membership, and institutional library approval together form a multi-layered filter for source trustworthiness. The open science framework completes this filter. UNESCO's (2021) recommendation on open science offers an international policy foundation that treats access, quality, and equity as a coherent whole, each dimension reinforcing the others.
 
 ## 11. Bridge to the Memory System
 
@@ -156,7 +156,7 @@ YÖK. (2026). *Council of Higher Education National Thesis Center*. https://tez.
 
 **Booklet ID.** `002-04-0001`
 **Version.** `0.1.0`
-**Date.** 2026-06-04
+**Date.** 2026-06-20
 **Word count (approx.).** 2493 (English body text, measured with wc)
 **Verified citations.** 10
 **Hallucinated citations.** 0

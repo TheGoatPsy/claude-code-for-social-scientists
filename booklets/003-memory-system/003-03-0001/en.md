@@ -6,7 +6,7 @@ category: "003-memory-system"
 language: "en"
 version: "0.1.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-12"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-12"
+human_review_date: "2026-06-20"
 verified_citations_count: 6
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -88,7 +88,7 @@ Noble (2009), in his guide to organizing computational projects, observes that e
 
 ## 8. The Passport Against Fabrication
 
-The ledger's function at the integrity layer is its sternest. Walters and Wilder (2023) documented the scale of fabricated records in model-generated bibliographies. This guide's citation discipline requires every reference to be verified against a catalog, and the passport is that requirement's enforcer inside the archive. The rule is one sentence. A source without a passport does not enter the bibliography.
+The ledger's function at the integrity layer is its sternest. Walters and Wilder (2023) documented the scale of fabricated records in ChatGPT-generated bibliographies. This guide's citation discipline requires every reference to be verified against a catalog, and the passport is that requirement's enforcer inside the archive. The rule is one sentence. A source without a passport does not enter the bibliography.
 
 The rule's strength is that it mechanizes. Put the draft's bibliography next to the passport ledger and three lists fall out. Sources with passports and uses, the healthy core. Citations without passports, the verification queue. Passports without uses, reserves that may serve later. As the first list grows, the bibliography's reliability becomes structural.
 
@@ -106,7 +106,7 @@ The passport ledger is a file in the archive, and like every file it needs an ad
 
 Citations are in APA 7 format. DOIs verified against Crossref on 2026-06-12.
 
-Bramer, W. M., Rethlefsen, M. L., Kleijnen, J., & Franco, O. H. (2017). Optimal database combinations for literature searches in systematic reviews: A prospective exploratory study. *Systematic Reviews*, 6, 245. https://doi.org/10.1186/s13643-017-0644-y
+Bramer, W. M., Rethlefsen, M. L., Kleijnen, J., & Franco, O. H. (2017). Optimal database combinations for literature searches in systematic reviews: A prospective exploratory study. *Systematic Reviews*, 6(1), Article 245. https://doi.org/10.1186/s13643-017-0644-y
 
 Jones, W. (2007). Personal information management. *Annual Review of Information Science and Technology*, 41(1), 453–504. https://doi.org/10.1002/aris.2007.1440410117
 
@@ -122,7 +122,7 @@ Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Ba
 
 **Booklet ID.** `003-03-0001`
 **Version.** `0.1.0`
-**Date.** 2026-06-12
+**Date.** 2026-06-20
 **Approximate word count.** 1608 (English body text, measured with wc)
 **Verified citations.** 6
 **Hallucinated citations.** 0

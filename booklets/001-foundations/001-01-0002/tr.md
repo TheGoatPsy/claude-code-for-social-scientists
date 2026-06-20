@@ -6,7 +6,7 @@ category: "001-foundations"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-05"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-05"
+human_review_date: "2026-06-20"
 verified_citations_count: 10
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -40,13 +40,13 @@ Bu rehberin ilk kitapçığı, Claude Code'un sosyal bilimci için ne anlama gel
 
 Yüzeyde, tarayıcıdaki bir sohbet penceresiyle komut satırındaki bir ajan aynı işi yapıyor gibi görünür. Her ikisine de bir soru yazarsınız, her ikisi de bir yanıt üretir. Ne var ki bu benzerlik aldatıcıdır. İlk kitapçıkta vaka formülasyonunun biyopsikososyal model üzerinden kurulduğunu hatırlatmıştık (Engel, 1977). Bir hastayı yalnızca semptom listesi olarak görmekle onu eşzamanlı işleyen bir sistem olarak görmek arasındaki fark, tanı ile formülasyon arasındaki farktır. Sohbet ile ajan arasındaki ayrım aynı kategoriye girer. Sohbet geçmişe ait bir andır, sekme kapandığında biten tek bir etkileşim. Ajan ise bir oturum anlatısıdır: dosya sistemine, kendi önceki kararlarına ve dış araçlara bağlı, süregelen bir süreç.
 
-Akademik üretim, özü itibarıyla oturum anlatısı gerektirir. Bir sistematik derleme tek oturumda tamamlanan bir iş değildir. Bir makale revizyonu tek bir yanıtta bitmez. Bir literatür haritası, haftalarca biriken kararların toplamıdır. Dolayısıyla aracın hangi arayüz üzerinden çalıştığı, akademisyen için yöntemsel bir belirleyicidir; görünürde basit bir seçim arka planda çalışma biçimini kökten değiştirir. Bu kitapçık o belirleyiciyi sırayla açar: sohbetin anatomisi, ajanın anatomisi, araçların ve alt ajanların rolü ve akademik üretime somut etkisi.
+Akademik üretim, özü itibarıyla oturum anlatısı gerektirir. Bir sistematik derleme tek oturumda tamamlanan bir iş değildir. Bir makale revizyonu tek bir yanıtta bitmez. Bir literatür haritası, haftalarca biriken kararların toplamıdır. Dolayısıyla aracın hangi arayüz üzerinden çalıştığı, akademisyen için yöntemsel bir belirleyicidir. Görünürde basit bir seçim arka planda çalışma biçimini kökten değiştirir. Bu kitapçık o belirleyiciyi sırayla açar: sohbetin anatomisi, ajanın anatomisi, araçların ve alt ajanların rolü ve akademik üretime somut etkisi.
 
 ## 2. Sohbet Arayüzünün Anatomisi
 
 Sohbet arayüzünün akademik üretim için yarattığı sınırlar birbiriyle bağlantılıdır ve birleşince yapısal bir engel oluştururlar.
 
-Birincisi tek geçiş sorunudur. Sohbet penceresine yazdığınız soru modele iletilir, model bir yanıt üretir ve etkileşim biter. Bu yanıt, modelin o anki en olası çıktısıdır; dış dünyaya herhangi bir eylemde bulunmaz. Dosya yazmaz, komut çalıştırmaz, bir kaynağı kütüphaneden çekmez. Sosyal bilimci için bunun anlamı açıktır: sohbet bir düşünme ortağı olabilir, üretim ortağı olamaz. Bir paragrafı tartışmak mümkündür. İki yüz makalelik bir Zotero kütüphanesini taramak değil.
+Birincisi tek geçiş sorunudur. Sohbet penceresine yazdığınız soru modele iletilir, model bir yanıt üretir ve etkileşim biter. Bu yanıt, modelin o anki en olası çıktısıdır. Dış dünyaya herhangi bir eylemde bulunmaz. Dosya yazmaz, komut çalıştırmaz, bir kaynağı kütüphaneden çekmez. Sosyal bilimci için bunun anlamı açıktır: sohbet bir düşünme ortağı olabilir, üretim ortağı olamaz. Bir paragrafı tartışmak mümkündür. İki yüz makalelik bir Zotero kütüphanesini taramak değil.
 
 Bağlam sınırı ayrı bir engel oluşturur. Sohbet penceresi yalnızca o pencerede görünen metni bilir. Geçmiş oturumlarda yazdıklarınız, bilgisayarınızdaki dosyalar, kurumsal kütüphanenizin kaynakları pencerenin dışındadır. Uzun bir araştırma sürecinde bu sınır hızla bir tıkanmaya dönüşür. Pencere dolduğunda en eski mesajlar bağlamdan düşer ve araştırmacı, üç hafta önce verdiği bir kararı modele yeniden anlatmak zorunda kalır.
 
@@ -78,7 +78,7 @@ Temel iki araç, dosya sistemi ve terminaldir. Dosya sistemi erişimi ajanın ar
 
 Ajan modelinin akademik üretime en özgün katkısı, en azından ilke olarak, bu rehberin alt ajan kompozisyonu adını verdiği yapıdır: bir araştırma görevinin birbiriyle eşgüdümlü birkaç ajanın iş bölümüyle yürütülebileceği düşüncesi. Burada bir netleştirme gerekir: bu rehberin Claude Code'un alt ajan çağırma mekanizmasını anlatan kendi çalışma kavramıdır. Çok ajanlı sistemler literatüründe yerleşmiş bir terim değildir ve aşağıdaki özgül yapılandırmalar yönlendirici olmaktan çok açıklayıcı niteliktedir. Bu örüntü, vaka formülasyonundaki katmanlı düşünmeye benzer. Bir hastanın durumu biyolojik, psikolojik ve bağlamsal boyutlarda eş zamanlı ele alınıyorsa, bir araştırma görevi de farklı uzmanlıklara bölünebilir.
 
-Akademik bir örnek netleştirir. Ergenlerde dijital medya kullanımı üzerine literatür sentezi hazırlayan doktora öğrencisi bu görevi birbirinden ayrışık rollere bölebilir. Birinci rol akademik indekslerden ilgili makaleleri bulur ve tam künyelerini doğrular. İkinci rol o makalelerin tasarımını, örneklemini ve ölçüm araçlarını yapılandırılmış bir tabloya çıkarır; derleme bu aşamada somut bir zemine oturur. Üçüncü rol ise tablo üzerinden örüntüleri çeker ve araştırmacının sorularına göre özetler hazırlar.
+Akademik bir örnek netleştirir. Ergenlerde dijital medya kullanımı üzerine literatür sentezi hazırlayan doktora öğrencisi bu görevi birbirinden ayrışık rollere bölebilir. Birinci rol akademik indekslerden ilgili makaleleri bulur ve tam künyelerini doğrular. İkinci rol o makalelerin tasarımını, örneklemini ve ölçüm araçlarını yapılandırılmış bir tabloya çıkarır. Derleme bu aşamada somut bir zemine oturur. Üçüncü rol ise tablo üzerinden örüntüleri çeker ve araştırmacının sorularına göre özetler hazırlar.
 
 Bu kompozisyonun değeri, her rolün kendi dar görevinde derinleşmesi ve sonuçların izlenebilir kalmasında yatar. Taranan kaynaklardan kurulan tabloya, oradan çekilen örüntülere kadar her adım ayrı ayrı denetlenebilir. Simüle edilmiş ajanların eşgüdümlü davranış sergileyebildiğini gösteren çalışmalar bu iş bölümünün teknik temelini sağlar (Park ve diğerleri, 2023). Sosyal bilimci için kritik nokta şudur: alt ajan kompozisyonu araştırmacının kontrolünü azaltmaz. Her aşamayı görünür kılarak tam tersine artırır. Tek bir kara kutu yerine denetlenebilir bir iş akışı kurulur.
 
@@ -88,9 +88,9 @@ Ajan modelinin sohbet modeline üstünlüğü ancak somut senaryolar üzerinden 
 
 İlk senaryo, mantık zinciri takibidir. Araştırmacı, kuramsal bir argümanın on iki kaynak boyunca tutarlı biçimde kurulup kurulmadığını kontrol etmek ister. Sohbet her kaynağı ayrı ayrı tartışabilir, ama aralarındaki bağı kalıcı olarak izleyemez. Ajan her kaynağı okur, argümanla ilişkisini bir dosyaya yazar ve zincirin nerede koptuğunu raporlar.
 
-Bir sonraki senaryo, izlenebilirlik matrisidir. Bir makale taslağı on bir hakem yorumu almıştır. Her yoruma verilen yanıtın metinde hangi değişikliğe karşılık geldiğini izlemek gerekir. Ajan bu matrisi bir dosyada tutar, her revizyonda günceller ve hiçbir yorumun yanıtsız kalmadığını doğrular. Sohbet bu matrisi her oturumda yeniden kurmak zorunda kalırdı. Ve dosya sistemine yazamadığı için sekme kapandığında matrisi yitirirdi.
+İkinci senaryo, izlenebilirlik matrisidir. Bir makale taslağı on bir hakem yorumu almıştır. Her yoruma verilen yanıtın metinde hangi değişikliğe karşılık geldiğini izlemek gerekir. Ajan bu matrisi bir dosyada tutar, her revizyonda günceller ve hiçbir yorumun yanıtsız kalmadığını doğrular. Sohbet bu matrisi her oturumda yeniden kurmak zorunda kalırdı. Ve dosya sistemine yazamadığı için sekme kapandığında matrisi yitirirdi.
 
-Üçüncü tablo, kütüphane haritasıdır. Yüzlerce makalelik bir kaynak havuzu tasarıma, örnekleme ve yayın tarihine göre haritalanabilir. Ajan bu haritayı dosya sistemine yazar. Araştırmacı haftalar sonra döndüğünde harita yerinde durur.
+Üçüncü senaryo, kütüphane haritasıdır. Yüzlerce makalelik bir kaynak havuzu tasarıma, örnekleme ve yayın tarihine göre haritalanabilir. Ajan bu haritayı dosya sistemine yazar. Araştırmacı haftalar sonra döndüğünde harita yerinde durur.
 
 Son senaryo, kavramsal eşleştirmedir. Türkçe ve İngilizce literatürde aynı kavram sık sık farklı terimlerle anılır. Ajan tutarlı bir sözlüğü dosya aracılığıyla koruyabilir: sözlük kalıcı olarak dosyada yaşar, ajan her oturumun başında onu okur ve oturumlar arasında süreklilik bu yolla sağlanır. Bu senaryoların ortak özelliği, sürekliliğin değer ürettiği görevler olmalarıdır. Yapay zekânın iş ortağı olarak görülmesi popüler düzlemde de savunulan bir çerçevedir (Mollick, 2024). Ne var ki bu kitapçığın vurgusu farklıdır. Ortaklık, iyi niyetle kazanılmaz. Dosya sistemi, denetlenebilir alt görevler ve açık oturum disiplini olmadan kurulması mümkün olmayan bir arayüz özelliğidir.
 
@@ -100,7 +100,7 @@ Ajan modelinin gücü, beraberinde kalıcı yanılgıları da getirir. Ele alın
 
 Birinci yanılgı, ajanlığın otonomi anlamına geldiğidir. Ajan eylemde bulunabilir, ama bu kendi başına karar verdiği anlamına gelmez. Her eylem araştırmacının kurduğu çerçeve ve verdiği izin dahilindedir. Üretici dil modellerinin çıktısının epistemolojik düzeyde gerçeğe kayıtsız bir karakter taşıyabildiği felsefi olarak gösterilmiştir (Hicks ve diğerleri, 2024). Ajan olması bu karakteri değiştirmez. İkinci yanılgı ise ajanın artık güvenilir olduğu varsayımıdır. Ajan da hâlâ stokastik bir sistemdir. İstatistiksel kalıbı anlamaksızın yeniden üretme riski ajan arayüzünde de geçerlidir (Bender ve diğerleri, 2021). Dosya yazabiliyor olması, yazdığının doğru olduğunu güvence altına almaz.
 
-Bu yanılgıların her birinin somut bir başarısızlık biçimi vardır. Kapsam kayması en görünür olanıdır. Ajan kendisine verilen dar görevin sınırlarını aşıp ilgisiz dosyalara müdahale edebilir. Her oturumun başında kapsamı açıkça adlandırmak bunu önler. Döngü tuzağı daha sessiz seyreder. Ajan bir alt görevde ilerleme kaydedemediğinde aynı adımı yineleme eğilimindedir; ilerlemeyen adımları izleyip gerektiğinde durdurmak bu riski azaltır. Gizli durum ise en uzun süre fark edilmeden kalan sorundur. Ajan bir önceki adımda kurduğu varsayımı görünmez biçimde sonraki adıma taşıyabilir. Ara çıktıları dosyaya yazdırıp denetlemek, bu varsayımları yüzeye çıkarmanın tek güvenilir yoludur. Bu başarısızlık modlarını adlandırmak, disiplinli kullanımın ön koşuludur.
+Bu yanılgıların her birinin somut bir başarısızlık biçimi vardır. Kapsam kayması en görünür olanıdır. Ajan kendisine verilen dar görevin sınırlarını aşıp ilgisiz dosyalara müdahale edebilir. Her oturumun başında kapsamı açıkça adlandırmak bunu önler. Döngü tuzağı daha sessiz seyreder. Ajan bir alt görevde ilerleme kaydedemediğinde aynı adımı yineleme eğilimindedir. İlerlemeyen adımları izleyip gerektiğinde durdurmak bu riski azaltır. Gizli durum ise en uzun süre fark edilmeden kalan sorundur. Ajan bir önceki adımda kurduğu varsayımı görünmez biçimde sonraki adıma taşıyabilir. Ara çıktıları dosyaya yazdırıp denetlemek, bu varsayımları yüzeye çıkarmanın tek güvenilir yoludur. Bu başarısızlık modlarını adlandırmak, disiplinli kullanımın ön koşuludur.
 
 ## 8. Türkiye ve Yunanistan Özgüllüğü
 
@@ -140,7 +140,7 @@ Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023)
 
 **Kitapçık kimliği.** `001-01-0002`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-04
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 2372 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 10
 **Uydurma atıf sayısı.** 0

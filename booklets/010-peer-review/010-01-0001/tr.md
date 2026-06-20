@@ -6,7 +6,7 @@ category: "010-peer-review"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-05"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-05"
+human_review_date: "2026-06-20"
 verified_citations_count: 8
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -38,7 +38,7 @@ status: "release"
 
 Hakem yanıt mektubunun bileşenleri birbirini zorunlu olarak önceler. Editöre yönelik açılış, revizyona teşekkür cümlesini, ana değişikliklerin kısa özetini ve mektubun yapısına tek satırlık bir yönelimi barındırır. Ardından her hakem yorumuna tek tek yanıt verilir: önce yorumun kendisi, hemen altında yazarın yanıtı, sonra makalede yapılan değişikliğin tam konumu. Değişiklikler sayfa ve satır düzeyinde açıkça işaretlenir. Mektup, kalan açık noktaların dürüst bir kabulüyle kapanır.
 
-Bu yapı, araştırmacıların çoğunun ilk revizyona getirmediği bir disiplin ister. Provenzale ve Stanley (2005), el yazması değerlendirmenin sistematik kılavuzunda, hakem yorumlarının belirlenebilir kategorilere ayrıldığını ortaya koyar; bir yorum yönteme ilişkin olabilir, bir diğeri kavramsal çerçeveye, bir başkası biçime. Her yanıtın tonu ve ağırlığı, hitap ettiği kategoriye uygun olmalıdır. Yöntemsel bir itiraz, bir paragrafı sıkıştırma talebinden farklı bir argümantasyon gerektirir. Noble (2017), hakemlere yanıt yazmanın on kuralında en kritik olanını doğrudan söyler: her yoruma açıkça ve ayrı ayrı yanıt vermek. İki yorumu tek yanıtta birleştirmek ya da önemsiz göründüğü için birini atlamak, editörde revizyonun eksik olduğu izlenimini yaratır. Bu izlenim ikinci turda nadiren düzeltilir. Belcher (2019), akademik yayın sürecini on iki haftalık bir yapıya oturttuğu rehberinde, revizyonun makalenin kaderini belirleyen aşama olduğunu açıkça koyar. İlk gönderim değil, revizyon. Bordage (2001), hakemlerin makaleleri neden reddedip kabul ettiğini inceleyen sistematik çalışmasında, önceki eleştirilere yetersiz yanıtı tekrarlayan bir red gerekçesi olarak saptamıştır.
+Bu yapı, araştırmacıların çoğunun ilk revizyona getirmediği bir disiplin ister. Provenzale ve Stanley (2005), el yazması değerlendirmenin sistematik kılavuzunda, hakem yorumlarının belirlenebilir kategorilere ayrıldığını ortaya koyar. Bir yorum yönteme ilişkin olabilir, bir diğeri kavramsal çerçeveye, bir başkası biçime. Her yanıtın tonu ve ağırlığı, hitap ettiği kategoriye uygun olmalıdır. Yöntemsel bir itiraz, bir paragrafı sıkıştırma talebinden farklı bir argümantasyon gerektirir. Noble (2017), hakemlere yanıt yazmanın on kuralında en kritik olanını doğrudan söyler: her yoruma açıkça ve ayrı ayrı yanıt vermek. İki yorumu tek yanıtta birleştirmek ya da önemsiz göründüğü için birini atlamak, editörde revizyonun eksik olduğu izlenimini yaratır. Bu izlenim ikinci turda nadiren düzeltilir. Belcher (2019), akademik yayın sürecini on iki haftalık bir yapıya oturttuğu rehberinde, revizyonun makalenin kaderini belirleyen aşama olduğunu açıkça koyar. İlk gönderim değil, revizyon. Bordage (2001), hakemlerin makaleleri neden reddedip kabul ettiğini inceleyen sistematik çalışmasında, önceki eleştirilere yetersiz yanıtı tekrarlayan bir red gerekçesi olarak saptamıştır.
 
 ## 2. İzlenebilirlik Matrisi Nedir
 
@@ -129,7 +129,7 @@ Bordage, G. (2001). Reasons reviewers reject and accept manuscripts: The strengt
 
 Else, H. (2023). Abstracts written by ChatGPT fool scientists. *Nature*, 613(7944), 423. https://doi.org/10.1038/d41586-023-00056-7
 
-Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 30(7-8), 1-9. https://doi.org/10.1080/08989621.2023.2168535
+Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
 Noble, W. S. (2017). Ten simple rules for writing a response to reviewers. *PLOS Computational Biology*, 13(10), e1005730. https://doi.org/10.1371/journal.pcbi.1005730
 
@@ -143,7 +143,7 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 
 **Kitapçık kimliği.** `010-01-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-04
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 1593 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 8
 **Uydurma atıf sayısı.** 0

@@ -6,7 +6,7 @@ category: "003-memory-system"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-05"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "co-drafting"
 human_review: "complete"
-human_review_date: "2026-06-05"
+human_review_date: "2026-06-20"
 verified_citations_count: 9
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -47,7 +47,7 @@ Hafızayı arşive dönüştürme kalıbı, yetmiş yıllık bir entelektüel ge
 
 Bu geleneğin başlangıç noktası Vannevar Bush'tur. Bush (1945), The Atlantic'te yayımlanan "As We May Think" başlıklı denemesinde Memex adını verdiği bir aygıt tasavvur etti. Memex, bir bireyin tüm kitaplarını, kayıtlarını ve yazışmalarını saklayan ve bunlar arasında çağrışımsal izler kuran, kişisel hafızanın mekanize bir uzantısıydı. Bush'un öngörüsü kesindi: insan zihni çağrışımla çalışır, dolayısıyla bilgi sisteminin de çağrışımsal bağlantılara saygı göstermesi, tek bir hiyerarşi dayatmaması gerekir. Kavramsal temeli Ted Nelson attı. Nelson (1965), karmaşık, değişen ve belirsiz bilgi için bir dosya yapısı önerdiği makalesinde hipertekst kavramını ilk kez tanımladı. Nelson'un katkısı, metinlerin doğrusal değil ağsal olarak birbirine bağlanabileceği fikriydi.
 
-Pratik kanıtı ise Niklas Luhmann sundu. Luhmann (1992), Zettelkasten adını verdiği fiş kutusu sistemiyle çalıştı. Her fişin atomik bir düşünce taşıdığı, fişlerin birbirine referans numaralarıyla bağlandığı bu sistemle Luhmann, elli yılı aşkın sürdürümlü bir verimlilikle yaklaşık yetmiş kitap ve yüzlerce makale üretti. Luhmann, bu sistemi bir iletişim ortağı olarak tanımladı. Zettelkasten'i çağdaş bilgi çalışanları için Sönke Ahrens (2017) yeniden çerçeveledi. Ahrens, tekniği atomik notlar, çift yönlü bağlantılar ve bir dolap yerine bir düşünme aracı olarak not sistemi kavramları üzerinden formüle etti. Bush, Nelson, Luhmann, Ahrens: bu soyağacı, hafızayı arşive dönüştürme kalıbının yapay zekâ destekli araştırma çağına taşıdığı entelektüel mirastır.
+Pratik kanıtı ise Niklas Luhmann sundu. Luhmann (1992), Zettelkasten adını verdiği fiş kutusu sistemiyle çalıştı. Her fişin atomik bir düşünce taşıdığı, fişlerin birbirine referans numaralarıyla bağlandığı bu sistemle Luhmann, yaklaşık yarım yüzyıl boyunca sürdürümlü bir verimlilikle yaklaşık yetmiş kitap ve yüzlerce makale üretti. Luhmann, bu sistemi bir iletişim ortağı olarak tanımladı. Zettelkasten'i çağdaş bilgi çalışanları için Sönke Ahrens (2017) yeniden çerçeveledi. Ahrens, tekniği atomik notlar, çift yönlü bağlantılar ve bir dolap yerine bir düşünme aracı olarak not sistemi kavramları üzerinden formüle etti. Bush, Nelson, Luhmann, Ahrens: bu soyağacı, hafızayı arşive dönüştürme kalıbının yapay zekâ destekli araştırma çağına taşıdığı entelektüel mirastır.
 
 ## 3. Kalıbın İşlevsel İlkeleri
 
@@ -79,7 +79,7 @@ Hafızayı arşive dönüştürme kalıbının yapay zekâ destekli bir iş akı
 
 Bu mekanizmanın teknik temeli geri çağırma destekli üretimdir: model yanıt vermeden önce harici bir bilgi tabanından ilgili parçaları çeker ve yanıtını o parçalara dayandırır (Lewis ve diğerleri, 2020). Arşiv bu mekanizmanın bilgi tabanıdır. Rehberin çıkarsaması, Lewis ve diğerlerinin (2020) kurduğunun ötesine geçer: iyi yapılandırılmış bir Markdown arşivi, Claude Code'un dosya okuma erişimi üzerinden çalıştırıldığında bu mekanizma için geçerli bir bilgi tabanına dönüşebilir. Bu uygulama rehberin kendi önerisidir ve kontrollü bir çalışmada doğrulanmamıştır. Uygulayıcılar bunu gerekçeli bir mühendislik önerisi olarak ele almalıdır.
 
-Burada açıkça tutulması gereken önemli bir sınır vardır. Arşivin rolü geri çağırmadır. Planlama araştırmacıda kalır. Valmeekam ve diğerleri (2023), büyük dil modellerinin planlama yeteneklerini eleştirel biçimde inceleyerek bu modellerin karmaşık çok adımlı planlamada belirgin sınırlar taşıdığını ortaya koydu. Çalışmalarındaki en iyi model, standart planlama kıyaslama testlerinde yüzde on iki civarında bir başarı oranı elde etti. Bu bulgu, arşivin niçin geri çağırma rolünde kalması gerektiğini açıklar: arşiv güvenilir bir bilgi kaynağı sunar, planlama ve araştırma yargısı ise araştırmacıda kalır. Khattab ve diğerleri (2023), bildirimsel dil modeli çağrılarını kendini iyileştiren işlem hatlarına derleyen DSPy çerçevesiyle geri çağırma ve üretim bileşenlerinin biçimsel olarak nasıl yapılandırılabileceğini gösterdi. Bu çerçeve, arşiv tabanlı bir iş akışının geri çağırma bileşeninin teknik olarak nasıl sağlamlaştırılabileceğini gösteren bir örnek olarak sunulmaktadır. Uygulaması araştırmacının bağlamına göre şekillendirilmelidir.
+Burada açıkça tutulması gereken önemli bir sınır vardır. Arşivin rolü geri çağırmadır. Planlama araştırmacıda kalır. Valmeekam ve diğerleri (2023), büyük dil modellerinin planlama yeteneklerini eleştirel biçimde inceleyerek bu modellerin karmaşık çok adımlı planlamada belirgin sınırlar taşıdığını ortaya koydu. Çalışmalarındaki en iyi model bile standart planlama kıyaslama testlerinde düşük başarı oranlarında kaldı. Bu bulgu, arşivin niçin geri çağırma rolünde kalması gerektiğini açıklar: arşiv güvenilir bir bilgi kaynağı sunar, planlama ve araştırma yargısı ise araştırmacıda kalır. Khattab ve diğerleri (2023), bildirimsel dil modeli çağrılarını kendini iyileştiren işlem hatlarına derleyen DSPy çerçevesiyle geri çağırma ve üretim bileşenlerinin biçimsel olarak nasıl yapılandırılabileceğini gösterdi. Bu çerçeve, arşiv tabanlı bir iş akışının geri çağırma bileşeninin teknik olarak nasıl sağlamlaştırılabileceğini gösteren bir örnek olarak sunulmaktadır. Uygulaması araştırmacının bağlamına göre şekillendirilmelidir.
 
 ## 6. Geri Çağırma Kalıpları
 
@@ -111,29 +111,29 @@ Hafızayı arşive dönüştürme döngüsünün dört adımından Store, bir so
 
 Atıflar APA 7 biçimindedir. DOI'ler ve arXiv kimlikleri 2026-06-04 tarihinde bağımsız olarak doğrulanmıştır. Bush (1945) ve Luhmann (1992), DOI kaydı döneminden öncedir. Ahrens (2017) bir popüler yayındır. Kişisel Verileri Koruma Kurumu (2024) ve Avrupa Veri Koruma Kurulu (2024), düzenleyici otoriteleri nedeniyle atıf yapılan kurumsal gri literatür kaynaklarıdır. Bu iki kaynakta DOI bulunmamaktadır.
 
-Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. ISBN 978-1542866507
+Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. CreateSpace Independent Publishing Platform.
 
 Avrupa Veri Koruma Kurulu. (2024). *Guidelines on the protection of personal data in research*. https://edpb.europa.eu
 
-Bush, V. (1945, Temmuz). As we may think. *The Atlantic Monthly*, 176(1), 101-108.
+Bush, V. (1945, Temmuz). As we may think. *The Atlantic Monthly*, 176(1), 101–108.
 
 Khattab, O., Singhvi, A., Maheshwari, P., Zhang, Z., Santhanam, K., Vardhamanan, S., Haq, S., Sharma, A., Joshi, T. T., Moazam, H., Miller, H., Zaharia, M., & Potts, C. (2023). DSPy: Compiling declarative language model calls into self-improving pipelines. *arXiv*. https://arxiv.org/abs/2310.03714
 
 Kişisel Verileri Koruma Kurumu. (2024). *Kişisel sağlık verilerinin korunmasına ilişkin rehber*. https://www.kvkk.gov.tr
 
-Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S., & Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. *Advances in Neural Information Processing Systems*, 33, 9459-9474. https://arxiv.org/abs/2005.11401
+Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S., & Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. *Advances in Neural Information Processing Systems*, 33, 9459–9474. https://arxiv.org/abs/2005.11401
 
-Luhmann, N. (1992). Kommunikation mit Zettelkästen. In *Universität als Milieu: Kleine Schriften* (s. 53-61). Haux.
+Luhmann, N. (1992). Kommunikation mit Zettelkästen. In *Universität als Milieu: Kleine Schriften* (s. 53–61). Haux.
 
-Nelson, T. H. (1965). Complex information processing: A file structure for the complex, the changing and the indeterminate. *Proceedings of the 1965 20th National Conference*, 84-100. https://doi.org/10.1145/800197.806036
+Nelson, T. H. (1965). Complex information processing: A file structure for the complex, the changing and the indeterminate. *Proceedings of the 1965 20th National Conference*, 84–100. https://doi.org/10.1145/800197.806036
 
-Valmeekam, K., Marquez, M., Sreedharan, S., & Kambhampati, S. (2023). On the planning abilities of large language models: A critical investigation. *Advances in Neural Information Processing Systems (NeurIPS 2023)*. https://arxiv.org/abs/2305.15771
+Valmeekam, K., Marquez, M., Sreedharan, S., & Kambhampati, S. (2023). On the planning abilities of large language models: A critical investigation. *Advances in Neural Information Processing Systems*, 36, 75993–76005. https://doi.org/10.52202/075280-3320
 
 ---
 
 **Kitapçık kimliği.** `003-01-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-04
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 2121 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 9
 **Uydurma atıf sayısı.** 0

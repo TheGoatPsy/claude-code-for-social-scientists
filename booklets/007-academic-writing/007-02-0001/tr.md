@@ -6,7 +6,7 @@ category: "007-academic-writing"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-05"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-05"
+human_review_date: "2026-06-20"
 verified_citations_count: 10
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -37,7 +37,7 @@ status: "release"
 
 ## 1. APA 7 ve DOI'nin İşlevi
 
-APA 7, sosyal bilimlerde en yaygın atıf standardıdır (American Psychological Association, 2020). Bir dergi makalesi künyesi yazar, yıl, başlık, dergi adı, cilt, sayı, sayfa ve DOI bileşenlerinden oluşur. Bu bileşenlerin büyük çoğunluğu bir makaleyi tanımlamaya yeter. DOI ise kümeden ayrılır: yayımlanmış bir çalışmanın değişmeyen, kalıcı ve makinece çözülebilir adresidir; künyenin tamamlayıcısı değil, ampirik temelidir. Dergi web siteleri taşınsa da birleşse de bu adres doğru kalmaya devam eder.
+APA 7, sosyal bilimlerde en yaygın atıf standardıdır (American Psychological Association, 2020). Bir dergi makalesi künyesi yazar, yıl, başlık, dergi adı, cilt, sayı, sayfa ve DOI bileşenlerinden oluşur. Bu bileşenlerin büyük çoğunluğu bir makaleyi tanımlamaya yeter. DOI ise kümeden ayrılır: yayımlanmış bir çalışmanın değişmeyen, kalıcı ve makinece çözülebilir adresidir. Künyenin tamamlayıcısı değil, ampirik temelidir. Dergi web siteleri taşınsa da birleşse de bu adres doğru kalmaya devam eder.
 
 APA 7, DOI'yi olabildiğince zorunlu kılar. Gerekçe doğrudan epistemolojiktir. Uluslararası Tıp Dergisi Editörleri Komitesi de (2024) bilimsel çalışmanın yürütülmesi ve raporlanmasına ilişkin önerilerinde atıf doğruluğunu yazarın temel sorumluluklarından biri olarak tanımlar. DOI bu sorumluluğu pratiğe taşır. Crossref'te çözülen bir DOI, söz konusu atıfın var olduğunun kanıtıdır. Çözülmeyen bir DOI, referans listesine girmemesi gereken bir kaydın işaretidir.
 
@@ -53,7 +53,7 @@ Else (2023), ChatGPT tarafından yazılan özetlerin deneyimli bilim insanların
 
 Hiçbir veri tabanı herhangi bir araştırma alanının tüm genişliğini kapsamaz. Bu nedenle tek bir indeks, bir atıfı doğrulamak için yeterli değildir. Çözüm üçgenlemedir: bir atıfın bağımsız indekslerde çapraz kontrol edilmesi. Crossref, PubMed ve Semantic Scholar birlikte sosyal bilim ile sağlık bilimlerinin büyük çoğunluğunu kapsar.
 
-Crossref, DOI'lerin merkezi kayıt altyapısıdır (Crossref, 2026): DOI taşıyan her makale bu altyapı üzerinden sorgulanabilir. PubMed, biyomedikal ve sağlık literatürünün ulusal kütüphane altyapısıdır (National Library of Medicine, 2026); klinik psikoloji ve halk sağlığı araştırmacıları için Crossref'in kapsamadığı birçok kaynağı barındırır. Semantic Scholar ise anlamsal arama ve atıf grafiği sunarak bir makalenin hangi sonraki çalışmalar tarafından atıflandığını görünür kılar.
+Crossref, DOI'lerin merkezi kayıt altyapısıdır (Crossref, 2026): DOI taşıyan her makale bu altyapı üzerinden sorgulanabilir. PubMed, biyomedikal ve sağlık literatürünün ulusal kütüphane altyapısıdır (National Library of Medicine, 2026). Klinik psikoloji ve halk sağlığı araştırmacıları için Crossref'in kapsamadığı birçok kaynağı barındırır. Semantic Scholar ise anlamsal arama ve atıf grafiği sunarak bir makalenin hangi sonraki çalışmalar tarafından atıflandığını görünür kılar.
 
 Tek bir indekse güvenmenin yaratacağı kör noktalar soyut bir iddia değildir. Bramer ve diğerleri (2017), sistematik derleme arama stratejilerini karşılaştırdıkları prospektif çalışmada farklı veri tabanı kombinasyonlarının anlamlı ölçüde farklı geri çağırma sonuçları ürettiğini göstermiştir: hiçbir tek veri tabanı ilgili literatürün tamamını kapsamadı ve veri tabanları arasındaki örtüşme önemli ölçüde eksikti. Tek bir indekse güvenmek araştırmacıyı tam da göremeyeceği kör noktalara mahkûm eder.
 
@@ -150,7 +150,7 @@ American Psychological Association. (2020). *Publication manual of the American 
 
 Bhattacharyya, M., Miller, V. M., Bhattacharyya, D., & Miller, L. E. (2023). High rates of fabricated and inaccurate references in ChatGPT-generated medical content. *Cureus*, 15(5), e39238. https://doi.org/10.7759/cureus.39238
 
-Bramer, W. M., Rethlefsen, M. L., Kleijnen, J., & Franco, O. H. (2017). Optimal database combinations for literature searches in systematic reviews: A prospective exploratory study. *Systematic Reviews*, 6, 245. https://doi.org/10.1186/s13643-017-0644-y
+Bramer, W. M., Rethlefsen, M. L., Kleijnen, J., & Franco, O. H. (2017). Optimal database combinations for literature searches in systematic reviews: A prospective exploratory study. *Systematic Reviews*, 6(1), Article 245. https://doi.org/10.1186/s13643-017-0644-y
 
 Crossref. (2026). *Crossref REST API documentation*. https://api.crossref.org/swagger-ui
 
@@ -170,7 +170,7 @@ Walters, W. H., & Wilder, E. I. (2023). Fabrication and errors in the bibliograp
 
 **Kitapçık kimliği.** `007-02-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-04
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 1936 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 10
 **Uydurma atıf sayısı.** 0

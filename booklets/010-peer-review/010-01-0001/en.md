@@ -6,7 +6,7 @@ category: "010-peer-review"
 language: "en"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-04"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-04"
+human_review_date: "2026-06-20"
 verified_citations_count: 8
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -33,7 +33,7 @@ status: "release"
 
 # Rebuttal Letters with Traceability Matrices
 
-The previous booklet defined the ethical framework as a workflow document built from the start. This booklet moves to the most critical moment where that framework is tested: the reviewer response letter. Among all the text types in a social science researcher's professional production, the rebuttal letter is the one where a single structural failure can close the door a second time: a skipped comment, an unjustified partial response, a contradiction left unaddressed. An unstructured response letter most often ends in a second rejection. A traceability matrix manages that risk by making every comment visible and every response traceable. The aim here is to show a workflow that builds this matrix semi-automatically with Claude Code while preserving artificial intelligence disclosure ethics.
+The previous booklet defined the ethical framework as a workflow document built from the start. This booklet moves to the most critical moment where that framework is tested: the reviewer response letter. Among all the text types in professional academic production, the rebuttal letter is the one where a single structural failure can close the door a second time: a skipped comment, an unjustified partial response, a contradiction left unaddressed. An unstructured response letter most often ends in a second rejection. A traceability matrix manages that risk by making every comment visible and every response traceable. The aim here is to show a workflow that builds this matrix semi-automatically with Claude Code while preserving artificial intelligence disclosure ethics.
 
 ## 1. The Structure of the Reviewer Response Letter
 
@@ -130,7 +130,7 @@ Bordage, G. (2001). Reasons reviewers reject and accept manuscripts: The strengt
 
 Else, H. (2023). Abstracts written by ChatGPT fool scientists. *Nature*, 613(7944), 423. https://doi.org/10.1038/d41586-023-00056-7
 
-Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 30(7-8), 1-9. https://doi.org/10.1080/08989621.2023.2168535
+Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
 Noble, W. S. (2017). Ten simple rules for writing a response to reviewers. *PLOS Computational Biology*, 13(10), e1005730. https://doi.org/10.1371/journal.pcbi.1005730
 
@@ -144,7 +144,7 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 
 **Booklet ID.** `010-01-0001`
 **Version.** `0.1.0`
-**Date.** 2026-06-04
+**Date.** 2026-06-20
 **Approximate word count.** 2540 (English body text, measured with wc)
 **Verified citations.** 8
 **Hallucinated citations.** 0

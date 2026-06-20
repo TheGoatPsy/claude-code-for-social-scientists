@@ -6,7 +6,7 @@ category: "007-academic-writing"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-12"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-12"
+human_review_date: "2026-06-20"
 verified_citations_count: 8
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -102,7 +102,7 @@ Belcher, W. L. (2019). *Writing your journal article in twelve weeks: A guide to
 
 Bordage, G. (2001). Reasons reviewers reject and accept manuscripts: The strengths and weaknesses in medical education reports. *Academic Medicine*, 76(9), 889–896. https://doi.org/10.1097/00001888-200109000-00010
 
-Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 30(7-8), 1-9. https://doi.org/10.1080/08989621.2023.2168535
+Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
 Noy, S., & Zhang, W. (2023). Experimental evidence on the productivity effects of generative artificial intelligence. *Science*, 381(6654), 187-192. https://doi.org/10.1126/science.adh2586
 
@@ -116,7 +116,7 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 
 **Kitapçık kimliği.** `007-01-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-12
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 1507 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 8
 **Uydurma atıf sayısı.** 0

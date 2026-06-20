@@ -6,7 +6,7 @@ category: "006-mcp-plugins"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-12"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-12"
+human_review_date: "2026-06-20"
 verified_citations_count: 6
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -100,7 +100,7 @@ Anthropic. (2024). *Model Context Protocol*. https://modelcontextprotocol.io
 
 Anthropic. (2026). *Claude Code documentation*. https://docs.claude.com/en/docs/claude-code
 
-Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 30(7-8), 1-9. https://doi.org/10.1080/08989621.2023.2168535
+Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
 Tenopir, C., Allard, S., Douglass, K., Aydinoglu, A. U., Wu, L., Read, E., Manoff, M., & Frame, M. (2011). Data sharing by scientists: Practices and perceptions. *PLoS ONE*, 6(6), e21101. https://doi.org/10.1371/journal.pone.0021101
 
@@ -112,7 +112,7 @@ Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (
 
 **Kitapçık kimliği.** `006-01-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-12
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 1240 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0

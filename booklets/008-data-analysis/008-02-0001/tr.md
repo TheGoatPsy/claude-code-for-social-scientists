@@ -6,7 +6,7 @@ category: "008-data-analysis"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-05-29"
-date_last_revised: "2026-06-08"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-05"
+human_review_date: "2026-06-20"
 verified_citations_count: 11
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -91,11 +91,11 @@ Araştırma sorusuna hangi test yanıt verir? Hangi varsayım, alanın kuramı v
 
 Bu disiplin, oturum başlamadan önce spesifikasyon günlüğüne işlenebilecek somut ve uygulanabilir bir protokole iner.
 
-Birincil testi ve varsayımlarını, ajana danışmadan önce günlüğe işleyin. Bu tek adım, sonraki her şeyin dürüstlüğünü belirler: ilerleyen aşamada ajanın ürettiği her alternatif, sonradan keşfedilmiş bir seçenek olarak işaretlenebilir. Ajandan ardından savunulabilir alternatiflerin tamamını, makul spesifikasyonların açıkça tanımlanmış çok-evreni olarak sıralamasını isteyin; herhangi bir sonuca bakmadan önce bu kümeyi kapatın.
+Birincil testi ve varsayımlarını, ajana danışmadan önce günlüğe işleyin. Bu tek adım, sonraki her şeyin dürüstlüğünü belirler: ilerleyen aşamada ajanın ürettiği her alternatif, sonradan keşfedilmiş bir seçenek olarak işaretlenebilir. Ajandan ardından savunulabilir alternatiflerin tamamını, makul spesifikasyonların açıkça tanımlanmış çok-evreni olarak sıralamasını isteyin. Herhangi bir sonuca bakmadan önce bu kümeyi kapatın.
 
-Tanımlanan spesifikasyonlar üzerinde çok-evrenli ya da spesifikasyon eğrisi analizini çalıştırın ve sonuçların dağılımını raporlayın. Varsayım tanıları ajanın düz metin özetinden değil, ham sayısal çıktıdan okunur: istatistiğin kendisi konuşur. Günlükte doğrulayıcı ile keşfedici çizgi ayrık tutulur; önceden belirtilmiş birincil test doğrulayıcı iddiayı taşır, oturum sırasında ortaya çıkan ek testler keşfedici etiket alır. Ajanın danışmanlık rolünü makalenin yöntem bölümünde ya da yapay zekâ katkı beyanında açıklayın: hangi analizde, hangi biçimde ve ne ölçüde yapay zekâya başvurulduğu bu beyan içinde belirtilmelidir.
+Tanımlanan spesifikasyonlar üzerinde çok-evrenli ya da spesifikasyon eğrisi analizini çalıştırın ve sonuçların dağılımını raporlayın. Varsayım tanıları ajanın düz metin özetinden değil, ham sayısal çıktıdan okunur: istatistiğin kendisi konuşur. Günlükte doğrulayıcı ile keşfedici çizgi ayrık tutulur. Önceden belirtilmiş birincil test doğrulayıcı iddiayı taşır, oturum sırasında ortaya çıkan ek testler keşfedici etiket alır. Ajanın danışmanlık rolünü makalenin yöntem bölümünde ya da yapay zekâ katkı beyanında açıklayın: hangi analizde, hangi biçimde ve ne ölçüde yapay zekâya başvurulduğu bu beyan içinde belirtilmelidir.
 
-Bu protokol, Wicherts ve diğerlerinin (2016) serbestlik dereceleri kontrol listesini, çok-evrenli ve spesifikasyon eğrisi raporlamasını ve ön kayıt zihniyetini tek bir ajan tabanlı danışma akışında birleştirir. Protokol olmadan ajanın kolaylığı seçici raporlamayı doğrudan besler: işe yarayan testi sunar, araştırmacı kabul eder, alternatiflerin var olduğunu hiçbir kayıt göstermez. Protokolle birlikte danışma, savunulabilir bir çıkarımsal zincirin parçası olur. Ajan test uzayını hızla tarar. Protokol bu hızı şeffaflığın araçlarından birine dönüştürür; araştırmacı önceden belirlemediği bir sonucun peşinde değil, savunulabilir bir çıkarımın izinde çalışır.
+Bu protokol, Wicherts ve diğerlerinin (2016) serbestlik dereceleri kontrol listesini, çok-evrenli ve spesifikasyon eğrisi raporlamasını ve ön kayıt zihniyetini tek bir ajan tabanlı danışma akışında birleştirir. Protokol olmadan ajanın kolaylığı seçici raporlamayı doğrudan besler: işe yarayan testi sunar, araştırmacı kabul eder, alternatiflerin var olduğunu hiçbir kayıt göstermez. Protokolle birlikte danışma, savunulabilir bir çıkarımsal zincirin parçası olur. Ajan test uzayını hızla tarar. Protokol bu hızı şeffaflığın araçlarından birine dönüştürür. Araştırmacı önceden belirlemediği bir sonucun peşinde değil, savunulabilir bir çıkarımın izinde çalışır.
 
 ## 9. Bir Sonraki Kitapçık
 
@@ -117,7 +117,7 @@ Hicks, M. T., Humphries, J., & Slater, J. (2024). ChatGPT is bullshit. *Ethics a
 
 Lyttelton, T., Massenkoff, M., & Wilmers, N. (2026). *Coding agents in the social sciences*. Anthropic. https://www.anthropic.com/research/coding-agents-social-sciences
 
-Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Percie du Sert, N., Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., & Ioannidis, J. P. A. (2017). A manifesto for reproducible science. *Nature Human Behaviour*, 1, 0021. https://doi.org/10.1038/s41562-016-0021
+Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Percie du Sert, N., Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., & Ioannidis, J. P. A. (2017). A manifesto for reproducible science. *Nature Human Behaviour*, 1(1), Article 0021. https://doi.org/10.1038/s41562-016-0021
 
 Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. *Proceedings of the National Academy of Sciences*, 115(11), 2600-2606. https://doi.org/10.1073/pnas.1708274114
 
@@ -129,13 +129,13 @@ Simonsohn, U., Simmons, J. P., & Nelson, L. D. (2020). Specification curve analy
 
 Steegen, S., Tuerlinckx, F., Gelman, A., & Vanpaemel, W. (2016). Increasing transparency through a multiverse analysis. *Perspectives on Psychological Science*, 11(5), 702-712. https://doi.org/10.1177/1745691616658637
 
-Wicherts, J. M., Veldkamp, C. L. S., Augusteijn, H. E. M., Bakker, M., van Aert, R. C. M., & van Assen, M. A. L. M. (2016). Degrees of freedom in planning, running, analyzing, and reporting psychological studies: A checklist to avoid p-hacking. *Frontiers in Psychology*, 7, 1832. https://doi.org/10.3389/fpsyg.2016.01832
+Wicherts, J. M., Veldkamp, C. L. S., Augusteijn, H. E. M., Bakker, M., van Aert, R. C. M., & van Assen, M. A. L. M. (2016). Degrees of freedom in planning, running, analyzing, and reporting psychological studies: A checklist to avoid p-hacking. *Frontiers in Psychology*, 7, Article 1832. https://doi.org/10.3389/fpsyg.2016.01832
 
 ---
 
 **Kitapçık kimliği.** `008-02-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-04
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 1751 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 11
 **Uydurma atıf sayısı.** 0

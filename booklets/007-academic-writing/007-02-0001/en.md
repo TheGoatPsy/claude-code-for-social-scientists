@@ -6,7 +6,7 @@ category: "007-academic-writing"
 language: "en"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-04"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-04"
+human_review_date: "2026-06-20"
 verified_citations_count: 10
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -150,7 +150,7 @@ American Psychological Association. (2020). *Publication manual of the American 
 
 Bhattacharyya, M., Miller, V. M., Bhattacharyya, D., & Miller, L. E. (2023). High rates of fabricated and inaccurate references in ChatGPT-generated medical content. *Cureus*, 15(5), e39238. https://doi.org/10.7759/cureus.39238
 
-Bramer, W. M., Rethlefsen, M. L., Kleijnen, J., & Franco, O. H. (2017). Optimal database combinations for literature searches in systematic reviews: A prospective exploratory study. *Systematic Reviews*, 6, 245. https://doi.org/10.1186/s13643-017-0644-y
+Bramer, W. M., Rethlefsen, M. L., Kleijnen, J., & Franco, O. H. (2017). Optimal database combinations for literature searches in systematic reviews: A prospective exploratory study. *Systematic Reviews*, 6(1), Article 245. https://doi.org/10.1186/s13643-017-0644-y
 
 Crossref. (2026). *Crossref REST API documentation*. https://api.crossref.org/swagger-ui
 
@@ -170,7 +170,7 @@ Walters, W. H., & Wilder, E. I. (2023). Fabrication and errors in the bibliograp
 
 **Booklet ID.** `007-02-0001`
 **Version.** `0.1.0`
-**Date.** 2026-06-04
+**Date.** 2026-06-20
 **Word count (approx.).** 2413 (English body text, measured with wc)
 **Verified citations.** 10
 **Hallucinated citations.** 0

@@ -6,7 +6,7 @@ category: "002-academic-access"
 language: "tr"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-05"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "co-drafting"
 human_review: "complete"
-human_review_date: "2026-06-05"
+human_review_date: "2026-06-20"
 verified_citations_count: 10
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -121,7 +121,7 @@ Etik düzeyde, dil asimetrisi bir görünürlük sorununu da beraberinde getirir
 
 Türk ve Yunan kütüphanelerinin ve yayıncı paketlerinin kullanıcı sözleşmeleri, neyin yapılıp neyin yapılamayacağını belirler. Bir Claude Code iş akışında bu sınırlar her zaman gözetilmelidir. Otomatik toplu indirme yasaktır. Erişim kişiseldir, devredilemez ve abonelikli içerik konsorsiyum dışına aktarılamaz. Bu kurallar, erişimin var olmasının koşuludur.
 
-Bir başka etik katman kaynak kalitesidir. Demir (2018), yağmacı dergilerin nerede kurulduğunu ve araştırmacıların neden onlarda yayımladığını inceleyen karma yöntemli çalışmasında, bu tür dergilerin büyük çoğunluğunun gelişmekte olan ülkelerde konumlandığını ve kurumsal baskıların araştırmacıları düşük kaliteli dergilere yönelten etkenler arasında olduğunu bulmuştur. Bu çalışmanın kapsamı Türkiye'ye özgü değil, geneldir. Bununla birlikte teşvik sistemlerinin yayım tercihlerini şekillendirdiği her bölgesel bağlamda, araştırmacıları düşük kaliteli yayınlara iten yapısal baskılara ilişkin bulguları doğrudan geçerlidir. Bu kitapçık belirli dergi adları vermez, çünkü listeler hızla değişir ve yanlış bir suçlamanın ağır sonuçları olur. Bunun yerine ilke düzeyinde bir güvence önerir. TR Dizin kapsamı, konsorsiyum üyeliği ve kurumsal kütüphane onayı, bir kaynağın güvenilirliği için çok katmanlı bir filtre oluşturur. Açık bilim çerçevesi bu filtreyi tamamlar. UNESCO'nun (2021) açık bilim tavsiyesi, erişim, kalite ve hakkaniyeti bir arada ele alan uluslararası bir politika zemini sunar. Tavsiye metni bu boyutları birbirini destekleyen ilkeler olarak çerçeveler.
+Bir başka etik katman kaynak kalitesidir. Demir (2018), yağmacı dergilerin nerede kurulduğunu ve araştırmacıların neden onlarda yayımladığını inceleyen çalışmasında, bu tür dergilerin büyük çoğunluğunun gelişmekte olan ülkelerde konumlandığını ve kurumsal baskıların araştırmacıları düşük kaliteli dergilere yönelten etkenler arasında olduğunu bulmuştur. Bu çalışmanın kapsamı Türkiye'ye özgü değil, geneldir. Bununla birlikte teşvik sistemlerinin yayım tercihlerini şekillendirdiği her bölgesel bağlamda, araştırmacıları düşük kaliteli yayınlara iten yapısal baskılara ilişkin bulguları doğrudan geçerlidir. Bu kitapçık belirli dergi adları vermez, çünkü listeler hızla değişir ve yanlış bir suçlamanın ağır sonuçları olur. Bunun yerine ilke düzeyinde bir güvence önerir. TR Dizin kapsamı, konsorsiyum üyeliği ve kurumsal kütüphane onayı, bir kaynağın güvenilirliği için çok katmanlı bir filtre oluşturur. Açık bilim çerçevesi bu filtreyi tamamlar. UNESCO'nun (2021) açık bilim tavsiyesi, erişim, kalite ve hakkaniyeti bir arada ele alan uluslararası bir politika zemini sunar. Tavsiye metni bu boyutları birbirini destekleyen ilkeler olarak çerçeveler.
 
 ## 11. Hafıza Sistemine Köprü
 
@@ -155,7 +155,7 @@ YÖK. (2026). *Yükseköğretim Kurulu Ulusal Tez Merkezi*. https://tez.yok.gov.
 
 **Kitapçık kimliği.** `002-04-0001`
 **Sürüm.** `0.1.0`
-**Tarih.** 2026-06-04
+**Tarih.** 2026-06-20
 **Sözcük sayısı (yaklaşık).** 2087 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 10
 **Uydurma atıf sayısı.** 0

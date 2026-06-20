@@ -6,7 +6,7 @@ category: "001-foundations"
 language: "en"
 version: "0.1.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-04"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-04"
+human_review_date: "2026-06-20"
 verified_citations_count: 10
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -39,7 +39,7 @@ The first booklet of this guide established what Claude Code is for the social s
 
 The first booklet defined Claude Code as a tool that closes the gap between a notebook and a laboratory assistant. The emphasis there was the identity of the tool and the methodological framework of the user. This booklet asks a different question: how does the interface through which the tool works shape the production process?
 
-A chat window in a browser and an agent at the command line appear, on the surface, to do the same job. You type a question into each, and each produces an answer. The resemblance is deceptive. The first booklet recalled that case formulation is built on the biopsychosocial model (Engel, 1977). The difference between seeing a patient as a symptom list and seeing them as a system operating simultaneously is the difference between diagnosis and formulation. The difference between chat and agent belongs to the same category. Chat is a past-moment, a single interaction that ends when the tab is closed. An agent is a session-narrative: a continuing process bound to a file system, to its own earlier decisions, and to external tools.
+A chat window in a browser and an agent at the command line appear, on the surface, to do the same job. You type a question into each, and each produces an answer. The resemblance is deceptive. The first booklet recalled that case formulation is built on the biopsychosocial model (Engel, 1977). The difference between seeing a patient as a symptom list and seeing them as a system operating simultaneously is the difference between diagnosis and formulation. The difference between chat and agent belongs to the same category. Chat belongs to a single passing moment, one interaction that ends when the tab is closed. An agent is a session-narrative: a continuing process bound to a file system, to its own earlier decisions, and to external tools.
 
 Academic production, by its nature, requires a session-narrative. A systematic review is not a task that finishes in one sitting. A manuscript revision is not completed in a single response. A literature map is the accumulation of decisions made over weeks. For this reason, the interface through which the tool works is not cosmetic for the academic. It is methodologically decisive. This booklet opens that decisiveness in sequence: the anatomy of chat, the anatomy of the agent, the role of tools and subagents, and the concrete effect on academic production.
 
@@ -141,7 +141,7 @@ Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023)
 
 **Booklet identifier.** `001-01-0002`
 **Version.** `0.1.0`
-**Date.** 2026-06-04
+**Date.** 2026-06-20
 **Approximate word count.** 2699 (English body text, measured with wc)
 **Verified citations.** 10
 **Fabricated citations.** 0

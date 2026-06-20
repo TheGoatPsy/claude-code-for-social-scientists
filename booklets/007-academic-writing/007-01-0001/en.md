@@ -6,7 +6,7 @@ category: "007-academic-writing"
 language: "en"
 version: "0.1.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-12"
+date_last_revised: "2026-06-20"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-12"
+human_review_date: "2026-06-20"
 verified_citations_count: 8
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -89,7 +89,7 @@ When the scaffold is complete, each section is tested against its own question. 
 
 Because these questions take yes or no for an answer, the list is a real filter rather than a ceremony. Bilingual parity joins the same list. Do the two versions have the same section count, do the title and abstract carry the same claim, are the citation sets identical? Claude Code runs the list and reports the deviations. The decision stays at its usual address.
 
-## 10. Bridge, to Citation Discipline
+## 10. Bridge to Citation Discipline
 
 The scaffold is standing and the body exists in two languages. The next load-bearing element is the soundness of the sources the text rests on, at the level of the record itself. The next booklet covers APA 7 form and the DOI verification discipline: why a fabricated citation is an integrity breach rather than a formatting error, how every DOI is verified before it enters a publication, and how Claude Code automates that verification.
 
@@ -103,7 +103,7 @@ Belcher, W. L. (2019). *Writing your journal article in twelve weeks: A guide to
 
 Bordage, G. (2001). Reasons reviewers reject and accept manuscripts: The strengths and weaknesses in medical education reports. *Academic Medicine*, 76(9), 889–896. https://doi.org/10.1097/00001888-200109000-00010
 
-Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 30(7-8), 1-9. https://doi.org/10.1080/08989621.2023.2168535
+Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
 Noy, S., & Zhang, W. (2023). Experimental evidence on the productivity effects of generative artificial intelligence. *Science*, 381(6654), 187-192. https://doi.org/10.1126/science.adh2586
 
@@ -117,7 +117,7 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 
 **Booklet ID.** `007-01-0001`
 **Version.** `0.1.0`
-**Date.** 2026-06-12
+**Date.** 2026-06-20
 **Approximate word count.** 1882 (English body text, measured with wc)
 **Verified citations.** 8
 **Hallucinated citations.** 0
