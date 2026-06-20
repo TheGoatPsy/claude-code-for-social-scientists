@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Claude Code for Social Scientists</title>
 <meta name="description" content="A bilingual, open-source guide for social scientists using Anthropic's Claude Code in research, teaching, and academic writing. Sosyal bilimciler için iki dilli, açık kaynak bir Claude Code rehberi.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234f46e5'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' fill='white' text-anchor='middle'%3Ecc%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f5b6b'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23e9c879' text-anchor='middle' font-style='italic'%3Ecc%3C/text%3E%3C/svg%3E">
 <link rel="canonical" href="https://thegoatpsy.github.io/claude-code-for-social-scientists/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thegoatpsy.github.io/claude-code-for-social-scientists/">
@@ -16,193 +16,285 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Claude Code for Social Scientists">
 <meta name="twitter:description" content="A bilingual, open-source guide for social scientists using Anthropic's Claude Code in research, teaching, and academic writing.">
+
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/newsreader-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/sourcesans-latin.woff2" crossorigin>
+
 <style>
-  :root {
-    --bg: #fbfbf9;
-    --surface: #ffffff;
-    --surface-2: #f4f4f0;
-    --ink: #16161a;
-    --muted: #5d5d68;
-    --faint: #8a8a94;
-    --line: #e6e6df;
-    --accent: #4f46e5;
-    --accent-ink: #4338ca;
-    --accent-soft: #eef0fe;
-    --good: #15803d;
-    --term-bg: #0d1117;
-    --term-ink: #e6edf3;
-    --term-line: #21262d;
-    --term-prompt: #7ee787;
-    --term-cmd: #79c0ff;
-    --radius: 9px;
-    --maxw: 1080px;
-    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, sans-serif;
-    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-  }
-  html.dark {
-    --bg: #0e0f13;
-    --surface: #15171c;
-    --surface-2: #1a1d24;
-    --ink: #e9e9e6;
-    --muted: #a2a2ad;
-    --faint: #71717f;
-    --line: #24262e;
-    --accent: #818cf8;
-    --accent-ink: #a5b4fc;
-    --accent-soft: #1c1f2e;
-    --good: #4ade80;
-    --term-bg: #06080c;
-    --term-line: #1b2029;
-  }
-  html.lang-en [lang="tr"] { display: none !important; }
-  html.lang-tr [lang="en"] { display: none !important; }
+  /* ---- Self-hosted variable subset fonts (latin + latin-ext, Turkish-complete). OFL-1.1. ---- */
+  @font-face{font-family:'Newsreader';font-style:normal;font-weight:200 800;font-display:swap;src:url(assets/fonts/newsreader-latinext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+  @font-face{font-family:'Newsreader';font-style:normal;font-weight:200 800;font-display:swap;src:url(assets/fonts/newsreader-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Newsreader';font-style:italic;font-weight:200 800;font-display:swap;src:url(assets/fonts/newsreader-italic-latinext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+  @font-face{font-family:'Newsreader';font-style:italic;font-weight:200 800;font-display:swap;src:url(assets/fonts/newsreader-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Source Sans 3';font-style:normal;font-weight:200 900;font-display:swap;src:url(assets/fonts/sourcesans-latinext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+  @font-face{font-family:'Source Sans 3';font-style:normal;font-weight:200 900;font-display:swap;src:url(assets/fonts/sourcesans-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url(assets/fonts/jbmono-latinext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url(assets/fonts/jbmono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
 
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: var(--sans);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    font-size: 17px;
-  }
-  a { color: var(--accent-ink); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
-  section[id], main[id] { scroll-margin-top: 76px; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; scroll-behavior: auto !important; } }
-  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
-  h1, h2, h3 { line-height: 1.18; letter-spacing: -0.02em; margin: 0; }
-  .mono { font-family: var(--mono); }
+  /* ---- Design tokens: "academic journal", teal + gold, OKLCH ---- */
+  :root{
+    --bg: oklch(0.984 0.004 210);
+    --surface: oklch(1 0 0);
+    --surface-2: oklch(0.965 0.006 210);
+    --ink: oklch(0.27 0.035 218);
+    --muted: oklch(0.455 0.030 218);
+    --faint: oklch(0.575 0.022 215);
+    --line: oklch(0.902 0.012 215);
+    --line-soft: oklch(0.945 0.008 215);
+    --accent: oklch(0.455 0.085 209);
+    --accent-ink: oklch(0.375 0.082 209);
+    --accent-soft: oklch(0.955 0.020 205);
+    --gold: oklch(0.800 0.115 84);
+    --gold-ink: oklch(0.515 0.098 70);
+    --good: oklch(0.520 0.120 150);
+    --term-bg: oklch(0.205 0.022 235);
+    --term-ink: oklch(0.905 0.015 210);
+    --term-line: oklch(0.305 0.020 235);
+    --term-prompt: oklch(0.82 0.16 145);
+    --term-cmd: oklch(0.80 0.10 230);
+    --term-dim: oklch(0.66 0.018 230);
 
-  /* Header */
-  header.site {
-    position: sticky; top: 0; z-index: 50;
-    background: color-mix(in srgb, var(--bg) 86%, transparent);
-    backdrop-filter: saturate(140%) blur(10px);
+    --radius: 10px;
+    --radius-lg: 16px;
+    --maxw: 1120px;
+    --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+    --sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-soft: cubic-bezier(0.33, 1, 0.68, 1);
+
+    --z-sticky: 40;
+    --z-overlay: 60;
+  }
+  html.dark{
+    --bg: oklch(0.190 0.022 220);
+    --surface: oklch(0.232 0.026 220);
+    --surface-2: oklch(0.272 0.028 220);
+    --ink: oklch(0.930 0.012 205);
+    --muted: oklch(0.725 0.020 205);
+    --faint: oklch(0.600 0.020 208);
+    --line: oklch(0.330 0.025 218);
+    --line-soft: oklch(0.285 0.022 218);
+    --accent: oklch(0.760 0.095 200);
+    --accent-ink: oklch(0.840 0.085 200);
+    --accent-soft: oklch(0.300 0.040 210);
+    --gold: oklch(0.835 0.120 84);
+    --gold-ink: oklch(0.835 0.120 84);
+    --good: oklch(0.800 0.150 155);
+    --term-bg: oklch(0.150 0.018 235);
+    --term-line: oklch(0.270 0.018 235);
+  }
+
+  html.lang-en [lang="tr"]{ display: none !important; }
+  html.lang-tr [lang="en"]{ display: none !important; }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--sans); font-size: 17px; line-height: 1.62;
+    font-optical-sizing: auto; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  }
+  a{ color: var(--accent); text-decoration: none; }
+  a:hover{ color: var(--accent-ink); text-decoration: underline; text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  section[id], main[id]{ scroll-margin-top: 84px; }
+  h1, h2, h3{ font-family: var(--serif); font-weight: 560; line-height: 1.12; letter-spacing: -0.018em; margin: 0; text-wrap: balance; }
+  p{ text-wrap: pretty; }
+  .mono{ font-family: var(--mono); }
+  .wrap{ max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+
+  .rule{ display: inline-block; width: 38px; height: 2px; background: var(--gold); border-radius: 2px; margin-bottom: 20px; }
+  .label{ font-family: var(--mono); font-size: 12px; letter-spacing: .02em; color: var(--gold-ink); font-weight: 600; }
+  .standfirst{ font-family: var(--serif); font-style: italic; font-size: clamp(1.06rem, 1rem + .5vw, 1.3rem); color: var(--muted); margin-top: 14px; max-width: 60ch; line-height: 1.5; }
+
+  /* ---------- Header ---------- */
+  header.site{
+    position: sticky; top: 0; z-index: var(--z-sticky);
+    background: color-mix(in oklab, var(--bg) 82%, transparent);
+    backdrop-filter: saturate(150%) blur(12px);
     border-bottom: 1px solid var(--line);
   }
-  .nav { display: flex; align-items: center; gap: 20px; height: 60px; }
-  .brand { display: flex; align-items: center; gap: 10px; font-weight: 650; letter-spacing: -0.02em; color: var(--ink); }
-  .brand .logo { width: 26px; height: 26px; border-radius: 7px; background: var(--accent); color: #fff; display: grid; place-items: center; font-family: var(--mono); font-size: 13px; font-weight: 700; }
-  .nav .links { display: flex; gap: 18px; margin-left: 14px; }
-  .nav .links a { color: var(--muted); font-size: 14.5px; font-weight: 500; }
-  .nav .links a:hover { color: var(--ink); text-decoration: none; }
-  .nav .spacer { flex: 1; }
-  .ctl { display: inline-flex; align-items: center; gap: 8px; }
-  .btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); padding: 8px 14px; font-size: 14px; font-weight: 560; cursor: pointer; font-family: var(--sans); }
-  .btn:hover { border-color: var(--accent); text-decoration: none; }
-  .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
-  .btn.primary:hover { background: var(--accent-ink); }
-  .btn.ghost { background: transparent; }
-  .icon-btn { width: 36px; height: 36px; padding: 0; justify-content: center; }
-  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
-  .seg button { border: 0; background: var(--surface); color: var(--muted); font-family: var(--mono); font-size: 12.5px; font-weight: 600; padding: 7px 10px; cursor: pointer; }
-  .seg button.on { background: var(--accent); color: #fff; }
-  @media (max-width: 760px) { .nav .links { display: none; } }
+  .nav{ display: flex; align-items: center; gap: 22px; height: 64px; }
+  .brand{ display: inline-flex; align-items: center; gap: 11px; color: var(--ink); font-family: var(--serif); font-weight: 600; font-size: 18px; letter-spacing: -0.01em; }
+  .brand:hover{ text-decoration: none; }
+  .brand .logo{ width: 30px; height: 30px; border-radius: 8px; background: var(--accent); color: #fff; display: grid; place-items: center; font-family: var(--serif); font-style: italic; font-size: 16px; font-weight: 600; box-shadow: inset 0 0 0 1px color-mix(in oklab, #000 12%, transparent); }
+  .brand .logo b{ color: var(--gold); font-style: italic; font-weight: 600; }
+  .brand .sub{ color: var(--faint); font-weight: 400; font-size: 15px; }
+  .nav .links{ display: flex; gap: 4px; margin-left: 10px; }
+  .nav .links a{ color: var(--muted); font-size: 15px; font-weight: 500; padding: 7px 11px; border-radius: 8px; }
+  .nav .links a:hover{ color: var(--ink); background: var(--surface-2); text-decoration: none; }
+  .nav .spacer{ flex: 1; }
+  .ctl{ display: inline-flex; align-items: center; gap: 9px; }
+  .btn{ display: inline-flex; align-items: center; gap: 8px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); padding: 9px 15px; font-size: 14.5px; font-weight: 600; font-family: var(--sans); cursor: pointer; transition: border-color .2s var(--ease-soft), background .2s var(--ease-soft), color .2s var(--ease-soft), transform .2s var(--ease); }
+  .btn:hover{ border-color: var(--accent); text-decoration: none; transform: translateY(-1px); }
+  .btn.primary{ background: var(--accent); color: #fff; border-color: var(--accent); }
+  html.dark .btn.primary{ color: oklch(0.16 0.02 220); }
+  .btn.primary:hover{ background: var(--accent-ink); border-color: var(--accent-ink); }
+  .btn.ghost{ background: transparent; }
+  .icon-btn{ width: 38px; height: 38px; padding: 0; justify-content: center; font-size: 16px; }
+  .seg{ display: inline-flex; border: 1px solid var(--line); border-radius: 9px; overflow: hidden; }
+  .seg button{ border: 0; background: var(--surface); color: var(--muted); font-family: var(--mono); font-size: 12.5px; font-weight: 600; padding: 8px 11px; cursor: pointer; transition: background .18s, color .18s; }
+  .seg button.on{ background: var(--accent); color: #fff; }
+  html.dark .seg button.on{ color: oklch(0.16 0.02 220); }
+  @media (max-width: 820px){ .nav .links{ display: none; } .brand .sub{ display: none; } }
 
-  /* Hero */
-  .hero { padding: 78px 0 36px; position: relative; }
-  .hero::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(var(--line) 1px, transparent 1px); background-size: 26px 26px; opacity: .5; mask-image: linear-gradient(to bottom, #000, transparent 70%); -webkit-mask-image: linear-gradient(to bottom, #000, transparent 70%); pointer-events: none; }
-  .eyebrow { position: relative; display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 12.5px; letter-spacing: .04em; color: var(--accent-ink); background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent); padding: 5px 11px; border-radius: 999px; text-transform: uppercase; }
-  .hero h1 { position: relative; font-size: clamp(34px, 6vw, 60px); font-weight: 700; margin: 22px 0 0; max-width: 16ch; }
-  .hero .lead { position: relative; color: var(--muted); font-size: clamp(17px, 2.2vw, 20px); margin: 18px 0 0; max-width: 60ch; }
-  .hero-cta { position: relative; display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 0; }
-  .hero-meta { position: relative; margin-top: 22px; color: var(--faint); font-size: 13.5px; display: flex; flex-wrap: wrap; gap: 8px 18px; }
-  .hero-meta b { color: var(--muted); font-weight: 600; }
+  /* ---------- Hero ---------- */
+  .hero{ position: relative; padding: clamp(56px, 8vw, 96px) 0 clamp(40px, 5vw, 64px); overflow: hidden; }
+  .hero::before{
+    content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+    background:
+      radial-gradient(120% 80% at 85% -10%, color-mix(in oklab, var(--gold) 14%, transparent), transparent 55%),
+      radial-gradient(90% 70% at 5% 0%, color-mix(in oklab, var(--accent) 12%, transparent), transparent 50%);
+    opacity: .7;
+    mask-image: linear-gradient(to bottom, #000, transparent 92%);
+    -webkit-mask-image: linear-gradient(to bottom, #000, transparent 92%);
+  }
+  .hero .wrap{ position: relative; z-index: 1; }
+  .hero-grid{ display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(28px, 4vw, 64px); align-items: center; }
+  .eyebrow{ display: inline-flex; align-items: center; gap: 9px; font-family: var(--mono); font-size: 12.5px; letter-spacing: .01em; color: var(--accent-ink); background: var(--accent-soft); border: 1px solid color-mix(in oklab, var(--accent) 22%, transparent); padding: 6px 13px; border-radius: 999px; }
+  .eyebrow .dot{ width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+  .hero h1{ font-size: clamp(2.3rem, 1.5rem + 3.6vw, 3.9rem); font-weight: 520; letter-spacing: -0.026em; margin: 22px 0 0; max-width: 17ch; }
+  .hero h1 em{ font-style: italic; color: var(--accent); }
+  .hero .lead{ color: var(--muted); font-size: clamp(1.06rem, 1rem + .5vw, 1.2rem); line-height: 1.55; margin: 20px 0 0; max-width: 56ch; }
+  .hero-cta{ display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 0; }
+  .hero-meta{ margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px 26px; }
+  .hero-meta .m{ display: flex; align-items: baseline; gap: 7px; font-size: 14px; color: var(--faint); }
+  .hero-meta .m b{ font-family: var(--mono); font-size: 15px; font-weight: 600; color: var(--ink); }
+  .hero-meta .m b.ok{ color: var(--good); }
 
   /* Terminal */
-  .term { background: var(--term-bg); border: 1px solid var(--term-line); border-radius: var(--radius); overflow: hidden; box-shadow: 0 1px 0 rgba(0,0,0,.04); }
-  .term-bar { display: flex; align-items: center; gap: 7px; padding: 9px 13px; border-bottom: 1px solid var(--term-line); }
-  .term-bar .dot { width: 11px; height: 11px; border-radius: 50%; background: #30363d; }
+  .term{ background: var(--term-bg); border: 1px solid var(--term-line); border-radius: var(--radius); overflow: hidden; box-shadow: 0 18px 50px -28px color-mix(in oklab, var(--accent) 60%, #000); }
+  .term-bar{ display: flex; align-items: center; gap: 7px; padding: 10px 14px; border-bottom: 1px solid var(--term-line); }
+  .term-bar .dot{ width: 11px; height: 11px; border-radius: 50%; background: #30363d; }
   .term-bar .dot:nth-child(1){ background:#ff5f56; } .term-bar .dot:nth-child(2){ background:#ffbd2e; } .term-bar .dot:nth-child(3){ background:#27c93f; }
-  .term-bar .t { margin-left: 8px; color: #8b949e; font-family: var(--mono); font-size: 12px; }
-  .term-bar .copy { margin-left: auto; background: transparent; border: 1px solid var(--term-line); color: #8b949e; font-family: var(--mono); font-size: 11.5px; padding: 3px 9px; border-radius: 6px; cursor: pointer; }
-  .term-bar .copy:hover { color: var(--term-ink); border-color: #3d444d; }
-  .term pre { margin: 0; padding: 15px 16px; overflow-x: auto; }
-  .term code { font-family: var(--mono); font-size: 13.5px; color: var(--term-ink); line-height: 1.85; white-space: pre; }
-  .term .p { color: var(--term-prompt); user-select: none; }
-  .term .c { color: var(--term-cmd); }
-  .term .o { color: #8b949e; }
-  .hero .term { position: relative; margin-top: 30px; max-width: 560px; }
+  .term-bar .t{ margin-left: 8px; color: var(--term-dim); font-family: var(--mono); font-size: 12px; }
+  .term-bar .copy{ margin-left: auto; background: transparent; border: 1px solid var(--term-line); color: var(--term-dim); font-family: var(--mono); font-size: 11.5px; padding: 4px 10px; border-radius: 6px; cursor: pointer; transition: color .18s, border-color .18s; }
+  .term-bar .copy:hover{ color: var(--term-ink); border-color: color-mix(in oklab, var(--term-ink) 40%, transparent); }
+  .term pre{ margin: 0; padding: 16px 17px; overflow-x: auto; }
+  .term code{ font-family: var(--mono); font-size: 13.5px; color: var(--term-ink); line-height: 1.85; white-space: pre; }
+  .term .p{ color: var(--term-prompt); user-select: none; }
+  .term .c{ color: var(--term-cmd); }
+  .term .o{ color: var(--term-dim); }
+  .hero-aside{ display: grid; gap: 16px; }
+  .hero-aside .term{ max-width: 100%; }
+  .aside-note{ font-family: var(--serif); font-style: italic; color: var(--faint); font-size: 15px; line-height: 1.5; padding-left: 16px; border-left: 1px solid var(--line); }
+  @media (max-width: 900px){ .hero-grid{ grid-template-columns: 1fr; } .hero h1{ max-width: 20ch; } }
 
-  /* Stats */
-  .stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); }
-  .stats .grid { display: grid; grid-template-columns: repeat(6, 1fr); }
-  .stat { padding: 22px 16px; text-align: center; border-right: 1px solid var(--line); }
-  .stat:last-child { border-right: 0; }
-  .stat .n { font-size: 26px; font-weight: 700; letter-spacing: -0.03em; font-family: var(--mono); }
-  .stat .n.ok { color: var(--good); }
-  .stat .l { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
-  @media (max-width: 860px) { .stats .grid { grid-template-columns: repeat(3, 1fr); } .stat:nth-child(3n){ border-right: 0; } .stat:nth-child(-n+3){ border-bottom: 1px solid var(--line); } }
-  @media (max-width: 460px) { .stats .grid { grid-template-columns: repeat(2, 1fr); } }
+  /* ---------- Stats band ---------- */
+  .stats{ border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); }
+  .stats .grid{ display: grid; grid-template-columns: repeat(6, 1fr); }
+  .stat{ padding: 26px 18px; border-right: 1px solid var(--line-soft); }
+  .stat:last-child{ border-right: 0; }
+  .stat .n{ font-family: var(--mono); font-size: clamp(24px, 2.4vw, 30px); font-weight: 600; letter-spacing: -0.03em; line-height: 1; }
+  .stat .n.ok{ color: var(--good); }
+  .stat .l{ color: var(--muted); font-size: 13px; margin-top: 8px; line-height: 1.35; }
+  @media (max-width: 880px){ .stats .grid{ grid-template-columns: repeat(3, 1fr); } .stat:nth-child(3n){ border-right: 0; } .stat:nth-child(-n+3){ border-bottom: 1px solid var(--line-soft); } }
+  @media (max-width: 460px){ .stats .grid{ grid-template-columns: repeat(2, 1fr); } .stat:nth-child(odd){ border-right: 1px solid var(--line-soft); } .stat:nth-child(even){ border-right: 0; } }
 
-  /* Section scaffold */
-  section.block { padding: 66px 0; border-bottom: 1px solid var(--line); }
-  .kicker { font-family: var(--mono); font-size: 12.5px; letter-spacing: .05em; text-transform: uppercase; color: var(--accent-ink); }
-  .block h2 { font-size: clamp(26px, 3.6vw, 36px); font-weight: 700; margin-top: 12px; max-width: 22ch; }
-  .block .sub { color: var(--muted); margin-top: 12px; max-width: 64ch; font-size: 17px; }
+  /* ---------- Section scaffold ---------- */
+  section.block{ padding: clamp(56px, 7vw, 88px) 0; border-bottom: 1px solid var(--line); }
+  .block h2{ font-size: clamp(1.7rem, 1.2rem + 2.2vw, 2.5rem); font-weight: 540; letter-spacing: -0.022em; max-width: 22ch; }
+  .block .sub{ color: var(--muted); margin-top: 16px; max-width: 62ch; font-size: 17px; }
 
-  /* Pillars */
-  .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 38px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
-  .pillar { background: var(--surface); padding: 26px 24px 30px; }
-  .pillar .num { font-family: var(--mono); font-size: 13px; color: var(--accent-ink); font-weight: 700; }
-  .pillar h3 { font-size: 19px; margin-top: 14px; }
-  .pillar p { color: var(--muted); font-size: 15px; margin: 10px 0 0; }
-  @media (max-width: 820px) { .pillars { grid-template-columns: 1fr; } }
+  /* Essay prose */
+  .prose{ max-width: 66ch; }
+  .prose p{ color: var(--ink); font-size: 17px; line-height: 1.72; margin: 0 0 17px; }
+  .prose p:last-child{ margin-bottom: 0; }
+  .prose p.soft{ color: var(--muted); }
+  .pullquote{ font-family: var(--serif); font-style: italic; font-size: clamp(1.3rem, 1rem + 1.5vw, 1.85rem); line-height: 1.32; color: var(--accent); max-width: 26ch; margin: 28px 0; letter-spacing: -0.01em; }
 
-  /* Card grids */
-  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 36px; }
-  .cards.two { grid-template-columns: repeat(2, 1fr); }
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px 20px; }
-  .card .tag { font-family: var(--mono); font-size: 11.5px; color: var(--faint); }
-  .card h3 { font-size: 16.5px; margin-top: 7px; }
-  .card p { color: var(--muted); font-size: 14px; margin: 8px 0 0; }
-  .card.is-link:hover { border-color: var(--accent); }
-  @media (max-width: 860px) { .cards, .cards.two { grid-template-columns: 1fr; } }
+  /* Commitments (stacked editorial blocks) */
+  .commits{ margin-top: 44px; }
+  .commit{ padding: 30px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 250px 1fr; gap: clamp(18px, 3vw, 52px); }
+  .commit:first-child{ border-top: 2px solid var(--ink); }
+  .commit h3{ font-size: 1.35rem; font-weight: 580; max-width: 16ch; }
+  .commit .c-body{ max-width: 64ch; }
+  .commit .c-body p{ color: var(--muted); font-size: 15.5px; line-height: 1.64; margin: 0 0 12px; }
+  .commit .c-body p:last-child{ margin-bottom: 0; }
+  @media (max-width: 820px){ .commit{ grid-template-columns: 1fr; gap: 12px; } }
 
-  .skill-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 22px; margin-top: 32px; }
-  .skill { display: flex; gap: 12px; align-items: baseline; padding: 11px 0; border-bottom: 1px solid var(--line); }
-  .skill code { font-family: var(--mono); font-size: 13px; color: var(--accent-ink); background: var(--accent-soft); padding: 2px 7px; border-radius: 5px; white-space: nowrap; }
-  .skill span { color: var(--muted); font-size: 14px; }
-  @media (max-width: 760px) { .skill-list { grid-template-columns: 1fr; } }
+  /* Catalog: journal contents index */
+  .toc{ margin-top: 40px; border-top: 1px solid var(--line); }
+  .toc-row{ display: grid; grid-template-columns: 132px 1fr; gap: clamp(16px, 3vw, 40px); align-items: start; padding: 24px 12px; border-bottom: 1px solid var(--line); transition: background .25s var(--ease-soft); }
+  .toc-row:hover{ background: var(--surface-2); }
+  .toc-row .code{ font-family: var(--mono); font-size: 13px; color: var(--gold-ink); font-weight: 600; padding-top: 3px; letter-spacing: .01em; }
+  .toc-row .body h3{ font-size: 1.18rem; font-weight: 560; display: inline-flex; align-items: center; gap: 9px; }
+  .toc-row .body h3 .arw{ color: var(--accent); opacity: 0; transform: translateX(-4px); transition: opacity .25s var(--ease), transform .25s var(--ease); font-family: var(--sans); }
+  .toc-row:hover .body h3 .arw{ opacity: 1; transform: none; }
+  .toc-row .body p{ color: var(--muted); font-size: 15px; margin: 8px 0 0; max-width: 74ch; line-height: 1.58; }
+  .toc-row:hover .body h3{ color: var(--accent-ink); }
+  @media (max-width: 600px){ .toc-row{ grid-template-columns: 1fr; gap: 6px; padding: 22px 6px; } }
+  .toc-more{ margin-top: 26px; font-family: var(--serif); font-style: italic; font-size: 1.05rem; }
 
-  /* Tabs */
-  .tabs { margin-top: 34px; }
-  .tabbar { display: inline-flex; gap: 4px; padding: 4px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; }
-  .tabbar button { border: 0; background: transparent; color: var(--muted); font-family: var(--mono); font-size: 13px; font-weight: 600; padding: 7px 14px; border-radius: 7px; cursor: pointer; }
-  .tabbar button.on { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.06); }
-  .tabpane { display: none; margin-top: 16px; max-width: 620px; }
-  .tabpane.on { display: block; }
+  /* Skills index with commentary */
+  .skill-list{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 clamp(24px, 4vw, 56px); margin-top: 40px; }
+  .skill{ padding: 16px 0; border-bottom: 1px solid var(--line-soft); }
+  .skill code{ font-family: var(--mono); font-size: 12.5px; color: var(--accent-ink); font-weight: 600; }
+  .skill .lbl{ display: block; color: var(--ink); font-size: 14.5px; margin-top: 5px; font-weight: 500; }
+  .skill .note{ display: block; color: var(--muted); font-family: var(--serif); font-style: italic; font-size: 14.5px; margin-top: 7px; line-height: 1.5; }
+  @media (max-width: 760px){ .skill-list{ grid-template-columns: 1fr; } }
 
-  /* Callout */
-  .callout { margin-top: 36px; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: var(--radius); padding: 26px 26px; }
-  .callout h3 { font-size: 19px; }
-  .callout p { color: var(--muted); margin: 12px 0 0; font-size: 15.5px; }
-  .callout .row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
-  .chip { font-family: var(--mono); font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 5px 11px; }
-  .chip b { color: var(--ink); }
+  /* Quick start tabs */
+  .tabs{ margin-top: 36px; max-width: 680px; }
+  .tabbar{ display: inline-flex; gap: 4px; padding: 5px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 11px; }
+  .tabbar button{ border: 0; background: transparent; color: var(--muted); font-family: var(--mono); font-size: 13px; font-weight: 600; padding: 8px 15px; border-radius: 8px; cursor: pointer; transition: background .2s, color .2s, box-shadow .2s; }
+  .tabbar button.on{ background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px color-mix(in oklab, #000 12%, transparent); }
+  .tabpane{ display: none; margin-top: 18px; }
+  .tabpane.on{ display: block; }
+  .start-coda{ margin-top: 28px; max-width: 60ch; }
+  .start-coda p{ color: var(--muted); font-size: 16px; line-height: 1.65; margin: 0; }
 
-  /* Footer */
-  footer.site { padding: 46px 0; color: var(--muted); font-size: 14px; }
-  footer .top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; }
-  footer .col h4 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--faint); margin: 0 0 10px; font-weight: 650; }
-  footer .col a { display: block; color: var(--muted); padding: 3px 0; }
-  footer .col a:hover { color: var(--ink); }
-  footer .legal { margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--faint); }
-  footer .legal .mono { color: var(--muted); }
+  /* Disclosure callout */
+  .callout{ position: relative; margin-top: 40px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(28px, 4vw, 40px); overflow: hidden; }
+  .callout::before{ content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent), var(--gold)); }
+  .callout h3{ font-size: 1.35rem; font-weight: 580; max-width: 34ch; }
+  .callout p{ color: var(--muted); margin: 14px 0 0; font-size: 16px; max-width: 72ch; line-height: 1.62; }
+  .callout .three{ margin-top: 18px; font-family: var(--serif); font-style: italic; color: var(--ink); font-size: 1.1rem; }
+  .callout .row{ display: flex; flex-wrap: wrap; gap: 9px; margin-top: 22px; }
+  .chip{ font-family: var(--mono); font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; background: var(--bg); }
+  .chip b{ color: var(--ink); font-weight: 600; }
+
+  /* Son soz / closing */
+  .closing{ background: var(--surface-2); border-bottom: 1px solid var(--line); }
+  .closing .wrap{ max-width: 760px; padding-top: clamp(56px, 7vw, 88px); padding-bottom: clamp(56px, 7vw, 88px); }
+  .closing .lead-line{ font-family: var(--serif); font-size: clamp(1.55rem, 1.1rem + 2vw, 2.3rem); font-weight: 520; line-height: 1.22; letter-spacing: -0.02em; max-width: 20ch; }
+  .closing .lead-line em{ font-style: italic; color: var(--accent); }
+  .closing p{ color: var(--muted); font-size: 16.5px; line-height: 1.72; margin: 20px 0 0; max-width: 64ch; }
+  .closing .coda{ margin-top: 28px; font-family: var(--serif); font-style: italic; font-size: 1.15rem; color: var(--ink); line-height: 1.55; max-width: 60ch; }
+
+  /* ---------- Footer ---------- */
+  footer.site{ padding: clamp(44px, 6vw, 64px) 0 52px; color: var(--muted); font-size: 14.5px; }
+  footer .top{ display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; }
+  footer .col h4{ font-family: var(--mono); font-size: 12px; letter-spacing: .02em; color: var(--faint); margin: 0 0 12px; font-weight: 600; }
+  footer .col a{ display: block; color: var(--muted); padding: 4px 0; }
+  footer .col a:hover{ color: var(--accent-ink); }
+  footer .brand{ margin-bottom: 12px; }
+  footer .about{ color: var(--muted); font-size: 14.5px; margin: 0; max-width: 38ch; line-height: 1.55; }
+  footer .legal{ margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 7px 18px; font-size: 13px; color: var(--faint); align-items: center; }
+  footer .legal .mono{ font-family: var(--mono); color: var(--muted); }
+  footer .legal .sep{ color: var(--line); }
+  @media (max-width: 760px){ footer .top{ grid-template-columns: 1fr 1fr; } footer .col.lead{ grid-column: 1 / -1; } }
+  @media (max-width: 460px){ footer .top{ grid-template-columns: 1fr; } }
+
+  /* ---------- Motion (progressive enhancement; gated only when JS + motion allowed) ---------- */
+  html.motion [data-reveal]{ opacity: 0; transform: translateY(16px); }
+  html.motion [data-reveal].in{ opacity: 1; transform: none; transition: opacity .7s var(--ease), transform .8s var(--ease); transition-delay: var(--d, 0ms); }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    html.motion [data-reveal]{ opacity: 1; transform: none; }
+    *, *::before, *::after{ transition-duration: .01ms !important; animation-duration: .01ms !important; }
+  }
 </style>
 </head>
 <body>
 
 <header class="site">
   <div class="wrap nav">
-    <a class="brand" href="#top"><span class="logo">cc</span><span>Claude Code <span class="faint" style="color:var(--faint);font-weight:500">for Social Scientists</span></span></a>
+    <a class="brand" href="#top"><span class="logo"><b>cc</b></span><span>Claude Code<span class="sub"> for Social Scientists</span></span></a>
     <nav class="links">
-      <a href="#pillars"><span lang="en">Why</span><span lang="tr">Neden</span></a>
-      <a href="#catalog"><span lang="en">Catalog</span><span lang="tr">Katalog</span></a>
+      <a href="#why"><span lang="en">Why</span><span lang="tr">Neden</span></a>
+      <a href="#catalog"><span lang="en">Contents</span><span lang="tr">İçindekiler</span></a>
       <a href="#skills"><span lang="en">Skills</span><span lang="tr">Skills</span></a>
       <a href="#start"><span lang="en">Quick start</span><span lang="tr">Hızlı başlangıç</span></a>
       <a href="#ethics"><span lang="en">Disclosure</span><span lang="tr">Beyan</span></a>
@@ -224,29 +316,40 @@
   <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-      <span class="eyebrow"><span lang="en">Open educational resource · Bilingual</span><span lang="tr">Açık eğitim kaynağı · İki dilli</span></span>
-      <h1>
-        <span lang="en">Claude Code, built for how social scientists actually work.</span>
-        <span lang="tr">Claude Code, sosyal bilimcinin çalışma ihtiyaçlarına göre.</span>
-      </h1>
-      <p class="lead">
-        <span lang="en">A bilingual, open-source guide to using Anthropic's Claude Code in research, teaching, and academic writing. Written by a working clinical psychologist and PhD candidate. Every booklet carries verified citations, a matched Turkish and English text, and an AI disclosure that can be audited field by field.</span>
-        <span lang="tr">Anthropic'in Claude Code aracını araştırmada, öğretimde ve akademik yazımda kullanmak için iki dilli, açık kaynak bir rehber. Sahada çalışan bir klinik psikolog ve doktora adayı yazdı. Her kitapçıkta doğrulanmış atıflar, birebir eşlenmiş Türkçe ve İngilizce metin ve her alanı ayrı ayrı denetlenebilen bir yapay zekâ katkı beyanı yer alır.</span>
-      </p>
-      <div class="hero-cta">
-        <a class="btn primary" href="CATALOG/"><span lang="en">Read the booklets</span><span lang="tr">Kitapçıkları okuyun</span></a>
-        <a class="btn" href="#start"><span lang="en">Install the skills</span><span lang="tr">Skill paketini kurun</span></a>
-      </div>
-      <div class="term" aria-hidden="false">
-        <div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="t">terminal</span><button class="copy" data-copy="pip install social-cc-plugin">copy</button></div>
-        <pre><code><span class="p">$</span> <span class="c">pip install social-cc-plugin</span>
-<span class="o"># or as a Claude Code plugin, or clone the repo. See Quick start.</span></code></pre>
-      </div>
-      <div class="hero-meta">
-        <span lang="en"><b>21</b> released booklets</span><span lang="tr"><b>21</b> yayımlanmış kitapçık</span>
-        <span lang="en"><b>354</b> verified citations</span><span lang="tr"><b>354</b> doğrulanmış atıf</span>
-        <span lang="en"><b>0</b> fabricated</span><span lang="tr"><b>0</b> uydurma</span>
-        <span lang="en"><b>TR + EN</b> full parity</span><span lang="tr"><b>TR + EN</b> tam eşlik</span>
+      <div class="hero-grid">
+        <div class="hero-lede">
+          <span class="eyebrow" data-reveal><span class="dot"></span><span lang="en">Open educational resource · Bilingual</span><span lang="tr">Açık eğitim kaynağı · İki dilli</span></span>
+          <h1 data-reveal style="--d:60ms">
+            <span lang="en">Claude Code, built for how social scientists <em>really work</em>.</span>
+            <span lang="tr">Claude Code, sosyal bilimci <em>gerçekten nasıl çalışıyorsa</em> öyle.</span>
+          </h1>
+          <p class="lead" data-reveal style="--d:130ms">
+            <span lang="en">A social scientist rarely works at a tidy desk. Half-finished drafts, sources read but not yet digested, ethics-board files, reviewer comments, the weight of translation, and a research memory always at risk of scattering. Real research runs like this. This guide places Claude Code inside that life: it does not sell it as a miracle, nor shrink it to a chat box.</span>
+            <span lang="tr">Sosyal bilimci çoğu zaman kusursuz bir masada çalışmaz. Yarım kalmış taslaklar, okunmuş ama sindirilmemiş kaynaklar, etik kurul dosyaları, hakem yorumları, çeviri yükü ve sürekli dağılma riski taşıyan bir akademik hafıza. Gerçek araştırma böyle yürür. Bu rehber Claude Code'u tam da bu hayatın içine yerleştirir: onu bir mucize gibi sunmaz, bir sohbet botu gibi de küçültmez.</span>
+          </p>
+          <div class="hero-cta" data-reveal style="--d:200ms">
+            <a class="btn primary" href="CATALOG/"><span lang="en">Read the booklets</span><span lang="tr">Kitapçıkları okuyun</span></a>
+            <a class="btn" href="#start"><span lang="en">Install the skills</span><span lang="tr">Skill paketini kurun</span></a>
+          </div>
+          <div class="hero-meta" data-reveal style="--d:270ms">
+            <span class="m"><b>21</b><span lang="en">released booklets</span><span lang="tr">yayımlanmış kitapçık</span></span>
+            <span class="m"><b>354</b><span lang="en">verified citations</span><span lang="tr">doğrulanmış atıf</span></span>
+            <span class="m"><b class="ok">0</b><span lang="en">fabricated</span><span lang="tr">uydurma</span></span>
+            <span class="m"><b>TR·EN</b><span lang="en">full parity</span><span lang="tr">tam eşlik</span></span>
+          </div>
+        </div>
+        <aside class="hero-aside" data-reveal style="--d:200ms">
+          <div class="term">
+            <div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="t">terminal</span><button class="copy" data-copy="pip install social-cc-plugin">copy</button></div>
+            <pre><code><span class="p">$</span> <span class="c">pip install social-cc-plugin</span>
+<span class="o"># or a Claude Code plugin, or clone the repo.</span>
+<span class="o"># see Quick start below.</span></code></pre>
+          </div>
+          <p class="aside-note">
+            <span lang="en">Agentic AI should not stand in for the social scientist. It should make their labor, their decisions, and their responsibility more visible.</span>
+            <span lang="tr">Ajan tabanlı yapay zekâ, sosyal bilimcinin yerine geçmemeli. Emeğini, kararlarını ve sorumluluğunu daha görünür kılmalı.</span>
+          </p>
+        </aside>
       </div>
     </div>
   </section>
@@ -255,93 +358,107 @@
   <section class="stats" aria-label="At a glance">
     <div class="wrap" style="padding:0">
       <div class="grid">
-        <div class="stat"><div class="n">21</div><div class="l"><span lang="en">Released booklets</span><span lang="tr">Yayımlanmış kitapçık</span></div></div>
-        <div class="stat"><div class="n">12</div><div class="l"><span lang="en">Thematic categories</span><span lang="tr">Tematik kategori</span></div></div>
-        <div class="stat"><div class="n">354</div><div class="l"><span lang="en">Verified citations</span><span lang="tr">Doğrulanmış atıf</span></div></div>
-        <div class="stat"><div class="n ok">0</div><div class="l"><span lang="en">Fabricated citations</span><span lang="tr">Uydurma atıf</span></div></div>
-        <div class="stat"><div class="n">20</div><div class="l"><span lang="en">Companion skills</span><span lang="tr">Tamamlayıcı skill</span></div></div>
-        <div class="stat"><div class="n">2</div><div class="l"><span lang="en">Languages, in parity</span><span lang="tr">Dil, tam eşlikte</span></div></div>
+        <div class="stat" data-reveal><div class="n" data-count>21</div><div class="l"><span lang="en">Released booklets</span><span lang="tr">Yayımlanmış kitapçık</span></div></div>
+        <div class="stat" data-reveal style="--d:60ms"><div class="n" data-count>12</div><div class="l"><span lang="en">Thematic categories</span><span lang="tr">Tematik kategori</span></div></div>
+        <div class="stat" data-reveal style="--d:120ms"><div class="n" data-count>354</div><div class="l"><span lang="en">Verified citations</span><span lang="tr">Doğrulanmış atıf</span></div></div>
+        <div class="stat" data-reveal style="--d:180ms"><div class="n ok" data-count>0</div><div class="l"><span lang="en">Fabricated citations</span><span lang="tr">Uydurma atıf</span></div></div>
+        <div class="stat" data-reveal style="--d:240ms"><div class="n" data-count>20</div><div class="l"><span lang="en">Companion skills</span><span lang="tr">Tamamlayıcı skill</span></div></div>
+        <div class="stat" data-reveal style="--d:300ms"><div class="n" data-count>2</div><div class="l"><span lang="en">Languages, in parity</span><span lang="tr">Dil, tam eşlikte</span></div></div>
       </div>
     </div>
   </section>
 
-  <!-- PILLARS -->
-  <section class="block" id="pillars">
+  <!-- WHY -->
+  <section class="block" id="why">
     <div class="wrap">
-      <span class="kicker"><span lang="en">Why this guide</span><span lang="tr">Neden bu rehber</span></span>
-      <h2><span lang="en">Honest about what agentic AI can and cannot do.</span><span lang="tr">Ajan tabanlı yapay zekânın neyi yapıp neyi yapamadığı konusunda dürüst.</span></h2>
-      <p class="sub"><span lang="en">It is not a Claude Code reference manual, and it is not a promotional brochure. What sets it apart from comparable guides is a refusal to oversell the tool.</span><span lang="tr">Bu bir Claude Code başvuru kılavuzu değil, bir tanıtım broşürü de değil. Onu benzer rehberlerden ayıran şey, aracı olduğundan büyük göstermemesidir.</span></p>
-      <div class="pillars">
-        <div class="pillar">
-          <div class="num">01</div>
-          <h3><span lang="en">Turkish and English, fully matched</span><span lang="tr">Türkçe ve İngilizce tam eşlik</span></h3>
-          <p><span lang="en">The Turkish version is written first by a native speaker. The English version is re-authored from the same outline, not machine-translated. A continuous integration check refuses any commit that breaks the bilingual pair.</span><span lang="tr">Önce Türkçesi yazılır, ana dili Türkçe olan birinin elinden. İngilizcesi aynı taslaktan yeniden yazılır, makine çevirisi değildir. Sürekli entegrasyon kontrolü, iki dilli eşi bozan hiçbir commit'i geçirmez.</span></p>
+      <span class="rule" data-reveal></span>
+      <h2 data-reveal style="--d:40ms"><span lang="en">Without inflating the tool, without diminishing the researcher.</span><span lang="tr">Aracı büyütmeden, araştırmacıyı küçültmeden.</span></h2>
+      <div class="prose" data-reveal style="--d:90ms;margin-top:22px">
+        <p class="soft"><span lang="en">There are two easy stories about AI today. One says it will solve everything. The other says it will ruin everything. Neither takes the social scientist's real working life seriously enough. Because the question is not only whether the tool is powerful. The question is the work ethic it is used within.</span><span lang="tr">Bugün yapay zekâ hakkında iki kolay anlatı var. Biri her şeyi çözeceğini söylüyor. Diğeri her şeyi bozacağını söylüyor. İkisi de sosyal bilimcinin gerçek çalışma hayatını yeterince ciddiye almıyor. Çünkü mesele yalnızca aracın güçlü olup olmaması değil. Mesele, o aracın hangi çalışma ahlakı içinde kullanıldığı.</span></p>
+        <p class="soft"><span lang="en">Claude Code can help the researcher. But it cannot think in their place. It can list sources. But it cannot carry the responsibility for them. It can edit the text. But it cannot bear the weight of academic honesty. It can support the data analysis. But it cannot defend, in the researcher's place, why a given decision was made.</span><span lang="tr">Claude Code araştırmacıya yardım edebilir. Ama araştırmacının yerine düşünemez. Kaynakları sıralayabilir. Ama kaynak sorumluluğunu taşıyamaz. Metni düzenleyebilir. Ama akademik dürüstlüğün yükünü üstlenemez. Veri analizinde destek verebilir. Ama hangi kararın neden alındığını araştırmacının yerine savunamaz.</span></p>
+        <p class="pullquote" data-reveal><span lang="en">In the social sciences, trust is not built on well-written sentences. It is built on a process that can be audited.</span><span lang="tr">Sosyal bilimlerde güven, iyi yazılmış cümlelerle değil, denetlenebilir bir süreçle kurulur.</span></p>
+        <p class="soft"><span lang="en">This guide makes exactly that boundary visible. It takes the workflow seriously before the tool. It talks about responsibility before the model. It asks for the source before the answer. It cares about leaving a trace before the text.</span><span lang="tr">Bu rehber tam da bu sınırı görünür kılar. Araçtan önce iş akışını ciddiye alır. Modelden önce sorumluluğu konuşur. Cevaptan önce kaynak sorar. Metinden önce iz bırakmayı önemser.</span></p>
+      </div>
+
+      <div class="commits">
+        <div class="commit" data-reveal>
+          <h3><span lang="en">Turkish and English, genuinely reciprocal</span><span lang="tr">Türkçe ile İngilizce gerçekten karşılıklı</span></h3>
+          <div class="c-body">
+            <p><span lang="en">In this project the Turkish text is not a by-product. Turkish is thought first. The Turkish text comes from the academic intuition, the field experience, and the thinking habits of a native speaker. The English text is re-authored from the same outline. It is not a machine translation. It is not a pale copy of the Turkish.</span><span lang="tr">Bu projede Türkçe metin bir yan ürün değildir. Önce Türkçe düşünülür. Türkçe metin, ana dili Türkçe olan bir araştırmacının akademik sezgisinden, saha deneyiminden ve düşünme biçiminden çıkar. İngilizce metin aynı taslaktan yeniden yazılır. Makine çevirisi değildir. Türkçenin soluk bir kopyası değildir.</span></p>
+            <p><span lang="en">Because in the social sciences language is not only a vehicle for transfer. Language is the home of thought. So here Turkish and English are not simply placed side by side. They are held responsible to each other. A continuous integration check lets no commit through that breaks the bilingual pair.</span><span lang="tr">Çünkü sosyal bilimlerde dil yalnızca aktarım aracı değil. Dil, düşüncenin evidir. Bu yüzden burada Türkçe ile İngilizce yan yana konmaz. Birbirinden sorumlu tutulur. Sürekli entegrasyon kontrolü, iki dilli karşılığı bozan hiçbir commit'e geçit vermez.</span></p>
+          </div>
         </div>
-        <div class="pillar">
-          <div class="num">02</div>
-          <h3><span lang="en">Verified citations, zero fabricated</span><span lang="tr">Doğrulanmış atıflar, sıfır uydurma</span></h3>
-          <p><span lang="en">Language models routinely fabricate references. Every DOI here is verified against Crossref and doi.org. The fabrication rate of the guide's own bibliography is a tracked, publicly reported metric. It is zero.</span><span lang="tr">Dil modelleri sık sık kaynak uydurur. Buradaki her DOI, Crossref ve doi.org üzerinden doğrulanır. Rehberin kendi kaynakçasındaki uydurma oranı izlenir ve herkese açık olarak raporlanır. Bu oran sıfırdır.</span></p>
+        <div class="commit" data-reveal>
+          <h3><span lang="en">Verified citations. Zero fabricated.</span><span lang="tr">Doğrulanmış atıflar. Sıfır uydurma.</span></h3>
+          <div class="c-body">
+            <p><span lang="en">One of the most fragile parts of language models is that they fabricate sources. In the social sciences this is not a small technical slip. It is a direct breach of academic trust.</span><span lang="tr">Dil modellerinin en kırılgan yanlarından biri kaynak uydurmasıdır. Bu, sosyal bilimlerde küçük bir teknik hata değil. Akademik güvenin doğrudan ihlali.</span></p>
+            <p><span lang="en">Here every DOI is verified against Crossref and doi.org. The bibliography is not decoration, not a display case. It is the load-bearing column of the text. If a source does not exist, it does not exist. If a DOI cannot be verified, it does not enter the text.</span><span lang="tr">Burada her DOI, Crossref ve doi.org üzerinden doğrulanır. Kaynakça süs değil, vitrin değil. Kaynakça, metnin taşıyıcı kolonudur. Bir kaynak yoksa, yoktur. Bir DOI doğrulanmıyorsa, metne giremez.</span></p>
+            <p><span lang="en">So the fabrication rate of the guide's own bibliography is tracked and reported openly. Right now that rate is zero. This is not a slogan. It is the result of a work ethic.</span><span lang="tr">Bu yüzden rehberin kendi kaynakçasındaki uydurma atıf oranı izlenir ve açıkça raporlanır. Şu an o oran sıfırdır. Bu bir slogan değil. Bir çalışma ahlakının sonucu.</span></p>
+          </div>
         </div>
-        <div class="pillar">
-          <div class="num">03</div>
-          <h3><span lang="en">Auditable AI disclosure</span><span lang="tr">Denetlenebilir yapay zekâ katkı beyanı</span></h3>
-          <p><span lang="en">Every booklet carries a machine-readable block that states the AI contribution level, the model, the human review status, and the verified and fabricated citation counts. AI tools can read this block and follow it to do the work correctly. A declaration on its own is not enough. How and to what extent AI was used has to be explained, not just asserted.</span><span lang="tr">Her kitapçık, yapay zekâ araçlarının da okuyabildiği yapılandırılmış bir blok taşır. Bu blok araçlara işin nasıl doğru yapılacağını gösterir: yapay zekâ katkı düzeyi, kullanılan model, insan inceleme durumu, doğrulanmış ve uydurma atıf sayıları. Beyan tek başına yeterli değildir. Yapay zekânın metinde nasıl ve hangi ölçüde kullanıldığı da açıkça anlatılmalıdır.</span></p>
+        <div class="commit" data-reveal>
+          <h3><span lang="en">AI contribution is not hidden</span><span lang="tr">Yapay zekâ katkısı saklanmaz</span></h3>
+          <div class="c-body">
+            <p><span lang="en">If AI was used in academic writing, erasing its traces is not honesty. But saying only "AI was used" is not enough either. The real questions are sharper: where it was used, how much, with which model, how the human review was done, how the sources were verified, and with whom the scientific responsibility finally rests.</span><span lang="tr">Akademik yazıda yapay zekâ kullanıldıysa, bunun izini silmek dürüstlük değildir. Ama yalnızca "yapay zekâ kullanıldı" demek de yeterli değil. Asıl sorular daha net: nerede, ne kadar, hangi modelle kullanıldı, insan incelemesi nasıl yapıldı, kaynaklar nasıl doğrulandı, metnin bilimsel sorumluluğu kimde kaldı.</span></p>
+            <p><span lang="en">Every booklet here carries a structured disclosure that AI tools can also read: the contribution level, the model used, the human review status, the verified and fabricated citation counts. But a disclosure on its own is not enough. Real transparency also means explaining how the AI actually worked in the text.</span><span lang="tr">Bu projedeki her kitapçık, yapay zekâ araçlarının da okuyabildiği yapılandırılmış bir katkı beyanı taşır: katkı düzeyi, kullanılan model, insan inceleme durumu, doğrulanmış ve uydurma atıf sayıları. Ama beyan tek başına yeterli değil. Gerçek şeffaflık, yapay zekânın metinde nasıl çalıştığını da anlatmayı gerektirir.</span></p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CATALOG / CATEGORIES -->
+  <!-- CONTENTS / CATALOG -->
   <section class="block" id="catalog">
     <div class="wrap">
-      <span class="kicker"><span lang="en">What is inside</span><span lang="tr">İçinde ne var</span></span>
-      <h2><span lang="en">Categories that run from first principles to peer review.</span><span lang="tr">Kategoriler ilk ilkelerden hakem değerlendirmesine uzanır.</span></h2>
-      <p class="sub"><span lang="en">Twenty-one booklets are released, and every one of the twelve categories now carries at least one. Each is short, takes a clear position, and has been tested in the author's own academic work. The KKK-AA-SSSS identifiers are fixed once a booklet is published.</span><span lang="tr">Yirmi bir kitapçık yayında ve on iki kategorinin her birinde artık en az bir kitapçık var. Her biri kısa ve iddialı. Hepsi yazarın kendi akademik pratiğinde sınanmış. KKK-AA-SSSS kimlikleri bir kitapçık yayımlandıktan sonra sabitlenir.</span></p>
-      <div class="cards">
-        <a class="card is-link" href="booklets/001-foundations/001-01-0001/en/"><div class="tag">001 · Foundations</div><h3><span lang="en">Foundations</span><span lang="tr">Temeller</span></h3><p><span lang="en">What an agentic tool is, how it differs from a chat window, and CLAUDE.md standing-instruction discipline.</span><span lang="tr">Ajan tabanlı bir aracın ne olduğu, sohbet penceresinden farkı ve CLAUDE.md kalıcı talimat disiplini.</span></p></a>
-        <a class="card is-link" href="booklets/002-academic-access/002-04-0001/en/"><div class="tag">002 · Academic Access</div><h3><span lang="en">Academic access</span><span lang="tr">Akademik erişim</span></h3><p><span lang="en">DergiPark, ULAKBIM TR Dizin, HEAL-Link, and regional indexing realities most guides ignore.</span><span lang="tr">DergiPark, ULAKBIM TR Dizin, HEAL-Link ve çoğu rehberin atladığı bölgesel indeksleme gerçekleri.</span></p></a>
-        <a class="card is-link" href="booklets/003-memory-system/003-01-0001/en/"><div class="tag">003 · Memory</div><h3><span lang="en">Memory as Vault</span><span lang="tr">Hafızayı arşive dönüştürmek</span></h3><p><span lang="en">An engineering pattern for keeping persistent academic context across years, not weeks.</span><span lang="tr">Akademik bağlamı haftalarca değil yıllarca kalıcı tutmak için bir mühendislik kalıbı.</span></p></a>
-        <a class="card is-link" href="booklets/004-vault-architecture/004-01-0001/en/"><div class="tag">004 · Vault Architecture</div><h3><span lang="en">Vault architecture</span><span lang="tr">Arşiv mimarisi</span></h3><p><span lang="en">Folder discipline, Maps of Content, and Markdown conventions that outlive tools.</span><span lang="tr">Klasör disiplini, Maps of Content ve araçların ömrünü aşan Markdown alışkanlıkları.</span></p></a>
-        <a class="card is-link" href="booklets/005-hooks-automation/005-02-0001/en/"><div class="tag">005 · Hooks and Automation</div><h3><span lang="en">Hooks and automation</span><span lang="tr">Hook'lar ve otomasyon</span></h3><p><span lang="en">Ritual hooks for daily logging, session persistence, and idle-time maintenance, turning discipline into infrastructure.</span><span lang="tr">Günlük kayıt, oturum kalıcılığı ve boş zaman bakımı için disiplini altyapıya çeviren ritüel hook'lar.</span></p></a>
-        <a class="card is-link" href="booklets/006-mcp-plugins/006-01-0001/en/"><div class="tag">006 · MCP and Plugins</div><h3><span lang="en">MCP and plugins</span><span lang="tr">MCP ve eklentiler</span></h3><p><span lang="en">What the Model Context Protocol is, why looking beats remembering, and a trust triage for third-party servers.</span><span lang="tr">Model Context Protocol nedir, bakmak hatırlamaktan neden iyidir ve üçüncü taraf sunucular için güven triyajı.</span></p></a>
-        <a class="card is-link" href="booklets/007-academic-writing/007-02-0001/en/"><div class="tag">007 · Academic Writing</div><h3><span lang="en">Academic writing</span><span lang="tr">Akademik yazım</span></h3><p><span lang="en">IMRAD scaffolding in two languages, a DOI-first bibliography hygiene pipeline, and journal fit with cover letters.</span><span lang="tr">İki dilde IMRAD iskeleti, DOI öncelikli kaynakça hijyeni ve kapak mektubuyla dergi uyumu.</span></p></a>
-        <a class="card is-link" href="booklets/008-data-analysis/008-01-0001/en/"><div class="tag">008 · Data Analysis</div><h3><span lang="en">Data analysis</span><span lang="tr">Veri analizi</span></h3><p><span lang="en">Reproducible quantitative workflows, statistical test selection discipline, and qualitative coding under human oversight.</span><span lang="tr">Yeniden üretilebilir nicel iş akışları, istatistiksel test seçimi disiplini ve insan gözetiminde nitel kodlama.</span></p></a>
-        <a class="card is-link" href="booklets/009-ethics-irb/009-01-0001/en/"><div class="tag">009 · Ethics and IRB</div><h3><span lang="en">Ethics and IRB</span><span lang="tr">Etik ve IRB</span></h3><p><span lang="en">Helsinki, COPE, WAME, ICMJE, STM 2025, the EU AI Act, ENAI, KVKK, and GDPR in one behavioral frame.</span><span lang="tr">Helsinki, COPE, WAME, ICMJE, STM 2025, AB Yapay Zekâ Yasası, ENAI, KVKK ve GDPR, tek bir davranışsal çerçevede.</span></p></a>
-        <a class="card is-link" href="booklets/010-peer-review/010-01-0001/en/"><div class="tag">010 · Peer Review</div><h3><span lang="en">Peer review</span><span lang="tr">Hakem değerlendirmesi</span></h3><p><span lang="en">Rebuttal letters with traceability matrices, and anti-AI-trace writing for revisions.</span><span lang="tr">İzlenebilirlik matrisleriyle yanıt mektupları ve revizyonda yapay zekâ izini silme disiplini.</span></p></a>
-        <a class="card is-link" href="booklets/011-conference-presentation/011-01-0001/en/"><div class="tag">011 · Conference Presentation</div><h3><span lang="en">Conference presentation</span><span lang="tr">Konferans sunumu</span></h3><p><span lang="en">Slides, posters, and lightning talks with visual integrity rules and disclosure awareness on stage.</span><span lang="tr">Görsel bütünlük kuralları ve sahnede beyan farkındalığıyla slayt, poster ve lightning talk.</span></p></a>
-        <a class="card is-link" href="booklets/012-troubleshooting/012-01-0001/en/"><div class="tag">012 · Troubleshooting</div><h3><span lang="en">Troubleshooting</span><span lang="tr">Sorun giderme</span></h3><p><span lang="en">A structured diagnostic protocol for when tools, papers, or reviewers go wrong.</span><span lang="tr">Araçlar, makaleler ya da hakemler ters gittiğinde işleyen, yapılandırılmış bir tanı protokolü.</span></p></a>
+      <span class="rule" data-reveal></span>
+      <span class="label" data-reveal>CONTENTS · İÇİNDEKİLER</span>
+      <h2 data-reveal style="--d:40ms"><span lang="en">From first foundations to peer review.</span><span lang="tr">Temellerden hakem değerlendirmesine.</span></h2>
+      <p class="sub" data-reveal style="--d:90ms"><span lang="en">Twenty-one booklets are out. Every one of the twelve categories now carries at least one. Each booklet is built to be short, dense, and directly usable. All of them were tested in the author's own academic work. None is a set of abstract suggestions assembled at a desk. The KKK-AA-SSSS identifiers are fixed once a booklet is published.</span><span lang="tr">Yirmi bir kitapçık yayında. On iki kategorinin her birinde artık en az bir kitapçık var. Her kitapçık kısa, yoğun ve doğrudan kullanılabilir olacak şekilde tasarlandı. Hepsi yazarın kendi akademik üretiminde sınandı. Hiçbiri masa başında kurulmuş soyut önerilerden ibaret değil. KKK-AA-SSSS biçimindeki kimlikler, kitapçık yayımlandıktan sonra sabitlenir.</span></p>
+      <div class="toc">
+        <a class="toc-row" data-reveal href="booklets/001-foundations/001-01-0001/en/"><div class="code">001</div><div class="body"><h3><span lang="en">Foundations</span><span lang="tr">Temeller</span><span class="arw">→</span></h3><p><span lang="en">What an agentic tool is, how it differs from an ordinary chat window, and why the CLAUDE.md standing-instruction discipline matters. It opens with a question: is Claude Code just a more capable chat screen, or a new working environment that settles into the research process?</span><span lang="tr">Ajan tabanlı bir aracın ne olduğu, sıradan sohbet penceresinden nasıl ayrıldığı ve CLAUDE.md kalıcı talimat disiplininin neden önemli olduğu. Şu soruyla başlar: Claude Code yalnızca daha gelişmiş bir sohbet ekranı mı, yoksa araştırma sürecine yerleşen yeni bir çalışma ortamı mı?</span></p></div></a>
+        <a class="toc-row" data-reveal href="booklets/002-academic-access/002-04-0001/en/"><div class="code">002</div><div class="body"><h3><span lang="en">Academic access</span><span lang="tr">Akademik erişim</span><span class="arw">→</span></h3><p><span lang="en">DergiPark, ULAKBIM TR Dizin, HEAL-Link, and the regional indexing realities most guides skip. Because the social scientist does not work only inside Web of Science and Scopus. Local databases, national indexes, and inequalities of access are part of the research too.</span><span lang="tr">DergiPark, ULAKBİM TR Dizin, HEAL Link ve çoğu rehberin atladığı bölgesel indeksleme gerçekleri. Çünkü sosyal bilimci yalnızca Web of Science ve Scopus içinde çalışmaz. Yerel veri tabanları, ulusal indeksler ve erişim eşitsizlikleri de araştırmanın parçası.</span></p></div></a>
+        <a class="toc-row" data-reveal href="booklets/003-memory-system/003-01-0001/en/"><div class="code">003</div><div class="body"><h3><span lang="en">Memory as Vault</span><span lang="tr">Hafızayı arşive dönüştürmek</span><span class="arw">→</span></h3><p><span lang="en">An engineering pattern for keeping academic context for years, not weeks. Research memory is too valuable to entrust to the model's temporary context window. It turns notes, decisions, and sources into a portable archive.</span><span lang="tr">Akademik bağlamı haftalarca değil, yıllarca kalıcı tutmak için bir mühendislik kalıbı. Araştırma hafızası, modelin geçici bağlam penceresine emanet edilemeyecek kadar değerlidir. Notları, kararları ve kaynakları taşınabilir bir arşive dönüştürmeyi anlatır.</span></p></div></a>
+        <a class="toc-row" data-reveal href="booklets/004-vault-architecture/004-01-0001/en/"><div class="code">004</div><div class="body"><h3><span lang="en">Vault architecture</span><span lang="tr">Arşiv mimarisi</span><span class="arw">→</span></h3><p><span lang="en">Folder discipline, Maps of Content, and Markdown habits that outlive tools. Today's tool may change tomorrow. But a well-built research archive keeps living.</span><span lang="tr">Klasör disiplini, Maps of Content ve araçların ömrünü aşan Markdown alışkanlıkları. Bugünün aracı yarın değişebilir. Ama iyi kurulmuş bir araştırma arşivi yaşamaya devam eder.</span></p></div></a>
+        <a class="toc-row" data-reveal href="booklets/005-hooks-automation/005-02-0001/en/"><div class="code">005</div><div class="body"><h3><span lang="en">Hooks and automation</span><span lang="tr">Hook'lar ve otomasyon</span><span class="arw">→</span></h3><p><span lang="en">Ritual hooks that turn discipline into infrastructure: daily logging, session persistence, idle-time maintenance. Because good research does not run on motivation alone. It runs on well-built repetition.</span><span lang="tr">Günlük kayıt, oturum kalıcılığı ve boş zaman bakımı için disiplini altyapıya çeviren ritüel hook'lar. Çünkü iyi araştırma yalnızca motivasyonla yürümez. İyi araştırma, iyi kurulmuş tekrarlarla yürür.</span></p></div></a>
+        <a class="toc-row" data-reveal href="booklets/006-mcp-plugins/006-01-0001/en/"><div class="code">006</div><div class="body"><h3><span lang="en">MCP and plugins</span><span lang="tr">MCP ve eklentiler</span><span class="arw">→</span></h3><p><span lang="en">What the Model Context Protocol is, why looking is safer than remembering, and how to run a trust triage for third-party servers. Written so the researcher does not hand over their data flow blindly. Not every connection is a convenience. Some carry risk.</span><span lang="tr">Model Context Protocol nedir, bakmak hatırlamaktan neden daha güvenlidir ve üçüncü taraf sunucular için güven triyajı nasıl yapılır. Araştırmacının veri akışını körlemesine teslim etmemesi için yazıldı. Her bağlantı kolaylık sağlamaz. Bazı bağlantılar risk taşır.</span></p></div></a>
+        <a class="toc-row" data-reveal href="booklets/007-academic-writing/007-02-0001/en/"><div class="code">007</div><div class="body"><h3><span lang="en">Academic writing</span><span lang="tr">Akademik yazım</span><span class="arw">→</span></h3><p><span lang="en">Bilingual IMRAD scaffolding, a DOI-first bibliography hygiene, and journal fit with a cover letter. Academic writing is not only building good sentences. Good writing speaks to the right journal with the right reason.</span><span lang="tr">İki dilde IMRAD iskeleti, DOI öncelikli kaynakça hijyeni ve kapak mektubuyla dergi uyumu. Akademik yazım yalnızca iyi cümle kurmak değildir. İyi yazı, doğru dergiye doğru gerekçeyle konuşabilmektir.</span></p></div></a>
+        <a class="toc-row" data-reveal href="booklets/008-data-analysis/008-01-0001/en/"><div class="code">008</div><div class="body"><h3><span lang="en">Data analysis</span><span lang="tr">Veri analizi</span><span class="arw">→</span></h3><p><span lang="en">Reproducible quantitative workflows, the discipline of statistical test selection, and qualitative coding under human oversight. It walks straight into the area where AI is used most and can do the most harm. The point is not only to get a result, but to show how the result was reached.</span><span lang="tr">Yeniden üretilebilir nicel iş akışları, istatistiksel test seçimi disiplini ve insan gözetiminde nitel kodlama. Yapay zekânın en çok kullanıldığı ama en fazla zarar verebileceği alana doğrudan girer. Mesele yalnızca sonuç almak değil, sonuca nasıl gidildiğini gösterebilmektir.</span></p></div></a>
+        <a class="toc-row" data-reveal href="booklets/009-ethics-irb/009-01-0001/en/"><div class="code">009</div><div class="body"><h3><span lang="en">Ethics and IRB</span><span lang="tr">Etik ve IRB</span><span class="arw">→</span></h3><p><span lang="en">Helsinki, COPE, WAME, ICMJE, STM 2025, the EU AI Act, ENAI, KVKK, and GDPR in a single behavioral frame. Because ethics is not a paragraph added at the end of the text. Ethics is the load-bearing spine of the research process.</span><span lang="tr">Helsinki, COPE, WAME, ICMJE, STM 2025, Avrupa Birliği Yapay Zekâ Yasası, ENAI, KVKK ve GDPR tek bir davranışsal çerçevede. Çünkü etik, metnin sonuna eklenen bir paragraf değildir. Etik, araştırma sürecinin taşıyıcı omurgasıdır.</span></p></div></a>
+        <a class="toc-row" data-reveal href="booklets/010-peer-review/010-01-0001/en/"><div class="code">010</div><div class="body"><h3><span lang="en">Peer review</span><span lang="tr">Hakem değerlendirmesi</span><span class="arw">→</span></h3><p><span lang="en">Response letters with traceability matrices, a revision discipline, and the honest handling of AI traces. A rebuttal is not a defensive reflex. A good response letter makes visible where and on what grounds each critique was met.</span><span lang="tr">İzlenebilirlik matrisleriyle yanıt mektupları, revizyon disiplini ve yapay zekâ izinin dürüst yönetimi. Hakem yanıtı bir savunma refleksi değildir. İyi yanıt mektubu, her eleştirinin nerede ve hangi gerekçeyle karşılandığını görünür kılar.</span></p></div></a>
+        <a class="toc-row" data-reveal href="booklets/011-conference-presentation/011-01-0001/en/"><div class="code">011</div><div class="body"><h3><span lang="en">Conference presentation</span><span lang="tr">Konferans sunumu</span><span class="arw">→</span></h3><p><span lang="en">Visual-integrity rules for slides, posters, and lightning talks, bilingual preparation, and disclosure awareness on stage. Because an academic talk is not only transferring information. It is representing thought on stage, both ethically and aesthetically.</span><span lang="tr">Slayt, poster ve lightning talk için görsel bütünlük kuralları, iki dilli hazırlık ve sahnede yapay zekâ kullanım beyanı farkındalığı. Çünkü akademik sunum yalnızca bilgi aktarmak değildir. Düşüncenin sahnede ahlaki ve estetik olarak temsil edilmesidir.</span></p></div></a>
+        <a class="toc-row" data-reveal href="booklets/012-troubleshooting/012-01-0001/en/"><div class="code">012</div><div class="body"><h3><span lang="en">Troubleshooting</span><span lang="tr">Sorun giderme</span><span class="arw">→</span></h3><p><span lang="en">A structured diagnostic protocol for when tools, papers, datasets, or review processes go wrong. No panic, no scattering. First the problem is named, then the trail is followed, then the fix is made.</span><span lang="tr">Araçlar, makaleler, veri setleri ya da hakem süreçleri ters gittiğinde işleyen yapılandırılmış bir tanı protokolü. Panik yok, dağılmak yok. Önce sorun tanımlanır, sonra iz sürülür, sonra müdahale edilir.</span></p></div></a>
       </div>
-      <p class="sub" style="margin-top:22px"><a href="CATALOG/"><span lang="en">See the full catalog of all thirty-one planned booklets →</span><span lang="tr">Planlanan otuz bir kitapçığın tam kataloğunu görün →</span></a></p>
+      <p class="toc-more"><a href="CATALOG/"><span lang="en">See the full catalog of all thirty-one planned booklets →</span><span lang="tr">Planlanan otuz bir kitapçığın tam kataloğunu görün →</span></a></p>
     </div>
   </section>
 
   <!-- SKILLS -->
   <section class="block" id="skills">
     <div class="wrap">
-      <span class="kicker"><span lang="en">Companion skills</span><span lang="tr">Tamamlayıcı skill'ler</span></span>
-      <h2><span lang="en">Skills that turn the booklets into repeatable workflows.</span><span lang="tr">Kitapçıkları yinelenebilir iş akışlarına dönüştüren skill'ler.</span></h2>
-      <p class="sub"><span lang="en">Compact operating protocols installed through the pip package or the Claude Code plugin system. They carry audit checklists and safe operating boundaries.</span><span lang="tr">Pip paketi ya da Claude Code eklenti sistemiyle kurulan derli toplu çalışma protokolleri. Denetim listeleri ve güvenli çalışma sınırları içerirler.</span></p>
+      <span class="rule" data-reveal></span>
+      <h2 data-reveal style="--d:40ms"><span lang="en">Working protocols that turn the booklets into repeatable workflows.</span><span lang="tr">Kitapçıkları yinelenebilir iş akışlarına dönüştüren çalışma protokolleri.</span></h2>
+      <p class="sub" data-reveal style="--d:90ms"><span lang="en">This project is not only texts to read. Beneath the booklets sit skill packages that make the researcher's daily work more orderly, more traceable, and safer. They install through the pip package, the Claude Code plugin system, or by cloning the repo. Every skill cares not only about productivity but about auditability.</span><span lang="tr">Bu proje yalnızca okunacak metinlerden oluşmaz. Kitapçıkların altında çalışan, araştırmacının gündelik işlerini daha düzenli, daha izlenebilir ve daha güvenli hâle getiren skill paketleri vardır. Pip paketiyle, Claude Code eklenti sistemiyle ya da repo klonlanarak kurulur. Her skill yalnızca üretkenliği değil, denetlenebilirliği de önemser.</span></p>
       <div class="skill-list">
-        <div class="skill"><code>/social-science-literature-triage</code><span lang="en">Literature scoping and database routing</span><span lang="tr">Literatür kapsamlama ve veritabanı yönlendirme</span></div>
-        <div class="skill"><code>/apa-doi-verifier</code><span lang="en">APA 7 cleanup and DOI verification</span><span lang="tr">APA 7 temizliği ve DOI doğrulama</span></div>
-        <div class="skill"><code>/bilingual-booklet-pairing</code><span lang="en">Turkish and English parity checks</span><span lang="tr">Türkçe ve İngilizce eşlik kontrolü</span></div>
-        <div class="skill"><code>/ai-disclosure-auditor</code><span lang="en">Contribution, model, and citation audit</span><span lang="tr">Katkı, model ve atıf denetimi</span></div>
-        <div class="skill"><code>/ethics-irb-ai-protocol</code><span lang="en">IRB, KVKK, GDPR, and EU AI Act review</span><span lang="tr">IRB, KVKK, GDPR ve AB Yapay Zekâ Yasası incelemesi</span></div>
-        <div class="skill"><code>/rebuttal-traceability-matrix</code><span lang="en">Reviewer comment traceability</span><span lang="tr">Hakem yorumu izlenebilirliği</span></div>
-        <div class="skill"><code>/memory-vault-architect</code><span lang="en">Research vault architecture and MOCs</span><span lang="tr">Araştırma arşivi mimarisi ve MOC'lar</span></div>
-        <div class="skill"><code>/regional-access-workflow</code><span lang="en">DergiPark, ULAKBIM, HEAL-Link routing</span><span lang="tr">DergiPark, ULAKBIM, HEAL-Link yönlendirme</span></div>
-        <div class="skill"><code>/agentic-session-debugger</code><span lang="en">Scope drift, loop trap, and context limits</span><span lang="tr">Kapsam kayması, döngü tuzağı ve bağlam sınırı</span></div>
-        <div class="skill"><code>/repo-release-integrity-check</code><span lang="en">Pre-release repository integrity audit</span><span lang="tr">Yayın öncesi repo bütünlük denetimi</span></div>
-        <div class="skill"><code>/anti-ai-trace-revision</code><span lang="en">Two-layer de-AI revision for bilingual prose</span><span lang="tr">İki katmanlı yapay zekâ izi temizliği</span></div>
-        <div class="skill"><code>/bilingual-manuscript-scaffold</code><span lang="en">Turkish-first drafting, English re-authoring</span><span lang="tr">Türkçe önce taslak, İngilizce yeniden yazım</span></div>
-        <div class="skill"><code>/journal-fit-screening</code><span lang="en">Venue fit, index checks, predatory screening</span><span lang="tr">Dergi uyumu, dizin doğrulama, predatör tarama</span></div>
-        <div class="skill"><code>/qualitative-coding-discipline</code><span lang="en">AI as second coder with human oversight</span><span lang="tr">İnsan gözetiminde ikinci kodlayıcı düzeni</span></div>
-        <div class="skill"><code>/statistical-consultation-protocol</code><span lang="en">Test selection with a decision log</span><span lang="tr">Karar günlüklü istatistiksel test seçimi</span></div>
-        <div class="skill"><code>/research-ritual-hooks</code><span lang="en">Session rituals as lifecycle hooks</span><span lang="tr">Oturum ritüellerini kancaya bağlama</span></div>
-        <div class="skill"><code>/research-lifecycle-pipeline</code><span lang="en">Stage diagnosis and skill routing</span><span lang="tr">Aşama teşhisi ve beceri yönlendirme</span></div>
-        <div class="skill"><code>/mcp-research-stack-triage</code><span lang="en">MCP server trust and data flow triage</span><span lang="tr">MCP sunucu güveni ve veri akışı triyajı</span></div>
-        <div class="skill"><code>/source-passport-ledger</code><span lang="en">Source passports and citation quarantine</span><span lang="tr">Kaynak pasaportu ve atıf karantinası</span></div>
-        <div class="skill"><code>/conference-materials-bilingual</code><span lang="en">Bilingual slides and posters, figure trace</span><span lang="tr">İki dilli sunum ve izlenebilir görseller</span></div>
+        <div class="skill" data-reveal><code>/social-science-literature-triage</code><span class="lbl" lang="en">Literature scoping and database routing</span><span class="lbl" lang="tr">Literatür kapsamlama ve veri tabanı yönlendirme</span><span class="note" lang="en">The researcher's first mistake is often starting the search in the wrong place. It widens the search without scattering it.</span><span class="note" lang="tr">Araştırmacının ilk hatası çoğu zaman yanlış yerden aramaya başlamaktır. Arama alanını dağıtmadan genişletmeye yardım eder.</span></div>
+        <div class="skill" data-reveal><code>/apa-doi-verifier</code><span class="lbl" lang="en">APA 7 cleanup and DOI verification</span><span class="lbl" lang="tr">APA 7 temizliği ve DOI doğrulama</span><span class="note" lang="en">A bibliography is not only a matter of format. It is a matter of trust.</span><span class="note" lang="tr">Kaynakça yalnızca biçim meselesi değil, güven meselesidir.</span></div>
+        <div class="skill" data-reveal><code>/bilingual-booklet-pairing</code><span class="lbl" lang="en">Turkish and English parity checks</span><span class="lbl" lang="tr">Türkçe ve İngilizce eşlik kontrolü</span><span class="note" lang="en">It keeps the two languages from drifting apart, from one becoming a summary of the other.</span><span class="note" lang="tr">İki dilin birbirinden kopmasını, birinin diğerinin özetine dönüşmesini engeller.</span></div>
+        <div class="skill" data-reveal><code>/ai-disclosure-auditor</code><span class="lbl" lang="en">Contribution, model, and citation audit</span><span class="lbl" lang="tr">Katkı, model ve atıf denetimi</span><span class="note" lang="en">It makes AI use visible, measured, and faithful to the disclosure.</span><span class="note" lang="tr">Yapay zekâ kullanımını görünür, ölçülü ve beyana uygun hâle getirir.</span></div>
+        <div class="skill" data-reveal><code>/ethics-irb-ai-protocol</code><span class="lbl" lang="en">IRB, KVKK, GDPR, and EU AI Act review</span><span class="lbl" lang="tr">IRB, KVKK, GDPR ve Avrupa Birliği Yapay Zekâ Yasası incelemesi</span><span class="note" lang="en">It helps draw the limits of AI use, especially in research with human participants.</span><span class="note" lang="tr">Özellikle insan katılımcılı araştırmalarda yapay zekâ kullanımının sınırlarını çizmeye yardım eder.</span></div>
+        <div class="skill" data-reveal><code>/rebuttal-traceability-matrix</code><span class="lbl" lang="en">Reviewer comment traceability</span><span class="lbl" lang="tr">Hakem yorumu izlenebilirliği</span><span class="note" lang="en">It builds a revision matrix showing where each critique was met in the text.</span><span class="note" lang="tr">Her eleştirinin metinde nerede karşılandığını gösteren revizyon matrisi kurar.</span></div>
+        <div class="skill" data-reveal><code>/memory-vault-architect</code><span class="lbl" lang="en">Research vault architecture and MOCs</span><span class="lbl" lang="tr">Araştırma arşivi mimarisi ve MOC'lar</span><span class="note" lang="en">The model can forget. The researcher's archive must not.</span><span class="note" lang="tr">Model unutabilir. Ama araştırmacının arşivi unutmamalıdır.</span></div>
+        <div class="skill" data-reveal><code>/regional-access-workflow</code><span class="lbl" lang="en">DergiPark, ULAKBIM, HEAL-Link routing</span><span class="lbl" lang="tr">DergiPark, ULAKBİM, HEAL Link yönlendirme</span><span class="note" lang="en">Most global academic tools see regional reality only partly. This skill closes that gap.</span><span class="note" lang="tr">Küresel akademik araçların çoğu bölgesel gerçekliği eksik görür. Bu skill o boşluğu kapatır.</span></div>
+        <div class="skill" data-reveal><code>/agentic-session-debugger</code><span class="lbl" lang="en">Scope drift, loop trap, and context limits</span><span class="lbl" lang="tr">Kapsam kayması, döngü tuzağı ve bağlam sınırı</span><span class="note" lang="en">Agentic work sometimes derails while it still looks productive. This skill catches it early.</span><span class="note" lang="tr">Ajan tabanlı çalışma bazen üretken görünürken raydan çıkar. Bu skill o çıkışı erken fark eder.</span></div>
+        <div class="skill" data-reveal><code>/repo-release-integrity-check</code><span class="lbl" lang="en">Pre-release repository integrity audit</span><span class="lbl" lang="tr">Yayın öncesi repo bütünlük denetimi</span><span class="note" lang="en">It catches missing files, broken links, and broken pairings before release.</span><span class="note" lang="tr">Eksik dosya, bozuk bağlantı ve bozulmuş eşleşmeleri yayından önce yakalar.</span></div>
+        <div class="skill" data-reveal><code>/anti-ai-trace-revision</code><span class="lbl" lang="en">Two-layer de-AI revision for bilingual prose</span><span class="lbl" lang="tr">İki katmanlı yapay zekâ izi temizliği</span><span class="note" lang="en">The aim is not to hide the use. It is to turn mechanical, lifeless traces into a human, academic voice.</span><span class="note" lang="tr">Amaç kullanımı saklamak değil. Mekanik ve ruhsuz izleri insani, akademik bir dile çevirmektir.</span></div>
+        <div class="skill" data-reveal><code>/bilingual-manuscript-scaffold</code><span class="lbl" lang="en">Turkish-first drafting, English re-authoring</span><span class="lbl" lang="tr">Türkçe önce taslak, İngilizce yeniden yazım</span><span class="note" lang="en">Instead of machine translation, it supports rebuilding the thought in both languages.</span><span class="note" lang="tr">Makine çevirisi yerine düşüncenin iki dilde yeniden kurulmasını destekler.</span></div>
+        <div class="skill" data-reveal><code>/journal-fit-screening</code><span class="lbl" lang="en">Venue fit, index checks, predatory screening</span><span class="lbl" lang="tr">Dergi uyumu, dizin doğrulama ve predatör tarama</span><span class="note" lang="en">It is not enough for a paper to be good. It has to speak to the right journal.</span><span class="note" lang="tr">Bir makalenin iyi olması yetmez. Doğru dergiyle konuşması gerekir.</span></div>
+        <div class="skill" data-reveal><code>/qualitative-coding-discipline</code><span class="lbl" lang="en">AI as second coder with human oversight</span><span class="lbl" lang="tr">İnsan gözetiminde ikinci kodlayıcı düzeni</span><span class="note" lang="en">AI can summarize qualitative data quickly. But it cannot carry the meaning on its own.</span><span class="note" lang="tr">Yapay zekâ nitel veriyi hızla özetleyebilir. Ama anlamı tek başına taşıyamaz.</span></div>
+        <div class="skill" data-reveal><code>/statistical-consultation-protocol</code><span class="lbl" lang="en">Test selection with a decision log</span><span class="lbl" lang="tr">Karar günlüklü istatistiksel test seçimi</span><span class="note" lang="en">A researcher who cannot say why a test was chosen cannot defend the finding either.</span><span class="note" lang="tr">Hangi testi neden seçtiğini bilmeyen araştırmacı, bulgusunu da savunamaz.</span></div>
+        <div class="skill" data-reveal><code>/research-ritual-hooks</code><span class="lbl" lang="en">Session rituals as lifecycle hooks</span><span class="lbl" lang="tr">Oturum ritüellerini kancaya bağlama</span><span class="note" lang="en">Good research is born less from heroic focus than from small, steady rituals.</span><span class="note" lang="tr">İyi araştırma çoğu zaman kahramanca yoğunlaşmadan değil, küçük düzenli ritüellerden doğar.</span></div>
+        <div class="skill" data-reveal><code>/research-lifecycle-pipeline</code><span class="lbl" lang="en">Stage diagnosis and skill routing</span><span class="lbl" lang="tr">Aşama teşhisi ve beceri yönlendirme</span><span class="note" lang="en">Not every stage needs the same tool. It names which support the researcher needs right now.</span><span class="note" lang="tr">Her aşamada aynı araca ihtiyaç yoktur. Araştırmacının o an hangi desteğe ihtiyaç duyduğunu belirler.</span></div>
+        <div class="skill" data-reveal><code>/mcp-research-stack-triage</code><span class="lbl" lang="en">MCP server trust and data-flow triage</span><span class="lbl" lang="tr">MCP sunucu güveni ve veri akışı triyajı</span><span class="note" lang="en">Connecting to a server should not mean trusting it. It makes the line between convenience and risk visible.</span><span class="note" lang="tr">Bir sunucuya bağlanmak, ona güvenmek anlamına gelmemelidir. Kolaylık ile risk arasındaki çizgiyi görünür kılar.</span></div>
+        <div class="skill" data-reveal><code>/source-passport-ledger</code><span class="lbl" lang="en">Source passports and citation quarantine</span><span class="lbl" lang="tr">Kaynak pasaportu ve atıf karantinası</span><span class="note" lang="en">Not every source should enter the text at once. First its identity is verified, then it is admitted.</span><span class="note" lang="tr">Her kaynak metne hemen girmemeli. Önce kimliği doğrulanmalı, sonra kullanıma alınmalıdır.</span></div>
+        <div class="skill" data-reveal><code>/conference-materials-bilingual</code><span class="lbl" lang="en">Bilingual slides and posters, figure trace</span><span class="lbl" lang="tr">İki dilli sunum ve izlenebilir görseller</span><span class="note" lang="en">The aim is not just good-looking slides, but materials whose sources and AI contribution can be traced.</span><span class="note" lang="tr">Yalnızca iyi görünen slaytlar değil, kaynakları ve yapay zekâ katkısı izlenebilir materyaller hedeflenir.</span></div>
       </div>
     </div>
   </section>
@@ -349,9 +466,9 @@
   <!-- QUICK START -->
   <section class="block" id="start">
     <div class="wrap">
-      <span class="kicker"><span lang="en">Quick start</span><span lang="tr">Hızlı başlangıç</span></span>
-      <h2><span lang="en">How to install the companion skills.</span><span lang="tr">Tamamlayıcı skill paketi nasıl kurulur.</span></h2>
-      <div class="tabs">
+      <span class="rule" data-reveal></span>
+      <h2 data-reveal style="--d:40ms"><span lang="en">How to install the companion skills.</span><span lang="tr">Tamamlayıcı skill paketi nasıl kurulur.</span></h2>
+      <div class="tabs" data-reveal style="--d:90ms">
         <div class="tabbar" role="tablist">
           <button class="on" onclick="setTab(0)">pip</button>
           <button onclick="setTab(1)">Claude Code plugin</button>
@@ -377,17 +494,21 @@
 <span class="o"># the booklets and skills live in the repository</span></code></pre></div>
         </div>
       </div>
+      <div class="start-coda" data-reveal>
+        <p><span lang="en">After installation the goal is not to memorize more commands. The goal is to make the research process more orderly, more auditable, and less prone to scattering. Claude Code can be powerful. But it produces academic value only when it settles into a well-built way of working.</span><span lang="tr">Kurulumdan sonra amaç daha çok komut ezberlemek değildir. Amaç, araştırma sürecini daha düzenli, daha denetlenebilir ve daha az dağılgan hâle getirmektir. Claude Code güçlü olabilir. Ama ancak iyi kurulmuş bir çalışma düzeninin içine yerleşirse akademik değer üretir.</span></p>
+      </div>
     </div>
   </section>
 
-  <!-- ETHICS / DISCLOSURE CALLOUT -->
-  <section class="block" id="ethics" style="border-bottom:0">
+  <!-- ETHICS / DISCLOSURE -->
+  <section class="block" id="ethics">
     <div class="wrap">
-      <span class="kicker"><span lang="en">Disclosure and evidence</span><span lang="tr">Beyan ve kanıt</span></span>
-      <h2><span lang="en">Rigorous enough to serve as a scholarly reference.</span><span lang="tr">Bilimsel bir referans olacak kadar titiz.</span></h2>
-      <div class="callout">
-        <h3><span lang="en">Built for the most common use, and for the fear attached to it.</span><span lang="tr">En yaygın kullanıma göre kuruldu, o kullanımın yarattığı korkuya yanıt verir.</span></h3>
-        <p><span lang="en">A large 2026 survey of quantitative social scientists found that the dominant use of coding agents is data analysis, and that researchers fear AI worsening selective reporting. The data analysis booklets answer that fear directly, with reproducibility, pre-specification, and verification discipline.</span><span lang="tr">2026 tarihli büyük ölçekli bir nicel sosyal bilimci taraması iki şeyi ortaya koydu: kodlama ajanlarının baskın kullanım alanı veri analizidir ve araştırmacılar yapay zekânın seçici raporlamayı kötüleştirmesinden korkar. Veri analizi kitapçıkları bu korkuya doğrudan yanıt verir: yeniden üretilebilirlik, ön belirtim ve doğrulama disipliniyle.</span></p>
+      <span class="rule" data-reveal></span>
+      <h2 data-reveal style="--d:40ms"><span lang="en">Rigorous enough to serve as a scholarly reference.</span><span lang="tr">Bilimsel bir referans olacak kadar titiz.</span></h2>
+      <div class="callout" data-reveal style="--d:90ms">
+        <h3><span lang="en">Built for the most common use, and for the most justified fear attached to it.</span><span lang="tr">En yaygın kullanıma göre kuruldu, o kullanımın yarattığı en haklı korkuya yanıt verir.</span></h3>
+        <p><span lang="en">A large 2026 survey of quantitative social scientists found that the dominant use of coding agents is data analysis. The same researchers worry that AI could deepen selective reporting. This guide takes that tension seriously. So the data-analysis booklets answer not only the question of how to analyze, but a more basic one: how can this analysis be traced, verified, reproduced, and defended within academic responsibility?</span><span lang="tr">2026 tarihli büyük ölçekli bir nicel sosyal bilimci taraması, kodlama ajanlarının en baskın kullanım alanının veri analizi olduğunu gösterdi. Aynı araştırmacılar, yapay zekânın seçici raporlamayı derinleştirebileceğinden de endişe ediyor. Bu rehber tam olarak o gerilimi ciddiye alır. Veri analizi kitapçıkları bu nedenle yalnızca nasıl analiz yapılır sorusuna değil, daha temel bir soruya yanıt verir: bu analiz nasıl izlenebilir, nasıl doğrulanabilir, nasıl yeniden üretilebilir ve nasıl akademik sorumluluk içinde savunulabilir?</span></p>
+        <p class="three"><span lang="en">Three words sit at the center of the guide: reproducibility, pre-specification, and the discipline of verification.</span><span lang="tr">Bu yüzden rehberin merkezinde üç kelime durur: yeniden üretilebilirlik, önceden belirtim, doğrulama disiplini.</span></p>
         <div class="row">
           <span class="chip"><b>COPE</b> 2023</span>
           <span class="chip"><b>WAME</b> 2023</span>
@@ -400,16 +521,26 @@
     </div>
   </section>
 
+  <!-- CLOSING / SON SOZ -->
+  <section class="closing" aria-label="Closing">
+    <div class="wrap">
+      <p class="lead-line" data-reveal><span lang="en">The tool changes. The model changes. <em>Responsibility does not.</em></span><span lang="tr">Araç değişir. Model değişir. <em>Sorumluluk değişmez.</em></span></p>
+      <p data-reveal style="--d:80ms"><span lang="en">This guide does not want the social scientist to shrink before AI. On the contrary, it wants them to hold their own work more firmly: their source discipline, their ethical responsibility, their way of thinking, their language, their research memory.</span><span lang="tr">Bu rehber, sosyal bilimcinin yapay zekâ karşısında küçülmesini istemez. Tam tersine, kendi emeğine daha güçlü sahip çıkmasını ister: kendi kaynak disiplinine, kendi etik sorumluluğuna, kendi düşünme biçimine, kendi diline, kendi araştırma hafızasına.</span></p>
+      <p data-reveal style="--d:140ms"><span lang="en">Claude Code, set up well, can help. But it cannot take the good researcher's place. The good researcher knows where each sentence came from. Knows why a source is trusted. Knows why an analysis was run. Does not hide where AI was used. Does not surrender their language to the machine. Does not leave the bibliography to chance.</span><span lang="tr">Claude Code iyi kurulursa yardımcı olabilir. Ama iyi araştırmacının yerini alamaz. İyi araştırmacı, hangi cümlenin nereden geldiğini bilir. Hangi kaynağa neden güvendiğini bilir. Hangi analizi neden yaptığını bilir. Yapay zekâyı nerede kullandığını saklamaz. Dilini makineye teslim etmez. Kaynakçasını şansa bırakmaz.</span></p>
+      <p class="coda" data-reveal style="--d:200ms"><span lang="en">An AI use that fabricates no sources, hides no contribution, holds two languages responsible to each other, keeps its ethical limits in the open, and respects the social scientist's real working life is possible. This site exists to make exactly that possibility larger.</span><span lang="tr">Kaynak uydurmayan, katkısını saklamayan, iki dili birbirine emanet eden, etik sınırlarını açık tutan ve sosyal bilimcinin gerçek çalışma hayatına saygı duyan bir yapay zekâ kullanımı mümkündür. Bu site, tam da bu ihtimali büyütmek için var.</span></p>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site">
   <div class="wrap">
     <div class="top">
-      <div class="col" style="max-width:34ch">
-        <a class="brand" href="#top" style="margin-bottom:10px"><span class="logo">cc</span><span>Claude Code for Social Scientists</span></a>
-        <p style="color:var(--muted);font-size:14px;margin:0">
-          <span lang="en">Authored by Onour Impram, clinical psychologist and PhD candidate. Dual-licensed for permanent, non-commercial reuse.</span>
-          <span lang="tr">Klinik psikolog ve doktora adayı Onour Impram yazdı. Kalıcı ve ticari olmayan yeniden kullanıma çift lisanslı.</span>
+      <div class="col lead">
+        <a class="brand" href="#top"><span class="logo"><b>cc</b></span><span>Claude Code for Social Scientists</span></a>
+        <p class="about">
+          <span lang="en">Authored by Onour Impram, clinical psychologist and researcher. Dual-licensed for permanent, open, non-commercial reuse.</span>
+          <span lang="tr">Klinik psikolog ve araştırmacı Onour Impram tarafından yazıldı. Kalıcı, açık ve ticari olmayan yeniden kullanım için çift lisanslıdır.</span>
         </p>
       </div>
       <div class="col">
@@ -428,10 +559,10 @@
       </div>
     </div>
     <div class="legal">
-      <span class="mono">Code: Apache-2.0</span>
-      <span class="mono">Prose and booklets: CC-BY-NC-SA-4.0</span>
-      <span>© 2026 Onour Impram</span>
-      <span class="mono">Release v3.0.2</span>
+      <span class="mono">Code: Apache-2.0</span><span class="sep">·</span>
+      <span class="mono">Prose and booklets: CC-BY-NC-SA-4.0</span><span class="sep">·</span>
+      <span>© 2026 Onour Impram</span><span class="sep">·</span>
+      <span class="mono">Release v3.0.2</span><span class="sep">·</span>
       <span class="mono">DOI 10.5281/zenodo.20289687</span>
     </div>
   </div>
@@ -470,6 +601,43 @@
     navigator.clipboard && navigator.clipboard.writeText(b.getAttribute("data-copy"));
     var t = b.textContent; b.textContent = "copied"; setTimeout(function () { b.textContent = t; }, 1200);
   });
+
+  /* ---- Motion: progressive enhancement only ---- */
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce || !("IntersectionObserver" in window)) return;
+    document.documentElement.classList.add("motion");
+    function countUp(el) {
+      var target = parseInt(el.textContent.replace(/\D/g, ""), 10);
+      if (!target) { return; }
+      var dur = 900, start = null;
+      function step(ts) {
+        if (start === null) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased).toLocaleString();
+        if (p < 1) requestAnimationFrame(step);
+        else el.textContent = target.toLocaleString();
+      }
+      requestAnimationFrame(step);
+    }
+    function reveal(el) {
+      if (el.classList.contains("in")) return;
+      el.classList.add("in");
+      var c = el.hasAttribute("data-count") ? el : (el.querySelector ? el.querySelector("[data-count]") : null);
+      if (c) countUp(c);
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        reveal(e.target);
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -6% 0px" });
+    var els = [].slice.call(document.querySelectorAll("[data-reveal]"));
+    els.forEach(function (el) { io.observe(el); });
+    setTimeout(function () { els.forEach(reveal); }, 1800);
+  })();
 </script>
 </body>
 </html>
