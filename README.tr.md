@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists. Sosyal Bilimciler İçin Claude Code Rehberi banner. Yazar Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, çift lisans Apache 2.0 ve CC-BY-NC-SA 4.0, v2.6.0.">
+  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists. Sosyal Bilimciler İçin Claude Code Rehberi banner. Yazar Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, çift lisans Apache 2.0 ve CC-BY-NC-SA 4.0, v3.0.1.">
 </p>
 
 # Sosyal Bilimciler İçin Claude Code Rehberi
 
 Anthropic Claude Code'u araştırmada, eğitimde ve akademik yazımda kullanmak isteyen sosyal bilimciler için iki dilli, açık kaynak bir rehber. Bu araçları gerçek akademik üretim sürecinde kullanan bir klinik psikolog ve doktora adayı tarafından yazıldı. İngilizce konuşulan dünyanın dışındaki araştırmacılara, içeridekilere de seslenerek.
 
-> **Durum.** v3.0.0 sürümü. Yirmi bir kitapçık Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. On iki kategorinin her birinde en az bir yayımlanmış kitapçık var. Kitapçıkları yinelenebilir iş akışlarına dönüştüren yirmi tamamlayıcı Claude Code project skill de pakete dahildir. Doğrulanmış atıf toplamı 354, uydurma atıf sıfır. v3.0.0, JOSE makalesini bu tamamlanmış yüzeye göre yeniliyor ve gönderim hazırlık paketini ekliyor. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
+> **Durum.** v3.0.1 sürümü. Yirmi bir kitapçık Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. On iki kategorinin her birinde en az bir yayımlanmış kitapçık var. Kitapçıkları yinelenebilir iş akışlarına dönüştüren yirmi tamamlayıcı Claude Code project skill de pakete dahildir. Doğrulanmış atıf toplamı 354, uydurma atıf sıfır. v3.0.1, JOSE makalesini bu tamamlanmış yüzeye göre yeniliyor ve gönderim hazırlık paketini ekliyor. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
 
 > **EN readers.** The English version is in [`README.md`](./README.md). Every booklet has a `tr.md` and an `en.md` side by side. A CI check enforces this pairing on every commit.
 
@@ -98,7 +98,7 @@ Her kitapçığın `KKK-AA-SSSS` biçiminde sabit bir kimliği vardır.
 
 ## Project Skills
 
-v2.7.0 yüzeyi [`.claude/skills/`](./.claude/skills/) altında yirmi Claude Code project skill içerir ve araştırma yaşam döngüsünü literatür kapsamlamadan yayın bütünlüğüne kadar kapsar. Kitapçıklar teoriyi, pedagojiyi ve akademik çerçeveyi taşır. Skills katmanı ise tekrarlanabilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır. Her skill, rehberin iki dillilik ilkesini skill katmanına taşıyan bir Türkçe kullanım bölümüyle kapanır.
+v3.0.1 yüzeyi [`.claude/skills/`](./.claude/skills/) altında yirmi Claude Code project skill içerir ve araştırma yaşam döngüsünü literatür kapsamlamadan yayın bütünlüğüne kadar kapsar. Kitapçıklar teoriyi, pedagojiyi ve akademik çerçeveyi taşır. Skills katmanı ise tekrarlanabilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır. Her skill, rehberin iki dillilik ilkesini skill katmanına taşıyan bir Türkçe kullanım bölümüyle kapanır.
 
 | Skill | Tamamlayıcı kitapçıklar | Amaç |
 |---|---|---|
@@ -151,7 +151,7 @@ Bu çalışma şu kanallarla kayıt altına alınmıştır.
 
 ## Yol haritası
 
-Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v3.0.0: JOSE makalesi yirmi bir kitapçık ve yirmi skill yüzeyine göre yenilendi, gönderim hazırlık listesi [`meta/jose-submission.md`](./meta/jose-submission.md) dosyasında ve makale PDF'i derleyen bir workflow eklendi. Gönderimin kendisi yazarın onayına bağlı ayrı bir adımdır. Otuz bir kitapçıklık tam katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımı uzun vadeli hedef olmayı sürdürüyor.
+Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Mevcut sürüm v3.0.1: JOSE makalesi yirmi bir kitapçık ve yirmi skill yüzeyine göre yenilendi, gönderim hazırlık listesi [`meta/jose-submission.md`](./meta/jose-submission.md) dosyasında ve makale PDF'i derleyen bir workflow eklendi. Gönderimin kendisi yazarın onayına bağlı ayrı bir adımdır. Otuz bir kitapçıklık tam katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımı uzun vadeli hedef olmayı sürdürüyor.
 
 ## Katkıda bulunma
 
