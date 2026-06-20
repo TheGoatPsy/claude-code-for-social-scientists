@@ -135,6 +135,7 @@ Valmeekam, K., Marquez, M., Sreedharan, S., & Kambhampati, S. (2023). On the pla
 **Booklet ID.** `003-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
+**License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Approximate word count.** 2180 (English body text, measured with wc)
 **Verified citations.** 9
 **Hallucinated citations.** 0

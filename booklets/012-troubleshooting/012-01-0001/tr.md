@@ -161,6 +161,7 @@ Vaughan, D. (1996). *The Challenger launch decision: Risky technology, culture, 
 **Kitapçık kimliği.** `012-01-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
+**Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Sözcük sayısı (yaklaşık).** 2377 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 7
 **Uydurma atıf sayısı.** 0

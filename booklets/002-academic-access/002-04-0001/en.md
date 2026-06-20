@@ -157,6 +157,7 @@ YÖK. (2026). *Council of Higher Education National Thesis Center*. https://tez.
 **Booklet ID.** `002-04-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
+**License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Word count (approx.).** 2246 (English body text, measured with wc)
 **Verified citations.** 10
 **Hallucinated citations.** 0

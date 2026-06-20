@@ -114,6 +114,7 @@ Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (
 **Booklet ID.** `006-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
+**License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Approximate word count.** 1536 (English body text, measured with wc)
 **Verified citations.** 6
 **Hallucinated citations.** 0

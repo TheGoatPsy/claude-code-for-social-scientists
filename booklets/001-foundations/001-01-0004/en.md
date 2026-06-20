@@ -136,6 +136,7 @@ White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., 
 **Booklet identifier.** `001-01-0004`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
+**License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Approximate word count.** 1872 (English body text, measured with wc)
 **Verified citations.** 9
 **Fabricated citations.** 0

@@ -153,6 +153,7 @@ World Association of Medical Editors. (2023). *Recommendations on chatbots and g
 **Kitapçık kimliği.** `009-01-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
+**Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Sözcük sayısı (yaklaşık).** 2008 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 12
 **Uydurma atıf sayısı.** 0

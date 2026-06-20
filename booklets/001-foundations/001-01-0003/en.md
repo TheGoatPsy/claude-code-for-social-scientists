@@ -134,6 +134,7 @@ Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C. L., Mishkin, P., Zhan
 **Booklet identifier.** `001-01-0003`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
+**License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Approximate word count.** 2563 (English body text, measured with wc)
 **Verified citations.** 6
 **Fabricated citations.** 0
