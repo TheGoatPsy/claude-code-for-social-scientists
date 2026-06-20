@@ -43,18 +43,21 @@ exclude_docs: |
 theme:
   name: material
   language: en
+  # Self-hosted fonts via assets/extra.css; disable Material's Google Fonts
+  # fetch so the booklets make zero third-party requests, like the landing.
+  font: false
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: deep purple
+      primary: teal
+      accent: amber
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: deep purple
+      primary: teal
+      accent: amber
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -71,6 +74,9 @@ theme:
     - content.code.copy
   icon:
     repo: fontawesome/brands/github
+
+extra_css:
+  - assets/extra.css
 
 plugins:
   - same-dir

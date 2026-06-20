@@ -1,0 +1,94 @@
+/* ============================================================================
+   Booklet theme harmony — academic journal (teal + gold)
+   Maps MkDocs Material onto the same identity as web/index.html:
+   self-hosted Newsreader/Source Sans 3/JetBrains Mono + teal ink + gold accent.
+
+   Font url() paths are relative to THIS stylesheet (assets/extra.css), so they
+   resolve to assets/fonts/* on every page regardless of the Pages base path.
+   With theme.font: false in mkdocs.yml, the booklets make zero third-party
+   font requests, matching the landing page.
+   ============================================================================ */
+
+/* ---- Self-hosted variable fonts (latin + latin-ext, OFL-1.1) ------------- */
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:200 800;font-display:swap;src:url(fonts/newsreader-latinext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:200 800;font-display:swap;src:url(fonts/newsreader-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:200 800;font-display:swap;src:url(fonts/newsreader-italic-latinext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:200 800;font-display:swap;src:url(fonts/newsreader-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:200 900;font-display:swap;src:url(fonts/sourcesans-latinext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:200 900;font-display:swap;src:url(fonts/sourcesans-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url(fonts/jbmono-latinext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url(fonts/jbmono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+
+/* ---- Font wiring (theme.font: false leaves these free to set) ------------ */
+:root{
+  --md-text-font: 'Source Sans 3';
+  --md-code-font: 'JetBrains Mono';
+}
+
+/* Headings carry the serif display face, matching the landing. */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-header__title,
+.md-nav__title{
+  font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+  font-weight: 560;
+  letter-spacing: -0.018em;
+}
+.md-typeset h1{ font-weight: 580; }
+
+/* ---- Light scheme: teal ink + gold accent -------------------------------- */
+/* Loaded after the theme CSS, so these win over the named-palette defaults. */
+[data-md-color-scheme="default"]{
+  --md-primary-fg-color:        oklch(0.420 0.072 214);
+  --md-primary-fg-color--light: oklch(0.545 0.070 210);
+  --md-primary-fg-color--dark:  oklch(0.340 0.060 216);
+  --md-accent-fg-color:         oklch(0.455 0.085 209);
+  --md-accent-fg-color--transparent: oklch(0.455 0.085 209 / 0.10);
+  --md-typeset-a-color:         oklch(0.455 0.085 209);
+  --md-default-bg-color:        oklch(0.984 0.004 210);
+}
+
+/* ---- Dark scheme (slate): deep teal-slate + brightened gold -------------- */
+[data-md-color-scheme="slate"]{
+  --md-primary-fg-color:        oklch(0.300 0.040 218);
+  --md-primary-fg-color--light: oklch(0.420 0.050 212);
+  --md-primary-fg-color--dark:  oklch(0.232 0.030 220);
+  --md-accent-fg-color:         oklch(0.760 0.095 200);
+  --md-accent-fg-color--transparent: oklch(0.760 0.095 200 / 0.12);
+  --md-typeset-a-color:         oklch(0.800 0.090 200);
+  --md-default-bg-color:        oklch(0.190 0.022 220);
+  --md-default-fg-color:        oklch(0.930 0.012 205);
+}
+
+/* ---- Gold as a sparing signal, once per page, never a per-section reflex - */
+/* A short gold rule under the page title (h1) only, echoing the landing
+   .rule. Deliberately not applied to every h2, which would read as the
+   eyebrow reflex one tier down. */
+.md-typeset h1{
+  padding-bottom: 0.32em;
+  position: relative;
+}
+.md-typeset h1::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  border-radius: 2px;
+  background: oklch(0.800 0.115 84);
+}
+[data-md-color-scheme="slate"] .md-typeset h1::after{
+  background: oklch(0.835 0.120 84);
+}
+
+/* Active navigation links read a touch heavier in the teal. */
+.md-tabs__link--active,
+.md-nav__link--active{ font-weight: 600; }
+
+/* Keep the JetBrains Mono identity; leave Material's tested code-block
+   background contrast untouched. */
+.md-typeset code,
+.md-typeset pre > code{ font-feature-settings: "liga" 0; }
