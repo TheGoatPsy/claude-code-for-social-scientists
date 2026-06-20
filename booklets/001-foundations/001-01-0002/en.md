@@ -142,6 +142,7 @@ Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023)
 **Booklet identifier.** `001-01-0002`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
+**License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Approximate word count.** 2625 (English body text, measured with wc)
 **Verified citations.** 10
 **Fabricated citations.** 0

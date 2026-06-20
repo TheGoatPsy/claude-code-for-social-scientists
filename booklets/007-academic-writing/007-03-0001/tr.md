@@ -119,6 +119,7 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 **Kitapçık kimliği.** `007-03-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
+**Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Sözcük sayısı (yaklaşık).** 1330 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 7
 **Uydurma atıf sayısı.** 0

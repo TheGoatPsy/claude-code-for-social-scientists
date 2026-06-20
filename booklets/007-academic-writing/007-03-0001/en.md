@@ -120,6 +120,7 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 **Booklet ID.** `007-03-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
+**License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Approximate word count.** 1813 (English body text, measured with wc)
 **Verified citations.** 7
 **Hallucinated citations.** 0

@@ -154,6 +154,7 @@ World Medical Association. (2025). World Medical Association Declaration of Hels
 **Booklet ID.** `009-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
+**License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Approximate word count.** 2491 (English body text, excluding references, measured with wc)
 **Verified citations.** 12
 **Hallucinated citations.** 0

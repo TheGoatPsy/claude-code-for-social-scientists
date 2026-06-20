@@ -203,6 +203,7 @@ Norman, D. A. (2013). *The design of everyday things* (revised and expanded edit
 **Booklet ID.** `004-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
+**License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Approximate word count.** 2282 (English body text, measured with wc)
 **Verified citations.** 9
 **Hallucinated citations.** 0

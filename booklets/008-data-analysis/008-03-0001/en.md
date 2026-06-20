@@ -116,6 +116,7 @@ Walters, W. H., & Wilder, E. I. (2023). Fabrication and errors in the bibliograp
 **Booklet ID.** `008-03-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
+**License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Approximate word count.** 1604 (English body text, measured with wc)
 **Verified citations.** 6
 **Hallucinated citations.** 0

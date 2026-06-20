@@ -161,6 +161,7 @@ Vaughan, D. (1996). *The Challenger launch decision: Risky technology, culture, 
 **Booklet ID.** `012-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
+**License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Word count (approx.).** 3174 (English body text, measured with wc)
 **Verified citations.** 7
 **Hallucinated citations.** 0

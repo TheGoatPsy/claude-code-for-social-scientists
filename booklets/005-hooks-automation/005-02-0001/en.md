@@ -114,6 +114,7 @@ Wood, W., & Rünger, D. (2016). Psychology of habit. *Annual Review of Psycholog
 **Booklet ID.** `005-02-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
+**License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Approximate word count.** 1569 (English body text, measured with wc)
 **Verified citations.** 6
 **Hallucinated citations.** 0

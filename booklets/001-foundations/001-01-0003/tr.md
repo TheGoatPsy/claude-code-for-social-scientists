@@ -133,6 +133,7 @@ Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C. L., Mishkin, P., Zhan
 **Kitapçık kimliği.** `001-01-0003`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
+**Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Sözcük sayısı (yaklaşık).** 2094 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0

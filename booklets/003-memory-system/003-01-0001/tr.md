@@ -134,6 +134,7 @@ Valmeekam, K., Marquez, M., Sreedharan, S., & Kambhampati, S. (2023). On the pla
 **Kitapçık kimliği.** `003-01-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
+**Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Sözcük sayısı (yaklaşık).** 1819 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 9
 **Uydurma atıf sayısı.** 0
