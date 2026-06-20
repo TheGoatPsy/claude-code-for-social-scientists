@@ -1,0 +1,30 @@
+Claude Code for Social Scientists
+Sosyal Bilimciler Icin Claude Code Rehberi
+
+Provenance and timestamp record / Koken ve zaman damgasi kaydi
+
+Author: Onour Impram
+ORCID: 0000-0003-1076-3928
+Repository: https://github.com/TheGoatPsy/claude-code-for-social-scientists
+Release: v3.0.1
+Release date: 2026-06-20
+Git commit (SHA-1): e5234f1b9dedf942efbdafb0af099a03429fc76a
+Git tree (SHA-1): 7c24c9f805821045cca519b2a9a64129cb731157
+
+The Git commit hash above content-addresses the entire repository tree at the
+time of the v3.0.1 release. The companion file timestamp.txt.ots is an
+OpenTimestamps proof that anchors the SHA-256 digest of this file to the Bitcoin
+blockchain. Together they give an independent, third-party proof that the
+content named here existed on or before the attestation date, with no account,
+no fee, and no national registration office required.
+
+This is one layer in a defense-in-depth provenance stack. The others are the
+Zenodo (CERN) release deposit with a citable DOI, the public Git commit history,
+and automatic copyright under the Berne Convention in the author's jurisdictions
+(Turkiye, Greece, Ireland) and 180+ member states.
+
+Verify the timestamp:  ots verify timestamp.txt.ots
+OpenTimestamps:         https://opentimestamps.org
+
+Copyright (c) 2026 Onour Impram. Booklets and prose under CC-BY-NC-SA-4.0; code
+under Apache-2.0. See the LICENSE files at the repository root.

@@ -6,6 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [3.0.2] - 2026-06-20
+
+Patch release. Provenance and licensing accuracy. The U.S. Copyright Office (eCO) registration line is removed from the LICENSE and the project surfaces, because no such application was filed. The copyright basis is restated as automatic protection under the Berne Convention, evidenced in depth by the Zenodo deposit, a new OpenTimestamps Bitcoin anchor, and the public Git history. No booklet content, citation, or count changed.
+
+### Added
+
+- A `provenance/` directory with a release timestamp record and an OpenTimestamps proof (`timestamp.txt.ots`) that anchors the SHA-256 of the record to the Bitcoin blockchain, with verification instructions.
+
+### Changed
+
+- LICENSE section 4 and the README protection sections (both languages) restated around automatic Berne-Convention copyright plus Zenodo, OpenTimestamps, the public Git history, and the license declarations, in place of the unfiled eCO claim.
+- Stale version labels corrected and made durable: the version string was dropped from the banner, and the skills-surface description no longer pins a version.
+
+### Unchanged
+
+- All booklet content, the reference set, the immutable identifiers, and the aggregate disclosure metrics (354 verified, 0 fabricated, 21 booklets, 20 skills).
+
 ## [3.0.1] - 2026-06-20
 
 Patch release. A repository-wide zero-defect audit, sixty-three Opus agents across all twenty-one booklets with every flagged citation re-verified live against Crossref, found and corrected sixty-nine confirmed defects in published content. The reference set and the aggregate counts are unchanged: 354 verified declarations, 0 fabricated.

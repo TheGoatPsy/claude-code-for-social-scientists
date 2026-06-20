@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Author Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, dual licensed Apache 2.0 plus CC-BY-NC-SA 4.0, v2.6.0.">
+  <img src="./assets/banner.svg" alt="Claude Code for Social Scientists — Sosyal Bilimciler İçin Claude Code Rehberi banner. Author Onour Impram, ORCID 0000-0003-1076-3928, Zenodo concept DOI 10.5281/zenodo.20289687, dual licensed Apache 2.0 plus CC-BY-NC-SA 4.0.">
 </p>
 
 # Claude Code for Social Scientists
 
 A bilingual, open-source guide for social scientists who want to use Anthropic's Claude Code in their research, teaching, and academic writing. Written by a working clinical psychologist and PhD candidate — for researchers outside the English-speaking world as much as inside it — drawing on real academic production, not demonstration projects.
 
-> **Status:** v3.0.0 release. Twenty-one booklets in Turkish and English, human-reviewed and citation-audited, at least one in every one of the twelve categories, plus twenty companion Claude Code project skills that turn the booklets into repeatable workflows. Aggregate verified citations stand at 354, with zero fabricated. v3.0.0 refreshes the Journal of Open Source Education paper against this finished surface and adds the submission preparation package. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
+> **Status:** Current release v3.0.2. Twenty-one booklets in Turkish and English, human-reviewed and citation-audited, at least one in every one of the twelve categories, plus twenty companion Claude Code project skills that turn the booklets into repeatable workflows. Aggregate verified citations stand at 354, with zero fabricated. The v3.0 line refreshed the Journal of Open Source Education paper against this finished surface and added the submission preparation package. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
 
 > **TR readers:** A Turkish overview lives at the bottom of this file. The full Turkish version is in [`README.tr.md`](./README.tr.md). Every booklet exists as `tr.md` and `en.md` side by side.
 
@@ -98,7 +98,7 @@ So `001-01-0001` is the first booklet, in the first subcategory, of the Foundati
 
 ## Project Skills
 
-The v2.7.0 surface includes twenty Claude Code project skills under [`.claude/skills/`](./.claude/skills/), covering the research lifecycle from literature scoping to release integrity. The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries, and every skill closes with a Turkish usage section, extending the guide's bilingual parity principle to the skill layer.
+The skills layer includes twenty Claude Code project skills under [`.claude/skills/`](./.claude/skills/), covering the research lifecycle from literature scoping to release integrity. The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries, and every skill closes with a Turkish usage section, extending the guide's bilingual parity principle to the skill layer.
 
 | Skill | Companion booklets | Purpose |
 |---|---|---|
@@ -140,18 +140,20 @@ Code and configuration are under the **Apache License, Version 2.0** ([`LICENSE.
 
 If you cite this work, use the machine-readable record in [`CITATION.cff`](./CITATION.cff), or the "Cite this repository" button on GitHub. The Zenodo concept DOI (resolves to the latest version) is **10.5281/zenodo.20289687**. See <https://doi.org/10.5281/zenodo.20289687> for the canonical record. Zenodo mints each version DOI after a GitHub release is published, so immutable tag archives may only contain the concept DOI and previously known version DOIs. Newly minted version DOI metadata is recorded on `main` after Zenodo creates it.
 
-## International protection
+## Provenance and protection
 
-This work is registered through:
+Copyright in this work is automatic. Under the Berne Convention it arises on creation in the author's jurisdictions (Türkiye, Greece, Ireland) and in 180+ member states, with no registration required. Authorship and release dates are evidenced in depth:
 
-- **Zenodo** (CERN) for a persistent DOI on each release
-- **Software Heritage Archive** (CERN/Inria) for a permanent code archive
-- **U.S. Copyright Office (eCO)** for an evidentiary registration enforceable in 180+ Berne Convention member states
-- **Creative Commons license metadata** for machine-readable license declarations
+- **Zenodo** (CERN) mints a timestamped, citable DOI for each release, tied to the author's ORCID
+- **OpenTimestamps** anchors each release to the Bitcoin blockchain (see [`provenance/`](./provenance/))
+- **The public Git history** is an append-only, content-addressed record of authorship and dates
+- **Creative Commons and Apache license declarations** state the terms in human- and machine-readable form
+
+The public source is also eligible for permanent archival via the Software Heritage archive.
 
 ## Roadmap
 
-See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v3.0.0: the Journal of Open Source Education paper refreshed against the finished twenty-one-booklet, twenty-skill surface, with a submission readiness checklist in [`meta/jose-submission.md`](./meta/jose-submission.md) and a draft-PDF compile workflow. The submission itself is a maintainer-gated step. The full thirty-one-booklet catalog, with a living lab, conference citations, and instructional use, remains the long-term target.
+See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v3.0.2. The v3.0 line refreshed the Journal of Open Source Education paper against the finished twenty-one-booklet, twenty-skill surface, with a submission readiness checklist in [`meta/jose-submission.md`](./meta/jose-submission.md) and a draft-PDF compile workflow. The submission itself is a maintainer-gated step. The full thirty-one-booklet catalog, with a living lab, conference citations, and instructional use, remains the long-term target.
 
 ## Contributing
 
