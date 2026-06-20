@@ -134,7 +134,7 @@ Wicherts, J. M., Veldkamp, C. L. S., Augusteijn, H. E. M., Bakker, M., van Aert,
 **Booklet identifier.** `008-02-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2698 (English body text, measured with wc)
+**Approximate word count.** 2272 (English body text, measured with wc)
 **Verified citations.** 11
 **Fabricated citations.** 0
 **Previous booklet.** [`008-01-0001`](../008-01-0001/en.md). Reproducible Quantitative Workflows

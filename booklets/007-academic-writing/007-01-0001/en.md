@@ -118,7 +118,7 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 **Booklet ID.** `007-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 1882 (English body text, measured with wc)
+**Approximate word count.** 1668 (English body text, measured with wc)
 **Verified citations.** 8
 **Hallucinated citations.** 0
 **Previous booklet.** [`004-01-0001`](../../004-vault-architecture/004-01-0001/en.md). Folder Discipline and the Maps of Content (MOC) Pattern

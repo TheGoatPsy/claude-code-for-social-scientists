@@ -98,9 +98,9 @@ Tool dependence is a quieter hazard. If a researcher ties their vault to a singl
 
 Clinical data carries the heaviest obligation. A clinical psychologist's vault must not contain non-anonymized patient data. This is both an ethical obligation and a legal one. Clinical data may enter the vault only after de-identification and within the framework of ethics-board approval. This risk connects directly to the regional legal environment described in the next section.
 
-## 8. Turkey and Greece Specificity
+## 8. Türkiye and Greece Specificity
 
-When clinical and human-subject data are at stake, Turkey and Greece present two distinct but structurally convergent legal frameworks. In Turkey, Law No. 6698 on the Protection of Personal Data designates clinical data as special-category personal data. The Personal Data Protection Authority (2024), in its guide on the protection of personal health data, emphasizes the quality of explicit consent and the principle of data minimization as the governing standards. The practical consequence is clear: a clinical psychologist or hospital researcher in Turkey does not hold non-anonymized clinical data in their vault. They should not.
+When clinical and human-subject data are at stake, Türkiye and Greece present two distinct but structurally convergent legal frameworks. In Türkiye, Law No. 6698 on the Protection of Personal Data designates clinical data as special-category personal data. The Personal Data Protection Authority (2024), in its guide on the protection of personal health data, emphasizes the quality of explicit consent and the principle of data minimization as the governing standards. The practical consequence is clear: a clinical psychologist or hospital researcher in Türkiye does not hold non-anonymized clinical data in their vault. They should not.
 
 Greece, as a European Union member state, falls under the General Data Protection Regulation directly. The European Data Protection Board (2024), in its guidelines on the protection of personal data in research, defines the limits of data processing in the research context. The structural similarity between the Turkish framework and the GDPR is high: both center on data minimization and purpose limitation as core principles. The practice of the ethics board at Democritus University in Komotini is one concrete application of this framework. A field researcher bringing interview transcripts into the vault replaces participant identities with codes before any file enters the system, keeping the vault both research-functional and legally compliant.
 
@@ -112,7 +112,7 @@ Of the four steps of the Memory as Vault cycle, the Store step is the subject of
 
 Citations are in APA 7 format. DOIs and arXiv identifiers were independently verified on 2026-06-04. Bush (1945) and Luhmann (1992) predate DOI registration. Ahrens (2017) is a trade book. The Personal Data Protection Authority (2024) and European Data Protection Board (2024) are institutional grey-literature sources cited for their regulatory authority. Neither carries a DOI.
 
-Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. CreateSpace Independent Publishing Platform.
+Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. ISBN 978-1542866507
 
 Bush, V. (1945, July). As we may think. *The Atlantic Monthly*, 176(1), 101–108.
 
@@ -135,7 +135,7 @@ Valmeekam, K., Marquez, M., Sreedharan, S., & Kambhampati, S. (2023). On the pla
 **Booklet ID.** `003-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2562 (English body text, measured with wc)
+**Approximate word count.** 2184 (English body text, measured with wc)
 **Verified citations.** 9
 **Hallucinated citations.** 0
 **Original concept.** Memory as Vault is the author's original practitioner concept, presented here as the guide's working framework.

@@ -126,7 +126,7 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 **Booklet identifier.** `008-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2409 (English body text, measured with wc)
+**Approximate word count.** 2049 (English body text, measured with wc)
 **Verified citations.** 10
 **Fabricated citations.** 0
 **Previous booklet.** [`007-02-0001`](../../007-academic-writing/007-02-0001/en.md). APA 7 with DOI Discipline

@@ -171,7 +171,7 @@ Walters, W. H., & Wilder, E. I. (2023). Fabrication and errors in the bibliograp
 **Kitapçık kimliği.** `007-02-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
-**Sözcük sayısı (yaklaşık).** 1936 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 1661 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 10
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`004-01-0001`](../../004-vault-architecture/004-01-0001/tr.md). Klasör Disiplini ve Maps of Content (MOC) Kalıbı

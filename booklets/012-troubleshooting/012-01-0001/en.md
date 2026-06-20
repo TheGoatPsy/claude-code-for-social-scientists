@@ -161,7 +161,7 @@ Vaughan, D. (1996). *The Challenger launch decision: Risky technology, culture, 
 **Booklet ID.** `012-01-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Word count (approx.).** 3469 (English body text, measured with wc)
+**Word count (approx.).** 3176 (English body text, measured with wc)
 **Verified citations.** 7
 **Hallucinated citations.** 0
 **Previous booklet.** [`010-01-0001`](../../010-peer-review/010-01-0001/en.md). Rebuttal Letters with Traceability Matrices

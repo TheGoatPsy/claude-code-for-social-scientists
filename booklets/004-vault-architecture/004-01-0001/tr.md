@@ -190,7 +190,7 @@ Knuth (1984), edebi programlama felsefesinde şunu ortaya koyar: bir belgeyi ön
 
 Atıflar APA 7 biçimindedir. DOI'ler Crossref üzerinden doğrulanmıştır. Bates (2002), DOI olmaksızın belirtilmiştir. *New Review of Information Behaviour Research* makalesine ait bir Crossref kaydı mevcut değildir. Ticari kitaplar (Ahrens, Allen, Brown ve Duguid, Forte, Norman) ISBN ile belirtilmiş ve metin boyunca uygulayıcı kaynaklar olarak çerçevelenmiştir.
 
-Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. CreateSpace Independent Publishing Platform.
+Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. ISBN 978-1542866507
 
 Allen, D. (2015). *Getting things done: The art of stress-free productivity* (gözden geçirilmiş baskı). Penguin Books. ISBN 978-0-14-312656-9
 
@@ -211,7 +211,7 @@ Norman, D. A. (2013). *The design of everyday things* (gözden geçirilmiş ve g
 **Kitapçık kimliği.** `004-01-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
-**Sözcük sayısı (yaklaşık).** 1990 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 1919 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 9
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`003-01-0001`](../../003-memory-system/003-01-0001/tr.md). Hafızayı Arşive Dönüştürmek, İlkesel Bir Giriş

@@ -114,7 +114,7 @@ Wood, W., & Rünger, D. (2016). Psychology of habit. *Annual Review of Psycholog
 **Booklet ID.** `005-02-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 1719 (English body text, measured with wc)
+**Approximate word count.** 1569 (English body text, measured with wc)
 **Verified citations.** 6
 **Hallucinated citations.** 0
 **Previous booklet.** [`004-01-0001`](../../004-vault-architecture/004-01-0001/en.md). Folder Discipline and the Maps of Content (MOC) Pattern

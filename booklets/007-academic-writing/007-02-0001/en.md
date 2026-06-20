@@ -171,7 +171,7 @@ Walters, W. H., & Wilder, E. I. (2023). Fabrication and errors in the bibliograp
 **Booklet ID.** `007-02-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Word count (approx.).** 2413 (English body text, measured with wc)
+**Word count (approx.).** 2102 (English body text, measured with wc)
 **Verified citations.** 10
 **Hallucinated citations.** 0
 **Previous booklet.** [`004-01-0001`](../../004-vault-architecture/004-01-0001/en.md). Folder Discipline and the Maps of Content (MOC) Pattern

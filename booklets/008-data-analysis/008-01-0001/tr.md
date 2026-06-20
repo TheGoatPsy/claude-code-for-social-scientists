@@ -44,11 +44,11 @@ Sandve ve diğerleri (2013), yeniden üretilebilir hesaplamalı araştırma içi
 
 ## İşi ajan yaptığında yeniden üretilebilir ne demek
 
-Bir analiz, ancak çıktısına götüren süreç sabitlendiğinde yeniden üretilebilir olur. Ajan tabanlı bir akışta sürecin temel bileşenlerinin tamamı kayda geçmelidir.
+Ajan tabanlı hız, özgül bir yeniden üretilebilirlik tuzağı doğurur: bir analiz tamamlanmış görünebilirken onu şekillendiren kararlar tümüyle kayıt dışı kalabilir. Bir analiz, ancak çıktısına götüren süreç sabitlendiğinde yeniden üretilebilir olur. Ajan tabanlı bir akışta bu yüzden sürecin temel bileşenlerinin tamamı kayda geçmelidir.
 
 Ajana verilen talimat, analizin asıl metnidir: kapsamını, varsayımlarını, dışlama ölçütlerini tanımlar. Model ve sürümü de kaydedilmelidir, çünkü aynı istem farklı bir modelde ya da farklı bir model sürümünde farklı kod üretebilir. Veri sürümü bir sağlama değeri ya da sürüm etiketiyle sabitlenmeli, hangi anlık görüntünün kullanıldığı belirsiz kalmamalıdır. Bölme, örnekleme ve önyükleme içeren her adım sabit bir rastgelelik tohumu olmadan her çalışmada farklı sonuç verir. Tohumun belirtim günlüğüne açıkça yazılması şarttır. Çalışma ortamı da bu kayıtların ayrılmaz parçasıdır: paket sürümleri, kod değişmemiş olsa bile sonucu sessizce değiştirebilir.
 
-Bu bileşenler, bu rehberin daha önce tanıttığı iki kalıba doğrudan bağlanır. `CLAUDE.md`, modeli, talimatı ve sınırları sabitleyerek analizin yapay zekâ bileşenini belgeler (kitapçık 001-01-0004). İkinci kalıp ise istemleri, ara kararları ve veri pasaportlarını kalıcı bir klasörde toplayarak araştırma sürecini oturumlar arası izlenebilir kılan hafızayı arşive dönüştürme disiplinidir (kitapçık 003-01-0001). Bu kavram, bu rehberin araştırmacı pratiği için geliştirdiği işlevsel bir çerçevedir. Yerleşik bir akademik standart değildir. Birlikte, ajan tabanlı analizi tek seferlik bir sihir olmaktan çıkarıp belgelenmiş bir yordama dönüştürürler.
+Bu bileşenler, bu rehberin daha önce tanıttığı iki kalıba doğrudan bağlanır. `CLAUDE.md`, modeli, talimatı ve sınırları sabitleyerek analizin yapay zekâ bileşenini belgeler (kitapçık 001-01-0004). İkinci kalıp ise istemleri, ara kararları ve veri pasaportlarını kalıcı bir klasörde toplayarak araştırma sürecini oturumlar arası izlenebilir kılan hafızayı arşive dönüştürme disiplinidir (kitapçık 003-01-0001). Ne hafızayı arşive dönüştürme kavramı ne de `CLAUDE.md` kalıpları yerleşik akademik standartlardır. Her ikisi de bu rehberin araştırmacı pratiği için geliştirdiği işlevsel çerçevedir ve burada birer uygulayıcı aracı olarak sunulur. Birlikte, ajan tabanlı analizi tek seferlik bir sihir olmaktan çıkarıp belgelenmiş bir yordama dönüştürürler.
 
 ## Çatallanan yolların bahçesi, artık otomatik
 
@@ -66,7 +66,7 @@ Ajan tabanlı akışta bunun somut hâli bir belirtim günlüğüdür: ajanı ç
 
 Bu rehberin tekrar eden ilkesi şudur: bir bulguyu üreten araç, aynı zamanda onu onaylayan merci olamaz. İstatistikte bu ilke iki kat önemlidir. Bir ajan, bir testin çıktısını yorumlarken çıktının kendisiyle çelişen bir özet sunabilir. Katsayının işaretini, anlamlılık eşiğini ya da etki büyüklüğünü yanlış aktarabilir. Bu nedenle ajanın yorumu her zaman ham çıktıya, yani tablodaki sayıya karşı bağımsız olarak doğrulanmalıdır. Asıl kriter tablodaki sayıdır.
 
-Bu uyarının gerekçesi modelin yapısından gelir. Model, anlamadan istatistiksel örüntü üreten bir sistemdir ve en titiz talimatla bile bu risk ortadan kalkmaz (Bender ve diğerleri, 2021). Üretilen metin, bilgi üretimi açısından, doğru görünmek ile doğru olmak arasındaki farkı kendiliğinden gözetmeyen bir karaktere sahip olabilir (Hicks ve diğerleri, 2024). Bir regresyon tablosunun akıcı bir özeti, tablonun söylediği şeyi söylediği anlamına gelmez. Sonuç basittir: sayının kendisini oku. Yapısal disiplin olmadan ajan tabanlı analiz güvenilir olmaz. Onunla birlikte ise yeniden üretilebilir bir araç hâline gelir.
+Bu uyarının gerekçesi modelin yapısından gelir. Model, anlamadan istatistiksel örüntü üreten bir sistemdir ve en titiz talimatla bile bu risk ortadan kalkmaz (Bender ve diğerleri, 2021). Üretilen metin, bilgi üretimi açısından, doğru görünmek ile doğru olmak arasındaki farkı kendiliğinden gözetmeyen bir karaktere sahip olabilir (Hicks ve diğerleri, 2024). Bir regresyon tablosunun akıcı bir özeti, tablonun söylediği şeyi söylediği anlamına gelmez. Sonuç basittir: sayının kendisini oku ve ajanın yorumunu ham çıktıya karşı doğrulanması gereken bir taslak olarak ele al. Yapısal disiplin olmadan ajan tabanlı analiz güvenilir olmaz. Onunla birlikte ise yeniden üretilebilir bir araç hâline gelir.
 
 ## Prosedürü devret, yargıyı devretme
 
@@ -125,7 +125,7 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 **Kitapçık kimliği.** `008-01-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
-**Sözcük sayısı (yaklaşık).** 1561 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 1682 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 10
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`007-02-0001`](../../007-academic-writing/007-02-0001/tr.md). DOI Disiplini ile APA 7

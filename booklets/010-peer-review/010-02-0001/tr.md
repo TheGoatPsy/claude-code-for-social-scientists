@@ -135,7 +135,7 @@ Weber-Wulff, D., Anohina-Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero-Dib
 **Kitapçık kimliği.** `010-02-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
-**Sözcük sayısı (yaklaşık).** 1811 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 1592 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 8
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`010-01-0001`](../010-01-0001/tr.md). İzlenebilirlik Matrisleri ile Hakem Yanıt Mektupları

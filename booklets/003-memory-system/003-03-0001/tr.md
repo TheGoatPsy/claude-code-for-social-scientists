@@ -122,7 +122,7 @@ Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Ba
 **Kitapçık kimliği.** `003-03-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
-**Sözcük sayısı (yaklaşık).** 1206 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 1015 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`003-01-0001`](../003-01-0001/tr.md). Hafızayı Arşive Dönüştürmek, İlkesel Bir Giriş

@@ -142,7 +142,7 @@ Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023)
 **Booklet identifier.** `001-01-0002`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2699 (English body text, measured with wc)
+**Approximate word count.** 2625 (English body text, measured with wc)
 **Verified citations.** 10
 **Fabricated citations.** 0
 **Previous booklet.** [`001-01-0001`](../001-01-0001/en.md). What is Claude Code? A Social Scientist's Perspective

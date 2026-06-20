@@ -136,7 +136,7 @@ Weber-Wulff, D., Anohina-Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero-Dib
 **Booklet ID.** `010-02-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 2304 (English body text, measured with wc)
+**Approximate word count.** 2083 (English body text, measured with wc)
 **Verified citations.** 8
 **Hallucinated citations.** 0
 **Previous booklet.** [`010-01-0001`](../010-01-0001/en.md). Rebuttal Letters with Traceability Matrices

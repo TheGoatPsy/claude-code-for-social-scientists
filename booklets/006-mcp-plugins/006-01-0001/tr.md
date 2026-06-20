@@ -113,7 +113,7 @@ Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (
 **Kitapçık kimliği.** `006-01-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
-**Sözcük sayısı (yaklaşık).** 1240 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 1112 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`005-02-0001`](../../005-hooks-automation/005-02-0001/tr.md). Ritüel Hook'lar: Günlük Kayıt, Oturum Kalıcılığı, Boş Zaman

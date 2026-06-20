@@ -101,7 +101,7 @@ Bu protokol, Wicherts ve diğerlerinin (2016) serbestlik dereceleri kontrol list
 
 Bu kitapçık, test seçimini bir danışma disiplinine bağladı. Protokolün yanıtsız bıraktığı soru, bu rehberin tamamında akan soruyla aynıdır: çıkarımın epistemik sorumluluğunu kim taşır? Ajan önerir. Araştırmacı karar verir. Günlük kayıt altına alır. Makale açıklar.
 
-Ajanın analitik rolünün bu dürüst beyanı, bir sonraki kitapçığın doğrudan ele aldığı daha geniş bir etik çerçeveye oturur. Test seçimi aşamasında verilen kararlar, nicel bir çalışmadaki en sonuç doğurucu kararlar arasındadır. Yalnızca istatistik sosyal bilimin kalbi olduğu için değil, test seçiminin ne iddia edilebileceğini belirlediği, iddianın ise literatürde birikenin ne olduğunu şekillendirdiği için. Disiplin olmaksızın bu seçimi hızlandıran bir ajan, gürültünün birikmesini hızlandırır. Burada tanımlanan disiplin içinde çalışan bir ajan ise savunulabilir kanıtın birikmesini hızlandırır. Kitapçık 009-01-0001 bu noktadan devam eder.
+Ajanın analitik rolünün bu dürüst beyanı, bir sonraki kitapçığın doğrudan ele aldığı daha geniş bir etik çerçeveye oturur. Test seçimi aşamasında verilen kararlar, nicel bir çalışmadaki en sonuç doğurucu kararlar arasındadır. Yalnızca istatistik sosyal bilimin kalbi olduğu için değil, test seçiminin ne iddia edilebileceğini belirlediği, iddianın ise literatürde birikenin ne olduğunu şekillendirdiği için. Disiplin olmaksızın bu seçimi hızlandıran bir ajan, gürültünün birikmesini hızlandırır. Burada tanımlanan disiplin içinde çalışan bir ajan ise savunulabilir kanıtın birikmesini hızlandırır. Bu ayrımın bir etik yükümlülüğe yükselip yükselmediği, kitapçık 009-01-0001'in bu noktadan itibaren ele aldığı sorudur.
 
 ---
 
@@ -136,7 +136,7 @@ Wicherts, J. M., Veldkamp, C. L. S., Augusteijn, H. E. M., Bakker, M., van Aert,
 **Kitapçık kimliği.** `008-02-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
-**Sözcük sayısı (yaklaşık).** 1751 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 1797 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 11
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`008-01-0001`](../008-01-0001/tr.md). Yeniden Üretilebilir Nicel İş Akışları

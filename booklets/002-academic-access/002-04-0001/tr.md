@@ -156,7 +156,7 @@ YÖK. (2026). *Yükseköğretim Kurulu Ulusal Tez Merkezi*. https://tez.yok.gov.
 **Kitapçık kimliği.** `002-04-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
-**Sözcük sayısı (yaklaşık).** 2087 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 1861 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 10
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`001-01-0003`](../../001-foundations/001-01-0003/tr.md). Kurulum, İlk Oturum, Sağlık Testleri

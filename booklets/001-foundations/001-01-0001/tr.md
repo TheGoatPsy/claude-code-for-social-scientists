@@ -60,7 +60,7 @@ Bir de şunu göz önünde tutmak gerekir: bu, genel amaçlı bir modeldir. Sosy
 
 Bu kitapçığın açıkça kabul ettiği gerçek şudur: Claude Code herkes için değildir.
 
-Aracın gerçekten değer kazandığı profiller bellidir. Birden fazla araştırma projesini aynı anda yürüten bir doktora öğrencisini düşünün: elinde yüzlerce PDF, birbiriyle çakışan takvimler, eş zamanlı hakem süreçleri. Ya da çok sayıda mülakat verisini kodlama disipliniyle çözümlemesi gereken bir araştırma görevlisi. Beş ila on bir hakem yorumuna sistemli biçimde yanıt vermek zorunda kalan bir doktora sonrası araştırmacı da aynı durumla yüzleşir. Öğretim üyesi ise yirmi öğrencinin tezini aynı hafta içinde kavramsal tutarlılık açısından gözden geçirmek durumundadır. IRB başvurusu için elli kaynaklı bir literatür özeti hazırlamak da bu tabloya girer. Bu profillerin ortak yanı tek bir şeydir: yüksek hacimli, tekrar eden, yapılandırılmış ve doğrulanabilir iş. Noy ve Zhang (2023), özellikle mesleki yazılı görevler üzerine kurgulanmış randomize kontrollü bir deneyde, yapay zekâ yardımının hem zaman tasarrufu hem çıktı kalitesi bakımından bu tür görevlerde anlamlı bir etki yarattığını ortaya koymuştur. Bu kılavuzun çıkardığı çıkarım şudur: o kazanımların mülakat dökümü kodlama, IRB başvurusu hazırlama ve sistematik derleme tarama gibi benzer yapıdaki diğer yüksek hacimli akademik görevlere de uzandığı düşünülebilir. Bu çıkarım kılavuzun kendi yorumudur ve o tek çalışmanın kurduğunun ötesine geçmektedir.
+Aracın gerçekten değer kazandığı profiller bellidir. Birden fazla araştırma projesini aynı anda yürüten bir doktora öğrencisini düşünün: elinde üç yüze yaklaşan bir Zotero kütüphanesi, birbiriyle çakışan gönderim takvimleri, eş zamanlı yürüyen iki veri toplama süreci. Ya da perşembe günkü ekip toplantısından önce yüz mülakat dökümüne bir kod defterini tutarlılıkla uygulaması gereken bir araştırma görevlisi. Daha önce bir tur ret almış bir makaledeki on bir hakem yorumuna yanıt veren bir doktora sonrası araştırmacı da aynı baskıyla yüzleşir. Öğretim üyesi ise yirmi öğrencinin tezini aynı hafta içinde kavramsal tutarlılık açısından gözden geçirmek durumundadır. IRB başvurusu için elli kaynaklı bir literatür özeti hazırlamak da bu tabloya girer. Bu profillerin ortak yanı tek bir şeydir: yüksek hacimli, tekrar eden, yapılandırılmış ve doğrulanabilir iş. Noy ve Zhang (2023), özellikle mesleki yazılı görevler üzerine kurgulanmış randomize kontrollü bir deneyde, yapay zekâ yardımının hem zaman tasarrufu hem çıktı kalitesi bakımından bu tür görevlerde anlamlı bir etki yarattığını ortaya koymuştur. Bu kılavuzun çıkardığı çıkarım şudur: o kazanımların mülakat dökümü kodlama, IRB başvurusu hazırlama ve sistematik derleme tarama gibi benzer yapıdaki diğer yüksek hacimli akademik görevlere de uzandığı düşünülebilir. Bu çıkarım kılavuzun kendi yorumudur ve o tek çalışmanın kurduğunun ötesine geçmektedir.
 
 Araç, bilmek yerine birlikte olmayı gerektiren her yerde yetersiz kalır.
 
@@ -165,7 +165,7 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 **Kitapçık kimliği.** `001-01-0001`
 **Sürüm.** `0.1.0`
 **Tarih.** 2026-06-20
-**Sözcük sayısı (yaklaşık).** 2619 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 2301 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 13
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** Yok (ilk kitapçık)

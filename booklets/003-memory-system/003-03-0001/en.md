@@ -123,7 +123,7 @@ Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Ba
 **Booklet ID.** `003-03-0001`
 **Version.** `0.1.0`
 **Date.** 2026-06-20
-**Approximate word count.** 1608 (English body text, measured with wc)
+**Approximate word count.** 1415 (English body text, measured with wc)
 **Verified citations.** 6
 **Hallucinated citations.** 0
 **Previous booklet.** [`003-01-0001`](../003-01-0001/en.md). Memory as Vault, A First-Principles Introduction
