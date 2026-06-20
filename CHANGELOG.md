@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [3.0.1] - 2026-06-20
+
+Patch release. A repository-wide zero-defect audit, sixty-three Opus agents across all twenty-one booklets with every flagged citation re-verified live against Crossref, found and corrected sixty-nine confirmed defects in published content. The reference set and the aggregate counts are unchanged: 354 verified declarations, 0 fabricated.
+
+### Fixed
+
+- Bibliographic corrections, each re-verified against Crossref: Hosseini et al. (2023) volume, issue, and pages corrected to 31(7), 715-723 across eight booklets; article numbers and missing issue numbers added for Munafo, Bramer, Xu, Wicherts, Resnik and Hosseini; the Schulhoff et al. (2024) author list expanded to the APA twenty-one-plus-author form; Valmeekam et al. (2023) cited to its NeurIPS proceedings of record.
+- Two unverifiable quantitative claims, a study's method label and a benchmark percentage, softened to statements the sources support.
+- Turkish prose hygiene: twenty-four stray semicolons split into sentences, the country name standardized to Türkiye in the English booklets to match the Turkish, and the author writing-style register applied (the prescribed de-calque term and removal of em-dashes from English technical prose).
+- Bilingual parity restored where the two languages had drifted, and all forty-two footer word counts recomputed.
+
+### Unchanged
+
+- The reference set, the DOI inventory, the immutable booklet identifiers, the documented trade-book ISBN convention, and the aggregate disclosure metrics (354 verified, 0 fabricated, 21 booklets at release).
+
 ## [3.0.0] - 2026-06-12
 
 Major release. The Journal of Open Source Education paper is refreshed against the finished surface, twenty-one booklets across all twelve categories and twenty skills, and a submission preparation package is added. The major version marks the completion of the arc this line has been building: a fully populated category grid, a doubled skill layer with machine-enforced bilingual parity, and a citable, review-ready reference implementation.
