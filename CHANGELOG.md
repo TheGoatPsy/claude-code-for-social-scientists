@@ -21,6 +21,10 @@ Patch release. A repository-wide zero-defect audit, sixty-three Opus agents acro
 
 - The reference set, the DOI inventory, the immutable booklet identifiers, the documented trade-book ISBN convention, and the aggregate disclosure metrics (354 verified, 0 fabricated, 21 booklets at release).
 
+### Archived
+
+- Zenodo version DOI [10.5281/zenodo.20773322](https://doi.org/10.5281/zenodo.20773322), archived on release.
+
 ## [3.0.0] - 2026-06-12
 
 Major release. The Journal of Open Source Education paper is refreshed against the finished surface, twenty-one booklets across all twelve categories and twenty skills, and a submission preparation package is added. The major version marks the completion of the arc this line has been building: a fully populated category grid, a doubled skill layer with machine-enforced bilingual parity, and a citable, review-ready reference implementation.
