@@ -1,7 +1,7 @@
 {
   "name": "social-cc-plugin",
   "displayName": "Claude Code for Social Scientists Skills",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "description": "Twenty project skills for social science research with Claude Code, covering the research lifecycle from literature triage and regional access through bilingual drafting, analysis discipline, citation verification, and AI disclosure to review response and release integrity. Each skill carries a Turkish usage section alongside its English protocol.",
   "author": {
     "name": "Onour Impram",
