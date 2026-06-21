@@ -4,9 +4,9 @@ title_tr: "DOI Disiplini ile APA 7"
 booklet_id: "007-02-0001"
 category: "007-academic-writing"
 language: "en"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -15,17 +15,17 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model_alias: "claude-opus-4-7"
-    model_dated: null  # no dated identifier published by Anthropic for Opus 4.7 as of 2026-05-24
+    model_alias: "claude-opus-4-8"
+    model_dated: null
     role: "drafting, verification, citation lookup, bilingual re-authoring"
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 10
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
-translation_notes: "English re-authored from the Turkish source, not a literal translation. The Crossref command examples use a generic institutional placeholder email, not a personal address. Greenhalgh et al. (2016) removed as misapplied; replaced by Bramer et al. (2017), which directly supports the database-coverage claim."
+translation_notes: "English re-authored from the finalized Turkish source (v0.2.0), not a literal translation. All academic corrections made during the EN v0.1.0 phase (removal of Greenhalgh et al. 2016, addition of Bramer et al. 2017) were propagated to the Turkish surface before this revision. The Crossref command examples use a generic institutional placeholder email, not a personal address."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
 status: "release"
@@ -33,65 +33,71 @@ status: "release"
 
 # APA 7 with DOI Discipline
 
-The previous category established the folder architecture of the vault. This booklet addresses the bibliographic cleanliness of every reference that enters it. A Digital Object Identifier looks, at first glance, like a formality, a string of characters appended to a record to satisfy a style guide. It is not. In an era when generative language models can produce bibliographically plausible citations that have never existed, the DOI is the fastest empirical test a researcher has: if a citation is real, its DOI resolves; if the DOI does not resolve, the citation does not exist. This booklet turns that test into a verification protocol, built once inside the Claude Code workflow and reused for every manuscript.
+The previous booklet established the IMRAD skeleton and the bilingual writing workflow. This booklet addresses the bibliographic cleanliness of every reference that enters a manuscript. A Digital Object Identifier looks, at first glance, like a technical string appended to the end of a record — a formality. It is not. In an era when generative language models can produce citations that appear real but have never existed, the DOI is one of the fastest verification instruments a researcher has.
 
-## 1. APA 7 and What the DOI Actually Does
+The core claim of this booklet is as follows. APA 7 is not merely a matter of formatting. When used with DOI discipline, it becomes an integrity protocol that preserves the reality, traceability, and scholarly credibility of the reference list. Claude Code can support this protocol. But which sources enter the manuscript, and which verification is sufficient, remain the author's decisions.
 
-APA 7 is the most widespread citation standard in the social sciences (American Psychological Association, 2020). A journal article record consists of author, year, title, journal name, volume, issue, pages, and DOI. Most of these components suffice to identify an article. The DOI serves a different function: it is the unchanging, permanent, machine-resolvable address of a published work, one that stays correct even when journal websites move or merge, and its resolution is the fastest empirical test of whether the citation is real.
+## 1. APA 7 and What the DOI Does
 
-APA 7 makes the DOI mandatory wherever one exists. Before the seventh edition, including a DOI was optional; with the seventh, it became the standard. The reason for this shift is fundamentally epistemological. The International Committee of Medical Journal Editors (2024), in its recommendations for the conduct and reporting of scholarly work, defines citation accuracy as one of the author's fundamental responsibilities. The DOI makes that responsibility operational and verifiable: a citation whose DOI resolves on Crossref is a citation proven to exist. One that does not resolve should not enter the reference list.
+APA 7 is one of the most widely used citation standards in the social sciences (American Psychological Association, 2020). A journal article record consists of author, year, title, journal name, volume, issue, page range, and DOI. Each component contributes to identifying the source. Within this structure, the DOI occupies a distinct position: it is the permanent, machine-resolvable address of a published work.
 
-## 2. Artificial Intelligence and Fabricated Citations, Empirical Evidence
+Journal websites change. Publishers merge. Page layouts migrate. The DOI remains the stable address of the source through all of that variation. For this reason, the DOI is not simply a detail that completes a style guide. It is an empirical checkpoint — one that can be used to test whether a citation actually exists.
 
-To understand why DOI discipline matters so acutely now, one must look at the citation behavior of generative AI models. These models can produce citations that look real but do not exist. The phenomenon has been measured and documented across multiple disciplines.
+The International Committee of Medical Journal Editors (2024), in its recommendations for the conduct and reporting of scholarly work, defines citation accuracy as one of the author's fundamental responsibilities. The DOI turns that responsibility into a practical audit. If a DOI resolves, the source exists at least at the registration level. If it does not resolve, additional verification is required before the source enters the reference list.
 
-Walters and Wilder (2023) systematically documented high rates of fabrication and error in bibliographic citations generated by ChatGPT: a substantial share of the citations produced either pointed to articles that never existed or incorrectly merged the records of real articles into a plausible but fictitious entry. Bhattacharyya and colleagues (2023) confirmed the same pattern in medical content specifically, showing high rates of fabricated and inaccurate references in ChatGPT-generated medical text. These two studies, covering different disciplines, arrive at the same structural conclusion: generative models produce the most probable text, not the true one. A citation is produced as long as it fits the patterns in the model's training data, regardless of whether that citation actually exists.
+## 2. Artificial Intelligence and Fabricated Citations — Empirical Evidence
 
-When Else (2023) showed that ChatGPT-written abstracts could fool experienced scientists, it became clear that the problem runs deeper than isolated mistakes and is rooted in how language models operate at their core. Hicks and colleagues (2024), framing this behavior philosophically, note that the model's output is oriented toward plausibility rather than truth. Sallam (2023), in a systematic review of ChatGPT applications in health education and research, documented that valid concerns about citation accuracy accompany the genuine opportunities these models offer. For a clinical researcher, a fabricated citation carries consequences beyond formatting: it introduces a false entry into the scientific record, an integrity violation with direct ethical weight.
+The importance of DOI discipline becomes clearer when the citation behavior of generative AI models is considered. Large language models can produce sources that appear real but do not exist. This is not merely a theoretical risk. It has been empirically documented across multiple fields.
 
-## 3. Triple-Index Triangulation
+Walters and Wilder (2023) demonstrated high rates of fabrication and error in bibliographic citations generated by ChatGPT. Some citations pointed to articles that never existed; others incorrectly combined the author, title, or journal information of real articles. Bhattacharyya and colleagues (2023) documented the same pattern in medical content, showing that fabricated or inaccurate references appear at high rates in ChatGPT-generated medical text.
 
-No single database covers the full breadth of any research field, which means no single index is sufficient for verifying a citation. The solution is triangulation: cross-checking a citation against three independent indexes. Crossref, PubMed, and Semantic Scholar together cover the large majority of the social sciences and health sciences literature.
+These findings point to the same structural observation. Generative models produce the most probable text, not the true text. A citation may be formally convincing without actually existing. Else (2023) showed that abstracts written by AI could fool experienced scientists. Hicks and colleagues (2024), addressing this behavior conceptually, argued that model outputs operate on plausibility rather than on concern for truth.
 
-Crossref is the central registration infrastructure for DOIs (Crossref, 2026): every article with a DOI can be queried through it. PubMed is the biomedical and health literature infrastructure maintained by the National Library of Medicine (2026); for clinical psychology and public health researchers, it contains many sources that Crossref's metadata does not surface. Semantic Scholar adds semantic search and a citation graph, showing which subsequent studies have cited a given article. This is valuable both for verification and for extending the literature map forward in time. The sequencing matters: a citation that passes all three indexes has been tested against independent registration, national health indexing, and the live citation network.
+A fabricated citation is therefore not merely a bibliographic error. It is an integrity problem that corrupts the scientific record and misleads future researchers. DOI discipline is one of the most concrete starting points for reducing this risk.
 
-The concrete case for multi-database searching is not rhetorical. Bramer and colleagues (2017), in a prospective study of systematic review search strategies, demonstrated that different database combinations yield meaningfully different retrieval results: no single database captured the full relevant literature, and the overlap between databases was substantially incomplete. Relying on a single index leaves systematic gaps that remain invisible precisely because the researcher does not know what the missing index would have found. Triangulation does not require scanning all three indexes for every citation in one pass. Most citations resolve cleanly in Crossref on the first attempt; only records that fail to resolve or return inconsistent metadata are escalated to the second and third index.
+## 3. Cross-Index Triangulation
 
-Semantic Scholar's citation graph carries a discovery value beyond verification. Starting from a key article, a researcher reaches the current studies that cite it, extending the literature scan forward in time, a direction that database keyword searches cannot achieve as systematically. Triangulation catches fabricated citations and extends the literature map simultaneously, yielding two kinds of value from a single workflow step.
+No single database covers the full breadth of any research field. Verifying a citation against a single index is therefore insufficient. The solution is cross-index triangulation. When Crossref, PubMed, and Semantic Scholar are used together, a substantial portion of the social sciences, health sciences, and clinical psychology literature can be audited with greater confidence.
+
+Crossref provides the DOI registration infrastructure (Crossref, 2026). The large majority of DOI-bearing works can be queried through it. PubMed offers a robust national library infrastructure for biomedical and health literature (National Library of Medicine, 2026). For researchers working in clinical psychology, psychiatry, public health, and behavioral medicine, it is especially important. Semantic Scholar adds value through its citation graph and semantic search features.
+
+Bramer and colleagues (2017), in a prospective study comparing systematic review search strategies, showed that different database combinations produced meaningfully different retrieval results. No single database captured the full relevant literature. This finding makes explicit why single-index verification is limited.
+
+In practice, all three indexes need not be searched exhaustively for every source. Most DOIs resolve through Crossref. Records that fail to resolve, return incomplete information, or contain inconsistent metadata are cross-checked against PubMed and Semantic Scholar. This approach reduces fabricated citation risk without making the verification burden unnecessarily large.
 
 ## 4. DOI Verification with the Crossref API
 
-Crossref exposes an application programming interface (an API) that makes DOI verification scriptable. The reality of any DOI can be checked with a single command.
+Crossref provides an application programming interface that makes DOI verification scriptable from the command line. Whether a given DOI is registered and which record it maps to can be queried in a single command.
 
 ```bash
-# Verify a DOI's record via the Crossref API
+# Verify a DOI record via the Crossref API
 curl -fsSL "https://api.crossref.org/works/10.1038/d41586-023-00056-7" \
   | jq '.message.title, .message.author, .message["container-title"]'
 ```
 
-This command returns whether the DOI exists in Crossref's records and whether the returned metadata matches what the citation claims. If the DOI does not exist, the API returns an error, which is the first unambiguous signal that the citation is fabricated. Claude Code can make this check a standard step of the bibliography pipeline, running it automatically across every DOI in a reference list before any manuscript is finalized.
+This command shows whether the DOI exists in Crossref's records and whether the returned metadata matches the citation at hand. If the DOI is absent, the API returns an error. This does not necessarily mean the source is fabricated — some source types carry no DOI — but for an article that claims to have one, it is a serious warning.
 
-For sustained use, Crossref operates a polite pool policy: requests that include a `mailto` parameter with a contact address receive a higher rate limit and more reliable responses. An institutional or alias address should be used here, not a personal one.
+Claude Code can make this check a standard step of the bibliography workflow: scanning an entire reference list for DOIs, separating resolved from unresolved records, and reporting metadata inconsistencies. For sustained use, Crossref's polite pool approach should be respected; requests should include an institutional or alias contact address.
 
 ```bash
-# Polite pool request with an institutional contact address
+# Polite pool request with a contact address
 curl -fsSL "https://api.crossref.org/works/10.1038/d41586-023-00056-7?mailto=researcher@institution.edu" \
   | jq '.message.title'
 ```
 
-The polite pool is what makes this verification sustainable at scale, covering a reference list of a hundred sources as readily as five.
-
 ## 5. Verification Through PMID in PubMed
 
-For clinical and biomedical literature, a second verification layer runs through the PubMed Identifier, the PMID (National Library of Medicine, 2026). Every PubMed record carries a unique PMID, independent of the DOI infrastructure. An article carrying both a DOI and a PMID provides double verification from two independent systems: Claude Code can search a DOI in PubMed, retrieve the corresponding PMID, and compare the metadata the two systems return. Agreement between two independent infrastructures on the same record is strong evidence that a citation is real.
+For clinical and biomedical literature, a second verification layer runs through the PubMed Identifier — the PMID. Every record in PubMed carries a unique PMID that is independent of DOI infrastructure. An article bearing both a DOI and a PMID can therefore be verified against two separate systems.
 
-For the clinical psychology researcher, this layer is especially valuable. A substantial part of the psychology and health sciences literature is indexed in PubMed, and the PMID cross-check catches a failure mode that Crossref alone cannot: a DOI that resolves correctly but whose metadata has been altered or whose journal has changed ownership since indexing.
+For the clinical psychology researcher, this layer is especially valuable. A substantial share of the psychology, psychiatry, neuroscience, behavioral medicine, and public health literature is indexed in PubMed. When a DOI resolves on Crossref, confirming which PMID that same record holds in PubMed provides additional assurance of its reality.
+
+This cross-check also makes metadata inconsistencies visible. If the article title, author order, journal name, or publication year differs between the two systems, the source should be audited by hand before entering the manuscript.
 
 ## 6. Turkish Article DOIs Through DergiPark and TR Dizin
 
-Verification for Turkish-language articles rests on the infrastructure established in an earlier category. Because DergiPark is integrated with Crossref, the articles on the platform carry DOIs and pass through the same Crossref API verification as any international source. The APA 7 record of a Turkish article demands the same discipline as that of an English one, with a few additional linguistic rules in play.
+For Turkish-language articles, DOI verification discipline rests on the infrastructure established in the earlier academic-access category. Because DergiPark operates in integration with Crossref, a substantial share of the articles it hosts carry DOIs. These DOIs are verifiable through the same Crossref API.
 
-APA 7 preserves the surname-and-initial form for Turkish author names: "Yılmaz, A. A." Between two authors, the ampersand is used rather than the Turkish "ve," because the record follows the English APA 7 convention regardless of the source language. The Turkish journal name is kept in italics and the English translation of the title is given in square brackets immediately after the original. The full APA 7 record of a TR Dizin article takes this form:
+The APA 7 record of a Turkish article demands the same verification care as an English one, with an additional linguistic layer. The Turkish title must be preserved; if an English translation is required, it is given in square brackets. The Turkish journal name is written in its original form and the verified DOI is appended.
 
 ```text
 Author, A. A., & Author, B. B. (Year). Article title in Turkish
@@ -99,52 +105,47 @@ Author, A. A., & Author, B. B. (Year). Article title in Turkish
 Volume(Issue), Page–Page. https://doi.org/{verified-doi}
 ```
 
-This record is verified against the DOI obtained through DergiPark. The English translation of the Turkish title is sensitive to field-specific terminology and remains the author's responsibility: even when the model offers a draft translation, the final decision belongs to the researcher.
+The title translation warrants particular attention. The model can propose a draft translation, but the field-appropriate final version is determined by the author. An incorrectly rendered title directly affects how the article appears to an international audience.
 
 ## 7. The Bibliography Hygiene Pipeline
 
-Verification discipline gains its full value when it becomes a protocol, set up once and reused for every manuscript. Those steps, from source collection to human sign-off, form the skeleton described below.
+DOI discipline produces its real value only when it becomes a repeating workflow — not a last-minute manual correction appended to a finished manuscript, but a verifiable record structure established from the start.
 
-1. **Collection.** All citations are collected as records from their primary sources.
-2. **DOI extraction.** The DOI of each record is identified; absence is noted explicitly.
-3. **Crossref verification.** Each DOI is checked through the Crossref API.
-4. **Cross-check.** Clinical sources are cross-verified with the PubMed PMID; where metadata discrepancies appear, Semantic Scholar is consulted as a third source.
-5. **Record matching.** The metadata returned from the API is compared against the record at hand; discrepancies are flagged for manual resolution.
-6. **DOI-less sources.** Sources without a DOI are handled separately, with the edge-case rules in Section 9 applied.
-7. **Formatting.** Verified records are brought into APA 7 format.
-8. **Human review.** The full list receives a final reading by the author, because verification is automatic but responsibility is human.
+The pipeline consists of eight steps. First, all citations are collected from primary sources. Second, the DOI of each source is identified. Third, every DOI-bearing source is verified through Crossref. Fourth, clinical or biomedical sources are cross-checked with the PubMed PMID. Fifth, metadata inconsistencies are flagged separately. Sixth, sources that carry no DOI are verified through ISBN, official institutional record, thesis center record, or publisher archive. Seventh, verified records are brought into APA 7 format. Eighth, the complete list passes through human review.
 
-Claude Code supports steps one through seven: collection, DOI extraction, API verification, cross-checking, metadata comparison, and formatting. The final review always stays with the researcher. Automation narrows the error surface; it does not transfer the accountability.
+Claude Code can support a significant portion of these steps: DOI extraction, API querying, metadata comparison, APA 7 formatting, and error list generation are all well-suited to the model. However, interpreting verification output and giving final approval to the reference list are the researcher's responsibility.
 
 ## 8. Common Language Model Citation Failure Modes
 
-Fabrication does not present as a single uniform error. A researcher who knows the specific failure modes catches them faster. The table below maps the most common ones to the pipeline step that intercepts them.
+A fabricated citation does not present as a single uniform error. It follows specific patterns, and knowing those patterns allows them to be caught faster.
+
+The table below illustrates why the verification protocol is stronger than eyeballing a reference list. Reading for plausibility tolerates well-formed errors. The protocol tests whether the record actually exists.
 
 | Failure mode | Description | How verification catches it |
 |---|---|---|
 | Fake DOI | A non-existent DOI is produced | Crossref API returns an error |
 | Wrong year | Real article, wrong publication year | The Crossref record corrects the year |
-| Hybrid author list | The authors of two separate articles are merged | Record matching reveals the discrepancy |
-| Fabricated article in a real journal | The journal exists; the article does not | DOI does not resolve; title is not found |
+| Hybrid author list | Authors of two separate articles are merged | Record matching reveals the discrepancy |
+| Fabricated article in a real journal | The journal exists; the article does not | DOI does not resolve; title absent from index |
 | Wrong page range | Real article, incorrect page numbers | The Crossref page field corrects it |
 
-Each failure mode is caught at a specific step of the pipeline, which is precisely why the protocol is stronger than checking citations one by one without a system. A single-pass eyeball check settles for plausibility. The pipeline demands reality.
+## 9. Edge Cases — Sources Without a DOI
 
-## 9. Edge Cases, Sources Without a DOI
+Not every source carries a DOI. Books are most often verified through an ISBN against a publisher catalogue or library record. Articles published before digital registration became standard may carry no DOI; the journal archive or a library record becomes the verification source. Theses, reports, official documents, and some grey literature also rely on non-DOI identifiers. A thesis retrieved from the YÖK National Thesis Center falls into this category.
 
-Not every source carries a DOI, and these cases require their own discipline. Books most often carry an ISBN rather than a DOI; verification rests on the ISBN through a publisher catalogue or a library holdings record. Older articles, published before digital registration became standard, may carry no DOI; the journal archive or a library record becomes the verification source. Grey literature such as reports, theses, and official documents typically carries no DOI either; verification runs through the institutional source. A thesis retrieved from the YÖK National Thesis Center falls into this category.
+The governing principle does not change. The source must be verified against an independent record. DOI absence does not by itself invalidate a source, but it does not eliminate the verification obligation either.
 
-The governing rule for DOI-less sources is that verification must rest on another persistent identifier. What matters is that the reality of the citation be confirmed through a source independent of the original claim. APA 7 (American Psychological Association, 2020) defines separate record formats for each of these source types; DOI discipline is independent of those format rules. The discipline lives in the verification act, independent of which format style is applied.
+APA 7 defines separate record formats for each of these source types. DOI discipline sits above these format rules as a more general principle. The real question is: Does the source actually exist? Where is it verified? Does it genuinely support the claim made in the text?
 
-## 10. Bridge, to the Ethical Layer
+## 10. Bridge to the Ethical Layer
 
-DOI hygiene looks technical. Its substance is ethical. A fabricated citation corrupts the scientific record and misleads every researcher who reads the paper downstream. The next category extends this ethical layer. It shows that in AI-assisted research, ethics is a workflow document built from the start of the project. Citation verification is the first, most concrete component of that workflow.
+DOI hygiene looks like a technical task. Its substance is directly ethical. A fabricated citation corrupts the scientific record and misleads every researcher who reads the manuscript downstream. Citation verification is therefore one of the most concrete ethical acts in AI-assisted research.
 
-The integrity of the scientific record depends on the discipline the human brings to it, regardless of which tool, model, or workflow produced the draft. That has not changed. Only the volume of the risk has.
+The next category extends this ethical layer. In AI-assisted research, ethics is not a declaration appended at the end. It is a discipline and record structure established from the beginning of the process. Citation verification discipline is the first and most visible component of that structure.
 
 ## References
 
-Citations are in APA 7 format. All DOIs were independently verified against Crossref on 2026-06-04.
+Citations are in APA 7 format. All DOIs were independently verified against Crossref on 2026-06-21.
 
 American Psychological Association. (2020). *Publication manual of the American Psychological Association* (7th ed.). https://doi.org/10.1037/0000165-000
 
@@ -169,8 +170,8 @@ Walters, W. H., & Wilder, E. I. (2023). Fabrication and errors in the bibliograp
 ---
 
 **Booklet ID.** `007-02-0001`
-**Version.** `0.1.0`
-**Date.** 2026-06-20
+**Version.** `0.2.0`
+**Date.** 2026-06-21
 **License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Word count (approx.).** 2102 (English body text, measured with wc)
 **Verified citations.** 10

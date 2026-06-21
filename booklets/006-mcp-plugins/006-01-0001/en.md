@@ -1,12 +1,12 @@
 ---
-title_en: "MCP for the Researcher: What, Why, When"
-title_tr: "Araştırmacı İçin MCP: Ne, Neden, Ne Zaman"
+title_en: "MCP for the Researcher. What, Why, When"
+title_tr: "Araştırmacı İçin MCP. Ne, Neden, Ne Zaman"
 booklet_id: "006-01-0001"
 category: "006-mcp-plugins"
 language: "en"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -15,108 +15,120 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model_alias: "claude-fable-5"
-    model_dated: null  # no dated identifier published by Anthropic for Fable 5 as of 2026-06-12
+    model_alias: "claude-opus-4-8"
+    model_dated: null
     role: "drafting, verification, citation lookup, bilingual re-authoring"
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 6
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
-translation_notes: "English re-authored from the Turkish source, not a literal translation. Server and search examples are generic and tied to no real participant data or credentials, in keeping with the vault sanitization protocol. Citation audit 2026-06-12: all DOIs verified live against Crossref before drafting. Tenopir et al. (2011) restricted to the willing-in-principle, guarded-in-practice survey findings; Walters and Wilder cited for the fabrication baseline that grounded retrieval changes; the two Anthropic documentation references follow the non-DOI citation precedent set in booklet 001-01-0003."
+translation_notes: "English re-authored from the finalized Turkish source (v0.2.0, 2026-06-21), not a literal translation. Structure updated to include an explicit Introduction section, matching the Turkish. Server and search examples are generic and tied to no real participant data or credentials. Citation audit 2026-06-21: all DOIs verified against Crossref. Tenopir et al. (2011) cited for the willing-in-principle, guarded-in-practice finding; Walters and Wilder for the fabrication baseline that grounds the retrieval argument; the two Anthropic references follow the non-DOI citation precedent set in booklet 001-01-0003."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
 status: "release"
 ---
 
-# MCP for the Researcher: What, Why, When
+# MCP for the Researcher. What, Why, When
 
-The previous booklet put the inside of the session in order: opening, closing, and the guard checks between, all tied to infrastructure. This booklet turns to the session's relationship with the outside. Claude Code, left to itself, is an island. It reads your archive, writes to your files, and speaks from what its training carried. Research life, though, is not lived on an island. The source catalog is outside, the database is outside, the reference manager is outside. The bridge between them is called the Model Context Protocol, MCP for short, and this booklet describes the bridge through a researcher's eyes: what it is, why it earns its keep, and, just as important, when it is not needed at all.
+## Introduction
+
+The previous booklet organized the interior of the session with rituals. Opening and closing, and the guard checks in between, were fastened to infrastructure rather than left to the researcher's memory. This booklet moves to what the session has to do with the outside world — because research life does not consist of local files alone. Source catalogs, databases, reference managers, and institutional systems typically reside beyond the boundary of the session.
+
+In its default state, Claude Code operates within a restricted workspace. It can read the researcher's archive, write to permitted files, and generate responses from the knowledge carried by its training. But the researcher's actual needs frequently exceed this. Sometimes what is required is not prompting the model to recall something, but directing it to look at a trustworthy external source. The Model Context Protocol — MCP for short — is one standardized answer to that need.
+
+The central claim of this booklet is the following. MCP is not, for the researcher, a convenience add-on; it is the methodological instrument for connecting in a controlled way to external sources. Every connection simultaneously raises new questions of trust, maintenance, and data flow. MCP must therefore be evaluated not only in terms of what it is, but in terms of when it is warranted and when it is not.
 
 ## 1. The Boundary of the Session
 
-Every tool has an access boundary, and this one is a deliberate safety decision. In its default installation, Claude Code confines itself to the files in your working directory and the commands you approve. It does not connect to an outside service on its own. The boundary protects the researcher, and it has a price. A session running a literature search, if it cannot look at the catalog, has to make do with what the model remembers.
+Every tool has an access boundary, and that boundary is not merely a technical constraint — it is a security decision. In its default installation, Claude Code confines itself to the files in your working directory and the commands you approve. It does not reach out to an external service on its own initiative. The boundary protects the researcher, and in certain academic tasks it carries a price.
 
-MCP is the standard that opens this boundary in a controlled way (Anthropic, 2024). The protocol fixes uniform rules for how the tool talks to an external service. A small server stands on the service side, the capabilities that server offers become visible on the tool side, and every call between them passes through a defined contract. What the researcher builds is a bridge, and both ends of the bridge stay in view.
+A session conducting a literature search, if it cannot consult the source catalog, has no choice but to work from what the model remembers. This situation is particularly risky from the standpoint of citation integrity. The model remembering something and the model consulting a source are not the same thing. In a research context, reliability often reveals itself in exactly that distinction.
 
-## 2. What, the Plain Description
+MCP is the standard that opens this boundary in a controlled way (Anthropic, 2024). The protocol subjects how Claude Code communicates with an external service to specific rules. A small server stands on the service side, and the operations that server offers become visible on the tool side. What the researcher constructs is a bridge — and both ends of that bridge must remain defined and inspectable.
 
-The technical vocabulary reduces to two ideas. A server is a door that opens onto a specific service. A PubMed server opens onto the source catalog, a Zotero server onto your reference library, a file server onto one designated folder. A tool declares which operations may pass through that door: search, fetch, list. When Claude Code connects to an MCP server, that server's tools join the list of capabilities the session can use (Anthropic, 2026).
+## 2. What — The Plain Description
 
-The concrete difference shows in one example. In a session without MCP, when you ask for sources on social anxiety scales, the model assembles a list from what it saw in training. In a session connected to a PubMed server, the same request becomes a search call, and the list that returns holds the catalog's actual records at that moment. In the first case the model remembers. In the second, it looks.
+MCP can be explained without technical detail through two concepts: server and tool. A server is a door that opens onto a particular service. A PubMed server opens onto the academic catalog, a Zotero server onto the reference library, a file server onto a designated folder. A tool declares which operations may pass through that door — search, fetch, list, read, or, in limited configurations, write.
 
-## 3. Why, Looking Instead of Remembering
+When Claude Code connects to an MCP server, the tools that server offers are added to the list of capabilities available to the session (Anthropic, 2026). The model is no longer obliged to rely solely on its own training data; it can consult an external source through a defined interface.
 
-The difference between remembering and looking is precisely the integrity problem this guide keeps returning to. Walters and Wilder (2023) documented how common fabricated and erroneous records are in bibliographies the model produces from memory. Generation can output records that resemble the real thing and do not exist. A record returned from a real catalog arrives with the existence question already settled. The reference is there because the record is there.
+The concrete difference comes down to a single example. In a session without MCP, if you request sources on social anxiety scales, the model assembles a list from what it encountered in training. In a session connected to a PubMed server, the same request becomes a search call, and the list that returns is grounded in the catalog's actual records at that moment. In the first case, the model remembers. In the second, it looks. For research purposes, this distinction is critical.
 
-This is why MCP, in a research context, is more than a convenience. It changes the failure mode. The risk of invention gives way to checkable work: reading the found record correctly and carrying it over correctly. The burden of verification does not disappear, and the citation discipline described elsewhere in this guide continues unchanged. But the most dangerous component of the burden, creation from nothing, largely leaves the circuit.
+## 3. Why — Looking Rather Than Remembering
+
+The difference between remembering and looking connects directly to the integrity problem that runs throughout this guide. Walters and Wilder (2023) documented how common fabricated and erroneous references are in bibliographies that a model generates from memory. A model can produce records that resemble genuine entries without actually existing. A record returned from a real catalog arrives with the question of existence already resolved. The record is there because the catalog entry is there. The DOI, the title, the authors, and the publication data come from verifiable infrastructure. This does not mean that all verification burden disappears — every record still needs to be read correctly, transcribed faithfully, and evaluated against the context. But MCP changes the failure mode. It substantially reduces the risk of generating sources from nothing and converts the task into more concrete, checkable work. Citation discipline continues. Yet the most dangerous stage of that burden — the creation of phantom references — is largely removed from the circuit.
 
 ## 4. When It Is Not Needed
 
-An honest guide does not skip this section. Every outward connection is a maintenance load, a trust question, and a breaking point. Wilson and colleagues (2017) recommend, as good-enough practice in scientific computing, not the most impressive tool but the simplest one that does the job. The principle applies to the MCP decision directly. You do not stand up a server for an operation you run once a week in one minute. If a single page in the browser is enough, no bridge is required.
+An honest guide must state plainly that MCP is not required in every situation. Every outward connection is a maintenance load, a trust question, and a potential breaking point. Wilson and colleagues (2017) recommend in scientific computing practice not the most impressive tool but the simplest solution that accomplishes the work. The principle applies directly to the MCP decision.
 
-The deciding question is this. Does the connection carry work that repeats often within sessions and accumulates errors when done by hand? If yes, the bridge is a candidate. If no, every added server remains an unused door and a forgotten permission. A house with few doors is both safer and easier to inspect.
+Standing up a server for an operation you run once a week, in one minute through a browser tab, is almost always unnecessary. If consulting a single page suffices, no bridge is needed. MCP earns its place for work that recurs frequently, that accumulates errors when done by hand, and that would benefit from being executed in a structured, reproducible way within the session.
+
+The deciding question is this: does this connection carry work that the researcher performs regularly, that carries genuine error risk, and that will become more auditable with the tool in place? If yes, MCP is a candidate. If no, every server added becomes an unused door and a forgotten permission. A system with few doors is generally both safer and more auditable.
 
 ## 5. Trust Triage
 
-If a bridge is to be built, the first question is social rather than technical. Who wrote this server? A server published by the official provider and a server downloaded from a repository of unknown identity are not in the same trust class. The second question is scope of access. What can the server touch? A catalog server that only searches and a server that can write to the file system sit at different risk levels. The third question is data flow. Which machine do your queries travel to, and how long are they kept there?
+If a bridge is to be built, the first question is social rather than technical. Who wrote this server? A server published by an official provider and a server downloaded from a repository of unknown provenance do not occupy the same trust class. The second question concerns scope of access. What can the server touch? A catalog server that only executes searches and a server that can write to the file system operate at different risk levels. The third question is data flow: where do queries go, on which machine are they processed, are they logged, and for how long are they retained? A researcher should not open a bridge without knowing the answers.
 
-This guarded posture has roots in academic culture. Tenopir and colleagues (2011) showed in a large survey that scientists are open to data sharing in principle and guarded in practice, with worries about misuse and credit measurably limiting what they share. The same protective instinct should operate at the tool layer. Refusing to open a bridge before you know where your data flows is not paranoia. It is professional ethics.
+Tenopir and colleagues (2011) showed that scientists are open to data sharing in principle but cautious in practice — with concerns about misuse, loss of control, and credit attribution measurably shaping behavior. The same caution is warranted at the tool layer. Declining to open a connection before understanding where the data flows is not paranoia. It is the expression of research ethics at the level of infrastructure.
 
-## 6. Data Flow and Data Protection
+## 6. Data Flow and Personal Data Protection
 
-The hardest rule in the triage concerns participant data. Raw interview transcripts, tables carrying identities, and consent forms do not pass through any third-party MCP server. Every transfer the consent form did not foresee is, before any KVKK or GDPR obligation, a breach of the promise made to the participant. The ordering from the qualitative coding booklet holds here too. Anonymization first, tool second. Even with anonymized data, ask where the server runs, because a server running locally and a server relaying queries to a remote service are not the same thing.
+The hardest rule in the triage concerns participant data. Raw interview transcripts, tables carrying identifiers, consent forms, clinical materials, and files containing personal data must not pass through any third-party MCP server. Every transfer that the consent form did not foresee is not merely a technical oversight — it is a breach of the promise made to participants. The sequencing principle established in the qualitative coding and ethics booklets applies here as well: anonymization first, then the tool. Even with anonymized data, the question of where the server runs must be asked. A server running locally and a server relaying queries to a remote service are not the same thing.
 
-The same care extends down to everyday queries. Even a search string sent to a catalog server is a data trace. When your research topic is sensitive, you want to know where that trace accumulates. The rule is plain. Everything that crosses a bridge has a recipient, and no package is sent to a recipient you have not identified.
+The same care extends to routine queries. Even a search string sent to a catalog server can leave a data trace concerning the research topic. When the research subject is sensitive, knowing where that trace accumulates becomes a professional obligation. The rule is simple: everything that crosses a bridge has a recipient, and data is not sent to a recipient you have not identified.
 
 ## 7. Least-Privilege Setup
 
-The installation principle is least privilege. If read-only is enough, write permission is not granted. If the server needs one folder, it opens onto that folder and not the whole disk. If a credential is required, it lives in an environment variable, not embedded in a configuration file, and it never enters the archive repository. The guard hook from the previous booklet does its second job here: because every commit passes a secret scan, a key accidentally written into a file is caught at the gate.
+The foundational principle for any MCP installation is least privilege. If read-only access is sufficient, write permission is not granted. If the server needs to see one folder, it is opened onto that folder and not the entire disk. If a credential is required, it belongs in an environment variable rather than embedded in a configuration file, and it must never enter the archive repository. The guard hook from the previous booklet performs a second service here: because every commit passes through a secret scan, a key accidentally written into a file is caught at the gate rather than committed to history.
 
-Each of these rules is small on its own. Together they set a ceiling on the damage a bridge can do on its worst day. The old principle of security engineering holds in a research archive too. Give a component enough authority to do its job, and no more.
+Each of these rules appears small in isolation. Together, they set a ceiling on the damage a bridge can do on a bad day. The basic principle of security engineering holds in a research archive as well: a component is given the authority it needs to do its job, and nothing more.
 
 ## 8. Verification Probes
 
-A bridge, once built, is tested before it is trusted, and the test uses a known record. If you connected to the catalog, search for an article whose reference you know by heart. If the returned record matches the title, authors, and DOI you hold, the bridge stands. If it does not, the problem has been caught early and cheaply. If you connected to your reference manager, list a record you know is in the library.
+A bridge, once built, should be tested before it is trusted, and the test is run against a record whose outcome is already known. If you have connected to the catalog, search for an article whose reference you know precisely. If the returned record matches the title, authors, year, and DOI you hold, the bridge is functioning correctly at a basic level. If it does not, the problem has been caught early and inexpensively — at a stage when it does not interrupt real work. If you have connected to your reference manager, list a record you know is in the library. If you have connected to the file system, retrieve a test file that contains no sensitive data and whose content you can verify.
 
-This known-record probe is the smallest instance of the guide's verification principle. An infrastructure proves itself not at the first real need but in a trial whose outcome is known in advance. A successful probe goes into the record, and the bridge becomes a trusted part of the workflow.
+The purpose is not to obtain an impressive response from the tool. The purpose is to confirm that the infrastructure is genuinely consulting the expected source. This known-record probe is a small-scale application of the guide's verification principle: an infrastructure proves itself not at the moment of its first real need, but in a trial whose result is known in advance.
 
 ## 9. Disclosure and the Methods Record
 
-The moment MCP joins the research infrastructure, it is part of the method. Hosseini, Rasmussen, and Resnik (2023) tie the duty of disclosure to the use itself, and the principle covers search infrastructure. If a systematic search ran in a given catalog, with a given tool, on a given date, the methods section says so. In an AI-assisted search workflow, the MCP server's name and version belong naturally in that record.
+When MCP use becomes part of the research infrastructure, it becomes part of the methodological record. Hosseini, Rasmussen, and Resnik (2023) emphasize that the disclosure obligation for AI use is tied to the nature of the use itself — and the principle extends to search infrastructure. If a systematic search was conducted in a particular catalog, with a particular tool, on a particular date, and with a particular query, the methods section should state this. In an AI-assisted search workflow, the name and version of the MCP server belong naturally in that record, together with an account of what the connection did, which data it accessed, and how the researcher reviewed its outputs.
 
-The tool that lightens the record-keeping is, again, the archive itself. A ledger that notes during the session which source came over which bridge, with which query and when, has the disclosure sentence ready at writing time. The source passport, the subject of the next booklet, is exactly that ledger made systematic.
+The structure that lightens this record-keeping burden is, once again, the archive itself. A log that captures during the session which source came over which bridge, with which query and at which point in time, has the disclosure sentence ready when it is needed at the writing stage. The source passport booklet — the next entry in this guide — will establish the systematic form of that log.
 
-## 10. Bridge, to the Identity of Sources
+## 10. Bridge — Toward the Identity of Sources
 
-The archive stands, the rituals are wired, and the session now looks at outside catalogs over controlled bridges. Every source that crosses a bridge brings a question with it. Where did this record come from, which query found it, and which draft used it? The next booklet builds the system for that question. The source passport is each source's identity card across sessions, and the archive-layer guarantee of citation integrity.
+When the archive is in place, the rituals are connected, and the session is consulting external catalogs over controlled bridges, a new question arises from each record that crosses. Where did this source come from? Which query found it? On which date was it verified? In which draft was it used?
+
+The next booklet builds the system for answering that question. The source passport is the identity card each source carries across sessions. The archive-layer guarantee of citation integrity begins precisely there.
 
 ## References
 
-Citations are in APA 7 format. DOIs verified against Crossref on 2026-06-12.
+Citations are in APA 7 format. DOIs verified against Crossref on 2026-06-21.
 
 Anthropic. (2024). *Model Context Protocol*. https://modelcontextprotocol.io
 
-Anthropic. (2026). *Claude Code documentation*. https://docs.claude.com/en/docs/claude-code
+Anthropic. (2026). *Claude Code documentation*. https://code.claude.com/docs
 
-Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
+Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, *31*(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
-Tenopir, C., Allard, S., Douglass, K., Aydinoglu, A. U., Wu, L., Read, E., Manoff, M., & Frame, M. (2011). Data sharing by scientists: Practices and perceptions. *PLoS ONE*, 6(6), e21101. https://doi.org/10.1371/journal.pone.0021101
+Tenopir, C., Allard, S., Douglass, K., Aydinoglu, A. U., Wu, L., Read, E., Manoff, M., & Frame, M. (2011). Data sharing by scientists: Practices and perceptions. *PLoS ONE*, *6*(6), e21101. https://doi.org/10.1371/journal.pone.0021101
 
-Walters, W. H., & Wilder, E. I. (2023). Fabrication and errors in the bibliographic citations generated by ChatGPT. *Scientific Reports*, 13, Article 14045. https://doi.org/10.1038/s41598-023-41032-5
+Walters, W. H., & Wilder, E. I. (2023). Fabrication and errors in the bibliographic citations generated by ChatGPT. *Scientific Reports*, *13*, Article 14045. https://doi.org/10.1038/s41598-023-41032-5
 
-Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. *PLoS Computational Biology*, 13(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
+Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. *PLoS Computational Biology*, *13*(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
 
 ---
 
 **Booklet ID.** `006-01-0001`
-**Version.** `0.1.0`
-**Date.** 2026-06-20
+**Version.** `0.2.0`
+**Date.** 2026-06-21
 **License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
-**Approximate word count.** 1536 (English body text, measured with wc)
+**Approximate word count.** 1994 (English body text, measured with wc)
 **Verified citations.** 6
 **Hallucinated citations.** 0
-**Previous booklet.** [`005-02-0001`](../../005-hooks-automation/005-02-0001/en.md). Ritual Hooks: Daily Logging, Session Persistence, Idle Time
-**Next booklet.** [`007-01-0001`](../../007-academic-writing/007-01-0001/en.md). IMRAD Scaffolding: A Bilingual Approach
+**Previous booklet.** [`005-02-0001`](../../005-hooks-automation/005-02-0001/en.md). Ritual Hooks. Daily Logging, Session Persistence, and Idle Time
+**Next booklet.** [`007-01-0001`](../../007-academic-writing/007-01-0001/en.md). IMRAD Scaffolding. A Bilingual Approach

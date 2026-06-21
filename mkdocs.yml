@@ -106,26 +106,26 @@ nav:
   - Contributing: CONTRIBUTING.md
 
   - "001 Foundations / Temeller":
-      - "001-01-0001 — What is Claude Code? (EN)": booklets/001-foundations/001-01-0001/en.md
-      - "001-01-0001 — Claude Code Nedir? (TR)": booklets/001-foundations/001-01-0001/tr.md
+      - "001-01-0001 — Through a Social Scientist's Lens (EN)": booklets/001-foundations/001-01-0001/en.md
+      - "001-01-0001 — Sosyal Bilimcinin Gözüyle (TR)": booklets/001-foundations/001-01-0001/tr.md
       - "001-01-0002 — The Agentic Shift (EN)": booklets/001-foundations/001-01-0002/en.md
       - "001-01-0002 — Aracın Ötesine Geçiş (TR)": booklets/001-foundations/001-01-0002/tr.md
       - "001-01-0003 — Installation and First Session (EN)": booklets/001-foundations/001-01-0003/en.md
       - "001-01-0003 — Kurulum ve İlk Oturum (TR)": booklets/001-foundations/001-01-0003/tr.md
-      - "001-01-0004 — CLAUDE.md Discipline (EN) [draft]": booklets/001-foundations/001-01-0004/en.md
-      - "001-01-0004 — CLAUDE.md Disiplini (TR) [taslak]": booklets/001-foundations/001-01-0004/tr.md
+      - "001-01-0004 — CLAUDE.md Discipline (EN)": booklets/001-foundations/001-01-0004/en.md
+      - "001-01-0004 — CLAUDE.md Disiplini (TR)": booklets/001-foundations/001-01-0004/tr.md
 
   - "002 Academic Access / Akademik Erişim":
-      - "002-04-0001 — DergiPark, ULAKBIM, HEAL-Link (EN)": booklets/002-academic-access/002-04-0001/en.md
-      - "002-04-0001 — DergiPark, ULAKBIM, HEAL-Link (TR)": booklets/002-academic-access/002-04-0001/tr.md
+      - "002-04-0001 — DergiPark, ULAKBİM, HEAL Link (EN)": booklets/002-academic-access/002-04-0001/en.md
+      - "002-04-0001 — DergiPark, ULAKBİM, HEAL Link (TR)": booklets/002-academic-access/002-04-0001/tr.md
 
   - "003 Memory System / Hafıza Sistemi":
       - "003-01-0001 — Memory as Vault (EN)": booklets/003-memory-system/003-01-0001/en.md
-      - "003-01-0001 — Kasa Olarak Hafıza (TR)": booklets/003-memory-system/003-01-0001/tr.md
+      - "003-01-0001 — Hafızayı Arşive Dönüştürmek (TR)": booklets/003-memory-system/003-01-0001/tr.md
       - "003-03-0001 — Material Passport (EN)": booklets/003-memory-system/003-03-0001/en.md
       - "003-03-0001 — Kaynak Pasaportu (TR)": booklets/003-memory-system/003-03-0001/tr.md
 
-  - "004 Vault Architecture / Kasa Mimarisi":
+  - "004 Vault Architecture / Arşiv Mimarisi":
       - "004-01-0001 — Folder Discipline and MOC (EN)": booklets/004-vault-architecture/004-01-0001/en.md
       - "004-01-0001 — Klasör Disiplini ve MOC (TR)": booklets/004-vault-architecture/004-01-0001/tr.md
 

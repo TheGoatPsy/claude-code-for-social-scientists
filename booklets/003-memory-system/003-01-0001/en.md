@@ -1,12 +1,12 @@
 ---
-title_en: "Memory as Vault, A First-Principles Introduction"
-title_tr: "Hafızayı Arşive Dönüştürmek, İlkesel Bir Giriş"
+title_en: "Memory as Vault. A First Principles Introduction"
+title_tr: "Hafızayı Arşive Dönüştürmek. İlkesel Bir Giriş"
 booklet_id: "003-01-0001"
 category: "003-memory-system"
 language: "en"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -15,108 +15,144 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model_alias: "claude-opus-4-7"
-    model_dated: null  # no dated identifier published by Anthropic for Opus 4.7 as of 2026-05-24
+    model_alias: "claude-opus-4-8"
+    model_dated: null  # no dated identifier published by Anthropic for Opus 4.8 as of 2026-06-21
     role: "drafting, verification, citation lookup, bilingual re-authoring"
     interaction_mode: "interactive console"
 ai_contribution_level: "co-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 9
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
-translation_notes: "English re-authored from the Turkish source, not a literal translation. The original concept term Memory as Vault is presented as the author's own coinage in both languages."
+translation_notes: "English re-authored from the finalized Turkish source (v0.2.0), not a literal translation. Content, structure, arguments, and references follow the Turkish canon. The original concept term Memory as Vault is the author's own coinage, presented identically in both languages."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
 status: "release"
 original_concept: true
 ---
 
-# Memory as Vault, A First-Principles Introduction
+# Memory as Vault. A First Principles Introduction
 
-The previous category established the academic access infrastructure. This category begins with the question of where every retrieved document should go. A literature scan, an interview transcript, a clinical observation note, all must be written somewhere, but into what structure? This booklet offers the Memory as Vault pattern as its answer. That pattern is the author's original practitioner concept, presented here as the guide's working framework rather than an established construct in the cognitive science or information science literature. The aim is to establish, from first principles, how a scholar holds years of accumulated context in a single persistent system.
+## Introduction
 
-## 1. Why a Vault
+The previous category addressed the academic access infrastructure. This booklet begins with the question of where every retrieved document should go. An article record, an interview transcript, a clinical observation note, or a field journal entry does not merely need to be found — it needs a home within the researcher's working system.
 
-Two social science examples make the problem tangible. A clinical psychologist who has practiced for ten years holds a decade of session notes, case formulations, supervision records, and summaries of hundreds of articles. The accumulation is the foundation of clinical judgment, yet when scattered across a hard drive, a notes application, and a stack of annotated PDFs, it is effectively inaccessible. A researcher who has conducted twelve years of fieldwork in Komotini and the surrounding villages holds field notebooks, observation journals, photographs, and interview transcripts. That accumulation is twelve years of labor, yet when unstructured, every new project starts from zero. The same field, the same villages, the same families, and the researcher still digs from scratch.
+This booklet answers that question through the Memory as Vault pattern. That pattern is the author's original practitioner concept. It is not presented as an established construct in the cognitive science or information science literature. It is offered here as a working framework to help social scientists hold years of accumulated academic context in a structure that is persistent, navigable, and reusable.
 
-In both cases the problem is identical: context accumulates, but accumulation is not the same as access. A notebook is chronological: finding something requires remembering when it was written. A vault is structural: finding something requires only knowing where it belongs. This distinction, at the scale of a decade, is what this guide calls the Memory as Vault pattern, a design that moves an AI-assisted research environment from a daily diary to a persistent, navigable archive. The claim that this structural design yields meaningful productivity gains is the guide's own inference, grounded in the logic of the pattern and in the broader information-retrieval literature. Practitioners should treat it as a working hypothesis, one that has not been validated in a controlled study.
+The central claim is this: academic memory does not preserve itself. Taking notes, collecting sources, and saving PDFs are necessary but not sufficient. What a researcher needs is an archive architecture that does not merely store accumulated knowledge but connects it, retrieves it, and makes it available for new work.
 
-## 2. The Historical Chain, From Memex to Zettelkasten
+## 1. Why a Persistent Archive?
 
-Memory as Vault belongs to a seventy-year intellectual tradition in information architecture. It is a current form of a deep-rooted process in knowledge design. Knowing that tradition is what makes the pattern serious and durable.
+Two social science examples make the problem concrete. Consider a clinical psychologist who has practiced for ten years. She holds session notes, case formulations, supervision records, and summaries of hundreds of articles. That accumulation is a meaningful part of her clinical intuition, professional memory, and academic output — yet if it is scattered across different folders, note applications, PDF annotations, and aging disk backups, it is effectively inaccessible.
 
-The tradition begins with Vannevar Bush. In the essay "As We May Think," published in The Atlantic in 1945, Bush imagined a device he called the Memex: a mechanized extension of personal memory that would store all of an individual's books, records, and communications and build associative trails among them. The insight was precise: the human mind works by association, so an information system should honor those links rather than impose a single hierarchy. The formal concept came from Ted Nelson. Nelson (1965), proposing a file structure for complex, changing, and indeterminate information, defined hypertext for the first time as the idea that texts can relate to one another as a network rather than a linear sequence.
+Consider, similarly, a researcher who has conducted long-term fieldwork in Komotini and the surrounding villages. He holds field notebooks, observation journals, photographs, interview notes, and transcripts. That accumulation is not merely data. It is the record of years of situated knowledge, relationships, context, and conceptual intuition. But when it remains unstructured, each new project must reconstruct a substantial portion of the preceding labor.
 
-The practical demonstration came from Niklas Luhmann. Luhmann (1992) worked with a slip-box he called the Zettelkasten. Each slip carried an atomic thought, connected to others by reference numbers rather than folders. Over roughly five decades Luhmann used this system as what he called a communication partner, something closer to a thinking interlocutor than a filing cabinet, producing approximately seventy books and hundreds of articles. Sönke Ahrens (2017) translated the technique for modern knowledge workers, reformulating it through atomic notes, bidirectional links, and the note system as a thinking tool. That lineage is what the Memory as Vault pattern inherits: Bush's associative vision, Nelson's hypertext formalism, Luhmann's sustained practice, and Ahrens's translation. What none of them anticipated was that the retrieval step could be delegated to a language model working directly inside the archive.
+The problem is identical in both cases: context accumulates, but accumulation is not the same as access. In a chronological notebook, finding something requires remembering when it was written. In a structured archive, finding something requires only knowing what topic, project, source family, or research decision it belongs to.
+
+This distinction is consequential over the long term. The Memory as Vault pattern aims to move an AI-assisted research tool from a transient note assistant to a persistent knowledge system that can work with the researcher's accumulated academic context. The claim that this design will yield productivity gains is an inference drawn from the information retrieval literature and from practitioner experience. It should not be read as a directly tested effect established in a controlled study.
+
+## 2. The Historical Chain: From Memex to Zettelkasten
+
+The idea of converting memory into an archive did not emerge with contemporary AI tools. Personal knowledge architecture has a longer intellectual lineage. Seeing that lineage is what makes the pattern serious rather than merely practical.
+
+One of the early and influential starting points is Vannevar Bush's Memex. Bush (1945) imagined a personal memory device in which an individual could store books, records, and correspondence, and build associative trails among them. Bush's core insight was precise: the human mind works not only through hierarchical folders but through association. An information system should therefore rest not only on a single tree structure but on links and trails.
+
+Ted Nelson (1965) extended this idea by developing the concept of hypertext, showing that texts can relate to one another not as a linear sequence but as a network. Niklas Luhmann then demonstrated, through his Zettelkasten, how powerful this approach could be in sustained academic work. Luhmann's slip-box consisted of notes each carrying an atomic thought, connected to one another through cross-references. This system is discussed as one of the significant organizational disciplines behind his productivity. Sönke Ahrens (2017) reinterpreted the Zettelkasten approach for contemporary knowledge workers. Atomic notes, links, and the note-taking system as a thinking tool rather than a storage device: these ideas map closely onto the core logic of digital archives today.
+
+The shared thread running through Bush, Nelson, Luhmann, and Ahrens is this: knowledge gains value not when stored but when connected. The archive pattern this booklet proposes carries that tradition into an AI-assisted research workflow. What is new is that the retrieval and synthesis steps can now be supported by a language model working inside the archive.
 
 ## 3. Operational Principles
 
-Memory as Vault, as the guide defines it, rests on a set of operational principles that each represent an engineering decision the researcher makes once and benefits from for years.
+The Memory as Vault pattern rests on several operational principles. These principles are not tied to any particular application. The goal is to establish a knowledge system the researcher can sustain and carry across years.
 
-The Markdown base keeps every document in the vault in plain-text form. Plain text is tied to no proprietary software, readable with any editor, and legible thirty years from now without conversion. Frontmatter is structured metadata at the head of each document (date, type, tags, related documents) that makes the file machine-queryable without opening it. The file tree places documents in a meaningful folder hierarchy, an engineering decision and the subject of the next booklet. Links connect documents through bracketed syntax so that Nelson's hypertext idea becomes operative inside the vault. Maps of content (MOCs) serve as gateway documents for a topic, gathering pointers to related files in one place so a researcher can enter a theme rather than search for it.
+The first principle is plain text. Documents in the archive should be kept in formats that are open, portable, and durable. Markdown is a strong choice for this reason: it opens with any editor, depends on no proprietary software, and provides long-term portability.
 
-All of these principles are substitutable. Another plain-text format instead of Markdown, a different metadata schema, a different folder logic: any of these can replace the specific choices above. What stays fixed underneath all of them is simpler than it looks: capture information, locate it again, connect it to other things, move through it. That logic is the subject of the next section.
+The second principle is metadata. Frontmatter is a block of structured fields placed at the head of a file — date, type, tag, project, related files, source status. These fields make the file queryable not only for a human reader but for tools.
 
-## 4. The Memory as Vault Engineering Pattern
+The third principle is the file tree. Knowledge should live not in an arbitrary folder but in a directory that reflects the researcher's working logic. The file tree is not merely organization; it is the engineering foundation of future accessibility.
 
-The core logic of Memory as Vault, as the guide conceives it, is a cycle: Input, Store, Retrieve, Present. This cycle is the invariant skeleton of the pattern. The operational principles described in the previous section are one concrete instantiation of that skeleton. The skeleton itself is independent of both tool and platform.
+The fourth principle is linking. Connections between documents are the archive's internal realization of Nelson's hypertext idea. An interview note can link to a concept note, to a source record, and to an article draft. Knowledge does not freeze in individual files; it moves through a relational network.
 
-```mermaid
-flowchart LR
-  A[Input] --> B[Store]
-  B --> C[Retrieve]
-  C --> D[Present]
-  D --> A
-```
+The fifth principle is the map of content (MOC). A map of content serves as the entry point for a particular topic. When a researcher wants to enter a theme, she can follow the theme's main map rather than searching file by file.
 
-Input is where information enters the vault. An article record, a field note, a clinical observation, anything the researcher captures gets converted to plain text at this step. Store assigns it a location: the right folder, the right frontmatter fields, the right links. This step determines future accessibility entirely, because information stored in the wrong place cannot be found. At Retrieve the value of the vault becomes visible: text search, frontmatter query, link traversal. Present completes the cycle by putting retrieved material to work in a new context, a literature synthesis, an argument draft, a case formulation.
+The concrete implementation of these principles may vary. Another plain-text format instead of Markdown, a different metadata schema, a different folder logic: any of these can substitute for the specific choices above. What must not change is the underlying logic: capture, store, retrieve, and reuse.
 
-The feature that distinguishes this pattern from a conventional database cycle is the feedback arrow from Present back to Input. A database receives, stores, queries, and returns data, but the data it returns does not change the system itself. In the Memory as Vault design, as this guide conceives it, every Present step reshapes the vault: the synthesis enters as a new atomic note, that note forms new links with earlier notes, and the relevant maps of content are updated. Over time the vault becomes a record of the researcher's evolving way of thinking, an instrument that grows more refined with use. For the social scientist, a vault well maintained for ten years accumulates depth that no new tool can replicate.
+## 4. The Memory as Vault Pattern
+
+In the working framework of this booklet, the Memory as Vault pattern can be understood as a four-step cycle: Input, Store, Retrieve, and Present. These terms are retained from software and knowledge architecture, where they are well established. In plain terms: knowledge enters the archive, is placed in the right location, is retrieved when needed, and is put to use in a new academic context.
+
+**Input** is the step at which information enters the archive.
+
+**Store** is the step at which information is placed in the right location, with the right metadata and the right links.
+
+**Retrieve** is the step at which information is called back — through search, through link traversal, or through a metadata query.
+
+**Present** is the step at which retrieved information is used in a new text, analysis, synthesis, or decision process.
+
+What distinguishes this cycle from a conventional database operation is that after the Present step, the cycle returns to Input. When a researcher writes a literature synthesis, that synthesis can enter the archive as a new atomic note. When she builds a concept map, that map can form new links with earlier notes. When a case formulation or a field analysis is developed, that output can reshape the archive's future structure.
+
+The archive therefore does not merely grow. It matures over time. A well-maintained archive becomes a record of the researcher's evolving way of thinking. This is particularly consequential in long-form doctoral projects, clinical research, fieldwork, and multilingual literature-monitoring processes.
 
 ## 5. Integration with Claude Code
 
-The practical power of the Memory as Vault pattern in an AI-assisted workflow comes from the language model's ability to work directly with vault contents. Claude Code, granted file-read permission over the vault directory, can ground its answers in the actual documents a researcher has accumulated. When the model answers a question, it reads the relevant files and synthesizes their content, so the output reflects the researcher's own intellectual accumulation rather than generic training-data patterns.
+The practical power of the Memory as Vault pattern in an AI-assisted workflow comes from Claude Code's ability to work directly with the file system. When the tool can read files in the archive directory, its responses can be grounded in the documents the researcher has actually accumulated rather than in generic training data alone. This is one of the primary features that distinguishes the tool from a general assistant.
 
-The technical mechanism underlying this is retrieval-augmented generation (RAG). Lewis et al. (2020) defined retrieval-augmented generation for knowledge-intensive natural language processing tasks: before producing an answer, the model retrieves relevant passages from an external knowledge base and grounds its response in those passages. The guide's inference, going beyond what Lewis et al. establish, is that a well-structured Markdown vault is a viable knowledge base for this mechanism when operated through Claude Code's file-read access. That application is the guide's own and has not been validated in a controlled study. Practitioners should treat it as a reasoned engineering proposal.
+This mechanism is related to the retrieval-augmented generation approach. Lewis et al. (2020) showed, in the retrieval-augmented generation framework for knowledge-intensive NLP tasks, that a model can retrieve relevant passages from an external knowledge base before generating a response. The inference this booklet draws — going beyond what Lewis et al. directly establish — is that a well-structured Markdown archive can serve as such a knowledge base for Claude Code operating through file-read access. This is the guide's practitioner inference and is not presented as a directly validated finding in a controlled study.
 
-There is an important limit to hold clearly. The vault's role is retrieval, not planning. Valmeekam et al. (2023), investigating the planning abilities of large language models critically, demonstrated that these models have marked limitations in complex multi-step planning. Even the best model in their study remained at low success rates on standard planning benchmarks. This finding is why the vault should remain in the retrieval role: it supplies reliable information, but planning and research judgment remain with the researcher. Khattab et al. (2023), with the DSPy framework for compiling declarative language model calls into self-improving pipelines, showed one way the retrieval and generation components can be formally structured. That framework is one example of how the retrieval component of a vault-based workflow could be technically reinforced. Practitioners who want to go further will find DSPy a useful starting point. How far to go depends on the research context.
+The boundary here must be kept clear. The archive provides a strong foundation for retrieval. Planning and research judgment, however, remain with the researcher. Valmeekam et al. (2023) showed that large language models have significant limitations in complex planning tasks. Claude Code can therefore retrieve information from the archive, make connections visible, and offer synthesis proposals — but the appropriateness of the research plan, the meaning of a finding, and the final academic decision are the researcher's responsibility.
+
+Khattab et al.'s DSPy work shows how retrieval and generation components can be organized within more formal pipelines. Approaches of this kind suggest that archive-based workflows could be made more auditable in the future. The aim of this booklet, however, is not to mandate a particular technical framework but to help the social scientist think of her own archive as a reliable retrieval layer.
 
 ## 6. Retrieval Patterns
 
-Retrieving information from a vault follows patterns of increasing semantic depth. The most basic is text search: a term or phrase queried across all documents, performed with the classic `grep` tool. Fast and exact. The second is file-pattern matching (glob), which gathers files by name or path structure: all daily logs for a given year, all files in a particular project subfolder.
+There is more than one way to retrieve information from an archive. Each pattern corresponds to a different research need.
 
-The third pattern is the frontmatter query: the structured metadata of documents is queried directly, for example all files tagged with a particular topic and created after a particular date. This is where the structural power of the vault becomes visible. Rather than digging chronologically, the researcher makes a structural selection. The fourth and most semantically rich pattern is semantic search, performed via a tool connected through MCP. Semantic search does not match exact terms but finds documents that are close in meaning, so a search for "anxiety" also surfaces files containing "worry," "fear," or "apprehension." Together these patterns form a spectrum from exact keyword to deep semantic matching, and the researcher selects whichever is most appropriate for the query at hand. In practice, most retrieval workflows begin with frontmatter queries to narrow the candidate set and end with targeted text search within that set.
+The most basic is text search. The researcher queries a term, concept, or phrase across the archive. This method is fast and exact but finds only the words that are present; it may miss different expressions carrying the same meaning.
+
+The second pattern is file-pattern matching. Files are gathered by year, project, folder, or naming convention — for example, all field notes from 2025, all interviews in a particular project folder, or only source records.
+
+The third pattern is the frontmatter query. The structured metadata of documents is queried directly: all files carrying a particular tag, created after a particular date, or linked to a particular project. The structural power of the archive is most visible here. The researcher is no longer relying on memory alone; she is making a structural selection based on metadata.
+
+The fourth pattern is semantic search. A tool connected through MCP, or a dedicated semantic search system, can surface files that are close in meaning even without an exact term match. A search for anxiety can also find files containing worry, fear, apprehension, or avoidance.
+
+These patterns are not interchangeable. A good archive workflow typically begins by narrowing the candidate set with a metadata query, then runs text search within that set, and finally uses semantic search when broader conceptual connections need to be explored.
 
 ## 7. Risks
 
-Memory as Vault is a genuinely useful pattern, but it carries real risks that practitioners should name explicitly.
+The Memory as Vault pattern is genuinely useful. But the risks it carries must be seen clearly.
 
-Conceptual fatigue is real. Continuously organizing, tagging, and linking a vault requires sustained labor. When that labor exceeds the retrieval value the vault returns, maintenance becomes a drain. The mitigation is structural simplicity: the operational principles applied with minimum friction, a vault that is navigable rather than exhaustively ordered.
+The first risk is conceptual and technical fatigue. Continuously organizing, tagging, and linking an archive takes sustained effort. When that effort exceeds the value the archive returns, the system becomes a burden rather than a resource. The goal is therefore not perfect order but functional navigability. A structure that is good enough and maintainable is worth more than one that is exhaustively detailed but not sustained.
 
-Tool dependence is a quieter hazard. If a researcher ties their vault to a single application, one proprietary note tool or one vendor's ecosystem, the vault is at risk whenever that application changes its format, raises its price, or shuts down. The plain-text Markdown principle is the mitigation: as long as the vault is plain text, it is readable with any editor and portable to any platform.
+The second risk is tool dependence. If a researcher ties her entire archive to a single application or a single vendor's ecosystem, years of accumulated work are at risk whenever that application changes or disappears. The plain-text principle mitigates this. Markdown and equivalent open formats ensure the archive can be moved across tools.
 
-Clinical data carries the heaviest obligation. A clinical psychologist's vault must not contain non-anonymized patient data. This is both an ethical obligation and a legal one. Clinical data may enter the vault only after de-identification and within the framework of ethics-board approval. This risk connects directly to the regional legal environment described in the next section.
+The third and most serious risk is clinical and sensitive data. Non-anonymized patient data, identifiable interview transcripts, or materials covered by an ethics-board protocol must not enter the archive without proper handling. Clinical data may be archived only after de-identification, within a framework of ethics-board approval, and in compliance with data protection principles.
 
 ## 8. Türkiye and Greece Specificity
 
-When clinical and human-subject data are at stake, Türkiye and Greece present two distinct but structurally convergent legal frameworks. In Türkiye, Law No. 6698 on the Protection of Personal Data designates clinical data as special-category personal data. The Personal Data Protection Authority (2024), in its guide on the protection of personal health data, emphasizes the quality of explicit consent and the principle of data minimization as the governing standards. The practical consequence is clear: a clinical psychologist or hospital researcher in Türkiye does not hold non-anonymized clinical data in their vault. They should not.
+When clinical and human-subject data are at stake, Türkiye and Greece offer two legally distinct but structurally convergent frameworks. In Türkiye, Law No. 6698 on the Protection of Personal Data designates health data as special-category personal data. The Personal Data Protection Authority (2025), in its guide on the processing of special-category personal data, emphasizes explicit consent, purpose limitation, and data minimization as the governing principles.
 
-Greece, as a European Union member state, falls under the General Data Protection Regulation directly. The European Data Protection Board (2024), in its guidelines on the protection of personal data in research, defines the limits of data processing in the research context. The structural similarity between the Turkish framework and the GDPR is high: both center on data minimization and purpose limitation as core principles. The practice of the ethics board at Democritus University in Komotini is one concrete application of this framework. A field researcher bringing interview transcripts into the vault replaces participant identities with codes before any file enters the system, keeping the vault both research-functional and legally compliant.
+The practical implication is clear. In Türkiye, a clinical psychologist, hospital researcher, or social scientist working with human participants must not hold non-anonymized clinical data in their archive. The archive must serve research without weakening the security of personal data.
 
-## 9. Bridge, to Vault Architecture
+Greece, as a European Union member state, falls under the General Data Protection Regulation directly. The European Data Protection Board (2024), in its opinion on personal data protection in the context of AI models, defines the limits of data processing through the principles of data minimization and purpose limitation. Field research conducted at institutions such as Democritus University in Komotini involves coding interview transcripts, separating participant identities, and restricting access — these are the practical applications of those principles.
 
-Of the four steps of the Memory as Vault cycle, the Store step is the subject of the next booklet. The question of where information belongs appears simple. It is not. A wrong folder architecture compounds silently over years into a hidden productivity cost: searches slow, results fill with noise, and each new project rebuilds orientation that should already exist. A right architecture moves file-finding from recollection to navigation. The next booklet treats folder discipline and the maps of content pattern as engineering decisions with long-term consequences.
+KVKK and GDPR are not identical. But for the researcher's working archive, the shared message is clear: the archive must be usable, and it must not weaken the participant's privacy or legal protection.
+
+## 9. Bridge: To Vault Architecture
+
+One of the most critical steps in the Memory as Vault cycle is Store — placing information in the right location. That question looks simple at first. It is not. A wrong folder architecture becomes a silent productivity tax over years: searches slow down, results grow noisy, and each new project must reconstruct the orientation that should already exist.
+
+A well-designed archive architecture removes file-finding from the burden of recollection and places it in navigable structure. The next booklet treats folder discipline and the maps of content pattern as engineering decisions with long-term consequences, precisely because the Store step is where accessibility is made or lost.
 
 ## References
 
-Citations are in APA 7 format. DOIs and arXiv identifiers were independently verified on 2026-06-04. Bush (1945) and Luhmann (1992) predate DOI registration. Ahrens (2017) is a trade book. The Personal Data Protection Authority (2024) and European Data Protection Board (2024) are institutional grey-literature sources cited for their regulatory authority. Neither carries a DOI.
+Citations are in APA 7 format. DOIs and arXiv identifiers were independently verified via Crossref on 2026-06-21. Bush (1945) and Luhmann (1992) predate DOI registration. Ahrens (2017) is a trade book. The Personal Data Protection Authority (2025) and European Data Protection Board (2024) are institutional grey-literature sources with regulatory authority; neither carries a DOI.
 
 Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. ISBN 978-1542866507
 
 Bush, V. (1945, July). As we may think. *The Atlantic Monthly*, 176(1), 101–108.
 
-European Data Protection Board. (2024). *Guidelines on the protection of personal data in research*. https://edpb.europa.eu
+European Data Protection Board. (2024). *Opinion 28/2024 on certain data protection aspects related to the processing of personal data in the context of AI models*. https://www.edpb.europa.eu/our-work-tools/our-documents/opinion-board-art-64/opinion-282024-certain-data-protection-aspects_en
 
 Khattab, O., Singhvi, A., Maheshwari, P., Zhang, Z., Santhanam, K., Vardhamanan, S., Haq, S., Sharma, A., Joshi, T. T., Moazam, H., Miller, H., Zaharia, M., & Potts, C. (2023). DSPy: Compiling declarative language model calls into self-improving pipelines. *arXiv*. https://arxiv.org/abs/2310.03714
 
@@ -126,19 +162,19 @@ Luhmann, N. (1992). Kommunikation mit Zettelkästen. In *Universität als Milieu
 
 Nelson, T. H. (1965). Complex information processing: A file structure for the complex, the changing and the indeterminate. *Proceedings of the 1965 20th National Conference*, 84–100. https://doi.org/10.1145/800197.806036
 
-Personal Data Protection Authority. (2024). *Guide on the protection of personal health data*. https://www.kvkk.gov.tr
+Personal Data Protection Authority. (2025, February 26). *Guide on the processing of special-category personal data*. https://www.kvkk.gov.tr/Icerik/8184/Ozel-Nitelikli-Kisisel-Verilerin-Islenmesine-Iliskin-Rehber
 
 Valmeekam, K., Marquez, M., Sreedharan, S., & Kambhampati, S. (2023). On the planning abilities of large language models: A critical investigation. *Advances in Neural Information Processing Systems*, 36, 75993–76005. https://doi.org/10.52202/075280-3320
 
 ---
 
 **Booklet ID.** `003-01-0001`
-**Version.** `0.1.0`
-**Date.** 2026-06-20
+**Version.** `0.2.0`
+**Date.** 2026-06-21
 **License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
-**Approximate word count.** 2180 (English body text, measured with wc)
+**Approximate word count.** 2360 (English body text, measured with wc)
 **Verified citations.** 9
-**Hallucinated citations.** 0
+**Fabricated citations.** 0
 **Original concept.** Memory as Vault is the author's original practitioner concept, presented here as the guide's working framework.
 **Previous booklet.** [`002-04-0001`](../../002-academic-access/002-04-0001/en.md). DergiPark, ULAKBIM TR Dizin, HEAL-Link, and Regional Indexing
 **Next booklet.** [`004-01-0001`](../../004-vault-architecture/004-01-0001/en.md). Folder Discipline and the Maps of Content (MOC) Pattern

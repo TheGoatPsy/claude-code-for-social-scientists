@@ -1,12 +1,12 @@
 ---
-title_en: "IMRAD Scaffolding: A Bilingual Approach"
-title_tr: "IMRAD İskeleti: İki Dilli Bir Yaklaşım"
+title_en: "IMRAD Scaffolding. A Bilingual Approach"
+title_tr: "IMRAD İskeleti. İki Dilli Bir Yaklaşım"
 booklet_id: "007-01-0001"
 category: "007-academic-writing"
 language: "en"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -15,87 +15,109 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model_alias: "claude-fable-5"
+    model_alias: "claude-opus-4-8"
     model_dated: null  # no dated identifier published by Anthropic for Fable 5 as of 2026-06-10
     role: "drafting, verification, citation lookup, bilingual re-authoring"
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 8
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
-translation_notes: "English re-authored from the Turkish source, not a literal translation. All workflow examples are synthetic, in keeping with the vault sanitization protocol. Citation audit 2026-06-10: all DOIs verified live against Crossref before drafting. Sollaci and Pereira (2004) was considered for the history of IMRAD and dropped because Crossref returns no DOI for it; no claim in the body depends on it. Amano et al. and Ramírez-Castañeda restricted to the survey-based cost findings their abstracts report; Sword restricted to the no-single-formula finding."
+translation_notes: "English re-authored from the finalized Turkish source (v0.2.0, 2026-06-21), not a literal translation. The body was rebuilt in the target language to preserve academic register and fluency. All workflow examples are synthetic, in keeping with the vault sanitization protocol. Citation audit 2026-06-10: all DOIs verified live against Crossref before drafting. Sollaci and Pereira (2004) was considered for the history of IMRAD and dropped because Crossref returns no DOI for it; no claim in the body depends on it. Amano et al. and Ramírez-Castañeda restricted to the survey-based cost findings their abstracts report; Sword restricted to the no-single-formula finding."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
 status: "release"
 ---
 
-# IMRAD Scaffolding: A Bilingual Approach
+# IMRAD Scaffolding. A Bilingual Approach
 
-The booklets before this one built the archive. Sources settled into a folder discipline, notes were mapped, and memory became files. With this booklet the guide moves to the writing desk. The subject is how IMRAD, the backbone of the empirical article in the social sciences, becomes a bilingual scaffold with Claude Code. Scaffold is the deliberate word. A scaffold carries the building and is not the building. The workflow described here carries the structure of the article and does not write its argument. The argument belongs to the author at every step, and that boundary will be drawn again, in the language of disclosure, before the booklet closes.
+Earlier booklets in this series built the archive. Sources found their place in a folder discipline, notes were mapped, and academic memory became maintainable through file structure. With this booklet the guide moves to the writing desk. The subject is IMRAD — the backbone of the empirical article in the social sciences — and how it can be turned into a bilingual writing scaffold with Claude Code.
+
+The word *scaffold* is chosen deliberately. A scaffold carries a structure; it is not the structure itself. The workflow described here establishes the section order, the section transitions, and the bilingual alignment of an article. It does not write the argument. Forming the research question, interpreting findings, delimiting claims, and assuming scientific responsibility for the final text remain with the author at every stage.
+
+The central claim of this booklet is this. For a social scientist working within the IMRAD structure, Claude Code can reduce blank-page burden, make the flow of sections visible, and support parity checks between Turkish and English text. That support acquires academic value only when paired with explicit section functions, human oversight, source verification, and honest disclosure of contributions.
 
 ## 1. Why a Scaffold, and Why Bilingual
 
-IMRAD divides the empirical article across four questions. The introduction answers why, the methods answer how, the results answer what, and the discussion answers what it means. The arrangement flexes by genre. In a qualitative study the findings and the discussion may interweave, and a review article asks for a different spine altogether. Flexibility does not lower the value of the arrangement. As long as the four questions are answered in their places, formal variation is free.
+IMRAD divides the empirical article across four foundational questions. The introduction answers why; the methods answer how; the results answer what was found; the discussion answers what those findings mean. The arrangement does not apply with identical rigidity across every research genre. In a qualitative study, the findings and discussion may interweave. A review article or a theoretical manuscript may require a different spine. Even so, the four questions give the social scientist a reliable orientation for organizing a text.
 
-Bilingualism, in turn, is the working reality of a social scientist based in Türkiye. The same study usually faces two surfaces at once: the national literature and TR Dizin journals in Turkish, the international journals in English. Even a single-language article has bilingual parts, since a large share of DergiPark journals require an English title, abstract, and keywords. Building the scaffold bilingually from the start turns that reality from an afterthought translation into an architectural decision made on day one.
+Bilingualism, for many social scientists working in Türkiye and the surrounding regional academic environment, is not a stylistic preference but a daily working reality. A single study typically speaks to two audiences at once: the national literature and the Turkish journal ecosystem — including TR Dizin — and the international conversation conducted in English. Turkish text engages the local conceptual vocabulary, the national journal ecosystem, and the TR Dizin context. The English text establishes the relationship with the international reader, indexed journals, and wider conceptual circulation.
+
+For this reason, bilingual writing should not be conceived as a translation task appended after the article is complete. The bilingual scaffold must be built from the outset. When section headings, section promises, core concepts, keywords, and abstracts are aligned with one another from the first stage, the two texts cannot come apart. The depth of thought in Turkish is preserved, and the English text does not become a shadow that merely smells of translation.
 
 ## 2. The Price of English
 
-The cost of publishing in a second language is now documented. Amano and colleagues (2023), in a multi-country survey, showed that scientists whose first language is not English spend markedly more time reading and writing papers than their native-speaker colleagues and run into language-based rejection and revision more often. Ramírez-Castañeda (2020) showed the same picture at single-country depth in the case of Colombian researchers. Preparing a publication in English costs extra time, extra money, and extra anxiety, and the weight falls heaviest at the most fragile stage of a career, on the shoulders of the early researcher.
+The burden that English-language scientific writing places on researchers whose first language is not English is now documented not only through personal experience but empirically. Amano and colleagues (2023), in a multi-country survey, showed that scientists whose first language is not English spend significantly more time reading and writing papers, receive revision and rejection more frequently on language grounds, and incur additional costs as a result. Ramírez-Castañeda (2020) documented the same picture at single-country depth for Colombian researchers in the biological sciences.
 
-The workflow in this booklet aims to lift part of that weight. Mechanical costs such as structure building, section transitions, and language polishing can be delegated to the model. The cost of thinking cannot be delegated and should not be. Drawing that line cleanly protects productivity and honesty in the same movement.
+This burden is sharpest for early-career researchers. Writing a paper in a second language is not simply a matter of word choice. It involves deeper decisions: in which language the thought is constructed, which terminology will carry which concept, which sentence structure will bear which claim, and which reader the article is ultimately addressing.
+
+Claude Code can provide meaningful support here. It can ease mechanical and semi-mechanical tasks — building section scaffolds, suggesting transition sentences, correcting language, checking parity between headings and abstracts. The cost of thinking, however, cannot be transferred. The meaning of the research question, the interpretation of the finding, and the claim to contribution belong to the author. Efficiency and academic integrity move together only when that boundary is respected.
 
 ## 3. The Logic of the Four Questions
 
-Before the scaffold goes up, the question each section answers has to be clear, because reviewers read sections by their function, not by their headings. The introduction justifies why the study was done, anchored in a theoretical gap. The methods give enough of the how for another researcher to redo the work. The results report what was found, without interpretation. The discussion builds what the findings mean inside the literature and concedes the limitations honestly.
+The value of the IMRAD scaffold comes from assigning a function to each section. Reviewers read articles not solely by their headings but by whether those functions have been fulfilled. The introduction explains why the study was conducted. The methods show how the study was carried out in detail sufficient for replication. The results present what the data say, as free from interpretation as the genre allows. The discussion constructs what the findings mean within the literature and addresses limitations honestly.
 
-Bordage (2001), in a systematic study of why reviewers reject manuscripts, shows that a substantial share of the stated reasons grow out of exactly this confusion of functions. An under-justified introduction, methods too thin to reproduce, results mixed with interpretation, and a discussion that claims past the data are all symptoms of a text in which the four questions went unanswered. The scaffold is the first defense. Every sentence has a question it serves, and content that drifts into the wrong section becomes visible while the text is still a draft.
+Bordage (2001), analyzing the grounds on which reviewers reject manuscripts, showed that a substantial share of the stated reasons grow from exactly this mixing of section functions. When the introduction provides insufficient justification, the reader cannot see why the study was done. When the methods section is thin, the work cannot be evaluated independently. When findings are blended with interpretation, the boundary between data and claim becomes indistinct. When the discussion claims beyond the data, the text loses credibility.
+
+IMRAD scaffolding is therefore not a formal template but a methodological instrument for keeping section functions intact. Claude Code can make this discipline visible. It can flag which question each paragraph serves and report content that has drifted into the wrong section. Deciding what content is genuinely necessary remains a matter of the author's scientific judgment.
 
 ## 4. Drafting in Turkish First
 
-The writing workflow in this guide runs on a Turkish-first principle. A researcher builds an argument best in the language they think best in, and for most of us that is the first language. Conceptual fineness, the nuance of field knowledge, and theoretical courage surface in the first draft. Trying to write the first draft in a second language rents out part of the thinking energy to grammar.
+The bilingual writing workflow recommended in this guide operates on a Turkish-first principle. A researcher builds an argument best in the language they think in most naturally. For most researchers that is their first language. Conceptual precision, the nuance of domain knowledge, and theoretical commitment tend to surface in the first draft. Attempting to write that first draft in a second language diverts a meaningful portion of thinking energy toward grammar and expression.
 
-In practice the principle works like this. The outline lives in both languages in a single file, with section headings and each section's one-sentence promise paired from the start. The body is then written in Turkish. The English version is later rebuilt from that outline, and the rebuilding is not translation. Same outline, same claims, sentences built anew inside the target language. Because parity is fixed at the outline level, the two versions cannot drift apart. Because freedom is kept at the sentence level, neither version becomes the other's shadow.
+The practical workflow runs as follows. The outline is held in both languages in a single file. Each section's Turkish heading, its English counterpart, and a one-sentence section promise are matched from the beginning. The body text is written first in Turkish. The English version is then rebuilt from that outline. This rebuilding is not translation. The same research question, the same section function, and the same claim to contribution are rewritten inside the academic conventions of the target language.
+
+This method reduces two risks. First, it prevents the Turkish text from becoming merely an intermediate stage whose sole purpose is to enable the English version. Second, it prevents the English text from collapsing into an artificial intermediate language produced by direct transfer of Turkish sentence structure. The two versions become two careful surfaces of the same scholarly work, not mirror images of each other.
 
 ## 5. Section-by-Section Scaffolding with Claude Code
 
-Claude Code works this site as the scaffolder. Given the research question, the design, and the target journal, it produces a section blueprint for each IMRAD part: the sub-questions the section must answer, the expected flow of paragraphs, and candidate sources pulled from the archive. The author builds the argument on that frame. The blank page problem disappears, because no session opens on a blank page.
+Claude Code should function in this workflow as the organizer of the writing process rather than as the author of the article. Given the research question, the study design, the target journal, the type of data, and the key sources, it can produce a blueprint for each IMRAD section — the sub-questions the section must answer, the expected flow of paragraphs, and candidate sources that can be retrieved from the archive.
 
-Belcher (2019), in the guide that breaks article writing into a twelve-week program, argues that dividing a large task into small finishable pieces is what makes writing behavior sustainable. Section-by-section scaffolding is the tool-assisted form of the same principle, with the day's piece known at the start of each session. Sword (2017), studying empirically how successful academics write, finds no single correct recipe. What productive writers share is having built, and kept, a ritual that fits their own conditions. The scaffold is not a recipe but a floor for a ritual. It serves a half hour at dawn as comfortably as a weekend block.
+This contribution is particularly effective against the blank-page problem. The researcher begins a session knowing which sub-question of which section the day's work will address, rather than opening to an undefined text anxiety. Belcher (2019) argues that dividing academic article writing into small, completable pieces is precisely what makes writing behavior sustainable over time. Section-by-section scaffolding is the AI-assisted expression of that same principle.
+
+Sword (2017), studying empirically how successful academics write, finds no single universal method — but shows that having built a ritual suited to one's own conditions is decisive. The scaffold offers this kind of ritual ground. It fits a half-hour morning writing session as comfortably as a weekend work block. Even so, the scaffold is not the text. The researcher builds the argument on the scaffold's frame, places the evidence, matures the sentences, and accepts scientific responsibility for the result.
 
 ## 6. English Re-Authoring, Not Translation
 
-When the Turkish body matures, work moves to the English version. The rule here is the rule that runs through the whole guide. Keep the outline, rebuild the sentences inside the target language. Literal translation sets two traps at once: the source language's syntax leaks into the target, and the text hangs in an in-between language that sounds natural in neither.
+When the Turkish body has reached a certain maturity, work moves to the English version. The governing rule is clear: keep the outline, rebuild the sentences inside the target language. Literal translation introduces two distinct problems. The source language's syntax migrates into the target language, and the text begins to occupy an intermediate space that sounds natural in neither.
 
-Sentence-level clarity is the main work of this stage. Williams and Bizup (2016), in their lessons on clarity, show how a reader processes a sentence. A sentence that puts the actor in the subject and the action in the verb gets read. A sentence that nominalizes the action and deletes the actor wears the reader down. In the English re-authoring, every sentence passes through that filter. The model can help at the level of language, and the author still decides which sentence survives. The full method for stylistic patterns and translation residue is treated separately in this guide's revision booklet.
+The main work of English re-authoring is rebuilding the thought clearly, plainly, and in academic form within the target language. Williams and Bizup (2017), in their work on clarity, show that readers process a sentence through the actor and the action. Structure that leaves the actor implicit, nominalizes the action, and loads the sentence with unnecessary abstraction increases reading burden. The same principle applies in the re-authoring stage.
+
+Claude Code can assist at the level of language during this phase. It can propose sentence alternatives, flag translation residue, simplify unnecessary abstraction, and offer options calibrated to the target journal's tone. Deciding which sentence survives, how each concept is rendered, and how strongly each claim is framed belongs to the author.
 
 ## 7. Parity of Title, Abstract, and Keywords
 
-In a bilingual article the most commonly neglected parity sits in the title, abstract, and keyword layer. The Turkish and English titles must carry the same claim, the two abstracts must report the same set of findings with the same emphasis, and the keywords must point at the same set of concepts in both languages. TR Dizin journals require this parity formally, and a careless English abstract is often the study's first, sometimes only, representative on the journal's international face.
+In bilingual articles, the layer most frequently neglected is the parity of title, abstract, and keywords. Yet many readers encounter only these three surfaces before deciding whether to proceed to the full text. The Turkish and English titles must carry the same claim. The two abstracts must convey the same set of findings with the same emphasis. The keywords must point to the same conceptual territory in both languages.
 
-The parity check is mechanical, which makes it model-appropriate work. Claude Code lays the two titles, the two abstracts, and the two keyword lists side by side and reports the differences. The author decides which difference is a deliberate editorial choice and which is drift. The full regional indexing and DergiPark workflow was covered in this guide's access booklet. The contribution here is that infrastructure's counterpart at the writing desk.
+This parity matters especially in the DergiPark and TR Dizin context. Many Turkish journals require an English title, abstract, and keywords. A weak English abstract undermines the study's international face. More critically, if there is a semantic drift between the two abstracts, a reader may form the impression that the same article is making two different claims.
+
+Claude Code can support this parity check mechanically. It places the two titles, the two abstracts, and the two keyword lists side by side, and can report semantic shifts, missing findings, over-stated expressions, and conceptual inconsistencies. The author decides which difference represents a deliberate editorial choice and which is an error.
 
 ## 8. AI Support and the Disclosure Line
 
-What the model does in this workflow is specific: produce section blueprints, offer options for transitions, fix grammar and style, report parity checks. What the author cannot hand over is just as specific: framing the research question, interpreting the findings, drawing the limits of the claim, arguing with the literature. Hosseini, Rasmussen, and Resnik (2023), examining AI use in scholarly publication, recommend keeping the distinction between support for form and production of content intact and disclosing the use plainly. The workflow in this booklet builds that distinction into the process itself.
+What Claude Code can take on in this workflow is well-defined: producing section blueprints, offering options for transitions, correcting grammar and style, checking title and abstract parity. What the author cannot transfer is equally well-defined: framing the research question, interpreting the findings, delimiting the claim, engaging the literature, and accepting responsibility for the final text. Hosseini and colleagues (2023), examining AI use in scholarly publication, recommend preserving the distinction between formal support and content production and disclosing the use plainly. The workflow in this booklet builds that distinction into the process itself.
 
-The productivity gain is real and can be owned honestly. Noy and Zhang (2023) showed experimentally that generative AI support shortens time and raises quality in professional writing tasks. The price of the gain is disclosure. One honest sentence in the methods or acknowledgments names which tool did which work and leaves authorship responsibility, in plain sight, with the human.
+If AI support was used, it should not be concealed. Which tool was used, at which stage, and for which purpose must be stated explicitly. Noy and Zhang (2023) demonstrated experimentally that generative AI support can shorten the time required for professional writing tasks and raise output quality. That productivity gain is real. In an academic context, however, the price of the gain is honest disclosure. A text's being written more quickly is not a problem. The problem is concealing which tools and which human oversight made that speed possible.
 
 ## 9. A Section-Level Verification List
 
-When the scaffold is complete, each section is tested against its own question. For the introduction: is the research question explicit, and does the final paragraph of the discussion return to it? For the methods: could a colleague reproduce the study from this section alone? For the results: does every number in the text match the tables, and have interpretive sentences been moved out to the discussion? For the discussion: does every claim tie back to a finding, and are the limitations concrete?
+When the scaffold is complete, each section should be tested against its own foundational question. For the introduction: is the research question stated explicitly, and does the section close by returning to it clearly? For the methods: could a colleague who reads only this section understand how the study was conducted? For the results: does every finding in the text align with the tables and analysis outputs? For the discussion: does every interpretation connect directly to a finding, and are the limitations stated concretely?
 
-Because these questions take yes or no for an answer, the list is a real filter rather than a ceremony. Bilingual parity joins the same list. Do the two versions have the same section count, do the title and abstract carry the same claim, are the citation sets identical? Claude Code runs the list and reports the deviations. The decision stays at its usual address.
+Because these questions yield yes or no, they constitute a real verification filter rather than a ceremony. The list makes the weak points of a text visible. Claude Code can run through the list section by section and report deviations. How to correct a deviation remains the researcher's decision.
+
+Bilingual parity should be included in the same verification pass. Are the section counts equal in the Turkish and English versions? Do the headings carry the same claim to contribution? Do the abstracts convey the same set of findings with the same weight? Are the citation sets consistent across the two languages? A bilingual article should not be considered complete until these questions have been answered.
 
 ## 10. Bridge to Citation Discipline
 
-The scaffold is standing and the body exists in two languages. The next load-bearing element is the soundness of the sources the text rests on, at the level of the record itself. The next booklet covers APA 7 form and the DOI verification discipline: why a fabricated citation is an integrity breach rather than a formatting error, how every DOI is verified before it enters a publication, and how Claude Code automates that verification.
+Once the scaffold is in place and the body exists in two mature languages, the next load-bearing element is the soundness of the sources the argument rests on — at the level of the scholarly record itself. A fabricated citation is not merely a formatting error; it is a breach of the integrity of the scientific record. Every DOI must be verified before publication, the existence of every source must be confirmed independently, and the bibliography must pass through human review. The next booklet addresses APA 7 format and the DOI verification discipline.
+
+The bilingual writing scaffold carries the text. Citation discipline reinforces the ground on which the text stands.
 
 ## References
 
-Citations are in APA 7 format. DOIs verified against Crossref on 2026-06-10.
+Citations are in APA 7 format. DOIs verified against Crossref on 2026-06-21.
 
 Amano, T., Ramírez-Castañeda, V., Berdejo-Espinola, V., Borokini, I., Chowdhury, S., Golivets, M., González-Trujillo, J. D., Montaño-Centellas, F., Paudel, K., White, R. L., & Veríssimo, D. (2023). The manifold costs of being a non-native English speaker in science. *PLOS Biology*, 21(7), e3002184. https://doi.org/10.1371/journal.pbio.3002184
 
@@ -105,21 +127,21 @@ Bordage, G. (2001). Reasons reviewers reject and accept manuscripts: The strengt
 
 Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
-Noy, S., & Zhang, W. (2023). Experimental evidence on the productivity effects of generative artificial intelligence. *Science*, 381(6654), 187-192. https://doi.org/10.1126/science.adh2586
+Noy, S., & Zhang, W. (2023). Experimental evidence on the productivity effects of generative artificial intelligence. *Science*, 381(6654), 187–192. https://doi.org/10.1126/science.adh2586
 
 Ramírez-Castañeda, V. (2020). Disadvantages in preparing and publishing scientific papers caused by the dominance of the English language in science: The case of Colombian researchers in biological sciences. *PLOS ONE*, 15(9), e0238372. https://doi.org/10.1371/journal.pone.0238372
 
 Sword, H. (2017). *Air & light & time & space: How successful academics write*. Harvard University Press. https://doi.org/10.4159/9780674977617
 
-Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th ed.). Pearson. ISBN 978-0-13-408041-3
+Williams, J. M., & Bizup, J. (2017). *Style: Lessons in clarity and grace* (12th ed.). Pearson. ISBN 978-0-13-408041-3
 
 ---
 
 **Booklet ID.** `007-01-0001`
-**Version.** `0.1.0`
-**Date.** 2026-06-20
+**Version.** `0.2.0`
+**Date.** 2026-06-21
 **License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
-**Approximate word count.** 1668 (English body text, measured with wc)
+**Approximate word count.** 2207 (English body text, measured with wc)
 **Verified citations.** 8
 **Hallucinated citations.** 0
 **Previous booklet.** [`004-01-0001`](../../004-vault-architecture/004-01-0001/en.md). Folder Discipline and the Maps of Content (MOC) Pattern

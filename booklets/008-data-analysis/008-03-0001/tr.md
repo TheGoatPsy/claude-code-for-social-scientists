@@ -4,9 +4,9 @@ title_tr: "Yapay Zekâ Yardımı ve İnsan Gözetimiyle Nitel Kodlama"
 booklet_id: "008-03-0001"
 category: "008-data-analysis"
 language: "tr"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -15,13 +15,13 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model_alias: "claude-fable-5"
+    model_alias: "claude-opus-4-8"
     model_dated: null  # no dated identifier published by Anthropic for Fable 5 as of 2026-06-10
     role: "drafting, verification, citation lookup"
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 6
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -96,11 +96,11 @@ Gizlilik bölümü onam formuna, beyan bölümü dürüstlük ilkesine yaslandı
 
 ## Kaynakça
 
-Atıflar APA 7 biçimindedir. DOI'ler 2026-06-10 tarihinde Crossref üzerinden doğrulanmıştır.
+Atıflar APA 7 biçimindedir. DOI'ler 2026-06-21 tarihinde Crossref üzerinden doğrulanmıştır.
 
-Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. *Qualitative Research in Psychology*, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa
+Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. *Qualitative Research in Psychology*, 3(2), 77–101. https://doi.org/10.1191/1478088706qp063oa
 
-Braun, V., & Clarke, V. (2019). Reflecting on reflexive thematic analysis. *Qualitative Research in Sport, Exercise and Health*, 11(4), 589-597. https://doi.org/10.1080/2159676X.2019.1628806
+Braun, V., & Clarke, V. (2019). Reflecting on reflexive thematic analysis. *Qualitative Research in Sport, Exercise and Health*, 11(4), 589–597. https://doi.org/10.1080/2159676X.2019.1628806
 
 Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
@@ -113,8 +113,8 @@ Walters, W. H., & Wilder, E. I. (2023). Fabrication and errors in the bibliograp
 ---
 
 **Kitapçık kimliği.** `008-03-0001`
-**Sürüm.** `0.1.0`
-**Tarih.** 2026-06-20
+**Sürüm.** `0.2.0`
+**Tarih.** 2026-06-21
 **Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Sözcük sayısı (yaklaşık).** 1159 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 6

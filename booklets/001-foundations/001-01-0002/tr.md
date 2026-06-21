@@ -4,9 +4,9 @@ title_tr: "Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına"
 booklet_id: "001-01-0002"
 category: "001-foundations"
 language: "tr"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -15,13 +15,13 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model_alias: "claude-opus-4-7"
-    model_dated: null  # no dated identifier published by Anthropic for Opus 4.7 as of 2026-05-24
+    model_alias: "claude-opus-4-8"
+    model_dated: null  # no dated identifier published by Anthropic for Opus 4.8 as of 2026-06-21
     role: "drafting, verification, citation lookup, bilingual re-authoring"
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 10
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -114,17 +114,17 @@ Bu kitapçık, sohbet ile ajan arasındaki farkın derinlemesine epistemolojik o
 
 ## Kaynakça
 
-Atıflar APA 7 biçimindedir. Her DOI ve tanımlayıcı 2026-05-24 tarihinde Crossref, arXiv ya da yayıncı sayfası üzerinden bağımsız olarak doğrulanmıştır. Frontmatter ve ses revizyonu 2026-06-04 tarihinde gerçekleştirilmiş olup atıf değişikliği getirmemiştir.
+Atıflar APA 7 biçimindedir. Her DOI ve tanımlayıcı 2026-06-21 tarihinde Crossref, arXiv ya da yayıncı sayfası üzerinden bağımsız olarak doğrulanmıştır.
 
-Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? In *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21)* (pp. 610-623). Association for Computing Machinery. https://doi.org/10.1145/3442188.3445922
+Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? In *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21)* (pp. 610–623). Association for Computing Machinery. https://doi.org/10.1145/3442188.3445922
 
-Engel, G. L. (1977). The need for a new medical model: A challenge for biomedicine. *Science*, 196(4286), 129-136. https://doi.org/10.1126/science.847460
+Engel, G. L. (1977). The need for a new medical model: A challenge for biomedicine. *Science*, *196*(4286), 129–136. https://doi.org/10.1126/science.847460
 
-Hicks, M. T., Humphries, J., & Slater, J. (2024). ChatGPT is bullshit. *Ethics and Information Technology*, 26(2), Article 38. https://doi.org/10.1007/s10676-024-09775-5
+Hicks, M. T., Humphries, J., & Slater, J. (2024). ChatGPT is bullshit. *Ethics and Information Technology*, *26*(2), Article 38. https://doi.org/10.1007/s10676-024-09775-5
 
 Mialon, G., Dessì, R., Lomeli, M., Nalmpantis, C., Pasunuru, R., Raileanu, R., Rozière, B., Schick, T., Dwivedi-Yu, J., Celikyilmaz, A., Grave, E., LeCun, Y., & Scialom, T. (2023). Augmented language models: A survey. *Transactions on Machine Learning Research*. https://arxiv.org/abs/2302.07842
 
-Mollick, E. (2024). *Co-intelligence: Living and working with AI*. Portfolio. ISBN 978-0-593-71671-3
+Mollick, E. (2024). *Co-intelligence: Living and working with AI*. Portfolio. ISBN 978-0-593-71671-7
 
 Park, J. S., O'Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., & Bernstein, M. S. (2023). Generative agents: Interactive simulacra of human behavior. In *Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (UIST '23)*. Association for Computing Machinery. https://doi.org/10.1145/3586183.3606763
 
@@ -139,11 +139,11 @@ Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023)
 ---
 
 **Kitapçık kimliği.** `001-01-0002`
-**Sürüm.** `0.1.0`
-**Tarih.** 2026-06-20
+**Sürüm.** `0.2.0`
+**Tarih.** 2026-06-21
 **Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Sözcük sayısı (yaklaşık).** 2051 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 10
 **Uydurma atıf sayısı.** 0
-**Önceki kitapçık.** [`001-01-0001`](../001-01-0001/tr.md). Claude Code Nedir? Sosyal Bilimci Bakışıyla
-**Sonraki kitapçık.** [`001-01-0003`](../001-01-0003/tr.md). Kurulum, İlk Oturum, Sağlık Testleri
+**Önceki kitapçık.** [`001-01-0001`](../001-01-0001/tr.md). Sosyal Bilimcinin Gözüyle Claude Code
+**Sonraki kitapçık.** [`001-01-0003`](../001-01-0003/tr.md). Kurulum, İlk Oturum ve Sağlamlık Denetimleri

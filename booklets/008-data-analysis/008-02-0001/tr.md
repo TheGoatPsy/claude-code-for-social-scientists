@@ -4,9 +4,9 @@ title_tr: "Yapay Zekâ Danışma Disipliniyle İstatistiksel Test Seçimi"
 booklet_id: "008-02-0001"
 category: "008-data-analysis"
 language: "tr"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-05-29"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,7 +21,7 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 11
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -107,9 +107,9 @@ Ajanın analitik rolünün bu dürüst beyanı, bir sonraki kitapçığın doğr
 
 ## Kaynakça
 
-Atıflar APA 7 biçimindedir. Her DOI ve tanımlayıcı, Crossref, doi.org veya yayıncı sayfası üzerinden bağımsız olarak doğrulanmıştır. Doğrulama tarihleri: özgün atıflar 2026-05-29 tarihinde, Simonsohn ve diğerleri (2020) ile Munafò ve diğerleri (2017) 2026-06-04 tarihinde. Lyttelton ve diğerleri (2026), Anthropic'in yayımladığı bir araştırma taraması raporu olup gri literatür kategorisindedir, hakemli bir yayın değildir. Yayıncı URL'si üzerinden 2026-05-29 tarihinde doğrulanmıştır. Anthropic aynı zamanda bu kitapçığın öğrettiği ürün olan Claude Code'un üreticisidir. Bu durum bir satıcı çıkar çatışması oluşturmaktadır.
+Atıflar APA 7 biçimindedir. Her DOI ve tanımlayıcı, Crossref, doi.org veya yayıncı sayfası üzerinden bağımsız olarak doğrulanmıştır. Doğrulama tarihi: 2026-06-21, Crossref. Lyttelton ve diğerleri (2026), Anthropic'in yayımladığı bir araştırma taraması raporu olup gri literatür kategorisindedir, hakemli bir yayın değildir. Yayıncı URL'si üzerinden doğrulanmıştır. Anthropic aynı zamanda bu kitapçığın öğrettiği ürün olan Claude Code'un üreticisidir. Bu durum bir satıcı çıkar çatışması oluşturmaktadır.
 
-Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? In *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21)* (pp. 610-623). Association for Computing Machinery. https://doi.org/10.1145/3442188.3445922
+Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? In *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21)* (pp. 610–623). Association for Computing Machinery. https://doi.org/10.1145/3442188.3445922
 
 Gelman, A., & Loken, E. (2014). The statistical crisis in science. *American Scientist*, 102(6), 460. https://doi.org/10.1511/2014.111.460
 
@@ -119,26 +119,26 @@ Lyttelton, T., Massenkoff, M., & Wilmers, N. (2026). *Coding agents in the socia
 
 Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Percie du Sert, N., Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., & Ioannidis, J. P. A. (2017). A manifesto for reproducible science. *Nature Human Behaviour*, 1(1), Article 0021. https://doi.org/10.1038/s41562-016-0021
 
-Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. *Proceedings of the National Academy of Sciences*, 115(11), 2600-2606. https://doi.org/10.1073/pnas.1708274114
+Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. *Proceedings of the National Academy of Sciences*, 115(11), 2600–2606. https://doi.org/10.1073/pnas.1708274114
 
-Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., Bahník, Š., Bai, F., Bannard, C., Bonnier, E., Carlsson, R., Cheung, F., Christensen, G., Clay, R., Craig, M. A., Dalla Rosa, A., Dam, L., Evans, M. H., Flores Cervantes, I., ... Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. *Advances in Methods and Practices in Psychological Science*, 1(3), 337-356. https://doi.org/10.1177/2515245917747646
+Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., Bahník, Š., Bai, F., Bannard, C., Bonnier, E., Carlsson, R., Cheung, F., Christensen, G., Clay, R., Craig, M. A., Dalla Rosa, A., Dam, L., Evans, M. H., Flores Cervantes, I., . . . Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. *Advances in Methods and Practices in Psychological Science*, 1(3), 337–356. https://doi.org/10.1177/2515245917747646
 
-Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. *Psychological Science*, 22(11), 1359-1366. https://doi.org/10.1177/0956797611417632
+Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. *Psychological Science*, 22(11), 1359–1366. https://doi.org/10.1177/0956797611417632
 
-Simonsohn, U., Simmons, J. P., & Nelson, L. D. (2020). Specification curve analysis. *Nature Human Behaviour*, 4(11), 1208-1214. https://doi.org/10.1038/s41562-020-0912-z
+Simonsohn, U., Simmons, J. P., & Nelson, L. D. (2020). Specification curve analysis. *Nature Human Behaviour*, 4(11), 1208–1214. https://doi.org/10.1038/s41562-020-0912-z
 
-Steegen, S., Tuerlinckx, F., Gelman, A., & Vanpaemel, W. (2016). Increasing transparency through a multiverse analysis. *Perspectives on Psychological Science*, 11(5), 702-712. https://doi.org/10.1177/1745691616658637
+Steegen, S., Tuerlinckx, F., Gelman, A., & Vanpaemel, W. (2016). Increasing transparency through a multiverse analysis. *Perspectives on Psychological Science*, 11(5), 702–712. https://doi.org/10.1177/1745691616658637
 
 Wicherts, J. M., Veldkamp, C. L. S., Augusteijn, H. E. M., Bakker, M., van Aert, R. C. M., & van Assen, M. A. L. M. (2016). Degrees of freedom in planning, running, analyzing, and reporting psychological studies: A checklist to avoid p-hacking. *Frontiers in Psychology*, 7, Article 1832. https://doi.org/10.3389/fpsyg.2016.01832
 
 ---
 
 **Kitapçık kimliği.** `008-02-0001`
-**Sürüm.** `0.1.0`
-**Tarih.** 2026-06-20
+**Sürüm.** `0.2.0`
+**Tarih.** 2026-06-21
 **Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Sözcük sayısı (yaklaşık).** 1797 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 11
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`008-01-0001`](../008-01-0001/tr.md). Yeniden Üretilebilir Nicel İş Akışları
-**Sonraki kitapçık.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/tr.md). Yapay Zekâ Destekli Araştırmada Etik, Prensipten Davranışa
+**Sonraki kitapçık.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/tr.md). Yapay Zekâ Destekli Araştırmada Etik, İlkeden Davranışa

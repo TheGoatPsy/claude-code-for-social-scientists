@@ -21,9 +21,9 @@ The conceptual introduction. What Claude Code is, how it differs from a chat win
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 001-01-0001 `[v1.0]` | What is Claude Code? A Social Scientist's Perspective | Claude Code Nedir? Sosyal Bilimci Bakışıyla | `release` |
+| 001-01-0001 `[v1.0]` | Claude Code Through a Social Scientist’s Lens | Sosyal Bilimcinin Gözüyle Claude Code | `release` |
 | 001-01-0002 `[v1.0]` | The Agentic Shift: From Chat Window to Working Partner | Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına | `release` |
-| 001-01-0003 `[v1.0]` | Installation, First Session, and Sanity Checks | Kurulum, İlk Oturum, Sağlık Testleri | `release` |
+| 001-01-0003 `[v1.0]` | Installation, First Session, and Sanity Checks | Kurulum, İlk Oturum ve Sağlamlık Denetimleri | `release` |
 | 001-01-0004 | CLAUDE.md and the Discipline of Standing Instructions | CLAUDE.md ve Kalıcı Talimat Disiplini | `release` |
 
 ## 002 — Academic Access / Akademik Erişim
@@ -35,7 +35,7 @@ Practical access to journals, citation indexes, reference managers, and institut
 | 002-01-0001 | PubMed and Semantic Scholar MCPs for Working Researchers | Çalışan Araştırmacı İçin PubMed ve Semantic Scholar MCP'leri | `planned` |
 | 002-02-0001 | Zotero, ORCID, and the Reference Manager Bridge | Zotero, ORCID ve Referans Yönetim Köprüsü | `planned` |
 | 002-03-0001 | EZproxy, Institutional VPN, and Off-Campus Realities | EZproxy, Kurumsal VPN ve Kampüs Dışı Erişim | `planned` |
-| 002-04-0001 `[v1.0]` | DergiPark, ULAKBIM TR Dizin, HEAL-Link, and Regional Indexing | DergiPark, ULAKBIM TR Dizin, HEAL-Link ve Bölgesel İndeksleme | `release` |
+| 002-04-0001 `[v1.0]` | DergiPark, ULAKBIM TR Dizin, HEAL-Link, and Regional Indexing | DergiPark, ULAKBİM TR Dizin, HEAL Link ve Bölgesel İndeksleme | `release` |
 
 ## 003 — Memory System / Hafıza Sistemi
 
@@ -43,9 +43,9 @@ The Memory-as-Vault engineering pattern. How to maintain a persistent academic c
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 003-01-0001 `[v1.0]` | Memory as Vault, A First-Principles Introduction | Kasa Olarak Hafıza, İlkesel Bir Giriş | `release` |
+| 003-01-0001 `[v1.0]` | Memory as Vault. A First Principles Introduction | Hafızayı Arşive Dönüştürmek. İlkesel Bir Giriş | `release` |
 | 003-02-0001 | Retrieval Patterns: Indexing a Decade of Notes | Geri Çağırma Kalıpları: On Yıllık Notları İndekslemek | `planned` |
-| 003-03-0001 | Material Passport: Tracking Sources Across Sessions | Kaynak Pasaportu: Kaynakları Oturumlar Arası İzlemek | `release` |
+| 003-03-0001 | Material Passport. Tracking Sources Across Sessions | Kaynak Pasaportu. Kaynakları Oturumlar Arasında İzlemek | `release` |
 
 ## 004 — Vault Architecture / Kasa Mimarisi
 
@@ -63,7 +63,7 @@ Session lifecycle events, ritual hooks, lightweight CI for a personal knowledge 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
 | 005-01-0001 | Hook Types: A Catalog with Working Examples | Hook Türleri: Çalışan Örneklerle Bir Katalog | `planned` |
-| 005-02-0001 | Ritual Hooks: Daily Logging, Session Persistence, Idle Time | Ritüel Hook'lar: Günlük Kayıt, Oturum Kalıcılığı, Boş Zaman | `release` |
+| 005-02-0001 | Ritual Hooks. Daily Logging, Session Persistence, and Idle Time | Ritüel Hook'lar. Günlük Kayıt, Oturum Kalıcılığı ve Boş Zaman Bakımı | `release` |
 
 ## 006 — MCP and Plugins / MCP ve Eklentiler
 
@@ -71,7 +71,7 @@ Model Context Protocol servers, plugin marketplaces, trust evaluation of third-p
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 006-01-0001 | MCP for the Researcher: What, Why, When | Araştırmacı İçin MCP: Ne, Neden, Ne Zaman | `release` |
+| 006-01-0001 | MCP for the Researcher. What, Why, When | Araştırmacı İçin MCP. Ne, Neden, Ne Zaman | `release` |
 | 006-02-0001 | Authoring a Custom Academic MCP Server | Özel Akademik MCP Sunucusu Yazma | `planned` |
 | 006-03-0001 | Plugin Trust Triage: A Working Methodology | Eklenti Güveni Triyajı: Çalışan Bir Yöntem | `planned` |
 
@@ -81,7 +81,7 @@ IMRAD scaffolding in Turkish and English, APA 7 with DOI discipline, journal fit
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 007-01-0001 | IMRAD Scaffolding: A Bilingual Approach | IMRAD İskeleti: İki Dilli Bir Yaklaşım | `release` |
+| 007-01-0001 | IMRAD Scaffolding. A Bilingual Approach | IMRAD İskeleti. İki Dilli Bir Yaklaşım | `release` |
 | 007-02-0001 `[v1.0]` | APA 7 with DOI Discipline | DOI Disiplini ile APA 7 | `release` |
 | 007-03-0001 | Journal Fit and Cover Letters | Dergi Uyumu ve Kapak Mektupları | `release` |
 
@@ -101,7 +101,7 @@ Helsinki Declaration, COPE, WAME, ICMJE, STM 2025, EU AI Act 2024/1689 Art. 50, 
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
-| 009-01-0001 `[v1.0]` | Ethics in AI-Assisted Research, From Principle to Behavior | Yapay Zekâ Destekli Araştırmada Etik, Prensipten Davranışa | `release` |
+| 009-01-0001 `[v1.0]` | Ethics in AI-Assisted Research, From Principle to Behavior | Yapay Zekâ Destekli Araştırmada Etik, İlkeden Davranışa | `release` |
 | 009-02-0001 | IRB Protocols with AI Component | Yapay Zekâ Bileşenli IRB Protokolleri | `planned` |
 | 009-03-0001 | KVKK, GDPR, and the EU AI Act for Researchers | Araştırmacı İçin KVKK, GDPR ve AB AI Yasası | `planned` |
 
@@ -112,7 +112,7 @@ Rebuttal letters with traceability matrices, reviewer-response discipline, anti-
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
 | 010-01-0001 `[v1.0]` | Rebuttal Letters with Traceability Matrices | İzlenebilirlik Matrisleri ile Hakem Yanıt Mektupları | `release` |
-| 010-02-0001 | Anti-AI-Trace Writing for Revisions | Revizyonlarda Yapay Zekâ İzini Silmek | `release` |
+| 010-02-0001 | Managing AI Style Traces in Revisions | Revizyonlarda Yapay Zekâ Üslup İzini Yönetmek | `release` |
 
 ## 011 — Conference Presentation / Konferans Sunumu
 
