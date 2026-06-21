@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [3.1.0] - 2026-06-21
+
+Minor release. A full bilingual content overhaul of every booklet, shipped together with the academic-journal site redesign.
+
+### Changed
+
+- All twenty-one booklets were rebuilt from the author's hand-revised Turkish sources. The Turkish is canonical and verbatim; the English is natively re-authored rather than literally translated, with bilingual parity preserved.
+- Every reference was re-audited against Crossref and doi.org with an independent refute pass. Eighteen mechanical citation fixes were applied (hyphenated author names, colon-versus-period subtitles, page ranges, an ISBN check digit, stale documentation URLs). Two fabricated grey-literature citations in booklet 003-01-0001 were replaced with verified real documents that support the same claim (European Data Protection Board Opinion 28/2024; the 2025 KVKK guide on special-category personal data), and the STM 2025 framework title was corrected. Zero fabricated citations remain; aggregate verified citations stay at 354.
+- Booklet titles were reconciled to the author's canonical forms across frontmatter, headings, navigation, footers, and the catalog (for example booklet 001-01-0001 is now "Sosyal Bilimcinin Gözüyle Claude Code"; the Turkish for vault is rendered as arşiv).
+- The landing page was redesigned in an academic-journal identity (teal and gold, self-hosted variable fonts, restrained motion), and the MkDocs booklet theme was brought into the same identity. Both surfaces make zero third-party font requests.
+
+### Added
+
+- Booklet 004 gains three archive and Maps-of-Content diagrams, embedded with bilingual alt text and captions. Body content tables that the source export had dropped were restored to seven booklets in both languages.
+
 ## [3.0.2] - 2026-06-20
 
 Patch release. Provenance and licensing accuracy. The U.S. Copyright Office (eCO) registration line is removed from the LICENSE and the project surfaces, because no such application was filed. The copyright basis is restated as automatic protection under the Berne Convention, evidenced in depth by the Zenodo deposit, a new OpenTimestamps Bitcoin anchor, and the public Git history. No booklet content, citation, or count changed.
