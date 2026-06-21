@@ -26,7 +26,7 @@ verified_citations_count: 7
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 translation_notes: "English re-authored from the finalized Turkish source (v0.2.0), not a literal translation. All worked troubleshooting examples are synthetic, derived from no real incident, in keeping with the archive sanitization protocol."
-closing_booklet: true
+closing_booklet: false
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
 status: "release"
@@ -243,5 +243,5 @@ Vaughan, D. (1996). *The Challenger launch decision: Risky technology, culture, 
 **Word count (approx.).** 3174 (English body text, measured with wc)
 **Verified citations.** 7
 **Fabricated citations.** 0
-**Previous booklet.** [`010-01-0001`](../../010-peer-review/010-01-0001/en.md). Rebuttal Letters with Traceability Matrices
-**Next booklet.** None. This is the closing booklet of the v1.0 manifesto. The roadmap extends with category 005 (Hooks), 006 (MCP), and 008 (Data Analysis) in the v1.5 and v2.0 versions.
+**Previous booklet.** [`011-02-0001`](../../011-conference-presentation/011-02-0001/en.md). Public Scholarship, Blog, Press, and Social Media
+**Next booklet.** [`013-01-0001`](../../013-teaching-supervision/013-01-0001/en.md). AI in Teaching, Course Design, Supervision, and Student Feedback

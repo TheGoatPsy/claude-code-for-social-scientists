@@ -176,5 +176,5 @@ Valmeekam, K., Marquez, M., Sreedharan, S., & Kambhampati, S. (2023). On the pla
 **Verified citations.** 9
 **Fabricated citations.** 0
 **Original concept.** Memory as Vault is the author's original practitioner concept, presented here as the guide's working framework.
-**Previous booklet.** [`002-04-0001`](../../002-academic-access/002-04-0001/en.md). DergiPark, ULAKBIM TR Dizin, HEAL-Link, and Regional Indexing
+**Previous booklet.** [`002-05-0001`](../../002-academic-access/002-05-0001/en.md). Systematic Reviews and Scoping Reviews, From Search to PRISMA Flow
 **Next booklet.** [`004-01-0001`](../../004-vault-architecture/004-01-0001/en.md). Folder Discipline and the Maps of Content (MOC) Pattern

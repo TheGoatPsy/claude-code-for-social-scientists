@@ -8,7 +8,7 @@ The current public release is `v3.0.0`. It carries twenty-one released booklets 
 
 ## Next
 
-The `v3.0.0` milestone is reached. What remains beyond it is maintainer-gated or long-term: the JOSE submission itself (see `meta/jose-submission.md`, including the open dual-license question), the remaining ten planned booklets toward the full thirty-one-booklet catalog, and the living lab with conference citations and instructional use. Dates stay unannounced on purpose.
+The `v3.0.0` milestone is reached, and the surface has grown past it. `v3.1.0` rebuilt all twenty-one booklets bilingually from the author's hand-revised Turkish sources alongside the academic-journal site redesign. `v3.2.0` adds twelve continuation booklets, expanded bilingually from the author's source drafts, opening two new categories (013 Teaching and Supervision, 014 Tool Portability) and extending six existing ones, raising the released catalog to thirty-three booklets across fourteen categories and aggregate verified citation declarations to 566 with zero fabricated. What remains beyond it is maintainer-gated or long-term: the JOSE submission itself (see `meta/jose-submission.md`, including the open dual-license question), the remaining ten planned booklets toward the full forty-three-booklet catalog, and the living lab with conference citations and instructional use. Dates stay unannounced on purpose.
 
 ## v0.1.0-alpha, scaffold
 

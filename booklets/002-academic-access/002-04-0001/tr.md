@@ -206,5 +206,5 @@ YÖK. (2026). *Yükseköğretim Kurulu Ulusal Tez Merkezi*. https://tez.yok.gov.
 **Sözcük sayısı (yaklaşık).** 2361 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 10
 **Uydurma atıf sayısı.** 0
-**Önceki kitapçık.** [`001-01-0003`](../../001-foundations/001-01-0003/tr.md). Kurulum, İlk Oturum ve Sağlamlık Denetimleri
-**Sonraki kitapçık.** [`003-01-0001`](../../003-memory-system/003-01-0001/tr.md). Hafızayı Arşive Dönüştürmek. İlkesel Bir Giriş
+**Önceki kitapçık.** [`001-02-0001`](../../001-foundations/001-02-0001/tr.md). Araştırma Yaşam Döngüsü, Fikirden Yayına, Yayından Arşive
+**Sonraki kitapçık.** [`002-05-0001`](../002-05-0001/tr.md). Sistematik Derleme ve Kapsam Derlemesi, Aramadan PRISMA Akışına

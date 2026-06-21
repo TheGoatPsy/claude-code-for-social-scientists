@@ -4,7 +4,7 @@ This file provides an aggregate, machine-friendly view of AI contribution levels
 
 This page is updated by the maintainer at each release. Readers who want the latest disclosure for a specific booklet should always check the booklet's own frontmatter, not this aggregate.
 
-## Aggregate table (as of v2.9.0, 2026-06-12)
+## Aggregate table (as of v3.2.0, 2026-06-21)
 
 | Booklet ID | Language | Contribution level | Human review | Verified citations | Fabricated citations | Last reviewed |
 |---|---|---|---|---|---|---|
@@ -50,6 +50,30 @@ This page is updated by the maintainer at each release. Readers who want the lat
 | 006-01-0001 | en | substantial-drafting | complete | 6 | 0 | 2026-06-12 |
 | 011-01-0001 | tr | substantial-drafting | complete | 6 | 0 | 2026-06-12 |
 | 011-01-0001 | en | substantial-drafting | complete | 6 | 0 | 2026-06-12 |
+| 001-02-0001 | tr | co-drafting | complete | 9 | 0 | 2026-06-21 |
+| 001-02-0001 | en | co-drafting | complete | 9 | 0 | 2026-06-21 |
+| 002-05-0001 | tr | co-drafting | complete | 10 | 0 | 2026-06-21 |
+| 002-05-0001 | en | co-drafting | complete | 10 | 0 | 2026-06-21 |
+| 003-04-0001 | tr | substantial-drafting | complete | 9 | 0 | 2026-06-21 |
+| 003-04-0001 | en | substantial-drafting | complete | 9 | 0 | 2026-06-21 |
+| 007-04-0001 | tr | substantial-drafting | complete | 8 | 0 | 2026-06-21 |
+| 007-04-0001 | en | substantial-drafting | complete | 8 | 0 | 2026-06-21 |
+| 007-05-0001 | tr | substantial-drafting | complete | 9 | 0 | 2026-06-21 |
+| 007-05-0001 | en | substantial-drafting | complete | 9 | 0 | 2026-06-21 |
+| 007-06-0001 | tr | substantial-drafting | complete | 9 | 0 | 2026-06-21 |
+| 007-06-0001 | en | substantial-drafting | complete | 9 | 0 | 2026-06-21 |
+| 008-04-0001 | tr | substantial-drafting | complete | 9 | 0 | 2026-06-21 |
+| 008-04-0001 | en | substantial-drafting | complete | 9 | 0 | 2026-06-21 |
+| 008-05-0001 | tr | substantial-drafting | complete | 10 | 0 | 2026-06-21 |
+| 008-05-0001 | en | substantial-drafting | complete | 10 | 0 | 2026-06-21 |
+| 010-03-0001 | tr | substantial-drafting | complete | 8 | 0 | 2026-06-21 |
+| 010-03-0001 | en | substantial-drafting | complete | 8 | 0 | 2026-06-21 |
+| 011-02-0001 | tr | substantial-drafting | complete | 6 | 0 | 2026-06-21 |
+| 011-02-0001 | en | substantial-drafting | complete | 6 | 0 | 2026-06-21 |
+| 013-01-0001 | tr | co-drafting | complete | 9 | 0 | 2026-06-21 |
+| 013-01-0001 | en | co-drafting | complete | 9 | 0 | 2026-06-21 |
+| 014-01-0001 | tr | co-drafting | complete | 10 | 0 | 2026-06-21 |
+| 014-01-0001 | en | co-drafting | complete | 10 | 0 | 2026-06-21 |
 
 Booklet 001-01-0004 was added in the v2.0.0 cycle as a full AI draft and then human-reviewed by the author, so its human review state is `complete` and it ships at `release` status in v2.0.0. Booklet 008-01-0001 was drafted bilingually in the v2.1.0 cycle at `substantial-drafting` level, human-reviewed by the author, and promoted to `release` status, so its review state is `complete`. Booklet 008-02-0001 was drafted bilingually after the v2.1.0 release at `substantial-drafting` level, human-reviewed by the author, and promoted to `release` status in v2.2.0, so its review state is `complete`. Booklets 007-01-0001, 007-03-0001, 008-03-0001, and 010-02-0001 were drafted bilingually in the v2.8.0 cycle at `substantial-drafting` level, each with a citation core verified live against Crossref and, for the quantitative claims, against publisher or PubMed Central full texts, then human-reviewed by the author and promoted to `release` status. Booklets 003-03-0001, 005-02-0001, 006-01-0001, and 011-01-0001 were drafted bilingually in the v2.9.0 cycle under the same discipline, completing the goal of at least one released booklet in every one of the twelve categories. Ten booklets in [`CATALOG.md`](../CATALOG.md) remain at `planned` status and have no AI disclosure yet because no booklet-level AI-assisted drafting work has been committed for them.
 
@@ -57,12 +81,12 @@ Booklet 001-01-0004 was added in the v2.0.0 cycle as a full AI draft and then hu
 
 | Metric | Value |
 |---|---|
-| Booklets at `release` status | 21 |
+| Booklets at `release` status | 33 |
 | Booklets at `paired` status | 0 |
 | Booklets at `draft` status | 0 |
 | Booklets at `planned` status | 10 |
-| Total verified citation declarations across all disclosed language files | 354 |
-| Unique bilingual citation sets across released booklets | 177 |
+| Total verified citation declarations across all disclosed language files | 566 |
+| Unique bilingual citation sets across released booklets | 283 |
 | Total fabricated citations across all disclosed language files | 0 |
 | Fabrication rate, fabricated divided by verified plus fabricated | 0% |
 
@@ -72,15 +96,15 @@ Booklet 001-01-0004 was added in the v2.0.0 cycle as a full AI draft and then hu
 |---|---|
 | 1, editing-only | 0 |
 | 2, light-assistance | 0 |
-| 3, co-drafting | 10 |
-| 4, substantial-drafting | 30 |
+| 3, co-drafting | 18 |
+| 4, substantial-drafting | 46 |
 | 5, full-draft | 2 |
 
 ## Human review state distribution
 
 | State | Count |
 |---|---|
-| complete | 42 |
+| complete | 66 |
 | partial | 0 |
 | pending | 0 |
 
@@ -106,6 +130,7 @@ The CI workflow refuses release booklet frontmatter that declares pending human 
 | 2026-06-12 | v2.8.0 release | Four booklets drafted bilingually at `substantial-drafting` level and promoted to `release`: 007-01-0001 (IMRAD Scaffolding: A Bilingual Approach), 007-03-0001 (Journal Fit and Cover Letters), 008-03-0001 (Qualitative Coding with AI Assistance and Human Oversight), and 010-02-0001 (Anti-AI-Trace Writing for Revisions). Every citation core was verified live against Crossref before drafting, and the quantitative claims were additionally checked against publisher or PubMed Central full texts (Gao et al. 68% and 14%, Weber-Wulff et al. fourteen tools with highest accuracy below 80% and paraphrased AI text at 26%, Liang et al. 61.3% average false-positive rate and 19.8% unanimous misclassification, Shen and Björk volume estimates). One candidate reference, Sollaci and Pereira (2004), was dropped because Crossref returns no DOI for it. The session model for the eight new language files is claude-fable-5, disclosed per file with `model_dated: null`. The released catalog grows from thirteen to seventeen booklets. Aggregate verified declarations rise from 248 to 306, unique bilingual citation sets from 124 to 153, fabricated citations stay 0. |
 | 2026-06-12 | v2.9.0 release | Four booklets drafted bilingually at `substantial-drafting` level and promoted to `release`: 003-03-0001 (Material Passport: Tracking Sources Across Sessions), 005-02-0001 (Ritual Hooks: Daily Logging, Session Persistence, Idle Time), 006-01-0001 (MCP for the Researcher: What, Why, When), and 011-01-0001 (Slides, Posters, and Lightning Talks with AI Assistance). Every citation core was verified live against Crossref before drafting; one candidate, Lally et al. (2010), was dropped over an online-first versus issue-year ambiguity in its registered metadata rather than cited with an uncertain date. Two Anthropic documentation references follow the non-DOI precedent of booklet 001-01-0003. The session model for the eight new language files is claude-fable-5, disclosed per file with `model_dated: null`. The released catalog grows from seventeen to twenty-one booklets and every one of the twelve categories now carries at least one released booklet. Aggregate verified declarations rise from 306 to 354, unique bilingual citation sets from 153 to 177, fabricated citations stay 0. |
 | 2026-06-12 | v3.0.0 release | Journal of Open Source Education paper refreshed against the finished surface (twenty-one booklets, twenty skills, 354 verified declarations) with a fifth distinctive contribution, the anti-AI-trace revision method, added on DOI-verified evidence (weberwulff2023, liang2023). A JOSE readiness checklist (`meta/jose-submission.md`) and a draft-PDF compile workflow were added; the dual-license question for submission is recorded as an open maintainer decision. No booklet, citation, or skill content changed. All aggregate metrics are unchanged: 354 verified declarations, 0 fabricated, 42 human-reviewed language files, 21 booklets at release status. |
+| 2026-06-21 | v3.2.0 release | Twelve continuation booklets drafted bilingually from the author's expanded source drafts and promoted to `release`, opening two new categories (013 Teaching and Supervision, 014 Tool Portability) and extending six existing ones: 001-02-0001 (Research Lifecycle Map), 002-05-0001 (Systematic and Scoping Reviews), 003-04-0001 (Open Science Package), 007-04-0001 (Authorship and Contribution Traces), 007-05-0001 (Multilingual Concept Validity), 007-06-0001 (Grant Proposals), 008-04-0001 (Preparing Sensitive Data), 008-05-0001 (Research Protocol and Preregistration), 010-03-0001 (AI in Peer Review), 011-02-0001 (Public Scholarship), 013-01-0001 (AI in Teaching), and 014-01-0001 (Beyond Claude Code). Every citation was verified live against Crossref and doi.org before inclusion; one mis-keyed DOI (Resnik and Elmore in 010-03-0001) and one mis-keyed ISBN (Yildiz in 007-05-0001) were corrected against the canonical record, zero fabrications found. The session model for the twenty-four new language files is claude-opus-4-8, disclosed per file with `model_dated: null`. The released catalog grows from twenty-one to thirty-three booklets across fourteen categories. Aggregate verified declarations rise from 354 to 566, unique bilingual citation sets from 177 to 283, fabricated citations stay 0. |
 
 ---
 

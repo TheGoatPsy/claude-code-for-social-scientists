@@ -181,5 +181,5 @@ Williams, J. M., & Bizup, J. (2017). *Style: Lessons in clarity and grace* (12th
 **Sözcük sayısı (yaklaşık).** 2039 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0
-**Önceki kitapçık.** [`010-02-0001`](../../010-peer-review/010-02-0001/tr.md). Revizyonlarda Yapay Zekâ Üslup İzini Yönetmek
-**Sonraki kitapçık.** [`012-01-0001`](../../012-troubleshooting/012-01-0001/tr.md). İşler Ters Gittiğinde, Çalışan Bir Sorun Giderme Protokolü
+**Önceki kitapçık.** [`010-03-0001`](../../010-peer-review/010-03-0001/tr.md). Hakemlikte Yapay Zekâ, Gizlilik, Değerlendirme ve Sınırlar
+**Sonraki kitapçık.** [`011-02-0001`](../011-02-0001/tr.md). Akademik Bilgiyi Kamuya Anlatmak, Blog, Basın ve Sosyal Medya

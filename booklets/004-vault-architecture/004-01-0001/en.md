@@ -194,5 +194,5 @@ Norman, D. A. (2013). *The design of everyday things* (revised and expanded edit
 **Approximate word count.** 2421 (English body text, measured with wc)
 **Verified citations.** 8
 **Fabricated citations.** 0
-**Previous booklet.** [`003-01-0001`](../../003-memory-system/003-01-0001/en.md). Memory as Vault. A First Principles Introduction
+**Previous booklet.** [`003-04-0001`](../../003-memory-system/003-04-0001/en.md). Open Science Package, Data, Code, Supplementary Files, and Persistent DOI
 **Next booklet.** [`007-02-0001`](../../007-academic-writing/007-02-0001/en.md). APA 7 with DOI Discipline

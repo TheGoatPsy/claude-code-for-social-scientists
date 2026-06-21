@@ -207,5 +207,5 @@ YÖK. (2026). *Council of Higher Education National Thesis Center*. https://tez.
 **Word count (approx.).** 2246 (English body text, measured with wc)
 **Verified citations.** 10
 **Hallucinated citations.** 0
-**Previous booklet.** [`001-01-0003`](../../001-foundations/001-01-0003/en.md). Installation, First Session, and Sanity Checks
-**Next booklet.** [`003-01-0001`](../../003-memory-system/003-01-0001/en.md). Memory as Vault. A First Principles Introduction
+**Previous booklet.** [`001-02-0001`](../../001-foundations/001-02-0001/en.md). Research Lifecycle Map, From Idea to Publication, From Publication to Archive
+**Next booklet.** [`002-05-0001`](../002-05-0001/en.md). Systematic Reviews and Scoping Reviews, From Search to PRISMA Flow

@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [3.2.0] - 2026-06-21
+
+Minor release. Twelve continuation booklets, expanded bilingually from the author's source drafts, opening two new categories and extending six existing ones.
+
+### Added
+
+- Twelve new booklets at `release` status, each authored bilingually from the author's hand-written source draft through aggressive expansion (the Turkish argument line preserved and deepened, the English natively re-authored, not translated): 001-02-0001 (Research Lifecycle Map), 002-05-0001 (Systematic and Scoping Reviews), 003-04-0001 (Open Science Package), 007-04-0001 (Authorship and Contribution Traces), 007-05-0001 (Multilingual Concept Validity), 007-06-0001 (Grant Proposals), 008-04-0001 (Preparing Sensitive Data), 008-05-0001 (Research Protocol and Preregistration), 010-03-0001 (AI in Peer Review), 011-02-0001 (Public Scholarship), 013-01-0001 (AI in Teaching), and 014-01-0001 (Beyond Claude Code, Codex and Portable Agentic Discipline).
+- Two new categories: 013 Teaching and Supervision, and 014 Tool Portability. The released catalog grows from twenty-one to thirty-three booklets across fourteen categories.
+
+### Changed
+
+- Every citation in the twelve new booklets was verified live against Crossref and doi.org before inclusion, with author, year, and title matched to the canonical record. Across seventy-three cited DOIs and the book ISBNs, two mis-keyed identifiers were corrected (the Resnik and Elmore peer-review DOI and year in 010-03-0001; the Yildiz ISBN check digit in 007-05-0001). Zero fabricated citations. Aggregate verified declarations rise from 354 to 566, unique bilingual citation sets from 177 to 283.
+- The reading-order chain was rewired so the twelve new booklets sit at their intended positions, and booklet 012-01-0001 is no longer the closing booklet. Navigation, the catalog, the landing index, and the AI-disclosure aggregate were updated for the new totals.
+
 ## [3.1.0] - 2026-06-21
 
 Minor release. A full bilingual content overhaul of every booklet, shipped together with the academic-journal site redesign.

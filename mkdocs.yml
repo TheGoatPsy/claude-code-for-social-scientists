@@ -114,16 +114,22 @@ nav:
       - "001-01-0003 — Kurulum ve İlk Oturum (TR)": booklets/001-foundations/001-01-0003/tr.md
       - "001-01-0004 — CLAUDE.md Discipline (EN)": booklets/001-foundations/001-01-0004/en.md
       - "001-01-0004 — CLAUDE.md Disiplini (TR)": booklets/001-foundations/001-01-0004/tr.md
+      - "001-02-0001 — Research Lifecycle Map (EN)": booklets/001-foundations/001-02-0001/en.md
+      - "001-02-0001 — Araştırma Yaşam Döngüsü (TR)": booklets/001-foundations/001-02-0001/tr.md
 
   - "002 Academic Access / Akademik Erişim":
       - "002-04-0001 — DergiPark, ULAKBİM, HEAL Link (EN)": booklets/002-academic-access/002-04-0001/en.md
       - "002-04-0001 — DergiPark, ULAKBİM, HEAL Link (TR)": booklets/002-academic-access/002-04-0001/tr.md
+      - "002-05-0001 — Systematic and Scoping Reviews (EN)": booklets/002-academic-access/002-05-0001/en.md
+      - "002-05-0001 — Sistematik ve Kapsam Derlemesi (TR)": booklets/002-academic-access/002-05-0001/tr.md
 
   - "003 Memory System / Hafıza Sistemi":
       - "003-01-0001 — Memory as Vault (EN)": booklets/003-memory-system/003-01-0001/en.md
       - "003-01-0001 — Hafızayı Arşive Dönüştürmek (TR)": booklets/003-memory-system/003-01-0001/tr.md
       - "003-03-0001 — Material Passport (EN)": booklets/003-memory-system/003-03-0001/en.md
       - "003-03-0001 — Kaynak Pasaportu (TR)": booklets/003-memory-system/003-03-0001/tr.md
+      - "003-04-0001 — Open Science Package (EN)": booklets/003-memory-system/003-04-0001/en.md
+      - "003-04-0001 — Açık Bilim Paketi (TR)": booklets/003-memory-system/003-04-0001/tr.md
 
   - "004 Vault Architecture / Arşiv Mimarisi":
       - "004-01-0001 — Folder Discipline and MOC (EN)": booklets/004-vault-architecture/004-01-0001/en.md
@@ -144,6 +150,12 @@ nav:
       - "007-02-0001 — DOI Disiplini ile APA 7 (TR)": booklets/007-academic-writing/007-02-0001/tr.md
       - "007-03-0001 — Journal Fit and Cover Letters (EN)": booklets/007-academic-writing/007-03-0001/en.md
       - "007-03-0001 — Dergi Uyumu ve Kapak Mektupları (TR)": booklets/007-academic-writing/007-03-0001/tr.md
+      - "007-04-0001 — Authorship and Contribution Traces (EN)": booklets/007-academic-writing/007-04-0001/en.md
+      - "007-04-0001 — Ortak Yazarlık ve Katkı İzleri (TR)": booklets/007-academic-writing/007-04-0001/tr.md
+      - "007-05-0001 — Multilingual Concept Validity (EN)": booklets/007-academic-writing/007-05-0001/en.md
+      - "007-05-0001 — Çok Dilli Kavram Geçerliği (TR)": booklets/007-academic-writing/007-05-0001/tr.md
+      - "007-06-0001 — Grant Proposals and Project Texts (EN)": booklets/007-academic-writing/007-06-0001/en.md
+      - "007-06-0001 — Proje Başvurusu ve Hibe Metni (TR)": booklets/007-academic-writing/007-06-0001/tr.md
 
   - "008 Data Analysis / Veri Analizi":
       - "008-01-0001 — Reproducible Quantitative Workflows (EN)": booklets/008-data-analysis/008-01-0001/en.md
@@ -152,6 +164,10 @@ nav:
       - "008-02-0001 — İstatistiksel Test Seçimi (TR)": booklets/008-data-analysis/008-02-0001/tr.md
       - "008-03-0001 — Qualitative Coding with AI (EN)": booklets/008-data-analysis/008-03-0001/en.md
       - "008-03-0001 — Nitel Kodlama (TR)": booklets/008-data-analysis/008-03-0001/tr.md
+      - "008-04-0001 — Preparing Sensitive Data (EN)": booklets/008-data-analysis/008-04-0001/en.md
+      - "008-04-0001 — Hassas Veriyi Hazırlamak (TR)": booklets/008-data-analysis/008-04-0001/tr.md
+      - "008-05-0001 — Research Protocol and Preregistration (EN)": booklets/008-data-analysis/008-05-0001/en.md
+      - "008-05-0001 — Araştırma Protokolü ve Ön Kayıt (TR)": booklets/008-data-analysis/008-05-0001/tr.md
 
   - "009 Ethics and IRB / Etik ve IRB":
       - "009-01-0001 — Ethics in AI-Assisted Research (EN)": booklets/009-ethics-irb/009-01-0001/en.md
@@ -162,11 +178,23 @@ nav:
       - "010-01-0001 — Hakem Yanıt Mektupları (TR)": booklets/010-peer-review/010-01-0001/tr.md
       - "010-02-0001 — Anti-AI-Trace Writing (EN)": booklets/010-peer-review/010-02-0001/en.md
       - "010-02-0001 — Yapay Zekâ İzini Silmek (TR)": booklets/010-peer-review/010-02-0001/tr.md
+      - "010-03-0001 — AI in Peer Review (EN)": booklets/010-peer-review/010-03-0001/en.md
+      - "010-03-0001 — Hakemlikte Yapay Zekâ (TR)": booklets/010-peer-review/010-03-0001/tr.md
 
-  - "011 Conference Presentation / Konferans Sunumu":
+  - "011 Conference and Public Communication / Konferans ve Kamusal İletişim":
       - "011-01-0001 — Slides, Posters, Lightning Talks (EN)": booklets/011-conference-presentation/011-01-0001/en.md
       - "011-01-0001 — Slayt, Poster, Lightning Talk (TR)": booklets/011-conference-presentation/011-01-0001/tr.md
+      - "011-02-0001 — Public Scholarship (EN)": booklets/011-conference-presentation/011-02-0001/en.md
+      - "011-02-0001 — Akademik Bilgiyi Kamuya Anlatmak (TR)": booklets/011-conference-presentation/011-02-0001/tr.md
 
   - "012 Troubleshooting / Sorun Giderme":
       - "012-01-0001 — When Things Go Wrong (EN)": booklets/012-troubleshooting/012-01-0001/en.md
       - "012-01-0001 — İşler Ters Gittiğinde (TR)": booklets/012-troubleshooting/012-01-0001/tr.md
+
+  - "013 Teaching and Supervision / Öğretim ve Süpervizyon":
+      - "013-01-0001 — AI in Teaching (EN)": booklets/013-teaching-supervision/013-01-0001/en.md
+      - "013-01-0001 — Öğretimde Yapay Zekâ (TR)": booklets/013-teaching-supervision/013-01-0001/tr.md
+
+  - "014 Tool Portability / Araç Taşınabilirliği":
+      - "014-01-0001 — Beyond Claude Code (EN)": booklets/014-tool-portability/014-01-0001/en.md
+      - "014-01-0001 — Claude Code’un Ötesinde (TR)": booklets/014-tool-portability/014-01-0001/tr.md

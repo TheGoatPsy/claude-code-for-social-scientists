@@ -120,4 +120,4 @@ Walters, W. H., & Wilder, E. I. (2023). Fabrication and errors in the bibliograp
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`008-02-0001`](../008-02-0001/tr.md). Yapay Zekâ Danışma Disipliniyle İstatistiksel Test Seçimi
-**Sonraki kitapçık.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/tr.md). Yapay Zekâ Destekli Araştırmada Etik, İlkeden Davranışa
+**Sonraki kitapçık.** [`008-04-0001`](../008-04-0001/tr.md). Hassas Veriyi Hazırlamak, Anonimleştirme, Maskeleme ve Yerel Ön İşleme

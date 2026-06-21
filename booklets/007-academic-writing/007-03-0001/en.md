@@ -125,4 +125,4 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 **Verified citations.** 7
 **Fabricated citations.** 0
 **Previous booklet.** [`007-02-0001`](../007-02-0001/en.md). APA 7 with DOI Discipline
-**Next booklet.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/en.md). Ethics in AI-Assisted Research, From Principle to Behavior
+**Next booklet.** [`007-04-0001`](../007-04-0001/en.md). Authorship and Contribution Traces, Who Did What, Where It Changed

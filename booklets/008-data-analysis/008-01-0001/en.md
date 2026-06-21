@@ -148,5 +148,5 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 **Approximate word count.** 2075 (English body text, measured with wc)
 **Verified citations.** 11
 **Fabricated citations.** 0
-**Previous booklet.** [`007-02-0001`](../../007-academic-writing/007-02-0001/en.md). APA 7 with DOI Discipline
+**Previous booklet.** [`007-06-0001`](../../007-academic-writing/007-06-0001/en.md). Grant Proposals and Project Texts, From Idea to Work Package
 **Next booklet.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/en.md). Ethics in AI-Assisted Research, From Principle to Behavior

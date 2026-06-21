@@ -26,7 +26,7 @@ verified_citations_count: 7
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 translation_notes: "Türkçe kaynak metinden sıfırdan yeniden yazıldı, birebir çeviri değil. Tüm çalışılmış sorun giderme örnekleri gerçek bir olaydan türetilmemiş, arşiv sanitizasyon protokolüne uygun sentetik örneklerdir."
-closing_booklet: true
+closing_booklet: false
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
 status: "release"
@@ -241,5 +241,5 @@ Vaughan, D. (1996). *The Challenger launch decision: Risky technology, culture, 
 **Sözcük sayısı (yaklaşık).** 3021 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 7
 **Uydurma atıf sayısı.** 0
-**Önceki kitapçık.** [`010-01-0001`](../../010-peer-review/010-01-0001/tr.md). İzlenebilirlik Matrisleri ile Hakem Yanıt Mektupları
-**Sonraki kitapçık.** Yok. Bu, v1.0 manifestosunun kapanış kitapçığıdır. Yol haritası, kategori 005 (Hooks), 006 (MCP) ve 008 (Veri Analizi) ile v1.5 ve v2.0 sürümlerinde genişler.
+**Önceki kitapçık.** [`011-02-0001`](../../011-conference-presentation/011-02-0001/tr.md). Akademik Bilgiyi Kamuya Anlatmak, Blog, Basın ve Sosyal Medya
+**Sonraki kitapçık.** [`013-01-0001`](../../013-teaching-supervision/013-01-0001/tr.md). Öğretimde Yapay Zekâ, Ders Tasarımı, Süpervizyon ve Öğrenci Geri Bildirimi

@@ -146,4 +146,4 @@ Weber-Wulff, D., Anohina-Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero-Dib
 **Doğrulanmış atıf sayısı.** 8
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`010-01-0001`](../010-01-0001/tr.md). İzlenebilirlik Matrisleri ile Hakem Yanıt Mektupları
-**Sonraki kitapçık.** [`012-01-0001`](../../012-troubleshooting/012-01-0001/tr.md). İşler Ters Gittiğinde, Çalışan Bir Sorun Giderme Protokolü
+**Sonraki kitapçık.** [`010-03-0001`](../010-03-0001/tr.md). Hakemlikte Yapay Zekâ, Gizlilik, Değerlendirme ve Sınırlar

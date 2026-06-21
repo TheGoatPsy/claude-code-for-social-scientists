@@ -124,4 +124,4 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 **Doğrulanmış atıf sayısı.** 7
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`007-02-0001`](../007-02-0001/tr.md). DOI Disiplini ile APA 7
-**Sonraki kitapçık.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/tr.md). Yapay Zekâ Destekli Araştırmada Etik, İlkeden Davranışa
+**Sonraki kitapçık.** [`007-04-0001`](../007-04-0001/tr.md). Ortak Yazarlık ve Katkı İzleri, Kim Ne Yaptı, Nerede Değişti

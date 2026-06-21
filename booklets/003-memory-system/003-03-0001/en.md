@@ -177,4 +177,4 @@ Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Ba
 **Verified citations.** 6
 **Fabricated citations.** 0
 **Previous booklet.** [`003-01-0001`](../003-01-0001/en.md). Memory as Vault. A First Principles Introduction
-**Next booklet.** [`004-01-0001`](../../004-vault-architecture/004-01-0001/en.md). Folder Discipline and the Maps of Content (MOC) Pattern
+**Next booklet.** [`003-04-0001`](../003-04-0001/en.md). Open Science Package, Data, Code, Supplementary Files, and Persistent DOI
