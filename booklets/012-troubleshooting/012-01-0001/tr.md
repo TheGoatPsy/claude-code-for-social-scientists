@@ -4,9 +4,9 @@ title_tr: "İşler Ters Gittiğinde, Çalışan Bir Sorun Giderme Protokolü"
 booklet_id: "012-01-0001"
 category: "012-troubleshooting"
 language: "tr"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -15,13 +15,13 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model_alias: "claude-opus-4-7"
-    model_dated: null  # no dated identifier published by Anthropic for Opus 4.7 as of 2026-05-24
+    model_alias: "claude-opus-4-8"
+    model_dated: null
     role: "drafting, verification, citation lookup, bilingual re-authoring"
     interaction_mode: "interactive console"
 ai_contribution_level: "co-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 7
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -34,113 +34,189 @@ status: "release"
 
 # İşler Ters Gittiğinde, Çalışan Bir Sorun Giderme Protokolü
 
-Önceki kitapçık, hakem yanıt mektubunu akademik üretimin en yüksek bahisli metin türü olarak ele almış ve son cümlesinde bir işaret bırakmıştı: o mektup yazılırken Claude Code akarken işler ters gidebilir. Bu kitapçık tam o ana geçer. Bir komut beklenmedik bir sonuç döndürdüğünde, bir model yanıtı bağlam sınırına takıldığında, bir atıf bir türlü doğrulanamadığında ya da bir ajan yetkisiz bir karar verdiğinde, sosyal bilim araştırmacısının ihtiyacı komut satırı hata kodlarından oluşan bir liste değildir. Hata mesajları eskir. Sürümler değişir. Araçların yüzeyi sürekli kayar. Eskimeyen şey başkadır: bir sorunu kök nedenine doğru daraltan düşünme biçimi. Bu kapanış kitapçığı o düşünme biçimini yedi adımlı bir protokol olarak sunar ve rehberin bütününü bağlar.
+Önceki kitapçık, hakem yanıt mektubunu akademik üretimin en yüksek bahisli metin türlerinden biri olarak ele almıştı. Bu kapanış kitapçığı, o üretim zincirinin en kırılgan anına geçer. Bir komut beklenmedik bir sonuç döndürdüğünde, bir model yanıtı bağlam sınırına takıldığında, bir atıf bir türlü doğrulanamadığında, bir dosya yanlış sürümle açıldığında ya da bir ajan yetkisiz bir karar verdiğinde araştırmacının ihtiyacı yalnızca komut satırı hata kodları listesi değildir.
 
-## Sorun Gidermenin Katmanları
+Hata mesajları eskir. Sürümler değişir. Araçların yüzeyi kayar. Kalıcı olan başka bir şeydir. Sorunu kök nedenine doğru daraltan düşünme biçimi. Bu kitapçık, Claude Code ile çalışan sosyal bilim araştırmacısı için bu düşünme biçimini yedi adımlı bir protokol olarak sunar. Amaç panik anında ezberlenen komutları çoğaltmak değil, işler ters gittiğinde araştırmacının hangi katmana bakacağını, hangi kanıtı kaydedeceğini, hangi değişkeni izole edeceğini ve çözümü nasıl arşivleyeceğini göstermektir.
 
-Bir akademisyenin Claude Code ile çalışırken karşılaştığı sorunların büyük çoğunluğu belirlenebilir bir kategoriye girer. Bir sorunu doğru kategoriye yerleştirmek çözümün yarısıdır. Araç sorunu için bakılacak yer, bilgi sorunu için bakılacak yerden farklıdır. İletişim sorununa sorulan soru ise her ikisinden de ayrıdır.
+Bu kitapçık aynı zamanda v1.0 dizisinin kapanışıdır. Rehberin ilk kitapçığı Claude Code'u sosyal bilimcinin akademik üretim sürecine yerleştirmişti. Son kitapçık ise bu üretim sürecinin kaçınılmaz gerçeğiyle ilgilenir. Her sistem aksar. Her araç bir noktada yanlış anlaşılır. Her arşiv bir gün direnç gösterir. Akademik olgunluk, hiçbir şeyin bozulmayacağına inanmakta değil, bozulduğunda yöntemle ilerleyebilmekte yatar.
 
-Araç sorunlarında komut satırı bir hata kodu döndürür, model yanıt vermeden zaman aşımına uğrar, bağlam penceresi dolar. Sorunun kökü aracın kendisinde, çalıştığı ortamda ya da ağ bağlantısındadır. Bilgi sorunlarında bir kütüphaneye erişilemez, bir atıf doğrulanamaz, bir DOI bulunamaz. Bu sorunlar verinin erişilebilirliğiyle ve doğruluğuyla ilgilidir. Kendilerini bir uyarı mesajıyla ilan etmedikleri için sessiz başarısızlıklardır. İletişim sorunlarına gelince, verilen komut model tarafından yanlış anlaşılır, ajan bir döngüde sıkışır ya da beklenmedik bir karar verir. Bu başarısızlıklar araçta ya da veride değil, araştırmacı ile araç arasındaki dilde, niyet aktarımının çatladığı yerde yatar.
+## 1. Sorun Gidermenin Katmanları
 
-Reason (2000), insan hatasının modellenmesi üzerine yazdığı kısa ama etkili makalesinde, hataların bireysel yetersizlikten çok sistemin yapısal katmanlarından doğduğunu gösterir. Bu çerçeve klinik ve endüstriyel ortamlar için kurulmuştur. Aynı yapısal mantığın yapay zekâ destekli araştırma iş akışlarına da uzandığı söylenebilir: başarısızlıklar benzer biçimde katmanlar arasındaki sınırda belirir: aracın çevresine bağlandığı noktada, erişim koşullarının bilgi tabanını çevrelediği yerde ya da araştırmacının niyetiyle modelin yorumunun ayrıştığı kesimde. Bu çıkarım bu rehberin kendi yorumudur, Reason'ın doğrudan kurduğu bir iddia değildir. Üç kategori, bu katmanları okumanın haritasıdır.
+Claude Code ile çalışan bir araştırmacının karşılaştığı sorunların büyük bölümü dört katmanda toplanabilir. İlk katman araç katmanıdır. Komut satırı hata verir, model zaman aşımına uğrar, bağlam penceresi dolar, terminal beklenen komutu tanımaz. Bu durumda sorun aracın kendisinde, çalıştığı ortamda ya da ağ bağlantısında aranır.
 
-Ne var ki üç kategoriye temiz oturmayan bir dördüncü durum da vardır: belirsiz durum. Sorun ilk bakışta hangi katmandan geldiğini ele vermez. Model boş bir yanıt döndürür ama bunun nedeni bir ağ kesintisi mi, erişilemeyen bir kaynak mı, yoksa yanlış anlaşılmış bir komut mu belli değildir. Belirsiz durumda doğru hamle, üç kategoriyi en kolaydan en emek yoğuna doğru sırayla elemektir. Tahmin etmek burada yetersiz kalır. Önce araç katmanı sınanır, çünkü bir hata mesajı en hızlı okunan kanıttır. Sonra bilgi katmanı: kaynak gerçekten erişilebilir mi? En son iletişim katmanı, çünkü komutu yeniden yazmak en fazla emek isteyen adımdır. Belirsizlik de kendine özgü bir koşuldur. Sorunun kökü henüz görünür değildir ve daraltma sürecinin kendisi onu gün yüzüne çıkaracaktır. Daraltma ise protokolün beşinci adımının işidir.
+İkinci katman bilgi katmanıdır. Bir DOI doğrulanamaz, bir kütüphane kaydı bulunamaz, bir kaynak erişilemez, bir PDF tam metin vermeyebilir. Bu sorunlar çoğu zaman sessizdir. Hata mesajı üretmezler. Tam da bu yüzden tehlikelidirler. Çünkü boş sonuç, çoğu zaman kaynak yok anlamına gelmez. Erişim yok, indeks kapsamıyor, DOI yanlış girildi ya da kayıt farklı bir veri tabanında duruyor anlamına gelebilir.
 
-## Araç Sorunları: Hata Mesajından Bağlam Limitine
+Üçüncü katman iletişim katmanıdır. Araştırmacı bir niyet aktarır, model başka bir şey anlar. Komut belirsizdir, kapsam açık değildir, başarı ölçütü yazılmamıştır. Model teknik olarak düzgün, ama araştırmacının istediği şeyden uzak bir çıktı üretir. Bu tür sorunlarda araç bozuk değildir. Veri de bozuk değildir. Niyet aktarımı yetersizdir.
 
-Araç sorunları en görünür kategoridir, çünkü çoğunlukla açık bir hata mesajıyla gelir. Komut satırı bir hata kodu döndürür, ekrana bir uyarı düşer, bir işlem yarıda kesilir. İlk refleks hata mesajını okumak olmalıdır. Yavaşça. Bir akademisyen, geliştirici olmadığı için hata metnini teknik gürültü olarak algılayıp gözünü kaçırabilir. Oysa hata mesajı çoğunlukla sorunun kategorisini ve yerini doğrudan söyler. Dosya adı ve satır numarası gibi ayrıntılar ya da bir durum kodu: mesajın içindeki şeyi fark etmek çözümün başladığı yerdir.
+Dördüncü katman belirsiz durumdur. Sorunun hangi katmandan geldiği ilk bakışta görülmez. Model boş yanıt döndürür, ancak bunun nedeni ağ kesintisi mi, kaynak erişimi mi, yoksa kötü kurulmuş bir komut mu belli değildir. Belirsiz durumda doğru hamle tahmin etmek değil, katmanları sırayla elemektir. Önce araç katmanı, sonra bilgi katmanı, sonra iletişim katmanı sınanır. Çünkü hızlı çözülen katman önce dışarıda bırakılmalıdır.
 
-Bu kategorideki sorunlar birbirinden farklı örüntülerde belirir. Model zaman aşımı, modelin yanıt üretmeden önce ayrılan sürenin dolmasıdır. En yaygın nedeni fazla büyük bir girdi ya da geçici bir ağ yavaşlamasıdır. Girdiyi küçülterek, isteği bölerek ya da kısa bir süre bekleyip yeniden deneyerek çözülür. Bağlam limiti, modele verilen toplam metnin pencereyi aşmasıdır: uzun bir oturumda biriken konuşma bağlamı sessizce büyür ve bir noktada model en eski kısımları yitirmeye başlar. Çözüm, oturumu özetleyip yeniden başlatmak ya da bağlamı arşive yazıp temiz bir oturumla devam etmektir. Bu, üçüncü kitapçıkta anlatılan hafızayı arşive dönüştürme ilkesinin pratik karşılığıdır: bağlam pencereye değil diske bağlandığında, limit bir engel olmaktan çıkar, bir iş akışı kararına dönüşür. Ortam yapılandırması da benzer sıklıkta belirir: yanlış bir dizinde çalışmak, eksik bir bağımlılık, hatalı bir yol tanımı. Norman (2013), *Gündelik Şeylerin Tasarımı* adlı eserinde, kullanıcı hatası diye etiketlediğimiz şeyin çoğunlukla bir tasarım hatası olduğunu gösterir: aracın yaptığı ve kullanıcının karşılayacağını bilmediği bir varsayım. Araç sorunuyla karşılaşan araştırmacı kendini suçlamak yerine şunu sormalıdır: aracın hangi varsayımı karşılanmadı? Bu soru, suçlamadan her zaman daha üretkendir.
+Reason (2000), insan hatasını bireysel yetersizlikten çok sistemin katmanları içinde ele alır. Bu çerçeve doğrudan yapay zekâ destekli araştırma için geliştirilmemiştir. Bununla birlikte aynı yapısal düşünme biçimi burada değerlidir. Sorun çoğu zaman tek bir kişinin dikkatsizliğinde değil, aracın çevreyle, bilginin erişim koşullarıyla ya da araştırmacının niyetiyle kurduğu temas noktasında ortaya çıkar. Bu rehberin katman modeli, Reason'ın sistem yaklaşımını sosyal bilim araştırmacısının Claude Code iş akışına uyarlayan bir uygulayıcı çerçevesidir.
 
-Somut bir örnek kalıbı netleştirir. Bir araştırmacı yüz sayfalık bir tez bölümünü tek bir oturumda modele okutmaya çalışır ve model yarıda bağlam hatası döndürür. İlk refleks aracı suçlamak olabilir. Oysa hata mesajı sorunu açıkça söyler: girdi pencereyi aşmıştır. Yanıt iş akışını değiştirmektir. Bölüm arşive kaydedilir, alt başlıklarına bölünür, her alt başlık ayrı bir oturumda işlenir. Bağlam diske bağlandığında limit bir duvar olmaktan çıkıp yapıyı farklı kurmanın sinyaline dönüşür.
+| Katman | Belirti | İlk soru | İlk müdahale |
+|---|---|---|---|
+| Araç | Hata mesajı, zaman aşımı, bağlam limiti, izin hatası | Araç hangi varsayımı karşılayamadı? | Hata metnini kaydet, girdiyi küçült, ortamı denetle |
+| Bilgi | DOI bulunmaz, kaynak erişilemez, kayıt boş döner | Kaynak gerçekten yok mu, yoksa erişim mi yok? | Crossref, yayıncı sayfası, alternatif indeks ve kütüphane kaydıyla doğrula |
+| İletişim | Model yanlış görevi yapar, döngüye girer, kapsamı aşar | Niyet yeterince açık iletildi mi? | Komutu yeniden yaz, başarı ölçütünü ekle, kapsamı daralt |
+| Belirsiz | Neden görünmez, belirtiler karışık görünür | Hangi katman en hızlı elenebilir? | Araç, bilgi ve iletişim katmanlarını sırayla sınırla |
 
-## Bilgi Sorunları: Sessiz Başarısızlıklar
+## 2. Araç Sorunları, Hata Mesajından Bağlam Limitine
 
-Bilgi sorunları araç sorunlarından daha sessizdir, çünkü hata mesajıyla gelmezler. Bir kütüphaneye erişim engellendiğinde abonelik kapısı sessizce devreye girer ve model boş bir sonuç döndürür. Bir DOI bulunamadığında atıf doğrulama akışı sonuç vermeden durur. Asıl tehlike tam da bu görünmezliktir: araç sorunu çığlık atar, bilgi sorunu fısıldar. Fark edilmesi için zaten dikkat edilmesi gerekir. Dolayısıyla bilgi sorunlarına karşı en güçlü savunma, yedinci kitapçıkta anlatılan atıf doğrulama disiplinidir. Üç dizinli üçgenleme, bir kaynağın tek bir veri tabanında bulunamamasının onun var olmadığı anlamına gelmediğini kabul eder.
+Araç sorunları en görünür sorunlardır, çünkü çoğu zaman ekranda bir iz bırakırlar. Terminal hata kodu döndürür, model yanıt vermez, dosya sistemi erişimi reddeder, komut beklenenden farklı çalışır. Bu sorunlarda ilk refleks hata mesajını kapatmak değil, yavaşça okumaktır. Bir araştırmacı geliştirici olmak zorunda değildir. Ama hata mesajını akademik bir belge gibi okuması gerekir. Çünkü o metin çoğu zaman sorunun kategorisini, dosya yolunu, satırını ve nedenini açıkça gösterir.
 
-Bir DOI bulunamadığında sırayla işlenmesi gereken birkaç olasılık vardır. DOI gerçekten yoksa, kaynak bir kitaptır ya da DOI atanmamış eski bir makaledir. Bu durumda kaynak DOI olmadan, ISBN ya da kararlı bir URL ile künyelenir. DOI vardır ama bir yazım hatası olmuşsa, bir basamak eksik ya da fazladır. Doğru olan, DOI'yi yeniden, kaynaktan kopyalanarak girmektir. Son olasılık ise veri tabanının geçici olarak erişilemez olmasıdır. Bu durumda alternatif bir dizin denenir: Crossref yanıt vermiyorsa OpenAlex, o da vermiyorsa yayıncının kendi sayfası.
+Model zaman aşımı, genellikle girdinin çok büyük olmasından, ağın yavaşlamasından ya da model çağrısının beklenenden uzun sürmesinden doğar. Çözüm çoğu zaman görevi küçültmektir. Tek seferde yüz sayfa işlemek yerine bölümü alt başlıklara ayırmak, uzun bir konuşmayı özetleyip yeni oturuma geçmek ya da yalnızca ilgili dosyaları bağlama almak daha güvenli bir yoldur.
 
-Her durumda kritik kural aynıdır: bir kaynağı bulunamadığı için uydurmamak gerekir. Bir DOI doğrulanamıyorsa, bu başarısızlık dürüstçe belirtilir ve kaynak doğrulanana kadar bekletilir. Bilgi sorunu, boşluğu doldurma dürtüsü disiplinin önüne geçtiği anda bir bütünlük sorununa dönüşür. Somut bir örnek: bir araştırmacı bir makaleye atıf yapmak ister ama elindeki DOI Crossref'te çözülmez. Boş sonuç, makalenin var olmadığı anlamına gelmez. Önce DOI kaynaktan yeniden kopyalanır, çünkü hataların büyük bölümü bir basamağın eksik ya da fazla girilmesinden gelir. Çözülmezse makale başlığıyla alternatif bir dizinde, OpenAlex'te ya da yayıncının sayfasında aranır. Hâlâ bulunamazsa en olası açıklama, makalenin DOI atanmamış eski bir kaynak olmasıdır. Bu durumda kaynak kararlı bir URL ya da basılı künye ile atıflanır. Hiçbir aşamada eksik künye uydurulmaz. Bu örnekte yöntem bir disiplin gerektirir: doğrulanana kadar bekletme disiplini.
+Bağlam limiti daha sinsi bir araç sorunudur. Uzun oturumlarda modelin bağlam penceresi dolar. Eski mesajlar düşer. Araştırmacı, modelin hâlâ önceki kararları hatırladığını sanabilir. Oysa bağlam çoktan taşmıştır. Bu noktada çözüm modeli zorlamak değil, bağlamı dosyaya taşımaktır. Oturum özeti yazılır, kararlar arşive kaydedilir ve temiz bir oturumla devam edilir. Bağlam pencereye değil diske bağlandığında limit bir duvar olmaktan çıkar, iş akışı kararına dönüşür.
 
-## İletişim Sorunları: Niyet Aktarımının Çatladığı Yer
+Ortam yapılandırması da sık görülen bir araç sorunudur. Yanlış dizinde çalışmak, eksik bağımlılık, bozuk yol tanımı, PATH hatası ya da izin sorunu, akademisyenin gözünde aracın bozulduğu izlenimini yaratabilir. Norman'ın (2013) tasarım ilkesi burada yararlıdır. Kullanıcı hatası diye görünen şey, çoğu zaman sistemin kullanıcıya açıkça göstermediği bir varsayımdan doğar. Araştırmacının sorması gereken soru şudur. Araç benden hangi koşulun zaten sağlanmış olduğunu varsaydı?
 
-İletişim sorunları, üç kategorinin en incesidir. Ne araçta ne veride yatarlar. Araştırmacı ile araç arasındaki dilde, niyet aktarımının çatladığı yerde yatarlar. Bu başarısızlıkların en yaygın biçimi komutun yanlış anlaşılmasıdır: araştırmacı bir şey ister, model başka bir şey anlar ve teknik olarak kusursuz ama niyetten uzak bir sonuç üretir. Bunun nedeni neredeyse her zaman belirsizliktir. Bir akademisyen, güvendiği bir meslektaşına verdiği gibi örtük bir talimat verir ama modelin o örtük bağlamı paylaşmadığını unutur. Çözüm komutu açık kılmaktır: ne istendiğini, hangi biçimde istendiğini ve başarının nasıl ölçüleceğini söylemek. Bu özgüllük, yanlış anlamayı başlamadan keser.
+Somut senaryo şudur. Bir araştırmacı yüz sayfalık bir tez bölümünü tek oturumda modele okutmaya çalışır ve model bağlam hatası döndürür. İlk tepki aracın yetersiz olduğu düşüncesi olabilir. Oysa hata mesajı sorunu açıkça söylemektedir. Girdi pencereyi aşmıştır. Doğru çözüm iş akışını değiştirmektir. Bölüm arşive kaydedilir, alt başlıklara ayrılır, her alt bölüm ayrı oturumda işlenir ve sonuçlar merkezi bir özet dosyasında birleştirilir. Sorun giderme, aracı zorlamaz. İş akışını aracın gerçek sınırlarına göre yeniden düzenler.
 
-Daha derin bir iletişim arızası, ajanın bir döngüde sıkışmasıdır. Model aynı adımı tekrar tekrar dener, her seferinde benzer bir başarısızlıkla, ve ilerleme durur. Bu, modelin altındaki bir varsayımın yanlış olduğunu fark edemediği durumlarda olur. Başarısızlığı görür ama neden başarısız olduğunu görebilecek kadar geri çekilemez. Schoenfeld (1985), matematiksel problem çözme üzerine yaptığı çalışmada, başarılı sorun çözücüleri başarısızlardan ayıran şeyin üstbiliş olduğunu gösterir: kişinin kendi düşünme sürecini izleyip bir yolun çıkmaz olduğunu fark ederek geri dönmesi. Ajan döngüde sıkıştığında, modelin sağlayamayacağı bu üstbilişsel müdahaleyi araştırmacı sağlamalıdır. Döngü durdurulur. Temel varsayım sorgulanır. Yanlış olabilecek varsayım adlandırılır.
+| Belirti | Olası kök neden | Uygun müdahale |
+|---|---|---|
+| Komut bulunamadı | PATH ya da kurulum yolu eksik | Sürüm komutunu çalıştır, PATH ayarını kontrol et, terminali yeniden başlat |
+| Zaman aşımı | Girdi büyük, ağ yavaş, işlem çok uzun | Görevi parçala, girdi hacmini azalt, kısa bir deneme çalıştır |
+| Bağlam limiti | Oturum çok büyüdü | Özet çıkar, kararları dosyaya yaz, yeni oturum başlat |
+| İzin hatası | Dosya ya da klasör erişimi kapalı | Çalışma dizinini kontrol et, yalnızca gerekli izinleri ver |
+| Yanlış çıktı dosyası | Yanlış dizinde çalışma ya da belirsiz çıktı yolu | Çıktı dosyasını açıkça belirt, hedef klasörü sabitle |
 
-Beklenmedik ajan kararları farklı bir biçimdir: model söylenmemiş bir dosyayı değiştirir ya da varsayılan bir davranışa kayar. Bu, ikinci kitapçıkta anlatılan ajanlık dönüşümünün öbür yüzüdür. Bir araç ne kadar çok özerklik taşırsa, o özerkliği istenilmedik yönlerde kullanma fırsatı da o kadar artar. Çözüm kapsamı sınırlamaktır: kritik aksiyonları açık onaya bağlamak ve her oturumu neyin devrede olduğunun, neyin olmadığının açık bir tanımıyla başlatmak. İletişim sorunları, araştırmacı aracı bağlamı önceden paylaşan bir meslektaş gibi değil, niyetin tam ve açık biçimde aktarılması gereken yetenekli bir ortak gibi gördüğünde azalır.
+## 3. Bilgi Sorunları, Sessiz Başarısızlıklar
 
-Somut bir örnek döngü tipini gösterir. Bir araştırmacı modelden bir veri dosyasını yeniden biçimlendirmesini ister ama dosyanın gerçek yapısı modelin varsaydığından farklıdır. Model aynı dönüşümü tekrar tekrar dener, her seferinde aynı hatayla. Dönüşümün başarısız olduğunu görür ama temel varsayımının yanlış olduğunu göremez. Araştırmacının üstbilişsel müdahalesi gerekir: döngü durdurulur ve soru değiştirilir. "Yeniden dene" değil, "bu dosya neden bu dönüşüme direniyor?" Çoğunlukla yanıt, dosyanın beklenenden farklı bir kodlamada ya da yapıda olmasıdır. Araştırmacı bu farkı açıkça bildirdiğinde döngü kırılır. Yeniden denemek işe yaramaz. Gereken, varsayımı yeniden ifade etmektir.
+Bilgi sorunları araç sorunlarından daha tehlikelidir, çünkü çoğu zaman sessiz gelirler. Bir DOI çözülmez, ama terminal bunu dramatik bir hata gibi sunmaz. Bir kütüphane kaydı bulunmaz, ama model bunu kaynak yok diye yorumlayabilir. Bir abonelik kapısı tam metne izin vermez, ama çıktı yalnızca boş döner. Bu sessizlik, araştırmacıyı hızlı ve yanlış bir sonuca iter.
 
-## Muhakeme Çerçevesi
+Atıf doğrulama bağlamında temel kural değişmez. Bir kaynak doğrulanmadığı için uydurulmaz. DOI çözülmezse önce DOI kaynaktan yeniden kopyalanır. Ardından Crossref, yayıncı sayfası, PubMed, OpenAlex ya da kütüphane kaydı denenir. Kaynak bir kitap, tez, rapor ya da DOI öncesi bir makale ise başka bir kalıcı tanımlayıcıyla, ISBN, kurumsal URL ya da kütüphane kaydıyla doğrulanır. Doğrulanamayan kaynak kaynakçaya girmez. Bekletilir.
 
-Üç kategori sorunu yerleştirmeye yarar. Onu çözmek için bir muhakeme çerçevesi gerekir. Aşağıdaki yedi adımlı protokol, Pólya'nın (1945/2014) klasik dört aşamalı çerçevesinin, yani anla, planla, uygula ve geriye bak aşamalarının, sosyal bilim yapay zekâ iş akışına bu rehber tarafından genişletilmiş halidir. Bu genişletme bu rehberin Pólya'nın yöntemine getirdiği kendi yorumudur. Çerçeve üç kategorideki sorunların büyük çoğunluğu için işler, çünkü genel bir düşünme disiplinidir. Belirli bir komuta bağlı değildir.
+Kütüphane erişimi de bilgi sorunudur. Bir makaleye erişilememesi, makalenin olmadığı anlamına gelmez. Kurumsal abonelik yoktur, proxy çalışmıyordur, EZproxy oturumu düşmüştür ya da yayıncı sayfası yönlendirme değiştirmiştir. Claude Code, bu durumda tam metnin yokluğunu içerik yokluğu sanmamalıdır. Araştırmacı, erişim ile varlık arasında ayrım yapmalıdır.
+
+Bu ayrım özellikle bölgesel akademik kaynaklarda önemlidir. DergiPark, ULAKBİM TR Dizin, HEAL Link ve YÖK Tez Merkezi gibi kaynaklar uluslararası ticari veri tabanlarıyla aynı biçimde davranmaz. Kaynak bulunamadığında ilk açıklama kaynağın yokluğu olmamalıdır. Önce veri tabanı kapsamı, erişim yolu ve künye biçimi denetlenmelidir.
+
+### Çalışılmış örnek, DOI çözülmüyor
+
+Bir araştırmacının elinde DOI olduğu sanılan bir karakter dizisi vardır. Crossref yanıt vermez. Bu durumda yapılacak ilk iş, DOI'yi el ile düzeltmeye çalışmak değildir. Kaynak PDF'ten, yayıncı sayfasından ya da makalenin künyesinden DOI yeniden kopyalanır. Hâlâ çözülmüyorsa başlıkla arama yapılır. Başlık yayıncı sayfasında bulunur ama DOI yoksa kaynak DOI'siz olarak kayda alınır. Başlık hiçbir yerde bulunamazsa kaynak şüpheli kabul edilir ve referans listesine eklenmez. Bu sürecin her adımı kaynak pasaportuna yazılır. Böylece karar hatırlamaya değil, kayda dayanır.
+
+## 4. İletişim Sorunları, Niyet Aktarımının Çatladığı Yer
+
+İletişim sorunları, araç da veri de çalışıyor görünürken ortaya çıkar. Araştırmacı bir şey istemiştir, model başka bir şey yapmıştır. Çıktı teknik olarak düzgün olabilir. Hatta akıcı ve ikna edici görünebilir. Ama hedefe hizmet etmez. Bu tür sorunlarda sorun çoğu zaman modelin kapasitesinde değil, komutun belirsizliğindedir.
+
+Akademik bir meslektaşa verilen örtük talimatla modele verilen talimat aynı değildir. Meslektaş alan bağlamını, geçmiş konuşmaları, kurumun beklentilerini ve araştırmacının üslubunu kendiliğinden tamamlayabilir. Model bunu ancak yazıldıysa görür. Bu nedenle iyi komut, yalnızca ne yapılacağını değil, ne yapılmayacağını da belirtir. Hangi dosyalara dokunulacak, hangi dosyalar dışarıda kalacak, çıktı hangi biçimde verilecek, başarı nasıl ölçülecek. Bunlar yazılmadan verilen komut, iyi niyetli ama riskli bir kısa yoldur.
+
+Ajan döngüsü iletişim sorunlarının en tipik biçimlerinden biridir. Model aynı adımı tekrar tekrar dener, her seferinde benzer bir hatayla karşılaşır. Yeniden denemek sorunu çözmez, çünkü sorun denenen adımda değil, o adımı mümkün sanan varsayımdadır. Schoenfeld'in (1985) matematiksel problem çözme üzerine çalışmasında vurguladığı üstbiliş burada devreye girer. Araştırmacı süreci dışarıdan görmeli ve şu soruyu sormalıdır. Model hangi varsayımı doğru sanıyor?
+
+Beklenmedik ajan kararı ise ayrı bir risk taşır. Model ilgisiz bir dosyaya dokunur, çıktı yolunu değiştirir, kapsam dışı bir belgeyi düzenler ya da onaylanmamış bir varsayımla devam eder. Bu durumda sorun, ajanın eylem alanının fazla geniş bırakılmış olmasıdır. Çözüm kapsamı daraltmak, kritik dosyaları korumak, her değişikliği diff ile görmek ve yüksek riskli işlemleri açık onaya bağlamaktır.
+
+Somut örnek şudur. Bir araştırmacı modele bir veri dosyasını yeniden biçimlendirmesini söyler. Model aynı dönüşümü tekrar tekrar dener ve hata alır. Sorun, modelin dosyanın virgülle ayrılmış olduğunu varsaymasıdır. Oysa dosya noktalı virgülle ayrılmıştır. Yeniden dene komutu hiçbir şeyi çözmez. Doğru soru şudur. Bu dosya neden bu dönüşüme direniyor? Varsayım görünür olduğunda döngü kırılır.
+
+| Sorun tipi | Tipik belirti | Düzeltici hamle |
+|---|---|---|
+| Belirsiz komut | Çıktı düzgün ama istenenden farklıdır | Amaç, kapsam, biçim ve başarı ölçütünü yeniden yaz |
+| Ajan döngüsü | Model aynı adımı tekrar eder | Döngüyü durdur, varsayımı adlandır, görevi yeniden çerçevele |
+| Kapsam kayması | İlgisiz dosyalar ya da ek işler devreye girer | Çalışma dizinini, dokunulacak dosyaları ve yasak alanları açıkça belirt |
+| Gizli varsayım | Model söylenmeyen bir şeyi doğru kabul eder | Ara kararları görünür kıl, varsayımları ayrı listelet |
+
+## 5. Yedi Adımlı Muhakeme Çerçevesi
+
+Üç katman sorunu yerleştirmeye yarar. Çözmek için ise bir muhakeme çerçevesi gerekir. Aşağıdaki yedi adımlı protokol, Pólya'nın klasik anla, planla, uygula ve geriye bak aşamalarının sosyal bilim yapay zekâ iş akışına uyarlanmış hâlidir (Pólya, 1945/2014). Bu uyarlama bu rehberin kendi uygulayıcı yorumudur. Belirli bir komuta bağlı değildir. Bu nedenle araç sürümü değişse de düşünme sırası değişmez.
+
+Birinci adım şüpheci olmaktır. İlk açıklama çoğu zaman en kolay hikâyedir, en doğru olan değil. İkinci adım kaydı almaktır. Hata mesajı ya da beklenmedik çıktı hafızadan değil, kaynaktan alınır. Üçüncü adım çoğaltmaktır. Tekrarlanamayan bir sorunun çözüldüğü de güvenilir biçimde söylenemez.
+
+Dördüncü adım daraltmaktır. Sorun en küçük örneğe indirilir. Beşinci adım izole etmektir. Tek bir değişken değiştirilir ve sonucu gözlenir. Altıncı adım düzeltmektir. Düzeltme, kök nedeni aşan geniş bir müdahale olmamalıdır. Yedinci adım belgelemedir. Dörner'in (1996) karmaşık sistemlerde hata üzerine çalışması, başarısızlıkların çoğu zaman yan etkileri ve gecikmeli sonuçları görmemekten doğduğunu gösterir. Belgeleme, aynı sorunun ikinci kez yabancı görünmesini engeller.
+
+Bu yedi adımın değeri, panik anında araştırmacıya bir sıra vermesidir. Sorun giderme, bu sırayla duygusal bir tepki olmaktan çıkar. Kayda dayalı bir muhakeme sürecine dönüşür.
 
 | Adım | Ad | Soru | Pólya aşaması |
 |---|---|---|---|
-| 1 | Şüpheci ol | İlk açıklama doğru mu, yoksa en kolay açıklama mı | Anla |
-| 2 | Kaydı al | Hata mesajı, log, ekran görüntüsü tam olarak ne diyor | Anla |
-| 3 | Çoğalt | Sorun güvenilir biçimde yeniden üretilebiliyor mu | Anla |
-| 4 | Daralt | Sorunu en küçük örneğe indirgeyebilir miyim | Planla |
-| 5 | İzole et | Hangi tek değişken sorunu açıyor | Planla |
-| 6 | Düzelt | En küçük doğru değişiklik nedir | Uygula |
-| 7 | Belgele | Kök neden ve çözüm gelecekteki ben için nasıl kaydedilir | Geriye bak |
+| 1 | Şüpheci ol | İlk açıklama doğru mu, yoksa en kolay açıklama mı? | Anla |
+| 2 | Kaydı al | Hata mesajı, log, ekran görüntüsü ya da çıktı tam olarak ne diyor? | Anla |
+| 3 | Çoğalt | Sorun güvenilir biçimde yeniden üretilebiliyor mu? | Anla |
+| 4 | Daralt | Sorunu açan en küçük örnek nedir? | Planla |
+| 5 | İzole et | Hangi tek değişken sorunu açıyor ya da kapatıyor? | Planla |
+| 6 | Düzelt | En küçük doğru değişiklik nedir? | Uygula |
+| 7 | Belgele | Kök neden ve çözüm gelecekteki araştırmacı için nasıl kaydedilecek? | Geriye bak |
 
-Birinci adım şüpheci olmaktır: ilk yüzeylenen açıklama çoğunlukla en kolay olandır, en doğru olan değil. Bir sorunu kabul edilen ilk hikayeyle kapatmak kök nedeni gölgede bırakır. İkinci adım kaydı almaktır. Hata mesajının, logun ya da beklenmedik sonucun tam metni bellekten değil kaynaktan alınır. Üçüncü adım çoğaltmaktır: bir sorun güvenilir biçimde yeniden üretilemiyorsa, çözüldüğü de doğrulanamaz. Bu üç adım Pólya'nın anlama aşamasına karşılık gelir.
+## 6. Kurtarma Kaydı ve Olay Günlüğü
 
-Dördüncü adım daraltmaktır: sorun onu açan en küçük örneğe indirgenerek gereksiz değişkenler elenir. Beşinci adım izole etmektir: tek bir değişken değiştirilip etkisi gözlemlenerek nedensellik rastlantıdan ayrılır. Bu iki adım, herhangi bir şeye dokunmadan önce doğru kaldıracı bulmayı amaçlar. Planlama aşamasıdır.
+Sorun giderme yalnızca sorunu çözmek değildir. Çözümün arşive girmesidir. Çünkü aynı hata çoğu zaman tek kez yaşanmaz. Bağlam limiti tekrar eder, DOI hatası tekrar eder, kütüphane erişimi tekrar eder, yanlış dizinde çalışma tekrar eder. Her seferinde sıfırdan düşünmek yerine, ilk çözümden bir kayıt üretmek gerekir.
 
-Altıncı adım düzeltmektir. Buradaki kısıtlama önemlidir: çözüm en küçük doğru değişiklik olmalıdır. Tanımlanmış kök nedenin ötesinde daha geniş bir müdahale, gereksiz dokunduğu yerlerde yeni sorunlar üretir. Yedinci adım belgelemektir: kök neden ve çözüm arşive kısa bir not olarak yazılır, böylece aynı sorun ikinci kez karşımıza çıktığında çözüme giden yol hazırdır. Dörner (1996), karmaşık durumlarda insan karar vermesini çözümlediği eserinde, başarısızlığın en tutarlı biçimde yan etkileri ve gecikmeli sonuçları göz ardı etmekten doğduğunu gösterir. Belgeleme, bu körlüğe karşı doğrudan bir savunmadır: hataları önlemez, ama onlardan nasıl toparlanılacağını bilen kalıcı bir bilgi yaratır.
+Bu kayıt uzun olmak zorunda değildir. Hatta uzun olursa kullanılmaz. İyi bir olay günlüğü kısa, tarihli ve yeniden uygulanabilir olmalıdır. Sorunun ne olduğu, hangi katmana ait olduğu, nasıl çoğaltıldığı, kök nedenin ne olduğu, hangi çözümün çalıştığı ve hangi önleyici adımın eklendiği yazılır.
 
-Çerçeveyi tek bir örnekte yürütmek onu somutlaştırır. Bir araştırmacının atıf doğrulama akışı sessizce hatalı bir künye üretmektedir. Araştırmacı şüpheci olmakla başlar: künye doğru görünse de akış son zamanlarda güncellenmiştir, dolayısıyla ilk görünüş yeterli kanıt sayılamaz. Akışın girdisi ve çıktısı tam olarak kaydedilir. Aynı kaynak yeniden işlenince aynı hatalı künye çıkar, yani sorun rastlantısal değildir. Sorun daraltılır, tek bir kaynakla denenir ve hata sürer. Değişkenler sırayla izole edildiğinde yıl alanının boşaltılmasıyla hata kaybolur. Sorun, yıl ayrıştırmasındadır. En küçük doğru değişiklik yapılır: yıl alanının ayrıştırma kuralı düzeltilir, akışın geri kalanına dokunulmaz. Kök neden ve çözüm arşive yazılır. Aynı ayrıştırma hatası bir daha karşımıza çıktığında çözüm hazırdır. Çerçeve, bir sezgiyi bir yönteme dönüştürür.
+Bu olay günlüğü, arşivin sorun giderme hafızasıdır. Bir araç hatası çözüldüğünde yalnızca bugünkü oturum kurtulmaz. Gelecekteki araştırmacı da korunur. Çoğu zaman o gelecekteki araştırmacı, altı ay sonra aynı arşive geri dönen sizsinizdir.
 
-## Türkiye ve Yunanistan Özgüllüğü
+## 7. Bölgesel Altyapı Sorunları
 
-Bazı sorunlar bölgeseldir. Türkiye'de, özellikle büyük şehirler dışındaki illerde, internet bağlantısı zaman zaman kesintili olabilir ve bazı dış servislere erişim kısıtlanabilir. Yunanistan'ın kuzey şehirlerinde, Komotini ve çevresinde, fiber altyapısının değişkenliği benzer bir koşuldur. Bu durumlarda araç sorunu gibi görünen şey aslında bir ağ sorunudur. Aracın kendisinde aranan çözüm boşa çıkar.
+Bazı sorunlar aracın kendisinden değil, araştırmacının çalıştığı coğrafi ve kurumsal altyapıdan doğar. Türkiye'de bazı uluslararası servisler zaman zaman yavaşlayabilir, ödeme ve erişim kanalları kesintili olabilir, kurumsal kütüphane proxy'leri farklı üniversitelerde farklı biçimde çalışabilir. Yunanistan'da, özellikle Komotini ve çevresindeki kurumlarda, kampüs dışı erişim, HEAL Link, proxy yapılandırması ve bağlantı kalitesi araştırma deneyimini doğrudan etkileyebilir.
 
-Sorun ağ kaynaklı göründüğünde birkaç pratik adım denenebilir: alternatif bir DNS sunucusu, bağlantının kararlı olduğu bir saat dilimine işi kaydırmak ya da kurumsal bir ağ üzerinden çalışmak. Ayrıntılı ağ yapılandırması bu kitapçığın kapsamı dışındadır ve rehberin ilerleyen sürümlerine bırakılır. Buradaki kritik nokta, bölgesel bir altyapı koşulunu araç kusuruyla karıştırmamaktır. Çevre bir ilden ya da değişken bir hattan çalışan araştırmacı, ağ katmanını sorun giderme protokolünün ilk adımlarından birine dahil etmeli, sonradan akla gelen bir düşünce olarak bırakmamalıdır.
+Bu durumlarda araç sorunu gibi görünen şey aslında ağ sorunudur. Model zaman aşımına uğrar, ama asıl neden bağlantıdır. Katalog boş döner, ama asıl neden kurum dışı erişimin düşmesidir. Tam metin indirilemez, ama sorun Claude Code değil, yayıncı erişim duvarıdır.
 
-## GitHub Issue Şablonu: Başkasına Yardımcı Olmak
+Bölgesel sorunlarda ilk yapılacak şey, aracı suçlamadan önce bağlantı ve erişim katmanını sınamaktır. Aynı işlem farklı bir ağdan çalışıyor mu? Kurumsal VPN açık mı? EZproxy oturumu düşmüş mü? Katalog tarayıcıdan açılıyor mu? Bu sorular cevaplanmadan model davranışı hakkında hüküm vermek erken olur.
 
-Sorun giderme yalnızca kendi sorununu çözmek değildir. İyi belgelenmiş bir sorun, aynı başarısızlıkla karşılaşacak olan bir sonraki araştırmacıya da yardımcı olur. Açık kaynak topluluğunun kurucu jesti budur. Bir sorunu GitHub issue olarak bildirmek, onu paylaşılabilir bir bilgiye dönüştürür. İyi bir issue, yedi adımlı çerçevenin ikinci ve üçüncü adımlarının yazılı karşılığıdır: kaydı almanın ve çoğaltmanın.
+## 8. GitHub Issue Şablonu, Başkasına Yardımcı Olmak
 
-Önerilen yapı aşağıdadır.
+Sorun giderme yalnızca kendi sorununu çözmek değildir. İyi belgelenmiş bir sorun, aynı başarısızlıkla karşılaşacak başka bir araştırmacıya da yardımcı olur. Açık kaynak ekosisteminde iyi bir issue, bireysel bir aksaklığı ortak bilgiye dönüştürür. Sorunu yalnız taşımak yerine kayda geçirmek, hem daha hızlı hem daha akademik bir davranıştır.
 
-```
-**Sorun başlığı.** kısa, tek satır
-**Versiyon.** Claude Code sürümü ve işletim sistemi
-**Beklenen.** ne olmasını umduğunuz
-**Gerçekleşen.** ne oldu
-**Çoğaltma adımları.**
+Vaughan (1996), Challenger kararını incelerken sistemik başarısızlıkların çoğu zaman tek bir büyük hatadan değil, görünür ama paylaşılmayan küçük sapmaların birikiminden doğduğunu gösterir. Perrow (1999) yüksek riskli teknolojilerde benzer bir yapıyı tartışır. Claude Code ile çalışan bir sosyal bilimcinin arşivinde bu ölçekte bir risk yoktur. Ancak ilke yine geçerlidir. Küçük sapmalar görünür kılınmazsa, topluluk aynı hatayı tekrar tekrar yaşar.
+
+Önerilen issue şablonu:
+
+Sorun başlığı. Kısa, tek satır.
+
+Versiyon. Claude Code sürümü, işletim sistemi, kurulum yolu.
+
+Beklenen. Ne olmasını umuyordunuz?
+
+Gerçekleşen. Ne oldu?
+
+Çoğaltma adımları.
+
 1. ...
+
 2. ...
-**İlgili log ya da hata mesajı.**
-```
 
-```
-hata logu buraya
-```
+3. ...
 
-```
-**Daha önce denenenler.** hangi çözümler işe yaramadı
-**Sorunun kategorisi.** araç, bilgi, iletişim ya da belirsiz
-```
+İlgili log ya da hata mesajı.
 
-Bu şablonun gücü, onu dolduran kişiyi sorunu düşünmeye zorlamasında yatar. Beklenen ile gerçekleşen arasındaki farkı yazmak sorunun ne olduğunu netleştirir. Çoğaltma adımlarını sıralamak, sorunun gerçekten yeniden üretilebilir olup olmadığını sınar. Daha önce denenenleri belgelemek, yardım eden kişinin aynı çıkmaz yolları tekrar yürümesini önler.
+Hata logu buraya.
 
-Vaughan (1996), NASA Challenger kararı üzerine çalışmasında, sistemik başarısızlıkların tek bir yıkıcı hatadan değil, görünen ama paylaşılmayan küçük sapmaların birikmesinden doğduğunu gösterir. Perrow (1999), yüksek riskli teknolojilerdeki olağan kazalar üzerine çözümlemesinde aynı örüntüyü ortaya koyar. İyi belgelenmiş bir issue, bu sapmaları topluluk genelinde görünür kılar ve ortak hafızaya ekler. Bir sorunu paylaşmak, onu yalnız taşımaktan hem daha hızlı hem daha onurludur.
+Daha önce denenenler. Hangi çözümler işe yaramadı?
 
-## Kapanış: Dizinin Son Satırı
+Sorunun kategorisi. Araç, bilgi, iletişim ya da belirsiz.
 
-Bu, on kitapçıklık v1.0 manifestosunun son kitapçığıdır. Bu bölüm dizinin kapanışıdır.
+Gizlilik kontrolü. Loglarda kişisel veri, klinik veri ya da anahtar bulunmadığı doğrulandı.
 
-Rehber boyunca tek bir tez işlendi. Claude Code, sosyal bilimci için akademik üretimin metodolojik ortağı olarak kurumlandırıldı. Bu ortaklık ancak bir çerçeve, bir disiplin ve bir etikle anlam kazanır. İlk kitapçık Claude Code'un epistemolojik düzeyde ne olduğunu tanımladı. Yöntemsel omurga kitapçıkları hafızayı, arşiv mimarisini ve bölgesel akademik erişimi kurdu. Üretim çevrimi kitapçıkları yazımı, etiği ve hakem değerlendirmesini ele aldı. Bu son kitapçık, işler ters gittiğinde başvurulacak muhakeme çerçevesini verdi.
+Bu şablonun gücü, onu dolduran kişiyi düşünmeye zorlamasında yatar. Beklenen ile gerçekleşen arasındaki farkı yazmak sorunu netleştirir. Çoğaltma adımlarını sıralamak, sorunun gerçekten yeniden üretilebilir olup olmadığını sınar. Daha önce denenenleri yazmak, yardım edecek kişinin aynı çıkmaz yolları tekrar yürümesini önler. Gizlilik kontrolü ise klinik ve insan katılımcılı araştırma bağlamlarında vazgeçilmezdir. Hiçbir log, hiçbir ekran görüntüsü, hiçbir hata mesajı kişisel veri sızdırmamalıdır.
 
-Sorun gidermenin bir hata listesi değil bir muhakeme çerçevesi olması, rehberin baştan sona savunduğu tezin son ve tutarlı uzantısıdır. Liste eskir. Çerçeve kalır. On kitapçığın hepsi okunduğunda, sosyal bilim araştırmacısının elinde, Claude Code ile akademik üretime başlamak için her şey olmasa bile, doğru yöne ilk adımı atmak için yeterli bir çerçeve vardır. Geri kalanı pratiğin kendi sınavı olacaktır.
+## 9. Çalışılmış Sorun Giderme Senaryoları
+
+Bu bölümdeki örnekler gerçek olaylardan alınmamıştır. Arşiv sanitizasyon protokolüne uygun sentetik senaryolardır. Ama her biri sosyal bilim araştırmacısının Claude Code ile karşılaşabileceği gerçek sorun sınıflarını temsil eder.
+
+### Senaryo 1. Hakem yanıtı dosyası yanlış sürümle açıldı
+
+Belirti şudur. Yazar, revizyon dosyasını açar ve bazı değişikliklerin kaybolduğunu görür. İlk açıklama dosyanın bozulduğu olabilir. Yedi adımlı protokol daha sakin ilerler. Önce kayıt alınır. Dosya adı, tarih, klasör yolu, son değiştirilme zamanı ve varsa bulut senkronizasyon geçmişi kaydedilir. Sonra sorun çoğaltılır. Aynı dosya farklı cihazda da eski sürüm mü görünüyor? Ardından daraltılır. Sorun dosyada mı, bulut senkronizasyonunda mı, yoksa yanlış klasörde mi? Kök neden çoğu zaman aynı dosyanın iki klasörde iki farklı sürümle durmasıdır. Çözüm, tek ana dosyayı belirlemek, diğerini arşivlemek ve revizyon klasörüne sürüm adı sözleşmesi eklemektir.
+
+### Senaryo 2. Atıf doğrulama akışı sessizce yanlış künye üretiyor
+
+Belirti şudur. Kaynakça biçimsel olarak düzgün görünür, ama bir dergi adı beklenenden farklıdır. İlk açıklama, APA biçiminde küçük bir stil farkı olabilir. Protokol bunu kabul etmez. Girdi ve çıktı kaydedilir. Aynı kaynak yeniden işlenir ve aynı hata üretilirse sorun tekrarlanabilir. Tek bir kaynakla deneme yapılır. Dergi adı alanı izole edilir. Kök neden, API'den dönen container title alanının yanlış ya da eksik alınması olabilir. En küçük doğru düzeltme, künye eşleştirme adımına yayıncı sayfasıyla karşılaştırma kontrolü eklemektir.
+
+### Senaryo 3. Model aynı dönüşümü tekrar tekrar deniyor
+
+Belirti şudur. Bir veri dosyası temizlenecektir. Model komutu çalıştırır, hata alır, aynı dönüşümü yeniden dener. Döngü ilerlemez. Sorun modelin çabasında değildir. Varsayım yanlıştır. Dosya beklenen biçimde değildir. Araştırmacı döngüyü durdurur ve komutu değiştirir. Dönüştürmeyi deneme. Önce dosyanın yapısını tanı, ayırıcıyı, kodlamayı ve başlık satırını raporla. Bu hamle döngüyü kırar. Araştırmacı tekrar etmesini değil, bakmasını istemiştir.
+
+### Senaryo 4. Konferans sunumu sahnede açılmıyor
+
+Belirti şudur. Sunum dosyası projektör bilgisayarında bozulmuş görünür. Bu da sorun giderme protokolünün konusudur. Önce kayıt alınır. Dosya hangi formatta, hangi sürümde, hangi cihazda açılmadı? Sonra daraltılır. PDF sürümü açılıyor mu? Yerel kopya açılıyor mu? Bulut bağlantısı mı çalışmıyor? Çözüm çoğu zaman önceden hazırlanmış üçlü yedektir. PPTX, PDF ve tek sayfalık özet. Sunum canlı performanstır. Canlı performansta sorun giderme, teknik beceri kadar önceden kurulan yedek düzenidir.
+
+## 10. Kapanış, Dizinin Son Satırı
+
+Bu kitapçık, v1.0 manifestosunun kapanış kitapçığıdır. Rehber boyunca tek bir tez işlendi. Claude Code, sosyal bilimci için akademik üretimin yöntemsel ortağı olarak ancak bir çerçeve, bir disiplin ve bir etik içinde anlam kazanır. İlk kitapçık aracın ne olduğunu sordu. Son kitapçık, araç aksadığında ne yapılacağını soruyor.
+
+Bu kapanış bilinçli bir tercihtir. Çünkü bir rehberin gerçek değeri, her şey yolundayken değil, bir şeyler ters gittiğinde anlaşılır. Kurulum çalışırken herkes kendini yetkin hisseder. Arşiv düzenliyken herkes düzenlidir. Kaynaklar doğrulanırken herkes titizdir. Asıl sınav, hata mesajı geldiğinde, kaynak bulunmadığında, model döngüye girdiğinde ve süre azaldığında başlar.
+
+Sorun gidermenin bir hata listesi değil bir muhakeme çerçevesi olması, rehberin baştan sona savunduğu yaklaşımın son uzantısıdır. Liste eskir. Çerçeve kalır. Bu dizinin bütün kitapçıkları birlikte okunduğunda sosyal bilim araştırmacısının elinde her sorunu çözecek bir büyü değil, daha değerli bir şey bulunur. Araçla çalışırken neyi devredebileceğini, neyi devredemeyeceğini, neyi kaydetmesi gerektiğini ve sorun çıktığında nereden başlayacağını gösteren bir akademik çalışma disiplini.
+
+Geri kalanı pratiğin sınavıdır.
 
 ## Kaynakça
 
-Atıflar APA 7 biçimindedir. Reason (2000) DOI'si 2026-06-04 tarihinde Crossref üzerinden doğrulanmıştır. Tüm kitap ISBN'leri yayıncı kayıtlarına göre teyit edilmiştir.
+Atıflar APA 7 biçimindedir. Tüm referanslar 2026-06-21 tarihinde Crossref üzerinden doğrulanmıştır. Tüm kitap ISBN'leri yayıncı kayıtlarına göre teyit edilmiştir.
 
 Dörner, D. (1996). *The logic of failure: Why things go wrong and what we can do to make them right*. Metropolitan Books. ISBN 978-0-8050-4160-6
 
@@ -150,7 +226,7 @@ Perrow, C. (1999). *Normal accidents: Living with high-risk technologies* (Updat
 
 Pólya, G. (2014). *How to solve it: A new aspect of mathematical method*. Princeton University Press. (Orijinal eser 1945 yılında yayımlanmıştır). ISBN 978-0-691-16407-6
 
-Reason, J. (2000). Human error: Models and management. *BMJ*, 320(7237), 768–770. https://doi.org/10.1136/bmj.320.7237.768
+Reason, J. (2000). Human error: Models and management. *BMJ*, *320*(7237), 768–770. https://doi.org/10.1136/bmj.320.7237.768
 
 Schoenfeld, A. H. (1985). *Mathematical problem solving*. Academic Press. ISBN 978-0-12-628870-4
 
@@ -159,10 +235,10 @@ Vaughan, D. (1996). *The Challenger launch decision: Risky technology, culture, 
 ---
 
 **Kitapçık kimliği.** `012-01-0001`
-**Sürüm.** `0.1.0`
-**Tarih.** 2026-06-20
+**Sürüm.** `0.2.0`
+**Tarih.** 2026-06-21
 **Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
-**Sözcük sayısı (yaklaşık).** 2377 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 3021 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 7
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`010-01-0001`](../../010-peer-review/010-01-0001/tr.md). İzlenebilirlik Matrisleri ile Hakem Yanıt Mektupları

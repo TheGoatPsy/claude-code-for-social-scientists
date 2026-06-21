@@ -4,9 +4,9 @@ title_tr: "Yeniden Üretilebilir Nicel İş Akışları"
 booklet_id: "008-01-0001"
 category: "008-data-analysis"
 language: "tr"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-05-29"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -21,8 +21,8 @@ ai_tools:
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
-verified_citations_count: 10
+human_review_date: "2026-06-21"
+verified_citations_count: 11
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
 license:
@@ -32,102 +32,120 @@ status: "release"
 
 # Yeniden Üretilebilir Nicel İş Akışları
 
-Bu rehberin önceki kitapçıkları aracın ne olduğunu, sohbet penceresinden nasıl ayrıldığını, nasıl kurulduğunu ve hangi kalıcı talimatlarla yönetildiğini ele aldı. Bu kitapçık, sosyal bilimcinin coding agent ile en sık yaptığı işe odaklanır: nicel veri analizi. Anthropic'in 2026 yılında ABD ve Kanada'daki 1.260 nicel sosyal bilimciyle yürüttüğü tarama, ankete katılan coding agent kullanıcılarının büyük çoğunluğunun aracı kod üretmek için, en çok da nicel veriyi analiz etmek amacıyla kullandığını ortaya koyar (Lyttelton ve diğerleri, 2026). Bu çalışmayı okurken dikkatli bir araştırmacının kaydetmesi gereken bir sınır vardır: rapor Anthropic tarafından desteklenmiş, hakemli olmayan bir kaynaktır ve yayımcının incelenen konunun kendisi olmasından kaynaklanan yapısal bir çıkar çatışması taşır. Bu kısıtlama göz önünde tutularak, bulgu bağımsız araştırmanın genel çizgisiyle örtüşür: yapay zekâ yardımı, yapılandırılmış, tekrar eden ve yüksek hacimli görevlerde yoğunlaşır (Ziems ve diğerleri, 2024). Oysa analizi bir ajana devretmek, yeniden üretilebilirliği kendiliğinden getirmez. Tersine, yeni bir kırılganlık yaratır. Bu kitapçık, otonom analiz akışını dürüst ve yeniden üretilebilir tutmanın disiplinini ele alır.
+Bu kitapçık, sosyal bilimcinin kodlama ajanlarıyla en sık yaptığı işlerden birine odaklanır: nicel veri analizi. Önceki kitapçıklar aracın ne olduğunu, nasıl kurulduğunu, hangi kalıcı talimatlarla yönetileceğini ve akademik yazı sürecinde nasıl kullanılacağını ele almıştı. Burada mesele artık doğrudan analitik iş akışıdır. Bir veri seti, bir araştırma sorusu ve bir ajan aynı çalışma dizininde buluştuğunda, araştırmacının ilk sorumluluğu hız değil, yeniden üretilebilirliktir.
 
-## Ajan tabanlı analizin zor problemi
+Anthropic'in 2026 yılında ABD ve Kanada'daki 1.260 nicel sosyal bilimciyle yürüttüğü tarama, ankete katılan kodlama ajanı kullanıcılarının aracı en çok kod üretmek ve nicel veriyi analiz etmek için kullandığını göstermektedir (Lyttelton ve diğerleri, 2026). Bu rapor hakemli bir yayın değildir ve Anthropic tarafından desteklenmiştir. Dolayısıyla çalışmanın yayıncısı, aynı zamanda incelenen teknolojinin üreticisidir. Bu çıkar çatışması açıkça not edilmelidir. Bununla birlikte bulgu, yapay zekâ yardımının yapılandırılmış, tekrarlı ve yüksek hacimli görevlerde yoğunlaştığını gösteren bağımsız literatürle de uyumludur (Ziems ve diğerleri, 2024).
 
-Bir ajan, bir veri setini ve bir araştırma fikrini alıp analizi yazabilir, çalıştırabilir, çıktıyı yorumlayabilir ve kendi başına yineleyebilir. Yukarıda belirtilen çıkar çatışması kısıtlamasını akılda tutarak okunması gereken Lyttelton ve diğerleri (2026) taraması, kullanımın tam da bu yönde yoğunlaştığını ortaya koyar. Bu yoğunlaşma hem gücün hem riskin kaynağıdır.
+Bu kitapçığın temel iddiası şudur. Ajan tabanlı analiz, nicel sosyal bilim araştırmalarında ciddi bir verimlilik sağlayabilir. Ancak bu verimlilik yalnızca belirtim günlüğü, sabit tohum, veri sürümü, çalışma ortamı kaydı, insan denetimi ve açık beyanla birlikte akademik değer taşır. Aksi durumda hız, yeniden üretilebilirliği güçlendirmek yerine zayıflatır.
 
-Hesaplamalı araştırmada yeniden üretilebilirlik, başkasının ya da aylar sonra aynı araştırmacının aynı veriden aynı sonuca ulaşabilmesi demektir (Peng, 2011). Bir ajan analizi saniyeler içinde ürettiğinde, ara kararlar, denenen yollar ve nihai koda götüren muhakeme görünmez kalabilir. Somut bir senaryo düşünün: örtük yanlılığı araştıran bir sosyal psikolog, anket verisi üzerinde bir regresyon çalıştırıyor. Ajan, birkaç geçerli değişken kodlaması ve model belirtimi arasında seçim yaparken bunların hiçbirini günlüğe geçirmiyor ve temiz görünümlü bir sonuç döndürüyor. On iki ay sonra bir ortak yazar bu sonucu yeniden üretemiyor. Sorun ajanın yetkinliği değil: bir kaydın yokluğudur.
+## 1. Ajan Tabanlı Analizin Zor Problemi
 
-Sandve ve diğerleri (2013), yeniden üretilebilir hesaplamalı araştırma için on basit kural sıralar. Bu kuralların özünde sürecin her adımının kaydedilmesi ve mümkün olduğunca otomatikleştirilmesi yatar. Wilson ve diğerleri (2017) bu talebi tüm yetkinlik düzeylerindeki bilimsel hesaplama için pratik bir çerçeveye taşır: sürüm denetimi, ortam yakalama ve veri işleme hattının otomasyonu. Ajan tabanlı analiz bu disiplini kolaylaştırmaz, aksine zorlaştırır. Hızın getirdiği kolaylık, kayıt tutma alışkanlığının önüne geçer. Sonuç bir saniyede gelirse onu nasıl ürettiğinizi yazmak gereksiz görünür. Oysa bir yıl sonra o sonucu yeniden üreten kişi için, tam da o kayıt belirleyicidir.
+Bir ajan, bir veri setini ve bir araştırma fikrini alıp analiz kodu yazabilir, çalıştırabilir, çıktıyı yorumlayabilir ve kendi önerilerini yineleyebilir. Bu kapasite, araştırmacının zamanını azaltabilir. Ancak aynı kapasite, analizin hangi ara kararlarla şekillendiğini görünmez hâle getirebilir. Nicel analizde sorun çoğu zaman yalnızca yanlış kod yazılması değildir. Asıl sorun, doğru görünen bir sonuca hangi karar yoluyla ulaşıldığının kayıt dışı kalmasıdır.
 
-## İşi ajan yaptığında yeniden üretilebilir ne demek
+Hesaplamalı araştırmada yeniden üretilebilirlik, aynı veriden aynı sonuca yeniden ulaşılabilmesi anlamına gelir (Peng, 2011). Bu tanım, ajan tabanlı analizde daha da önem kazanır. Çünkü ajan saniyeler içinde çok sayıda dönüşüm, model belirtimi, dışlama ölçütü ve tablo üretim adımı deneyebilir. Araştırmacı bu adımların hangilerinin denendiğini, hangisinin seçildiğini ve neden seçildiğini kaydetmezse, sonucun bilimsel statüsü zayıflar.
 
-Ajan tabanlı hız, özgül bir yeniden üretilebilirlik tuzağı doğurur: bir analiz tamamlanmış görünebilirken onu şekillendiren kararlar tümüyle kayıt dışı kalabilir. Bir analiz, ancak çıktısına götüren süreç sabitlendiğinde yeniden üretilebilir olur. Ajan tabanlı bir akışta bu yüzden sürecin temel bileşenlerinin tamamı kayda geçmelidir.
+Somut bir örnek düşünelim. Örtük yanlılığı çalışan bir sosyal psikolog, anket verisi üzerinde regresyon modeli kuruyor. Ajan birkaç değişken kodlaması, birkaç dışlama ölçütü ve iki model belirtimi arasında seçim yapıyor. Sonuç temiz görünüyor. Tablo düzenli, p-değerleri makul, metin akıcı. Ancak on iki ay sonra ortak yazarlardan biri analizi yeniden üretmek istediğinde aynı sonuca ulaşamıyor. Burada sorun ajanın yetersizliği değildir. Sorun, karar yolunun kaydedilmemiş olmasıdır.
 
-Ajana verilen talimat, analizin asıl metnidir: kapsamını, varsayımlarını, dışlama ölçütlerini tanımlar. Model ve sürümü de kaydedilmelidir, çünkü aynı istem farklı bir modelde ya da farklı bir model sürümünde farklı kod üretebilir. Veri sürümü bir sağlama değeri ya da sürüm etiketiyle sabitlenmeli, hangi anlık görüntünün kullanıldığı belirsiz kalmamalıdır. Bölme, örnekleme ve önyükleme içeren her adım sabit bir rastgelelik tohumu olmadan her çalışmada farklı sonuç verir. Tohumun belirtim günlüğüne açıkça yazılması şarttır. Çalışma ortamı da bu kayıtların ayrılmaz parçasıdır: paket sürümleri, kod değişmemiş olsa bile sonucu sessizce değiştirebilir.
+Sandve ve diğerleri (2013), yeniden üretilebilir hesaplamalı araştırma için sürecin her adımının kaydedilmesi ve mümkün olduğunca otomatikleştirilmesi gerektiğini vurgular. Wilson ve diğerleri (2017) bu ilkeyi bilimsel hesaplama pratiğine taşır. Sürüm denetimi, ortam yakalama ve veri işleme hattının otomasyonu yalnızca yazılım mühendisliği ayrıntısı değildir. Nicel sosyal bilimci için de bilimsel güvenilirliğin altyapısıdır. Ajan tabanlı analiz bu gerekliliği azaltmaz. Tam tersine, daha görünür hâle getirir.
 
-Bu bileşenler, bu rehberin daha önce tanıttığı iki kalıba doğrudan bağlanır. `CLAUDE.md`, modeli, talimatı ve sınırları sabitleyerek analizin yapay zekâ bileşenini belgeler (kitapçık 001-01-0004). İkinci kalıp ise istemleri, ara kararları ve veri pasaportlarını kalıcı bir klasörde toplayarak araştırma sürecini oturumlar arası izlenebilir kılan hafızayı arşive dönüştürme disiplinidir (kitapçık 003-01-0001). Ne hafızayı arşive dönüştürme kavramı ne de `CLAUDE.md` kalıpları yerleşik akademik standartlardır. Her ikisi de bu rehberin araştırmacı pratiği için geliştirdiği işlevsel çerçevedir ve burada birer uygulayıcı aracı olarak sunulur. Birlikte, ajan tabanlı analizi tek seferlik bir sihir olmaktan çıkarıp belgelenmiş bir yordama dönüştürürler.
+## 2. İşi Ajan Yaptığında Yeniden Üretilebilirlik Ne Demek?
 
-## Çatallanan yolların bahçesi, artık otomatik
+Bir analizin yeniden üretilebilir sayılabilmesi için yalnızca çıktısının saklanması yetmez. O çıktıya götüren yolun da sabitlenmesi gerekir. Ajan tabanlı bir akışta bu yol birkaç bileşenden oluşur. Ajana verilen istem, kullanılan model ve sürüm, veri setinin sürümü, rastgelelik tohumu, paket sürümleri, çalıştırılan kod ve ara kararlar kaydedilmelidir.
 
-Bir veri setinde sayısız geçerli analiz yolu vardır: hangi değişkenlerin dışlanacağı, hangi dönüşümün uygulanacağı, hangi alt grubun inceleneceği. Her seçim savunulabilir, her seçim farklı bir sonucu mümkün kılar. Gelman ve Loken (2014), bunu çatallanan yolların bahçesi olarak adlandırır. Araştırmacı tek bir hipotezi sınadığını sanırken, veriye bağlı kararlar görünmez bir çoklu karşılaştırmalar ağacı yaratır. Simmons ve diğerleri (2011), bu araştırmacı serbestlik derecelerinin, açıkça raporlanmadığında, neredeyse her sonucu istatistiksel olarak anlamlı gösterebileceğini deneysel olarak ortaya koyar.
+Ajana verilen talimat analizin yöntemsel metnidir. Hangi değişkenlerin kullanılacağını, hangi dışlama ölçütlerinin uygulanacağını, hangi modelin öncelikli olduğunu ve hangi çıktının beklendiğini belirler. Model ve sürüm kaydı da önemlidir. Aynı istem farklı bir modelde ya da farklı bir model sürümünde farklı kod üretebilir. Veri sürümü sabitlenmezse aynı dosyanın hangi anlık görüntüsünün kullanıldığı belirsiz kalır. Rastgelelik tohumu yazılmazsa örnekleme, bölme ve önyükleme adımları her çalıştırmada farklı sonuç verebilir.
 
-Bir ajan bu sorunu kat kat büyütür. Ajan şikâyet etmez. Saatlik işi saniyeye sıkıştırır. Bir araştırmacının saatler harcayacağı onlarca belirtimi saniyeler içinde dener ve en temiz görüneni sunabilir. Niyet kötü olmasa bile, sonuç seçici raporlamadır. Yukarıda belirtilen çıkar çatışması kısıtlamasını göz önünde tutarak okunması gereken Lyttelton ve diğerleri (2026) taraması, ankete katılan araştırmacıların tam da bu riskten, yapay zekânın seçici raporlamayı ve riskten kaçınan artımsal araştırmayı kötüleştirmesinden çekindiğini kaydeder. Bu korku abartılı değildir. Ajan tabanlı hız, zaten var olan bir yöntemsel kırılganlığı elle tutulur, gerçek bir tehlikeye dönüştürür.
+Bu bileşenler rehberin önceki kitapçıklarında kurulan iki kalıba bağlanır. CLAUDE.md, modelin talimat ve sınırlarını belgeleyen kalıcı talimat dosyasıdır. Hafızayı arşive dönüştürme kalıbı ise istemleri, veri pasaportlarını, ara kararları ve çıktı kayıtlarını kalıcı bir klasör düzeninde tutar. Bu iki kalıp yerleşik akademik standartlar olarak değil, bu rehberin araştırmacı pratiği için geliştirdiği uygulayıcı çerçeveler olarak sunulmaktadır. Birlikte, ajan tabanlı analizi tek oturumluk bir işlem olmaktan çıkarıp izlenebilir bir iş akışına dönüştürürler.
 
-## Ön kayıt zihniyeti ve belirtim günlüğü
+## 3. Çatallanan Yolların Bahçesi Artık Otomatik
 
-Bu tehlikenin panzehiri eskidir ve ajan tabanlı çağda öncekinden çok daha değerlidir. Ön kayıt, analiz planını veriye bakmadan, ajan tabanlı bağlamda ise en azından ajanı çalıştırmadan önce yazıya dökmektir. Nosek ve diğerleri (2018), ön kaydın doğrulayıcı ile keşfedici analizi verinin analistin seçimlerini etkileyemeyeceği bir noktada ayırarak serbestlik derecelerini kontrol altına aldığını savunur. Munafò ve diğerleri (2017), yeniden üretilebilir bilim için hazırladıkları yaygın atıf gören manifestoda, ön kaydı ve şeffaf raporlamayı alanın sağlamlığının yapısal temeli sayar. Bunlar, araştırmacının tercihine bırakılmış iyileştirmeler değildir. Alanın mimarisini kuran zorunluluklardır.
+Bir veri setinde çoğu zaman birden fazla savunulabilir analiz yolu vardır. Hangi değişkenlerin dışlanacağı, hangi dönüşümün uygulanacağı, hangi alt grubun analiz edileceği ve hangi model belirtiminin kullanılacağı sonuçları değiştirebilir. Gelman ve Loken (2014), bu durumu çatallanan yolların bahçesi olarak adlandırır. Araştırmacı tek bir hipotezi sınadığını düşünebilir, ancak veriye bağlı kararlar görünmez bir çoklu karşılaştırmalar ağacı üretir.
 
-Ajan tabanlı akışta bunun somut hâli bir belirtim günlüğüdür: ajanı çalıştırmadan önce yazılan, planlanan analizi, asıl hipotezi ve önceden sabitlenmiş kararları kaydeden düz metin ya da Markdown bir dosya. Ajan keşif sırasında alternatif belirtimler denerse, bunların keşfedici nitelikte olduğu belirtilir. Doğrulayıcı sonucun yerine geçemezler. Plandan her sapma günlüğe gerekçesiyle birlikte işlenir. Böylece ajanın ürettiği zenginlik gizli bir balık avına değil, bir makaleyi zayıflatmak yerine güçlendiren açık bir duyarlılık analizine dönüşür.
+Simmons ve diğerleri (2011), açıkça raporlanmayan araştırmacı serbestlik derecelerinin neredeyse her sonucu anlamlı gösterebileceğini deneysel olarak ortaya koymuştur. Ajan tabanlı analiz bu riski büyütür. Çünkü ajan yorulmaz, beklemez, itiraz etmez. Araştırmacının saatlerce sürecek biçimde deneyebileceği alternatifleri saniyeler içinde çalıştırabilir. En temiz görünen sonucu sunabilir. Niyet kötü olmasa bile, kayıt tutulmadığında bu süreç seçici raporlamaya dönüşebilir.
 
-## Bulan notlayan olamaz, istatistiğe uygulanmış
+Lyttelton ve diğerleri (2026) raporunda, ankete katılan sosyal bilimcilerin yapay zekânın seçici raporlamayı ve riskten kaçınan artımsal araştırmayı kötüleştirebileceğinden kaygı duyduğu belirtilmektedir. Raporun gri literatür ve satıcı kaynaklı olduğu unutulmamalıdır. Yine de kaygının kendisi yöntemsel olarak ciddidir. Ajan tabanlı hız, zaten var olan kırılganlığı görünmez biçimde büyütebilir.
 
-Bu rehberin tekrar eden ilkesi şudur: bir bulguyu üreten araç, aynı zamanda onu onaylayan merci olamaz. İstatistikte bu ilke iki kat önemlidir. Bir ajan, bir testin çıktısını yorumlarken çıktının kendisiyle çelişen bir özet sunabilir. Katsayının işaretini, anlamlılık eşiğini ya da etki büyüklüğünü yanlış aktarabilir. Bu nedenle ajanın yorumu her zaman ham çıktıya, yani tablodaki sayıya karşı bağımsız olarak doğrulanmalıdır. Asıl kriter tablodaki sayıdır.
+## 4. Ön Kayıt Zihniyeti ve Belirtim Günlüğü
 
-Bu uyarının gerekçesi modelin yapısından gelir. Model, anlamadan istatistiksel örüntü üreten bir sistemdir ve en titiz talimatla bile bu risk ortadan kalkmaz (Bender ve diğerleri, 2021). Üretilen metin, bilgi üretimi açısından, doğru görünmek ile doğru olmak arasındaki farkı kendiliğinden gözetmeyen bir karaktere sahip olabilir (Hicks ve diğerleri, 2024). Bir regresyon tablosunun akıcı bir özeti, tablonun söylediği şeyi söylediği anlamına gelmez. Sonuç basittir: sayının kendisini oku ve ajanın yorumunu ham çıktıya karşı doğrulanması gereken bir taslak olarak ele al. Yapısal disiplin olmadan ajan tabanlı analiz güvenilir olmaz. Onunla birlikte ise yeniden üretilebilir bir araç hâline gelir.
+Bu riskin en güçlü panzehirlerinden biri ön kayıt zihniyetidir. Ön kayıt, analitik kararların veriye bakmadan önce yazıya dökülmesidir. Ajan tabanlı analizde bu, en azından ajanı çalıştırmadan önce planlanan analizin ve birincil hipotezin kaydedilmesi anlamına gelir. Nosek ve diğerleri (2018), ön kaydın doğrulayıcı analiz ile keşfedici analizi birbirinden ayırarak araştırmacı serbestlik derecelerini daha görünür kıldığını savunur. Munafò ve diğerleri (2017), ön kayıt ve şeffaf raporlamayı yeniden üretilebilir bilimin yapısal temelleri arasında konumlandırır.
 
-## Prosedürü devret, yargıyı devretme
+Bu kitapçığın pratik önerisi belirtim günlüğüdür. Belirtim günlüğü, ajanı çalıştırmadan önce yazılan ve planlanan analizi, asıl hipotezi, kullanılacak değişkenleri, dışlama ölçütlerini, model belirtimini ve rastgelelik tohumunu kaydeden düz metin ya da Markdown dosyasıdır. Ajan keşif sırasında alternatif belirtimler denerse, bunlar keşfedici olarak işaretlenir. Doğrulayıcı sonucun yerine geçmezler.
 
-Ajan tabanlı analizde devredilebilen ile devredilemeyen arasındaki çizgi, yeniden üretilebilirlik kadar önemlidir. Devredilebilenler tekrar eden yordamlardır: veriyi yükleme, önceden belirlenmiş plana göre dönüştürme, bir grafiği üretme, bir tabloyu biçimlendirme. Devredilemeyen ise istatistiksel yargıdır. Hangi testin veri yapısına uyduğu, hangi varsayımın alanın kuramsal kısıtları çerçevesinde savunulabilir olduğu, hangi gözlemin meşru biçimde dışlanabileceği ve bir etki büyüklüğünün kuramsal olarak ne anlam taşıdığı araştırmacıda kalır.
+Plandan her sapma gerekçesiyle birlikte günlüğe yazılır. Böylece ajanın ürettiği analitik zenginlik gizli bir balık avına değil, açık bir duyarlılık analizine dönüşür. Bu kayıt, makaleyi zayıflatmaz. Tam tersine, hakem karşısında savunulabilir hâle getirir.
 
-Bir ajan belirli bir test önerebilir ve gerekçesini açıklayabilir. Ama o gerekçenin geçerliliğine karar vermek, hem alanın kuramını hem de verinin bağlamını bilen araştırmacının işidir. Talimat dosyası yordamı araca devreder, yargıyı değil (kitapçık 001-01-0004). Ajan analizi hızlandırır, sorumluluğu ise araştırmacı üstlenir.
+## 5. Bulan Notlayan Olamaz, İstatistiğe Uygulanmış
 
-## Pratikte yeniden üretilebilir ajan tabanlı iş akışı
+Bu rehberin tekrar eden ilkesi şudur. Bir bulguyu üreten araç, aynı zamanda o bulguyu onaylayan merci olamaz. İstatistikte bu ilke iki kat önemlidir. Bir ajan, bir testin çıktısını yorumlarken katsayının işaretini, anlamlılık eşiğini, güven aralığını ya da etki büyüklüğünü yanlış aktarabilir. Bu nedenle ajanın yorumu her zaman ham çıktıya karşı bağımsız olarak doğrulanmalıdır. Asıl ölçüt tablodaki sayıdır.
 
-Bu disiplin, araştırmacının bizzat sahiplendiği somut bir dizi adıma iner.
+Bu uyarının gerekçesi modelin yapısında yatar. Büyük dil modelleri gerçek bir anlayışa sahip olmaksızın istatistiksel örüntüler üretebilir (Bender ve diğerleri, 2021). Ürettikleri metin, doğru görünmek ile doğru olmak arasındaki farkı kendiliğinden gözetmeyebilir (Hicks ve diğerleri, 2024). Bir regresyon tablosunun akıcı bir özeti, tablonun gerçekten söylediği şeyi söylediği anlamına gelmez.
 
-Her rastgele adımda, her bölme, örnekleme ve önyükleme işleminde tohumu sabitleyin ve bu tohumu belirtim günlüğüne açıkça yazın. Çalışma ortamını yakalayın: paket sürümlerini bir kilit dosyasında dondurun ki analiz bir yıl sonra bugünküyle aynı ortamda çalışsın. Sonucu kesin saymadan önce analizi temiz bir oturumda baştan yeniden çalıştırın. Birikmiş duruma dayanan bir sonuç yeniden üretilebilir değildir. Ajanın izlediği yolu günlüğe yazın: hangi belirtimlerin denendiği ve seçilenin neden seçildiği kaydedilmelidir. Böylece makalenin yöntem bölümü gerçek analitik süreci yansıtır. Son olarak asıl istemi ve model sürümünü çıktının yanında arşivleyin, ayrı tutmayın. Böylece analizin yapay zekâ bileşeni, ne yapıldığını anlamak isteyen bir okuyucu için geri kazanılabilir olur.
+Araştırmacı bu nedenle sayıyı kendisi okumalıdır. Ajanın yorumunu ham çıktıya karşı doğrulanması gereken bir taslak olarak ele almalıdır. Yapısal disiplin olmadan ajan tabanlı analiz güvenilir olmaz. Disiplinle birlikte ise yeniden üretilebilir bir çalışma aracına dönüşebilir.
 
-Bu adımlar, Sandve ve diğerleri (2013) ile Wilson ve diğerleri (2017) tarafından ortaya konan ilkenin ajan tabanlı akışa taşınmış hâlidir: sürecin her adımını kaydedin ve otomatikleştirin. Talimat dosyası bir makalenin yöntem bölümünün makineye bakan yüzüyse, bu günlük de analizin sağlama defteridir. Bu disiplin olmadan ajanın hızı yeniden üretilebilirliği zayıflatır. Disiplinle birlikte ise ajan araştırmanın güvenilir bir parçasına dönüşür.
+## 6. Prosedürü Devret, Yargıyı Devretme
 
-## Yapay zekânın analitik rolünün dürüst beyanı
+Ajan tabanlı analizde devredilebilen ile devredilemeyen arasındaki çizgi net tutulmalıdır. Devredilebilenler tekrar eden yordamlardır. Veriyi yüklemek, önceden belirlenmiş plana göre dönüştürmek, bir grafiği üretmek, bir tabloyu biçimlendirmek ve kodu çalıştırmak bu gruba girer.
 
-Analizde kullanılan yapay zekâ, makalenin yöntem bölümünde ya da yapay zekâ katkı beyanında açıkça belirtilmelidir. Bir beyan tek başına yeterli değildir. Asıl önemli olan, yapay zekânın analizde nasıl ve hangi biçimlerde kullanıldığının okura açıkça anlatılmasıdır. Bu rehberin etik kitapçığı, beyanın prensipten davranışa nasıl indiğini gösterir (kitapçık 009-01-0001). Bu kitapçığın kendisi de bir örnektir: frontmatter bloğu, yapay zekâ araçlarının da okuyabildiği, onlara işin doğru yapılmasına yön veren yapılandırılmış bir bloktur. Blok, metnin büyük ölçüde yapay zekâ tarafından, insan onaylı bir taslak üzerinden yazıldığını ve yazar tarafından gözden geçirildiğini açıkça ortaya koyar. Aynı dürüstlük, bir ajanın yürüttüğü analiz için de geçerlidir.
+Devredilemeyen ise istatistiksel yargıdır. Hangi testin veri yapısına uygun olduğu, hangi varsayımın alanın kuramsal kısıtları içinde savunulabilir olduğu, hangi gözlemin dışlanabileceği ve bir etki büyüklüğünün kuramsal anlamı araştırmacıda kalır. Ajan belirli bir test önerebilir. Ancak o gerekçenin geçerli olup olmadığına karar vermek, alanın kuramını ve verinin bağlamını bilen araştırmacının işidir.
 
-Bu rehberdeki `AI-AUTHORSHIP.md` dosyası, kademelere ayrılmış bir katkı sınıflandırması sunar. Bu sınıflandırmanın ince bir ayrımını belirtmek gerekir: bu, rehber içinde araştırmacı pratiği için geliştirilmiş işlevsel bir tanımdır ve yerleşik bir akademik standart değildir. Ajan yalnızca kodu biçimlendirdiyse bu bir düzeydir. Analizi baştan sona tasarlayıp yürüttüyse bambaşka bir düzeydir. Araştırmacı, hangi kararın kendisine, hangisinin araca ait olduğunu kaydeder. Bu kayıt, hem yeniden üretilebilirliğin hem de bilimsel dürüstlüğün koşuludur. Lyttelton ve diğerleri (2026) taramasının verileri, taşıdığı çıkar çatışması kısıtlamasına karşın, ankete katılan araştırmacıların şeffaf beyanı ajan tabanlı analizin yarattığı nitelik kaybına karşı doğrudan bir yanıt saydığını ortaya koyar. Araştırmacı kaygısı ile beyan pratiği arasındaki bu örtüşme kayıt altına almaya ve üzerine harekete geçmeye değerdir.
+Talimat dosyası yordamı araca devredebilir. Yargıyı devredemez. Ajan analizi hızlandırır. Bilimsel sorumluluğu araştırmacı üstlenir.
 
-## Bir sonraki kitapçık
+## 7. Pratikte Yeniden Üretilebilir Ajan Tabanlı İş Akışı
 
-Bu kitapçık, nicel ajan tabanlı iş akışlarının yeniden üretilebilirlik omurgasını kurdu. Veri analizi kategorisinin sonraki kitapçıkları bu temeli genişletecek: istatistiksel test seçiminde yapay zekâ danışma disiplini ve nitel kodlamada insan gözetimi. Bu arada, analizde yapay zekânın rolünün dürüst beyanı daha geniş bir etik çerçeveye oturur. Kitapçık 009-01-0001 buradan devam eder.
+Bu disiplin, araştırmacının bizzat sahiplenmesi gereken somut adımlara iner. Her rastgele adımda, her bölme, örnekleme ve önyükleme işleminde tohum sabitlenmeli ve belirtim günlüğüne yazılmalıdır. Çalışma ortamı yakalanmalıdır. Paket sürümleri kilit dosyasında tutulmalı, analiz bir yıl sonra aynı ortamda yeniden çalıştırılabilmelidir.
+
+Sonuç kesin kabul edilmeden önce analiz temiz bir oturumda baştan çalıştırılmalıdır. Birikmiş oturum durumuna dayanan sonuç yeniden üretilebilir değildir. Ajanın izlediği yol kaydedilmelidir. Hangi belirtimlerin denendiği, hangisinin seçildiği ve neden seçildiği açık olmalıdır. Asıl istem ve model sürümü çıktının yanında arşivlenmelidir.
+
+Bu adımlar, Sandve ve diğerleri (2013) ile Wilson ve diğerleri (2017) tarafından ortaya konan ilkelerin ajan tabanlı akışa taşınmış biçimidir. Sürecin her adımı kaydedilir. Tekrar eden kısımlar otomatikleştirilir. Son karar araştırmacıda kalır.
+
+## 8. Yapay Zekânın Analitik Rolünün Dürüst Beyanı
+
+Analizde yapay zekâ kullanıldıysa, bu kullanım yöntem bölümünde ya da yapay zekâ katkı beyanında açıkça belirtilmelidir. Bir beyan tek başına yeterli değildir. Okur, yapay zekânın analizde nasıl ve hangi aşamalarda kullanıldığını anlayabilmelidir.
+
+Bu rehberdeki AI-AUTHORSHIP.md dosyası, yapay zekâ katkısını farklı düzeylerde sınıflandıran işlevsel bir çerçeve sunar. Bu sınıflandırma yerleşik bir akademik standart değildir. Rehber içinde araştırmacı pratiğini düzenlemek için geliştirilmiş bir uygulayıcı tanımdır. Ajan yalnızca kodu biçimlendirdiyse bu bir düzeydir. Analizi baştan sona tasarlayıp yürüttüyse bambaşka bir düzeydir.
+
+Araştırmacı, hangi kararın kendisine, hangisinin araca ait olduğunu kaydetmelidir. Bu kayıt, hem yeniden üretilebilirliğin hem de bilimsel dürüstlüğün koşuludur. Lyttelton ve diğerleri (2026) raporu, çıkar çatışması sınırlılığına karşın, araştırmacıların şeffaf beyanı ajan tabanlı analizin yaratabileceği nitelik kaybına karşı önemli bir yanıt olarak gördüğünü göstermektedir.
+
+## 9. Bir Sonraki Kitapçık
+
+Bu kitapçık, nicel ajan tabanlı iş akışlarının yeniden üretilebilirlik omurgasını kurdu. Veri analizi kategorisinin sonraki kitapçıkları bu temeli genişletecektir. İstatistiksel test seçiminde yapay zekâ danışma disiplini ve nitel kodlamada insan gözetimi bu çerçevenin iki devam hattıdır.
+
+Analizde yapay zekânın rolünün dürüst beyanı ise daha geniş bir etik çerçeveye bağlanır. 009-01-0001, Yapay Zekâ Destekli Araştırmada Etik, Prensipten Davranışa, bu noktadan devam eder.
 
 ---
 
 ## Kaynakça
 
-Atıflar APA 7 biçimindedir. Her DOI 2026-06-04 tarihinde Crossref üzerinden bağımsız olarak doğrulanmıştır. Lyttelton ve diğerleri (2026) Anthropic tarafından desteklenmiş gri literatürdür. DOI yayıncı sayfasına çözümlenir. Wilson ve diğerleri (2017) 2026-06-04 tarihinde eklendi.
+Atıflar APA 7 biçimindedir. Her DOI 2026-06-21 tarihinde Crossref üzerinden bağımsız olarak doğrulanmıştır. Lyttelton ve diğerleri (2026) Anthropic tarafından desteklenmiş gri literatürdür. DOI yayıncı sayfasına çözümlenir. Wilson ve diğerleri (2017) 2026-06-04 tarihinde eklendi.
 
-Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? In *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21)* (pp. 610-623). Association for Computing Machinery. https://doi.org/10.1145/3442188.3445922
+Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021). On the dangers of stochastic parrots: Can language models be too big? In *Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21)* (pp. 610–623). Association for Computing Machinery. https://doi.org/10.1145/3442188.3445922
 
-Gelman, A., & Loken, E. (2014). The statistical crisis in science. *American Scientist*, 102(6), 460. https://doi.org/10.1511/2014.111.460
+Gelman, A., & Loken, E. (2014). The statistical crisis in science. *American Scientist*, *102*(6), 460. https://doi.org/10.1511/2014.111.460
 
-Hicks, M. T., Humphries, J., & Slater, J. (2024). ChatGPT is bullshit. *Ethics and Information Technology*, 26(2), Article 38. https://doi.org/10.1007/s10676-024-09775-5
+Hicks, M. T., Humphries, J., & Slater, J. (2024). ChatGPT is bullshit. *Ethics and Information Technology*, *26*(2), Article 38. https://doi.org/10.1007/s10676-024-09775-5
 
 Lyttelton, T., Massenkoff, M., & Wilmers, N. (2026). *Coding agents in the social sciences* [Anthropic tarafından desteklenmiş rapor, gri literatür, çıkar çatışması: yayıncı çalışmanın incelediği konunun kendisidir]. Anthropic. https://www.anthropic.com/research/coding-agents-social-sciences
 
-Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Percie du Sert, N., Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., & Ioannidis, J. P. A. (2017). A manifesto for reproducible science. *Nature Human Behaviour*, 1(1), Article 0021. https://doi.org/10.1038/s41562-016-0021
+Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Percie du Sert, N., Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., & Ioannidis, J. P. A. (2017). A manifesto for reproducible science. *Nature Human Behaviour*, *1*(1), Article 0021. https://doi.org/10.1038/s41562-016-0021
 
-Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. *Proceedings of the National Academy of Sciences*, 115(11), 2600-2606. https://doi.org/10.1073/pnas.1708274114
+Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. *Proceedings of the National Academy of Sciences*, *115*(11), 2600–2606. https://doi.org/10.1073/pnas.1708274114
 
-Peng, R. D. (2011). Reproducible research in computational science. *Science*, 334(6060), 1226-1227. https://doi.org/10.1126/science.1213847
+Peng, R. D. (2011). Reproducible research in computational science. *Science*, *334*(6060), 1226–1227. https://doi.org/10.1126/science.1213847
 
-Sandve, G. K., Nekrutenko, A., Taylor, J., & Hovig, E. (2013). Ten simple rules for reproducible computational research. *PLoS Computational Biology*, 9(10), e1003285. https://doi.org/10.1371/journal.pcbi.1003285
+Sandve, G. K., Nekrutenko, A., Taylor, J., & Hovig, E. (2013). Ten simple rules for reproducible computational research. *PLoS Computational Biology*, *9*(10), e1003285. https://doi.org/10.1371/journal.pcbi.1003285
 
-Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. *Psychological Science*, 22(11), 1359-1366. https://doi.org/10.1177/0956797611417632
+Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. *Psychological Science*, *22*(11), 1359–1366. https://doi.org/10.1177/0956797611417632
 
-Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. *PLoS Computational Biology*, 13(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
+Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). Good enough practices in scientific computing. *PLoS Computational Biology*, *13*(6), e1005510. https://doi.org/10.1371/journal.pcbi.1005510
 
-Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can large language models transform computational social science? *Computational Linguistics*, 50(1), 237-291. https://doi.org/10.1162/coli_a_00502
+Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can large language models transform computational social science? *Computational Linguistics*, *50*(1), 237–291. https://doi.org/10.1162/coli_a_00502
 
 ---
 
 **Kitapçık kimliği.** `008-01-0001`
-**Sürüm.** `0.1.0`
-**Tarih.** 2026-06-20
+**Sürüm.** `0.2.0`
+**Tarih.** 2026-06-21
 **Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
-**Sözcük sayısı (yaklaşık).** 1682 (Türkçe gövde metni, wc ile ölçüldü)
-**Doğrulanmış atıf sayısı.** 10
+**Sözcük sayısı (yaklaşık).** 1524 (Türkçe gövde metni, wc ile ölçüldü)
+**Doğrulanmış atıf sayısı.** 11
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`007-02-0001`](../../007-academic-writing/007-02-0001/tr.md). DOI Disiplini ile APA 7
-**Sonraki kitapçık.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/tr.md). Yapay Zekâ Destekli Araştırmada Etik, Prensipten Davranışa
+**Sonraki kitapçık.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/tr.md). Yapay Zekâ Destekli Araştırmada Etik, İlkeden Davranışa

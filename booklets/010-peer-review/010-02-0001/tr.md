@@ -1,12 +1,12 @@
 ---
-title_en: "Anti-AI-Trace Writing for Revisions"
-title_tr: "Revizyonlarda Yapay Zekâ İzini Silmek"
+title_en: "Managing AI Style Traces in Revisions"
+title_tr: "Revizyonlarda Yapay Zekâ Üslup İzini Yönetmek"
 booklet_id: "010-02-0001"
 category: "010-peer-review"
 language: "tr"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -15,13 +15,13 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model_alias: "claude-fable-5"
-    model_dated: null  # no dated identifier published by Anthropic for Fable 5 as of 2026-06-10
+    model_alias: "claude-opus-4-8"
+    model_dated: null
     role: "drafting, verification, citation lookup"
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 8
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -30,89 +30,95 @@ license:
 status: "release"
 ---
 
-# Revizyonlarda Yapay Zekâ İzini Silmek
+# Revizyonlarda Yapay Zekâ Üslup İzini Yönetmek
 
-Önceki kitapçık hakem yanıt mektubunu izlenebilirlik matrisiyle kurdu ve dördüncü bölümünde bir soruyu bilerek açık bıraktı. Yanıt mektubu bittiğinde masada bir de revize edilmiş metin durur ve o metin çoğu zaman yolun bir yerinde yapay zekâ desteğiyle şekillenmiştir. Desteğin kendisi meşrudur. Geriye kalan, üslup tortusudur. Model destekli düzyazı tanınabilir retorik alışkanlıklar taşır ve bu alışkanlıklar yazarın sesinin üzerine oturur. Bu kitapçık o tortuyu revizyon sırasında söken iki katmanlı bir yöntemi anlatır ve daha yöntem başlamadan tek bir ilkeyi sabitler. Üslubu yönetmek yazarın hakkıdır. Katkıyı beyan etmek yazarın borcudur. İkisi ayrı raylarda ilerler ve biri ötekiyle takas edilemez.
+Önceki kitapçık, hakem yanıt mektubunu izlenebilirlik matrisiyle kurdu. Yanıt mektubu tamamlandığında masada bir de revize edilmiş makale metni kalır. Bu metin, kimi zaman yolun bir aşamasında yapay zekâ desteğiyle şekillenmiştir. Desteğin kendisi meşru olabilir. Ancak geride kalan üslup tortusu, yazarın akademik sesinin üzerine oturabilir.
 
-## 1. İz Nedir, Ne Değildir
+Bu kitapçık, revizyon sürecinde yapay zekâ destekli metnin üslup izini etik biçimde yönetmenin iki katmanlı bir yöntemini anlatır. Burada amaç, yapay zekâ kullanımını gizlemek değildir. Amaç, yazarın kendi üslubunu, kavramsal ritmini ve alanına özgü anlatımını geri kazanmasıdır. İlke baştan nettir. Üslubu yönetmek yazarın hakkıdır. Katkıyı beyan etmek yazarın borcudur. Bu iki düzey birbirine karıştırılamaz.
 
-Yapay zekâ izi, model destekli metinlerde tekrarlayan biçem desenlerinin toplamıdır. Kaç maddenin geleceğini önceden duyuran başlık bunlardan biridir. Aynı uzunlukta kurulan paragraflar, kavramların hep üçlü kümeler hâlinde sıralanması, bir şeyin önce ne olmadığını kurup sonra ne olduğunu ilan eden cümleler ve her bölümü aynı ritimle kapatan özetler de öyle. Tek başına hiçbiri kusur sayılmaz. Üst üste bindiklerinde ise insan elinden çıkmış düzyazının taşımadığı bir simetri doğar ve okur, adını koyamasa bile bunu fark eder.
+## 1. İz Nedir, Ne Değildir?
 
-İki dilde çalışan yazar için ize bir katman daha eklenir. Taslak Türkçeden İngilizceye ya da tersine geçerken model, çeviri kalıplarını da birlikte taşır. Ödünç metaforlar, kaynak dilden ithal sözdizimi ve hedef dilde kimsenin kurmayacağı cümleler metne sızar.
+Yapay zekâ izi, model destekli metinlerde tekrarlayan biçem desenlerinin toplamıdır. Kaç maddenin geleceğini önceden duyuran başlıklar, birbirine benzer uzunlukta paragraflar, her kavramı üçlü kümeler hâlinde sıralama, bir şeyin önce ne olmadığını söyleyip sonra ne olduğunu ilan etme ve her bölümü aynı ritimle kapatma bu desenler arasındadır. Tek başına bu özelliklerin hiçbiri hata değildir. Fakat üst üste bindiklerinde, metnin insan elinden çıkmış doğal çeşitliliğini azaltırlar.
 
-İz bir içerik hatası değildir. Yanlış bulgu, uydurma kaynak ya da şişirilmiş iddia birer dürüstlük sorunudur ve bu rehberin başka kitapçıklarında doğrudan ele alınır. İz, üslup düzeyinde bir imzadır. Silinmesi metnin söylediğini değil, seslenişini değiştirir. Okuru yanıltma sorusu üslup katında çözülmez. O sorunun adresi beyan satırıdır ve bu kitapçık o adrese tekrar tekrar dönecektir.
+İki dilli yazan araştırmacı için buna çeviri kalkı da eklenir. Türkçeden İngilizceye ya da İngilizceden Türkçeye geçerken model, kaynak dilin sözdizimini ve metaforlarını hedef dile taşıyabilir. Sonuç, teknik olarak anlaşılır ama hiçbir dilde tam doğal duyulmayan bir akademik ara dil olabilir.
 
-## 2. Tespit Araçları Neyi Görür, Neyi Göremez
+Bu iz bir içerik hatası değildir. Yanlış bulgu, uydurma kaynak ya da şişirilmiş iddia ayrı bir bütünlük sorunudur. Üslup izi, metnin söylediğini değil, nasıl seslendiğini etkiler. Dolayısıyla etik sorun üslup katında çözülmez. Etik sorun beyan katında çözülür. Yapay zekâ katkısı varsa beyan edilir. Metin, beyan korunarak yazarın sesiyle yeniden kurulur.
 
-Bir metnin modelden çıkıp çıkmadığını dışarıdan saptama girişimleri iki koldan ilerledi ve ikisi de ölçüldü. İlk kol insan yargısıdır. Else (2023), ChatGPT ile üretilmiş özetlerin deneyimli bilim insanlarını yanıltabildiğini Nature sayfalarında aktardı. Gao ve diğerleri (2023) aynı soruyu denetimli bir kurguya taşıdı. Kör hakemler üretilmiş özetlerin yüzde altmış sekizini yakalayabildi ve aynı oturumda gerçek özetlerin yüzde on dördünü yanlışlıkla üretilmiş diye işaretledi. İkinci kol otomatik dedektörlerdir. Weber-Wulff ve diğerleri (2023), on ikisi herkese açık ikisi ticari olmak üzere on dört tespit aracını sistematik biçimde sınadı. En yüksek doğruluk değerleri bile yüzde seksenin altında kaldı. Üretilmiş metin bir yapay zekâ aracıyla yeniden ifade edildiğinde toplam doğruluk yüzde yirmi altıya indi. Yazarların vardığı yargı serttir. Eldeki araçlar ne isabetli ne güvenilirdir.
+## 2. Tespit Araçları Neyi Görür, Neyi Göremez?
 
-Bu iki bulgu kümesi aynı noktada birleşir. Makine metninin görünür bir bölümünü kaçıran ve dürüst yazarların ölçülebilir bir bölümünü suçlayan bir mekanizma, bilimsel bütünlüğün yükünü taşıyamaz. Tespit kenarda bir işe yarayabilir. Temel olarak iki yönde birden çöker.
+Yapay zekâ metnini dışarıdan saptama girişimleri iki ana yoldan ilerler. İlki insan yargısıdır. Else, yapay zekâ tarafından yazılmış bilimsel özetlerin deneyimli bilim insanlarını bile yanıltabildiğini aktarmıştır. Gao ve diğerleri, kör hakemlerin yapay zekâ tarafından üretilmiş özetleri belirli oranda yakalayabildiğini, ancak gerçek özetleri de zaman zaman yanlışlıkla yapay zekâ ürünü olarak işaretlediğini göstermiştir.
+
+İkinci yol otomatik tespit araçlarıdır. Weber-Wulff ve diğerleri, farklı tespit araçlarını sistematik biçimde sınamış ve bu araçların güvenilirliğinin sınırlı olduğunu göstermiştir. Özellikle metin yeniden ifade edildiğinde ya da makine çevirisi katmanından geçtiğinde doğruluk keskin biçimde düşmektedir.
+
+Bu bulgular aynı noktada birleşir. Yapay zekâ metni tespiti, bilimsel bütünlüğün yükünü taşıyabilecek kadar güvenilir değildir. Bir mekanizma hem yapay zekâ metinlerinin önemli bir bölümünü kaçırıyor hem de dürüst yazarların bir kısmını yanlışlıkla suçluyorsa, akademik dürüstlüğün temel aracı olamaz. Bu nedenle bu kitapçık tespit rejimine değil, beyan rejimine dayanır.
 
 ## 3. Yanlış Pozitifin Bedeli
 
-Yanlış pozitif soyut bir istatistik değildir. Bir yazarın dürüstlüğüne yöneltilmiş asılsız bir suçlamadır ve bu suçlama herkese eşit dağılmaz. Liang ve diğerleri (2023), yaygın GPT dedektörlerini iki derlem üzerinde sınadı. Ana dili İngilizce olmayan yazarların TOEFL denemelerinde ortalama yanlış pozitif oranı yüzde altmış biri geçti. Denemelerin yaklaşık beşte biri, sınanan dedektörlerin tamamı tarafından aynı anda makine çıktısı sayıldı. Aynı araçlar Amerikalı öğrencilerin denemelerini doğru sınıflandırdı.
+Yanlış pozitif yalnızca istatistiksel bir hata değildir. Bir yazarın dürüstlüğüne yöneltilmiş yanlış bir suçlamadır. Üstelik bu risk herkese eşit dağılmaz. Liang ve diğerleri, yaygın yapay zekâ dedektörlerinin ana dili İngilizce olmayan yazarların metinlerini orantısız biçimde yapay zekâ ürünü sayabildiğini göstermiştir.
 
-Mekanizma ikinci dilden yazanın aleyhine kuruludur. Dedektörler metnin şaşırtıcılığını ölçer. Bir dil modeli bir sonraki sözcüğü kolayca tahmin edebiliyorsa şaşırtıcılık düşüktür ve metin makine çıktısına benzetilir. İkinci dilde yazan bir insan ise doğal olarak daha dar bir sözcük dağarcığıyla, daha kurallı cümlelerle ilerler. Temkinli ve düzgün yazmak, bu rejimde başlı başına şüphe nedenine dönüşür. Weber-Wulff ve diğerlerinin (2023) makine çevirisinden geçen metinlerde yanlış pozitif riskinin keskin biçimde arttığı bulgusu, aynı tabloyu başka bir kapıdan gösterir.
+Mekanizma anlaşılırdır. Dedektörler çoğu zaman metnin tahmin edilebilirliğini ölçer. Ana dili İngilizce olmayan bir yazar, daha düzenli, daha temkinli ve daha sınırlı sözcük çeşitliliğiyle yazabilir. Bu, yetersizlik değil, ikinci dilde akademik yazmanın doğal sonucudur. Ancak tespit araçları bu düzenliliği yapay zekâ izi sanabilir.
 
-Türkçeden İngilizceye yazan bir sosyal bilimci bu tablonun tam ortasında durur. Tespite dayalı bir bütünlük rejimi iki dilli yazarı baştan kuşku altına alır. Beyana dayalı bir rejim ise yazarın ne kullandığını kendisinin söylemesine güvenir. Bu kitapçığın yöntemi ikinci rejimi varsayar ve bir sonraki bölüm bu varsayımın etik zeminini kurar.
+Türkçeden İngilizceye yazan sosyal bilimci bu riskin tam ortasındadır. Bu nedenle yapay zekâ kullanımını dedektörlerle "yakalamaya" çalışan bir bütünlük rejimi, iki dilli araştırmacıyı baştan kuşku altına alır. Beyana dayalı rejim ise daha adil ve daha akademiktir. Yazar ne kullandığını, nerede kullandığını ve neyi kendisinin üstlendiğini açıkça söyler.
 
-## 4. Bütünlük Görünmezlikte Değil Beyandadır
+## 4. Bütünlük Görünmezlikte Değil, Beyandadır
 
-Bu rehberin önceki kitapçıkları beyan ilkesini farklı bağlamlarda işledi. Burada ilke en keskin sınavına girer ve sınav, bu araçları dürüstçe kullanan herkesin eninde sonunda sorduğu bir soruyla açılır. Metnimdeki yapay zekâ izini silersem yapay zekâ kullanımımı gizlemiş olur muyum?
+Bu kitapçığın en kritik ayrımı şudur. Yapay zekâ izini üslup düzeyinde azaltmak ile yapay zekâ kullanımını saklamak aynı şey değildir. Araştırmacı metni kendi sesiyle yeniden kurabilir, yapay zekâya özgü mekanik kalıpları azaltabilir, cümleleri hedef dilde daha doğal hâle getirebilir. Bunlar editoryal işlemlerdir. Ancak yapay zekâ kullanımını beyan etmekten vazgeçemez.
 
-Yanıt iki katmanın ayrı tutulmasında yatar. Hosseini ve diğerleri (2023), bilimsel yayında yapay zekâ kullanımını incelerken aracın metnin biçimini düzenlemesi ile içeriğini üretmesi arasındaki ayrımın bulanıklaşmadan korunmasını ister ve beyan yükümlülüğünü kullanımın görünürlüğüne değil kullanımın kendisine bağlar. Üslup yazarın egemenlik alanıdır. Araştırmacı her cümleyi yeniden kurabilir, metni istediği kadar düzeltme turundan geçirebilir, istediği kalıbı sökebilir. Bu edimlerin hiçbiri beyan yükümlülüğü doğurmaz ya da düşürmez. Yükümlülük metnin nasıl okunduğundan değil, üretiminde neyin kullanıldığından doğar. İz silinmiş ve beyan yerindeyse ortada aldatma yoktur. Metin pürüzsüzdür ve künyesi dürüsttür. İz beyanla birlikte silinmişse yapılan iş üslup bakımı olmaktan çıkar. Adı okuru yanıltma girişimidir.
+Hosseini ve diğerleri, bilimsel yayında yapay zekâ kullanımını tartışırken aracın biçim desteği ile içerik üretimi arasındaki ayrımın korunması gerektiğini vurgular. Bu ayrım burada da geçerlidir. Üslup yazarın egemenlik alanıdır. Katkı beyanı ise okura karşı sorumluluktur.
 
-Bu çizgi, rehberin zaten izlediği editoryal standartlarla örtüşür. Yayın etiği kuruluşları ve editör birlikleri yapay zekâ katkısının açıklanmasını ister. Hiçbiri metnin belirli bir üslupta bırakılmasını şart koşmaz. İstenen tek şey katkının açık yazılmasıdır.
+Beyan korunuyorsa üslup izi yönetimi meşru bir revizyon çalışmasıdır. Beyan kaldırılıyorsa süreç artık üslup bakımı değil, okuru yanıltma girişimidir.
 
-## 5. Birinci Katman, Retorik Mimariyi Sökmek
+## 5. Birinci Katman. Retorik Mimariyi Sökmek
 
-İlk katman dilden bağımsız desen sınıflarına bakar ve sayımla başlar. Metin her desen sınıfı için taranır, geçiş sayıları hiçbir şey değiştirilmeden önce kaydedilir. Düzeltmeyi ölçülebilir kılan bu sayımdır.
+İlk katman, model destekli metinde tekrar eden retorik desenleri saptar. Bu aşama sayımla başlar. Metinde kaç tane sayı duyuran başlık var? Kaç paragraf aynı ritimle bitiyor? Kaç yerde üçlü sıralama mekanik biçimde tekrar ediyor? Kaç geçiş cümlesi aynı küçük bağlaç ailesine yaslanıyor?
 
-Taranacak sınıflar birinci bölümden tanıdıktır. Kaç maddenin geleceğini önceden duyuran başlık ve cümleler. Üç öğeli sıralamaların mekanik tekrarı. Gerçek bir karşıtlık kalmadığı hâlde sürdürülen karşıtlık kalıbı. Birbirinin yerine geçebilecek uzunlukta paragraflar. Aynı kapanış ritmiyle biten bölümler. Aynı küçük bağlaç ailesinden dönen geçişler.
+Amaç metni yapay biçimde "insanlaştırmak" değildir. Amaç, gereksiz simetriyi azaltmak ve düşüncenin kendi gerektirdiği ritmi geri vermektir. Sayı duyuran başlık, içeriği taşıyan bir başlıkla değiştirilebilir. Üçlü sıralamaların bir kısmı ikiye indirilebilir, bir kısmı dağıtılabilir. Gerçek karşıtlık yoksa "X değil, Y" kalıbı kaldırılabilir. Paragraf uzunluğu içeriğin ağırlığına göre yeniden düzenlenebilir.
 
-Sökme işi sınıf sınıf ilerler. Sayı duyuran başlık, içeriği taşıyan bir başlıkla değiştirilir. Üçlülerin bir kısmı ikiye iner, bir kısmı dörde çıkar, bir kısmı cümlenin içine dağılır. Karşıtlık kalıbı yalnızca karşıtlığın gerçek olduğu yerde kalır. Paragraf uzunluğu içeriğe teslim edilir. Kısa bir nokta kısa bir paragrafı hak eder. Bu katmanda taramayı ve sayımı Claude Code üstlenir, neyin kalacağına yazar karar verir. Geçiş bittiğinde sayım tekrarlanır ve aradaki fark kaydedilir. O fark, dokuzuncu bölümde kurulacak savunu dosyasının ilk belgesidir.
+Claude Code bu aşamada tarama ve sayımı destekleyebilir. Hangi desenlerin tekrar ettiğini gösterebilir. Ancak neyin kalacağına, neyin söküleceğine ve hangi cümlenin yazarın sesiyle uyumlu olduğuna araştırmacı karar verir.
 
-## 6. İkinci Katman, Doğallık ve Kalk Avı
+## 6. İkinci Katman. Doğallık ve Kalk Avı
 
-İkinci katman iki dilli yazarındır ve hedefi, metnin hedef dilde doğal seslenmesidir. Çeviri kalkı, bir dildeki yapının başka bir dile sözcüğü sözcüğüne taşınmasıdır. Model destekli çeviri ve yeniden yazım kalkı bol üretir, çünkü model iki dil arasındaki en kısa köprüyü kurar. İngilizcede doğal duran bir metafor Türkçede iğreti kalabilir. Türkçeye özgü bir deyiş, İngilizceye olduğu gibi taşındığında anlamını yolda bırakır.
+İkinci katman, iki dilli yazımda ortaya çıkan çeviri kalklarını temizler. Kalk, bir dilde doğal olan yapının başka bir dile olduğu gibi taşınmasıdır. Model destekli çeviri ve yeniden yazım bu tür kalıntıları sık üretir. Türkçede doğal olmayan İngilizce cümle yapıları, İngilizcede doğal olmayan Türkçe düşünce akışı ya da ödünç metaforlar metne sızabilir.
 
-Bu katmanın testi tektir ve teknik değildir. Cümle sesli okunur ve tek bir soru sorulur. Bu dilde yazan biri bu cümleyi hiç kurar mıydı? Gözün alıştığı pürüzü kulak anında yakalar. Ödünç akademik klişe, kaynak dilden taşınan sözdizimi ve aktarılmış imge, görünmeden önce duyulur.
+Bu katmanın temel testi basittir. Cümle sesli okunur ve şu soru sorulur. Bu dilde yazan iyi bir akademisyen bu cümleyi gerçekten böyle kurar mıydı? Gözün alıştığı pürüzü çoğu zaman kulak daha hızlı yakalar.
 
-Rehberin iş akışında yön iki taraflıdır. Türkçe taslaktan İngilizce yeniden yazıma geçerken İngilizcenin doğallığı denetlenir. İngilizce literatür notlarından Türkçe bölüme dönerken aynı denetim Türkçeye uygulanır. Yeniden yazım çeviri değildir. Ana hattı koruyup her cümleyi hedef dilin içinde yeniden kurmak, kalka karşı en güvenilir panzehirdir.
+Yeniden yazım çeviri değildir. Ana iddia korunur, fakat cümle hedef dilin içinde yeniden kurulur. Bu ilke Türkçeden İngilizceye geçerken de, İngilizce literatür notlarından Türkçe metne dönerken de geçerlidir. Amaç, iki dilin birbirinin gölgesi olması değil, aynı düşünceyi kendi doğal akademik düzleminde taşımasıdır.
 
 ## 7. Homojenleşme ve Yazarın Sesi
 
-Bu zahmete neden girilir? Yanıt verimlilikte değil, bir literatürün muhtaç olduğu ses çeşitliliğindedir. Noy ve Zhang (2023), üretken yapay zekâ desteğinin profesyonel yazma işlerinde hem hızı hem kaliteyi yükselttiğini deneysel olarak gösterdi ve aynı deneyde yazarlar arasındaki eşitsizliğin azaldığını kaydetti. Dağılım ortaya doğru sıkışır. Doshi ve Hauser (2024) benzer sıkışmayı içerik düzeyinde ölçtü. Destek alan yazarların öyküleri tek tek daha yaratıcı bulunurken öykülerin toplamı çeşitliliğini yitirdi.
+Yapay zekâ desteğinin üretkenliği artırdığına dair kanıtlar vardır. Noy ve Zhang, üretken yapay zekâ desteğinin profesyonel yazma görevlerinde süreyi kısaltabildiğini ve kaliteyi artırabildiğini göstermiştir. Ancak bu destek aynı zamanda metinlerin ortalamaya doğru çekilmesi riskini de taşır. Doshi ve Hauser, üretken yapay zekânın bireysel yaratıcılığı artırırken kolektif içerik çeşitliliğini azaltabildiğini göstermiştir.
 
-Bilimsel literatür için bu bulgular bir uyarıdır. Binlerce yazar aynı modelden destek alır ve desenleri yerinde bırakırsa literatür tek bir sese doğru çekilir. Yazarın kendi üslubunu geri kazanması bu yüzden süs değildir. Alanın düşünmeye devam etmek için muhtaç olduğu çokseslilik adına bir katkıdır. Kendi cümlesini yeniden kuran yazar, kendisiyle birlikte okurunu da modelin ortalamasından kurtarır.
+Bilimsel literatür açısından bu önemli bir uyarıdır. Binlerce araştırmacı aynı modelden destek alır ve modelin üslup desenlerini olduğu gibi bırakırsa, literatür tek bir ortalama sese doğru çekilir. Yazarın kendi sesini geri kazanması bu nedenle yalnızca estetik bir tercih değildir. Alanın düşünsel çeşitliliğini koruyan bir akademik sorumluluktur.
 
 ## 8. Yapılmayacaklar
 
-İki katmanlı yöntemin sınırını, olmayı reddettiği şeyler çizer.
+Bu yöntemin etik sınırları açık olmalıdır.
+
+Walters ve Wilder, model üretimi kaynakçalarda uydurma ve hatalı atıfların yaygınlığını belgeledi. Uydurma atıf bir üslup pürüzü değildir. İçerik bütünlüğü sorunudur. Bu nedenle metnin üslubu ne kadar temizlenirse temizlensin, kaynak doğrulaması yapılmamışsa metin güvenilir değildir.
 
 | Durum | Değerlendirme |
 |---|---|
-| İz silinir, beyan korunur | Meşru üslup bakımı |
-| İz silinir, beyan da kaldırılır | Aldatma. Yöntemin amacının dışında |
-| Metin, dedektör atlatmak için insanlaştırıcı araçlardan geçirilir ve kullanım beyan edilmez | Aldatma. Üstelik kırılgan, çünkü dedektörler değişir |
-| Hakemin doğrudan sorusuna yanıtta kullanım inkâr edilir | Doğrudan dürüstlük ihlali |
-| İz silme, atıf doğrulamanın yerine sayılır | Kategori hatası. Atıf bütünlüğü ayrı bir süreçtir |
-
-Son satır kendi paragrafını hak eder. Walters ve Wilder (2023), model üretimi kaynakçalarda uydurma ve hatalı atıfların ne kadar yaygın olduğunu belgeledi. Uydurma atıf bir üslup pürüzü değil içerik sahteciliğidir ve hiçbir üslup çalışması onu temizlemez. İzi silinmiş ama atıfları doğrulanmamış bir metin, cilalanmış bir risk taşıyıcısıdır. Atıf doğrulamanın kendisi bu rehberin APA 7 ve DOI disiplini kitapçığında anlatılır.
+| Üslup izi azaltılır, beyan korunur | Meşru üslup bakımıdır |
+| Üslup izi azaltılır, beyan kaldırılır | Okuru yanıltmadır |
+| Dedektör atlatmak için "insanlaştırıcı" araçlardan geçirilir ve kullanım beyan edilmez | Aldatıcı ve kırılgan bir pratiktir |
+| Hakemin doğrudan sorusuna yapay zekâ kullanımı inkâr edilir | Açık dürüstlük ihlalidir |
+| Üslup izi temizliği atıf doğrulamanın yerine geçirilir | Kategori hatasıdır |
 
 ## 9. Savunulabilir Bir Revizyon İş Akışı
 
-Gerçek hakem baskısı altında yöntem belirli bir sırayla işler. Revizyona girerken beyan cümlesi dondurulur. Metnin hangi bölümünün hangi destekle üretildiğini söyleyen bu cümle yazılır ve revizyon boyunca dokunulmadan bırakılır. Ardından desen sayımı alınır, birinci katman işletilir, ikinci katman sesli okumayla kapanır ve sayım tekrarlanır. Atıf çekirdeği yeniden doğrulanır. Revizyonda metne giren kaynaklar da çıkan kaynaklar da bu doğrulamanın kapsamındadır. Son adım, beyan cümlesinin hâlâ yerinde durduğunun gözle kontrolüdür.
+Gerçek hakem baskısı altında uygulanabilir iş akışı belirli bir sırayı izler. Önce yapay zekâ kullanımına ilişkin beyan cümlesi yazılır ve korunur. Ardından metindeki tekrar eden retorik desenler sayılır. Birinci katmanda mekanik üslup desenleri azaltılır. İkinci katmanda hedef dilde doğallık ve çeviri kalkları denetlenir. Sonra desen sayımı tekrarlanır ve yapılan değişiklikler kayıt altına alınır. En son, atıf çekirdeği yeniden doğrulanır ve beyan cümlesinin metinde hâlâ yer aldığı kontrol edilir.
 
-Bu sıranın ürettiği şey, süreci savunan bir dosyadır. Editör ya da hakem sorduğunda yazarın elinde tarihli bir kayıt vardır. Hangi desen sınıfından kaç adet bulundu ve kaçı söküldü. Hangi kaynak hangi tarihte hangi veri tabanından doğrulandı. Beyan cümlesi hangi sürümler boyunca aynı kaldı. Bu kaydın tutulmasını Claude Code otomatikleştirir. Savunulabilirlik, sorulduğunda gösterilebilen şeydir.
+Bu sıranın amacı, revizyon sürecini savunulabilir hâle getirmektir. Editör ya da hakem yapay zekâ kullanımı hakkında soru sorduğunda, yazar yalnızca niyet beyanı sunmaz. Hangi aracın nerede kullanıldığını, metnin nasıl yeniden kurulduğunu, kaynakların nasıl doğrulandığını ve beyanın hangi sürümler boyunca korunduğunu gösterebilir.
 
 ## 10. Köprü, Sürecin Kırıldığı Ana
 
-Revizyon, bu rehberin anlattığı iş akışlarının en yoğun kesişimidir. Arşiv, atıf doğrulama, iki dilli yeniden yazım ve beyan disiplini aynı hafta aynı metnin üzerinde çalışır. Hareketli parça arttıkça bir şeylerin durma ihtimali de artar. Bir oturum yarıda kesilebilir. Bir dosya kimsenin bırakmadığı bir hâlde bulunabilir. Kapanış kitapçığı tam o ana ayrılmıştır ve işler ters gittiğinde panik yerine yöntemle ilerleyen bir sorun giderme protokolünü anlatır.
+Revizyon süreci, bu rehberde anlatılan birçok iş akışının aynı metin üzerinde buluştuğu yerdir. Arşiv, atıf doğrulama, iki dilli yeniden yazım, hakem yanıtı ve beyan disiplini aynı anda çalışır. Hareketli parça arttıkça sorun çıkma ihtimali de artar.
+
+Bir sonraki kitapçık, işler ters gittiğinde panik yerine yöntemle ilerleyen bir sorun giderme protokolü kurar. Revizyon haftasında iyi bir sorun giderme disiplini, yalnızca teknik değil, akademik bir ihtiyaçtır.
 
 ## Kaynakça
 
-Atıflar APA 7 biçimindedir. DOI'ler 2026-06-10 tarihinde Crossref üzerinden doğrulanmıştır.
+Atıflar APA 7 biçimindedir. DOI'ler 2026-06-21 tarihinde Crossref üzerinden doğrulanmıştır.
 
 Doshi, A. R., & Hauser, O. P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. *Science Advances*, 10(28), eadn5290. https://doi.org/10.1126/sciadv.adn5290
 
@@ -124,7 +130,7 @@ Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write schola
 
 Liang, W., Yuksekgonul, M., Mao, Y., Wu, E., & Zou, J. (2023). GPT detectors are biased against non-native English writers. *Patterns*, 4(7), 100779. https://doi.org/10.1016/j.patter.2023.100779
 
-Noy, S., & Zhang, W. (2023). Experimental evidence on the productivity effects of generative artificial intelligence. *Science*, 381(6654), 187-192. https://doi.org/10.1126/science.adh2586
+Noy, S., & Zhang, W. (2023). Experimental evidence on the productivity effects of generative artificial intelligence. *Science*, 381(6654), 187–192. https://doi.org/10.1126/science.adh2586
 
 Walters, W. H., & Wilder, E. I. (2023). Fabrication and errors in the bibliographic citations generated by ChatGPT. *Scientific Reports*, 13, Article 14045. https://doi.org/10.1038/s41598-023-41032-5
 
@@ -133,10 +139,10 @@ Weber-Wulff, D., Anohina-Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero-Dib
 ---
 
 **Kitapçık kimliği.** `010-02-0001`
-**Sürüm.** `0.1.0`
-**Tarih.** 2026-06-20
+**Sürüm.** `0.2.0`
+**Tarih.** 2026-06-21
 **Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
-**Sözcük sayısı (yaklaşık).** 1592 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 1318 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 8
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`010-01-0001`](../010-01-0001/tr.md). İzlenebilirlik Matrisleri ile Hakem Yanıt Mektupları

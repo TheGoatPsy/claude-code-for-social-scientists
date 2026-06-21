@@ -4,9 +4,9 @@ title_tr: "Dergi Uyumu ve Kapak Mektupları"
 booklet_id: "007-03-0001"
 category: "007-academic-writing"
 language: "tr"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -15,13 +15,13 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model_alias: "claude-fable-5"
-    model_dated: null  # no dated identifier published by Anthropic for Fable 5 as of 2026-06-10
+    model_alias: "claude-opus-4-8"
+    model_dated: null
     role: "drafting, verification, citation lookup"
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 7
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -98,7 +98,7 @@ Kapak mektubunun bütünlük paragrafı, etik kurul onayından yapay zekâ beyan
 
 ## Kaynakça
 
-Atıflar APA 7 biçimindedir. DOI'ler 2026-06-10 tarihinde Crossref üzerinden doğrulanmıştır.
+Atıflar APA 7 biçimindedir. DOI'ler 2026-06-21 tarihinde Crossref üzerinden doğrulanmıştır.
 
 Belcher, W. L. (2019). *Writing your journal article in twelve weeks: A guide to academic publishing success* (2nd ed.). University of Chicago Press. ISBN 978-0-226-49991-8
 
@@ -108,7 +108,7 @@ Grudniewicz, A., Moher, D., Cobey, K. D., Bryson, G. L., Cukier, S., Allen, K., 
 
 Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. *Accountability in Research*, 31(7), 715–723. https://doi.org/10.1080/08989621.2023.2168535
 
-Provenzale, J. M., & Stanley, R. J. (2005). A systematic guide to reviewing a manuscript. *American Journal of Roentgenology*, 185(4), 848-854. https://doi.org/10.2214/AJR.05.0782
+Provenzale, J. M., & Stanley, R. J. (2005). A systematic guide to reviewing a manuscript. *American Journal of Roentgenology*, 185(4), 848–854. https://doi.org/10.2214/AJR.05.0782
 
 Shen, C., & Björk, B.-C. (2015). 'Predatory' open access: A longitudinal study of article volumes and market characteristics. *BMC Medicine*, 13, Article 230. https://doi.org/10.1186/s12916-015-0469-2
 
@@ -117,8 +117,8 @@ Williams, J. M., & Bizup, J. (2016). *Style: Lessons in clarity and grace* (12th
 ---
 
 **Kitapçık kimliği.** `007-03-0001`
-**Sürüm.** `0.1.0`
-**Tarih.** 2026-06-20
+**Sürüm.** `0.2.0`
+**Tarih.** 2026-06-21
 **Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
 **Sözcük sayısı (yaklaşık).** 1330 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 7

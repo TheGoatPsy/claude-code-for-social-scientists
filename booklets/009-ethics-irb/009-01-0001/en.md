@@ -4,9 +4,9 @@ title_tr: "Yapay Zekâ Destekli Araştırmada Etik, İlkeden Davranışa"
 booklet_id: "009-01-0001"
 category: "009-ethics-irb"
 language: "en"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -15,17 +15,17 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model_alias: "claude-opus-4-7"
+    model_alias: "claude-opus-4-8"
     model_dated: null  # no dated identifier published by Anthropic for Opus 4.7 as of 2026-05-24
     role: "drafting, verification, citation lookup, bilingual re-authoring"
     interaction_mode: "interactive console"
 ai_contribution_level: "co-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 12
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
-translation_notes: "English re-authored from the Turkish source, not a literal translation. The reflexive disclosure in Section 8 points to this booklet's own frontmatter in both languages. Institutional author names rendered in English."
+translation_notes: "English re-authored from the finalized Turkish source (v0.2.0, 2026-06-21), not a literal translation. Content, structure, section order, claims, and references follow the Turkish canon. Institutional author names rendered in English. Reflexive disclosure in Section 8 points to this booklet's own frontmatter in both languages."
 license:
   - "CC-BY-NC-SA-4.0 (prose)"
 status: "release"
@@ -34,106 +34,145 @@ spine_booklet: true
 
 # Ethics in AI-Assisted Research, From Principle to Behavior
 
-The previous booklet defined citation verification discipline as the first concrete component of an ethical layer. This booklet extends that layer. It shows that ethics in AI-assisted academic research is not a section appended at the end but a workflow document built from the start. The aim is to move international consensus documents out of the realm of abstract principles and into concrete behavioral rules for researchers working in the Turkish and Greek context. This booklet is the guide's backbone: it carries the ethical foundation of clinical and human-subject research.
+The previous booklet addressed citation verification discipline as one of the first concrete components of the ethical layer. This booklet extends that layer. Ethics in AI-assisted academic research is not a disclosure sentence appended after the study is complete; it is a workflow that must be built in from the outset — from research design through data processing, from drafting through the reviewer response.
 
-## 1. Why From Principle to Behavior
+The aim is not to leave international consensus documents as abstract principles. The aim is to derive concrete behavioral rules that a researcher working in Türkiye and Greece can apply to everyday decisions. This booklet is therefore one of the guide's backbone texts. It addresses the ethical foundations of studies with human participants, clinical research, interview data, qualitative coding, quantitative analysis, and AI-assisted academic writing together.
 
-Most texts written on ethics stay at the level of principles. They call for transparency and demand accountability, treating honesty as a precondition rather than a goal. Those principles are correct, but on their own they do not tell a researcher what to do on a Tuesday morning. The gap between principle and behavior is, in the guide's view, a primary source of ethics failures in AI-assisted research practice. A researcher believes in transparency but has not worked out how to disclose AI assistance. They defend accountability but have not clarified who bears responsibility when a fabricated citation enters a manuscript.
+The central claim of this booklet is the following. Ethics in AI-assisted research is measured not only by what one believes, but by which behaviors are performed systematically. Transparency is demonstrated through disclosure. Accountability is demonstrated through documentation. Data security is demonstrated through access boundaries. Citation integrity is demonstrated through verification protocol. And human dignity is protected through the concrete attention paid to the participant's data, consent, and context.
 
-This booklet aims to close that gap: each principle is bound to a behavior. Instead of an abstract call to "be transparent," a rule: "disclose AI use in these areas, in this form." Resnik and Hosseini (2025) argue that the use of artificial intelligence in scientific research requires new guidance tailored to a new kind of tool, and demonstrate that existing ethical frameworks do not yet fully meet the situation the field is now in. Mittelstadt and colleagues (2016), mapping the ethics of algorithms, reveal how abstract principles fork in concrete context, and why that forking cannot be resolved at the level of principle alone. This booklet clarifies the fork for the social scientist.
+## 1. Why the Move From Principle to Behavior Is Necessary
+
+A significant portion of texts written on ethics remains at the level of principle. They speak of transparency, accountability, honesty, and non-maleficence. Those principles are correct. But on their own they do not tell a researcher what to do on a Tuesday morning. This gap between principle and behavior is, in AI-assisted research, the most common starting point for ethics failures.
+
+A researcher believes in transparency, yet has not determined the precise form in which AI assistance will be disclosed. They defend accountability, yet have not put on record who bears responsibility at which stage when a fabricated citation enters a manuscript. They care about participant rights, yet have not sufficiently defined the anonymization and consent boundaries before providing interview transcripts to an AI tool.
+
+This booklet occupies exactly that gap. It binds each principle to a concrete behavior. In place of an abstract call to "be transparent," it proposes actionable rules of this kind: disclose AI use explicitly at the relevant stages of the research; do not include an unverified citation in the reference list; do not provide non-anonymized clinical data to a tool; define the AI component in the ethics board application from the start.
+
+Resnik and Hosseini (2025) argue that the use of artificial intelligence in scientific research requires new ethical guidance for a new kind of tool. Mittelstadt and colleagues (2016), in the algorithmics ethics discussion, show that abstract principles fork in context and that this forking cannot be resolved at the level of principle alone. This booklet carries the same line of argument to the level of behavior for the social scientist.
 
 ## 2. The 2024 Revision of the Declaration of Helsinki
 
-The ethical foundation of human-subject research is the Declaration of Helsinki. The World Medical Association (2025) published the most recent revision in JAMA; adopted in 2024, it brought the first comprehensive change since the previous major update. The revision added substantive paragraphs on participant rights, equity in research access, obligations after a study concludes, and researcher responsibility throughout the research process.
+One of the foundational ethical documents for research involving human participants is the Declaration of Helsinki. The World Medical Association published the current revision, adopted in 2024, in JAMA in 2025. This revision offers an updated framework on participant rights, equity in access to research, obligations after a study concludes, and the researcher's responsibility throughout the process.
 
-What matters for the social scientist is this: the Helsinki framework is directly binding for the clinical psychologist regardless of which tools a study uses. When a researcher conducts an AI-assisted analysis, the core questions of the Helsinki principles remain unchanged: how is participant data processed, who accesses it, how is it protected, and has meaningful informed consent been obtained? The guide's inference, its own rather than an explicit claim of the 2024 revision, is that those principles apply with full force to AI-assisted processing. Informed consent must cover the fact that participant data will be processed with an AI tool. This is a design decision built from the start, not a clause added afterward.
+The key point for the social scientist is this. The Helsinki framework defines the ethical ground for working with human participants independently of the type of tool used. When a clinical psychologist, a counseling psychologist, a public health researcher, or a social scientist working with human-participant data conducts AI-assisted analysis, they must define clearly how participant data is processed, who has access to it, how it is protected, and what the consent covers.
 
-## 3. The Combination of COPE, WAME, ICMJE, and STM
+This booklet's interpretation is as follows. Although the Declaration of Helsinki does not offer a specific technical protocol on AI-assisted data processing, the principles relating to participant protection apply equally to AI-assisted research. If participant data is to be processed with an AI tool, this must be stated explicitly in the research design, in the informed consent text, and in the ethics board application. That decision must be made when the research is being designed, not after the data has been collected.
 
-In the field of publication ethics, several institutional consensus documents on AI use converge into a single coherent framework. The Committee on Publication Ethics (2023), in its position statement on authorship and AI tools, makes clear that AI cannot be an author but that its use must be disclosed. The World Association of Medical Editors (2023), in its recommendations on chatbots and generative AI, reinforces the same principle. The International Committee of Medical Journal Editors (2024), in its recommendations for the conduct and reporting of scholarly work, requires that AI use be explained in the methods section.
+## 3. The Combined Framework of COPE, WAME, ICMJE, and STM
 
-These three documents are completed by a fourth. STM, the International Association of Scientific, Technical and Medical Publishers (2025), offers a framework for classifying AI contribution in manuscript preparation, from mere editing assistance to full drafting. The disclosure standard on which this booklet rests is the combination of these four documents. The practical consequence for a researcher is direct: AI use is always disclosed, and the level of that use determines how much detail the disclosure must carry. Omitting it entirely is not an option under any condition. Jobin and colleagues (2019), measuring the global landscape of AI ethics guidelines empirically, found that the principles of different institutions largely overlap. That convergence legitimizes combining these four documents into a single working framework rather than treating them as competing authorities.
+In the field of publication ethics, there are several institutional documents on AI use. They should not be read as separate, unrelated texts. Taken together, they constitute a remarkably coherent framework.
+
+The Committee on Publication Ethics (COPE, 2023) states that AI tools cannot be authors but that their use must be disclosed. The World Association of Medical Editors (WAME, 2023), in its recommendations on chatbots and generative AI, reinforces the same position. The International Committee of Medical Journal Editors (ICMJE, 2024), in its recommendations for the conduct and reporting of scholarly work, emphasizes that AI use must be declared at the appropriate place. STM Association (2025) offers a contribution scale ranging from editorial assistance to full draft generation, to classify the role of AI in manuscript preparation.
+
+The disclosure standard on which this booklet rests is formed from the combination of these four documents. The consequence for the researcher is clear. AI use is disclosed. The detail of disclosure varies with the level of use. But the disclosure itself is never omitted on any grounds.
+
+When Jobin and colleagues (2019) empirically examined global AI ethics guidelines, they found that the principles of different institutions overlap to a substantial degree. This overlap makes it possible to read COPE, WAME, ICMJE, and STM not as competing authorities but as documents that can be anchored in a single working framework.
 
 ## 4. EU AI Act Article 50 and Its Effect on Clinical Research
 
-The European Union Artificial Intelligence Act (European Parliament and Council, 2024) establishes a regulatory framework for AI systems. The part most directly relevant to academic researchers is Article 50, which governs transparency obligations. Its scope must be read precisely, because it is commonly misunderstood.
+The European Union Artificial Intelligence Act establishes a comprehensive regulatory framework for AI systems. One of the parts most directly relevant to the academic researcher is Article 50, which governs transparency obligations. The scope of this article must be read carefully, because it can easily be misunderstood in an academic context.
 
-Article 50 places transparency duties on **providers and deployers** of certain AI systems: systems that interact with natural persons (e.g., chatbot products), systems that generate synthetic media, and systems used for emotion recognition or biometric categorization. The obligations concern product-level disclosure: labeling AI-generated content as such and informing users when they are interacting with an AI. An individual academic researcher using an AI tool to draft or analyze text is neither a "provider" nor a "deployer" under the Act's definitions; the Act's direct obligations do not fall on the researcher in that capacity.
+Article 50 imposes obligations on the providers and deployers of certain AI systems. Systems that interact with natural persons, systems that generate synthetic media, and systems used for emotion recognition or biometric categorization are particularly significant in this regard. The obligations relate primarily to product-level transparency: informing persons that they are interacting with an AI system, and labeling content generated or modified by AI under certain conditions.
 
-What the Act does create, however, is a transparency environment that research practice cannot ignore. Because Greece is a European Union member state, Greek institutions and publishers operating under EU jurisdiction are subject to the Act's requirements. When a Greek researcher submits to an EU-based journal, that journal's own compliance obligations under Article 50 and related provisions translate into transparency expectations directed at the author, specifically the expectation that AI-generated or AI-assisted content be disclosed. Türkiye is not an EU member state and is not a direct addressee of the Act; however, the Act applies in effect to data and content flows from Türkiye into EU-jurisdiction venues. A Turkish researcher submitting to a journal published in the EU will encounter the disclosure expectations of the EU framework regardless. For both countries, the practical implication is the same: transparent disclosure of AI use is the only position that is both ethically sound and institutionally safe. Article 50(2) also exempts AI systems performing "an assistive function for standard editing" or that "do not substantially alter the input data" from the synthetic-content marking obligation, which means routine AI-assisted drafting does not automatically trigger the labeling requirement directed at deployers, though the researcher's own disclosure obligations under publication ethics remain unchanged.
+An individual academic researcher who uses an AI tool to draft text, organize a literature review, or generate analysis code is not, in every case, in the position of a provider as the Act defines the term. That said, the Act creates a transparency environment that research practice cannot ignore.
+
+Because Greece is a member of the European Union, the EU AI Act carries direct relevance for Greek institutions and publishers. Türkiye is not a member of the EU and is not a direct addressee of the Act. However, when a submission is made from Türkiye to a journal published in the EU, or when data and content are transferred to research networks connected to the EU, the transparency expectations of the EU framework effectively confront the researcher regardless.
+
+In both contexts, the safe and ethical position is the same. Explicitly disclosing AI use is the most defensible course, both from the standpoint of publication ethics and from the standpoint of institutional compliance. Article 50(2) also exempts from certain synthetic-content marking obligations those AI systems that perform an assistive function for standard editing or that do not substantially alter the input data. This exemption does not eliminate the disclosure responsibility arising from publication ethics.
 
 ## 5. KVKK and GDPR Compared, for Clinical Data
 
-When clinical data is involved, Türkiye and Greece offer two parallel legal frameworks, and their differences matter as much as their structural similarities.
+When clinical data is involved, Türkiye and Greece offer two distinct yet structurally similar legal frameworks. In Türkiye, Law No. 6698 on the Protection of Personal Data — known as KVKK — treats health data as special-category personal data (Personal Data Protection Authority, 2016). This designation directly shapes the quality of explicit consent required, the principle of data minimization, and the boundaries of the processing purpose.
 
-In Türkiye, Law No. 6698 on the Protection of Personal Data (Personal Data Protection Authority, 2016), known as KVKK, designates clinical data as special-category personal data. This designation sets a higher standard for the quality of explicit consent and foregrounds the principle of data minimization. Because Greece is a European Union member state, the General Data Protection Regulation (GDPR) applies directly. The European Data Protection Board (2024), in its guidance on AI and personal data, addresses how AI-assisted processing must be structured to remain compatible with data protection principles, including purpose limitation and data minimization.
+Because Greece is a member of the European Union, the General Data Protection Regulation (GDPR) applies directly. The European Data Protection Board (2024), in its opinion on the processing of personal data in the context of AI models, explicitly affirms that principles such as purpose limitation, data minimization, legal basis, and processing transparency apply in the AI context as well.
 
-The structural similarity of the two frameworks is high; both require explicit consent for special-category data processing and impose the data minimization principle. But the enforcement architecture differs: KVKK operates through Türkiye's Personal Data Protection Authority, while GDPR operates through each member state's supervisory authority and the EDPB at the European level, with significantly broader extraterritorial reach. The practical consequence for the clinical psychologist is the same under both regimes: an AI-assisted vault contains no non-anonymized clinical data. A case, a transcript, or an observation enters the tool only de-identified and within the framework of ethics board approval. The Turkish Psychological Association's ethics regulation adds a professional layer on top of the legal framework, defining internal ethical responsibility that exists independently of what the law mandates. Together, the legal framework, professional ethics, and institutional ethics board approval form a complete protective net for the clinical researcher using AI tools.
+The common ground of the two frameworks is clear. Clinical data is not ordinary data. A case note, a psychotherapy transcript, a clinical observation, or any identifiable participant information must not be provided directly to an AI tool. Such data may be processed only within the constraints of ethics board approval, valid consent, de-identification, and a data security protocol.
+
+In Türkiye, KVKK and professional ethics obligations, and in Greece, GDPR and institutional ethics board processes, must be considered together by the clinical researcher. The legal framework, professional ethics, and ethics board approval are not to be treated separately; they form a complementary protective network.
 
 ## 6. The Consolidation of NISO Disclosure Standards
 
-Disclosure standards have not yet converged under a single global norm, but consolidation is under way. The National Information Standards Organization (NISO) is developing a common framework for AI disclosure in scholarly communication. When that work is complete, the varied disclosure forms required by different publishers may converge on a single standard. This booklet records that the process was ongoing at its date of publication; for that reason, it rests its disclosure standard not on a single specific document but on the combination of current consensus described in Section 3.
+There is as yet no single globally established format standard for AI disclosure. There is, however, a strong movement toward standardization. The National Information Standards Organization (NISO) is developing a common framework for how AI use in scholarly communication should be disclosed. Initiatives of this kind may, over time, bring the varied disclosure forms required by different publishers onto a more consistent footing.
 
-The practical advice for a researcher is to focus on the existence of disclosure rather than its precise form. As standards converge, the required form may change; the obligation to disclose will not. Building the disclosure habit now, before convergence is complete, means the researcher will need only to adapt the form rather than establish the practice from scratch.
+This booklet acknowledges that at its date of publication this process was still under development. For that reason, it grounds its disclosure standard not on a single future document but on the combination of current institutional consensus. The combined line of COPE, WAME, ICMJE, STM, and ENAI provides a sufficiently robust working framework for the present.
 
-## 7. The Limits of Authorship and Disclosure
+The practical consequence for the researcher is this. The form of disclosure may change over time. The obligation to disclose will not. Building this habit now means that when standards converge, only the form will need to be adapted — not the practice itself, which must be established from scratch.
 
-The boundary between authorship and disclosure is clear, and each concept carries its own obligations. Authorship, as the Committee on Publication Ethics (2023) defines it, requires taking responsibility for the content of the work. An AI system cannot bear that responsibility. A model cannot defend the accuracy of what it produces, cannot answer a reviewer's question, cannot account for an ethics violation. Authorship, therefore, remains with the human, always.
+## 7. Authorship and the Boundaries of Disclosure
 
-Disclosure, on the other hand, is mandatory. AI assistance is a research decision, and every research decision belongs in the written record. Hiding that assistance misleads the reader about how the work was produced. The detail of disclosure varies with the level of assistance: mere grammar correction and full draft generation require disclosure at different levels. The framework on which this booklet rests, the five-level classification described in AI-AUTHORSHIP.md at the repository root, divides AI contribution from mere editing to full drafting, and each level is stated explicitly in the disclosure block. What matters is that the disclosure be clear enough not to mislead the reader about what was produced and how.
+Authorship and disclosure must not be confused. Authorship requires taking responsibility for the content of the work. An AI system cannot bear that responsibility. It cannot defend the accuracy of what it produces, cannot declare a conflict of interest, cannot respond to reviewer criticism in an accountable way, and cannot assume responsibility in the event of an ethics violation.
+
+For this reason, AI cannot be an author. But this does not mean that AI use can be left invisible. On the contrary, AI assistance is a research decision — and research decisions must be entered into the written record.
+
+The detail of disclosure varies with the level of use. Correcting grammar alone and generating a conceptual draft are not disclosed at the same level. If a model did no more than correct spelling errors, the disclosure may be more limited. If a manuscript's draft, analysis code, literature review, or reviewer response was produced to a significant degree with AI assistance, the disclosure must be correspondingly more detailed.
+
+The working approach on which this booklet rests recommends stating contribution by level. What matters is that the reader should be able to understand which tool was used to what degree at which stage of the text. Disclosure is not made to reassure the reader; it is made to avoid misleading the reader.
 
 ## 8. The Behavior Document, This Booklet Itself
 
-This booklet applies the principle it describes to itself, and that application is the strongest behavioral example in this guide. At the head of this text there is a structured disclosure block. That block states clearly which AI tool was used, in which role, at which contribution level, and the status of human review. This booklet's contribution level is recorded as co-drafting, because the author's clinical psychology expertise is directly in the content. Human review status is marked complete after principal author review.
+This booklet applies the principle it describes to itself. At the head of the text there is a structured disclosure block. That block has been prepared in a form readable by both human readers and AI tools that may process this document in the future. Which AI tool was used in which role, the contribution level, the status of human review, the number of verified citations, and the number of fabricated citations are all stated explicitly.
 
-This is what an abstract principle looks like as a concrete behavior. When a researcher prepares a manuscript with AI assistance, they apply the same discipline: in the methods section or a disclosure note, they state the tool used, its role, and the contribution level. That disclosure strengthens the manuscript, because the reader knows exactly what was produced and how. Transparency is a mark of integrity.
+A disclosure block alone, however, is not sufficient. What matters above all is that the reader be shown clearly how and in what forms AI was used in the text. In this booklet, AI was used for co-drafting, verification support, and source checking. The final conceptual framework, and all clinical and academic judgment, was reviewed by the human author.
 
-This reflexive demonstration is stronger than abstract instruction, because it displays the principle in the form of a behavior. In clinical psychology training, the difference between explaining how to formulate a case and showing a formulation step by step is the difference between understanding and competence. The same difference holds here. A reader sees the disclosure block at the head of this booklet and grasps concretely how to adapt the same block to their own article. At that point, ethics has moved from the page into practice.
+This self-referential example is more instructive than an abstract ethical account. The difference in clinical psychology training between merely describing a case formulation and demonstrating the formulation step by step is the difference between information and competence. The same distinction applies here. The reader sees the disclosure block and grasps concretely how to adapt it to their own article, thesis, or ethics board file.
 
-## 9. An Artificial Intelligence Component for an Example IRB Application
+## 9. The AI Component in an Example Ethics Board Application
 
-The ethics board application is the most concrete place where principle turns into behavior, and the one place where a gap in the written record has direct consequences. An ethics board application for an AI-assisted study must contain several additional components that standard templates do not yet require.
+The ethics board application is the most concrete place where principle turns into behavior. An ethics board application for an AI-assisted study must include several additional components that standard templates do not always explicitly require.
 
-The application must specify which AI tool will be used at which research stage. Data analysis, literature review, and text editing are distinct categories of use and must each be stated separately. It must also address how participant data will be processed with the AI tool and how that processing is compatible with the applicable data protection framework, namely KVKK in Türkiye and GDPR in Greece. Finally, informed consent text must explain AI use in language a participant without technical background can understand.
+The application must state clearly which AI tool will be used at which stage of the research. Literature review, data organization, qualitative coding, quantitative analysis, text editing, and report writing must be treated as distinct categories of use. It must also explain how participant data will be processed with AI-assisted tools and how this processing is compatible with the applicable data protection framework — KVKK in Türkiye, GDPR in Greece. The informed consent text must explain AI use in language that a participant without a technical background can understand. The participant must be able to understand for what purpose, within what limits, with what level of de-identification, and with what tool support their data will be processed.
 
-A concrete example: a clinical psychology study in which the researcher plans to use an AI tool for the thematic coding of interview transcripts. The application must state the operating conditions explicitly. Transcripts are de-identified before entering the vault. Coding is performed with AI assistance, but every code is verified by a human researcher. No non-anonymized data is transferred to the AI tool. Writing these conditions into the application is the operational form of the Helsinki principle that participant protection stands at the center of research design (World Medical Association, 2025). The AI component must be integrated without weakening that protection, and writing the conditions explicitly is the evidence that they were designed in from the start, not appended after the fact.
+Consider a concrete example. In a clinical psychology study in which the researcher plans to use AI assistance for the thematic coding of interview transcripts, the application must state the operating rules explicitly. Transcripts are de-identified before entering the archive. Coding may be performed with AI support, but every code is verified by the human researcher. No non-anonymized data is transferred to an AI tool. These rules are consistent with the ethical logic of the Declaration of Helsinki, which places participant protection at the center of research design.
 
 ## 10. Operational Ethics Checklist
 
-This checklist turns the principles of this booklet into concrete steps a researcher can apply at the start of every project.
+This checklist translates the principles of this booklet into concrete steps that can be applied at the start of every project.
 
-1. AI use was defined at the project's start as a disclosure plan.
-2. Which tool will be used at which stage was documented.
-3. No non-anonymized clinical data entered the vault.
-4. Participant data was processed in compatibility with the applicable data protection framework (KVKK or GDPR).
-5. Informed consent covered AI-assisted processing.
-6. The ethics board application stated the AI component explicitly.
-7. All citations were verified with triple-index triangulation.
-8. The AI contribution level was determined on the five-level scale (defined in Section 4 of AI-AUTHORSHIP.md in the repository root).
-9. The disclosure appeared in the methods section or a disclosure note.
-10. Authorship was attributed only to humans who bear responsibility.
-11. Transparency obligations were observed for submission to EU-jurisdiction venues.
-12. The final text was approved by the principal author with an integrity reading.
+AI use was defined at the project's outset as a disclosure plan.
 
-Once internalized, this list makes ethics a natural part of the research workflow.
+Which tool would be used at which stage was documented.
+
+No non-anonymized clinical data entered the research archive.
+
+Participant data was processed in compatibility with the applicable data protection framework — KVKK for Türkiye, GDPR for Greece.
+
+Informed consent covered AI-assisted processing.
+
+The ethics board application stated the AI component explicitly.
+
+All citations passed through a verification protocol.
+
+The AI contribution level was determined.
+
+Disclosure appeared in the methods section or a dedicated disclosure note.
+
+Authorship was attributed only to humans who bear responsibility.
+
+Transparency expectations were observed for submissions to EU-linked venues.
+
+The final text was approved by the principal author with an integrity reading.
+
+Once internalized, this list makes ethics not a control box appended at the end of the research, but a natural part of everyday research practice.
 
 ## 11. Bridge, to the Reviewer Response
 
-When reviewers arrive with an ethical inquiry about AI use, citation accuracy, or data ethics, the discipline built in this booklet provides direct ground for the answer. The next booklet shows how to structure a reviewer response letter with a traceability matrix and how to preserve AI disclosure ethics throughout that process. The ethical framework does not end when the manuscript is submitted. It continues into every exchange with the reviewers and editors who evaluate it.
+When reviewers ask about AI use, citation accuracy, data ethics, or participant safety, the discipline built in this booklet provides direct ground for the answer. Because if the ethical framework was built from the outset, the researcher does not need to move into a defensive posture in the reviewer response. They can state clearly what they did, why they did it, and how the record shows it.
+
+The next booklet addresses constructing a reviewer response letter with a traceability matrix, and maintaining AI disclosure ethics throughout that process. The ethical framework does not end when the manuscript is submitted. It continues through every scientific exchange — with the editor, the reviewer, and the reader.
 
 ## References
 
-Citations are in APA 7 format. DOIs for peer-reviewed sources were independently verified against Crossref on 2026-06-04. Institutional documents (COPE, WAME, ICMJE, STM, EDPB, ENAI, KVKK, EU legislation) are cited as grey literature; their URLs were verified on 2026-06-04.
+Citations are in APA 7 format. DOIs for peer-reviewed sources were independently verified against Crossref on 2026-06-21. Institutional documents (COPE, WAME, ICMJE, STM, EDPB, ENAI, KVKK, EU legislation) are cited as grey literature; their URLs were verified on 2026-06-21.
 
-Committee on Publication Ethics. (2023). *Authorship and AI tools position statement*. https://publicationethics.org
+Committee on Publication Ethics. (2023). *Authorship and AI tools position statement*. https://publicationethics.org/cope-position-statements/ai-author
 
-European Data Protection Board. (2024). *Opinion 28/2024 on certain data protection aspects related to the processing of personal data in the context of AI models*. https://www.edpb.europa.eu/our-work-tools/our-documents/opinion/opinion-282024_en
+European Data Protection Board. (2024). *Opinion 28/2024 on certain data protection aspects related to the processing of personal data in the context of AI models*. https://www.edpb.europa.eu/our-work-tools/our-documents/opinion-board-art-64/opinion-282024-certain-data-protection-aspects_en
 
-European Network for Academic Integrity. (2025). *Recommendations on the ethical use of artificial intelligence in research*. https://www.academicintegrity.eu
+European Network for Academic Integrity. (2023). Recommendations on the ethical use of artificial intelligence in education. *International Journal for Educational Integrity*, 19(1), Article 12. https://doi.org/10.1007/s40979-023-00133-4
 
 European Parliament and Council. (2024). *Regulation (EU) 2024/1689 of 13 June 2024 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)*. Official Journal of the European Union, L 2024/1689. https://eur-lex.europa.eu/eli/reg/2024/1689
 
-International Committee of Medical Journal Editors. (2024). *Recommendations for the conduct, reporting, editing, and publication of scholarly work in medical journals*. https://www.icmje.org/recommendations/
+International Committee of Medical Journal Editors. (2026). *Recommendations for the conduct, reporting, editing, and publication of scholarly work in medical journals*. https://www.icmje.org/recommendations/
 
 Jobin, A., Ienca, M., & Vayena, E. (2019). The global landscape of AI ethics guidelines. *Nature Machine Intelligence*, 1(9), 389–399. https://doi.org/10.1038/s42256-019-0088-2
 
@@ -143,20 +182,20 @@ Personal Data Protection Authority. (2016). *Law No. 6698 on the Protection of P
 
 Resnik, D. B., & Hosseini, M. (2025). The ethics of using artificial intelligence in scientific research: New guidance needed for a new tool. *AI and Ethics*, 5(2), 1499–1521. https://doi.org/10.1007/s43681-024-00493-8
 
-STM Association. (2025). *Classification of AI use in manuscript preparation*. International Association of Scientific, Technical and Medical Publishers. https://www.stm-assoc.org
+STM Association. (2025). *Recommendations for a classification of AI use in academic manuscript preparation*. STM Association. https://stm-assoc.org/document/recommendations-for-a-classification-of-ai-use-in-academic-manuscript-preparation/
 
-World Association of Medical Editors. (2023). *Recommendations on chatbots and generative artificial intelligence in relation to scholarly publications*. https://wame.org
+World Association of Medical Editors. (2023). *Recommendations on chatbots and generative artificial intelligence in relation to scholarly publications*. https://wame.org/recommendations-on-chatbots-and-generative-artificial-intelligence-in-relation-to-scholarly-publications
 
-World Medical Association. (2025). World Medical Association Declaration of Helsinki: Ethical principles for medical research involving human participants. *JAMA*, 333(1), 71. https://doi.org/10.1001/jama.2024.21972
+World Medical Association. (2025). World Medical Association Declaration of Helsinki: Ethical principles for medical research involving human participants. *JAMA*, 333(1), 71–74. https://doi.org/10.1001/jama.2024.21972
 
 ---
 
 **Booklet ID.** `009-01-0001`
-**Version.** `0.1.0`
-**Date.** 2026-06-20
+**Version.** `0.2.0`
+**Date.** 2026-06-21
 **License.** This booklet is licensed under CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/
-**Approximate word count.** 2491 (English body text, excluding references, measured with wc)
+**Approximate word count.** 2673 (English body text, excluding references, measured with wc)
 **Verified citations.** 12
-**Hallucinated citations.** 0
+**Fabricated citations.** 0
 **Previous booklet.** [`007-02-0001`](../../007-academic-writing/007-02-0001/en.md). APA 7 with DOI Discipline
 **Next booklet.** [`010-01-0001`](../../010-peer-review/010-01-0001/en.md). Rebuttal Letters with Traceability Matrices

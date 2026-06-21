@@ -1,12 +1,12 @@
 ---
-title_en: "Material Passport: Tracking Sources Across Sessions"
-title_tr: "Kaynak Pasaportu: Kaynakları Oturumlar Arası İzlemek"
+title_en: "Material Passport. Tracking Sources Across Sessions"
+title_tr: "Kaynak Pasaportu. Kaynakları Oturumlar Arasında İzlemek"
 booklet_id: "003-03-0001"
 category: "003-memory-system"
 language: "tr"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-06-12"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -15,13 +15,13 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model_alias: "claude-fable-5"
-    model_dated: null  # no dated identifier published by Anthropic for Fable 5 as of 2026-06-12
+    model_alias: "claude-opus-4-8"
+    model_dated: null  # no dated identifier published by Anthropic for Opus 4.8 as of 2026-06-21
     role: "drafting, verification, citation lookup"
     interaction_mode: "interactive console"
 ai_contribution_level: "substantial-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 6
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -30,80 +30,131 @@ license:
 status: "release"
 ---
 
-# Kaynak Pasaportu: Kaynakları Oturumlar Arası İzlemek
+# Kaynak Pasaportu. Kaynakları Oturumlar Arasında İzlemek
 
-Bu kategorinin ilk kitapçığı hafızayı arşive dönüştürmenin ilkelerini kurdu. Bu kitapçık o arşivin en hareketli sakinine, kaynağa, bir kimlik düzeni getirir. Mühendislikte malzeme pasaportu, bir yapıya giren her bileşenin nereden geldiğini ve hangi özellikleri taşıdığını belgeleyen kayıttır. Aynı fikir araştırma arşivine taşındığında kaynak pasaportu doğar. Arşive giren her makale, kitap ve rapor, nereden bulunduğunu, hangi sorguyla geldiğini, doğrulanıp doğrulanmadığını ve hangi taslakta kullanıldığını söyleyen bir kimlik satırı taşır. Bu kitapçık o satırın alanlarını, ne zaman yazılacağını ve Claude Code ile nasıl zahmetsiz tutulacağını anlatır.
+## Giriş
+
+Bu kategorinin ilk kitapçığı hafızayı arşive dönüştürmenin temel ilkelerini kurmuştu. Bu kitapçık ise o arşivin en hareketli öğesine, yani kaynağa, izlenebilir bir kimlik düzeni kazandırmayı amaçlar.
+
+Mühendislikte malzeme pasaportu, bir yapıya giren her bileşenin nereden geldiğini, hangi özellikleri taşıdığını ve hangi kullanım geçmişine sahip olduğunu belgeleyen kayıttır. Aynı fikir araştırma arşivine taşındığında kaynak pasaportu ortaya çıkar. Arşive giren her makale, kitap, rapor ya da tez, nereden bulunduğunu, hangi sorguyla geldiğini, doğrulanıp doğrulanmadığını ve hangi taslakta kullanıldığını gösteren bir kimlik satırı taşır.
+
+Bu kitapçığın temel amacı, kaynak pasaportunun alanlarını, ne zaman yazılacağını ve Claude Code ile nasıl sürdürülebilir biçimde tutulacağını açıklamaktır. Çünkü kaynak yönetiminde asıl sorun yalnızca kaynağı bulmak değildir. Bulunmuş kaynağı aylar sonra yeniden bulunur, doğrulanır ve kullanılabilir hâlde tutmaktır.
 
 ## 1. Pasaport Metaforu
 
-Bir kaynağın yaşamı bulunduğu anda bitmez, orada başlar. Bugün bir katalog taramasında bulunan makale, üç hafta sonra bir taslağın tartışma bölümünde, üç ay sonra bir hakem yanıtında yeniden sahneye çıkar. Her sahnede aynı sorular döner. Bu kaynağı nereden bulmuştum? Künyesi doğrulanmış mıydı? Hangi iddiayı destekliyordu? Pasaport, bu soruların yanıtını kaynağın kendisine iliştirir. Soru her doğduğunda arşivde aranan şey bir anı değil, bir kayıttır.
+Bir kaynağın akademik yaşamı bulunduğu anda bitmez. Tam tersine orada başlar. Bugün bir katalog taramasında bulunan makale, üç hafta sonra bir taslağın giriş bölümünde, üç ay sonra tartışma bölümünde, altı ay sonra hakem yanıtında yeniden karşımıza çıkabilir.
 
-Metaforun gücü taşınabilirliğindedir. Pasaport kaynağa aittir ve kaynak nereye giderse onunla gider. Oturumlar değişir, projeler değişir, taslaklar el değiştirir. Kimlik satırı yerinde durur.
+Her yeniden kullanımda aynı sorular ortaya çıkar. Bu kaynağı nereden bulmuştum? Künyesi doğrulanmış mıydı? Hangi sorguyla gelmişti? Hangi iddiayı destekliyordu? Daha önce hangi taslakta kullanmıştım? Eğer bu soruların yanıtı yalnızca araştırmacının hafızasındaysa, kaynak yönetimi kırılgan hâle gelir.
 
-## 2. Neden Defter Gerekir
+Kaynak pasaportu, bu soruların yanıtını kaynağın kendisine iliştirir. Böylece kaynak yalnızca bir PDF, DOI ya da künye olmaktan çıkar. Bulunma bağlamı, doğrulama durumu ve kullanım geçmişiyle birlikte arşivde yaşar.
 
-Sorunun kökü, bulmak ile bulunur tutmak arasındaki farktadır. Jones (2007), kişisel bilgi yönetimi alanını derlediği çalışmada, asıl zorluğun bilgiyi bulmak değil, bulunmuş bilgiyi yeniden bulunur kılmak olduğunu ortaya koyar. Araştırmacı her hafta onlarca kaynağa dokunur ve dokunulan her kaynak, kayıt düşülmediyse, birkaç oturum sonra yeniden yabancıdır. Yeniden bulma maliyeti sessizce birikir. Aynı makale ikinci kez aranır, aynı özet ikinci kez okunur, aynı karar ikinci kez verilir.
+Metaforun gücü taşınabilirliğindedir. Pasaport kaynağa aittir ve kaynak nereye giderse onunla birlikte gider. Oturumlar değişir, projeler değişir, taslaklar el değiştirir. Kimlik satırı yerinde kalır.
 
-Defter bu maliyeti tek seferlik bir kayıt zahmetiyle değiştirir. Kaynak bulunduğu anda bir satır yazılır ve o satır, gelecekteki bütün yeniden bulmaların yerine geçer. Hafıza kitapçığının ilkesi burada en somut hâlini alır. Akılda tutulacak her şey, akıldan dosyaya taşınır.
+## 2. Neden Defter Gerekir?
+
+Sorunun kökü, bulmak ile bulunur tutmak arasındaki farktadır. Jones (2007), kişisel bilgi yönetimi alanını değerlendirirken asıl güçlüğün çoğu zaman bilgiyi ilk kez bulmak değil, bulunmuş bilgiyi yeniden bulunur kılmak olduğunu gösterir. Bu tespit, akademik kaynak yönetimi için doğrudan geçerlidir.
+
+Bir araştırmacı her hafta çok sayıda kaynağa dokunur. Bazılarını yalnızca gözden geçirir, bazılarını derinlemesine okur, bazılarını taslağa alır, bazılarını daha sonra dönmek üzere kenara koyar. Eğer bu temaslar kayda geçirilmezse, aynı makale yeniden aranır, aynı özet yeniden okunur, aynı karar yeniden verilir.
+
+Kaynak pasaportu bu sessiz maliyeti azaltır. Kaynak bulunduğu anda kısa bir kayıt açılır. Bu kayıt gelecekteki yeniden bulmaların, doğrulamaların ve kullanım kararlarının temelini oluşturur. Hafızayı arşive dönüştürme ilkesinin kaynak düzeyindeki karşılığı tam olarak budur. Akılda tutulacak şey dosyaya taşınır.
 
 ## 3. Pasaportun Alanları
 
-Bir pasaport satırı altı alanı yanıtlar. Künye ve DOI. Nereden ve hangi sorguyla bulunduğu. Bulunma tarihi. Erişim yolu, açık erişim mi, kurumsal abonelik mi, basılı kopya mı. Doğrulama durumu, künye hangi tarihte hangi katalogla teyit edildi. Kullanım yeri, hangi taslağın hangi bölümünde hangi iddiayı taşıyor.
+Bir kaynak pasaportu gereğinden fazla ayrıntılı olmamalıdır. Aksi hâlde araştırmacı onu sürdüremez. Bu nedenle pasaport satırı altı temel soruya yanıt verecek kadar kısa tutulmalıdır.
 
-Aşağıdaki örnek sentetiktir ve biçimi göstermek için kurulmuştur.
+Künye ve DOI nedir?
 
-> **Kaynak.** Sandve, G. K., Nekrutenko, A., Taylor, J., & Hovig, E. (2013). Ten simple rules for reproducible computational research. https://doi.org/10.1371/journal.pcbi.1003285
-> **Bulunma.** PubMed araması, "reproducible research rules", 2026-06-12.
-> **Erişim.** Açık erişim.
-> **Doğrulama.** Crossref, 2026-06-12, künye eşleşti.
-> **Kullanım.** Yöntem bölümü taslağı, köken kaydı paragrafı.
-> **Not.** Köken izleme kuralı bu makaleden.
+Kaynak nereden ve hangi sorguyla bulundu?
 
-Altı alan kasıtlı olarak azdır. Doldurulması bir dakikadan kısa süren bir kayıt yazılır. Doldurulması çeyrek saat süren bir form yazılmaz.
+Kaynak hangi tarihte bulundu?
+
+Erişim yolu nedir? Açık erişim, kurumsal abonelik, basılı kopya ya da başka bir yol.
+
+Künye hangi tarihte ve hangi katalogla doğrulandı?
+
+Kaynak hangi taslakta, hangi bölümde, hangi iddiayı taşımak için kullanıldı?
+
+Aşağıdaki örnek sentetiktir ve yalnızca biçimi göstermek için verilmiştir.
+
+Kaynak. Sandve, G. K., Nekrutenko, A., Taylor, J., & Hovig, E. (2013). Ten simple rules for reproducible computational research. https://doi.org/10.1371/journal.pcbi.1003285
+
+Bulunma. PubMed araması, reproducible research rules, 2026-06-12.
+
+Erişim. Açık erişim.
+
+Doğrulama. Crossref, 2026-06-12, künye eşleşti.
+
+Kullanım. Yöntem bölümü taslağı, köken kaydı paragrafı.
+
+Not. Köken izleme kuralı bu makaleden.
+
+Bu alanların az tutulması bilinçli bir tercihtir. Bir dakikadan kısa sürede doldurulamayan kayıt, zamanla terk edilir. Pasaport defterinin sürdürülebilirliği, kısa ve işlevsel olmasına bağlıdır.
 
 ## 4. FAIR İlkeleriyle Hizalanma
 
-Bu kişisel düzenin, veri yönetiminin kurumsal katmanında bir karşılığı vardır. Wilkinson ve diğerleri (2016), bilimsel veri yönetimi için FAIR ilkelerini ortaya koydu. Bulunabilirlik, erişilebilirlik, birlikte çalışabilirlik ve yeniden kullanılabilirlik. İlkelerin omurgası, her nesnenin zengin üstveriyle ve kalıcı tanımlayıcıyla donanmasıdır. Kaynak pasaportu, bu omurganın kişisel arşiv katmanına indirilmiş hâli olarak okunabilir. DOI kalıcı tanımlayıcıdır, pasaport alanları üstveridir ve defterin kendisi arşiv içi bulunabilirliği kurar.
+Kaynak pasaportu kişisel bir arşiv pratiğidir. Bununla birlikte daha geniş veri yönetimi literatürüyle uyumludur. Wilkinson ve diğerleri (2016), bilimsel veri yönetimi için FAIR ilkelerini ortaya koymuştur. Bu ilkeler bulunabilirlik, erişilebilirlik, birlikte çalışabilirlik ve yeniden kullanılabilirlik üzerine kuruludur.
 
-Benzetme bilinçli sınırlarıyla kullanılmalıdır. FAIR, kurumların ve depoların ölçeğinde tanımlanmış bir çerçevedir. Pasaport ise tek araştırmacının defteridir. Ortak olan ilke şudur. Kimliği olmayan nesne, ölçek fark etmeksizin, kaybolmaya adaydır.
+FAIR ilkeleri kurumlar, veri depoları ve bilimsel veri altyapıları için geliştirilmiştir. Kaynak pasaportu ise tek araştırmacının arşivine uygulanır. Ölçek farklıdır. Ancak temel sezgi benzerdir. Kimliği, üst verisi ve kalıcı tanımlayıcısı olmayan bir nesne, ister kurumsal depoda ister kişisel arşivde olsun, kaybolmaya adaydır.
+
+DOI, kaynağın kalıcı tanımlayıcısıdır. Pasaport alanları ise kaynağın üst verisidir. Defterin kendisi de arşiv içi bulunabilirliği kurar. Bu nedenle kaynak pasaportu, FAIR mantığının kişisel araştırma arşivi düzeyindeki sadeleştirilmiş bir uyarlaması olarak düşünülebilir.
 
 ## 5. Oturum İçinde Kayıt
 
-Pasaportun yazılma anı, değerinin yarısıdır. Doğru an, kaynağın arşive girdiği andır. Katalog köprüsünden dönen bir kayıt işe yarar göründüyse pasaport satırı o oturumda açılır. Sonraya bırakılan kayıt, çoğu zaman hiç yazılmayan kayıttır, çünkü bulunma bağlamı, hangi sorgu, hangi amaç, oturum kapanınca buharlaşır.
+Kaynak pasaportunun değeri yalnızca hangi alanları içerdiğine bağlı değildir. Ne zaman yazıldığı da en az o kadar önemlidir. Doğru zaman, kaynağın arşive girdiği andır.
 
-Önceki kitapçıkların altyapısı burada birleşir. Köprüden gelen kaynağın sorgusu ve tarihi zaten bellidir, model bu alanları kendiliğinden doldurabilir. Oturum kapanış ritüeline eklenen tek bir denetim, sistemi mühürler. Bu oturumda taslağa giren ve pasaportu olmayan kaynak var mı? Varsa kapanıştan önce satırı yazılır.
+Bir katalog taramasından dönen kayıt işe yarar görünüyorsa, pasaport satırı aynı oturumda açılmalıdır. Sonraya bırakılan kayıt çoğu zaman hiç yazılmaz. Çünkü kaynağın hangi sorguyla, hangi amaçla ve hangi bağlamda bulunduğu oturum kapandıktan sonra hızla bulanıklaşır.
+
+Önceki kitapçıklarda kurulan altyapı burada birleşir. Bibliyografik köprüden gelen kaynağın sorgusu, tarihi ve erişim yolu çoğu zaman bellidir. Claude Code bu alanları taslak olarak doldurabilir. Araştırmacı ise kaynağın gerçekten kullanılabilir olup olmadığını, hangi iddiayı taşıyacağını ve hangi notun düşüleceğini belirler.
+
+Oturum kapanışına tek bir soru eklemek çoğu zaman yeterlidir. Bu oturumda taslağa giren ve pasaportu olmayan kaynak var mı? Varsa kapanıştan önce pasaport satırı yazılmalıdır.
 
 ## 6. Tekrarlanabilir Tarama Kaydı
 
-Sistematik derleme geleneği, tarama belgelemenin en olgun örneğini sunar. Bramer ve diğerleri (2017), sistematik derlemeler için veri tabanı bileşimlerini inceledikleri çalışmada, hangi katalogların hangi sorgularla tarandığının kayıt altına alınmasını sürecin kurucu parçası olarak ele alır. Tam ölçekli bir sistematik derleme yapmayan araştırmacı için bile ders açıktır. Tarama, sorgusu ve tarihi kaydedildiğinde tekrarlanabilir bir işleme dönüşür.
+Sistematik derleme geleneği, kaynak taramasının belgelendirilmesi konusunda en gelişmiş örneklerden birini sunar. Bramer ve diğerleri (2017), sistematik derlemelerde veri tabanı bileşimlerini incelerken hangi katalogların hangi sorgularla tarandığının kayıt altına alınmasını sürecin temel parçası olarak ele alır.
 
-Pasaport defteri bu disiplinin gündelik ölçeğe uyarlanmasıdır. Her satırdaki sorgu ve tarih alanları, aylar sonra aynı taramanın yeniden koşulmasına izin verir. Yöntem bölümünde tarama stratejisi sorulduğunda yanıt, hatırlamaya değil deftere dayanır.
+Tam ölçekli bir sistematik derleme yürütmeyen araştırmacı için bile bu ilke değerlidir. Bir tarama ancak sorgusu, tarihi, veri tabanı ve seçim gerekçesi kaydedildiğinde yeniden üretilebilir bir işleme dönüşür.
+
+Kaynak pasaportu bu disiplini gündelik akademik çalışmaya taşır. Her satırdaki sorgu ve tarih alanları, aylar sonra aynı taramanın yeniden yürütülmesine imkân verir. Yöntem bölümünde tarama stratejisi sorulduğunda yanıt araştırmacının hafızasına değil, pasaport defterine dayanır.
 
 ## 7. Sürüm ve Yeniden Üretim
 
-Sandve ve diğerleri (2013), tekrarlanabilir hesaplamalı araştırmanın kurallarını derlerken ilk sıraya köken kaydını koyar. Her sonucun nasıl üretildiği izlenebilir olmalıdır. Taslaktaki bir iddianın kökeni, onu taşıyan kaynaktır ve pasaportun kullanım alanı tam bu izi kurar. İddia sorgulandığında zincir hazırdır. Cümle, kaynak, künye, doğrulama tarihi.
+Sandve ve diğerleri (2013), tekrarlanabilir hesaplamalı araştırma için köken kaydının önemini vurgular. Her sonucun nasıl üretildiği izlenebilir olmalıdır. Akademik yazıda bir iddianın kökeni, onu taşıyan kaynaktır. Kaynak pasaportunun kullanım alanı bu izi kurar.
 
-Noble (2009), hesaplamalı projelerin düzenlenmesi üzerine kılavuzunda her şeyin bir gün yeniden yapılmak zorunda kalacağını ve düzenin bu yeniden yapmayı yabancılar için bile mümkün kılması gerektiğini söyler. Buradaki yabancı çoğu zaman gelecekteki sizsinizdir. Altı ay sonra revizyona dönen yazar, pasaport defteri sayesinde kendi kararlarının arkeolojisini yapmak zorunda kalmaz.
+Bir cümle sorgulandığında zincir görünür olmalıdır. Cümle hangi iddiayı kuruyor? Hangi kaynağa dayanıyor? Kaynağın künyesi doğrulanmış mı? Hangi tarihte ve hangi katalogla doğrulanmış? Bu soruların yanıtı pasaport defterinde bulunmalıdır.
 
-## 8. Uydurmaya Karşı Pasaport
+Noble (2009), hesaplamalı projelerin düzenlenmesine ilişkin kılavuzunda, her şeyin bir gün yeniden yapılmak zorunda kalabileceğini hatırlatır. Bu yeniden yapma görevini üstlenecek kişi çoğu zaman gelecekteki araştırmacının kendisidir. Altı ay sonra revizyona dönen yazar, pasaport defteri sayesinde kendi kararlarının arkeolojisini yapmak zorunda kalmaz.
 
-Defterin bütünlük katmanındaki işlevi en serttir. Walters ve Wilder (2023), ChatGPT üretimi kaynakçalardaki uydurma künyelerin ölçeğini belgeledi. Bu rehberin atıf disiplini her künyenin katalogda doğrulanmasını şart koşar ve pasaport, bu şartın arşivdeki uygulayıcısıdır. Kural tek cümledir. Pasaportu olmayan kaynak, kaynakçaya giremez.
+## 8. Uydurma Atfa Karşı Pasaport
 
-Kuralın gücü mekanikleşebilir olmasındadır. Taslağın kaynakçası ile pasaport defteri yan yana konduğunda üç liste düşer. Pasaportlu ve kullanılmış kaynaklar, sağlıklı çekirdek. Pasaportsuz atıflar, doğrulama kuyruğu. Kullanılmamış pasaportlar, ileride işe yarayabilecek yedekler. İlk liste büyüdükçe kaynakçanın güvenilirliği yapısal hâle gelir.
+Kaynak pasaportunun en sert işlevi, kaynak bütünlüğünü korumasıdır. Walters ve Wilder (2023), ChatGPT tarafından üretilen bibliyografik künyelerde uydurma ve hatalı kaynakların ciddi bir sorun oluşturduğunu göstermiştir. Bu risk, yapay zekâ destekli akademik yazımda pasaport defterini daha da önemli hâle getirir.
+
+Bu rehberin kuralı açıktır. Pasaportu olmayan kaynak, kaynakçaya giremez. Bu kural mekanikleştirilebilir olduğu için güçlüdür. Taslağın kaynakçası ile pasaport defteri karşılaştırıldığında üç liste ortaya çıkar.
+
+Pasaportlu ve kullanılmış kaynaklar. Sağlıklı çekirdek.
+
+Pasaportsuz atıflar. Doğrulama kuyruğu.
+
+Kullanılmamış pasaportlar. Daha sonra işe yarayabilecek yedek kaynaklar.
+
+İlk liste büyüdükçe kaynakçanın güvenilirliği kişisel dikkatle sınırlı kalmaz, yapısal bir güvenceye dönüşür.
 
 ## 9. Claude Code ile Pasaport Defteri
 
-Defterin bakımı, modelin en iyi yaptığı iş türündendir. Pasaport satırını biçimine uygun eklemek, köprüden gelen kaynağın sorgu ve tarih alanlarını doldurmak, kaynakça ile defteri karşılaştırıp üç listeyi raporlamak. Tartışma bölümünü hangi kaynaklar taşıyor sorusu, defter varken bir arama komutudur.
+Pasaport defterinin bakımı, Claude Code'un iyi destekleyebileceği görev türlerinden biridir. Pasaport satırını belirlenen biçime göre eklemek, bibliyografik araçtan gelen kayıtları ilgili alanlara yerleştirmek, kaynakça ile pasaport defterini karşılaştırmak ve eksikleri raporlamak yapılandırılmış görevlerdir.
 
-Sınır her zamanki yerindedir. Kaynağın işe yarayıp yaramadığına, hangi iddiayı taşıyacağına ve nota ne yazılacağına araştırmacı karar verir. Model defteri tutar, defterin söylediğini araştırmacı söyletir. Kayıt mekanikleştikçe yargıya kalan zaman büyür ve düzenin asıl getirisi budur.
+Örneğin araştırmacı tartışma bölümünde kullanılan kaynakları pasaport defteriyle karşılaştırmasını isteyebilir. Araç pasaportlu kaynakları, doğrulama gerektiren kaynakları ve henüz kullanılmamış kayıtları ayrı ayrı raporlayabilir. Böylece kaynak denetimi yalnızca son aşamada yapılan yorucu bir temizlik olmaktan çıkar, yazım sürecinin doğal parçası hâline gelir.
 
-## 10. Köprü, Defterin Evine
+Sınır yine aynıdır. Kaynağın hangi iddiayı taşıyacağına, metinde hangi ağırlıkla kullanılacağına ve not alanına hangi değerlendirmenin yazılacağına araştırmacı karar verir. Model defteri tutmaya yardım eder. Bilimsel yargı araştırmacıda kalır.
 
-Pasaport defteri arşivin bir dosyasıdır ve her dosya gibi bir adrese ihtiyaç duyar. Defter nerede yaşar, günlük kayıtlarla ilişkisi nasıl kurulur, içerik haritasında nereye bağlanır? Bu soruların sistemi klasör disiplinidir. Bir sonraki kitapçık arşivin klasör mimarisini ve Maps of Content kalıbını kurar. Pasaportun evi orada hazırdır.
+## 10. Köprü. Defterin Evine
+
+Kaynak pasaportu arşivin bir dosyasıdır. Her dosya gibi onun da bir evi olmalıdır. Pasaport defteri nerede yaşar? Günlük kayıtlarla ilişkisi nasıl kurulur? İçerik haritasında hangi başlığa bağlanır? Bu sorular klasör disiplinini gerektirir.
+
+Bir sonraki kitapçık, arşivin klasör mimarisini ve Maps of Content kalıbını ele alır. Kaynak pasaportunun evi, bu mimarinin içinde anlam kazanacaktır.
 
 ## Kaynakça
 
-Atıflar APA 7 biçimindedir. DOI'ler 2026-06-12 tarihinde Crossref üzerinden doğrulanmıştır.
+Atıflar APA 7 biçimindedir. DOI'ler 2026-06-21 tarihinde Crossref üzerinden doğrulanmıştır.
 
 Bramer, W. M., Rethlefsen, M. L., Kleijnen, J., & Franco, O. H. (2017). Optimal database combinations for literature searches in systematic reviews: A prospective exploratory study. *Systematic Reviews*, 6(1), Article 245. https://doi.org/10.1186/s13643-017-0644-y
 
@@ -120,11 +171,11 @@ Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Ba
 ---
 
 **Kitapçık kimliği.** `003-03-0001`
-**Sürüm.** `0.1.0`
-**Tarih.** 2026-06-20
+**Sürüm.** `0.2.0`
+**Tarih.** 2026-06-21
 **Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
-**Sözcük sayısı (yaklaşık).** 1015 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 1267 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0
-**Önceki kitapçık.** [`003-01-0001`](../003-01-0001/tr.md). Hafızayı Arşive Dönüştürmek, İlkesel Bir Giriş
+**Önceki kitapçık.** [`003-01-0001`](../003-01-0001/tr.md). Hafızayı Arşive Dönüştürmek. İlkesel Bir Giriş
 **Sonraki kitapçık.** [`004-01-0001`](../../004-vault-architecture/004-01-0001/tr.md). Klasör Disiplini ve Maps of Content (MOC) Kalıbı

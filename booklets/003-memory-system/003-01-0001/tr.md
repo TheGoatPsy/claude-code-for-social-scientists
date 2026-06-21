@@ -1,12 +1,12 @@
 ---
-title_en: "Memory as Vault, A First-Principles Introduction"
-title_tr: "Hafızayı Arşive Dönüştürmek, İlkesel Bir Giriş"
+title_en: "Memory as Vault. A First Principles Introduction"
+title_tr: "Hafızayı Arşive Dönüştürmek. İlkesel Bir Giriş"
 booklet_id: "003-01-0001"
 category: "003-memory-system"
 language: "tr"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -15,13 +15,13 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model_alias: "claude-opus-4-7"
-    model_dated: null  # no dated identifier published by Anthropic for Opus 4.7 as of 2026-05-24
+    model_alias: "claude-opus-4-8"
+    model_dated: null  # no dated identifier published by Anthropic for Opus 4.8 as of 2026-06-21
     role: "drafting, verification, citation lookup"
     interaction_mode: "interactive console"
 ai_contribution_level: "co-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 9
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -31,95 +31,135 @@ status: "release"
 original_concept: true
 ---
 
-# Hafızayı Arşive Dönüştürmek, İlkesel Bir Giriş
+# Hafızayı Arşive Dönüştürmek. İlkesel Bir Giriş
 
-Önceki kategori, akademik erişim altyapısını kurmuştu. Bu kategori ise erişilen her belgenin nereye gideceği sorusuyla başlar. Literatür taraması da mülakat transkripti de klinik gözlem notu da bir yere yazılmalıdır. Ama hangi yapıya? Bu kitapçık bu soruya hafızayı kalıcı bir arşive dönüştürme kalıbıyla yanıt verir. Bu kalıp, yazarın özgün bir uygulayıcı kavramıdır. Bilişsel bilim ya da bilgi bilimi literatüründe yerleşik bir yapı değildir. Burada rehberin çalışma çerçevesi olarak sunulmaktadır. Amaç, bir akademisyenin yıllarca biriken bağlamını tek bir kalıcı sistemde nasıl tutacağını ilkesel temelinden kurmaktır.
+İlkesel Bir Giriş
 
-## 1. Niçin Kalıcı Bir Arşiv
+## Giriş
 
-İki sosyal bilim örneği, sorunu somutlaştırır. On yıldır pratik yapan bir klinik psikoloğu düşünün. Elinde on yıllık seans notları, vaka formülasyonları, süpervizyon kayıtları ve okuduğu yüzlerce makalenin özetleri vardır. Bu birikim, klinik bilgeliğin temelidir. Ne var ki bir sabit sürücüye, bir not uygulamasına ve dipnot düşülmüş bir PDF yığınına dağıldığında fiilen erişilemez hale gelir. Bir de Komotini ve çevresindeki köylerde on iki yıllık bir saha çalışması yürüten araştırmacıyı düşünün. Elinde alan defterleri, gözlem günlükleri, fotoğraflar ve mülakat dökümleri vardır. Bu birikim, on iki yıllık emeğin kendisidir. Yapısız kaldığında ise her yeni proje sıfırdan başlamak zorunda kalır. Aynı saha, aynı köyler, aynı aileler. Araştırmacı yine de en baştan kazar.
+Önceki kategori, akademik erişim altyapısını ele almıştı. Bu kitapçık ise erişilen her belgenin nereye gideceği sorusuyla başlar. Bir makale künyesi, bir mülakat dökümü, bir klinik gözlem notu ya da bir alan günlüğü yalnızca bulunmakla yetinmez. Araştırmacının çalışma düzeni içinde yerini bulmalıdır.
 
-Her iki örnekte de sorun aynıdır: bağlam birikiyor, ama birikmek erişmekle aynı şey değildir. Kronolojik bir not defterinde bir şeyi bulmak için onu ne zaman yazdığınızı hatırlamanız gerekir. Yapısal bir arşivde ise yalnızca nereye ait olduğunu bilmeniz yeter. Bu ayrım, on yıl ölçeğinde, yapay zekâ destekli bir çalışma ortamını günlük bir not defterinden kalıcı ve gezilebilir bir bilgi arşivine taşıyan tasarımdır. Rehberin adını koyduğu bu tasarım, hafızayı arşive dönüştürme kalıbıdır. Bu yapısal tasarımın anlamlı verimlilik kazanımları sağladığı iddiası, kalıbın mantığından ve bilgi erişimi literatüründen beslenen rehberin kendi çıkarsamasıdır. Bu çıkarsama, kontrollü bir araştırmada sınanmamış bir uygulayıcı hipotezidir.
+Bu kitapçık, bu soruya hafızayı arşive dönüştürme kalıbı üzerinden yanıt verir. Bu kalıp, yazarın özgün bir uygulayıcı kavramıdır. Bilişsel bilim ya da bilgi bilimi literatüründe yerleşik bir kuram olarak sunulmamaktadır. Burada, sosyal bilimcinin yıllar içinde biriken akademik bağlamını kalıcı, gezilebilir ve yeniden kullanılabilir bir yapıda tutmasına yardımcı olan bir çalışma çerçevesi olarak önerilmektedir.
 
-## 2. Tarihsel Zincir, Memex'ten Zettelkasten'a
+Temel iddia şudur. Akademik hafıza kendiliğinden korunmaz. Not almak, kaynak biriktirmek ya da PDF saklamak tek başına yeterli değildir. Araştırmacının ihtiyacı, biriken bilgiyi yalnızca depolayan değil, bağlayan, geri çağıran ve yeni çalışmalarda yeniden kullanılabilir hâle getiren bir arşiv mimarisidir.
 
-Hafızayı arşive dönüştürme kalıbı, yetmiş yıllık bir entelektüel geleneğin parçasıdır. Bilgi mimarisindeki köklü bir sürecin güncel biçimidir. Bu geleneği tanımak, kalıbın ciddiyetini ve dayanıklılığını kavramanın temelidir.
+## 1. Niçin Kalıcı Bir Arşiv?
 
-Bu geleneğin başlangıç noktası Vannevar Bush'tur. Bush (1945), The Atlantic'te yayımlanan "As We May Think" başlıklı denemesinde Memex adını verdiği bir aygıt tasavvur etti. Memex, bir bireyin tüm kitaplarını, kayıtlarını ve yazışmalarını saklayan ve bunlar arasında çağrışımsal izler kuran, kişisel hafızanın mekanize bir uzantısıydı. Bush'un öngörüsü kesindi: insan zihni çağrışımla çalışır, dolayısıyla bilgi sisteminin de çağrışımsal bağlantılara saygı göstermesi, tek bir hiyerarşi dayatmaması gerekir. Kavramsal temeli Ted Nelson attı. Nelson (1965), karmaşık, değişen ve belirsiz bilgi için bir dosya yapısı önerdiği makalesinde hipertekst kavramını ilk kez tanımladı. Nelson'un katkısı, metinlerin doğrusal değil ağsal olarak birbirine bağlanabileceği fikriydi.
+Sorunu iki sosyal bilim örneği üzerinden somutlaştırmak mümkündür. On yıldır klinik pratik yürüten bir psikoloğu düşünelim. Elinde seans notları, vaka formülasyonları, süpervizyon kayıtları ve okuduğu yüzlerce makalenin özetleri vardır. Bu birikim klinik sezginin, mesleki hafızanın ve akademik üretimin önemli bir parçasıdır. Ancak farklı klasörlere, not uygulamalarına, PDF kenar notlarına ve eski disk yedeklerine dağılmışsa, fiilen erişilebilir değildir.
 
-Pratik kanıtı ise Niklas Luhmann sundu. Luhmann (1992), Zettelkasten adını verdiği fiş kutusu sistemiyle çalıştı. Her fişin atomik bir düşünce taşıdığı, fişlerin birbirine referans numaralarıyla bağlandığı bu sistemle Luhmann, yaklaşık yarım yüzyıl boyunca sürdürümlü bir verimlilikle yaklaşık yetmiş kitap ve yüzlerce makale üretti. Luhmann, bu sistemi bir iletişim ortağı olarak tanımladı. Zettelkasten'i çağdaş bilgi çalışanları için Sönke Ahrens (2017) yeniden çerçeveledi. Ahrens, tekniği atomik notlar, çift yönlü bağlantılar ve bir dolap yerine bir düşünme aracı olarak not sistemi kavramları üzerinden formüle etti. Bush, Nelson, Luhmann, Ahrens: bu soyağacı, hafızayı arşive dönüştürme kalıbının yapay zekâ destekli araştırma çağına taşıdığı entelektüel mirastır. Bu dört figürün hiçbirinin öngörmediği şey, geri çağırma adımının doğrudan arşivin içinde çalışan bir dil modeline devredilebileceğiydi.
+Benzer biçimde Komotini ve çevresindeki köylerde uzun süreli bir saha çalışması yürüten bir araştırmacıyı düşünelim. Elinde alan defterleri, gözlem günlükleri, fotoğraflar, görüşme notları ve mülakat dökümleri vardır. Bu birikim yalnızca veri değildir. Yıllar içinde oluşan saha bilgisinin, ilişkilerin, bağlamın ve kavramsal sezginin kaydıdır. Fakat yapısız kaldığında her yeni çalışma, önceki emeğin önemli bir kısmını yeniden kurmak zorunda bırakır.
+
+Her iki örnekte de sorun aynıdır. Bağlam birikir, ancak birikmek erişmek anlamına gelmez. Kronolojik bir not defterinde bir şeyi bulmak için onu ne zaman yazdığınızı hatırlamanız gerekir. Yapısal bir arşivde ise bilginin hangi konuya, hangi projeye, hangi kaynak ailesine ve hangi araştırma kararına ait olduğunu bilmeniz yeterlidir.
+
+Bu ayrım uzun vadede belirleyicidir. Hafızayı arşive dönüştürme kalıbı, yapay zekâ destekli bir çalışma aracını geçici bir not yardımcısından çıkarıp, araştırmacının akademik bağlamıyla çalışabilen kalıcı bir bilgi düzenine bağlamayı amaçlar. Bu kalıbın verimlilik sağlayacağı iddiası, bilgi erişimi literatüründen ve uygulayıcı deneyiminden türeyen bir çıkarımdır. Kontrollü bir araştırmada doğrudan sınanmış bir etki iddiası olarak okunmamalıdır.
+
+## 2. Tarihsel Zincir. Memex'ten Zettelkasten'a
+
+Hafızayı arşive dönüştürme fikri, yalnızca çağdaş yapay zekâ araçlarıyla ortaya çıkmış değildir. Kişisel bilgi mimarisinin daha uzun bir tarihsel çizgisi vardır. Bu çizgiyi görmek, önerilen kalıbın neden yalnızca pratik bir klasör tavsiyesi olmadığını anlamaya yardımcı olur.
+
+Bu hattın erken ve etkili başlangıç noktalarından biri Vannevar Bush'un Memex tasarımıdır. Bush (1945), bireyin kitaplarını, kayıtlarını ve yazışmalarını saklayabilecek, bunlar arasında çağrışımsal izler kurabilecek kişisel bir hafıza aygıtı tasavvur etmişti. Bush'un temel sezgisi güçlüydü. İnsan zihni yalnızca hiyerarşik klasörlerle değil, çağrışımlarla da çalışır. Bu nedenle bilgi sistemi de yalnızca tek bir ağaç yapısına değil, bağlantılara ve izlere dayanmalıdır.
+
+Ted Nelson (1965), hipertekst fikrini geliştirerek metinlerin doğrusal değil ağsal biçimde birbirine bağlanabileceğini gösterdi. Niklas Luhmann ise Zettelkasten sistemiyle bu düşüncenin akademik üretimde ne kadar güçlü olabileceğini pratik olarak ortaya koydu. Luhmann'ın fiş kutusu, her biri atomik bir düşünce taşıyan, birbirine referanslarla bağlanan notlardan oluşuyordu. Bu sistem, onun üretkenliğinin arkasındaki önemli çalışma düzenlerinden biri olarak tartışılır.
+
+Sönke Ahrens (2017), Zettelkasten yaklaşımını çağdaş bilgi çalışanları için yeniden yorumladı. Atomik notlar, bağlantılar ve not alma sistemini yalnızca depolama değil düşünme aracı olarak görme fikri, bugün dijital arşivlerin temel mantığıyla güçlü biçimde örtüşür.
+
+Bush, Nelson, Luhmann ve Ahrens çizgisinin ortak noktası şudur. Bilgi yalnızca saklandığında değil, bağlantılandığında değer kazanır. Bu kitapçığın önerdiği arşiv kalıbı, bu geleneği yapay zekâ destekli araştırma çalışma düzenine taşır. Yeni olan, geri çağırma ve sentez adımlarının artık arşiv içinde çalışan bir dil modeliyle desteklenebilmesidir.
 
 ## 3. Kalıbın İşlevsel İlkeleri
 
-Hafızayı arşive dönüştürme kalıbı, rehberin tanımladığı biçimiyle, birbirini destekleyen işlevsel ilkeler üzerine kurulur. Her ilke, araştırmacının bir kez verdiği ve yıllarca kazandığı bir mühendislik kararını temsil eder.
+Hafızayı arşive dönüştürme kalıbı, birkaç işlevsel ilkeye dayanır. Bu ilkeler belirli bir yazılıma bağlı değildir. Amaç, araştırmacının yıllar boyunca taşıyabileceği bir bilgi düzeni kurmaktır.
 
-Arşivdeki her belge düz metin Markdown biçiminde yaşar. Düz metin hiçbir tescilli yazılıma bağlı değildir, herhangi bir editörle açılabilir, dönüştürme gerektirmeden otuz yıl sonra da okunabilir. Frontmatter, belgenin başına yerleştirilen yapılandırılmış üst veridir: tarih, tür, etiketler, ilişkili belgeler. Dosyayı açmadan makine tarafından sorgulanabilir kılar. Dosya ağacı, belgeleri anlamlı bir klasör hiyerarşisinde tutar. Bu hiyerarşi bir mühendislik kararıdır ve bir sonraki kitapçığın konusunu oluşturur. Bağlantılar, belgeler arasına köşeli parantez sözdizimi aracılığıyla çift yönlü referanslar katar ve Nelson'un hipertekst fikrini arşiv içinde işler hale getirir. Son olarak içerik haritaları, yani MOC, belirli bir konunun giriş kapısı işlevi görür. İlgili dosyalara işaretçiler sunarak araştırmacının arama yapmak zorunda kalmadan bir temaya girmesini sağlar.
+İlk ilke düz metindir. Arşivdeki belgeler mümkün olduğunca açık, taşınabilir ve uzun ömürlü biçimlerde tutulmalıdır. Markdown bu nedenle güçlü bir seçenektir. Herhangi bir editörle açılabilir, özel bir yazılıma bağımlı değildir ve uzun vadeli taşınabilirlik sağlar.
 
-Bu beş ilkenin tamamı değiştirilebilir. Markdown yerine başka bir düz metin biçimi, farklı bir üst veri şeması, farklı bir klasör mantığı. Bunların herhangi biri yukarıdaki somut seçimlerin yerine geçebilir. Sabit kalan, bu ilkeler değil onların altındaki mantıktır: yakala, bul, bağla, gezin. Bu mantık, bir sonraki bölümün konusudur.
+İkinci ilke üst veridir. Frontmatter, bir dosyanın başına eklenen yapılandırılmış bilgi alanıdır. Tarih, tür, etiket, proje, ilişkili dosyalar ve kaynak durumu gibi bilgiler burada tutulabilir. Bu alanlar dosyayı yalnızca insan için değil, araçlar için de sorgulanabilir hâle getirir.
 
-## 4. Hafızayı Arşive Dönüştürme Mühendislik Kalıbı
+Üçüncü ilke dosya ağacıdır. Bilgi, rastgele bir klasörde değil, araştırmacının çalışma mantığını yansıtan bir dizin içinde yaşamalıdır. Dosya ağacı yalnızca düzen değil, gelecekteki erişilebilirliğin mühendislik temelidir.
 
-Hafızayı arşive dönüştürme kalıbının çekirdek mantığı, rehberin kurguladığı biçimiyle, döngüsel bir yapıdır: Input, Store, Retrieve, Present. Bu döngü kalıbın değişmez iskeletidir. Beş ilke bu iskeletin somut bir uygulamasıdır. İskeletin kendisi hem araçtan hem platformdan bağımsız kalır.
+Dördüncü ilke bağlantıdır. Belgeler arasındaki bağlantılar, Nelson'un hipertekst fikrinin arşiv içindeki karşılığıdır. Bir mülakat notu, bir kavram notuna, bir kaynak pasaportuna ve bir makale taslağına bağlanabilir. Böylece bilgi tekil dosyalarda donmaz, ilişkili bir ağ içinde hareket eder.
 
-```mermaid
-flowchart LR
-  A[Input] --> B[Store]
-  B --> C[Retrieve]
-  C --> D[Present]
-  D --> A
-```
+Beşinci ilke içerik haritasıdır. Maps of Content, yani MOC, belirli bir konuya giriş kapısı işlevi görür. Araştırmacı bir temaya girmek istediğinde tek tek arama yapmak yerine o temanın ana haritasından ilerleyebilir.
 
-Input, bilginin arşive girdiği adımdır. Makale künyesi de alan notu da klinik gözlem de bu adımda yakalanır ve düz metne dönüştürülür. Store, bilginin bir konuma atandığı adımdır: doğru klasör, doğru frontmatter alanları, doğru bağlantılar. Gelecekteki erişilebilirliği bütünüyle bu adım belirler. Yanlış yerde saklanan bilgi bulunamaz. Retrieve, bilginin geri çağrıldığı adımdır: bir metin araması, bir frontmatter sorgusu, bir bağlantı takibi. Arşivin değerinin fiilen görünür hale geldiği adım budur. Present ise geri çağrılan bilginin yeni bir bağlamda kullanıldığı adımdır: bir literatür sentezi, bir argüman taslağı, bir vaka formülasyonu.
+Bu ilkelerin somut uygulaması değişebilir. Markdown yerine başka bir düz metin biçimi, farklı bir üst veri şeması ya da farklı bir klasör mantığı kullanılabilir. Değişmemesi gereken şey alttaki mantıktır. Bilgiyi yakala, sakla, geri çağır ve yeni bağlamda kullan.
 
-Bu kalıbı sıradan bir veri tabanı döngüsünden ayıran özellik, Present'tan Input'a uzanan geri besleme okudur. Bir veri tabanı veri alır, saklar, sorgular ve döndürür. Döndürdüğü veri sistemin kendisini değiştirmez. Oysa hafızayı arşive dönüştürme tasarımında her Present adımı arşivi yeniden biçimlendirir: sentez yeni bir atomik not olarak girer, o not daha önceki notlarla yeni bağlantılar kurar ve ilgili içerik haritaları güncellenir. Arşiv böylece zamanla araştırmacının gelişen düşünme biçiminin kaydına dönüşür. Giderek incelenen bir enstrümana dönüşür. On yıl boyunca özenle tutulan bir arşiv yalnızca büyümez, olgunlaşır.
+## 4. Hafızayı Arşive Dönüştürme Kalıbı
+
+Bu kitapçığın çalışma çerçevesinde hafızayı arşive dönüştürme kalıbı dört adımlı bir döngü olarak düşünülebilir. Input, Store, Retrieve ve Present. Bu İngilizce terimler yazılım ve bilgi mimarisi bağlamında yerleşik oldukları için korunmuştur. Türkçe karşılıklarıyla ifade edersek, bilgi arşive girer, uygun yere yerleştirilir, gerektiğinde geri çağrılır ve yeni bir akademik bağlamda kullanılır.
+
+Input. Bilginin arşive girdiği adımdır.
+
+Store. Bilginin doğru yere, doğru üst veriyle ve doğru bağlantılarla yerleştirildiği adımdır.
+
+Retrieve. Bilginin arama, bağlantı ya da üst veri sorgusu ile geri çağrıldığı adımdır.
+
+Present. Geri çağrılan bilginin yeni bir metinde, analizde, sentezde ya da karar sürecinde kullanıldığı adımdır.
+
+Bu döngüyü sıradan bir veri tabanı işleminden ayıran şey, Present adımından sonra döngünün yeniden Input'a dönmesidir. Araştırmacı bir literatür sentezi yazdığında, o sentez yeni bir atomik not olarak arşive girebilir. Bir kavram haritası oluşturduğunda, bu harita daha önceki notlarla yeni bağlantılar kurabilir. Bir vaka formülasyonu ya da saha analizi geliştirildiğinde, bu çıktı arşivin gelecekteki düşünme düzenini yeniden şekillendirebilir.
+
+Bu nedenle arşiv yalnızca büyümez. Zaman içinde olgunlaşır. İyi tutulan bir arşiv, araştırmacının değişen düşünme biçiminin kaydına dönüşür. Bu, özellikle uzun soluklu doktora projelerinde, klinik araştırmalarda, saha çalışmalarında ve çok dilli literatür izleme süreçlerinde belirleyicidir.
 
 ## 5. Claude Code ile Bütünleşme
 
-Hafızayı arşive dönüştürme kalıbının yapay zekâ destekli bir iş akışındaki pratik gücü, dil modelinin arşiv içerikleriyle doğrudan çalışabilmesinden kaynaklanır. Claude Code, arşiv dizini üzerinde dosya okuma yetkisiyle, yanıtlarını genel eğitim verisi bilgisine değil araştırmacının biriktirdiği gerçek belgelere dayandırabilir. Model bir soruya yanıt verirken ilgili dosyaları okur, içeriklerini sentezler. Ortaya çıkan çıktı böylece web istatistiklerinin bir ortalaması olmaktan çıkar, kullanıcının kendi entelektüel birikiminin bir sentezine dönüşür.
+Hafızayı arşive dönüştürme kalıbının yapay zekâ destekli iş akışındaki gücü, Claude Code'un dosya sistemiyle çalışabilmesinden gelir. Araç, arşiv dizinindeki dosyaları okuyabildiğinde, yanıtlarını yalnızca genel eğitim verisine değil, araştırmacının kendi biriktirdiği belgelere dayandırabilir. Bu, aracı daha değerli kılan ana farklardan biridir.
 
-Bu mekanizmanın teknik temeli geri çağırma destekli üretimdir: model yanıt vermeden önce harici bir bilgi tabanından ilgili parçaları çeker ve yanıtını o parçalara dayandırır (Lewis ve diğerleri, 2020). Arşiv bu mekanizmanın bilgi tabanıdır. Rehberin çıkarsaması, Lewis ve diğerlerinin (2020) kurduğunun ötesine geçer: iyi yapılandırılmış bir Markdown arşivi, Claude Code'un dosya okuma erişimi üzerinden çalıştırıldığında bu mekanizma için geçerli bir bilgi tabanına dönüşebilir. Bu uygulama rehberin kendi önerisidir ve kontrollü bir çalışmada doğrulanmamıştır. Uygulayıcılar bunu gerekçeli bir mühendislik önerisi olarak ele almalıdır.
+Bu mekanizma geri çağırma destekli üretim yaklaşımıyla ilişkilidir. Lewis ve diğerleri (2020), retrieval augmented generation çerçevesinde modelin yanıt üretmeden önce harici bir bilgi tabanından ilgili parçaları çekebileceğini göstermiştir. Bu kitapçığın önerisi, iyi yapılandırılmış bir Markdown arşivinin Claude Code için böyle bir bilgi tabanı işlevi görebileceğidir. Bu, rehberin uygulayıcı çıkarımıdır ve kontrollü bir çalışmada doğrudan sınanmış bir öneri olarak sunulmamaktadır.
 
-Burada açıkça tutulması gereken önemli bir sınır vardır. Arşivin rolü geri çağırmadır. Planlama araştırmacıda kalır. Valmeekam ve diğerleri (2023), büyük dil modellerinin planlama yeteneklerini eleştirel biçimde inceleyerek bu modellerin karmaşık çok adımlı planlamada belirgin sınırlar taşıdığını ortaya koydu. Çalışmalarındaki en iyi model bile standart planlama kıyaslama testlerinde düşük başarı oranlarında kaldı. Bu bulgu, arşivin niçin geri çağırma rolünde kalması gerektiğini açıklar: arşiv güvenilir bir bilgi kaynağı sunar, planlama ve araştırma yargısı ise araştırmacıda kalır. Khattab ve diğerleri (2023), bildirimsel dil modeli çağrılarını kendini iyileştiren işlem hatlarına derleyen DSPy çerçevesiyle geri çağırma ve üretim bileşenlerinin biçimsel olarak nasıl yapılandırılabileceğini gösterdi. Bu çerçeve, arşiv tabanlı bir iş akışının geri çağırma bileşeninin teknik olarak nasıl sağlamlaştırılabileceğini gösteren bir örnek olarak sunulmaktadır. Uygulaması araştırmacının bağlamına göre şekillendirilmelidir.
+Burada sınır açık tutulmalıdır. Arşiv, geri çağırma için güçlü bir temel sağlar. Ancak planlama ve araştırma yargısı araştırmacıda kalır. Valmeekam ve diğerleri (2023), büyük dil modellerinin karmaşık planlama görevlerinde önemli sınırlara sahip olduğunu göstermiştir. Bu nedenle Claude Code, arşivden bilgi çekebilir, bağlantıları görünür kılabilir ve sentez önerileri sunabilir. Fakat araştırma planının uygunluğu, bulgunun anlamı ve nihai akademik karar araştırmacının sorumluluğundadır.
+
+Khattab ve diğerlerinin DSPy çalışması, geri çağırma ve üretim bileşenlerinin daha biçimsel işlem hatları içinde nasıl düzenlenebileceğini gösterir. Bu tür yaklaşımlar, arşiv tabanlı iş akışlarının ileride daha denetlenebilir hâle getirilebileceğini düşündürür. Ancak bu kitapçığın amacı belirli bir teknik çerçeveyi zorunlu kılmak değil, sosyal bilimcinin kendi arşivini güvenilir bir geri çağırma katmanı olarak düşünmesini sağlamaktır.
 
 ## 6. Geri Çağırma Kalıpları
 
-Bir arşivden bilgi geri çağırmanın birkaç kalıbı vardır ve bunlar giderek artan bir anlam derinliği sırasında dizilir. En temel kalıp metin aramasıdır: tüm belgeler genelinde bir terim ya da ifade sorgulanır, klasik grep aracıyla gerçekleştirilir. Hızlı ve kesin sonuç verir. Bir adım ötede dosya örüntüsü eşlemesi, yani glob yer alır: dosyalar ad ya da konum yapısına göre toplanır. Örneğin belirli bir yıla ait tüm günlük kayıtları ya da belirli bir proje alt klasörüne ait tüm dosyalar bu yolla elde edilir.
+Bir arşivden bilgi geri çağırmanın birden fazla yolu vardır. Her yol farklı bir araştırma ihtiyacına karşılık gelir.
 
-Daha güçlü bir seçenek frontmatter sorgusudur. Belgelerin yapılandırılmış üst verisi doğrudan sorgulanır: belirli bir etiketle işaretlenmiş ve belirli bir tarihten sonra oluşturulmuş tüm dosyalar gibi. Arşivin yapısal gücünün görünür hale geldiği yer burasıdır. Araştırmacı kronolojik kazı yerine yapısal bir seçim yapar. Anlam bakımından en zengin kalıp ise MCP üzerinden bağlanan bir araçla gerçekleştirilen anlam aramasıdır. Tam terimi bilmez araştırmacı, anlamca yakın olanı bulur yine de. Kaygı araması, endişe, korku ya da tedirginlik içeren dosyaları da yüzeye çıkarır. Bu kalıplar, tam anahtar kelimeden derin anlam eşleşmesine uzanan bir yelpaze oluşturur. Araştırmacı her sorgu türü için en uygun kalıbı seçer. Uygulamada çoğu geri çağırma iş akışı, aday kümeyi daraltmak için frontmatter sorgularıyla başlar ve o küme içinde hedeflenmiş metin aramasıyla sonlanır.
+En temel yol metin aramasıdır. Araştırmacı bir terimi, kavramı ya da ifadeyi arşiv genelinde arar. Bu yöntem hızlı ve kesindir. Ancak yalnızca kullanılan kelimeyi bulur. Aynı anlamı taşıyan farklı ifadeleri kaçırabilir.
+
+İkinci yol dosya örüntüsü eşlemesidir. Belirli bir yıl, proje, klasör ya da dosya adlandırma düzenine göre dosyalar çağrılır. Örneğin 2025 saha notları, belirli bir proje klasöründeki mülakatlar ya da yalnızca kaynak pasaportları bu yolla bulunabilir.
+
+Üçüncü yol frontmatter sorgusudur. Belgelerin üst verileri doğrudan sorgulanır. Belirli bir etikete sahip, belirli tarihten sonra oluşturulmuş ya da belirli bir projeye bağlı tüm dosyalar seçilebilir. Arşivin yapısal gücü en çok burada görünür. Araştırmacı artık yalnızca hatırlamaya değil, üst veriye dayalı seçim yapar.
+
+Dördüncü yol anlam aramasıdır. MCP üzerinden bağlanan bir araç ya da anlam arama sistemi, tam kelime eşleşmesi olmasa bile yakın anlamlı dosyaları yüzeye çıkarabilir. Örneğin kaygı araması, endişe, korku, tedirginlik ya da kaçınma içeren dosyaları da bulabilir.
+
+Bu kalıplar birbirinin yerine geçmez. İyi bir arşiv iş akışı çoğu zaman önce üst veriyle aday dosya kümesini daraltır, sonra bu küme içinde metin araması yapar, en sonunda gerektiğinde anlam aramasıyla daha geniş bağlantıları keşfeder.
 
 ## 7. Riskler
 
-Hafızayı arşive dönüştürme kalıbı güçlüdür. Ama taşıdığı gerçek riskler açıkça adlandırılmalıdır.
+Hafızayı arşive dönüştürme kalıbı güçlüdür. Ancak taşıdığı riskler açıkça görülmelidir.
 
-Kavramsal yorgunluk gerçek bir risktir. Arşivi sürekli düzenlemek, etiketlemek ve bağlantılamak emek ister. Bu emek arşivin geri döndürdüğü değeri aştığında sistem bir yüke dönüşür. Azaltma yolu yapısal basitliktir: beş ilke mümkün olan en az sürtünmeyle uygulanır. Yeterince gezilebilir bir arşiv yeterlidir. Mükemmel düzen amaçlanmaz. Amaç işlevsel gezinmedir.
+İlk risk kavramsal ve teknik yorgunluktur. Arşivi sürekli düzenlemek, etiketlemek ve bağlantılamak emek ister. Bu emek arşivin sağladığı değeri aşarsa sistem bir yardımdan çok yüke dönüşür. Bu nedenle amaç mükemmel düzen değil, işlevsel gezinmedir. Yeterince iyi yapı, aşırı ayrıntılı ama sürdürülemeyen yapıdan daha değerlidir.
 
-Araç bağımlılığı daha sessiz bir tehlikedir. Araştırmacı arşivini tek bir uygulamaya, tek bir satıcının ekosistemine bağlarsa, o uygulama biçimini değiştirdiğinde, fiyatını artırdığında ya da kapandığında yılların birikimi risk altına girer. Düz metin Markdown ilkesi bu riskin panzehiridir: arşiv düz metin olduğu sürece herhangi bir editörle okunabilir ve herhangi bir platforma taşınabilir.
+İkinci risk araç bağımlılığıdır. Araştırmacı tüm arşivini tek bir uygulamaya ya da tek bir satıcının ekosistemine bağlarsa, o uygulama değiştiğinde ya da ortadan kalktığında yılların birikimi risk altına girer. Düz metin ilkesi bu riski azaltır. Markdown ya da benzeri açık biçimler, arşivin farklı araçlara taşınabilmesini sağlar.
 
-Klinik veri ise en ağır sorumluluğu taşır. Araştırmacının arşivinde anonimleştirilmemiş hasta verisi bulunmamalıdır. Bu hem etik hem hukuki bir zorunluluktur. Klinik veri ancak kimliksizleştirilmiş ve etik kurul onayının çerçevesinde arşive girebilir. Bu risk, bir sonraki bölümde ele alınan bölgesel hukuk çerçevesini doğrudan ilgilendirir.
+Üçüncü ve en ağır risk klinik ve hassas veridir. Anonimleştirilmemiş hasta verisi, kimlik bilgisi içeren mülakat dökümü ya da etik kurul kapsamındaki hassas materyal arşive gelişigüzel girmemelidir. Klinik veri ancak kimliksizleştirilmiş, etik kurul onayıyla uyumlu ve veri koruma ilkelerine uygun biçimde arşivlenebilir.
 
-## 8. Türkiye ve Yunanistan Özgüllüğü
+## 8. Türkiye ve Yunanistan Bağlamı
 
-Klinik ve insan denek verisi söz konusu olduğunda, Türkiye ve Yunanistan yapısal olarak örtüşen iki farklı hukuki çerçeve sunar. Türkiye'de 6698 sayılı Kişisel Verilerin Korunması Kanunu, klinik veriyi özel nitelikli kişisel veri olarak sınıflandırır. Kişisel Verileri Koruma Kurumu (2024), kişisel sağlık verilerinin korunmasına ilişkin rehberinde açık rızanın kalitesini ve veri minimizasyonu ilkesini belirleyici standartlar olarak vurgular. Pratik sonuç açıktır: Türkiye'de bir klinik psikolog ya da hastane araştırmacısı arşivinde anonimleştirilmemiş klinik veri tutmaz. Tutmamalıdır da.
+Klinik veri ve insan katılımcı verisi söz konusu olduğunda, Türkiye ve Yunanistan benzer ilkeleri paylaşan iki farklı hukuki çerçeve sunar. Türkiye'de 6698 sayılı Kişisel Verilerin Korunması Kanunu, sağlık verisini özel nitelikli kişisel veri olarak ele alır. Kişisel Verileri Koruma Kurumu (2024), kişisel sağlık verilerinin korunmasına ilişkin rehberinde açık rıza, amaç sınırlılığı ve veri minimizasyonu ilkelerini vurgular.
 
-Yunanistan, bir Avrupa Birliği üyesi olarak Genel Veri Koruma Tüzüğü'ne doğrudan tabidir. Avrupa Veri Koruma Kurulu (2024), araştırmada kişisel verilerin korunmasına ilişkin kılavuzunda araştırma bağlamında veri işlemenin sınırlarını tanımlar. KVKK ile GDPR arasındaki yapısal benzerlik yüksektir: her ikisi de veri minimizasyonu ve amaç sınırlamasını temel ilke olarak paylaşır. Komotini'deki Demokritus Üniversitesi etik kurulunun pratiği, bu çerçevenin somut bir uygulamasıdır. Saha araştırmacısı mülakat dökümlerini arşive aktarırken katılımcı kimliklerini kodlarla değiştirir. Arşiv böylece hem araştırma açısından işlevsel hem de hukuken uyumlu kalır.
+Bu çerçevenin pratik sonucu açıktır. Türkiye'de klinik psikolog, hastane araştırmacısı ya da insan katılımcıyla çalışan sosyal bilimci, arşivinde anonimleştirilmemiş klinik veri tutmamalıdır. Arşiv, araştırmaya hizmet ederken kişisel veri güvenliğini zayıflatmamalıdır.
 
-## 9. Köprü, Arşiv Mimarisine
+Yunanistan ise Avrupa Birliği üyesi olduğu için Genel Veri Koruma Tüzüğü çerçevesine tabidir. Avrupa Veri Koruma Kurulu (2024), araştırmada kişisel verilerin işlenmesine ilişkin sınırları veri minimizasyonu ve amaç sınırlılığı ilkeleriyle ilişkilendirir. Komotini'deki Demokritus Üniversitesi gibi kurumlarda yürütülen saha çalışmalarında mülakat dökümlerinin kodlanması, katılımcı kimliklerinin ayrıştırılması ve erişimin sınırlandırılması bu ilkelerin pratik karşılığıdır.
 
-Hafızayı arşive dönüştürme döngüsünün dört adımından Store, bir sonraki kitapçığın konusudur. Bilginin nereye ait olduğu sorusu basit görünür. Değildir. Yanlış bir klasör mimarisi yıllar içinde sessizce birikerek gizli bir verimlilik vergisine dönüşür. Dosya aramaları uzar, sonuçlar gürültülenir, her yeni proje önceki birikimi yeniden kurmayı gerektirir. Doğru bir mimari ise dosya bulmayı hatırlamaktan gezinmeye taşır. Bir sonraki kitapçık, klasör disiplinini ve içerik haritası kalıbını uzun vadeli sonuçları olan mühendislik kararları olarak ele alır.
+KVKK ve GDPR aynı değildir. Ancak araştırmacının çalışma arşivi açısından ortak mesaj nettir. Arşiv kullanılabilir olmalı, fakat katılımcının mahremiyetini ve hukuki korumasını zayıflatmamalıdır.
+
+## 9. Köprü. Arşiv Mimarisine
+
+Hafızayı arşive dönüştürme döngüsünün en kritik adımlarından biri Store, yani bilginin doğru yere yerleştirilmesidir. Bu soru ilk bakışta basit görünür. Değildir. Yanlış klasör mimarisi yıllar içinde sessiz bir verimlilik vergisine dönüşür. Dosya aramaları uzar, sonuçlar gürültülenir, yeni projeler eski birikimi yeniden kurmak zorunda kalır.
+
+Doğru arşiv mimarisi ise dosya bulmayı hatırlama yükünden çıkarır, gezinilebilir bir bilgi yapısına dönüştürür. Bir sonraki kitapçık, klasör disiplini ve Maps of Content kalıbını bu nedenle uzun vadeli sonuçları olan mühendislik kararları olarak ele alır.
 
 ## Kaynakça
 
-Atıflar APA 7 biçimindedir. DOI'ler ve arXiv kimlikleri 2026-06-04 tarihinde bağımsız olarak doğrulanmıştır. Bush (1945) ve Luhmann (1992), DOI kaydı döneminden öncedir. Ahrens (2017) bir popüler yayındır. Kişisel Verileri Koruma Kurumu (2024) ve Avrupa Veri Koruma Kurulu (2024), düzenleyici otoriteleri nedeniyle atıf yapılan kurumsal gri literatür kaynaklarıdır. Bu iki kaynakta DOI bulunmamaktadır.
+Atıflar APA 7 biçimindedir. DOI'ler ve arXiv kimlikleri 2026-06-21 tarihinde Crossref üzerinden bağımsız olarak doğrulanmıştır. Bush (1945) ve Luhmann (1992), DOI kaydı döneminden öncedir. Ahrens (2017) bir popüler yayındır. Kişisel Verileri Koruma Kurumu (2025) ve Avrupa Veri Koruma Kurulu (2024) düzenleyici otorite gri literatür kaynaklarıdır; bu kaynaklarda DOI bulunmamaktadır.
 
 Ahrens, S. (2017). *How to take smart notes: One simple technique to boost writing, learning and thinking*. ISBN 978-1542866507
 
-Avrupa Veri Koruma Kurulu. (2024). *Guidelines on the protection of personal data in research*. https://edpb.europa.eu
+Avrupa Veri Koruma Kurulu. (2024). *Opinion 28/2024 on certain data protection aspects related to the processing of personal data in the context of AI models*. https://www.edpb.europa.eu/our-work-tools/our-documents/opinion-board-art-64/opinion-282024-certain-data-protection-aspects_en
 
 Bush, V. (1945, Temmuz). As we may think. *The Atlantic Monthly*, 176(1), 101–108.
 
 Khattab, O., Singhvi, A., Maheshwari, P., Zhang, Z., Santhanam, K., Vardhamanan, S., Haq, S., Sharma, A., Joshi, T. T., Moazam, H., Miller, H., Zaharia, M., & Potts, C. (2023). DSPy: Compiling declarative language model calls into self-improving pipelines. *arXiv*. https://arxiv.org/abs/2310.03714
 
-Kişisel Verileri Koruma Kurumu. (2024). *Kişisel sağlık verilerinin korunmasına ilişkin rehber*. https://www.kvkk.gov.tr
+Kişisel Verileri Koruma Kurumu. (2025, 26 Şubat). *Özel nitelikli kişisel verilerin işlenmesine ilişkin rehber*. https://www.kvkk.gov.tr/Icerik/8184/Ozel-Nitelikli-Kisisel-Verilerin-Islenmesine-Iliskin-Rehber
 
 Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S., & Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. *Advances in Neural Information Processing Systems*, 33, 9459–9474. https://arxiv.org/abs/2005.11401
 
@@ -132,12 +172,12 @@ Valmeekam, K., Marquez, M., Sreedharan, S., & Kambhampati, S. (2023). On the pla
 ---
 
 **Kitapçık kimliği.** `003-01-0001`
-**Sürüm.** `0.1.0`
-**Tarih.** 2026-06-20
+**Sürüm.** `0.2.0`
+**Tarih.** 2026-06-21
 **Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
-**Sözcük sayısı (yaklaşık).** 1819 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 1849 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 9
 **Uydurma atıf sayısı.** 0
 **Özgün kavram.** Hafızayı arşive dönüştürme kalıbı, yazarın özgün uygulayıcı kavramıdır ve burada rehberin çalışma çerçevesi olarak sunulmaktadır.
-**Önceki kitapçık.** [`002-04-0001`](../../002-academic-access/002-04-0001/tr.md). DergiPark, ULAKBIM TR Dizin, HEAL-Link ve Bölgesel İndeksleme
+**Önceki kitapçık.** [`002-04-0001`](../../002-academic-access/002-04-0001/tr.md). DergiPark, ULAKBİM TR Dizin, HEAL Link ve Bölgesel İndeksleme
 **Sonraki kitapçık.** [`004-01-0001`](../../004-vault-architecture/004-01-0001/tr.md). Klasör Disiplini ve Maps of Content (MOC) Kalıbı

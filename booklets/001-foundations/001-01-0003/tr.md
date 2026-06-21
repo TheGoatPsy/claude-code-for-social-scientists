@@ -1,12 +1,12 @@
 ---
 title_en: "Installation, First Session, and Sanity Checks"
-title_tr: "Kurulum, İlk Oturum, Sağlık Testleri"
+title_tr: "Kurulum, İlk Oturum ve Sağlamlık Denetimleri"
 booklet_id: "001-01-0003"
 category: "001-foundations"
 language: "tr"
-version: "0.1.0"
+version: "0.2.0"
 date_published: "2026-05-24"
-date_last_revised: "2026-06-20"
+date_last_revised: "2026-06-21"
 authors:
   - name: "Onour Impram"
     orcid: "0000-0003-1076-3928"
@@ -15,13 +15,13 @@ ai_assisted: true
 ai_tools:
   - name: "Claude Code"
     vendor: "Anthropic"
-    model_alias: "claude-opus-4-7"
+    model_alias: "claude-opus-4-8"
     model_dated: null  # no dated identifier published by Anthropic for Opus 4.7 as of 2026-05-24
     role: "drafting, verification, citation lookup, bilingual re-authoring"
     interaction_mode: "interactive console"
 ai_contribution_level: "co-drafting"
 human_review: "complete"
-human_review_date: "2026-06-20"
+human_review_date: "2026-06-21"
 verified_citations_count: 6
 fabricated_citations_count: 0
 disclosure_standard: "COPE 2023 + WAME 2023 + ICMJE 2024 + STM 2025 + EU AI Act 2024/1689 Art. 50 + ENAI"
@@ -30,111 +30,167 @@ license:
 status: "release"
 ---
 
-# Kurulum, İlk Oturum, Sağlık Testleri
+# Kurulum, İlk Oturum ve Sağlamlık Denetimleri
 
-Bu kitapçık önceki ikisinden farklı bir karakter taşır. İlk iki kitapçık kavramsal zemini kuruyordu: aracın ne olduğunu, hangi arayüz üzerinden çalıştığını ve ajan mantığının sosyal bilim için ne anlam ifade ettiğini ortaya koyuyordu. Bu kitapçık ise operasyoneldir. Claude Code'un kurulumunu ve ilk oturumunu, sosyal bilim akademisyeninin gerçekten kontrol edebileceği bir sağlık testi protokolüyle birlikte anlatır. Temel iddia şudur: kurulum, sosyal bilim akademisyeni için yöntemsel bir filtredir. İlk oturumda neyin doğru yapılandırıldığı, sonraki on iki haftanın geri dönüş maliyetini belirler. İyi yapılandırılmış bir kurulum araştırmacının onlarca saatini kazandırır. Dikkatsiz bir kurulum ise hiçbir şey öğretmez ve aracı boşta bırakır.
+Bu kitapçık, önceki iki kitapçıktan daha operasyonel bir işlev taşır. İlk kitapçık Claude Code'u sosyal bilimci açısından kavramsal bir çerçeveye yerleştirmişti. İkinci kitapçık sohbet penceresi ile ajan tabanlı çalışma aracı arasındaki farkı, süreklilik ve denetlenebilirlik açısından ele almıştı. Bu üçüncü kitapçık ise araştırmacının aracı ilk kez kurarken ve ilk oturumu başlatırken hangi teknik ve yöntemsel kontrolleri yapması gerektiğini açıklar.
 
-Baştan bir notu açık kılmak gerekir. Komut satırı araçları sık güncellenir. Bu kitapçık kavramsal kontrolü kurmayı hedefler. Belirli komutların ezberlenmesi bu hedefin dışındadır. Kesin komut sözdizimi için her zaman güncel resmi belge esas alınmalıdır (Anthropic, 2026a). Bu bilinçli bir tercihtir. Araştırmacı için kalıcı değer, bir kurulumun neden ve nasıl çalıştığını kavramaktadır. Literatür taramasında kaynak doğrulamasını yöneten disiplinin ta kendisidir bu.
+Buradaki temel iddia şudur. Kurulum yalnızca bir yazılım yükleme işlemi değildir. Sosyal bilimci açısından kurulum, sonraki araştırma iş akışının güvenilirliğini belirleyen ilk yöntemsel filtredir. Dosya erişimi, izin modeli, çalışma dizini, komut satırı ortamı ve ilk sağlamlık denetimleri doğru kurulmadığında, araç güçlü görünse bile akademik üretim için güvenilir biçimde kullanılamaz.
+
+Bu nedenle bu kitapçık belirli komutları ezberletmeyi amaçlamaz. Komut satırı araçları ve resmi belgeler zaman içinde değişebilir. Kalıcı olan şey, araştırmacının bir kurulumun doğru çalışıp çalışmadığını hangi ilkelerle denetleyeceğini bilmesidir. Akademik kaynak doğrulamasında geçerli olan disiplin, teknik kurulumda da geçerlidir. Bir aracın nasıl çalıştığını anlamadan onu araştırma sürecine dahil etmek, yöntemi görünmez bir riske açmak anlamına gelir.
+
+Bu kitapçığın amacı, Claude Code'un ilk kurulumunu ve ilk oturumunu sosyal bilimcinin gerçekten kontrol edebileceği bir sağlamlık denetimi protokolüne bağlamaktır. Böylece araştırmacı, aracın yalnızca açılıp açılmadığını değil, doğru klasörde çalışıp çalışmadığını, dosya okuyup okumadığını, yazma işlemlerini izinle yapıp yapmadığını ve çok adımlı bir görevi denetlenebilir biçimde yürütüp yürütemediğini sınayabilir.
 
 ## 1. Sistem Gereksinimleri
 
-Claude Code macOS, Linux ve Windows üzerinde çalışır. Her ortamda temel gereksinim ortaktır: güncel bir komut satırı ortamı ve bir paket yöneticisi. macOS ve Linux, Unix kabuğuyla birlikte geldiğinden bu sistemlerde kurulum görece doğrudan ilerler. Windows kullanıcıları için ek bir katman devreye girer. Windows'ta dosya sistemi ve terminale tam erişim en sorunsuz biçimde WSL2 üzerinden sağlanır. Bu Linux alt sistemi, Windows makinesinde eksiksiz bir Ubuntu ortamı açarak aracın beklediği Unix araçlarını hazır eder (Microsoft, 2026). Rehber Windows kullanıcıları için bu yolu öneriyor. Alternatif yapılandırmalar mümkündür, ancak ilk oturumda boşuna üstlenilecek bir karmaşıklık yükü taşırlar.
+Claude Code'un çalışabilmesi için güncel bir işletim sistemi, işleyen bir komut satırı ortamı ve uygun bir paket yöneticisi gerekir. macOS ve Linux kullanıcıları için süreç görece doğrudandır. Bu sistemler Unix tabanlı kabuk yapısı ve komut satırı araçlarıyla birlikte geldiği için Claude Code'un beklediği çalışma düzenine daha yakındır.
 
-Sosyal bilim akademisyeni için pratik kontrol listesi kısadır: güncel bir işletim sistemi sürümü, birkaç gigabayt boş disk alanı (oturum belleği ve arşiv dosyaları zamanla büyür) ve kararlı bir internet bağlantısı. Donanım açısından rahatlatıcı olan şudur: araç yüksek yerel işlemci gücü ya da grafik kartı gerektirmez. Hesaplama Anthropic'in altyapısında yapılır, yerel makine yalnızca bir istemcidir. Bu mimari yapıdan çıkan pratik sonuç şudur: Türkiye ve Yunanistan'daki birçok üniversite makinesinin, hatta birkaç yıllık dizüstü bilgisayarların, aracı sürtünmesiz çalıştırmaya yeterli olduğu söylenebilir. Yapılması gereken tek ön kontrol, terminalin açıldığını ve temel bir komuta yanıt verdiğini doğrulamaktır.
+Windows kullanıcıları için ek bir katman gündeme gelir. Windows üzerinde dosya sistemi ve terminal erişimini daha tutarlı biçimde kullanabilmek için WSL2 önerilir. WSL2, Windows içinde Linux tabanlı bir çalışma ortamı sağlayarak komut satırı araçlarını daha kararlı hâle getirir (Microsoft, 2026). Bu öneri, başka yapılandırmaların imkânsız olduğu anlamına gelmez. Ancak ilk kez kurulum yapan sosyal bilimciler için gereksiz teknik karmaşıklığı azaltır.
+
+Sosyal bilimci açısından pratik kontrol listesi kısa tutulmalıdır. Güncel bir işletim sistemi, kararlı bir internet bağlantısı, birkaç gigabayt boş disk alanı ve temel terminal komutlarını çalıştırabilen bir ortam çoğu başlangıç senaryosu için yeterlidir. Claude Code yüksek yerel işlemci gücü ya da grafik kartı gerektirmez. Model çalıştırma işlemi yerel makinede değil, Anthropic altyapısı üzerinden gerçekleşir. Yerel bilgisayar esas olarak istemci, dosya sistemi ve komut satırı arayüzü işlevi görür.
+
+Bu durum Türkiye ve Yunanistan gibi farklı kurumsal altyapılara sahip akademik ortamlarda önemlidir. Birkaç yıllık dizüstü bilgisayarlar ya da standart üniversite makineleri çoğu zaman başlangıç için yeterli olabilir. Ancak terminalin çalışıp çalışmadığı, komutların tanınıp tanınmadığı ve internet bağlantısının kararlı olup olmadığı ilk oturumdan önce kontrol edilmelidir.
+
+Bu bölümün temel mesajı şudur. Kurulum için en güçlü makineye değil, doğru yapılandırılmış bir çalışma ortamına ihtiyaç vardır.
 
 ## 2. Hesap, Abonelik ve Faturalama
 
-Kurulumdan önce bir hesap gerekir. Anthropic, farklı kullanım hacimlerine göre kalibre edilmiş birkaç plan katmanı sunar. Akademisyen için doğru katman, aracı ne yoğunlukla kullanacağına bağlıdır: hafta hafta sürekli literatür taraması yürüten bir doktora öğrencisinin ihtiyacı, ders tasarımı için aracı zaman zaman kullanan bir öğretim üyesinden farklıdır. Bu kitapçık belirli fiyat rakamları vermez, çünkü plan fiyatlandırması bu rehberin sürümleri arasında değişir. Bunun yerine bir ilke önerir: en düşük taahhütlü seçenekle başlayın, gerçek kullanım örüntünüzü bir tam ay boyunca gözlemleyin, ardından planı buna göre ayarlayın.
+Claude Code'u kullanmak için bir Anthropic hesabı ve kullanım biçimine uygun bir erişim planı gerekir. Belirli fiyatlar vermek burada doğru değildir. Fiyatlandırma ve plan yapıları zaman içinde değişebilir. Bu nedenle kalıcı öneri fiyat bilgisi değil, bütçe değerlendirme ilkesidir.
 
-Akademik bütçe bağlamında şu çerçevelemeyi açık kılmak yerindedir. Araç maliyeti, soyut bir abonelik gideri olarak değil, aynı görevi yapacak bir araştırma asistanının saatlik ücreti ile karşılaştırılarak değerlendirilmelidir. İki haftalık manuel çalışmayı kurtaran iki yüz makalenin tek bir oturumda taranması, aylık bir ücreti fazlasıyla karşılar. Gerçek değer görev türüne ve kullanım hacmine göre değişeceğinden bu oran bir başlangıç çerçevesi olarak okunmalıdır. Kullanım çoğu zaman işlenen metin miktarına göre ölçüldüğünden maliyet öngörülebilir biçimde ölçeklenir: küçük keşif görevleri neredeyse maliyetsizdir, büyük taramalar ise orantılı ve tahmin edilebilir bir gidere bağlıdır. Faturalama yapılandırmasında aylık bir kullanım üst sınırı belirlemek pratik bir başlangıç adımıdır. Bu sınır, araştırmacının ilk haftalarda maliyet kaygısı olmadan özgürce denemesini sağlar.
+Akademisyen için doğru plan, aracın hangi yoğunlukta kullanılacağına bağlıdır. Haftalık literatür taraması, veri düzenleme ve hakem yanıtı hazırlama gibi işlerde aracı düzenli kullanacak bir doktora öğrencisinin ihtiyacı ile yalnızca dönem dönem ders materyali ya da taslak metin düzenleme için kullanacak bir öğretim üyesinin ihtiyacı aynı değildir.
+
+Başlangıçta düşük taahhütlü ve kontrollü bir kullanım düzeyi tercih edilebilir. Araştırmacı, bir ay boyunca gerçek kullanım örüntüsünü gözlemleyebilir. Hangi görevlerde araca başvurduğunu, hangi görevlerde gerçekten zaman kazandığını, hangi işlemlerde çıktının insan denetimi gerektirdiğini ve maliyetin hangi tür işlerde arttığını kaydedebilir. Daha sonra plan seçimi bu gerçek kullanım verisine göre yapılmalıdır.
+
+Akademik bütçe açısından araç maliyeti, soyut bir abonelik gideri olarak değil, belirli araştırma görevlerinin emek maliyetiyle birlikte düşünülmelidir. Örneğin yüzlerce makalelik bir kaynak havuzunun ön sınıflandırması manuel yapılırsa günler ya da haftalar alabilir. Ancak burada dikkatli olmak gerekir. Her otomasyon zaman kazancı üretmez. Her zaman kazancı da bilimsel kalite anlamına gelmez. Bu nedenle maliyet değerlendirmesi yalnızca hız üzerinden değil, çıktının doğrulanabilirliği ve denetlenebilirliği üzerinden yapılmalıdır.
+
+Faturalama aşamasında aylık kullanım sınırı belirlemek yararlı bir başlangıç stratejisidir. Bu sınır, özellikle ilk haftalarda deneme yaparken maliyetin kontrol dışına çıkmasını engeller. Araştırmacı için en sağlıklı yaklaşım, aracı önce küçük görevlerde denemek, gerçek ihtiyaç ortaya çıktıkça kullanım hacmini artırmaktır.
 
 ## 3. CLI Kurulumu
 
-Kurulumun yaygın yolları arasında bir dil paket yöneticisi (en sık başvurulan seçenek), macOS'ta Homebrew gibi bir sistem paket yöneticisi ve doğrudan indirme sayılabilir. Hangi yol seçilirse seçilsin varılan nokta aynıdır: terminalde çağrılabilir bir komut. Kurulumun ardından kritik adım, bu komutun sistemin arama yolunda (PATH) görünür olmasıdır. Terminal komutu tanımıyorsa sorun neredeyse her zaman PATH yapılandırmasındadır, başarısız bir kurulumda değil.
+Claude Code'un kurulumu, farklı sistemlerde farklı yollarla yapılabilir. Bir dil paket yöneticisi, macOS için Homebrew benzeri bir sistem paket yöneticisi ya da doğrudan indirme seçenekleri kullanılabilir. Hangi yol seçilirse seçilsin kurulumun sonunda beklenen sonuç aynıdır. Terminalde çağrılabilir bir Claude Code komutu bulunmalıdır.
 
-Bu kitapçık kesin kurulum komutunu burada sabitlemez, çünkü araç sürümü sık değişir ve sabitlenmiş bir komut hızla eskir. Güncel ve doğru kurulum komutu resmi belgede tutulur ve oradan alınmalıdır (Anthropic, 2026a). Önerilen başlangıç akışı ve iyi uygulama kalıpları da resmi belgenin ayrı bir bölümünde yer alır (Anthropic, 2026b). Bir teknik araç kurarken birincil belgeye gitmek, üçüncü taraf bir blogdan kopyalanan bir komutu denemekten çok daha güvenlidir. Literatür taramasında kaynak doğrulamasını yöneten disiplin kurulum adımında da geçerliliğini korur.
+Bu kitapçık kesin kurulum komutunu sabitlemez. Bunun nedeni, komut satırı araçlarının ve resmi kurulum yollarının zaman içinde değişebilmesidir. Güncel komut ve resmi yönergeler her zaman Anthropic'in kendi belgelerinden kontrol edilmelidir (Anthropic, 2026a, 2026b). Sosyal bilimci için burada önemli olan şey, komutu ezberlemek değil, kurulumun doğrulanabilir biçimde tamamlanıp tamamlanmadığını anlayabilmektir.
 
-PATH sorununun pratik belirtisi nettir: komutu çağırdığınızda terminal "komut bulunamadı" yanıtı verir. Çözüm çoğu zaman iki adıma indirgenir: kurulum dizininin kabuk yapılandırma dosyasına eklenmesi ve terminalin yeniden başlatılması. macOS ve Linux kullanıcıları için bu kabuk profil dosyası anlamına gelir (`.zshrc`, `.bashrc` ya da eşdeğeri). Windows WSL2 kullanıcıları için aynı mantık Ubuntu ortamı içinde geçerlidir. İlk oturumda en sık karşılaşılan engel budur ve bir kez çözüldükten sonra bir daha karşıya çıkmaz. Kurulumun başarılı olduğunun en basit doğrulaması, komutun sürüm numarası sorulduğunda bir sürüm numarası döndürmesidir.
+Kurulumdan sonra en kritik denetim noktası PATH yapılandırmasıdır. Terminal komutu tanımıyorsa, sorun çoğu zaman aracın kurulmamış olmasından değil, kurulum dizininin sistemin arama yoluna eklenmemiş olmasından kaynaklanır. Bu durumda terminal "komut bulunamadı" anlamına gelen bir yanıt üretir.
+
+macOS ve Linux kullanıcılarında çözüm çoğu zaman kabuk yapılandırma dosyasına ilgili dizinin eklenmesidir. Bu dosya kullanılan kabuğa göre .zshrc, .bashrc ya da benzeri bir profil dosyası olabilir. Windows kullanıcılarında aynı mantık WSL2 içindeki Linux ortamında geçerlidir. Terminal yeniden başlatıldıktan sonra komutun sürüm numarası döndürmesi, kurulumun temel düzeyde başarılı olduğunu gösterir.
+
+Bu aşamada araştırmacının yapması gereken şey basittir. Komutun sistem tarafından tanınıp tanınmadığını kontrol etmek. Komut tanınıyorsa ilk eşik aşılmıştır. Komut tanınmıyorsa, araştırma sürecine geçmeden önce PATH sorunu çözülmelidir.
 
 ## 4. İlk Giriş ve İzin Onayı
 
-Kurulumun ardından ilk oturum bir kimlik doğrulama ile başlar: araç hesabınıza bağlanır. Bu noktadan itibaren her etkileşimi yöneten kavram izin modelidir. Claude Code, dosya okumak, dosya yazmak ya da terminalde komut çalıştırmak gibi işlemleri gerçekleştirmeden önce açık izin talep eder. Güvenli kullanımın yapısal temeli bu mekanizmadır.
+Kurulum tamamlandıktan sonra ilk oturum genellikle hesap doğrulama adımıyla başlar. Araç kullanıcının hesabına bağlanır ve bundan sonra yerel çalışma dizini içinde işlem yapmaya hazır hâle gelir. Bu noktadan itibaren en önemli kavram izin modelidir.
 
-Bu izin katmanının neden var olduğunu bir an için anlamak aydınlatıcıdır. Dil modelleri, insan geri bildirimiyle yönergeleri takip edecek biçimde eğitilir. InstructGPT paradigması, modelin insanların hangi çıktıları tercih ettiğini öğrendiğini ve bu eğitimin sonraki yönergelere verdiği yanıtları şekillendirdiğini ortaya koymuştur (Ouyang ve diğerleri, 2022). Ama bir yönergeyi takip etmek, her yönergenin güvenli olduğu anlamına gelmez. Anthropic'in modelleri, zarar kaçınma ilkelerini bir öz-eleştiri döngüsü üzerinden doğrudan model davranışına kodlayan anayasal hizalama yaklaşımıyla eğitilir (Bai ve diğerleri, 2022). İzin modeli, bu hizalama katmanının kullanıcı tarafındaki tamamlayıcısıdır: model güvenli davranmaya eğitilmiştir, araştırmacı ise hangi eylemlere izin verdiğini açıkça denetler. Her iki taraf da tek başına yeterli değildir. İkisi birlikte tutunmalıdır.
+Claude Code dosya okumak, dosya yazmak ya da terminalde komut çalıştırmak gibi işlemler için kullanıcıdan açık onay isteyebilir. Bu izin katmanı, sosyal bilimci için yalnızca teknik bir güvenlik özelliği değildir. Aynı zamanda araştırma sürecinin denetlenebilirliği açısından yöntemsel bir araçtır. Hangi dosyaya erişildiği, hangi değişikliğin önerildiği, hangi komutun çalıştırıldığı ve hangi çıktının üretildiği araştırmacı tarafından görülmelidir.
 
-Pratikte bu, her duyarlı eylemden önce bir onay isteminin ekrana gelmesi demektir. Araç ne yapmak istediğini bildirir, siz onaylar ya da reddedersiniz. Sosyal bilim akademisyeni için önerilen başlangıç stratejisi, ilk oturumda her eylemi ayrı ayrı onaylamaktır. İlk haftalarda bu "her seferinde sor" yaklaşımı, aracın her adımda gerçekte ne yaptığını öğrenmenin en güvenilir yoludur: hangi dosyalara dokunduğunu, komutların tam olarak ne döndürdüğünü, dizin geçişlerinin nerede ve neden gerçekleştiğini. Güven arttıkça ve tanıdık örüntüler tekrar ettikçe, düşük riskli belirli işlemler için kalıcı onay verilebilir. Klinik veri, mülakat dökümü ya da kişisel tanımlayıcı içeren dizinlere erişim ise hiçbir zaman otomatik onaya bağlanmamalıdır. Sorumlu kullanım çerçevesi bu tür sınırların açıkça çizilmesini ve korunmasını zorunlu kılar (Anthropic, 2024), ancak bu politika kurumsal düzeyde bir çerçeve sunar, operasyonel izin ayarlarının kendisini değil.
+Bu izin modelini dil modeli güvenliği bağlamında düşünmek yararlıdır. Ouyang ve diğerlerinin insan geri bildirimiyle yönerge izleme üzerine çalışması, modellerin kullanıcı niyetlerine daha uygun yanıtlar üretmek üzere eğitilebileceğini göstermiştir. Bai ve diğerlerinin anayasal yapay zekâ yaklaşımı ise zarar azaltma ilkelerini model davranışına daha doğrudan yerleştirmeyi hedefler. Ancak modelin güvenli davranmaya eğitilmiş olması, araştırmacının izin denetimini gereksiz kılmaz (Bai ve diğerleri, 2022; Ouyang ve diğerleri, 2022).
 
-## 5. Sağlık Testi 1: Dosya Okutma
+İzin modeli, kullanıcı tarafındaki ikinci güvenlik katmanıdır. Model belirli bir eylemi önerebilir. Ancak araştırmacı, bu eylemin bağlamını, riskini ve uygunluğunu değerlendirmek zorundadır. Özellikle klinik veri, mülakat dökümü, kişisel tanımlayıcı içeren saha notu ya da etik kurul kapsamındaki materyaller söz konusu olduğunda otomatik onay verilmemelidir.
 
-İlk sağlık testi en basit ama en bilgilendirici olanıdır. Araçtan bir metin dosyasını okumasını isteyin: arşivinizdeki gerçek içerik taşıyan herhangi bir dosya, örneğin bir okuma notu ya da literatür listesi. Sağlıklı bir yanıtın görünümü bellidir: araç dosyanın içeriğini okur, içeriğin bir özetini ya da yapısını size geri raporlar, hiçbir değişiklik yapmaz ve okuma öncesinde izin istediğini belli eder. Yalnızca o dosyadan gelebilecek somut ayrıntılar çıktıda yer alıyorsa, yerel dosya sistemine bağlantının gerçek olduğunun kanıtı budur. Bu tek test hem dosya sistemi erişimini hem izin modelinin etkinliğini hem de okuma ile yazma arasındaki ayrımın sağlam tutulduğunu doğrular.
+İlk hafta için önerilen strateji açıktır. Her eylem ayrı ayrı onaylanmalıdır. Bu yaklaşım başlangıçta yavaş görünebilir. Fakat araştırmacı böylece aracın hangi dosyalara dokunduğunu, hangi komutları çalıştırdığını, hangi dizinlerde hareket ettiğini ve hangi çıktıları nereye yazdığını öğrenir. Güven ancak bu gözlemden sonra kurulmalıdır.
 
-Başarısızlık modları öğreticidir. Araç dosyayı bulamıyorsa çalışma dizini yanlış ayarlanmıştır: oturumu doğru klasörün içinden başlatın. İzin istemeden okuyorsa izin yapılandırması fazla gevşektir ve daha fazla çalışmadan önce sıkılaştırılmalıdır. Dosyayı okumak yerine akla yatkın görünen ama dosyayla örtüşmeyen içerik üretiyorsa bu ciddi bir uyarı işaretidir: araç, belgeyi gerçekten okumak yerine kendi istatistiksel örüntülerinden metin üretmiştir. Bu son başarısızlık modu, rehberin değerlendirmesine göre, akademik bağlamdaki en tehlikeli olanıdır. Çünkü üretilen içerik sözdizimsel açıdan gerçekten okunan içerikten ayırt edilemez ve yüzeysel bir incelemede fark edilmez. Bu ilk testin sağlıklı sonucu araştırmacıya aracın gerçekten yerel dosyalarla çalıştığı güvenini verir. Bu güven, sonraki tüm iş akışlarının temelidir.
+## 5. Sağlamlık Denetimi 1. Dosya Okutma
 
-## 6. Sağlık Testi 2: Dosya Düzenletme ve Diff Görüntüleme
+İlk sağlamlık denetimi, aracın yerel dosya sistemiyle gerçekten çalışıp çalışmadığını sınar. Araştırmacı, Claude Code'dan belirli bir metin dosyasını okumasını istemelidir. Bu dosya gerçek içerik taşıyan, ancak hassas veri içermeyen bir belge olmalıdır. Örneğin bir okuma notu, sahte bir literatür listesi ya da anonim bir deneme dosyası kullanılabilir.
 
-İkinci test okumadan bir adım ileri gider. Araçtan bir dosyada küçük ve sınırlı bir değişiklik yapmasını isteyin: bir nota başlık eklemek, bir tarihi düzeltmek, bir cümle eklemek. Sağlıklı bir yanıt şu sırayla açılır: araç önce önerilen değişikliği bir fark (diff) görünümünde gösterir, tam olarak hangi satırların ekleneceğini ya da kaldırılacağını ortaya koyar, onayınızı ister ve ancak onayladıktan sonra dosyaya yazar. Bu sıralama seçime bırakılmış değildir. Denetim izinin ta kendisidir.
+Sağlıklı bir yanıtın özellikleri nettir. Araç dosyayı okumadan önce gerekli izni ister. Dosyanın içeriğini okur. İçeriğin yapısını ya da kısa özetini raporlar. Dosyada herhangi bir değişiklik yapmaz. Çıktıda yalnızca o dosyadan gelebilecek somut ayrıntılar bulunur.
 
-Diff görünümü akademik üretim için kritik bir araçtır. Değişiklik gerçekleşmeden önce neyin değişeceğini görürsünüz, sonrasında değil. Bir makale taslağı revizyonunda aracın tam olarak hangi cümleyi değiştirdiğini görebilirsiniz. Bir hakem yanıtında düzenlemenin yalnızca o yoruma karşılık verdiğini ve başka hiçbir şeye dokunmadığını doğrulayabilirsiniz. Diff görünümüyle çalışmak bu izlenebilirliği oturumun en başından kurar: sonradan değil, en baştan. Araç değişikliği diff göstermeden doğrudan yazıyorsa izin yapılandırması gözden geçirilmelidir: denetlenemeyen bir yazma, kaydın bütünlüğünün pazarlık konusu olmadığı akademik çalışmada meslek etiği açısından kabul edilemez. Bu test başarıyla tamamlandığında araç okuyuculuktan yazım ortaklığına terfi etmiştir: değişiklik yapabilen, ama yalnızca her adımda sizin açık denetiminiz altında.
+Bu test üç şeyi aynı anda sınar. Dosya sistemi erişimi çalışıyor mu? İzin modeli etkin mi? Araç okuma ile yazma arasındaki farkı koruyor mu?
 
-## 7. Sağlık Testi 3: Çok Adımlı Görev
+Başarısızlık modları da öğreticidir. Araç dosyayı bulamıyorsa, oturum yanlış çalışma dizininden başlatılmış olabilir. İzin istemeden dosyayı okuyorsa, izin yapılandırması fazla gevşek olabilir. Dosyayı gerçekten okumadan, akla yatkın ama belgeyle örtüşmeyen bir özet üretiyorsa, bu ciddi bir uyarı işaretidir. Böyle bir durumda araç belgeye dayalı işlem yapmak yerine istatistiksel olarak olası bir metin üretmiş olur.
 
-Üçüncü test Claude Code'u bir sohbet penceresinden ayıran ajan tabanlı niteliği sınar. Araca zincirleme bir görev verin: bir literatür dosyasını okusun, belirli bir kavramın geçtiği bölümleri çıkarsın ve bu çıkarımları kaynağa dokunmadan ayrı bir özet dosyasına aktarsın. Her adım bir öncekine bağlıdır ve her biri farklı bir dosyaya dokunur.
+Akademik bağlamda en riskli hata türü budur. Çünkü çıktı biçimsel olarak makul görünür. Ancak kaynağa dayanmaz. Bu nedenle ilk dosya okutma testi, Claude Code'un araştırma arşiviyle gerçekten ilişki kurduğunu doğrulamak için vazgeçilmezdir.
 
-Sağlıklı bir çalışma şöyle görünür: araç her adımı sırayla yürütür, her adımda ne yaptığını raporlar ve son çıktıyı kaynağın üzerine yazmak yerine ayrı bir dosyaya yazar. Özet dosyası, kaynakta gerçekten bulunan materyali içerir. Çıkarımlar, yorumlar ya da modelin eğitim verisinden ürettiği içerik yoktur. Önceki kitapçıkta (001-01-0002) anlatılan eylem döngüsünün gerçek dosyalar üzerinde gerçek bir oturumda doğru çalıştığındaki görünümü budur.
+## 6. Sağlamlık Denetimi 2. Dosya Düzenleme ve Diff Görüntüleme
 
-Bu testte en yaygın başarısızlık modu, aracın bir ara adımı atlamasıdır ya da daha ciddisi, kaynak belge yerine kendi belleğinden içerik üretmesidir. Bu nedenle doğrulama adımı zorunludur: son çıktıyı kaynak dosyayla, pasaj pasaj karşılaştırın. Bu karşılaştırma, akademik disiplinin teknik akışa taşınmış halidir. Tıpkı bir alıntının bir makaleye girmeden önce orijinal kaynaktan doğrulanması gibi. Bu üçüncü test başarılıysa kurulum tamamlanmış, araç akademik üretim için hazır demektir.
+İkinci denetim, okuma işleminden yazma işlemine geçer. Araştırmacı, araçtan küçük ve sınırlı bir değişiklik yapmasını istemelidir. Örneğin bir deneme dosyasına başlık eklemek, bir tarihi düzeltmek ya da tek bir cümleyi yeniden düzenlemek gibi düşük riskli bir görev seçilebilir.
+
+Sağlıklı iş akışı şu sırayı izlemelidir. Araç önce önerilen değişikliği açıkça göstermelidir. Mümkünse değişikliği diff görünümünde sunmalıdır. Hangi satırın ekleneceği, hangi satırın çıkarılacağı ya da hangi ifadenin değişeceği görünür olmalıdır. Araç ancak araştırmacı onay verdikten sonra dosyaya yazmalıdır.
+
+Diff görünümü, akademik üretimde kritik bir denetim aracıdır. Çünkü değişikliğin gerçekleşmesinden önce neyin değişeceğini görmeyi sağlar. Bir makale taslağında hangi cümlenin düzenlendiği, bir hakem yanıtında hangi ifadenin eklendiği ya da bir yöntem bölümünde hangi kavramın değiştirildiği izlenebilir hâle gelir.
+
+Araç diff göstermeden doğrudan yazıyorsa, araştırmacı bu davranışı gözden geçirmelidir. Denetlenemeyen yazma işlemi, akademik çalışma için kabul edilebilir bir pratik değildir. Özellikle makale taslakları, veri sözlükleri, etik kurul metinleri ve hakem yanıtları gibi belgelerde her değişikliğin izlenebilir olması gerekir.
+
+Bu test başarıyla tamamlandığında araç yalnızca okuyabilen değil, sınırlı ve denetimli biçimde yazma işlemine de katılabilen bir çalışma yardımcısı hâline gelir. Ancak burada önemli nokta şudur. Yazma yetkisi, araştırmacının denetiminden bağımsız olmamalıdır.
+
+## 7. Sağlamlık Denetimi 3. Çok Adımlı Görev
+
+Üçüncü denetim, Claude Code'un ajan tabanlı niteliğini sınar. Araştırmacı, araca birden fazla adımdan oluşan küçük bir görev vermelidir. Örneğin bir literatür notunu okuması, belirli bir kavramın geçtiği yerleri çıkarması ve bu çıkarımları kaynak dosyaya dokunmadan ayrı bir özet dosyasına aktarması istenebilir.
+
+Bu testte sağlıklı çalışma birkaç ölçütle anlaşılır. Araç her adımı sırayla yürütür. Hangi dosyayı okuduğunu, hangi ölçüte göre seçim yaptığını ve çıktıyı hangi dosyaya yazacağını açıkça belirtir. Kaynak dosyanın üzerine yazmaz. Yeni özet dosyası, kaynakta gerçekten bulunan materyale dayanır. Modelin eğitim verisinden gelen ek yorumlar, varsayımlar ya da uydurulmuş çıkarımlar içermez.
+
+Bu denetim, önceki kitapçıkta ele alınan ajanlı çalışma mantığının küçük ölçekli bir sınamasıdır. Araç tek bir yanıt üretmekle kalmaz. Bir görevi alt adımlara böler, ara işlemler yapar ve çıktıyı dosya sistemine kaydeder. Ancak bu kapasite, doğrulama gerekliliğini ortadan kaldırmaz.
+
+Araştırmacı, son çıktıyı kaynak dosyayla karşılaştırmalıdır. Çıkarılan pasajlar gerçekten kaynakta var mı? Kavram bağlamından koparılmış mı? Araç yorum ile alıntıyı karıştırmış mı? Özet dosyası kaynak metnin sınırları içinde kalmış mı?
+
+Bu karşılaştırma, akademik kaynak denetiminin teknik iş akışına taşınmış biçimidir. Bir alıntı makaleye girmeden önce nasıl orijinal kaynaktan doğrulanıyorsa, Claude Code'un ürettiği ara çıktı da kaynak dosyayla karşılaştırılmalıdır.
+
+Üçüncü test başarıyla tamamlandığında araştırmacı şunu söyleyebilir. Araç yalnızca açılmıyor. Aynı zamanda dosya okuyor, izinle yazıyor, çok adımlı görev yürütebiliyor ve çıktısı kaynakla karşılaştırılarak denetlenebiliyor.
 
 ## 8. Başarısızlık Modları
 
-İlk oturumda karşılaşılan sorunların büyük bölümü, az sayıda tanınabilir örüntüye indirgenir. Her birinin net bir nedeni ve net bir çözümü vardır.
+İlk oturumda karşılaşılan sorunların çoğu birkaç temel örüntüye indirgenebilir. Bu örüntüleri bilmek, araştırmacının paniğe kapılmadan doğru müdahaleyi yapmasını sağlar.
 
 | Sembol | Açıklama | Çözüm |
 |---|---|---|
-| Komut bulunamadı | Terminal, kurulan komutu tanımıyor | PATH yapılandırmasını kontrol edin, kabuğu yeniden başlatın |
-| Yetki hatası | İzin verilmemiş bir dosya ya da dizine erişim denendi | İzin onayını verin ya da çalışma dizinini düzeltin |
-| Ağ hatası | Model çağrısı ağa ulaşamadı | Bağlantıyı kontrol edin, gerekirse yeniden deneyin |
-| Model zaman aşımı | Yanıt beklenen sürede gelmedi | Görevi daha küçük adımlara bölün, bağlantı kalitesini kontrol edin |
-| Bağlam limiti | Oturum modelin bağlam penceresini aştı | Oturumu özetleyip yeniden başlatın, kalıcı bilgiyi dosyaya yazın |
+| Komut bulunamadı | Terminal kurulan komutu tanımıyor. | PATH yapılandırmasını kontrol edin, kabuğu yeniden başlatın. |
+| Yetki hatası | İzin verilmemiş bir dosya ya da dizine erişim denendi. | İzin onayını verin ya da çalışma dizinini düzeltin. |
+| Ağ hatası | Model çağrısı ağa ulaşamadı. | Bağlantıyı kontrol edin, gerekirse yeniden deneyin. |
+| Model zaman aşımı | Yanıt beklenen sürede gelmedi. | Görevi daha küçük adımlara bölün, bağlantı kalitesini kontrol edin. |
+| Bağlam limiti | Oturum modelin bağlam penceresini aştı. | Oturumu özetleyip yeniden başlatın, kalıcı bilgiyi dosyaya yazın. |
 
-Bu modların hiçbiri kurulumun başarısız olduğu anlamına gelmez. Hepsi ilk oturumun normal öğrenme eğrisinin parçasıdır. Önemli olan her örüntüyü hızla tanımak ve paniğe kapılmadan uygun çözüme ulaşmaktır. Bağlam limiti moduna özel dikkat gerekir: arşiv alışkanlığını en doğrudan pekiştiren başarısızlık bu moddur. Oturum modelin bağlam penceresini aştığında, dosyaya yazılmamış her şey gider. Araştırmacı, kalıcı dosya temelli belgelemenin gerçek bir zorunluluk olduğunu tam da o an öğrenir. Bu modu erken karşılaşmak, herhangi bir araştırma akışı oturum sürekliliğine bağlanmadan önce dersi almak demektir.
+Bu başarısızlık modları kurulumun tamamen başarısız olduğu anlamına gelmez. Çoğu, ilk kullanım sürecinin doğal parçasıdır. Önemli olan, sorunun neye işaret ettiğini anlamaktır.
 
-## 9. Türkiye ve Yunanistan Özgüllüğü
+Bağlam limiti özellikle dikkat gerektirir. Çünkü bu sorun, kalıcı dosya temelli çalışma alışkanlığının neden gerekli olduğunu gösterir. Oturum bağlamı aşılırsa, dosyaya yazılmamış ara kararlar ve açıklamalar kaybolabilir. Bu nedenle araştırmacı, önemli çıktıları sohbet geçmişinde bırakmamalı, çalışma arşivine kaydetmelidir.
 
-Bölgesel gerçekler kurulum sürecinde iki noktada belirir.
+Başarısızlık modları yalnızca teknik sorunlar değildir. Aynı zamanda araştırmacıya çalışma disiplinini öğretir. İyi bir kurulum, hatasız çalışan sistem değil, hata ortaya çıktığında sorunun nerede olduğunu gösterebilen sistemdir.
 
-Ödeme bu noktaların ilkidir. Türkiye'de belirli uluslararası ödeme altyapıları, doğrudan aboneliği engelleyebilecek kısıtlamalar getirir. Bu durumda alternatif yollar devreye girer: yerli bir fintek sağlayıcısının sunduğu sanal kart, yurt dışı banka kartı ya da bir üniversite veya araştırma merkezi üzerinden yapılandırılmış kurumsal hesap. Bu kitapçık yalnızca bu alternatiflerin haritasını çıkarır. Hangi seçeneğin işe yarayacağı kurumsal bağlama ve bireysel erişim koşullarına göre değişir. Yunanistan AB üyeliği nedeniyle standart ödeme akışını izler. Türkiye'ye özgü kısıtlamalar bu coğrafyada geçerli değildir.
+## 9. Türkiye ve Yunanistan Bağlamında Özgül Noktalar
 
-Bağlantı kalitesi ikinci noktadır. Komotini gibi küçük şehirlerde fiber bağlantı her zaman güçlü olmayabilir. Kesintili bağlantı, model zaman aşımı modunun sıklığını artırır. Pratik çözüm her yerde aynıdır: görevleri daha küçük adımlara bölün ve büyük görevleri kararsız bir bağlantıya zorlamak yerine kararlı bağlantı pencerelerinde çalışın. Bu iki bölgesel ayrıntı teknik bir noktanın ötesine geçen yöntemsel bir anlam taşır: kurulum, her yerde aynı biçimde uygulanan evrensel bir prosedür değildir. Bir aracı özgül bir kurumsal, altyapısal ve coğrafi bağlama oturtma eylemidir.
+Kurulum süreci, her ülkede ve her kurumda aynı biçimde ilerlemez. Türkiye ve Yunanistan bağlamında özellikle iki başlık öne çıkar. Ödeme altyapısı ve bağlantı kalitesi.
+
+Türkiye'de bazı uluslararası ödeme sistemleri doğrudan abonelik sürecinde sorun çıkarabilir. Bu durumda sanal kartlar, yurt dışı banka kartları, kurumsal hesaplar ya da araştırma merkezi üzerinden sağlanan erişimler gündeme gelebilir. Hangi seçeneğin işe yarayacağı, bireysel ve kurumsal koşullara göre değişir. Bu nedenle bu kitapçık belirli bir ödeme yolunu önermek yerine, araştırmacının alternatifleri önceden düşünmesini önerir.
+
+Yunanistan'da Avrupa Birliği ödeme altyapısı nedeniyle standart abonelik süreçleri genellikle daha doğrudan ilerleyebilir. Ancak burada da kurum içi kütüphane erişimi, proxy ayarları ve bilgi işlem politikaları araştırmacının deneyimini etkileyebilir.
+
+Bağlantı kalitesi ikinci önemli noktadır. Komotini gibi daha küçük şehirlerde ya da kırsala yakın bölgelerde bağlantı kalitesi her zaman kararlı olmayabilir. Kesintili bağlantı, model zaman aşımı hatalarını artırabilir. Bu durumda büyük görevleri tek seferde çalıştırmak yerine daha küçük adımlara bölmek daha güvenlidir.
+
+Bu bölgesel ayrıntılar teknik gibi görünse de yöntemsel anlam taşır. Kurulum, evrensel bir prosedürün aynı biçimde uygulanması değildir. Bir aracı belirli bir kurumsal, altyapısal ve coğrafi bağlama yerleştirme sürecidir. Sosyal bilimci için sorumlu teknoloji kullanımı, bu bağlamı görmezden gelmeden başlamalıdır.
 
 ## 10. Sonraki Kategori
 
-Bu kitapçık kurulumun yöntemsel bir filtre olduğunu, sağlık testlerinin ise araştırmacıya aracın yerel dosyalarda gerçekten çalıştığına dair kanıta dayalı bir güven verdiğini ortaya koydu. Kurulum tamamlandıktan sonra akademisyenin önüne gelen ilk önemli soru şudur: Türkçe ve Yunanca akademik dergilere araç üzerinden nasıl güvenilir biçimde erişilir? Bir sonraki kategori akademik erişim altyapısına ayrılmıştır: DergiPark, ULAKBIM TR Dizin, HEAL-Link ve bunları çalışan bir araştırma oturumuna bağlayan EZproxy yapılandırmaları. Bu altyapı uluslararası rehberlerde yoktur ve bu rehberin en yüksek değerli katkılarından birini oluşturur. Kitapçık 002-04-0001 bu noktadan devam eder.
+Bu kitapçık, Claude Code kurulumunu teknik bir başlangıç adımı olmaktan çok, akademik iş akışının ilk yöntemsel filtresi olarak ele aldı. Sistem gereksinimleri, hesap ve faturalama, CLI kurulumu, izin modeli, dosya okuma, dosya yazma, çok adımlı görev yürütme ve başarısızlık modları birlikte değerlendirildi.
+
+Bu çerçevede araştırmacı için temel amaç, aracı yalnızca çalıştırmak değildir. Aracın doğru klasörde çalıştığını, dosyaları gerçekten okuduğunu, değişiklikleri izinle yaptığını, ara çıktıları ayrı dosyalara yazdığını ve çıktıların kaynakla karşılaştırılabildiğini görmektir.
+
+Kurulum tamamlandıktan sonra sosyal bilimci için yeni soru akademik erişimdir. Türkçe ve Yunanca akademik kaynaklara, bölgesel indekslere ve kurumsal kütüphane altyapılarına güvenilir biçimde nasıl erişilecektir? Bir sonraki kategori bu soruya ayrılmıştır.
+
+002-04-0001, DergiPark, ULAKBİM TR Dizin, HEAL Link ve Bölgesel İndeksleme, bu noktadan devam eder.
 
 ---
 
 ## Kaynakça
 
-Atıflar APA 7 biçimindedir. İki arXiv ön baskısı (Bai ve diğerleri, 2022 ve Ouyang ve diğerleri, 2022) Crossref'te kayıtlı değildir. Her ikisi de 2026-05-24 tarihinde arXiv üzerinden doğrulanmıştır. Belge bağlantıları 2026-06-04 tarihinde canlı erişim ile doğrulanmıştır. Anthropic 2026a URL'si https://platform.claude.com/docs/en/claude-code adresine çözümlenmektedir, Microsoft 2026 URL'si ise https://learn.microsoft.com/en-us/windows/wsl/ adresine.
+Atıflar APA 7 biçimindedir. İki arXiv ön baskısı (Bai ve diğerleri, 2022 ve Ouyang ve diğerleri, 2022) Crossref'te kayıtlı değildir. Her ikisi de 2026-05-24 tarihinde arXiv üzerinden doğrulanmıştır. Belge bağlantıları 2026-06-21 tarihinde Crossref ile doğrulanmıştır. Anthropic 2026a URL'si https://code.claude.com/docs adresine çözümlenmektedir, Microsoft 2026 URL'si ise https://learn.microsoft.com/en-us/windows/wsl/ adresine.
 
-Anthropic. (2024). *Responsible scaling policy*. https://www.anthropic.com/news/anthropics-responsible-scaling-policy
+Anthropic. (2024). *Announcing our updated responsible scaling policy*. https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy
 
-Anthropic. (2026a). *Claude Code documentation*. https://docs.claude.com/en/docs/claude-code
+Anthropic. (2026a). *Claude Code documentation*. https://code.claude.com/docs
 
 Anthropic. (2026b). *Claude Code best practices*. https://code.claude.com/docs/en/best-practices
 
-Bai, Y., Kadavath, S., Kundu, S., Askell, A., Kernion, J., Jones, A., Chen, A., Goldie, A., Mirhoseini, A., McKinnon, C., Chen, C., Olsson, C., Olah, C., Hernandez, D., Drain, D., Ganguli, D., Li, D., Tran-Johnson, E., Perez, E., ... Kaplan, J. (2022). *Constitutional AI: Harmlessness from AI feedback*. arXiv. https://arxiv.org/abs/2212.08073
+Bai, Y., Kadavath, S., Kundu, S., Askell, A., Kernion, J., Jones, A., Chen, A., Goldie, A., Mirhoseini, A., McKinnon, C., Chen, C., Olsson, C., Olah, C., Hernandez, D., Drain, D., Ganguli, D., Li, D., Tran-Johnson, E., Perez, E., & Kaplan, J. (2022). *Constitutional AI: Harmlessness from AI feedback*. arXiv. https://arxiv.org/abs/2212.08073
 
 Microsoft. (2026). *Windows Subsystem for Linux documentation*. https://learn.microsoft.com/windows/wsl/
 
-Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C. L., Mishkin, P., Zhang, C., Agarwal, S., Slama, K., Ray, A., Schulman, J., Hilton, J., Kelton, F., Miller, L., Simens, M., Askell, A., Welinder, P., Christiano, P., Leike, J., & Lowe, R. (2022). Training language models to follow instructions with human feedback. In *Advances in Neural Information Processing Systems 35 (NeurIPS 2022)* (pp. 27730-27744). https://arxiv.org/abs/2203.02155
+Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C. L., Mishkin, P., Zhang, C., Agarwal, S., Slama, K., Ray, A., Schulman, J., Hilton, J., Kelton, F., Miller, L., Simens, M., Askell, A., Welinder, P., Christiano, P., Leike, J., & Lowe, R. (2022). Training language models to follow instructions with human feedback. In *Advances in Neural Information Processing Systems 35 (NeurIPS 2022)* (pp. 27730–27744). https://arxiv.org/abs/2203.02155
 
 ---
 
 **Kitapçık kimliği.** `001-01-0003`
-**Sürüm.** `0.1.0`
-**Tarih.** 2026-06-20
+**Sürüm.** `0.2.0`
+**Tarih.** 2026-06-21
 **Lisans.** Bu kitapçık CC BY-NC-SA 4.0 ile lisanslanmıştır. https://creativecommons.org/licenses/by-nc-sa/4.0/
-**Sözcük sayısı (yaklaşık).** 2094 (Türkçe gövde metni, wc ile ölçüldü)
+**Sözcük sayısı (yaklaşık).** 2312 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`001-01-0002`](../001-01-0002/tr.md). Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına
