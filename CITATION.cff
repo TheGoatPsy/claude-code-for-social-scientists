@@ -3,10 +3,11 @@ message: "If you use this work, please cite it using the metadata below."
 title: "Sosyal Bilimciler İçin Claude Code Rehberi (Claude Code for Social Scientists)"
 abstract: >-
   A bilingual (Turkish and English) open-source guide for social scientists who want to integrate
-  Anthropic's Claude Code into their research, teaching, and academic writing. Twelve thematic
+  Anthropic's Claude Code into their research, teaching, and academic writing. Fourteen thematic
   categories cover foundations, academic access, memory systems, vault architecture, hooks and
   automation, MCP and plugins, academic writing, data analysis, ethics and IRB, peer review,
-  conference presentation, and troubleshooting. Authored by a working clinical psychologist and
+  conference and public communication, troubleshooting, teaching and supervision, and tool
+  portability. Authored by a working clinical psychologist and
   PhD candidate, with explicit AI co-authorship disclosure under the consolidating publishing consensus (COPE 2023, WAME 2023, ICMJE 2024, STM 2025, EU AI Act 2024/1689 Art. 50, ENAI).
 type: software
 authors:
@@ -36,6 +37,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.20289687"
     description: "Zenodo concept DOI, resolves to the latest version"
+  - type: doi
+    value: "10.5281/zenodo.20787381"
+    description: "Zenodo version DOI for v3.2.0 (2026-06-21)"
   - type: doi
     value: "10.5281/zenodo.20782787"
     description: "Zenodo version DOI for v3.1.0 (2026-06-21)"
@@ -101,7 +105,7 @@ preferred-citation:
       family-names: Impram
       orcid: "https://orcid.org/0000-0003-1076-3928"
   year: 2026
-  version: "3.0.2"
+  version: "3.2.0"
   url: "https://github.com/TheGoatPsy/claude-code-for-social-scientists"
   license:
     - Apache-2.0
