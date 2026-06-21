@@ -184,4 +184,4 @@ White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., 
 **Doğrulanmış atıf sayısı.** 9
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`001-01-0003`](../001-01-0003/tr.md). Kurulum, İlk Oturum ve Sağlamlık Denetimleri
-**Sonraki kitapçık.** [`003-01-0001`](../../003-memory-system/003-01-0001/tr.md). Hafızayı Arşive Dönüştürmek. İlkesel Bir Giriş
+**Sonraki kitapçık.** [`001-02-0001`](../001-02-0001/tr.md). Araştırma Yaşam Döngüsü, Fikirden Yayına, Yayından Arşive

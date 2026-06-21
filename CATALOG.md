@@ -1,6 +1,6 @@
 # Catalog
 
-This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The full long-term catalog targets thirty-one booklets across twelve categories. The v1.0 target is the **ten core booklets** marked with `[v1.0]` in the tables below. Booklet 001-01-0004 ships at `release` status in v2.0.0, booklet 008-01-0001 (Reproducible Quantitative Workflows) at `release` status in v2.1.0, and booklet 008-02-0001 (Statistical Test Selection with AI Consultation Discipline) at `release` status in v2.2.0, all after human review and all motivated by the empirical finding that quantitative data analysis is the dominant social-science use of coding agents, bringing the released total to thirteen. v2.3.0 is a prose-only revision: the Turkish text of all thirteen booklets was rewritten in the author's native voice; no booklet was added or removed. v2.4.0 is a scholarship and voice quality upgrade of all thirteen booklets in both languages: overclaims were hedged, misapplied citations were replaced with verified sources, and aggregate verified citation declarations rose from 240 to 248, with no booklet added or removed and no heading structure changed. v2.8.0 adds four booklets with verified citation cores, 007-01-0001 (IMRAD scaffolding), 007-03-0001 (journal fit and cover letters), 008-03-0001 (qualitative coding with AI assistance), and 010-02-0001 (anti-AI-trace writing for revisions), bringing the released total to seventeen. v2.9.0 adds four more, 003-03-0001 (source passport), 005-02-0001 (ritual hooks), 006-01-0001 (MCP for the researcher), and 011-01-0001 (conference materials), bringing the released total to twenty-one and giving every one of the twelve categories at least one released booklet. The remaining ten booklets are scheduled for later releases. See [`meta/roadmap.md`](./meta/roadmap.md) for the phase plan and release timing.
+This catalog lists every booklet in `claude-code-for-social-scientists`, grouped by category, with a stable identifier of the form `KKK-AA-SSSS` (category, subcategory, serial), a short description in English and Turkish, and a status. The full long-term catalog targets forty-three booklets across fourteen categories. The v1.0 target is the **ten core booklets** marked with `[v1.0]` in the tables below. Booklet 001-01-0004 ships at `release` status in v2.0.0, booklet 008-01-0001 (Reproducible Quantitative Workflows) at `release` status in v2.1.0, and booklet 008-02-0001 (Statistical Test Selection with AI Consultation Discipline) at `release` status in v2.2.0, all after human review and all motivated by the empirical finding that quantitative data analysis is the dominant social-science use of coding agents, bringing the released total to thirteen. v2.3.0 is a prose-only revision: the Turkish text of all thirteen booklets was rewritten in the author's native voice; no booklet was added or removed. v2.4.0 is a scholarship and voice quality upgrade of all thirteen booklets in both languages: overclaims were hedged, misapplied citations were replaced with verified sources, and aggregate verified citation declarations rose from 240 to 248, with no booklet added or removed and no heading structure changed. v2.8.0 adds four booklets with verified citation cores, 007-01-0001 (IMRAD scaffolding), 007-03-0001 (journal fit and cover letters), 008-03-0001 (qualitative coding with AI assistance), and 010-02-0001 (anti-AI-trace writing for revisions), bringing the released total to seventeen. v2.9.0 adds four more, 003-03-0001 (source passport), 005-02-0001 (ritual hooks), 006-01-0001 (MCP for the researcher), and 011-01-0001 (conference materials), bringing the released total to twenty-one and giving every one of the twelve categories at least one released booklet. The remaining ten booklets are scheduled for later releases. See [`meta/roadmap.md`](./meta/roadmap.md) for the phase plan and release timing.
 
 ## Status legend
 
@@ -11,7 +11,7 @@ This catalog lists every booklet in `claude-code-for-social-scientists`, grouped
 | `paired` | Both `tr.md` and `en.md` drafted, not yet included in a public release |
 | `release` | Human-reviewed, version-tagged, included in a public release |
 
-The repository now contains twenty-one booklets at `release` status, and every one of the twelve categories carries at least one released booklet. Both Turkish and English files are complete, human-reviewed, and citation-audited. Ten are the v1.0.0 core booklets, the eleventh, 001-01-0004, was added and human-reviewed for the v2.0.0 release, the twelfth, 008-01-0001, for the v2.1.0 release, the thirteenth, 008-02-0001, for the v2.2.0 release, the v2.8.0 release adds 007-01-0001, 007-03-0001, 008-03-0001, and 010-02-0001, and the v2.9.0 release adds 003-03-0001, 005-02-0001, 006-01-0001, and 011-01-0001, all with live-verified citation cores. Ten booklets remain at `planned` status as of 2026-06-12. The v1.1.x releases add ten companion Claude Code project skills that turn the booklets into repeatable workflows, installable through the `social-cc-plugin` pip package or the Claude Code plugin system.
+The repository now contains thirty-three booklets at `release` status, and every one of the fourteen categories carries at least one released booklet. Both Turkish and English files are complete, human-reviewed, and citation-audited. Ten are the v1.0.0 core booklets, the eleventh, 001-01-0004, was added and human-reviewed for the v2.0.0 release, the twelfth, 008-01-0001, for the v2.1.0 release, the thirteenth, 008-02-0001, for the v2.2.0 release, the v2.8.0 release adds 007-01-0001, 007-03-0001, 008-03-0001, and 010-02-0001, and the v2.9.0 release adds 003-03-0001, 005-02-0001, 006-01-0001, and 011-01-0001, all with live-verified citation cores. Ten booklets remain at `planned` status as of 2026-06-12. The v1.1.x releases add ten companion Claude Code project skills that turn the booklets into repeatable workflows, installable through the `social-cc-plugin` pip package or the Claude Code plugin system.
 
 ---
 
@@ -25,6 +25,7 @@ The conceptual introduction. What Claude Code is, how it differs from a chat win
 | 001-01-0002 `[v1.0]` | The Agentic Shift: From Chat Window to Working Partner | Aracın Ötesine Geçiş: Sohbet Penceresinden İş Ortağına | `release` |
 | 001-01-0003 `[v1.0]` | Installation, First Session, and Sanity Checks | Kurulum, İlk Oturum ve Sağlamlık Denetimleri | `release` |
 | 001-01-0004 | CLAUDE.md and the Discipline of Standing Instructions | CLAUDE.md ve Kalıcı Talimat Disiplini | `release` |
+| 001-02-0001 | Research Lifecycle Map, From Idea to Publication, From Publication to Archive | Araştırma Yaşam Döngüsü, Fikirden Yayına, Yayından Arşive | `release` |
 
 ## 002 — Academic Access / Akademik Erişim
 
@@ -36,6 +37,7 @@ Practical access to journals, citation indexes, reference managers, and institut
 | 002-02-0001 | Zotero, ORCID, and the Reference Manager Bridge | Zotero, ORCID ve Referans Yönetim Köprüsü | `planned` |
 | 002-03-0001 | EZproxy, Institutional VPN, and Off-Campus Realities | EZproxy, Kurumsal VPN ve Kampüs Dışı Erişim | `planned` |
 | 002-04-0001 `[v1.0]` | DergiPark, ULAKBIM TR Dizin, HEAL-Link, and Regional Indexing | DergiPark, ULAKBİM TR Dizin, HEAL Link ve Bölgesel İndeksleme | `release` |
+| 002-05-0001 | Systematic Reviews and Scoping Reviews, From Search to PRISMA Flow | Sistematik Derleme ve Kapsam Derlemesi, Aramadan PRISMA Akışına | `release` |
 
 ## 003 — Memory System / Hafıza Sistemi
 
@@ -46,6 +48,7 @@ The Memory-as-Vault engineering pattern. How to maintain a persistent academic c
 | 003-01-0001 `[v1.0]` | Memory as Vault. A First Principles Introduction | Hafızayı Arşive Dönüştürmek. İlkesel Bir Giriş | `release` |
 | 003-02-0001 | Retrieval Patterns: Indexing a Decade of Notes | Geri Çağırma Kalıpları: On Yıllık Notları İndekslemek | `planned` |
 | 003-03-0001 | Material Passport. Tracking Sources Across Sessions | Kaynak Pasaportu. Kaynakları Oturumlar Arasında İzlemek | `release` |
+| 003-04-0001 | Open Science Package, Data, Code, Supplementary Files, and Persistent DOI | Açık Bilim Paketi, Veri, Kod, Ek Dosya ve Kalıcı DOI | `release` |
 
 ## 004 — Vault Architecture / Kasa Mimarisi
 
@@ -84,6 +87,9 @@ IMRAD scaffolding in Turkish and English, APA 7 with DOI discipline, journal fit
 | 007-01-0001 | IMRAD Scaffolding. A Bilingual Approach | IMRAD İskeleti. İki Dilli Bir Yaklaşım | `release` |
 | 007-02-0001 `[v1.0]` | APA 7 with DOI Discipline | DOI Disiplini ile APA 7 | `release` |
 | 007-03-0001 | Journal Fit and Cover Letters | Dergi Uyumu ve Kapak Mektupları | `release` |
+| 007-04-0001 | Authorship and Contribution Traces, Who Did What, Where It Changed | Ortak Yazarlık ve Katkı İzleri, Kim Ne Yaptı, Nerede Değişti | `release` |
+| 007-05-0001 | Multilingual Concept Validity, Thinking Academically Between Turkish, English, and Greek | Çok Dilli Kavram Geçerliği, Türkçe, İngilizce ve Yunanca Arasında Akademik Düşünmek | `release` |
+| 007-06-0001 | Grant Proposals and Project Texts, From Idea to Work Package | Proje Başvurusu ve Hibe Metni, Fikirden İş Paketine | `release` |
 
 ## 008 — Data Analysis / Veri Analizi
 
@@ -94,6 +100,8 @@ Reproducible workflows, statistical test selection, qualitative coding, mixed-me
 | 008-01-0001 | Reproducible Quantitative Workflows | Yeniden Üretilebilir Nicel İş Akışları | `release` |
 | 008-02-0001 | Statistical Test Selection with AI Consultation Discipline | Yapay Zekâ Danışma Disipliniyle İstatistiksel Test Seçimi | `release` |
 | 008-03-0001 | Qualitative Coding with AI Assistance and Human Oversight | Yapay Zekâ Yardımı ve İnsan Gözetimiyle Nitel Kodlama | `release` |
+| 008-04-0001 | Preparing Sensitive Data, Anonymization, Masking, and Local Preprocessing | Hassas Veriyi Hazırlamak, Anonimleştirme, Maskeleme ve Yerel Ön İşleme | `release` |
+| 008-05-0001 | Research Protocol and Preregistration, Deciding Before Analysis | Araştırma Protokolü ve Ön Kayıt, Analizden Önce Karar Vermek | `release` |
 
 ## 009 — Ethics and IRB / Etik ve IRB
 
@@ -113,14 +121,16 @@ Rebuttal letters with traceability matrices, reviewer-response discipline, anti-
 |---|---|---|---|
 | 010-01-0001 `[v1.0]` | Rebuttal Letters with Traceability Matrices | İzlenebilirlik Matrisleri ile Hakem Yanıt Mektupları | `release` |
 | 010-02-0001 | Managing AI Style Traces in Revisions | Revizyonlarda Yapay Zekâ Üslup İzini Yönetmek | `release` |
+| 010-03-0001 | AI in Peer Review, Confidentiality, Evaluation, and Boundaries | Hakemlikte Yapay Zekâ, Gizlilik, Değerlendirme ve Sınırlar | `release` |
 
-## 011 — Conference Presentation / Konferans Sunumu
+## 011 — Conference and Public Communication / Konferans ve Kamusal İletişim
 
-Slides, posters, lightning talks, networking sequences.
+Slides, posters, lightning talks, and communicating scholarship to the public through blogs, press, and social media.
 
 | Identifier | Title (EN) | Title (TR) | Status |
 |---|---|---|---|
 | 011-01-0001 | Slides, Posters, and Lightning Talks with AI Assistance | Yapay Zekâ Yardımıyla Slayt, Poster ve Lightning Talk | `release` |
+| 011-02-0001 | Public Scholarship, Blog, Press, and Social Media | Akademik Bilgiyi Kamuya Anlatmak, Blog, Basın ve Sosyal Medya | `release` |
 
 ## 012 — Troubleshooting / Sorun Giderme
 
@@ -130,17 +140,33 @@ When tools fail, when papers disagree, when reviewers ask the wrong question.
 |---|---|---|---|
 | 012-01-0001 `[v1.0]` | When Things Go Wrong, A Working Troubleshooting Protocol | İşler Ters Gittiğinde, Çalışan Bir Sorun Giderme Protokolü | `release` |
 
+## 013 — Teaching and Supervision / Öğretim ve Süpervizyon
+
+Course design, reading-list verification, rubrics, feedback on student work, thesis supervision, and the limits of clinical supervision.
+
+| Identifier | Title (EN) | Title (TR) | Status |
+|---|---|---|---|
+| 013-01-0001 | AI in Teaching, Course Design, Supervision, and Student Feedback | Öğretimde Yapay Zekâ, Ders Tasarımı, Süpervizyon ve Öğrenci Geri Bildirimi | `release` |
+
+## 014 — Tool Portability / Araç Taşınabilirliği
+
+What survives a change of tool. Codex and portable agentic discipline, principles before products.
+
+| Identifier | Title (EN) | Title (TR) | Status |
+|---|---|---|---|
+| 014-01-0001 | Beyond Claude Code, Codex and Portable Agentic Discipline | Claude Code’un Ötesinde, Codex ve Taşınabilir Ajan Disiplini | `release` |
+
 ---
 
 ## Summary by status
 
 | Status | Count |
 |---|---|
-| `release` | 21 |
+| `release` | 33 |
 | `paired` | 0 |
 | `draft` | 0 |
 | `planned` | 10 |
-| **Total catalog** | **31** |
+| **Total catalog** | **43** |
 | **v1.0 announcement target** | **10** (marked `[v1.0]` above) |
 
 ## Companion Project Skills
@@ -182,4 +208,4 @@ See [`CONTRIBUTING.md`](./CONTRIBUTING.md). The short version. Open an issue wit
 
 ---
 
-**Last updated:** 2026-06-12 (v3.0.0 release: the JOSE paper refreshed to the twenty-one-booklet, twenty-skill surface with a fifth distinctive contribution on anti-AI-trace revision, plus a submission readiness checklist and a draft-PDF compile workflow. No booklet content changed, aggregate metrics unchanged at 354 verified declarations, 0 fabricated, 21 booklets at release status. Earlier the same day: v2.9.0 release: four new booklets drafted bilingually with live-verified citation cores, 003-03-0001 Material Passport, 005-02-0001 Ritual Hooks, 006-01-0001 MCP for the Researcher, and 011-01-0001 Slides Posters and Lightning Talks, raising released booklets from seventeen to twenty-one, filling all twelve categories with at least one released booklet, and raising aggregate verified citation declarations from 306 to 354 with zero fabricated. Earlier the same day: v2.8.0 release: four new booklets drafted bilingually with live-verified citation cores, 007-01-0001 IMRAD Scaffolding, 007-03-0001 Journal Fit and Cover Letters, 008-03-0001 Qualitative Coding with AI Assistance and Human Oversight, and 010-02-0001 Anti-AI-Trace Writing for Revisions, raising released booklets from thirteen to seventeen and aggregate verified citation declarations from 248 to 306 with zero fabricated. Earlier the same day: v2.7.0 release: the companion project skill set doubled from ten to twenty, covering the research lifecycle from literature scoping to release integrity, with a mandatory Turkish usage section added to every skill and the existing ten strengthened and taken through the v2.6.0 technical-register de-AI pass. Infrastructure repaired: a social-cc doctor command, a Python test job in CI, and a version single-source fix. No booklet was added or changed, aggregate metrics unchanged at 248 verified declarations, 0 fabricated, 13 booklets at release status. Earlier: v2.6.0 release: a bilingual language and naturalness pass over the website and all thirteen booklets in both Turkish and English, removing machine-writing rhetorical patterns and concept-level calques, the Turkish Vault metaphor rendered as arşiv, content and citations unchanged, bilingual parity preserved, aggregate metrics unchanged at 248 verified declarations, 0 fabricated, 13 booklets at release status. Earlier: v2.5.0 release: Turkish-language voice revision, prose only. The Turkish prose of all thirteen booklets, the companion website, and the Turkish README and CONTRIBUTING was rewritten in the author's academic voice. Terminology locked to correct forms: ifşa replaced with katkı beyanı, ajansal with ajan tabanlı, broşür with kitapçık, komponent with bileşen, konsolidasyon with bütünleşme, manüskri with makale. AI-disclosure framing enriched: a declaration alone is not enough, the manner and extent of AI use must be explained. No booklet was added or removed and no citation changed. Aggregate metrics unchanged: 248 verified declarations, 0 fabricated, 13 booklets at release status. Earlier: v2.4.0 release: a scholarship and voice quality upgrade of all thirteen booklets in both languages, overclaims hedged, misapplied citations replaced with verified sources, verified declarations risen from 240 to 248, zero fabricated, no booklet added or removed, no heading structure changed. Earlier: v2.3.0 release: Turkish-language quality revision, the prose of all thirteen booklets rewritten in the author's native voice, no booklet added or removed. Earlier the same day: v2.2.0 release with booklet 008-02-0001, v2.1.0 release with booklet 008-01-0001, and v2.0.0 release with audit and CI hardening, booklet 001-01-0004 promoted to release, companion website, and JOSE paper)
+**Last updated:** 2026-06-21 (v3.2.0 release: twelve continuation booklets expanded bilingually from the author's source drafts, opening two new categories, 013 Teaching and Supervision and 014 Tool Portability, and extending six existing ones, raising the released catalog to thirty-three booklets across fourteen categories and aggregate verified citation declarations from 354 to 566 with zero fabricated, every reference verified live against Crossref and doi.org. Earlier: v3.1.0 release: a full bilingual content overhaul of all twenty-one booklets, the Turkish rebuilt from the author's hand-revised sources and the English natively re-authored, shipped with the academic-journal site redesign. Earlier: v3.0.0 release: the JOSE paper refreshed to the twenty-one-booklet, twenty-skill surface with a fifth distinctive contribution on anti-AI-trace revision, plus a submission readiness checklist and a draft-PDF compile workflow. No booklet content changed, aggregate metrics unchanged at 354 verified declarations, 0 fabricated, 21 booklets at release status. Earlier the same day: v2.9.0 release: four new booklets drafted bilingually with live-verified citation cores, 003-03-0001 Material Passport, 005-02-0001 Ritual Hooks, 006-01-0001 MCP for the Researcher, and 011-01-0001 Slides Posters and Lightning Talks, raising released booklets from seventeen to twenty-one, filling all twelve categories with at least one released booklet, and raising aggregate verified citation declarations from 306 to 354 with zero fabricated. Earlier the same day: v2.8.0 release: four new booklets drafted bilingually with live-verified citation cores, 007-01-0001 IMRAD Scaffolding, 007-03-0001 Journal Fit and Cover Letters, 008-03-0001 Qualitative Coding with AI Assistance and Human Oversight, and 010-02-0001 Anti-AI-Trace Writing for Revisions, raising released booklets from thirteen to seventeen and aggregate verified citation declarations from 248 to 306 with zero fabricated. Earlier the same day: v2.7.0 release: the companion project skill set doubled from ten to twenty, covering the research lifecycle from literature scoping to release integrity, with a mandatory Turkish usage section added to every skill and the existing ten strengthened and taken through the v2.6.0 technical-register de-AI pass. Infrastructure repaired: a social-cc doctor command, a Python test job in CI, and a version single-source fix. No booklet was added or changed, aggregate metrics unchanged at 248 verified declarations, 0 fabricated, 13 booklets at release status. Earlier: v2.6.0 release: a bilingual language and naturalness pass over the website and all thirteen booklets in both Turkish and English, removing machine-writing rhetorical patterns and concept-level calques, the Turkish Vault metaphor rendered as arşiv, content and citations unchanged, bilingual parity preserved, aggregate metrics unchanged at 248 verified declarations, 0 fabricated, 13 booklets at release status. Earlier: v2.5.0 release: Turkish-language voice revision, prose only. The Turkish prose of all thirteen booklets, the companion website, and the Turkish README and CONTRIBUTING was rewritten in the author's academic voice. Terminology locked to correct forms: ifşa replaced with katkı beyanı, ajansal with ajan tabanlı, broşür with kitapçık, komponent with bileşen, konsolidasyon with bütünleşme, manüskri with makale. AI-disclosure framing enriched: a declaration alone is not enough, the manner and extent of AI use must be explained. No booklet was added or removed and no citation changed. Aggregate metrics unchanged: 248 verified declarations, 0 fabricated, 13 booklets at release status. Earlier: v2.4.0 release: a scholarship and voice quality upgrade of all thirteen booklets in both languages, overclaims hedged, misapplied citations replaced with verified sources, verified declarations risen from 240 to 248, zero fabricated, no booklet added or removed, no heading structure changed. Earlier: v2.3.0 release: Turkish-language quality revision, the prose of all thirteen booklets rewritten in the author's native voice, no booklet added or removed. Earlier the same day: v2.2.0 release with booklet 008-02-0001, v2.1.0 release with booklet 008-01-0001, and v2.0.0 release with audit and CI hardening, booklet 001-01-0004 promoted to release, companion website, and JOSE paper)

@@ -198,5 +198,5 @@ Norman, D. A. (2013). *The design of everyday things* (gözden geçirilmiş ve g
 **Sözcük sayısı (yaklaşık).** 2027 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 8
 **Uydurma atıf sayısı.** 0
-**Önceki kitapçık.** [`003-01-0001`](../../003-memory-system/003-01-0001/tr.md). Hafızayı Arşive Dönüştürmek. İlkesel Bir Giriş
+**Önceki kitapçık.** [`003-04-0001`](../../003-memory-system/003-04-0001/tr.md). Açık Bilim Paketi, Veri, Kod, Ek Dosya ve Kalıcı DOI
 **Sonraki kitapçık.** [`007-02-0001`](../../007-academic-writing/007-02-0001/tr.md). DOI Disiplini ile APA 7

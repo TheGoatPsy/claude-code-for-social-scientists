@@ -121,4 +121,4 @@ Walters, W. H., & Wilder, E. I. (2023). Fabrication and errors in the bibliograp
 **Verified citations.** 6
 **Fabricated citations.** 0
 **Previous booklet.** [`008-02-0001`](../008-02-0001/en.md). Statistical Test Selection with AI Consultation Discipline
-**Next booklet.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/en.md). Ethics in AI-Assisted Research, From Principle to Behavior
+**Next booklet.** [`008-04-0001`](../008-04-0001/en.md). Preparing Sensitive Data, Anonymization, Masking, and Local Preprocessing

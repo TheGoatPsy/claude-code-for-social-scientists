@@ -198,5 +198,5 @@ World Association of Medical Editors. (2023). *Recommendations on chatbots and g
 **Sözcük sayısı (yaklaşık).** 2005 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 12
 **Uydurma atıf sayısı.** 0
-**Önceki kitapçık.** [`007-02-0001`](../../007-academic-writing/007-02-0001/tr.md). DOI Disiplini ile APA 7
+**Önceki kitapçık.** [`008-05-0001`](../../008-data-analysis/008-05-0001/tr.md). Araştırma Protokolü ve Ön Kayıt, Analizden Önce Karar Vermek
 **Sonraki kitapçık.** [`010-01-0001`](../../010-peer-review/010-01-0001/tr.md). İzlenebilirlik Matrisleri ile Hakem Yanıt Mektupları

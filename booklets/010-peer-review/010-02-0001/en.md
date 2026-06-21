@@ -151,4 +151,4 @@ Weber-Wulff, D., Anohina-Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero-Dib
 **Verified citations.** 8
 **Fabricated citations.** 0
 **Previous booklet.** [`010-01-0001`](../010-01-0001/en.md). Rebuttal Letters with Traceability Matrices
-**Next booklet.** [`012-01-0001`](../../012-troubleshooting/012-01-0001/en.md). When Things Go Wrong, A Working Troubleshooting Protocol
+**Next booklet.** [`010-03-0001`](../010-03-0001/en.md). AI in Peer Review, Confidentiality, Evaluation, and Boundaries

@@ -197,5 +197,5 @@ World Medical Association. (2025). World Medical Association Declaration of Hels
 **Approximate word count.** 2673 (English body text, excluding references, measured with wc)
 **Verified citations.** 12
 **Fabricated citations.** 0
-**Previous booklet.** [`007-02-0001`](../../007-academic-writing/007-02-0001/en.md). APA 7 with DOI Discipline
+**Previous booklet.** [`008-05-0001`](../../008-data-analysis/008-05-0001/en.md). Research Protocol and Preregistration, Deciding Before Analysis
 **Next booklet.** [`010-01-0001`](../../010-peer-review/010-01-0001/en.md). Rebuttal Letters with Traceability Matrices

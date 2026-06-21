@@ -183,4 +183,4 @@ White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., 
 **Verified citations.** 9
 **Fabricated citations.** 0
 **Previous booklet.** [`001-01-0003`](../001-01-0003/en.md). Installation, First Session, and Sanity Checks
-**Next booklet.** [`003-01-0001`](../../003-memory-system/003-01-0001/en.md). Memory as Vault. A First Principles Introduction
+**Next booklet.** [`001-02-0001`](../001-02-0001/en.md). Research Lifecycle Map, From Idea to Publication, From Publication to Archive

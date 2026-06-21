@@ -6,7 +6,7 @@
 
 A bilingual, open-source guide for social scientists who want to use Anthropic's Claude Code in their research, teaching, and academic writing. Written by a working clinical psychologist and PhD candidate — for researchers outside the English-speaking world as much as inside it — drawing on real academic production, not demonstration projects.
 
-> **Status:** Current release v3.1.0. Twenty-one booklets in Turkish and English, human-reviewed and citation-audited, at least one in every one of the twelve categories, plus twenty companion Claude Code project skills that turn the booklets into repeatable workflows. Aggregate verified citations stand at 354, with zero fabricated. The v3.1 release is a full bilingual content overhaul, the Turkish rebuilt from the author's hand-revised sources and the English natively re-authored, with every reference re-audited against Crossref, shipped together with an academic-journal redesign of the landing page and booklet theme. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
+> **Status:** Current release v3.2.0. Thirty-three booklets in Turkish and English, human-reviewed and citation-audited, at least one in every one of the fourteen categories, plus twenty companion Claude Code project skills that turn the booklets into repeatable workflows. Aggregate verified citations stand at 566, with zero fabricated. The v3.2 release adds twelve continuation booklets expanded bilingually from the author's source drafts, opening two new categories (Teaching and Supervision, Tool Portability) and extending six existing ones, with every reference verified live against Crossref and doi.org. The skills install with pip (`social-cc-plugin`) or as a Claude Code plugin.
 
 > **TR readers:** A Turkish overview lives at the bottom of this file. The full Turkish version is in [`README.tr.md`](./README.tr.md). Every booklet exists as `tr.md` and `en.md` side by side.
 
@@ -153,7 +153,7 @@ The public source is also eligible for permanent archival via the Software Herit
 
 ## Roadmap
 
-See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v3.1.0. The v3.0 line refreshed the Journal of Open Source Education paper against the finished twenty-one-booklet, twenty-skill surface, with a submission readiness checklist in [`meta/jose-submission.md`](./meta/jose-submission.md) and a draft-PDF compile workflow. The submission itself is a maintainer-gated step. The full thirty-one-booklet catalog, with a living lab, conference citations, and instructional use, remains the long-term target.
+See [`meta/roadmap.md`](./meta/roadmap.md) for the public phase plan. The current release is v3.2.0, with thirty-three booklets across fourteen categories and twenty companion skills. The submission of the Journal of Open Source Education paper is a maintainer-gated step, with a readiness checklist in [`meta/jose-submission.md`](./meta/jose-submission.md) and a draft-PDF compile workflow. The full forty-three-booklet catalog, with a living lab, conference citations, and instructional use, remains the long-term target.
 
 ## Contributing
 

@@ -174,5 +174,5 @@ Williams, J. M., & Bizup, J. (2017). *Style: Lessons in clarity and grace* (12th
 **Approximate word count.** 2867 (English body text, measured with wc)
 **Verified citations.** 6
 **Hallucinated citations.** 0
-**Previous booklet.** [`010-02-0001`](../../010-peer-review/010-02-0001/en.md). Managing AI Style Traces in Revisions
-**Next booklet.** [`012-01-0001`](../../012-troubleshooting/012-01-0001/en.md). When Things Go Wrong, A Working Troubleshooting Protocol
+**Previous booklet.** [`010-03-0001`](../../010-peer-review/010-03-0001/en.md). AI in Peer Review, Confidentiality, Evaluation, and Boundaries
+**Next booklet.** [`011-02-0001`](../011-02-0001/en.md). Public Scholarship, Blog, Press, and Social Media

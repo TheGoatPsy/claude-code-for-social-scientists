@@ -179,5 +179,5 @@ Valmeekam, K., Marquez, M., Sreedharan, S., & Kambhampati, S. (2023). On the pla
 **Doğrulanmış atıf sayısı.** 9
 **Uydurma atıf sayısı.** 0
 **Özgün kavram.** Hafızayı arşive dönüştürme kalıbı, yazarın özgün uygulayıcı kavramıdır ve burada rehberin çalışma çerçevesi olarak sunulmaktadır.
-**Önceki kitapçık.** [`002-04-0001`](../../002-academic-access/002-04-0001/tr.md). DergiPark, ULAKBİM TR Dizin, HEAL Link ve Bölgesel İndeksleme
+**Önceki kitapçık.** [`002-05-0001`](../../002-academic-access/002-05-0001/tr.md). Sistematik Derleme ve Kapsam Derlemesi, Aramadan PRISMA Akışına
 **Sonraki kitapçık.** [`004-01-0001`](../../004-vault-architecture/004-01-0001/tr.md). Klasör Disiplini ve Maps of Content (MOC) Kalıbı

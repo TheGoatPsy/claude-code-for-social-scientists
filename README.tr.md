@@ -6,7 +6,7 @@
 
 Anthropic Claude Code'u araştırmada, eğitimde ve akademik yazımda kullanmak isteyen sosyal bilimciler için iki dilli, açık kaynak bir rehber. Bu araçları gerçek akademik üretim sürecinde kullanan bir klinik psikolog ve doktora adayı tarafından yazıldı. İngilizce konuşulan dünyanın dışındaki araştırmacılara, içeridekilere de seslenerek.
 
-> **Durum.** Güncel sürüm v3.1.0. Yirmi bir kitapçık Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. On iki kategorinin her birinde en az bir yayımlanmış kitapçık var. Kitapçıkları yinelenebilir iş akışlarına dönüştüren yirmi tamamlayıcı Claude Code project skill de pakete dahildir. Doğrulanmış atıf toplamı 354, uydurma atıf sıfır. v3.1 sürümü, tüm kitapçıkların iki dilli içerik elden geçirmesidir. Türkçe yazarın elle revize ettiği kaynaklardan yeniden kuruldu, İngilizce native olarak yeniden yazıldı, her referans Crossref üzerinden yeniden denetlendi. Açılış sayfası ve kitapçık temasının akademik dergi yeniden tasarımıyla birlikte yayımlandı. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
+> **Durum.** Güncel sürüm v3.2.0. Otuz üç kitapçık Türkçe ve İngilizce tamamlandı, insan incelemesinden geçti ve atıf denetimi yapıldı. On dört kategorinin her birinde en az bir yayımlanmış kitapçık var. Kitapçıkları yinelenebilir iş akışlarına dönüştüren yirmi tamamlayıcı Claude Code project skill de pakete dahildir. Doğrulanmış atıf toplamı 566, uydurma atıf sıfır. v3.2 sürümü, yazarın taslaklarından iki dilli olarak geliştirilen on iki devam kitapçığı ekler, iki yeni kategori açar (Öğretim ve Süpervizyon, Araç Taşınabilirliği) ve altı mevcut kategoriyi genişletir. Her referans Crossref ve doi.org üzerinden canlı doğrulandı. Skills, pip (`social-cc-plugin`) ya da Claude Code eklentisi olarak kurulur.
 
 > **EN readers.** The English version is in [`README.md`](./README.md). Every booklet has a `tr.md` and an `en.md` side by side. A CI check enforces this pairing on every commit.
 
@@ -153,7 +153,7 @@ Genel kaynak ayrıca Software Heritage arşivinde kalıcı olarak arşivlenmeye 
 
 ## Yol haritası
 
-Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Güncel sürüm v3.1.0. v3.0 serisi JOSE makalesini yirmi bir kitapçık ve yirmi skill yüzeyine göre yeniledi, gönderim hazırlık listesi [`meta/jose-submission.md`](./meta/jose-submission.md) dosyasında ve makale PDF'i derleyen bir workflow eklendi. Gönderimin kendisi yazarın onayına bağlı ayrı bir adımdır. Otuz bir kitapçıklık tam katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımı uzun vadeli hedef olmayı sürdürüyor.
+Halka açık faz planı için [`meta/roadmap.md`](./meta/roadmap.md) dosyasına bakınız. Güncel sürüm v3.2.0, on dört kategoride otuz üç kitapçık ve yirmi tamamlayıcı skill ile. JOSE makalesinin gönderimi yazarın onayına bağlı ayrı bir adımdır, hazırlık listesi [`meta/jose-submission.md`](./meta/jose-submission.md) dosyasında ve makale PDF'i derleyen bir workflow eklendi. Kırk üç kitapçıklık tam katalog, canlı laboratuvar, konferans atıfları ve eğitim materyali kullanımı uzun vadeli hedef olmayı sürdürüyor.
 
 ## Katkıda bulunma
 

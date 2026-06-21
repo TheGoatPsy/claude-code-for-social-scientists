@@ -147,5 +147,5 @@ Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., & Yang, D. (2024). Can lar
 **Sözcük sayısı (yaklaşık).** 1524 (Türkçe gövde metni, wc ile ölçüldü)
 **Doğrulanmış atıf sayısı.** 11
 **Uydurma atıf sayısı.** 0
-**Önceki kitapçık.** [`007-02-0001`](../../007-academic-writing/007-02-0001/tr.md). DOI Disiplini ile APA 7
+**Önceki kitapçık.** [`007-06-0001`](../../007-academic-writing/007-06-0001/tr.md). Proje Başvurusu ve Hibe Metni, Fikirden İş Paketine
 **Sonraki kitapçık.** [`009-01-0001`](../../009-ethics-irb/009-01-0001/tr.md). Yapay Zekâ Destekli Araştırmada Etik, İlkeden Davranışa

@@ -178,4 +178,4 @@ Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Ba
 **Doğrulanmış atıf sayısı.** 6
 **Uydurma atıf sayısı.** 0
 **Önceki kitapçık.** [`003-01-0001`](../003-01-0001/tr.md). Hafızayı Arşive Dönüştürmek. İlkesel Bir Giriş
-**Sonraki kitapçık.** [`004-01-0001`](../../004-vault-architecture/004-01-0001/tr.md). Klasör Disiplini ve Maps of Content (MOC) Kalıbı
+**Sonraki kitapçık.** [`003-04-0001`](../003-04-0001/tr.md). Açık Bilim Paketi, Veri, Kod, Ek Dosya ve Kalıcı DOI
