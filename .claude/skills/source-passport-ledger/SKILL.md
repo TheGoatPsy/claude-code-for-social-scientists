@@ -7,7 +7,7 @@ description: Use when sources must stay traceable across sessions and years, whe
 
 ## When to use
 
-Use this skill when a project has outgrown a flat reference list and every source needs a documented life: discovery, verification, archiving, citation. The regional-access-workflow skill creates passport entries at discovery, and this skill maintains them as a ledger across the project's lifetime. Before submission it answers one question precisely: is anything cited that was never verified.
+Use this skill when a project has outgrown a flat reference list and every source needs a documented life: discovery, verification, archiving, citation. The regional-access-workflow skill creates passport entries at discovery, and this skill maintains them as a ledger across the project's lifetime. Before submission it answers one question precisely: is anything cited that was never verified. It is not for screening sources by scope or inclusion criteria, that is prisma-scoping-review-pipeline, and it does not anonymize sensitive content embedded in sources, that is sensitive-data-anonymization-gate.
 
 ## Inputs
 
@@ -33,6 +33,7 @@ Return:
 - Backfilled passports for existing references, with gaps marked honestly.
 - The quarantine list, sources cited without verification.
 - The sweep report, cited-but-unverified and verified-but-uncited.
+- What to record at session end: the updated ledger file path, the quarantine list as of this session, and a one-line note on any passport entries still awaiting verification.
 
 ## Verification
 
@@ -40,6 +41,7 @@ Return:
 - The quarantine list is empty before a submission, or the submission is flagged as blocked.
 - Passport entries carry dates, and lifecycle events were recorded when they happened where the history shows it.
 - Retractions and corrections appear as appended history, with the original record intact.
+- Before closing: the quarantine list is empty or every remaining item is explicitly flagged as blocked, so the next session starts from a known state.
 
 ## Safety
 

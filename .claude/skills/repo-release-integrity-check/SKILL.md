@@ -7,7 +7,7 @@ description: Use before a tag, GitHub release, or Zenodo archive, when README, C
 
 ## When to use
 
-Use this skill before a tag, GitHub release, Zenodo archive, DOI announcement, or public repository update when metadata drift would damage citation trust. It is the last gate in the lifecycle, and it consumes ai-disclosure-auditor verdicts rather than recomputing them.
+Use this skill before a tag, GitHub release, Zenodo archive, DOI announcement, or public repository update when metadata drift would damage citation trust. It is the last gate in the lifecycle, and it consumes ai-disclosure-auditor verdicts rather than recomputing them. It is not for packaging the open-science deposit itself, that is open-science-release-packager, and it is not for auditing author contribution statements, that is authorship-contribution-ledger.
 
 ## Inputs
 
@@ -43,6 +43,7 @@ Return:
 - CI and security checklist.
 - Release blockers.
 - Go or no-go decision.
+- What to record at session end: the version checked, the blocker count and resolution status, and the go or no-go verdict with the evidence file or CI run that supports it.
 
 ## Verification
 
@@ -51,6 +52,7 @@ Return:
 - README, CATALOG, CHANGELOG, and AI disclosure aggregate agree.
 - Release status is not assigned to unreviewed or citation-unsafe booklets.
 - Branch protection and required checks are noted when they cannot be applied locally.
+- Before closing: the go or no-go verdict is backed by named evidence (CI run or validator output), every blocker is assigned to a file or step, and the open-science-release-packager and authorship-contribution-ledger handoffs are flagged when the release includes a Zenodo deposit or multi-author contribution record.
 
 ## Safety
 

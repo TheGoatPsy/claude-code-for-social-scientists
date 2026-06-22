@@ -7,7 +7,7 @@ description: Use when an ethics committee or IRB application involves AI anywher
 
 ## When to use
 
-Use this skill when a research project uses AI in recruitment, consent, data handling, coding, analysis, writing, supervision, or participant-facing interaction. During coding work, qualitative-coding-discipline enforces the data rules this protocol sets.
+Use this skill when a research project uses AI in recruitment, consent, data handling, coding, analysis, writing, supervision, or participant-facing interaction. During coding work, qualitative-coding-discipline enforces the data rules this protocol sets. It is not for anonymizing identifiable participant data before it enters an AI tool, that is sensitive-data-anonymization-gate.
 
 ## Inputs
 
@@ -28,6 +28,7 @@ Use this skill when a research project uses AI in recruitment, consent, data han
 5. Define what data must never enter an AI system.
 6. Draft the AI-use disclosure for methods, ethics application, consent form, and manuscript note.
 7. Produce a protocol checklist with approval blockers.
+8. When identifiable data are involved, hand the data preparation step to sensitive-data-anonymization-gate before any AI processing begins.
 
 ## Output
 
@@ -41,6 +42,7 @@ Return:
 - Data minimization rules.
 - Approval blockers.
 - Questions for the ethics committee.
+- What to record at session end: the protocol checklist file, any approval blockers still open, and a note on which data categories were flagged for sensitive-data-anonymization-gate.
 
 ## Verification
 
@@ -49,6 +51,7 @@ Return:
 - Jurisdictional claims are marked as checklist guidance unless a legal source was verified.
 - High-risk or participant-facing AI use is escalated for human approval.
 - Disclosure language matches the actual workflow.
+- Before closing: every approval blocker is explicitly listed, identifiable data needing pre-processing are handed to sensitive-data-anonymization-gate, and the checklist is saved where the ethics committee reviewer can find it.
 
 ## Safety
 
@@ -66,4 +69,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri, yapay zekânın karıştığı bir araştırma için etik kurul ve veri koruma hazırlığını tek kontrol listesinde toplar. Hangi verinin hiçbir koşulda yapay zekâ sistemine giremeyeceği açıkça yazılır, onam ve beyan dili gerçek iş akışına göre taslaklanır, KVKK, GDPR ve AB Yapay Zekâ Yasası katmanları çalışmaya eşlenir. Hukuki kesinlik gereken yerde son söz kurula ve hukukçuya bırakılır.
+Bu beceri, yapay zekânın karıştığı bir araştırma için etik kurul ve veri koruma hazırlığını tek kontrol listesinde toplar. Hangi verinin hiçbir koşulda yapay zekâ sistemine giremeyeceği açıkça yazılır, onam ve beyan dili gerçek iş akışına göre taslaklanır, KVKK, GDPR ve AB Yapay Zekâ Yasası katmanları çalışmaya eşlenir. Hukuki kesinlik gereken yerde son söz kurula ve hukukçuya bırakılır. Kimlik içeren verinin yapay zekâ öncesi işlenmesi sensitive-data-anonymization-gate'e devredilir. Oturum sonunda onay engelleyen maddeler ve hangi veri kategorisinin anonimleştirme gerektirdiği kayda geçirilir.

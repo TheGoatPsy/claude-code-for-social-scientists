@@ -7,7 +7,7 @@ description: Use when a Claude Code session loops, drifts from scope, claims a f
 
 ## When to use
 
-Use this skill when a Claude Code or agentic coding session behaves unreliably and the user needs root cause diagnosis rather than another attempt at the same command. It applies at any lifecycle stage, and the lesson it records belongs in the project's standing instructions.
+Use this skill when a Claude Code or agentic coding session behaves unreliably and the user needs root cause diagnosis rather than another attempt at the same command. It applies at any lifecycle stage, and the lesson it records belongs in the project's standing instructions. It is not for evaluating whether an agent's outputs are portable across tool environments, that is agent-portability-matrix, and it is not for getting an independent second diagnosis on a difficult failure, that is cross-agent-second-opinion.
 
 ## Inputs
 
@@ -42,6 +42,7 @@ Return:
 - Fix plan.
 - Verification step.
 - Residual risk.
+- What to record at session end: the failure class, the root cause hypothesis, the fix applied, and the reusable rule added to the project's standing instructions.
 
 ## Verification
 
@@ -50,6 +51,7 @@ Return:
 - Permission failures are not solved by destructive commands.
 - The fix has a clear pass or fail check.
 - Repeated session errors are converted into a reusable rule.
+- Before closing: the fix has been verified with a concrete pass/fail check, and if the failure pattern involves cross-tool or cross-environment behavior, agent-portability-matrix or cross-agent-second-opinion has been noted as the next step.
 
 ## Safety
 

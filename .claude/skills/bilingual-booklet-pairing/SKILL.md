@@ -7,7 +7,7 @@ description: Use when paired tr.md and en.md files need a parity verdict, when t
 
 ## When to use
 
-Use this skill whenever a booklet exists or is planned in both Turkish and English and the user needs parity rather than a loose translation. For manuscripts rather than booklets, bilingual-manuscript-scaffold builds the pair that this skill audits.
+Use this skill whenever a booklet exists or is planned in both Turkish and English and the user needs parity rather than a loose translation. For manuscripts rather than booklets, bilingual-manuscript-scaffold builds the pair that this skill audits. It is not for validating that concepts translate equivalently across languages at a terminological level, that is multilingual-concept-validity-audit.
 
 ## Inputs
 
@@ -26,6 +26,7 @@ Use this skill whenever a booklet exists or is planned in both Turkish and Engli
 6. Mark cultural adaptation points where exact translation would weaken the text.
 7. Check that examples, local institutions, and legal references are appropriate for the language version.
 8. Return a parity verdict.
+9. When the parity verdict is pass, hand release preparation to open-science-release-packager and flag any authorship field discrepancies for authorship-contribution-ledger.
 
 ## Output
 
@@ -39,6 +40,7 @@ Return:
 - Citation and disclosure parity.
 - Verdict, pass, partial, or fail.
 - Required fixes before release.
+- What to record at session end: the parity verdict, any fields still mismatched, and which fixes were delegated versus left for human resolution.
 
 ## Verification
 
@@ -47,6 +49,7 @@ Return:
 - Heading order is either matched or intentionally adapted.
 - Legal, clinical, and regional terms are not flattened into misleading literal translations.
 - Release status is not recommended until both files pass parity.
+- Before closing: any concept-level translation doubts are flagged for multilingual-concept-validity-audit, and the parity result is ready to hand to open-science-release-packager.
 
 ## Safety
 
@@ -64,4 +67,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri, aynı kitapçığın Türkçe ve İngilizce dosyalarının gerçekten eş olup olmadığını denetler. Başlık sayısı, frontmatter alanları, atıf sayıları ve DOI kümeleri karşılaştırılır, kültürel uyarlama gereken yerler birebir çeviriden ayrılır. Eşlik geçmeden yayın önerilmez. El yazmaları için aynı işin kurucusu bilingual-manuscript-scaffold becerisidir.
+Bu beceri, aynı kitapçığın Türkçe ve İngilizce dosyalarının gerçekten eş olup olmadığını denetler. Başlık sayısı, frontmatter alanları, atıf sayıları ve DOI kümeleri karşılaştırılır, kültürel uyarlama gereken yerler birebir çeviriden ayrılır. Eşlik geçmeden yayın önerilmez. El yazmaları için aynı işin kurucusu bilingual-manuscript-scaffold becerisidir. Kavram düzeyinde çeviri belirsizlikleri multilingual-concept-validity-audit'e devredilir. Eşlik onaylandıktan sonra yayın hazırlığı open-science-release-packager'a taşınır.

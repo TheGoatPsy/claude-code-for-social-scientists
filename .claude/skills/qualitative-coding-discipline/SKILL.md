@@ -7,7 +7,7 @@ description: Use when coding interviews, focus groups, or open-ended responses w
 
 ## When to use
 
-Use this skill when qualitative material is being coded and an AI tool participates in any part of it. The discipline keeps interpretive authority with the researcher while letting the tool earn its place as a second coder. It also applies retroactively, when an already coded dataset needs an audit before the findings are written up.
+Use this skill when qualitative material is being coded and an AI tool participates in any part of it. The discipline keeps interpretive authority with the researcher while letting the tool earn its place as a second coder. It also applies retroactively, when an already coded dataset needs an audit before the findings are written up. It is not for anonymizing raw transcripts before coding begins; that is sensitive-data-anonymization-gate, and it is not for registering the analysis plan before coding starts; that is preregistration-analysis-plan-ledger.
 
 ## Inputs
 
@@ -35,6 +35,7 @@ Return:
 - The quote integrity register, quote to source identifier.
 - The reflexivity log.
 - An AI involvement summary ready for disclosure.
+- What to record at session end: the current codebook version, the agreement table, the quote integrity register, the reflexivity log entries added in this session, and a one-line note for the AI-use disclosure.
 
 ## Verification
 
@@ -43,6 +44,7 @@ Return:
 - Every codebook change has a logged reason.
 - Anonymization and consent scope were confirmed before the first segment was processed, and the confirmation is recorded.
 - The final interpretation is traceable to the researcher's decisions, with tool proposals marked as proposals.
+- Before closing: the codebook version, agreement table, and quote integrity register are saved where the next session can find them, and any anonymization gaps identified during coding have been routed to sensitive-data-anonymization-gate.
 
 ## Safety
 
@@ -60,4 +62,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri, nitel kodlamada yorum yetkisini araştırmacıda tutar. Veri oturuma girmeden önce anonimleştirme ve onam kapsamı doğrulanır, kod defterinin sahibi araştırmacıdır, araç ancak ikinci kodlayıcı olarak çalışır ve uyuşmazlıklar tartışılıp tanımlar yenilendikten sonra uyuşma yeniden hesaplanır. Kaynağı gösterilemeyen alıntı yok hükmündedir. Aracın yorumu değiştirdiği her nokta refleksivite günlüğüne işlenir.
+Bu beceri, nitel kodlamada yorum yetkisini araştırmacıda tutar. Kod defterinin sahibi araştırmacıdır, araç ancak ikinci kodlayıcı olarak çalışır ve uyuşmazlıklar tartışılıp tanımlar yenilendikten sonra uyuşma yeniden hesaplanır. Kaynağı gösterilemeyen alıntı yok hükmündedir. Aracın yorumu değiştirdiği her nokta refleksivite günlüğüne işlenir. Ham dökümlerin anonimleştirilmesi sensitive-data-anonymization-gate becerisinin işidir. Anonimleştirme tamamlanmadan ve onam kapsamı doğrulanmadan hiçbir katılımcı metni oturuma alınamaz — bu adım takdir meselesi değil, iş akışının sert ön koşuludur.

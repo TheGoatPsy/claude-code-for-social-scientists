@@ -26,6 +26,18 @@ const expectedSkills = [
   "mcp-research-stack-triage",
   "source-passport-ledger",
   "conference-materials-bilingual",
+  "prisma-scoping-review-pipeline",
+  "sensitive-data-anonymization-gate",
+  "open-science-release-packager",
+  "authorship-contribution-ledger",
+  "peer-review-confidentiality-protocol",
+  "multilingual-concept-validity-audit",
+  "grant-proposal-workpackage-builder",
+  "teaching-feedback-ai-boundaries",
+  "public-scholarship-ethics-adapter",
+  "preregistration-analysis-plan-ledger",
+  "agent-portability-matrix",
+  "cross-agent-second-opinion",
 ];
 
 const requiredFrontmatterFields = [

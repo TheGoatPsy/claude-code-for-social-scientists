@@ -7,7 +7,7 @@ description: Use when a researcher asks where to start, which project skill fits
 
 ## When to use
 
-Use this skill when the user needs orientation across the project skills rather than one specific check: a study is starting, a stalled project is resuming, or the user asks which skill applies right now. Once the stage is clear, hand the work to that stage's skill and return here only at the next boundary.
+Use this skill when the user needs orientation across the project skills rather than one specific check: a study is starting, a stalled project is resuming, or the user asks which skill applies right now. Once the stage is clear, hand the work to that stage's skill and return here only at the next boundary. It is not for performing any stage's work itself; for scoping reviews that is prisma-scoping-review-pipeline, for pre-analysis registration that is preregistration-analysis-plan-ledger, for release packaging that is open-science-release-packager, and for sensitive data handling that is sensitive-data-anonymization-gate.
 
 ## Inputs
 
@@ -41,6 +41,7 @@ Return:
 - The skill or skills to invoke now, each with its reason.
 - The next boundary and the condition that must hold to cross it.
 - Items that need a human professional rather than a skill.
+- What to record at session end: the diagnosed stage, the skills recommended and why, the boundary condition stated, and any open human-decision points.
 
 ## Verification
 
@@ -48,6 +49,7 @@ Return:
 - No stage is skipped silently, and any skipped stage is listed with the user's consent.
 - The verification-before-disclosure ordering is never reversed.
 - Each boundary crossing was confirmed by the user, in the conversation.
+- Before closing: the stage record is written where the next session can find it, and any skill handoff is named with the reason it was triggered.
 
 ## Safety
 
@@ -65,4 +67,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri tek bir işi yapmaz, sıradaki doğru beceriyi gösterir. Araştırmanızın neresinde olduğunuzu anlatın, aşama teşhis edilir, o aşamanın becerisi gerekçesiyle önerilir ve bir sonraki sınırın koşulu söylenir. Aşama geçişleri sizin onayınızla olur, atıf doğrulaması yapılmadan beyan aşamasına geçilmez. Etik kurul, istatistikçi ya da hukukçu gereken yerde beceri önermek yerine bunu açıkça söyler.
+Bu beceri tek bir işi yapmaz, sıradaki doğru beceriyi gösterir. Araştırmanızın neresinde olduğunuzu anlatın, aşama teşhis edilir, o aşamanın becerisi gerekçesiyle önerilir ve bir sonraki sınırın koşulu söylenir. Aşama geçişleri sizin onayınızla olur, doğrulama tamamlanmadan beyana geçilmez, beyan tamamlanmadan sunum yapılmaz. Etik kurul, istatistikçi ya da hukukçu gereken yerde beceri önermek yerine bunu açıkça belirtir — bu kararlar becerinin değil, ilgili uzmanın yetkisindedir.

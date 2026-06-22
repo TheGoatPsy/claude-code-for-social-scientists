@@ -7,7 +7,7 @@ description: Use when reviewer comments arrive and each one needs a tracked deci
 
 ## When to use
 
-Use this skill after peer review, revise and resubmit, editorial triage, grant review, or supervisor feedback when comments must be answered systematically. Once the matrix stands, anti-ai-trace-revision keeps the response prose in the author's voice.
+Use this skill after peer review, revise and resubmit, editorial triage, grant review, or supervisor feedback when comments must be answered systematically. Once the matrix stands, anti-ai-trace-revision keeps the response prose in the author's voice. It is not for handling confidential peer review material that must not be disclosed externally, that is peer-review-confidentiality-protocol.
 
 ## Inputs
 
@@ -26,6 +26,7 @@ Use this skill after peer review, revise and resubmit, editorial triage, grant r
 5. Draft a traceability matrix.
 6. Draft response text with a respectful, non-defensive tone.
 7. Flag contradictions between reviewers and suggest editor-facing framing.
+8. Before sharing the response letter externally, confirm with peer-review-confidentiality-protocol that no confidential reviewer identities or editorial metadata are exposed.
 
 ## Output
 
@@ -38,6 +39,7 @@ Return:
 - Editor response summary.
 - Reviewer-by-reviewer response draft.
 - Residual risks.
+- What to record at session end: the completed matrix file, any reviewer comments still without a manuscript location, and which open evidence needs require a new analysis pass.
 
 ## Verification
 
@@ -46,6 +48,7 @@ Return:
 - Rejections are evidence-based and respectful.
 - Manuscript locations are specific enough for a coauthor to verify.
 - No unsupported claim is added to satisfy a reviewer.
+- Before closing: every open evidence need is listed explicitly, the response letter has been checked against peer-review-confidentiality-protocol, and the matrix is saved where a coauthor can verify it independently.
 
 ## Safety
 
@@ -62,4 +65,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri, hakem yorumlarını tek tek karara bağlar ve her kararı el yazmasındaki değişikliğe eşler. Kabul, kısmi kabul ve gerekçeli ret ayrımı netleşir, hakemler arası çelişkiler editöre dönük çerçeveyle işaretlenir. Hakemi memnun etmek için desteksiz iddia eklenmez, yapılmamış analiz yapılmış gibi yazılmaz. Matris kurulduktan sonra yanıt metninin sesi anti-ai-trace-revision ile korunur.
+Bu beceri, hakem yorumlarını tek tek karara bağlar ve her kararı el yazmasındaki değişikliğe eşler. Kabul, kısmi kabul ve gerekçeli ret ayrımı netleşir, hakemler arası çelişkiler editöre dönük çerçeveyle işaretlenir. Hakemi memnun etmek için desteksiz iddia eklenmez, yapılmamış analiz yapılmış gibi yazılmaz. Matris kurulduktan sonra yanıt metninin sesi anti-ai-trace-revision ile korunur. Yanıt mektubu dışarı çıkmadan önce gizli hakem kimliği veya editoryal meta veri taşımadığı peer-review-confidentiality-protocol ile teyit edilir. Oturum sonunda matris dosyası ve açık kanıt ihtiyaçları kayda geçirilir.
