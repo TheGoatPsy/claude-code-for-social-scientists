@@ -7,7 +7,7 @@ description: Use when AI contribution metadata must match the actual workflow, w
 
 ## When to use
 
-Use this skill before release, after AI-assisted drafting, or during citation cleanup when the user needs disclosure metadata to match the actual workflow. Its citation counts come from apa-doi-verifier results, and its verdict feeds repo-release-integrity-check at release time.
+Use this skill before release, after AI-assisted drafting, or during citation cleanup when the user needs disclosure metadata to match the actual workflow. Its citation counts come from apa-doi-verifier results, and its verdict feeds repo-release-integrity-check at release time. It is not for building an open-science release package or recording authorship contributions, those are open-science-release-packager and authorship-contribution-ledger.
 
 ## Inputs
 
@@ -41,6 +41,7 @@ Return:
 - Citation count reconciliation.
 - Fabricated citation risk notes.
 - Required release blockers.
+- What to record at session end: the disclosure verdict per file, any fields still pending human confirmation, and a one-line summary for the release log.
 
 ## Verification
 
@@ -49,6 +50,7 @@ Return:
 - Citation counts are not copied from older aggregate files without checking the current file.
 - Release material with fabricated citations is blocked.
 - Aggregate disclosure and per-file frontmatter are consistent.
+- Before closing: every release blocker is documented and the verified disclosure output is ready to hand to open-science-release-packager.
 
 ## Safety
 
@@ -66,4 +68,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri, yapay zekâ katkı beyanının gerçek iş akışıyla örtüşüp örtüşmediğini alan alan denetler. Model kimlikleri, insan incelemesi durumu ve atıf sayıları kanıtla karşılaştırılır, uydurma atıf içeren içerik yayına kapatılır. Atıf sayıları apa-doi-verifier doğrulamasından gelir, sonuç yayın bütünlüğü kontrolüne girdi olur.
+Bu beceri, yapay zekâ katkı beyanının gerçek iş akışıyla örtüşüp örtüşmediğini alan alan denetler. Model kimlikleri, insan incelemesi durumu ve atıf sayıları kanıtla karşılaştırılır, uydurma atıf içeren içerik yayına kapatılır. Atıf sayıları apa-doi-verifier doğrulamasından gelir, sonuç yayın bütünlüğü kontrolüne girdi olur. Açık bilim paketi için open-science-release-packager'a, yazarlık katkı kaydı için authorship-contribution-ledger'a devredilir. Oturum sonunda denetim kararı ve bekleyen alanlar kayda geçirilir.

@@ -98,7 +98,7 @@ So `001-01-0001` is the first booklet, in the first subcategory, of the Foundati
 
 ## Project Skills
 
-The skills layer includes twenty Claude Code project skills under [`.claude/skills/`](./.claude/skills/), covering the research lifecycle from literature scoping to release integrity. The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries, and every skill closes with a Turkish usage section, extending the guide's bilingual parity principle to the skill layer.
+The skills layer includes thirty-two Claude Code project skills under [`.claude/skills/`](./.claude/skills/), covering the research lifecycle from literature scoping to release integrity. The booklets carry theory, pedagogy, and scholarly framing. The skills carry repeatable workflows, audit checklists, and safe operating boundaries, and every skill closes with a Turkish usage section, extending the guide's bilingual parity principle to the skill layer.
 
 | Skill | Companion booklets | Purpose |
 |---|---|---|
@@ -122,6 +122,18 @@ The skills layer includes twenty Claude Code project skills under [`.claude/skil
 | `mcp-research-stack-triage` | 006 | Triage MCP servers for research use: publisher, data flow, minimal permissions, and known-answer probes. |
 | `source-passport-ledger` | 003 | Track every source from discovery to citation, with a quarantine rule for unverified references. |
 | `conference-materials-bilingual` | 011 | Build slides and posters around one claim, with figure traceability and bilingual re-authoring. |
+| `prisma-scoping-review-pipeline` | 002 | Run a systematic, scoping, or rapid review through a logged search, screening with recorded reasons, and PRISMA flow counts. |
+| `sensitive-data-anonymization-gate` | 008, 009 | De-identify sensitive, clinical, or interview data and run a data-minimization gate before any AI tool sees it. |
+| `open-science-release-packager` | 003 | Package a study for open-science release with a license, a persistent DOI, metadata, and an access and embargo decision. |
+| `authorship-contribution-ledger` | 007 | Record authorship order, CRediT roles, and AI-assistance attribution, with an evidence trail for disputes. |
+| `peer-review-confidentiality-protocol` | 010 | Decide whether and how AI may assist a peer review while keeping the manuscript confidential and disclosing assistance. |
+| `multilingual-concept-validity-audit` | 007 | Audit a construct's conceptual equivalence across Turkish and English through translation, back-translation, and drift checks. |
+| `grant-proposal-workpackage-builder` | 007 | Build work packages, milestones, a timeline, a risk register, and budget justification while keeping feasibility honest. |
+| `teaching-feedback-ai-boundaries` | 013 | Set AI boundaries for course design, assessment, and student feedback within academic-integrity and FERPA/KVKK limits. |
+| `public-scholarship-ethics-adapter` | 011 | Adapt findings for a public audience while staying evidence-faithful, avoiding overclaiming, and disclosing AI assistance. |
+| `preregistration-analysis-plan-ledger` | 008 | Freeze a preregistration and analysis plan, separate confirmatory from exploratory, and log every deviation. |
+| `agent-portability-matrix` | 014 | Map capabilities, file access, memory, and skill support across AI tools so a workflow is not locked to one vendor. |
+| `cross-agent-second-opinion` | 014, 012 | Have a second independent agent verify a result rather than decide, surfacing disagreement for the human to adjudicate. |
 
 ### Installing the skills
 

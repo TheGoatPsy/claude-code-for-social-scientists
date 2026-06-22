@@ -1,13 +1,13 @@
 ---
 name: social-science-literature-triage
-description: Use when starting a literature review and a defensible search plan is needed, when database lanes and language layers must be chosen, when DOI coverage policy is unclear, or when inclusion and exclusion criteria need drafting before any source is read.
+description: Use for the search-planning stage of a literature review, when database lanes and language layers must be chosen, when DOI coverage policy is unclear, or when inclusion and exclusion criteria need drafting before any source is read; not for running the screening and PRISMA pipeline of a formal review, which is prisma-scoping-review-pipeline.
 ---
 
 # Social Science Literature Triage
 
 ## When to use
 
-Use this skill before a literature review, scoping review, thesis chapter, grant background, or manuscript introduction when the user needs a search plan that can survive method review rather than an immediate prose draft. Its protocol feeds regional-access-workflow for retrieval and source-passport-ledger for tracking what the search returns.
+Use this skill before a literature review, scoping review, thesis chapter, grant background, or manuscript introduction when the user needs a search plan that can survive method review rather than an immediate prose draft. Its protocol feeds regional-access-workflow for retrieval and source-passport-ledger for tracking what the search returns. It is not for running a full PRISMA-compliant systematic review pipeline, that is prisma-scoping-review-pipeline.
 
 ## Inputs
 
@@ -43,6 +43,7 @@ Return a compact protocol with these headings:
 - Exclusion criteria.
 - Risk notes.
 - Next action.
+- What to record at session end: the search protocol file, which database lanes were confirmed available, and a one-line note for the AI-use disclosure.
 
 ## Verification
 
@@ -51,6 +52,7 @@ Return a compact protocol with these headings:
 - DOI expectations distinguish journal articles from reports, books, theses, and official guidelines.
 - Search strings are reproducible enough for another researcher to run.
 - No fabricated source claims are introduced.
+- Before closing: the protocol is saved where the next session can find it, and if the topic requires a full systematic review, prisma-scoping-review-pipeline has been flagged as the next step.
 
 ## Safety
 
@@ -69,4 +71,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri, literatür taramasına başlamadan önce yöntem incelemesine dayanacak bir arama planı kurar. Veritabanı kanalları, dil katmanları, DOI beklentileri ve dahil etme ölçütleri tek protokolde toplanır, bölgesel kaynaklar gözden kaçırılmaz. Arama dizgileri başka bir araştırmacının aynı sonuçlara ulaşabileceği kadar açık yazılır, yanlılık riskleri daha ilk adımda not edilir. Plan hazır olduğunda erişim için regional-access-workflow, bulunanların izlenmesi için source-passport-ledger devreye girer.
+Bu beceri, literatür taramasına başlamadan önce yöntem incelemesine dayanacak bir arama planı kurar. Veritabanı kanalları, dil katmanları, DOI beklentileri ve dahil etme ölçütleri tek protokolde toplanır, bölgesel kaynaklar gözden kaçırılmaz. Arama dizgileri başka bir araştırmacının aynı sonuçlara ulaşabileceği kadar açık yazılır, yanlılık riskleri daha ilk adımda not edilir. Plan hazır olduğunda erişim için regional-access-workflow, bulunanların izlenmesi için source-passport-ledger devreye girer. Tam sistematik derleme gerekiyorsa prisma-scoping-review-pipeline'a devredilir. Oturum sonunda arama protokolü ve yapay zekâ katkı notu kaydedilir. Paylaşılan kimlik bilgileri veya kurumsal politika dışı yollarla erişim bu becerinin kapsamı dışındadır — yasal erişim yolları için regional-access-workflow devreye girer.

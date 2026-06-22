@@ -7,7 +7,7 @@ description: Use when automating research session rituals in Claude Code with ho
 
 ## When to use
 
-Use this skill when a recurring research habit should become an automatic part of the Claude Code session lifecycle: loading project context at start, appending to a daily log, persisting state at session end, or guarding commits. It pairs with the memory-vault-architect skill, which designs what the rituals read and write.
+Use this skill when a recurring research habit should become an automatic part of the Claude Code session lifecycle: loading project context at start, appending to a daily log, persisting state at session end, or guarding commits. It pairs with the memory-vault-architect skill, which designs what the rituals read and write. It is not for anonymizing sensitive data before a hook touches it; that is sensitive-data-anonymization-gate.
 
 ## Inputs
 
@@ -24,7 +24,7 @@ Use this skill when a recurring research habit should become an automatic part o
 4. Keep each hook script small enough to read in one screen, and let it write one log line saying what it did.
 5. Let hooks read the vault freely and write only to designated locations, the daily note and the log, never restructuring content on their own.
 6. Test with a dry run in isolation before registering the hook, and measure the session start delay it adds.
-7. Version the hook scripts with the project, and document each hook in one line: trigger, input, output, failure direction.
+7. Version the hook scripts with the project, and document each hook in one line: trigger, input, output, failure direction. When a guard hook must touch paths that may contain participant data, route the anonymization check to sensitive-data-anonymization-gate before the hook is registered.
 
 ## Output
 
@@ -35,6 +35,7 @@ Return:
 - The failure direction decision per hook, with the reason.
 - A dry run test plan and its results.
 - The one-line documentation block for the project README or CLAUDE.md.
+- What to record at session end: the ritual-to-hook-event map, the dry run results and measured start delay, the failure direction decision per hook, and a one-line note for the AI-use disclosure.
 
 ## Verification
 
@@ -43,6 +44,7 @@ Return:
 - No hook stores or echoes credentials, and secret material stays in environment stores.
 - Measured session start delay is stated, and hooks that slow the start noticeably are trimmed or deferred.
 - Each hook writes a log line per run, so silence means it did not run.
+- Before closing: the dry run results and measured start delay are recorded, every hook's failure direction is documented, and any hook that touches participant-data paths has been cleared through sensitive-data-anonymization-gate.
 
 ## Safety
 
@@ -60,4 +62,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri, tekrarlanan araştırma alışkanlıklarını oturum yaşam döngüsüne bağlar. Ritüel önce tek cümleyle tanımlanır, sonra doğru olaya eşlenir ve her kancanın bozulma yönü bilinçli seçilir. Bağlam yükleyici bozulursa oturumu engellemez, gizlilik bekçisi bozulursa commit'i durdurur. Kancalar tek ekranda okunacak kadar küçük kalır, her çalışmada tek satır iz bırakır ve arşiv içeriğini kendi başına yeniden düzenlemez.
+Bu beceri, tekrarlanan araştırma alışkanlıklarını oturum yaşam döngüsüne bağlar. Ritüel önce tek cümleyle tanımlanır, sonra doğru olaya eşlenir ve her kancanın bozulma yönü bilinçli seçilir. Bağlam yükleyici bozulursa oturumu engellemez, gizlilik bekçisi bozulursa commit'i durdurur. Kancalar tek ekranda okunacak kadar küçük kalır, her çalışmada tek satır iz bırakır ve arşiv içeriğini kendi başına yeniden düzenlemez. Kanca katılımcı verisine dokunacaksa önce sensitive-data-anonymization-gate becerisi çalıştırılır.

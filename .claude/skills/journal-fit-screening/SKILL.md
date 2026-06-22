@@ -7,7 +7,7 @@ description: Use when choosing a journal for a finished or nearly finished manus
 
 ## When to use
 
-Use this skill when the manuscript exists and the question is where to send it. It covers scope matching, index verification, predatory screening, and the cover letter. It does not improve the manuscript itself; for that, return to the writing and verification skills first.
+Use this skill when the manuscript exists and the question is where to send it. It covers scope matching, index verification, predatory screening, and the cover letter. It does not improve the manuscript itself; for that, return to the writing and verification skills first. It is not for managing authorship contributions or open-science release decisions; those belong to authorship-contribution-ledger and open-science-release-packager.
 
 ## Inputs
 
@@ -24,7 +24,7 @@ Use this skill when the manuscript exists and the question is where to send it. 
 4. Screen for predatory signals in the Think Check Submit discipline: a verifiable editorial board, transparent article processing charges, honest indexing claims, a real review timeline, and a publisher with a traceable record. Record the evidence behind each flag.
 5. Rank the surviving candidates by fit, with the reason stated per journal: scope match, method fit, audience, timeline, cost.
 6. Draft the cover letter from the fit profile. Every sentence in the letter must be supported by the manuscript, and the editor's name and journal scope reference must be current.
-7. Record the screening evidence per journal so the decision can be audited later.
+7. Record the screening evidence per journal so the decision can be audited later. When the selected journal requires open-access compliance or data sharing, hand the decision record to open-science-release-packager and flag any authorship order questions for authorship-contribution-ledger.
 
 ## Output
 
@@ -35,6 +35,7 @@ Return:
 - Predatory screening notes with evidence per flag.
 - A cover letter draft.
 - The screening evidence record.
+- What to record at session end: the ranked candidate table, any predatory flags with their evidence, the cover letter draft, and a one-line note for the AI-use disclosure.
 
 ## Verification
 
@@ -43,6 +44,7 @@ Return:
 - Article processing charges are stated with their source.
 - The cover letter contains no claim that is absent from the manuscript.
 - Predatory flags are written as factual observations with evidence, never as bare accusations.
+- Before closing: the screening evidence for every recommended journal is saved where the next session can find it, and any open-science or authorship obligations flagged by the selected journal have been routed to the appropriate skill.
 
 ## Safety
 
@@ -60,4 +62,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri, bitmiş bir el yazması için dergi seçimini kanıta bağlar. Dizin durumu derginin kendi sayfasından değil dizinin güncel ana listesinden doğrulanır, Scopus, SSCI ve TR Dizin katmanları kurumunuzun gerçek şartına göre ayrıştırılır, şüpheli dergiler kanıtlı bayraklarla işaretlenir. Kapak mektubu el yazmasında olmayan hiçbir iddia içermez. Gönderim ve ücret işlemleri her zaman sizde kalır.
+Bu beceri, bitmiş bir el yazması için dergi seçimini kanıta bağlar. Dizin durumu derginin kendi sayfasından değil dizinin güncel ana listesinden doğrulanır, Scopus, SSCI ve TR Dizin katmanları kurumunuzun gerçek şartına göre ayrıştırılır, şüpheli dergiler kanıtlı bayraklarla işaretlenir. Kapak mektubu el yazmasında olmayan hiçbir iddia içermez. Gönderim ve ücret işlemleri her zaman sizde kalır. Seçilen dergi açık erişim zorunluluğu veya veri paylaşımı gerektiriyorsa open-science-release-packager becerisi devreye girer.

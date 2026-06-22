@@ -7,7 +7,7 @@ description: Use when choosing or configuring MCP servers for research work, whe
 
 ## When to use
 
-Use this skill when Model Context Protocol servers are entering a research workflow and the question is which ones to trust, with what permissions, and with what data. It applies before installation, and again whenever a server updates or a new category of data, such as participant material, enters the workflow.
+Use this skill when Model Context Protocol servers are entering a research workflow and the question is which ones to trust, with what permissions, and with what data. It applies before installation, and again whenever a server updates or a new category of data, such as participant material, enters the workflow. It is not for switching the agent runtime itself or comparing agent environments across projects; for that use agent-portability-matrix, and when a second opinion on a server trust decision is needed, cross-agent-second-opinion provides an independent review lane.
 
 ## Inputs
 
@@ -35,6 +35,7 @@ Return:
 - The minimal permission configuration.
 - Probe queries and their results.
 - The stack record, ready for the project's documentation.
+- What to record at session end: the final stack record with probe results, any server excluded and the reason, and the open permission questions awaiting institutional confirmation.
 
 ## Verification
 
@@ -42,6 +43,7 @@ Return:
 - Every server passed a known-answer probe in the current session, and the probe is recorded.
 - Permissions match the named tasks, with no speculative grants.
 - Participant or otherwise sensitive data is routed only to servers explicitly cleared for it, and that clearance is written down.
+- Before closing: the stack record is saved to the project documentation folder, and any server whose clearance remains uncertain is flagged for human decision before the next data-touching session.
 
 ## Safety
 
@@ -59,4 +61,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri, araştırma iş akışına girecek MCP sunucularını güven süzgecinden geçirir. Her aday için dört soru yazılı yanıtlanır, yayıncısı kim, makineden hangi veri çıkıyor, nereye gidiyor, hangi kimlik doğrulamayı istiyor. Açık erişim katmanı önce denenir, kimlikli katman ancak açık katman yetmezse devreye girer ve kimlik bilgileri her zaman sizde kalır. Kurulumdan önce bilinen cevaplı bir sorgu ile sunucu sınanır, sınavı geçemeyen sunucu yığına girmez.
+Bu beceri, araştırma iş akışına girecek MCP sunucularını güven süzgecinden geçirir. Her aday için dört soru yazılı yanıtlanır, yayıncısı kim, makineden hangi veri çıkıyor, nereye gidiyor, hangi kimlik doğrulamayı istiyor. Açık erişim katmanı önce denenir, kimlikli katman ancak açık katman yetmezse devreye girer ve kimlik bilgileri her zaman sizde kalır. Kurulumdan önce bilinen cevaplı bir sorgu ile sunucu sınanır, sınavı geçemeyen sunucu yığına girmez. Bir sunucunun izinleri ya da veri akışı değiştiğinde yığın kaydı yeniden gözden geçirilir — ilk triage onayı kalıcı değildir.

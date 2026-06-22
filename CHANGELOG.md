@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Citations of this work should use the Zenodo concept DOI [10.5281/zenodo.20289687](https://doi.org/10.5281/zenodo.20289687), which always resolves to the latest version. Version-specific DOIs are listed below.
 
+## [4.0.0] - 2026-06-22
+
+Major release. The companion project skill library grows from twenty to thirty-two skills, completing operational coverage of the research lifecycle, and ships together with a craft-grade bilingual overhaul of the companion site copy.
+
+### Added
+
+- Twelve new project skills under `.claude/skills/`, each authored to the repository's bilingual skill schema (a `name` and `description` frontmatter, an English protocol across the eight canonical sections, and a closing Turkish usage section): `prisma-scoping-review-pipeline`, `sensitive-data-anonymization-gate`, `open-science-release-packager`, `authorship-contribution-ledger`, `peer-review-confidentiality-protocol`, `multilingual-concept-validity-audit`, `grant-proposal-workpackage-builder`, `teaching-feedback-ai-boundaries`, `public-scholarship-ethics-adapter`, `preregistration-analysis-plan-ledger`, `agent-portability-matrix`, and `cross-agent-second-opinion`. Each operationalizes the booklet it pairs with (the 002-05, 008, 003-04, 007-04, 010-03, 007-05, 007-06, 013-01, 011-02, 008-05, and 014-01 lines).
+
+### Changed
+
+- The existing twenty skills were enriched in place, additively, with explicit when-not-to-use boundaries, named cross-skill handoffs, a session-end record line, and a closing quality gate, without altering their proven eight-section format or their reviewed prose.
+- The companion site copy (`web/index.html`) was rewritten for craft in both Turkish and English, the status band reinstated (thirty-three booklets, fourteen categories, thirty-two skills), and the skill catalogue advanced from twenty to thirty-two across the README pair, the catalog, the validator, and the plugin and marketplace manifests.
+
 ## [3.2.0] - 2026-06-21
 
 Minor release. Twelve continuation booklets, expanded bilingually from the author's source drafts, opening two new categories and extending six existing ones.

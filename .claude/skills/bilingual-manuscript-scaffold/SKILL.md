@@ -1,13 +1,13 @@
 ---
 name: bilingual-manuscript-scaffold
-description: Use when drafting a manuscript, thesis chapter, or abstract that must exist in Turkish and English, when the user asks how to keep two language versions aligned, or when an IMRAD skeleton with word budgets is needed before writing starts.
+description: Use when authoring a new manuscript, thesis chapter, or abstract from scratch in Turkish and English in parallel — building the claim skeleton first, then drafting Turkish and re-authoring English — not for auditing parity between existing versions.
 ---
 
 # Bilingual Manuscript Scaffold
 
 ## When to use
 
-Use this skill when a manuscript needs to be written in Turkish and English in parallel and the risk is drift: two versions that quietly stop claiming the same things. It also applies when only the skeleton is needed, an IMRAD outline with word budgets, before any prose exists. For voice repair on finished prose use anti-ai-trace-revision, and for reference verification use apa-doi-verifier.
+Use this skill when a manuscript needs to be written in Turkish and English in parallel and the risk is drift: two versions that quietly stop claiming the same things. It also applies when only the skeleton is needed, an IMRAD outline with word budgets, before any prose exists. For voice repair on finished prose use anti-ai-trace-revision, and for reference verification use apa-doi-verifier. It is not for auditing whether a concept translates cleanly across cultural contexts; that is multilingual-concept-validity-audit.
 
 ## Inputs
 
@@ -25,6 +25,7 @@ Use this skill when a manuscript needs to be written in Turkish and English in p
 5. Keep one reference list. Both versions cite the same sources, and the DOI sets must match exactly.
 6. Run the parity check after each section: same claim order, same evidence per claim, same heading count, same DOI set.
 7. When a section's prose fights the author's voice, route it through anti-ai-trace-revision before moving on.
+8. When a key term carries different theoretical weight in Turkish and English academic traditions, hand the concept list to multilingual-concept-validity-audit before the parity check closes.
 
 ## Output
 
@@ -34,6 +35,7 @@ Return:
 - The IMRAD scaffold with word budgets.
 - Drafted sections in both languages, marked draft until parity passes.
 - A parity report per section.
+- What to record at session end: the latest claim skeleton, the parity report for each completed section, any concept terms flagged for multilingual-concept-validity-audit, and a one-line note for the AI-use disclosure.
 
 ## Verification
 
@@ -42,6 +44,7 @@ Return:
 - Each claim appears in both languages with the same evidence attached.
 - No section was produced by sentence-level translation, checked by reading the English aloud for calque rhythm.
 - Word budgets respected or the overrun is flagged with a cut plan.
+- Before closing: every concept term flagged during parity has either been cleared or handed to multilingual-concept-validity-audit, and the parity report for each section is saved where the next session can find it.
 
 ## Safety
 
@@ -59,4 +62,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri, iki dilde yaşayacak bir el yazmasını tek iskeletten kurar. Önce iddia iskeleti çıkarılır, sonra Türkçe taslak yazılır, İngilizce sürüm cümle çevirisiyle değil iskeletten yeniden yazılır. Her bölümden sonra eşlik kontrolü yapılır. Başlık sayısı, iddia sırası ve DOI kümesi iki sürümde birebir örtüşmek zorundadır. İki dil arasında anlam kayarsa önce iskelet düzeltilir.
+Bu beceri, iki dilde yaşayacak bir el yazmasını tek iskeletten kurar. Önce iddia iskeleti çıkarılır, sonra Türkçe taslak yazılır, İngilizce sürüm cümle çevirisiyle değil iskeletten yeniden yazılır. Her bölümden sonra eşlik kontrolü yapılır. Başlık sayısı, iddia sırası ve DOI kümesi iki sürümde birebir örtüşmek zorundadır. İki dil arasında anlam kayarsa önce iskelet düzeltilir. Kavram geçerliliği kültürler arasında denetlenmek istendiğinde multilingual-concept-validity-audit becerisi devreye girer.

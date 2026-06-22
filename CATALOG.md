@@ -171,7 +171,7 @@ What survives a change of tool. Codex and portable agentic discipline, principle
 
 ## Companion Project Skills
 
-The v1.1.x release line adds Claude Code project skills under `.claude/skills/<skill-name>/SKILL.md`, and v2.7.0 doubles the set to twenty, covering the research lifecycle end to end. These skills do not replace the booklets. They provide compact, repeatable operating protocols for the most common workflows, and every skill carries a Turkish usage section alongside its English protocol.
+The v1.1.x release line adds Claude Code project skills under `.claude/skills/<skill-name>/SKILL.md`, v2.7.0 doubles the set to twenty, and v4.0 extends it to thirty-two, adding open-science release, preregistration, sensitive-data anonymization, peer-review confidentiality, multilingual concept validity, grant work-package, teaching, public-scholarship, and cross-agent workflows. These skills do not replace the booklets. They provide compact, repeatable operating protocols for the most common workflows, and every skill carries a Turkish usage section alongside its English protocol.
 
 | Skill | Booklet basis | Workflow surface |
 |---|---|---|
@@ -195,6 +195,18 @@ The v1.1.x release line adds Claude Code project skills under `.claude/skills/<s
 | `mcp-research-stack-triage` | 006 | MCP server trust triage, data flow questions, minimal permissions, known-answer probes |
 | `source-passport-ledger` | 003 | Per-source passports, lifecycle-event updates, citation quarantine rule, pre-submission sweeps |
 | `conference-materials-bilingual` | 011 | One-claim decks and posters, figure traceability, bilingual re-authoring, rehearsal cut lists |
+| `prisma-scoping-review-pipeline` | 002 | Systematic, scoping, and rapid review pipeline, framing scheme, logged search, screening with reasons, PRISMA counts |
+| `sensitive-data-anonymization-gate` | 008, 009 | De-identification and data-minimization gate before any AI tool sees sensitive, clinical, or raw interview data |
+| `open-science-release-packager` | 003 | Open-science release, license choice, persistent DOI, README and metadata, access and embargo decision |
+| `authorship-contribution-ledger` | 007 | Authorship order, CRediT roles, AI-assistance attribution, contributorship statement, dispute evidence trail |
+| `peer-review-confidentiality-protocol` | 010 | Confidentiality-preserving peer review, whether and how AI may assist, reviewer disclosure |
+| `multilingual-concept-validity-audit` | 007 | Construct equivalence across Turkish and English, translation and back-translation, construct drift |
+| `grant-proposal-workpackage-builder` | 007 | Work packages, milestones, deliverables, timeline, risk register, budget-justification scaffolding |
+| `teaching-feedback-ai-boundaries` | 013 | Course, assessment, and student-feedback AI boundaries, academic integrity, FERPA and KVKK limits |
+| `public-scholarship-ethics-adapter` | 011 | Adapting findings for public audiences, evidence-faithful simplification, embargo respect, AI disclosure |
+| `preregistration-analysis-plan-ledger` | 008 | Preregistration, frozen analysis plan, confirmatory and exploratory separation, deviation log |
+| `agent-portability-matrix` | 014 | Cross-tool portability matrix of capabilities, file access, memory, and skill support |
+| `cross-agent-second-opinion` | 014, 012 | A second independent agent verifies rather than decides, agent disagreement surfaced for the human |
 
 ## Versioning
 

@@ -7,7 +7,7 @@ description: Use when a draft in Turkish, English, or both reads as AI-generated
 
 ## When to use
 
-Use this skill when a manuscript, revision letter, website text, or report sounds machine-written and the goal is to restore a human author's voice without changing what the text claims. Typical moments: a supervisor or reviewer says the text feels AI-generated, a bilingual document reads as translated rather than written, or an AI-assisted draft is approaching submission and needs a final pass. For reviewer-response structure use rebuttal-traceability-matrix first, then bring the prose here.
+Use this skill when a manuscript, revision letter, website text, or report sounds machine-written and the goal is to restore a human author's voice without changing what the text claims. Typical moments: a supervisor or reviewer says the text feels AI-generated, a bilingual document reads as translated rather than written, or an AI-assisted draft is approaching submission and needs a final pass. For reviewer-response structure use rebuttal-traceability-matrix first, then bring the prose here. It is not for verifying whether citations in the revised text are real and correctly formatted, that is apa-doi-verifier.
 
 ## Inputs
 
@@ -34,6 +34,7 @@ Return:
 - The tell inventory, with one before and after example per removed pattern.
 - A frozen-list check confirming citations, statistics, quotations, and identifiers are unchanged.
 - Residual risks that need a human read-aloud or a second human reader.
+- What to record at session end: the tell inventory, the pattern counts before and after, and a note that ai-disclosure-auditor still governs the disclosure obligation regardless of how natural the revised prose reads.
 
 ## Verification
 
@@ -41,8 +42,9 @@ Return:
 - Sentences repeated verbatim across sections or sibling documents: zero.
 - Contrast tails of the "not X but Y" kind: at most one per document.
 - Every frozen item byte-identical to the original.
-- Turkish output carries full diacritics and contains no dashes and no semicolons, with APA exceptions for multi-source parentheses and bibliographic page ranges left intact.
+- Turkish output carries full diacritics and uses em dashes and semicolons only where they serve the sentence rather than as a reflex, since forcing either to zero leaves its own artificial signature. APA exceptions for multi-source parentheses and bibliographic page ranges stay intact.
 - A reviewer who did not write the revision confirms the rewrite introduced no new tells.
+- Before closing: if any citation, statistic, or identifier was touched during revision, hand the frozen list to apa-doi-verifier before the document is submitted; the revision and the citation check are separate passes.
 
 ## Safety
 
@@ -60,4 +62,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri, yapay zekâ yazmış gibi okunan bir metni anlamı ve atıfları koruyarak insan sesine döndürür. Düzeltme iki ayrı geçişle ilerler. Önce retorik iskelet ele alınır, başlıklar ve cümle ritmi makine imzasından arındırılır. Sonra her cümle doğallık testinden geçer, çeviri kokan kuruluşlar ve eğreti metaforlar yeniden yazılır. Dondurulmuş liste, yani atıflar, sayılar, alıntılar ve kod, yeniden yazımdan sonra orijinaliyle birebir karşılaştırılır. Beceri beyan yükümlülüğünü gizlemek için kullanılmaz, amaç yazım kalitesi ve yazar sesidir.
+Bu beceri, yapay zekâ yazmış gibi okunan bir metni anlamı ve atıfları koruyarak insan sesine döndürür. Düzeltme iki ayrı geçişle ilerler. Önce retorik iskelet ele alınır, başlıklar ve cümle ritmi makine imzasından arındırılır. Sonra her cümle doğallık testinden geçer, çeviri kokan kuruluşlar ve eğreti metaforlar yeniden yazılır. Dondurulmuş liste, yani atıflar, sayılar, alıntılar ve kod, yeniden yazımdan sonra orijinaliyle birebir karşılaştırılır. Beceri beyan yükümlülüğünü gizlemek için kullanılmaz, amaç yazım kalitesi ve yazar sesidir. Türkçe çıktıda tam diakritik korunur, tire ve noktalı virgül refleks olarak değil ancak cümleye hizmet ettiği yerde kalır.

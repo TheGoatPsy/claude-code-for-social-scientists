@@ -7,7 +7,7 @@ description: Use when a reference list needs APA 7 cleanup, when DOIs must be co
 
 ## When to use
 
-Use this skill when a bibliography, reference list, manuscript section, or AI-generated citation set needs APA 7 cleanup and DOI verification before it is trusted. In the wider lifecycle it runs after social-science-literature-triage has scoped the sources and before ai-disclosure-auditor counts verified citations, and its per-source results belong in the source-passport-ledger record.
+Use this skill when a bibliography, reference list, manuscript section, or AI-generated citation set needs APA 7 cleanup and DOI verification before it is trusted. In the wider lifecycle it runs after social-science-literature-triage has scoped the sources and before ai-disclosure-auditor counts verified citations, and its per-source results belong in the source-passport-ledger record. It is not where you decide which sources to read, that is social-science-literature-triage, and it does not count verified citations into a disclosure statement, that is ai-disclosure-auditor; here you only prove that the references already in hand are real and correctly formatted.
 
 ## Inputs
 
@@ -37,6 +37,7 @@ Return:
 - Items without DOI and why that may be acceptable.
 - Fabricated citation risk classification.
 - Open verification tasks.
+- What to record at session end: the cleaned reference file, the references still unresolved, and a one-line note for the AI-use disclosure.
 
 ## Verification
 
@@ -46,6 +47,7 @@ Return:
 - Books and official reports are not forced into DOI format.
 - Risk classification distinguishes missing DOI from nonexistent source.
 - Every verification claim names the lane that confirmed it, Crossref, PubMed, publisher page, or library record, per reference.
+- Before closing: every unresolved reference is written down where the next pass can find it, and the verified set is ready to hand to ai-disclosure-auditor for counting.
 
 ## Safety
 
@@ -63,4 +65,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri, bir kaynakçayı güvenilir saymadan önce APA 7 düzenine sokar ve her DOI'nin gerçekten var olduğunu doğrular. Hakeme gitmeden önceki son kontrolde, yapay zekâ destekli taslakların kaynakçasında ya da jüri öncesi tez denetiminde kullanın. Çözülmeyen DOI tahminle onarılmaz, doğrulanmamış referans temiz sayılmaz, her doğrulama hangi kanaldan yapıldığıyla birlikte raporlanır.
+Bu beceri, bir kaynakçayı güvenilir saymadan önce APA 7 düzenine sokar ve her DOI'nin gerçekten var olduğunu doğrular. Hakeme gitmeden önceki son kontrolde, yapay zekâ destekli taslakların kaynakçasında ya da jüri öncesi tez denetiminde kullanın. Çözülmeyen DOI tahminle onarılmaz, doğrulanmamış referans temiz sayılmaz, her doğrulama hangi kanaldan yapıldığıyla birlikte raporlanır. Bu beceri hangi kaynakların okunacağına karar vermez, o iş social-science-literature-triage'ındır, doğrulanmış kaynakları beyana saymak için ai-disclosure-auditor'a devreder. Oturum sonunda temizlenmiş dosya, çözülmemiş referanslar ve beyana eklenecek kısa not kayda geçirilir.

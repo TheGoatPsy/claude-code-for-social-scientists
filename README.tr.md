@@ -98,7 +98,7 @@ Her kitapçığın `KKK-AA-SSSS` biçiminde sabit bir kimliği vardır.
 
 ## Project Skills
 
-Skills katmanı [`.claude/skills/`](./.claude/skills/) altında yirmi Claude Code project skill içerir ve araştırma yaşam döngüsünü literatür kapsamlamadan yayın bütünlüğüne kadar kapsar. Kitapçıklar teoriyi, pedagojiyi ve akademik çerçeveyi taşır. Skills katmanı ise tekrarlanabilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır. Her skill, rehberin iki dillilik ilkesini skill katmanına taşıyan bir Türkçe kullanım bölümüyle kapanır.
+Skills katmanı [`.claude/skills/`](./.claude/skills/) altında otuz iki Claude Code project skill içerir ve araştırma yaşam döngüsünü literatür kapsamlamadan yayın bütünlüğüne kadar kapsar. Kitapçıklar teoriyi, pedagojiyi ve akademik çerçeveyi taşır. Skills katmanı ise tekrarlanabilir iş akışlarını, denetim listelerini ve güvenli çalışma sınırlarını taşır. Her skill, rehberin iki dillilik ilkesini skill katmanına taşıyan bir Türkçe kullanım bölümüyle kapanır.
 
 | Skill | Tamamlayıcı kitapçıklar | Amaç |
 |---|---|---|
@@ -122,6 +122,18 @@ Skills katmanı [`.claude/skills/`](./.claude/skills/) altında yirmi Claude Cod
 | `mcp-research-stack-triage` | 006 | Araştırma için MCP sunucularını süzer, veri akışını sorgular, minimal izin ve bilinen cevaplı sınama kurar. |
 | `source-passport-ledger` | 003 | Her kaynağı keşiften atfa kadar izler, doğrulanmamış referansa karantina kuralı uygular. |
 | `conference-materials-bilingual` | 011 | Sunum ve posteri tek iddia etrafında kurar, görselleri analize bağlar, iki dilli yeniden yazımı yönetir. |
+| `prisma-scoping-review-pipeline` | 002 | Sistematik, kapsam ve hızlı derlemeyi kayıtlı arama, gerekçeli tarama ve PRISMA akış sayılarıyla yürütür. |
+| `sensitive-data-anonymization-gate` | 008, 009 | Hassas, klinik ya da ham mülakat verisini herhangi bir araca girmeden önce anonimleştirir ve veri minimizasyonu kapısından geçirir. |
+| `open-science-release-packager` | 003 | Çalışmayı açık bilim için lisans, kalıcı DOI, metadata ve erişim ile ambargo kararıyla paketler. |
+| `authorship-contribution-ledger` | 007 | Yazar sırasını, CRediT katkı rollerini ve yapay zekâ katkısının atfını, anlaşmazlık için iz bırakacak biçimde kaydeder. |
+| `peer-review-confidentiality-protocol` | 010 | Hakemlikte yapay zekânın nasıl yardım edebileceğine karar verir, el yazmasını gizli tutar ve katkıyı beyan eder. |
+| `multilingual-concept-validity-audit` | 007 | Bir yapının Türkçe ile İngilizce arasındaki kavramsal eşdeğerliğini çeviri, geri çeviri ve kayma denetimiyle sınar. |
+| `grant-proposal-workpackage-builder` | 007 | İş paketlerini, kilometre taşlarını, takvimi, risk kaydını ve bütçe gerekçesini, yapılabilirliği dürüst tutarak kurar. |
+| `teaching-feedback-ai-boundaries` | 013 | Ders tasarımı, ölçme ve öğrenci geri bildiriminde yapay zekâ sınırlarını akademik dürüstlük ile FERPA ve KVKK çerçevesinde belirler. |
+| `public-scholarship-ethics-adapter` | 011 | Bulguları kamuya uyarlarken kanıta sadık kalır, abartıdan kaçınır ve yapay zekâ katkısını beyan eder. |
+| `preregistration-analysis-plan-ledger` | 008 | Ön kaydı ve analiz planını dondurur, doğrulayıcı ile keşfedici analizi ayırır ve her sapmayı kaydeder. |
+| `agent-portability-matrix` | 014 | Yetenekleri, dosya erişimini, belleği ve skill desteğini araçlar arasında haritalar ki bir iş akışı tek araca kilitlenmesin. |
+| `cross-agent-second-opinion` | 014, 012 | İkinci bağımsız bir ajanın karar vermek yerine doğrulamasını sağlar, ajanlar arası uyuşmazlığı insanın hükmüne sunar. |
 
 ### Skills kurulumu
 

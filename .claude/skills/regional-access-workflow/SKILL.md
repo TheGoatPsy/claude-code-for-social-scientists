@@ -7,7 +7,7 @@ description: Use when a source must be reached through DergiPark, ULAKBIM TR Diz
 
 ## When to use
 
-Use this skill when a researcher needs a lawful and reproducible route to regional academic sources, especially Turkish, Greek, European, university, thesis, or institutional materials. It picks up the search protocol from social-science-literature-triage and writes what it finds into source-passport-ledger entries.
+Use this skill when a researcher needs a lawful and reproducible route to regional academic sources, especially Turkish, Greek, European, university, thesis, or institutional materials. It picks up the search protocol from social-science-literature-triage and writes what it finds into source-passport-ledger entries. It is not for building a systematic PRISMA search log across multiple databases, that is prisma-scoping-review-pipeline.
 
 ## Inputs
 
@@ -39,6 +39,7 @@ Return:
 - Source passport template.
 - Manual user actions.
 - Blockers and alternatives.
+- What to record at session end: the databases searched, each source passport entry created, and any unresolved access blockers with the lawful next step noted.
 
 ## Verification
 
@@ -47,6 +48,7 @@ Return:
 - Regional databases are not replaced by global search alone.
 - Full-text status is separated from metadata existence.
 - User-side login actions are clearly marked.
+- Before closing: all located source passport entries are ready to hand to source-passport-ledger, and any systematic search log is flagged for prisma-scoping-review-pipeline if the review protocol requires it.
 
 ## Safety
 
@@ -64,4 +66,4 @@ Expected smoke output:
 
 ## Türkçe kullanım notu
 
-Bu beceri, bir kaynağa yasal ve tekrarlanabilir bir erişim yolu kurar. Bölgesel diziler, üniversite depoları ve kütüphane keşif sistemleri uluslararası kanallarla birlikte haritalanır, giriş ve VPN adımları her zaman sizde kalır. Açık erişim önce denenir, bulunan her kaynak için bir pasaport kaydı oluşturulur ve erişilemeyen kaynaklar dürüstçe engelli olarak raporlanır.
+Bu beceri, bir kaynağa yasal ve tekrarlanabilir bir erişim yolu kurar. Bölgesel diziler, üniversite depoları ve kütüphane keşif sistemleri uluslararası kanallarla birlikte haritalanır, giriş ve VPN adımları her zaman sizde kalır. Açık erişim önce denenir, bulunan her kaynak için bir pasaport kaydı oluşturulur ve erişilemeyen kaynaklar için erişimin mümkün olmadığı açıkça belirtilir.

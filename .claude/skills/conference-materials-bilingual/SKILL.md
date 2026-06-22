@@ -7,7 +7,7 @@ description: Use when building slides, a poster, or a lightning talk from a manu
 
 ## When to use
 
-Use this skill when a study is heading to a conference and the manuscript must become slides, a poster, or a short talk, in one language or two. It assumes the scientific content already exists; the work here is selection, compression, visual integrity, and bilingual preparation.
+Use this skill when a study is heading to a conference and the manuscript must become slides, a poster, or a short talk, in one language or two. It assumes the scientific content already exists; the work here is selection, compression, visual integrity, and bilingual preparation. It is not for preparing public-facing communication beyond the academic venue; for that use public-scholarship-ethics-adapter, which handles broader audience framing and ethics considerations that differ from conference presentation norms.
 
 ## Inputs
 
@@ -35,6 +35,7 @@ Return:
 - Both language versions when requested, built from the same outline.
 - The citation slide from verified sources.
 - A rehearsal cut list, what leaves first if time runs short.
+- What to record at session end: the final outline file, the figure trace table, both language versions if produced, and the rehearsal timing result.
 
 ## Verification
 
@@ -43,6 +44,7 @@ Return:
 - Both language versions assert identical claims, checked claim by claim.
 - The deck fits the time limit in an actual rehearsal, with the timing recorded.
 - The disclosure requirement of the venue was checked, and the statement is present where required.
+- Before closing: every figure trace is written down, the rehearsal time is recorded, and if the work will be shared with a broader audience the handoff to public-scholarship-ethics-adapter is noted.
 
 ## Safety
 
