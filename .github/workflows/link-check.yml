@@ -39,7 +39,9 @@ jobs:
             --no-progress
             --max-retries 3
             --retry-wait-time 5
-            --accept 200,206,403,429
+            --accept 200,202,206,403,429
+            --scheme https
+            --scheme http
             --exclude-path template
             --exclude doi\.org
             .
